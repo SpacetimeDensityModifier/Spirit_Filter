@@ -8387,6 +8387,13 @@ Show # Meh Rares
 # Section: 17a. Helmets
 
 Show
+    LinkedSockets >= 3
+    Class "Helmets"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
+
+Show
     Class "Helmets"
     Rarity <= Magic
     ItemLevel <= 10
@@ -8424,6 +8431,13 @@ Hide
     SetBorderColor 127 127 127
 
 # Section: 17b. Body Armours
+
+Show
+    LinkedSockets >= 3
+    Class "Body Armours"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
 
 Show
     Class "Body Armours"
@@ -8465,6 +8479,13 @@ Hide
 # Section: 17c. Gloves
 
 Show
+    LinkedSockets >= 3
+    Class "Gloves"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
+
+Show
     Class "Gloves"
     Rarity <= Magic
     ItemLevel <= 10
@@ -8504,6 +8525,13 @@ Hide
 # Section: 17d. Boots
 
 Show
+    LinkedSockets >= 3
+    Class "Boots"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
+
+Show
     Class "Boots"
     Rarity <= Magic
     ItemLevel <= 10
@@ -8541,6 +8569,13 @@ Hide
     SetBorderColor 127 127 127
 
 # Section: 17e. Shields
+
+Show
+    LinkedSockets >= 3
+    Class "Shields"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
 
 Show
     Class "Shields"
@@ -8584,6 +8619,13 @@ Hide
 # Section: 18a. 1H Axes
 
 Show
+    LinkedSockets >= 3
+    Class "One Hand Axes"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
+
+Show
     Class "One Hand Axes"
     Rarity <= Magic
     ItemLevel <= 10
@@ -8621,6 +8663,13 @@ Hide
     SetBorderColor 127 127 127
 
 # Section: 18b. Generic 1H Swords
+
+Show
+    LinkedSockets >= 3
+    Class "One Hand Swords"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
 
 Show
     Class "One Hand Swords"
@@ -8662,6 +8711,13 @@ Hide
 # Section: 18c. 2H Maces
 
 Show
+    LinkedSockets >= 3
+    Class "Two Hand Maces"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
+
+Show
     Class "Two Hand Maces"
     Rarity <= Magic
     ItemLevel <= 10
@@ -8699,6 +8755,13 @@ Hide
     SetBorderColor 127 127 127
 
 # Section: 18d. Bows
+
+Show
+    LinkedSockets >= 3
+    Class "Bows"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
 
 Show
     Class "Bows"
@@ -8740,6 +8803,13 @@ Hide
 # Section: 18e. 1H Thrusting Swords
 
 Show
+    LinkedSockets >= 3
+    Class "Thrusting One Hand Swords"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
+
+Show
     Class "Thrusting One Hand Swords"
     Rarity <= Magic
     ItemLevel <= 10
@@ -8777,6 +8847,13 @@ Hide
     SetBorderColor 127 127 127
 
 # Section: 18f. Daggers
+
+Show
+    LinkedSockets >= 3
+    Class "Daggers"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
 
 Show
     Class "Daggers"
@@ -8818,6 +8895,13 @@ Hide
 # Section: 18g. 1H Maces
 
 Show
+    LinkedSockets >= 3
+    Class "One Hand Maces"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
+
+Show
     Class "One Hand Maces"
     Rarity <= Magic
     ItemLevel <= 10
@@ -8855,6 +8939,13 @@ Hide
     SetBorderColor 127 127 127
 
 # Section: 18h. 2H Axes
+
+Show
+    LinkedSockets >= 3
+    Class "Two Hand Axes"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
 
 Show
     Class "Two Hand Axes"
@@ -8896,6 +8987,13 @@ Hide
 # Section: 18i. 2H Swords
 
 Show
+    LinkedSockets >= 3
+    Class "Two Hand Swords"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
+
+Show
     Class "Two Hand Swords"
     Rarity <= Magic
     ItemLevel <= 10
@@ -8933,6 +9031,13 @@ Hide
     SetBorderColor 127 127 127
 
 # Section: 18j. Claws
+
+Show
+    LinkedSockets >= 3
+    Class "Claws"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
 
 Show
     Class "Claws"
@@ -8974,6 +9079,13 @@ Hide
 # Section: 18k. Sceptres
 
 Show
+    LinkedSockets >= 3
+    Class "Sceptres"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
+
+Show
     Class "Sceptres"
     Rarity <= Magic
     ItemLevel <= 10
@@ -9013,6 +9125,13 @@ Hide
 # Section: 18l. Staves
 
 Show
+    LinkedSockets >= 3
+    Class "Staves"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
+
+Show
     Class "Staves"
     Rarity <= Magic
     ItemLevel <= 10
@@ -9050,6 +9169,13 @@ Hide
     SetBorderColor 127 127 127
 
 # Section: 18m. Wands
+
+Show
+    LinkedSockets >= 3
+    Class "Wands"
+    Rarity <= Magic
+    ItemLevel <= 10
+    SetBorderColor 255 255 119
 
 Show
     Class "Wands"
