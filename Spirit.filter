@@ -1334,7 +1334,7 @@ Show
     ItemLevel <= 75
     SetBorderColor 127 127 127
 
-Hide
+Show
     Class "Flasks"
     SetBackgroundColor 0 0 0 150
 
