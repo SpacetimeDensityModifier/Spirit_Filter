@@ -668,6 +668,12 @@ Hide
 Show
     Class "Amulets" "Rings" "Belts" "Quivers"
     Rarity = Normal
+    ItemLevel < 10
+    SetBorderColor 136 136 255
+
+Show
+    Class "Amulets" "Rings" "Belts" "Quivers"
+    Rarity = Normal
     ItemLevel < 20
     SetBorderColor 127 127 127
 
@@ -895,9 +901,27 @@ Show
     Quality > 0
     Quality < 15
     Rarity < Unique
+    ItemLevel < 10
+    SetBackgroundColor 0 0 0 220
+    SetBorderColor 232 198 159 150
+
+Show
+    LinkedSockets < 4
+    Quality > 0
+    Quality < 15
+    Rarity < Unique
     ItemLevel < 25
     SetBackgroundColor 0 0 0 150
     SetBorderColor 232 198 159 150
+
+Show
+    LinkedSockets < 4
+    Quality > 14
+    Quality < 20
+    Rarity < Unique
+    ItemLevel < 30
+    SetBackgroundColor 0 0 0
+    SetBorderColor 232 198 159 190
 
 Show
     LinkedSockets < 4
@@ -1036,38 +1060,41 @@ Show
     Class "Life Flasks"
     Rarity = Normal
     ItemLevel <= 6
+    SetBorderColor 136 136 255
 
 Show
     Class "Life Flasks"
     Rarity = Magic
     ItemLevel <= 6
-    SetBorderColor 127 127 127
+    SetBorderColor 255 255 119
 
 Show
     DropLevel >= 3
     Class "Life Flasks"
     Rarity = Normal
     ItemLevel <= 12
+    SetBorderColor 127 127 127
 
 Show
     DropLevel >= 3
     Class "Life Flasks"
     Rarity = Magic
     ItemLevel <= 12
-    SetBorderColor 127 127 127
+    SetBorderColor 136 136 255
 
 Show
     DropLevel >= 6
     Class "Life Flasks"
     Rarity = Normal
     ItemLevel <= 18
+    SetBorderColor 127 127 127
 
 Show
     DropLevel >= 6
     Class "Life Flasks"
     Rarity = Magic
     ItemLevel <= 18
-    SetBorderColor 127 127 127
+    SetBorderColor 136 136 255
 
 Show
     DropLevel >= 12
@@ -1177,25 +1204,27 @@ Show
     Class "Mana Flasks"
     Rarity = Normal
     ItemLevel <= 6
+    SetBorderColor 136 136 255
 
 Show
     Class "Mana Flasks"
     Rarity = Magic
     ItemLevel <= 6
-    SetBorderColor 127 127 127
+    SetBorderColor 255 255 119
 
 Show
     DropLevel >= 3
     Class "Mana Flasks"
     Rarity = Normal
     ItemLevel <= 12
+    SetBorderColor 127 127 127
 
 Show
     DropLevel >= 3
     Class "Mana Flasks"
     Rarity = Magic
     ItemLevel <= 12
-    SetBorderColor 127 127 127
+    SetBorderColor 136 136 255
 
 Show
     DropLevel >= 6
@@ -8380,6 +8409,12 @@ Show # Bad Rares in Red Maps
 # Top end Drop Level Rares, might be worth IDing
 Show # Meh Rares
     Rarity = Rare
+    ItemLevel < 20
+    SetBorderColor 136 136 255
+
+# Top end Drop Level Rares, might be worth IDing
+Show # Meh Rares
+    Rarity = Rare
     SetBorderColor 127 127 127
 
 # Section: 17. Armour Socketing
@@ -8391,7 +8426,7 @@ Show
     Class "Helmets"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "Helmets"
@@ -8404,6 +8439,7 @@ Show
     Class "Helmets"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 4
@@ -8437,7 +8473,7 @@ Show
     Class "Body Armours"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "Body Armours"
@@ -8450,6 +8486,7 @@ Show
     Class "Body Armours"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 4
@@ -8483,7 +8520,7 @@ Show
     Class "Gloves"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "Gloves"
@@ -8496,6 +8533,7 @@ Show
     Class "Gloves"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 4
@@ -8529,7 +8567,7 @@ Show
     Class "Boots"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "Boots"
@@ -8542,6 +8580,7 @@ Show
     Class "Boots"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 4
@@ -8575,7 +8614,7 @@ Show
     Class "Shields"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "Shields"
@@ -8588,6 +8627,7 @@ Show
     Class "Shields"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 3
@@ -8623,7 +8663,7 @@ Show
     Class "One Hand Axes"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "One Hand Axes"
@@ -8636,6 +8676,7 @@ Show
     Class "One Hand Axes"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 3
@@ -8669,7 +8710,7 @@ Show
     Class "One Hand Swords"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "One Hand Swords"
@@ -8682,6 +8723,7 @@ Show
     Class "One Hand Swords"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 3
@@ -8715,7 +8757,7 @@ Show
     Class "Two Hand Maces"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "Two Hand Maces"
@@ -8728,6 +8770,7 @@ Show
     Class "Two Hand Maces"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 4
@@ -8761,7 +8804,7 @@ Show
     Class "Bows"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "Bows"
@@ -8774,6 +8817,7 @@ Show
     Class "Bows"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 4
@@ -8807,7 +8851,7 @@ Show
     Class "Thrusting One Hand Swords"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "Thrusting One Hand Swords"
@@ -8820,6 +8864,7 @@ Show
     Class "Thrusting One Hand Swords"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 3
@@ -8853,7 +8898,7 @@ Show
     Class "Daggers"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "Daggers"
@@ -8866,6 +8911,7 @@ Show
     Class "Daggers"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 3
@@ -8899,7 +8945,7 @@ Show
     Class "One Hand Maces"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "One Hand Maces"
@@ -8912,6 +8958,7 @@ Show
     Class "One Hand Maces"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 3
@@ -8945,7 +8992,7 @@ Show
     Class "Two Hand Axes"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "Two Hand Axes"
@@ -8958,6 +9005,7 @@ Show
     Class "Two Hand Axes"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 4
@@ -8991,7 +9039,7 @@ Show
     Class "Two Hand Swords"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "Two Hand Swords"
@@ -9004,6 +9052,7 @@ Show
     Class "Two Hand Swords"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 4
@@ -9037,7 +9086,7 @@ Show
     Class "Claws"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "Claws"
@@ -9050,6 +9099,7 @@ Show
     Class "Claws"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 3
@@ -9083,7 +9133,7 @@ Show
     Class "Sceptres"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "Sceptres"
@@ -9096,6 +9146,7 @@ Show
     Class "Sceptres"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 3
@@ -9129,7 +9180,7 @@ Show
     Class "Staves"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "Staves"
@@ -9142,6 +9193,7 @@ Show
     Class "Staves"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 4
@@ -9175,7 +9227,7 @@ Show
     Class "Wands"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 255 255 119
+    SetBorderColor 136 136 255
 
 Show
     Class "Wands"
@@ -9188,6 +9240,7 @@ Show
     Class "Wands"
     Rarity <= Magic
     ItemLevel < 20
+    SetBorderColor 127 127 127
 
 Show
     LinkedSockets >= 3
