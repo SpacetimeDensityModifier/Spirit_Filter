@@ -615,7 +615,7 @@ Show
 
 # Presence is a normal base, and is exceedingly rare, so not filtered
 Show
-    BaseType "Golden Mantle" "Golden Caligae" "Golden Wreath" "Golden Hoop" "Golden Obi" "Golden Bracers" "Golden Flame"
+    BaseType "Golden Mantle" "Golden Caligae" "Golden Wreath" "Golden Hoop" "Golden Obi" "Golden Bracers" "Golden Flame" "Jet Amulet"
     SetTextColor 175 96 37
     SetBackgroundColor 255 255 255
     SetBorderColor 175 96 37
@@ -636,6 +636,28 @@ Show
     SetFontSize 40
 
 # Section: 4c. Uniques
+
+# Ultra
+Show
+    LinkedSockets < 6
+    Sockets < 6
+    BaseType "Occultist's Vestment" "Glorious Plate" "Prophecy Wand" "Desert Brigandine" "Sorcerer Boots" "Legion Gloves" "Sapphire Flask" "Citrine Amulet" "Jasper Chopper"
+    Rarity = Unique
+    SetTextColor 175 96 37
+    SetBackgroundColor 255 255 255
+    SetBorderColor 175 96 37
+    SetFontSize 45
+    PlayAlertSound 4 300
+
+# Super
+Show
+    LinkedSockets < 6
+    Sockets < 6
+    BaseType "Ancient Greaves" "Champion Kite Shield" "Despot Axe" "Penetrating Arrow Quiver" "Sanctified Life Flask" "Sanctified Mana Flask" "Serpentscale Boots" "Siege Axe" "Slaughter Knife" "Spine Bow" "Steelhead" "Trapper Boots" "Zealot Helmet" "Jewelled Foil" "Gladiator Plate"
+    Rarity = Unique
+    SetBorderColor 180 96 0
+    SetFontSize 40
+    PlayAlertSound 4 200
 
 Show
     LinkedSockets < 6
@@ -960,26 +982,26 @@ Show
 Show
     Class "Currency"
     BaseType "Armourer's Scrap" "Blacksmith's Whetstone" "Glassblower's Bauble"
-    SetBackgroundColor 59 51 43
+    SetBackgroundColor 33 28 23
     SetBorderColor 232 198 159
 
 Show
     Class "Currency"
     BaseType "Orb of Transmutation" "Orb of Alteration" "Orb of Augmentation" "Transmutation Shard" "Alteration Shard"
-    SetBackgroundColor 19 29 38
+    SetBackgroundColor 14 27 38
     SetBorderColor 54 100 146
 
 Show
     Class "Currency"
     BaseType "Chromatic Orb"
-    SetBackgroundColor 4 33 4
+    SetBackgroundColor 3 23 3
     SetBorderColor 37 130 66
     PlayAlertSound 9 200
 
 Show
     Class "Currency"
     BaseType "Orb of Chance"
-    SetBackgroundColor 36 17 12
+    SetBackgroundColor 33 16 11
     SetBorderColor 224 109 73
 
 Show
