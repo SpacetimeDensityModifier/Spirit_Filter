@@ -89,6 +89,13 @@ Show
 
 Show
     BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+    Rarity = Unique
+    SetBorderColor 215 115 210
+    SetFontSize 38
+    PlayAlertSound 2 150
+
+Show
+    BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
     SetBorderColor 215 115 210
     PlayAlertSound 2 150
 
@@ -8438,6 +8445,7 @@ Show # Bad Rares in Yellow Maps
     ItemLevel < 78
     SetBackgroundColor 0 0 0 150
     SetBorderColor 0 0 0 0
+    SetFontSize 32
 
 Show # Bad Rares in Red Maps
     DropLevel <= 60
@@ -8445,6 +8453,7 @@ Show # Bad Rares in Red Maps
     ItemLevel >= 78
     SetBackgroundColor 0 0 0 150
     SetBorderColor 0 0 0 0
+    SetFontSize 30
 
 # Early rares are pretty much all equal
 Show
