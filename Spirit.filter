@@ -149,8 +149,254 @@ Show
     SetBorderColor 74 230 58
     SetFontSize 40
 
-Show
-    BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+Show # Atlas - 84+ - Steel Ring - Normal
+    BaseType "Steel Ring"
+    Rarity = Normal
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+
+Show # Atlas - 84+ - Opal Ring - Normal
+    BaseType "Opal Ring"
+    Rarity = Normal
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+
+Show # Atlas - 84+ - Blue Pearl Amulet - Normal
+    BaseType "Blue Pearl Amulet"
+    Rarity = Normal
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+
+Show # Atlas - 84+ - Marble Amulet - Normal
+    BaseType "Marble Amulet"
+    Rarity = Normal
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+
+Show # Atlas - 84+ - Vanguard Belt - Normal
+    BaseType "Vanguard Belt"
+    Rarity = Normal
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+
+Show # Atlas - 84+ - Crystal Belt - Normal
+    BaseType "Crystal Belt"
+    Rarity = Normal
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+
+Show # Atlas - 84+ - Bone Helmet - Normal
+    BaseType "Bone Helmet"
+    Rarity = Normal
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+
+Show # Atlas - 84+ - Two Toned Boots - Normal
+    BaseType "Two-Toned Boots"
+    Rarity = Normal
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+
+Show # Atlas - 84+ - Spiked Gloves - Normal
+    BaseType "Spiked Gloves"
+    Rarity = Normal
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+
+Show # Atlas - 84+ - Gripped Gloves - Normal
+    BaseType "Gripped Gloves"
+    Rarity = Normal
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+
+Show # Atlas - 84+ - Fingerless Silk Gloves - Normal
+    BaseType "Fingerless Silk Gloves"
+    Rarity = Normal
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+
+Show # Atlas - 84+ - Steel Ring - Magic
+    BaseType "Steel Ring"
+    Rarity = Magic
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Opal Ring - Magic
+    BaseType "Opal Ring"
+    Rarity = Magic
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Blue Pearl Amulet - Magic
+    BaseType "Blue Pearl Amulet"
+    Rarity = Magic
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Marble Amulet - Magic
+    BaseType "Marble Amulet"
+    Rarity = Magic
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Vanguard Belt - Magic
+    BaseType "Vanguard Belt"
+    Rarity = Magic
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Crystal Belt - Magic
+    BaseType "Crystal Belt"
+    Rarity = Magic
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Bone Helmet - Magic
+    BaseType "Bone Helmet"
+    Rarity = Magic
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Two Toned Boots - Magic
+    BaseType "Two-Toned Boots"
+    Rarity = Magic
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Spiked Gloves - Magic
+    BaseType "Spiked Gloves"
+    Rarity = Magic
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Gripped Gloves - Magic
+    BaseType "Gripped Gloves"
+    Rarity = Magic
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Fingerless Silk Gloves - Magic
+    BaseType "Fingerless Silk Gloves"
+    Rarity = Magic
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Steel Ring - Rare
+    BaseType "Steel Ring"
+    Rarity = Rare
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Opal Ring - Rare
+    BaseType "Opal Ring"
+    Rarity = Rare
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Blue Pearl Amulet - Rare
+    BaseType "Blue Pearl Amulet"
+    Rarity = Rare
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Marble Amulet - Rare
+    BaseType "Marble Amulet"
+    Rarity = Rare
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Vanguard Belt - Rare
+    BaseType "Vanguard Belt"
+    Rarity = Rare
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Crystal Belt - Rare
+    BaseType "Crystal Belt"
+    Rarity = Rare
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Bone Helmet - Rare
+    BaseType "Bone Helmet"
+    Rarity = Rare
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Two Toned Boots - Rare
+    BaseType "Two-Toned Boots"
+    Rarity = Rare
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Spiked Gloves - Rare
+    BaseType "Spiked Gloves"
+    Rarity = Rare
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Gripped Gloves - Rare
+    BaseType "Gripped Gloves"
+    Rarity = Rare
+    ItemLevel >= 84
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Fingerless Silk Gloves - Rare
+    BaseType "Fingerless Silk Gloves"
+    Rarity = Rare
     ItemLevel >= 84
     SetBackgroundColor 190 60 250 180
     SetBorderColor 215 115 210
@@ -163,8 +409,179 @@ Show
     SetFontSize 38
     PlayAlertSound 2 150
 
-Show
-    BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+Show # Atlas - Other - Steel Ring - Normal
+    BaseType "Steel Ring"
+    Rarity = Normal
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Opal Ring - Normal
+    BaseType "Opal Ring"
+    Rarity = Normal
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Blue Pearl Amulet - Normal
+    BaseType "Blue Pearl Amulet"
+    Rarity = Normal
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Marble Amulet - Normal
+    BaseType "Marble Amulet"
+    Rarity = Normal
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Vanguard Belt - Normal
+    BaseType "Vanguard Belt"
+    Rarity = Normal
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Crystal Belt - Normal
+    BaseType "Crystal Belt"
+    Rarity = Normal
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Bone Helmet - Normal
+    BaseType "Bone Helmet"
+    Rarity = Normal
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Two Toned Boots - Normal
+    BaseType "Two-Toned Boots"
+    Rarity = Normal
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Spiked Gloves - Normal
+    BaseType "Spiked Gloves"
+    Rarity = Normal
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Gripped Gloves - Normal
+    BaseType "Gripped Gloves"
+    Rarity = Normal
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Fingerless Silk Gloves - Normal
+    BaseType "Fingerless Silk Gloves"
+    Rarity = Normal
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Steel Ring - Magic
+    BaseType "Steel Ring"
+    Rarity = Magic
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Opal Ring - Magic
+    BaseType "Opal Ring"
+    Rarity = Magic
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Blue Pearl Amulet - Magic
+    BaseType "Blue Pearl Amulet"
+    Rarity = Magic
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Marble Amulet - Magic
+    BaseType "Marble Amulet"
+    Rarity = Magic
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Vanguard Belt - Magic
+    BaseType "Vanguard Belt"
+    Rarity = Magic
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Crystal Belt - Magic
+    BaseType "Crystal Belt"
+    Rarity = Magic
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Bone Helmet - Magic
+    BaseType "Bone Helmet"
+    Rarity = Magic
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Two Toned Boots - Magic
+    BaseType "Two-Toned Boots"
+    Rarity = Magic
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Spiked Gloves - Magic
+    BaseType "Spiked Gloves"
+    Rarity = Magic
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Gripped Gloves - Magic
+    BaseType "Gripped Gloves"
+    Rarity = Magic
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Fingerless Silk Gloves - Magic
+    BaseType "Fingerless Silk Gloves"
+    Rarity = Magic
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Steel Ring - Rare
+    BaseType "Steel Ring"
+    Rarity = Rare
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - Other - Opal Ring - Rare
+    BaseType "Opal Ring"
+    Rarity = Rare
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - Other - Blue Pearl Amulet - Rare
+    BaseType "Blue Pearl Amulet"
+    Rarity = Rare
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - Other - Marble Amulet - Rare
+    BaseType "Marble Amulet"
+    Rarity = Rare
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - Other - Vanguard Belt - Rare
+    BaseType "Vanguard Belt"
+    Rarity = Rare
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - Other - Crystal Belt - Rare
+    BaseType "Crystal Belt"
+    Rarity = Rare
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - Other - Bone Helmet - Rare
+    BaseType "Bone Helmet"
+    Rarity = Rare
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - Other - Two Toned Boots - Rare
+    BaseType "Two-Toned Boots"
+    Rarity = Rare
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - Other - Spiked Gloves - Rare
+    BaseType "Spiked Gloves"
+    Rarity = Rare
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - Other - Gripped Gloves - Rare
+    BaseType "Gripped Gloves"
+    Rarity = Rare
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - Other - Fingerless Silk Gloves - Rare
+    BaseType "Fingerless Silk Gloves"
+    Rarity = Rare
     SetBorderColor 215 115 210
     PlayAlertSound 2 150
 
