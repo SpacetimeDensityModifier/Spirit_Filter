@@ -744,7 +744,7 @@ Show
     SetFontSize 38
     PlayAlertSound 7 150
 
-# Section: 4d. Jewelry
+# Section: 4d. Accessories
 
 # Check for good implicits for Lead to Gold crafting
 Show
@@ -838,7 +838,15 @@ Show # Gems - Vaal
     BaseType "Vaal"
     SetBorderColor 150 0 0
 
-Show # Recipes - Quality Gems
+Show # Recipes - Quality Gems - Low
+    Quality < 10
+    Class "Active Skill Gems"
+    BaseType "Vaal"
+    SetTextColor 184 218 242
+    SetBorderColor 150 0 0
+
+Show # Recipes - Quality Gems - High
+    Quality >= 10
     Class "Active Skill Gems"
     BaseType "Vaal"
     SetTextColor 184 218 242
@@ -851,7 +859,15 @@ Show # Gems - Drop Only
     BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach"
     SetBorderColor 255 255 255
 
-Show # Recipes - Quality Gems
+Show # Recipes - Quality Gems - Low
+    Quality < 10
+    Class "Gems"
+    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach"
+    SetTextColor 184 218 242
+    SetBorderColor 255 255 255
+
+Show # Recipes - Quality Gems - High
+    Quality >= 10
     Class "Gems"
     BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach"
     SetTextColor 184 218 242
@@ -863,7 +879,14 @@ Show # Gems - Skill
     Class "Active Skill Gems"
     SetBorderColor 27 162 155
 
-Show # Recipes - Quality Gems
+Show # Recipes - Quality Gems - Low
+    Quality < 10
+    Class "Active Skill Gems"
+    SetTextColor 184 218 242
+    SetBorderColor 27 162 155
+
+Show # Recipes - Quality Gems - High
+    Quality >= 10
     Class "Active Skill Gems"
     SetTextColor 184 218 242
     SetBorderColor 27 162 155
@@ -874,7 +897,14 @@ Show # Gems - Support
     Class "Support Skill Gems"
     SetBorderColor 0 100 150 200
 
-Show # Recipes - Quality Gems
+Show # Recipes - Quality Gems - Low
+    Quality < 10
+    Class "Support Skill Gems"
+    SetTextColor 184 218 242
+    SetBorderColor 0 100 150 200
+
+Show # Recipes - Quality Gems - High
+    Quality >= 10
     Class "Support Skill Gems"
     SetTextColor 184 218 242
     SetBorderColor 0 100 150 200
@@ -1447,14 +1477,6 @@ Hide # Show bad flask drops
     SetBackgroundColor 0 0 0 150
 
 # Section: 11. Obsolete Gear
-
-#Disabled Block Start
-#Hide # Obsolete - Magic Weapons in Maps
-#    Class "Axes" "Bows" "Claws" "Daggers" "Maces" "Sceptres" "Staves" "Swords" "Wands"
-#    Rarity = Magic
-#    ItemLevel >= 70
-#    ItemLevel <= 82
-#Disabled Block End
 
 Hide # Obsolete - By Prisoner's Gate Normal
     DropLevel <= 5
