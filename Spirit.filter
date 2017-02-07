@@ -1,7 +1,15 @@
 ﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
 # Scroll all the way to the bottom for a quick tutorial (best if this is opened in Filtration).
 
+# Section: 0. Index
+
 # Section: 1. Chance Bases
+
+Show # Chance Bases - Abberath's Hooves
+    Corrupted False
+    BaseType "Goathide Boots"
+    Rarity = Normal
+    SetBorderColor 224 109 73
 
 Show # Chance Bases - Headhunter
     Corrupted False
@@ -606,6 +614,13 @@ Show
     PlayAlertSound 8 300
 
 Show
+    BaseType "Unshaping Orb" "Cartographer's Seal"
+    SetBackgroundColor 60 10 80
+    SetBorderColor 134 48 219
+    SetFontSize 40
+    PlayAlertSound 8 300
+
+Show
     Class "Map"
     BaseType "Shaped"
     SetBackgroundColor 60 10 80
@@ -1082,18 +1097,21 @@ Show
     BaseType "Splinter of Esh" "Blessing of Esh" "Esh's Breachstone"
     SetBackgroundColor 0 40 100
     SetBorderColor 74 74 232
+    SetFontSize 36
     PlayAlertSound 1 300
 
 Show
     BaseType "Splinter of Uul-Netol" "Blessing of Uul-Netol" "Uul-Netol's Breachstone"
     SetBackgroundColor 60 60 60
     SetBorderColor 0 0 0
+    SetFontSize 38
     PlayAlertSound 1 300
 
 Show
     BaseType "Splinter of Chayula" "Blessing of Chayula" "Chayula's Breachstone"
     SetBackgroundColor 80 0 120
     SetBorderColor 147 29 168
+    SetFontSize 42
     PlayAlertSound 1 300
 
 Show
@@ -1142,7 +1160,7 @@ Show
 
 # Ultra
 Show
-    BaseType "Sapphire Flask" "Topaz Flask" "Silver Flask" "Stibnite Flask" "Cutlass" "Jewelled Foil" "Prophecy Wand" "Slaughter Knife" "Karui Sceptre" "Jasper Chopper" "Siege Axe" "Sorcerer Boots" "Occultist's Vestment" "Crusader Boots" "Glorious Plate" "Gladiator Plate" "Deicide Mask" "Assassin's Garb" "Ezomyte Burgonet" "Vaal Regalia" "Rawhide Boots" "Citrine Amulet"
+    BaseType "Stibnite Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask" "Void Axe" "Prophecy Wand" "Jewelled Foil" "Sorcerer Boots" "Occultist's Vestment" "Crusader Boots" "Clasped Mitts" "Rawhide Boots" "Ezomyte Tower Shield" "Deicide Mask" "Glorious Plate" "Cutlass" "Ezomyte Burgonet" "Assassin's Garb"
     Rarity = Unique
     SetTextColor 175 96 37
     SetBackgroundColor 255 255 255
@@ -1152,20 +1170,11 @@ Show
 
 # Super
 Show
-    BaseType "Granite Flask" "Vaal Axe" "Vaal Sceptre" "Void Axe" "Fiend Dagger" "Imperial Staff" "Judgement Staff" "Midnight Blade" "Eternal Sword" "Imperial Skean" "Ebony Tower Shield" "Sacrificial Garb" "Ezomyte Tower Shield" "Vaal Regalia" "Titanium Spirit Shield" "Full Wyrmscale" "Varnished Coat" "Nightmare Bascinet" "Champion Kite Shield" "Ursine Pelt" "Penetrating Arrow Quiver" "Hubris Circlet" "Corrugated Buckler" "Deerskin Gloves" "Savant's Robe" "Two-Stone Ring" "Onyx Amulet" "Vanguard Belt" "Gold Ring"
+    BaseType "Granite Flask" "Grand Mana Flask" "Jasper Chopper" "Fiend Dagger" "Jingling Spirit Shield" "Imperial Staff" "Carnal Sceptre" "Labrys" "Siege Axe" "Sage Wand" "Abyssal Axe" "Savant's Robe" "Penetrating Arrow Quiver" "Cedar Tower Shield" "Gladiator Plate" "Vaal Regalia" "Sacrificial Garb" "Archon Kite Shield" "Onyx Amulet" "Two-Stone Ring" "Gold Ring" "Goathide Boots" "Ebony Tower Shield"
     Rarity = Unique
     SetBorderColor 175 96 37
     SetFontSize 42
     PlayAlertSound 4 200
-
-# Fated
-Show
-    BaseType "Iron Ring" "Coral Ring" "Jade Amulet" "Plate Vest" "Ornate Sword" "Scholar Boots" "Iron Staff" "Spiraled Wand" "Sledgehammer" "Long Bow" "Crude Bow" "Royal Bow" "Woodsplitter" "Jade Hatchet" "Painted Buckler" "Plank Kite Shield" "War Buckler" "Gilded Sallet" "Iron Hat" "Vine Circlet" "Goathide Gloves" "Coral Amulet" "Fire Arrow Quiver" "Serrated Arrow Quiver" "Death Bow"
-    Rarity = Unique
-    SetBackgroundColor 0 0 0
-    SetBorderColor 208 32 144
-    SetFontSize 38
-    PlayAlertSound 7 300
 
 # Standard
 Show
@@ -1235,6 +1244,7 @@ Hide # Accessories - Normal - After Act II Normal
 
 # Section: 5. Divination Cards: Tiers from Neversink
 
+# Makes "The Wolf" not highlight both cards.
 Show
     Class "Divination"
     BaseType "The Wolf's Shadow"
@@ -1258,7 +1268,7 @@ Show
 
 Show
     Class "Divination"
-    BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "The Stormcaller" "Glimmer of Hope" "The Tyrant" "The Cursed King" "The Avenger" "The Scavenger" "Lost Worlds" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Watcher" "The Soul" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Hubris" "Jack in the Box" "The Traitor" "Assassin's Favour" "The Battle Born" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched"
+    BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "The Stormcaller" "Glimmer of Hope" "The Tyrant" "The Cursed King" "The Avenger" "The Scavenger" "Lost Worlds" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Watcher" "The Soul" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Hubris" "Jack in the Box" "The Traitor" "Assassin's Favour" "The Battle Born" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched"
     SetBorderColor 136 136 255
     SetFontSize 38
     PlayAlertSound 2 300
@@ -1361,268 +1371,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 157 73 255
 
-# Section: 8. Recipes
-
-Show
-    LinkedSockets = 6
-    SetBackgroundColor 125 10 10 220
-    SetBorderColor 175 96 37
-    SetFontSize 45
-    PlayAlertSound 4 300
-
-Show # Links - Five Link
-    LinkedSockets = 5
-    SetBackgroundColor 54 5 5
-    SetBorderColor 210 0 0
-    SetFontSize 38
-    PlayAlertSound 6 300
-
-Show # Recipes - Six Socket
-    Sockets = 6
-    SetBackgroundColor 0 0 0
-    SetBorderColor 210 0 0
-    PlayAlertSound 2 300
-
-Hide # Recipes - Chromatics - Large - After Act II Cruel
-    SocketGroup "RGB"
-    Height = 4
-    Width = 2
-    Rarity < Unique
-    ItemLevel > 45
-    SetTextColor 0 128 0
-    SetBackgroundColor 0 0 0 140
-    SetBorderColor 0 0 0 0
-
-Show # Recipes - Chromatics - Large - Before Act II Cruel
-    SocketGroup "RGB"
-    Height = 4
-    Width = 2
-    Rarity < Unique
-    ItemLevel <= 45
-    SetTextColor 0 128 0
-    SetBackgroundColor 0 0 0 140
-    SetBorderColor 0 0 0 0
-
-Hide # Recipes - Chromatics - Medium - In Maps
-    SocketGroup "RGB"
-    Height = 3
-    Width = 2
-    Rarity < Unique
-    ItemLevel > 68
-    SetTextColor 0 128 0
-    SetBorderColor 0 0 0 0
-
-Show # Recipes - Chromatics - Medium - Before Maps
-    SocketGroup "RGB"
-    Height = 3
-    Width = 2
-    Rarity < Unique
-    ItemLevel <= 68
-    SetTextColor 0 128 0
-    SetBorderColor 0 0 0 0
-
-Show # Recipes - Chromatics - Thin
-    Sockets < 6
-    SocketGroup "RGB"
-    Height <= 4
-    Width = 1
-    Rarity < Unique
-    SetTextColor 0 128 0
-    SetBackgroundColor 0 0 0 220
-    SetBorderColor 127 127 127
-
-Show # Recipes - Chromatics - Small
-    Sockets < 6
-    SocketGroup "RGB"
-    Height = 2
-    Width = 2
-    Rarity < Unique
-    SetTextColor 0 128 0
-    SetBackgroundColor 0 0 0
-    SetBorderColor 136 136 255
-    PlayAlertSound 9 200
-
-Show # Recipes - Chisel
-    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
-    Rarity = Normal
-    SetBackgroundColor 0 0 0 220
-    SetBorderColor 184 218 242
-
-Show # Recipes - Chisel
-    Quality >= 12
-    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
-    Rarity = Magic
-    SetBackgroundColor 0 0 0 220
-    SetBorderColor 184 218 242
-
-Show # Recipes - Chisel
-    Quality >= 16
-    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
-    Rarity = Rare
-    SetBackgroundColor 0 0 0 220
-    SetBorderColor 184 218 242
-
-Show # Recipes - Quality Items - Low - Very Early
-    LinkedSockets < 4
-    Quality > 0
-    Quality < 15
-    Rarity < Unique
-    ItemLevel < 10
-    SetBackgroundColor 0 0 0 220
-    SetBorderColor 232 198 159 150
-
-Show # Recipes - Quality Items - Low - Early
-    LinkedSockets < 4
-    Quality > 0
-    Quality < 15
-    Rarity < Unique
-    ItemLevel < 25
-    SetBackgroundColor 0 0 0 150
-    SetBorderColor 232 198 159 150
-
-Show # Recipes - Quality Items - High - Early
-    LinkedSockets < 4
-    Quality > 14
-    Quality < 20
-    Rarity < Unique
-    ItemLevel < 30
-    SetBackgroundColor 0 0 0
-    SetBorderColor 232 198 159 190
-
-Show # Recipes - Quality Items - High - Midgame
-    LinkedSockets < 4
-    Quality > 14
-    Quality < 20
-    Rarity < Unique
-    ItemLevel < 50
-    SetBackgroundColor 0 0 0 220
-    SetBorderColor 232 198 159 190
-
-Show # Recipes - Quality Items - Perfect - Before Maps
-    LinkedSockets < 4
-    Quality = 20
-    Rarity = Normal
-    ItemLevel < 68
-    SetBackgroundColor 0 0 0
-    SetBorderColor 232 198 159
-
-Hide # Recipes - Quality Items - Perfect - In Maps
-    LinkedSockets < 4
-    Quality = 20
-    Rarity = Normal
-    SetBackgroundColor 0 0 0
-    SetBorderColor 232 198 159
-
-# Section: 9. Currency
-
-Show
-    Class "Currency"
-    BaseType "Scroll of Wisdom" "Portal Scroll"
-    SetTextColor 127 127 127
-
-Show
-    Class "Currency"
-    BaseType "Armourer's Scrap" "Blacksmith's Whetstone" "Glassblower's Bauble"
-    SetBackgroundColor 33 28 23
-    SetBorderColor 232 198 159
-
-Show
-    Class "Currency"
-    BaseType "Orb of Transmutation" "Orb of Alteration" "Orb of Augmentation" "Transmutation Shard" "Alteration Shard"
-    SetBackgroundColor 14 27 38
-    SetBorderColor 54 100 146
-
-Show
-    Class "Currency"
-    BaseType "Chromatic Orb"
-    SetBackgroundColor 3 23 3
-    SetBorderColor 37 130 66
-    PlayAlertSound 9 200
-
-Show
-    Class "Currency"
-    BaseType "Orb of Chance"
-    SetBackgroundColor 33 16 11
-    SetBorderColor 224 109 73
-
-Show
-    Class "Currency"
-    BaseType "Orb of Alchemy" "Alchemy Shard" "Blessed Orb"
-    SetBackgroundColor 28 24 0
-    SetBorderColor 255 215 0
-    PlayAlertSound 3 100
-
-Show
-    Class "Currency"
-    BaseType "Jeweller's Orb"
-    SetBackgroundColor 23 1 1
-    SetBorderColor 210 0 0
-    PlayAlertSound 3 60
-
-Show
-    Class "Currency"
-    BaseType "Orb of Fusing"
-    SetBackgroundColor 23 1 1
-    SetBorderColor 210 0 0
-    PlayAlertSound 2 150
-
-Show
-    Class "Currency"
-    BaseType "Gemcutter's Prism" "Cartographer's Chisel"
-    SetBackgroundColor 28 34 38
-    SetBorderColor 184 218 242
-    PlayAlertSound 1 150
-
-Show
-    Class "Currency"
-    BaseType "Regal Orb"
-    SetBackgroundColor 4 20 36
-    SetBorderColor 30 144 255
-    PlayAlertSound 1 150
-
-Show
-    Class "Currency"
-    BaseType "Orb of Scouring" "Orb of Regret"
-    SetBackgroundColor 38 38 38
-    SetBorderColor 255 255 255
-    PlayAlertSound 3 120
-
-Show
-    Class "Currency"
-    BaseType "Chaos Orb" "Vaal Orb"
-    SetTextColor 200 20 20
-    SetBackgroundColor 235 233 234
-    SetBorderColor 250 150 167
-    SetFontSize 35
-    PlayAlertSound 6 300
-
-Show
-    Class "Currency"
-    BaseType "Divine Orb"
-    SetTextColor 0 120 0
-    SetBackgroundColor 204 255 222
-    SetBorderColor 0 220 0
-    SetFontSize 37
-    PlayAlertSound 4 200
-
-Show
-    Class "Currency"
-    BaseType "Exalted Orb" "Stacked Deck"
-    SetTextColor 0 20 0
-    SetBackgroundColor 255 255 172
-    SetBorderColor 175 96 37
-    SetFontSize 40
-    PlayAlertSound 4 300
-
-Show
-    BaseType "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Eternal Orb"
-    SetTextColor 175 96 37
-    SetBackgroundColor 255 255 255
-    SetBorderColor 175 96 37
-    SetFontSize 45
-    PlayAlertSound 4 300
-
-# Section: 10. Flasks
+# Section: 8. Flasks
 
 Show
     Quality > 0
@@ -1631,7 +1380,7 @@ Show
     Rarity <= Magic
     ItemLevel < 60
     SetBackgroundColor 0 0 0 200
-    SetBorderColor 232 198 159 150
+    SetBorderColor 184 218 242 154
 
 Show
     Quality >= 15
@@ -1639,7 +1388,7 @@ Show
     Rarity <= Magic
     ItemLevel < 78
     SetBackgroundColor 0 0 0
-    SetBorderColor 232 198 159 223
+    SetBorderColor 184 218 242
 
 Show
     Class "Life Flasks"
@@ -1910,6 +1659,267 @@ Hide # Show bad flask drops
     Class "Flasks"
     SetBackgroundColor 0 0 0 150
 
+# Section: 9. Recipes
+
+Show
+    LinkedSockets = 6
+    SetBackgroundColor 125 10 10 220
+    SetBorderColor 175 96 37
+    SetFontSize 45
+    PlayAlertSound 4 300
+
+Show # Links - Five Link
+    LinkedSockets = 5
+    SetBackgroundColor 54 5 5
+    SetBorderColor 210 0 0
+    SetFontSize 38
+    PlayAlertSound 6 300
+
+Show # Recipes - Six Socket
+    Sockets = 6
+    SetBackgroundColor 0 0 0
+    SetBorderColor 210 0 0
+    PlayAlertSound 2 300
+
+Hide # Recipes - Chromatics - Large - After Act II Cruel
+    SocketGroup "RGB"
+    Height = 4
+    Width = 2
+    Rarity < Unique
+    ItemLevel > 45
+    SetTextColor 0 128 0
+    SetBackgroundColor 0 0 0 140
+    SetBorderColor 0 0 0 0
+
+Show # Recipes - Chromatics - Large - Before Act II Cruel
+    SocketGroup "RGB"
+    Height = 4
+    Width = 2
+    Rarity < Unique
+    ItemLevel <= 45
+    SetTextColor 0 128 0
+    SetBackgroundColor 0 0 0 140
+    SetBorderColor 0 0 0 0
+
+Hide # Recipes - Chromatics - Medium - In Maps
+    SocketGroup "RGB"
+    Height = 3
+    Width = 2
+    Rarity < Unique
+    ItemLevel > 68
+    SetTextColor 0 128 0
+    SetBorderColor 0 0 0 0
+
+Show # Recipes - Chromatics - Medium - Before Maps
+    SocketGroup "RGB"
+    Height = 3
+    Width = 2
+    Rarity < Unique
+    ItemLevel <= 68
+    SetTextColor 0 128 0
+    SetBorderColor 0 0 0 0
+
+Show # Recipes - Chromatics - Thin
+    Sockets < 6
+    SocketGroup "RGB"
+    Height <= 4
+    Width = 1
+    Rarity < Unique
+    SetTextColor 0 128 0
+    SetBackgroundColor 0 0 0 220
+    SetBorderColor 127 127 127
+
+Show # Recipes - Chromatics - Small
+    Sockets < 6
+    SocketGroup "RGB"
+    Height = 2
+    Width = 2
+    Rarity < Unique
+    SetTextColor 0 128 0
+    SetBackgroundColor 0 0 0
+    SetBorderColor 136 136 255
+    PlayAlertSound 9 200
+
+Show # Recipes - Chisel
+    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+    Rarity = Normal
+    SetBackgroundColor 0 0 0 220
+    SetBorderColor 184 218 242
+
+Show # Recipes - Chisel
+    Quality >= 12
+    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+    Rarity = Magic
+    SetBackgroundColor 0 0 0 220
+    SetBorderColor 184 218 242
+
+Show # Recipes - Chisel
+    Quality >= 16
+    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+    Rarity = Rare
+    SetBackgroundColor 0 0 0 220
+    SetBorderColor 184 218 242
+
+Show # Recipes - Quality Items - Low - Very Early
+    LinkedSockets < 4
+    Quality > 0
+    Quality < 15
+    Rarity < Unique
+    ItemLevel < 10
+    SetBackgroundColor 0 0 0 220
+    SetBorderColor 232 198 159 150
+
+Show # Recipes - Quality Items - Low - Early
+    LinkedSockets < 4
+    Quality > 0
+    Quality < 15
+    Rarity < Unique
+    ItemLevel < 25
+    SetBackgroundColor 0 0 0 150
+    SetBorderColor 232 198 159 150
+
+Show # Recipes - Quality Items - High - Early
+    LinkedSockets < 4
+    Quality > 14
+    Quality < 20
+    Rarity < Unique
+    ItemLevel < 30
+    SetBackgroundColor 0 0 0
+    SetBorderColor 232 198 159 190
+
+Show # Recipes - Quality Items - High - Midgame
+    LinkedSockets < 4
+    Quality > 14
+    Quality < 20
+    Rarity < Unique
+    ItemLevel < 50
+    SetBackgroundColor 0 0 0 220
+    SetBorderColor 232 198 159 190
+
+Show # Recipes - Quality Items - Perfect - Before Maps
+    LinkedSockets < 4
+    Quality = 20
+    Rarity = Normal
+    ItemLevel < 68
+    SetBackgroundColor 0 0 0
+    SetBorderColor 232 198 159
+
+Hide # Recipes - Quality Items - Perfect - In Maps
+    LinkedSockets < 4
+    Quality = 20
+    Rarity = Normal
+    SetBackgroundColor 0 0 0
+    SetBorderColor 232 198 159
+
+# Section: 10. Currency
+
+Show # Currency - Scrolls
+    Class "Currency"
+    BaseType "Scroll of Wisdom" "Portal Scroll"
+    SetTextColor 127 127 127
+
+Show # Currency - Scraps and Whetstones
+    Class "Currency"
+    BaseType "Armourer's Scrap" "Blacksmith's Whetstone"
+    SetBackgroundColor 33 28 23
+    SetBorderColor 232 198 159
+
+Show # Currency - Trans, Alts, Augs
+    Class "Currency"
+    BaseType "Orb of Transmutation" "Orb of Alteration" "Orb of Augmentation" "Transmutation Shard" "Alteration Shard"
+    SetBackgroundColor 14 27 38
+    SetBorderColor 54 100 146
+
+Show # Currency - Chromes
+    Class "Currency"
+    BaseType "Chromatic Orb"
+    SetBackgroundColor 3 23 3
+    SetBorderColor 37 130 66
+    PlayAlertSound 9 200
+
+Show # Currency - Chances
+    Class "Currency"
+    BaseType "Orb of Chance"
+    SetBackgroundColor 33 16 11
+    SetBorderColor 224 109 73
+
+Show # Currency - Alchs, Blessed
+    Class "Currency"
+    BaseType "Orb of Alchemy" "Alchemy Shard" "Blessed Orb"
+    SetBackgroundColor 28 24 0
+    SetBorderColor 255 215 0
+    PlayAlertSound 3 100
+
+Show
+    Class "Currency"
+    BaseType "Jeweller's Orb"
+    SetBackgroundColor 23 1 1
+    SetBorderColor 210 0 0
+    PlayAlertSound 3 60
+
+Show
+    Class "Currency"
+    BaseType "Orb of Fusing"
+    SetBackgroundColor 23 1 1
+    SetBorderColor 210 0 0
+    PlayAlertSound 2 150
+
+Show
+    Class "Currency"
+    BaseType "Gemcutter's Prism" "Cartographer's Chisel" "Glassblower's Bauble"
+    SetBackgroundColor 28 34 38
+    SetBorderColor 184 218 242
+    PlayAlertSound 1 150
+
+Show
+    Class "Currency"
+    BaseType "Regal Orb"
+    SetBackgroundColor 4 20 36
+    SetBorderColor 30 144 255
+    PlayAlertSound 1 150
+
+Show
+    Class "Currency"
+    BaseType "Orb of Scouring" "Orb of Regret"
+    SetBackgroundColor 38 38 38
+    SetBorderColor 255 255 255
+    PlayAlertSound 3 120
+
+Show
+    Class "Currency"
+    BaseType "Chaos Orb" "Vaal Orb"
+    SetTextColor 200 20 20
+    SetBackgroundColor 235 233 234
+    SetBorderColor 250 150 167
+    SetFontSize 35
+    PlayAlertSound 6 300
+
+Show
+    Class "Currency"
+    BaseType "Divine Orb"
+    SetTextColor 0 120 0
+    SetBackgroundColor 204 255 222
+    SetBorderColor 0 220 0
+    SetFontSize 37
+    PlayAlertSound 4 200
+
+Show
+    Class "Currency"
+    BaseType "Exalted Orb" "Stacked Deck"
+    SetTextColor 0 20 0
+    SetBackgroundColor 255 255 172
+    SetBorderColor 175 96 37
+    SetFontSize 40
+    PlayAlertSound 4 300
+
+Show
+    BaseType "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Eternal Orb"
+    SetTextColor 175 96 37
+    SetBackgroundColor 255 255 255
+    SetBorderColor 175 96 37
+    SetFontSize 45
+    PlayAlertSound 4 300
+
 # Section: 11. Obsolete Gear
 
 Hide # Obsolete - By Prisoner's Gate Normal
@@ -2024,6 +2034,7 @@ Show # Crafting - Armours - Armour - Tier 1 Mods - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - Armour - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 4
@@ -2046,6 +2057,7 @@ Hide # Crafting - Armours - Armour - Tier 2 Mods - Normal - Unsocketed
     BaseType "Titan Greaves" "Titan Gauntlets" "Eternal Burgonet" "Royal Burgonet"
     Rarity = Normal
     ItemLevel >= 72
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - Armour - Tier 2 Mods - Normal - Linked
     LinkedSockets >= 4
@@ -2067,7 +2079,7 @@ Hide # Crafting - Armours - Armour - Tier 2 Mods - Magic - Unsocketed
     BaseType "Titan Greaves" "Titan Gauntlets" "Eternal Burgonet" "Royal Burgonet"
     Rarity = Magic
     ItemLevel >= 72
-    SetBorderColor 0 0 0 0
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - Armour - Tier 2 Mods - Magic - Linked
     LinkedSockets >= 4
@@ -2090,6 +2102,7 @@ Show # Crafting - Armours - Armour - Tier 1 Mods - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 84
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - Armour - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 3
@@ -2113,7 +2126,7 @@ Show # Crafting - Armours - Armour - Tier 1 Mods - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
-    SetBorderColor 0 0 0 0
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - Armour - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 3
@@ -2136,6 +2149,7 @@ Hide # Crafting - Armours - Armour - Tier 2 Mods - Normal - Unsocketed
     BaseType "Pinnacle Tower Shield" "Colossal Tower Shield" "Astral Plate" "Glorious Plate"
     Rarity = Normal
     ItemLevel >= 73
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - Armour - Tier 2 Mods - Normal - Linked
     LinkedSockets >= 3
@@ -2157,6 +2171,7 @@ Hide # Crafting - Armours - Armour - Tier 2 Mods - Magic - Unsocketed
     BaseType "Pinnacle Tower Shield" "Colossal Tower Shield" "Astral Plate" "Glorious Plate"
     Rarity = Magic
     ItemLevel >= 73
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - Armour - Tier 2 Mods - Magic - Linked
     LinkedSockets >= 3
@@ -2181,6 +2196,7 @@ Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 84
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 4
@@ -2204,6 +2220,7 @@ Show # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 4
@@ -2226,6 +2243,7 @@ Hide # Crafting - Armours - Evasion - Tier 2 Mods - Normal - Unsocketed
     BaseType "Slink Boots" "Slink Gloves" "Lion Pelt"
     Rarity = Normal
     ItemLevel >= 72
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - Evasion - Tier 2 Mods - Normal - Linked
     LinkedSockets >= 4
@@ -2247,6 +2265,7 @@ Hide # Crafting - Armours - Evasion - Tier 2 Mods - Magic - Unsocketed
     BaseType "Slink Boots" "Slink Gloves" "Lion Pelt"
     Rarity = Magic
     ItemLevel >= 72
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - Evasion - Tier 2 Mods - Magic - Linked
     LinkedSockets >= 4
@@ -2269,6 +2288,7 @@ Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 84
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 3
@@ -2292,6 +2312,7 @@ Show # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 3
@@ -2314,6 +2335,7 @@ Hide # Crafting - Armours - Evasion - Tier 2 Mods - Normal - Unsocketed
     BaseType "Imperial Buckler" "Vaal Buckler" "Assassin's Garb" "Zodiac Leather"
     Rarity = Normal
     ItemLevel >= 73
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - Evasion - Tier 2 Mods - Normal - Linked
     LinkedSockets >= 3
@@ -2335,6 +2357,7 @@ Hide # Crafting - Armours - Evasion - Tier 2 Mods - Magic - Unsocketed
     BaseType "Imperial Buckler" "Vaal Buckler" "Assassin's Garb" "Zodiac Leather"
     Rarity = Magic
     ItemLevel >= 73
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - Evasion - Tier 2 Mods - Magic - Linked
     LinkedSockets >= 3
@@ -2359,6 +2382,7 @@ Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 84
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 4
@@ -2382,6 +2406,7 @@ Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 4
@@ -2404,6 +2429,7 @@ Hide # Crafting - Armours - Energy Shield - Tier 2 Mods - Normal - Unsocketed
     BaseType "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Occultist's Vestment"
     Rarity = Normal
     ItemLevel >= 72
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - Energy Shield - Tier 2 Mods - Normal - Linked
     LinkedSockets >= 4
@@ -2425,6 +2451,7 @@ Hide # Crafting - Armours - Energy Shield - Tier 2 Mods - Magic - Unsocketed
     BaseType "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Occultist's Vestment"
     Rarity = Magic
     ItemLevel >= 72
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - Energy Shield - Tier 2 Mods - Magic - Linked
     LinkedSockets >= 4
@@ -2447,6 +2474,7 @@ Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 84
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 3
@@ -2470,6 +2498,7 @@ Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 3
@@ -2492,6 +2521,7 @@ Hide # Crafting - Armours - Energy Shield - Tier 2 Mods - Normal - Unsocketed
     BaseType "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield"
     Rarity = Normal
     ItemLevel >= 72
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - Energy Shield - Tier 2 Mods - Normal - Linked
     LinkedSockets >= 3
@@ -2513,6 +2543,7 @@ Hide # Crafting - Armours - Energy Shield - Tier 2 Mods - Magic - Unsocketed
     BaseType "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield"
     Rarity = Magic
     ItemLevel >= 72
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - Energy Shield - Tier 2 Mods - Magic - Linked
     LinkedSockets >= 3
@@ -2537,6 +2568,7 @@ Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 84
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 4
@@ -2560,6 +2592,7 @@ Show # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 4
@@ -2582,6 +2615,7 @@ Hide # Crafting - Armours - EV/ES - Tier 2 Mods - Normal - Unsocketed
     BaseType "Murder Boots" "Murder Mitts" "Deicide Mask" "Vaal Mask"
     Rarity = Normal
     ItemLevel >= 72
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - EV/ES - Tier 2 Mods - Normal - Linked
     LinkedSockets >= 4
@@ -2603,6 +2637,7 @@ Hide # Crafting - Armours - EV/ES - Tier 2 Mods - Magic - Unsocketed
     BaseType "Murder Boots" "Murder Mitts" "Deicide Mask" "Vaal Mask"
     Rarity = Magic
     ItemLevel >= 72
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - EV/ES - Tier 2 Mods - Magic - Linked
     LinkedSockets >= 4
@@ -2625,6 +2660,7 @@ Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 84
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 3
@@ -2648,6 +2684,7 @@ Show # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 3
@@ -2670,6 +2707,7 @@ Hide # Crafting - Armours - EV/ES - Tier 2 Mods - Normal - Unsocketed
     BaseType "Supreme Spiked Shield" "Carnal Armour" "Sadist Garb"
     Rarity = Normal
     ItemLevel >= 73
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - EV/ES - Tier 2 Mods - Normal - Linked
     LinkedSockets >= 3
@@ -2691,6 +2729,7 @@ Hide # Crafting - Armours - EV/ES - Tier 2 Mods - Magic - Unsocketed
     BaseType "Supreme Spiked Shield" "Carnal Armour" "Sadist Garb"
     Rarity = Magic
     ItemLevel >= 73
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - EV/ES - Tier 2 Mods - Magic - Linked
     LinkedSockets >= 3
@@ -2715,6 +2754,7 @@ Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 84
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 4
@@ -2738,6 +2778,7 @@ Show # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 4
@@ -2760,6 +2801,7 @@ Hide # Crafting - Armours - AR/ES - Tier 2 Mods - Normal - Unsocketed
     BaseType "Crusader Boots" "Crusader Gloves" "Praetor Crown" "Prophet Crown"
     Rarity = Normal
     ItemLevel >= 72
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - AR/ES - Tier 2 Mods - Normal - Linked
     LinkedSockets >= 4
@@ -2781,6 +2823,7 @@ Hide # Crafting - Armours - AR/ES - Tier 2 Mods - Magic - Unsocketed
     BaseType "Crusader Boots" "Crusader Gloves" "Praetor Crown" "Prophet Crown"
     Rarity = Magic
     ItemLevel >= 72
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - AR/ES - Tier 2 Mods - Magic - Linked
     LinkedSockets >= 4
@@ -2803,6 +2846,7 @@ Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 84
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 3
@@ -2826,6 +2870,7 @@ Show # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 3
@@ -2848,6 +2893,7 @@ Hide # Crafting - Armours - AR/ES - Tier 2 Mods - Normal - Unsocketed
     BaseType "Archon Kite Shield" "Champion Kite Shield" "Saintly Chainmail" "Saint's Hauberk"
     Rarity = Normal
     ItemLevel >= 73
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - AR/ES - Tier 2 Mods - Normal - Linked
     LinkedSockets >= 3
@@ -2869,6 +2915,7 @@ Hide # Crafting - Armours - AR/ES - Tier 2 Mods - Magic - Unsocketed
     BaseType "Archon Kite Shield" "Champion Kite Shield" "Saintly Chainmail" "Saint's Hauberk"
     Rarity = Magic
     ItemLevel >= 73
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - AR/ES - Tier 2 Mods - Magic - Linked
     LinkedSockets >= 3
@@ -2893,6 +2940,7 @@ Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 84
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 4
@@ -2916,6 +2964,7 @@ Show # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 4
@@ -2938,6 +2987,7 @@ Hide # Crafting - Armours - AR/EV - Tier 2 Mods - Normal - Unsocketed
     BaseType "Dragonscale Boots" "Dragonscale Gauntlets" "Nightmare Bascinet" "Pig-Faced Bascinet"
     Rarity = Normal
     ItemLevel >= 72
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - AR/EV - Tier 2 Mods - Normal - Linked
     LinkedSockets >= 4
@@ -2959,6 +3009,7 @@ Hide # Crafting - Armours - AR/EV - Tier 2 Mods - Magic - Unsocketed
     BaseType "Dragonscale Boots" "Dragonscale Gauntlets" "Nightmare Bascinet" "Pig-Faced Bascinet"
     Rarity = Magic
     ItemLevel >= 72
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - AR/EV - Tier 2 Mods - Magic - Linked
     LinkedSockets >= 4
@@ -2981,6 +3032,7 @@ Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 84
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 3
@@ -3004,6 +3056,7 @@ Show # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 3
@@ -3026,6 +3079,7 @@ Hide # Crafting - Armours - AR/EV - Tier 2 Mods - Normal - Unsocketed
     BaseType "Elegant Round Shield" "Cardinal Round Shield" "Triumphant Lamellar" "Full Dragonscale"
     Rarity = Normal
     ItemLevel >= 73
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - AR/EV - Tier 2 Mods - Normal - Linked
     LinkedSockets >= 3
@@ -3047,6 +3101,7 @@ Hide # Crafting - Armours - AR/EV - Tier 2 Mods - Magic - Unsocketed
     BaseType "Elegant Round Shield" "Cardinal Round Shield" "Triumphant Lamellar" "Full Dragonscale"
     Rarity = Magic
     ItemLevel >= 73
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Armours - AR/EV - Tier 2 Mods - Magic - Linked
     LinkedSockets >= 3
@@ -3073,6 +3128,7 @@ Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 83
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 3
@@ -3096,6 +3152,7 @@ Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 83
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 3
@@ -3118,6 +3175,7 @@ Hide # Crafting - Weapons - 1H Axes - Ilvl 77+ - Normal - Unsocketed
     BaseType "Runic Hatchet" "Infernal Axe"
     Rarity = Normal
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - 1H Axes - Ilvl 77+ - Normal - Linked
     LinkedSockets >= 3
@@ -3139,6 +3197,7 @@ Hide # Crafting - Weapons - 1H Axes - Ilvl 77+ - Magic - Unsocketed
     BaseType "Runic Hatchet" "Infernal Axe"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - 1H Axes - Ilvl 77+ - Magic - Linked
     LinkedSockets >= 3
@@ -3153,6 +3212,7 @@ Hide # Crafting - Weapons - 1H Axes - Ilvl 77+ - Magic - Socketed
     BaseType "Runic Hatchet" "Infernal Axe"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 # Section: 13b. Generic 1H Swords
 
@@ -3162,6 +3222,7 @@ Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 83
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 3
@@ -3185,6 +3246,7 @@ Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 83
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 3
@@ -3207,6 +3269,7 @@ Hide # Crafting - Weapons - Generic 1H Swords - Ilvl 77+ - Normal - Unsocketed
     BaseType "Tiger Hook" "Midnight Blade" "Eternal Sword"
     Rarity = Normal
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Generic 1H Swords - Ilvl 77+ - Normal - Linked
     LinkedSockets >= 3
@@ -3228,6 +3291,7 @@ Hide # Crafting - Weapons - Generic 1H Swords - Ilvl 77+ - Magic - Unsocketed
     BaseType "Tiger Hook" "Eternal Sword" "Midnight Blade"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Generic 1H Swords - Ilvl 77+ - Magic - Linked
     LinkedSockets >= 3
@@ -3242,6 +3306,7 @@ Hide # Crafting - Weapons - Generic 1H Swords - Ilvl 77+ - Magic - Socketed
     BaseType "Tiger Hook" "Midnight Blade" "Eternal Sword"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 # Section: 13c. 2H Maces
 
@@ -3251,6 +3316,7 @@ Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 83
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 4
@@ -3274,6 +3340,7 @@ Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 83
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 4
@@ -3296,6 +3363,7 @@ Hide # Crafting - Weapons - 2H Maces - Ilvl 77+ - Normal - Unsocketed
     BaseType "Coronal Maul" "Terror Maul" "Piledriver"
     Rarity = Normal
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - 2H Maces - Ilvl 77+ - Normal - Linked
     LinkedSockets >= 4
@@ -3317,6 +3385,7 @@ Hide # Crafting - Weapons - 2H Maces - Ilvl 77+ - Magic - Unsocketed
     BaseType "Coronal Maul" "Terror Maul" "Piledriver"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - 2H Maces - Ilvl 77+ - Magic - Linked
     LinkedSockets >= 4
@@ -3331,6 +3400,7 @@ Hide # Crafting - Weapons - 2H Maces - Ilvl 77+ - Magic - Socketed
     BaseType "Coronal Maul" "Terror Maul" "Piledriver"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 # Section: 13d. Bows
 
@@ -3340,6 +3410,7 @@ Show # Crafting - Weapons - Bows - Ilvl 83+ - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 83
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - Bows - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 4
@@ -3363,6 +3434,7 @@ Show # Crafting - Weapons - Bows - Ilvl 83+ - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 83
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - Bows - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 4
@@ -3385,6 +3457,7 @@ Hide # Crafting - Weapons - Bows - Ilvl 77+ - Normal - Unsocketed
     BaseType "Maraketh Bow" "Imperial Bow" "Thicket Bow" "Harbinger Bow"
     Rarity = Normal
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Bows - Ilvl 77+ - Normal - Linked
     LinkedSockets >= 4
@@ -3406,6 +3479,7 @@ Hide # Crafting - Weapons - Bows - Ilvl 77+ - Magic - Unsocketed
     BaseType "Maraketh Bow" "Thicket Bow" "Imperial Bow" "Harbinger Bow"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Bows - Ilvl 77+ - Magic - Linked
     LinkedSockets >= 4
@@ -3420,6 +3494,7 @@ Hide # Crafting - Weapons - Bows - Ilvl 77+ - Magic - Socketed
     BaseType "Maraketh Bow" "Thicket Bow" "Imperial Bow" "Harbinger Bow"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 # Section: 13e. 1H Thrusting Swords
 
@@ -3429,6 +3504,7 @@ Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 83
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 3
@@ -3452,6 +3528,7 @@ Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 83
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 3
@@ -3474,6 +3551,7 @@ Hide # Crafting - Weapons - 1H Thrusting Swords - Ilvl 77+ - Normal - Unsocketed
     BaseType "Dragoon Sword" "Vaal Rapier" "Jewelled Foil" "Harpy Rapier"
     Rarity = Normal
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - 1H Thrusting Swords - Ilvl 77+ - Normal - Linked
     LinkedSockets >= 3
@@ -3495,6 +3573,7 @@ Hide # Crafting - Weapons - 1H Thrusting Swords - Ilvl 77+ - Magic - Unsocketed
     BaseType "Dragoon Sword" "Jewelled Foil" "Vaal Rapier" "Harpy Rapier"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - 1H Thrusting Swords - Ilvl 77+ - Magic - Linked
     LinkedSockets >= 3
@@ -3509,6 +3588,7 @@ Hide # Crafting - Weapons - 1H Thrusting Swords - Ilvl 77+ - Magic - Socketed
     BaseType "Dragoon Sword" "Harpy Rapier" "Vaal Rapier" "Jewelled Foil"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 # Section: 13f. Daggers
 
@@ -3519,6 +3599,7 @@ Show # Crafting - Weapons - Daggers - Ilvl 84+ - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 84
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - Daggers - Ilvl 84+ - Normal - Linked
     LinkedSockets >= 3
@@ -3545,6 +3626,7 @@ Show # Crafting - Weapons - Daggers - Ilvl 84+ - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - Daggers - Ilvl 84+ - Magic - Linked
     LinkedSockets >= 3
@@ -3570,6 +3652,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Normal - Unsocketed
     BaseType "Sai" "Platinum Kris" "Ambusher" "Demon Dagger"
     Rarity = Normal
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Normal - Linked
     LinkedSockets >= 3
@@ -3594,6 +3677,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Magic - Unsocketed
     BaseType "Sai" "Platinum Kris" "Ambusher" "Demon Dagger"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Magic - Linked
     LinkedSockets >= 3
@@ -3610,6 +3694,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Magic - Socketed
     BaseType "Sai" "Platinum Kris" "Demon Dagger" "Ambusher"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 # Section: 13g. 1H Maces
 
@@ -3619,6 +3704,7 @@ Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 83
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 3
@@ -3642,6 +3728,7 @@ Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 83
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 3
@@ -3664,6 +3751,7 @@ Hide # Crafting - Weapons - 1H Maces - Ilvl 77+ - Normal - Unsocketed
     BaseType "Behemoth Mace" "Nightmare Mace" "Auric Mace"
     Rarity = Normal
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - 1H Maces - Ilvl 77+ - Normal - Linked
     LinkedSockets >= 3
@@ -3685,6 +3773,7 @@ Hide # Crafting - Weapons - 1H Maces - Ilvl 77+ - Magic - Unsocketed
     BaseType "Behemoth Mace" "Nightmare Mace" "Auric Mace"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - 1H Maces - Ilvl 77+ - Magic - Linked
     LinkedSockets >= 3
@@ -3699,6 +3788,7 @@ Hide # Crafting - Weapons - 1H Maces - Ilvl 77+ - Magic - Socketed
     BaseType "Behemoth Mace" "Nightmare Mace" "Auric Mace"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 # Section: 13h. 2H Axes
 
@@ -3708,6 +3798,7 @@ Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 83
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 4
@@ -3731,6 +3822,7 @@ Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 83
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 4
@@ -3753,6 +3845,7 @@ Hide # Crafting - Weapons - 2H Axes - Ilvl 77+ - Normal - Unsocketed
     BaseType "Fleshripper" "Vaal Axe" "Despot Axe"
     Rarity = Normal
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - 2H Axes - Ilvl 77+ - Normal - Linked
     LinkedSockets >= 4
@@ -3774,6 +3867,7 @@ Hide # Crafting - Weapons - 2H Axes - Ilvl 77+ - Magic - Unsocketed
     BaseType "Fleshripper" "Vaal Axe" "Despot Axe"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - 2H Axes - Ilvl 77+ - Magic - Linked
     LinkedSockets >= 4
@@ -3788,6 +3882,7 @@ Hide # Crafting - Weapons - 2H Axes - Ilvl 77+ - Magic - Socketed
     BaseType "Fleshripper" "Vaal Axe" "Despot Axe"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 # Section: 13i. 2H Swords
 
@@ -3797,6 +3892,7 @@ Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 83
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 4
@@ -3820,6 +3916,7 @@ Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 83
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 4
@@ -3842,6 +3939,7 @@ Hide # Crafting - Weapons - 2H Swords - Ilvl 77+ - Normal - Unsocketed
     BaseType "Exquisite Blade" "Infernal Sword"
     Rarity = Normal
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - 2H Swords - Ilvl 77+ - Normal - Linked
     LinkedSockets >= 4
@@ -3863,6 +3961,7 @@ Hide # Crafting - Weapons - 2H Swords - Ilvl 77+ - Magic - Unsocketed
     BaseType "Exquisite Blade" "Infernal Sword"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - 2H Swords - Ilvl 77+ - Magic - Linked
     LinkedSockets >= 4
@@ -3877,6 +3976,7 @@ Hide # Crafting - Weapons - 2H Swords - Ilvl 77+ - Magic - Socketed
     BaseType "Exquisite Blade" "Infernal Sword"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 # Section: 13j. Claws
 
@@ -3886,6 +3986,7 @@ Show # Crafting - Weapons - Claws - Ilvl 83+ - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 83
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - Claws - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 3
@@ -3909,6 +4010,7 @@ Show # Crafting - Weapons - Claws - Ilvl 83+ - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 83
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - Claws - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 3
@@ -3931,6 +4033,7 @@ Hide # Crafting - Weapons - Claws - Ilvl 77+ - Normal - Unsocketed
     BaseType "Gemini Claw" "Terror Claw" "Imperial Claw"
     Rarity = Normal
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Claws - Ilvl 77+ - Normal - Linked
     LinkedSockets >= 3
@@ -3952,6 +4055,7 @@ Hide # Crafting - Weapons - Claws - Ilvl 77+ - Magic - Unsocketed
     BaseType "Gemini Claw" "Terror Claw" "Imperial Claw"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Claws - Ilvl 77+ - Magic - Linked
     LinkedSockets >= 3
@@ -3966,6 +4070,7 @@ Hide # Crafting - Weapons - Claws - Ilvl 77+ - Magic - Socketed
     BaseType "Gemini Claw" "Terror Claw" "Imperial Claw"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 # Section: 13k. Sceptres
 
@@ -3975,6 +4080,7 @@ Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 84
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Normal - Linked
     LinkedSockets >= 3
@@ -3998,6 +4104,7 @@ Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Magic - Linked
     LinkedSockets >= 3
@@ -4020,6 +4127,7 @@ Hide # Crafting - Weapons - Sceptres - Ilvl 77+ - Normal - Unsocketed
     BaseType "Sambar Sceptre" "Opal Sceptre" "Void Sceptre"
     Rarity = Normal
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Sceptres - Ilvl 77+ - Normal - Linked
     LinkedSockets >= 3
@@ -4041,6 +4149,7 @@ Hide # Crafting - Weapons - Sceptres - Ilvl 77+ - Magic - Unsocketed
     BaseType "Sambar Sceptre" "Void Sceptre" "Opal Sceptre"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Sceptres - Ilvl 77+ - Magic - Linked
     LinkedSockets >= 3
@@ -4055,6 +4164,7 @@ Hide # Crafting - Weapons - Sceptres - Ilvl 77+ - Magic - Socketed
     BaseType "Sambar Sceptre" "Opal Sceptre" "Void Sceptre"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 # Section: 13l. Staves
 
@@ -4064,6 +4174,7 @@ Show # Crafting - Weapons - Staves - Ilvl 84+ - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 84
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - Staves - Ilvl 84+ - Normal - Linked
     LinkedSockets >= 4
@@ -4087,6 +4198,7 @@ Show # Crafting - Weapons - Staves - Ilvl 84+ - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - Staves - Ilvl 84+ - Magic - Linked
     LinkedSockets >= 4
@@ -4102,12 +4214,14 @@ Show # Crafting - Weapons - Staves - Ilvl 84+ - Magic - Socketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Staves - Ilvl 77+ - Normal - Unsocketed
     Sockets < 4
     BaseType "Eclipse Staff" "Imperial Staff"
     Rarity = Normal
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Staves - Ilvl 77+ - Normal - Linked
     LinkedSockets >= 4
@@ -4129,6 +4243,7 @@ Hide # Crafting - Weapons - Staves - Ilvl 77+ - Magic - Unsocketed
     BaseType "Eclipse Staff" "Imperial Staff"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Staves - Ilvl 77+ - Magic - Linked
     LinkedSockets >= 4
@@ -4143,6 +4258,7 @@ Hide # Crafting - Weapons - Staves - Ilvl 77+ - Magic - Socketed
     BaseType "Eclipse Staff" "Imperial Staff"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 # Section: 13m. Wands
 
@@ -4152,6 +4268,7 @@ Show # Crafting - Weapons - Wands - Ilvl 84+ - Normal - Unsocketed
     Rarity = Normal
     ItemLevel >= 84
     SetTextColor 255 255 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - Wands - Ilvl 84+ - Normal - Linked
     LinkedSockets >= 3
@@ -4175,6 +4292,7 @@ Show # Crafting - Weapons - Wands - Ilvl 84+ - Magic - Unsocketed
     Rarity = Magic
     ItemLevel >= 84
     SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Show # Crafting - Weapons - Wands - Ilvl 84+ - Magic - Linked
     LinkedSockets >= 3
@@ -4197,6 +4315,7 @@ Hide # Crafting - Weapons - Wands - Ilvl 77+ - Normal - Unsocketed
     BaseType "Profane Wand" "Imbued Wand" "Prophecy Wand"
     Rarity = Normal
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Wands - Ilvl 77+ - Normal - Linked
     LinkedSockets >= 3
@@ -4218,6 +4337,7 @@ Hide # Crafting - Weapons - Wands - Ilvl 77+ - Magic - Unsocketed
     BaseType "Profane Wand" "Prophecy Wand" "Imbued Wand"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Wands - Ilvl 77+ - Magic - Linked
     LinkedSockets >= 3
@@ -4232,10 +4352,13 @@ Hide # Crafting - Weapons - Wands - Ilvl 77+ - Magic - Socketed
     BaseType "Profane Wand" "Prophecy Wand" "Imbued Wand"
     Rarity = Magic
     ItemLevel >= 77
+    SetBorderColor 127 127 127
 
 # Section: 14. Rare Equipment Progression
 
-# Section: 14a. AR Body Armours
+# Section: 14a. AR
+
+# Section: 14a1. AR Body Armours
 
 # Best AR with Implicit
 Show
@@ -4390,7 +4513,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14a1. AR Helmets
+# Section: 14a2. AR Helmets
 
 # Best AR
 Show
@@ -4503,7 +4626,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14a2. AR Gloves
+# Section: 14a3. AR Gloves
 
 # Best AR
 Show
@@ -4585,7 +4708,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14a3. AR Boots
+# Section: 14a4. AR Boots
 
 # Best AR
 Show
@@ -4667,7 +4790,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14a4. AR Shields
+# Section: 14a5. AR Shields
 
 # Best AR Block
 Show
@@ -4822,7 +4945,9 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14b. EV Body Armours
+# Section: 14b. EV
+
+# Section: 14b1. EV Body Armours
 
 # Best EV with Implicit
 Show
@@ -4977,7 +5102,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14b1. EV Helmets
+# Section: 14b2. EV Helmets
 
 # Best EV
 Show
@@ -5066,7 +5191,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14b2. EV Gloves
+# Section: 14b3. EV Gloves
 
 # Best EV
 Show
@@ -5148,7 +5273,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14b3. EV Boots
+# Section: 14b4. EV Boots
 
 # Best EV
 Show
@@ -5230,7 +5355,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14b4. EV Shields
+# Section: 14b5. EV Shields
 
 # Best EV
 Show
@@ -5378,7 +5503,9 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14c. ES Body Armours
+# Section: 14c. ES
+
+# Section: 14c1. ES Body Armours
 
 # Best ES with Implicit
 Show
@@ -5533,7 +5660,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14c1. ES Helmets
+# Section: 14c2. ES Helmets
 
 # Best ES
 Show
@@ -5629,7 +5756,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14c2. ES Gloves
+# Section: 14c3. ES Gloves
 
 # Best ES
 Show
@@ -5711,7 +5838,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14c3. ES Boots
+# Section: 14c4. ES Boots
 
 # Best ES
 Show
@@ -5793,7 +5920,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14c4. ES Shields
+# Section: 14c5. ES Shields
 
 # Best ES Block
 Show
@@ -5958,7 +6085,9 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14d. EV/ES Body Armours
+# Section: 14d. EV/ES
+
+# Section: 14d1. EV/ES Body Armours
 
 # Best ES/EV with Implicit
 Show
@@ -6113,7 +6242,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14d1. EV/ES Helmets
+# Section: 14d2. EV/ES Helmets
 
 # Best ES/EV
 Show
@@ -6226,7 +6355,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14d2. EV/ES Gloves
+# Section: 14d3. EV/ES Gloves
 
 # Best EV/ES
 Show
@@ -6301,7 +6430,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14d3. EV/ES Boots
+# Section: 14d4. EV/ES Boots
 
 # Best EV/ES
 Show
@@ -6383,7 +6512,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14d4. EV/ES Shields
+# Section: 14d5. EV/ES Shields
 
 # Best EV/ES
 Show
@@ -6493,7 +6622,9 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14e. AR/ES Body Armours
+# Section: 14e. AR/ES
+
+# Section: 14e1. AR/ES Body Armours
 
 # Best ES/AR
 Show
@@ -6648,7 +6779,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14e1. AR/ES Helmets
+# Section: 14e2. AR/ES Helmets
 
 # Best ES/AR
 Show
@@ -6754,7 +6885,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14e2. AR/ES Gloves
+# Section: 14e3. AR/ES Gloves
 
 # Best AR/ES
 Show
@@ -6829,7 +6960,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14e3. AR/ES Boots
+# Section: 14e4. AR/ES Boots
 
 # Best AR/ES
 Show
@@ -6904,7 +7035,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14e4. AR/ES Shields
+# Section: 14e5. AR/ES Shields
 
 # Best AR/ES with Implicit
 Show
@@ -7031,7 +7162,9 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14f. AR/EV Body Armours
+# Section: 14f. AR/EV
+
+# Section: 14f1. AR/EV Body Armours
 
 # Best EV/AR
 Show
@@ -7186,7 +7319,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14f1. AR/EV Helmets
+# Section: 14f2. AR/EV Helmets
 
 # Best EV/AR
 Show
@@ -7292,7 +7425,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14f2. AR/EV Gloves
+# Section: 14f3. AR/EV Gloves
 
 # Best AR/EV
 Show
@@ -7367,7 +7500,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14f3. AR/EV Boots
+# Section: 14f4. AR/EV Boots
 
 # Best AR/EV
 Show
@@ -7442,7 +7575,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14f4. AR/EV Shields
+# Section: 14f5. AR/EV Shields
 
 # Best AR/EV with Implicit
 Show
