@@ -42,6 +42,8 @@ Show # Chance Bases - Skyforth
 
 #Disabled Block Start
 #Show # Chance Bases - Kaom's Heart
+#    LinkedSockets < 5
+#    Sockets < 6
 #    Corrupted False
 #    BaseType "Glorious Plate"
 #    Rarity = Normal
@@ -51,6 +53,8 @@ Show # Chance Bases - Skyforth
 
 #Disabled Block Start
 #Show # Chance Bases - Cospri's Will
+#    LinkedSockets < 5
+#    Sockets < 6
 #    Corrupted False
 #    BaseType "Assassin's Garb"
 #    Rarity = Normal
@@ -60,6 +64,8 @@ Show # Chance Bases - Skyforth
 
 #Disabled Block Start
 #Show # Chance Bases - Shavronne's Wrappings
+#    LinkedSockets < 5
+#    Sockets < 6
 #    Corrupted False
 #    BaseType "Occultist's Vestment"
 #    Rarity = Normal
@@ -972,6 +978,8 @@ Hide # Warbands - Mutewind
     SetBorderColor 25 150 90
 
 Hide # Warbands - Renegade
+    LinkedSockets < 5
+    Sockets < 6
     Identified True
     Class "Axe" "Bow" "Claw" "Dagger" "Mace" "Staves" "Sword" "Wand"
     Rarity = Magic
@@ -1199,19 +1207,21 @@ Show
     Rarity = Rare
     ItemLevel >= 84
     SetTextColor 255 215 0
+    SetBorderColor 255 215 0
+    SetFontSize 38
+
+Show
+    Class "Amulets" "Rings" "Belts" "Quivers"
+    Rarity = Rare
+    ItemLevel >= 72
+    SetTextColor 255 215 0
     SetBorderColor 255 255 119
     SetFontSize 36
 
 Show
     Class "Amulets" "Rings" "Belts" "Quivers"
     Rarity = Rare
-    ItemLevel >= 72
     SetBorderColor 255 255 119
-
-Show
-    Class "Amulets" "Rings" "Belts" "Quivers"
-    Rarity = Rare
-    SetBorderColor 136 136 255
 
 Show
     Class "Amulets" "Rings" "Belts" "Quivers"
@@ -1508,6 +1518,12 @@ Show
     ItemLevel <= 70
     SetBorderColor 127 127 127
 
+# I roll and sell them
+Show # Highlight - Certain Flasks
+    BaseType "Eternal Life Flask" "Basalt Flask" "Diamond Flask"
+    SetBackgroundColor 0 0 0
+    SetBorderColor 136 136 255
+
 Show
     DropLevel >= 50
     Class "Life Flasks"
@@ -1648,12 +1664,6 @@ Show
     Class "Utility Flasks"
     ItemLevel <= 60
     SetBorderColor 127 127 127
-
-# I roll and sell them
-Show # Highlight - Certain Flasks
-    BaseType "Eternal Life Flask" "Basalt Flask" "Diamond Flask"
-    SetBackgroundColor 0 0 0
-    SetBorderColor 136 136 255
 
 Hide # Show bad flask drops
     Class "Flasks"
