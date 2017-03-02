@@ -1,7 +1,213 @@
 ﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
 # Scroll all the way to the bottom for a quick tutorial (best if this is opened in Filtration).
-
-# Section: 0. Index
+# =============================================================
+# =============================================================
+# Index
+# =============================================================
+# =============================================================
+# Sections. Ctrl+F "Section: #" without the quotes to go to it.
+# =============================================================
+# 1: Chance Bases
+# 2: Mapping
+# 3: Leagues
+# 4: Vitals
+# 5: Divination Cards
+# 6: Gems
+# 7: Jewels
+# 8: Flasks
+# 9: Recipes
+# 10: Currency
+# 11: Obsolete Gear
+# 12: Endgame Armours
+# 13: Endgame Weapons
+# 14: Rare Equipment Progression
+# 15: Rare Weapon Progression
+# 16: Other Rares
+# 17: Armour Socketing
+# 18: Weapon Socketing
+# 19: Else
+# 20: Tutorial
+# =============================================================
+# =============================================================
+# Detailed Breakdown:
+# =============================================================
+# Section 1. Chance Bases
+# =============================================================
+# =============================================================
+# Section 2. Mapping
+# -------------------------------------------------------------
+# 2a. Warbands Maps
+# 2b. Atziri and Friends
+# 2c. Atlas
+# 2d. Map Progression
+# =============================================================
+# =============================================================
+# Section 3. Leagues
+# -------------------------------------------------------------
+# 3a. Warbands
+# 3b. Talisman
+# 3c. Perandus
+# 3d. Prophecy
+# 3e. Essence
+# 3f. Breach
+# 3g. Legacy
+# =============================================================
+# =============================================================
+# Section 4. Vitals
+# -------------------------------------------------------------
+# 4a. Demigod Items
+# 4b. Misc Quest
+# 4c. Uniques
+# 4d. Accessories
+# =============================================================
+# =============================================================
+# Section 5. Divination Cards
+# =============================================================
+# =============================================================
+# Section 6. Gems
+# =============================================================
+# =============================================================
+# Section 7. Jewels
+# =============================================================
+# =============================================================
+# Section 8. Flasks
+# =============================================================
+# =============================================================
+# Section 9. Recipes
+# =============================================================
+# =============================================================
+# Section 10. Currency
+# =============================================================
+# =============================================================
+# Section 11. Obsolete Gear
+# =============================================================
+# =============================================================
+# Section 12. Endgame Armours
+# -------------------------------------------------------------
+# 12a. Top AR Bases
+# 12b. Top EV Bases
+# 12c. Top ES Bases
+# 12d. Top EV/ES Bases
+# 12e. Top AR/ES Bases
+# 12f. Top AR/EV Bases
+# =============================================================
+# =============================================================
+# Section 13. Endgame Weapons
+# -------------------------------------------------------------
+# 13a. 1H Axes
+# 13b. Generic 1H Swords
+# 13c. 2H Maces
+# 13d. Bows
+# 13e. 1H Thrusting Swords
+# 13f. Daggers
+# 13g. 1H Maces
+# 13h. 2H Axes
+# 13i. 2H Swords
+# 13j. Claws
+# 13k. Sceptres
+# 13l. Staves
+# 13m. Wands
+# =============================================================
+# =============================================================
+# Section 14. Rare Equipment Progression
+# -------------------------------------------------------------
+# 14a. AR
+# 14a1. AR Body Armours
+# 14a2. AR Helmets
+# 14a3. AR Gloves
+# 14a4. AR Boots
+# 14a5. AR Shields
+# -------------------------------------------------------------
+# 14b. EV
+# 14b1. EV Body Armours
+# 14b2. EV Helmets
+# 14b3. EV Gloves
+# 14b4. EV Boots
+# 14b5. EV Shields
+# -------------------------------------------------------------
+# 14c. ES
+# 14c1. ES Body Armours
+# 14c2. ES Helmets
+# 14c3. ES Gloves
+# 14c4. ES Boots
+# 14c5. ES Shields
+# -------------------------------------------------------------
+# 14d. EV/ES
+# 14d1. EV/ES Body Armours
+# 14d2. EV/ES Helmets
+# 14d3. EV/ES Gloves
+# 14d4. EV/ES Boots
+# 14d5. EV/ES Shields
+# -------------------------------------------------------------
+# 14e. AR/ES
+# 14e1. AR/ES Body Armours
+# 14e2. AR/ES Helmets
+# 14e3. AR/ES Gloves
+# 14e4. AR/ES Boots
+# 14e5. AR/ES Shields
+# -------------------------------------------------------------
+# 14f. AR/EV
+# 14f1. AR/EV Body Armours
+# 14f2. AR/EV Helmets
+# 14f3. AR/EV Gloves
+# 14f4. AR/EV Boots
+# 14f5. AR/EV Shields
+# =============================================================
+# =============================================================
+# Section 15. Rare Weapon Progression
+# -------------------------------------------------------------
+# 15a. 1H Axes
+# 15b. Generic 1H Swords
+# 15c. 2H Maces
+# 15d. Bows
+# 15e. 1H Thrusting Swords
+# 15f. Daggers
+# 15g. 1H Maces
+# 15h. 2H Axes
+# 15i. 2H Swords
+# 15j. Claws
+# 15k. Sceptres
+# 15l. Staves
+# 15m. Wands
+# =============================================================
+# =============================================================
+# Section 16. Other Rares
+# =============================================================
+# =============================================================
+# Section 17. Armour Socketing
+# -------------------------------------------------------------
+# 17a. Helmets
+# 17b. Body Armours
+# 17c. Gloves
+# 17d. Boots
+# 17e. Shields
+# =============================================================
+# =============================================================
+# Section 18. Weapon Socketing
+# -------------------------------------------------------------
+# 18a. 1H Axes
+# 18b. Generic 1H Swords
+# 18c. 2H Maces
+# 18d. Bows
+# 18e. 1H Thrusting Swords
+# 18f. Daggers
+# 18g. 1H Maces
+# 18h. 2H Axes
+# 18i. 2H Swords
+# 18j. Claws
+# 18k. Sceptres
+# 18l. Staves
+# =============================================================
+# =============================================================
+# 19. Else
+# =============================================================
+# =============================================================
+# 20. Tutorial
+# -------------------------------------------------------------
+# Open this filter in Filtration to see the relevant borders
+# for different types of items.
+# =============================================================
+# =============================================================
 
 # Section: 1. Chance Bases
 
@@ -62,16 +268,14 @@ Show # Chance Bases - Skyforth
 #    SetBorderColor 224 109 73
 #Disabled Block End
 
-#Disabled Block Start
-#Show # Chance Bases - Shavronne's Wrappings
-#    LinkedSockets < 5
-#    Sockets < 6
-#    Corrupted False
-#    BaseType "Occultist's Vestment"
-#    Rarity = Normal
-#    ItemLevel < 84
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Show # Chance Bases - Shavronne's Wrappings
+    LinkedSockets < 5
+    Sockets < 6
+    Corrupted False
+    BaseType "Occultist's Vestment"
+    Rarity = Normal
+    ItemLevel < 84
+    SetBorderColor 224 109 73
 
 #Disabled Block Start
 #Show # Chance Bases - Heretic's Veil
@@ -82,14 +286,12 @@ Show # Chance Bases - Skyforth
 #    SetBorderColor 224 109 73
 #Disabled Block End
 
-#Disabled Block Start
-#Show # Chance Bases - Varunastra
-#    Corrupted False
-#    BaseType "Vaal Blade"
-#    Rarity = Normal
-#    ItemLevel < 84
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Show # Chance Bases - Varunastra
+    Corrupted False
+    BaseType "Vaal Blade"
+    Rarity = Normal
+    ItemLevel < 84
+    SetBorderColor 224 109 73
 
 #Disabled Block Start
 #Show # Chance Bases - Taste of Hate
@@ -990,8 +1192,30 @@ Hide # Warbands - Renegade
 
 Show
     BaseType "Talisman"
-    SetBackgroundColor 99 64 24
+    Rarity = Normal
+    SetBackgroundColor 77 105 66
+    SetBorderColor 127 127 127
+    SetFontSize 32
+
+Show
+    BaseType "Talisman"
+    Rarity = Magic
+    SetBackgroundColor 77 105 66
+    SetBorderColor 136 136 255
+
+Show
+    BaseType "Talisman"
+    Rarity = Rare
+    SetBackgroundColor 77 105 66
     SetBorderColor 255 255 119
+    SetFontSize 36
+
+Show
+    BaseType "Talisman"
+    Rarity = Unique
+    SetBackgroundColor 77 105 66
+    SetBorderColor 175 96 37
+    SetFontSize 38
 
 # Section: 3c. Perandus
 
@@ -1128,6 +1352,16 @@ Show
     SetBorderColor 215 115 210
     PlayAlertSound 2 150
 
+# Section: 3g. Legacy
+
+Show
+    BaseType "Leaguestone" "Reliquary"
+    SetTextColor 0 0 0
+    SetBackgroundColor 175 96 37
+    SetBorderColor 229 160 12
+    SetFontSize 38
+    PlayAlertSound 5 220
+
 # Section: 4. Vitals
 
 # Section: 4a. Demigod Items
@@ -1152,7 +1386,7 @@ Show
 Show
     Class "Quest Items"
     SetTextColor 74 230 58
-    SetFontSize 40
+    SetFontSize 38
 
 # Section: 4c. Uniques: Tiers from Neversink
 
@@ -1208,7 +1442,7 @@ Show
     ItemLevel >= 84
     SetTextColor 255 215 0
     SetBorderColor 255 215 0
-    SetFontSize 38
+    SetFontSize 40
 
 Show
     Class "Amulets" "Rings" "Belts" "Quivers"
@@ -1216,18 +1450,20 @@ Show
     ItemLevel >= 72
     SetTextColor 255 215 0
     SetBorderColor 255 255 119
-    SetFontSize 36
+    SetFontSize 38
 
 Show
     Class "Amulets" "Rings" "Belts" "Quivers"
     Rarity = Rare
     SetBorderColor 255 255 119
+    SetFontSize 36
 
 Show
     Class "Amulets" "Rings" "Belts" "Quivers"
     Rarity = Magic
     ItemLevel < 35
     SetBorderColor 136 136 255
+    SetFontSize 36
 
 Hide # Accessories - Magic - After Act IV Normal
     Class "Amulets" "Rings" "Belts" "Quivers"
@@ -1240,17 +1476,20 @@ Show
     Rarity = Normal
     ItemLevel < 10
     SetBorderColor 136 136 255
+    SetFontSize 36
 
 Show
     Class "Amulets" "Rings" "Belts" "Quivers"
     Rarity = Normal
     ItemLevel < 20
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Hide # Accessories - Normal - After Act II Normal
     Class "Amulets" "Rings" "Belts" "Quivers"
     Rarity = Normal
     ItemLevel >= 20
+    SetFontSize 32
 
 # Section: 5. Divination Cards: Tiers from Neversink
 
@@ -1774,7 +2013,7 @@ Show # Recipes - Quality Items - Low - Very Early
     LinkedSockets < 4
     Quality > 0
     Quality < 15
-    Rarity < Unique
+    Rarity < Rare
     ItemLevel < 10
     SetBackgroundColor 0 0 0 220
     SetBorderColor 232 198 159 150
@@ -1783,7 +2022,7 @@ Show # Recipes - Quality Items - Low - Early
     LinkedSockets < 4
     Quality > 0
     Quality < 15
-    Rarity < Unique
+    Rarity < Rare
     ItemLevel < 25
     SetBackgroundColor 0 0 0 150
     SetBorderColor 232 198 159 150
@@ -1825,7 +2064,7 @@ Hide # Recipes - Quality Items - Perfect - In Maps
 
 Show # Currency - Scrolls
     Class "Currency"
-    BaseType "Scroll of Wisdom" "Portal Scroll"
+    BaseType "Scroll of Wisdom" "Portal Scroll" "Scroll Fragment"
     SetTextColor 127 127 127
 
 Show # Currency - Scraps and Whetstones
@@ -1852,6 +2091,7 @@ Show # Currency - Chances
     BaseType "Orb of Chance"
     SetBackgroundColor 33 16 11
     SetBorderColor 224 109 73
+    PlayAlertSound 3 150
 
 Show # Currency - Alchs, Blessed
     Class "Currency"
@@ -1923,7 +2163,7 @@ Show
     PlayAlertSound 4 300
 
 Show
-    BaseType "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Eternal Orb"
+    BaseType "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Eternal Orb" "Imprint"
     SetTextColor 175 96 37
     SetBackgroundColor 255 255 255
     SetBorderColor 175 96 37
@@ -11486,7 +11726,7 @@ Hide
 # This means I screwed up somewhere. Please tell me in the thread what highlighted in this way so I can fix it.  I need Rarity, Base Type, Sockets/Links, Item Level, and anything else that might be relevant.
 Show
     SetTextColor 210 0 0
-    SetBackgroundColor 255 255 255
+    SetBackgroundColor 255 192 203
     SetFontSize 45
 
 # Section: 20. Tutorial
