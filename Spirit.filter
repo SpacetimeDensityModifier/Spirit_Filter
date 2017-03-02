@@ -1191,6 +1191,7 @@ Hide # Warbands - Renegade
 # Section: 3b. Talisman
 
 Show
+    Class Amulet
     BaseType "Talisman"
     Rarity = Normal
     SetBackgroundColor 77 105 66
@@ -1198,12 +1199,14 @@ Show
     SetFontSize 32
 
 Show
+    Class Amulet
     BaseType "Talisman"
     Rarity = Magic
     SetBackgroundColor 77 105 66
     SetBorderColor 136 136 255
 
 Show
+    Class Amulet
     BaseType "Talisman"
     Rarity = Rare
     SetBackgroundColor 77 105 66
@@ -1211,6 +1214,7 @@ Show
     SetFontSize 36
 
 Show
+    Class Amulet
     BaseType "Talisman"
     Rarity = Unique
     SetBackgroundColor 77 105 66
