@@ -6,7 +6,7 @@
 # =============================================================
 # =============================================================
 # Sections. Ctrl+F "Section: #" without the quotes to go to it.
-# =============================================================
+# -------------------------------------------------------------
 # 1: Chance Bases
 # 2: Mapping
 # 3: Leagues
@@ -17,16 +17,17 @@
 # 8: Flasks
 # 9: Recipes
 # 10: Currency
-# 11: Obsolete Gear
-# 12: Endgame Armours
-# 13: Endgame Weapons
-# 14: Rare Equipment Progression
-# 15: Rare Weapon Progression
-# 16: Other Rares
-# 17: Armour Socketing
-# 18: Weapon Socketing
-# 19: Else
-# 20: Tutorial
+# 11: Animate Weapon
+# 12: Obsolete Gear
+# 13: Endgame Armours
+# 14: Endgame Weapons
+# 15: Rare Equipment Progression
+# 16: Rare Weapon Progression
+# 17: Other Rares
+# 18: Armour Socketing
+# 19: Weapon Socketing
+# 20: Else
+# 21: Tutorial
 # =============================================================
 # =============================================================
 # Detailed Breakdown:
@@ -79,130 +80,133 @@
 # Section 10. Currency
 # =============================================================
 # =============================================================
-# Section 11. Obsolete Gear
+# Section 11. Animate Weapon
 # =============================================================
 # =============================================================
-# Section 12. Endgame Armours
+# Section 12. Obsolete Gear
+# =============================================================
+# =============================================================
+# Section 13. Endgame Armours
 # -------------------------------------------------------------
-# 12a. Top AR Bases
-# 12b. Top EV Bases
-# 12c. Top ES Bases
-# 12d. Top EV/ES Bases
-# 12e. Top AR/ES Bases
-# 12f. Top AR/EV Bases
+# 13a. Top AR Bases
+# 13b. Top EV Bases
+# 13c. Top ES Bases
+# 13d. Top EV/ES Bases
+# 13e. Top AR/ES Bases
+# 13f. Top AR/EV Bases
 # =============================================================
 # =============================================================
-# Section 13. Endgame Weapons
+# Section 14. Endgame Weapons
 # -------------------------------------------------------------
-# 13a. 1H Axes
-# 13b. Generic 1H Swords
-# 13c. 2H Maces
-# 13d. Bows
-# 13e. 1H Thrusting Swords
-# 13f. Daggers
-# 13g. 1H Maces
-# 13h. 2H Axes
-# 13i. 2H Swords
-# 13j. Claws
-# 13k. Sceptres
-# 13l. Staves
-# 13m. Wands
+# 14a. 1H Axes
+# 14b. Generic 1H Swords
+# 14c. 2H Maces
+# 14d. Bows
+# 14e. 1H Thrusting Swords
+# 14f. Daggers
+# 14g. 1H Maces
+# 14h. 2H Axes
+# 14i. 2H Swords
+# 14j. Claws
+# 14k. Sceptres
+# 14l. Staves
+# 134. Wands
 # =============================================================
 # =============================================================
-# Section 14. Rare Equipment Progression
+# Section 15. Rare Equipment Progression
 # -------------------------------------------------------------
-# 14a. AR
-# 14a1. AR Body Armours
-# 14a2. AR Helmets
-# 14a3. AR Gloves
-# 14a4. AR Boots
-# 14a5. AR Shields
+# 15a. AR
+# 15a1. AR Body Armours
+# 15a2. AR Helmets
+# 15a3. AR Gloves
+# 15a4. AR Boots
+# 15a5. AR Shields
 # -------------------------------------------------------------
-# 14b. EV
-# 14b1. EV Body Armours
-# 14b2. EV Helmets
-# 14b3. EV Gloves
-# 14b4. EV Boots
-# 14b5. EV Shields
+# 15b. EV
+# 15b1. EV Body Armours
+# 15b2. EV Helmets
+# 15b3. EV Gloves
+# 15b4. EV Boots
+# 15b5. EV Shields
 # -------------------------------------------------------------
-# 14c. ES
-# 14c1. ES Body Armours
-# 14c2. ES Helmets
-# 14c3. ES Gloves
-# 14c4. ES Boots
-# 14c5. ES Shields
+# 15c. ES
+# 15c1. ES Body Armours
+# 15c2. ES Helmets
+# 15c3. ES Gloves
+# 15c4. ES Boots
+# 15c5. ES Shields
 # -------------------------------------------------------------
-# 14d. EV/ES
-# 14d1. EV/ES Body Armours
-# 14d2. EV/ES Helmets
-# 14d3. EV/ES Gloves
-# 14d4. EV/ES Boots
-# 14d5. EV/ES Shields
+# 15d. EV/ES
+# 15d1. EV/ES Body Armours
+# 15d2. EV/ES Helmets
+# 15d3. EV/ES Gloves
+# 15d4. EV/ES Boots
+# 15d5. EV/ES Shields
 # -------------------------------------------------------------
-# 14e. AR/ES
-# 14e1. AR/ES Body Armours
-# 14e2. AR/ES Helmets
-# 14e3. AR/ES Gloves
-# 14e4. AR/ES Boots
-# 14e5. AR/ES Shields
+# 15e. AR/ES
+# 15e1. AR/ES Body Armours
+# 15e2. AR/ES Helmets
+# 15e3. AR/ES Gloves
+# 15e4. AR/ES Boots
+# 15e5. AR/ES Shields
 # -------------------------------------------------------------
-# 14f. AR/EV
-# 14f1. AR/EV Body Armours
-# 14f2. AR/EV Helmets
-# 14f3. AR/EV Gloves
-# 14f4. AR/EV Boots
-# 14f5. AR/EV Shields
+# 15f. AR/EV
+# 15f1. AR/EV Body Armours
+# 15f2. AR/EV Helmets
+# 15f3. AR/EV Gloves
+# 15f4. AR/EV Boots
+# 15f5. AR/EV Shields
 # =============================================================
 # =============================================================
-# Section 15. Rare Weapon Progression
+# Section 16. Rare Weapon Progression
 # -------------------------------------------------------------
-# 15a. 1H Axes
-# 15b. Generic 1H Swords
-# 15c. 2H Maces
-# 15d. Bows
-# 15e. 1H Thrusting Swords
-# 15f. Daggers
-# 15g. 1H Maces
-# 15h. 2H Axes
-# 15i. 2H Swords
-# 15j. Claws
-# 15k. Sceptres
-# 15l. Staves
-# 15m. Wands
+# 16a. 1H Axes
+# 16b. Generic 1H Swords
+# 16c. 2H Maces
+# 16d. Bows
+# 16e. 1H Thrusting Swords
+# 16f. Daggers
+# 16g. 1H Maces
+# 16h. 2H Axes
+# 16i. 2H Swords
+# 16j. Claws
+# 16k. Sceptres
+# 16l. Staves
+# 16m. Wands
 # =============================================================
 # =============================================================
-# Section 16. Other Rares
+# Section 17. Other Rares
 # =============================================================
 # =============================================================
-# Section 17. Armour Socketing
+# Section 18. Armour Socketing
 # -------------------------------------------------------------
-# 17a. Helmets
-# 17b. Body Armours
-# 17c. Gloves
-# 17d. Boots
-# 17e. Shields
+# 18a. Helmets
+# 18b. Body Armours
+# 18c. Gloves
+# 18d. Boots
+# 18e. Shields
 # =============================================================
 # =============================================================
-# Section 18. Weapon Socketing
+# Section 19. Weapon Socketing
 # -------------------------------------------------------------
-# 18a. 1H Axes
-# 18b. Generic 1H Swords
-# 18c. 2H Maces
-# 18d. Bows
-# 18e. 1H Thrusting Swords
-# 18f. Daggers
-# 18g. 1H Maces
-# 18h. 2H Axes
-# 18i. 2H Swords
-# 18j. Claws
-# 18k. Sceptres
-# 18l. Staves
+# 19a. 1H Axes
+# 19b. Generic 1H Swords
+# 19c. 2H Maces
+# 19d. Bows
+# 19e. 1H Thrusting Swords
+# 19f. Daggers
+# 19g. 1H Maces
+# 19h. 2H Axes
+# 19i. 2H Swords
+# 19j. Claws
+# 19k. Sceptres
+# 19l. Staves
 # =============================================================
 # =============================================================
-# 19. Else
+# 20. Else
 # =============================================================
 # =============================================================
-# 20. Tutorial
+# 21. Tutorial
 # -------------------------------------------------------------
 # Open this filter in Filtration to see the relevant borders
 # for different types of items.
@@ -850,7 +854,7 @@ Show # Outdated Maps - White - Tier 1
     DropLevel = 58
     Class "Map"
     ItemLevel >= 73
-    SetBackgroundColor 64 63 63
+    SetBackgroundColor 64 63 63 160
     SetBorderColor 255 255 255
     SetFontSize 24
 
@@ -858,7 +862,7 @@ Show
     DropLevel = 58
     Class "Map"
     ItemLevel >= 71
-    SetBackgroundColor 64 62 62
+    SetBackgroundColor 64 62 62 200
     SetBorderColor 255 255 255
     SetFontSize 30
 
@@ -872,7 +876,7 @@ Show # Outdated Maps - White - Tier 2
     DropLevel = 69
     Class "Map"
     ItemLevel >= 74
-    SetBackgroundColor 50 50 50
+    SetBackgroundColor 50 50 50 160
     SetBorderColor 255 255 255
     SetFontSize 24
 
@@ -880,7 +884,7 @@ Show
     DropLevel = 69
     Class "Map"
     ItemLevel >= 72
-    SetBackgroundColor 50 50 50
+    SetBackgroundColor 50 50 50 200
     SetBorderColor 255 255 255
     SetFontSize 30
 
@@ -894,7 +898,7 @@ Show # Outdated Maps - White - Tier 3
     DropLevel = 70
     Class "Map"
     ItemLevel >= 75
-    SetBackgroundColor 50 50 50
+    SetBackgroundColor 50 50 50 160
     SetBorderColor 255 255 255
     SetFontSize 24
 
@@ -902,7 +906,7 @@ Show
     DropLevel = 70
     Class "Map"
     ItemLevel >= 73
-    SetBackgroundColor 50 50 50
+    SetBackgroundColor 50 50 50 200
     SetBorderColor 255 255 255
     SetFontSize 30
 
@@ -916,7 +920,7 @@ Show # Outdated Maps - White - Tier 4
     DropLevel = 71
     Class "Map"
     ItemLevel >= 76
-    SetBackgroundColor 50 50 50
+    SetBackgroundColor 50 50 50 160
     SetBorderColor 255 255 255
     SetFontSize 24
 
@@ -924,7 +928,7 @@ Show
     DropLevel = 71
     Class "Map"
     ItemLevel >= 74
-    SetBackgroundColor 50 50 50
+    SetBackgroundColor 50 50 50 200
     SetBorderColor 255 255 255
     SetFontSize 30
 
@@ -938,7 +942,7 @@ Show # Outdated Maps - White - Tier 5
     DropLevel = 72
     Class "Map"
     ItemLevel >= 77
-    SetBackgroundColor 50 50 50
+    SetBackgroundColor 50 50 50 160
     SetBorderColor 255 255 255
     SetFontSize 24
 
@@ -946,7 +950,7 @@ Show
     DropLevel = 72
     Class "Map"
     ItemLevel >= 75
-    SetBackgroundColor 50 50 50
+    SetBackgroundColor 50 50 50 200
     SetBorderColor 255 255 255
     SetFontSize 30
 
@@ -960,7 +964,7 @@ Show # Outdated Maps - Yellow - Tier 6
     DropLevel = 73
     Class "Map"
     ItemLevel >= 78
-    SetBackgroundColor 60 60 0
+    SetBackgroundColor 60 60 0 200
     SetBorderColor 255 255 0
     SetFontSize 26
 
@@ -983,7 +987,7 @@ Show # Outdated Maps - Yellow - Tier 7
     DropLevel = 74
     Class "Map"
     ItemLevel >= 79
-    SetBackgroundColor 60 60 0
+    SetBackgroundColor 60 60 0 200
     SetBorderColor 255 255 0
     SetFontSize 26
 
@@ -1006,7 +1010,7 @@ Show # Outdated Maps - Yellow - Tier 8
     DropLevel = 75
     Class "Map"
     ItemLevel >= 80
-    SetBackgroundColor 60 60 0
+    SetBackgroundColor 60 60 0 200
     SetBorderColor 255 255 0
     SetFontSize 26
 
@@ -1029,7 +1033,7 @@ Show # Outdated Maps - Yellow - Tier 9
     DropLevel = 76
     Class "Map"
     ItemLevel >= 81
-    SetBackgroundColor 60 60 0
+    SetBackgroundColor 60 60 0 200
     SetBorderColor 255 255 0
     SetFontSize 26
 
@@ -1052,7 +1056,7 @@ Show # Outdated Maps - Yellow - Tier 10
     DropLevel = 77
     Class "Map"
     ItemLevel >= 82
-    SetBackgroundColor 60 60 0
+    SetBackgroundColor 60 60 0 200
     SetBorderColor 255 255 0
     SetFontSize 26
 
@@ -1191,35 +1195,41 @@ Hide # Warbands - Renegade
 # Section: 3b. Talisman
 
 Show
-    Class Amulet
-    BaseType "Talisman"
-    Rarity = Normal
+    BaseType "Greatwolf Talisman"
     SetBackgroundColor 77 105 66
-    SetBorderColor 127 127 127
-    SetFontSize 32
+    SetBorderColor 175 96 37
+    SetFontSize 42
 
 Show
-    Class Amulet
-    BaseType "Talisman"
-    Rarity = Magic
-    SetBackgroundColor 77 105 66
-    SetBorderColor 136 136 255
-
-Show
-    Class Amulet
-    BaseType "Talisman"
-    Rarity = Rare
+    BaseType "Longtooth Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Rotfeather Talisman" "Spinefuse Talisman" "Three Hands Talisman" "Three Rat Talisman"
+    Rarity >= Rare
     SetBackgroundColor 77 105 66
     SetBorderColor 255 255 119
+    SetFontSize 40
+
+Show
+    BaseType "Longtooth Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Rotfeather Talisman" "Spinefuse Talisman" "Three Hands Talisman" "Three Rat Talisman"
+    SetBackgroundColor 77 105 66
+    SetBorderColor 136 136 255
     SetFontSize 36
 
 Show
-    Class Amulet
-    BaseType "Talisman"
-    Rarity = Unique
+    BaseType "Avian Twins Talisman" "Clutching Talisman" "Fangjaw Talisman" "Hexclaw Talisman" "Horned Talisman" "Primal Skull Talisman" "Splitnewt Talisman" "Wereclaw Talisman"
+    Rarity >= Rare
     SetBackgroundColor 77 105 66
-    SetBorderColor 175 96 37
+    SetBorderColor 136 136 255
     SetFontSize 38
+
+Show
+    BaseType "Avian Twins Talisman" "Clutching Talisman" "Fangjaw Talisman" "Hexclaw Talisman" "Horned Talisman" "Primal Skull Talisman" "Splitnewt Talisman" "Wereclaw Talisman"
+    SetBackgroundColor 77 105 66
+    SetBorderColor 127 127 127
+
+Show
+    BaseType "Ashscale Talisman" "Black Maw Talisman" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Deadhand Talisman" "Deep One Talisman" "Lone Antler Talisman" "Mandible Talisman" "Rot Head Talisman" "Undying Flesh Talisman" "Writhing Talisman"
+    SetBackgroundColor 77 105 66
+    SetBorderColor 127 127 127
+    SetFontSize 30
 
 # Section: 3c. Perandus
 
@@ -1406,7 +1416,7 @@ Show
 
 # Ultra
 Show
-    BaseType "Stibnite Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask" "Void Axe" "Prophecy Wand" "Jewelled Foil" "Sorcerer Boots" "Occultist's Vestment" "Crusader Boots" "Clasped Mitts" "Rawhide Boots" "Ezomyte Tower Shield" "Deicide Mask" "Glorious Plate" "Cutlass" "Ezomyte Burgonet" "Assassin's Garb"
+    BaseType "Stibnite Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask" "Void Axe" "Prophecy Wand" "Jewelled Foil" "Sorcerer Boots" "Occultist's Vestment" "Crusader Boots" "Clasped Mitts" "Rawhide Boots" "Ezomyte Tower Shield" "Deicide Mask" "Glorious Plate" "Cutlass" "Ezomyte Burgonet" "Assassin's Garb" "Royal Axe" 
     Rarity = Unique
     SetTextColor 175 96 37
     SetBackgroundColor 255 255 255
@@ -1416,7 +1426,7 @@ Show
 
 # Super
 Show
-    BaseType "Granite Flask" "Grand Mana Flask" "Jasper Chopper" "Fiend Dagger" "Jingling Spirit Shield" "Imperial Staff" "Carnal Sceptre" "Labrys" "Siege Axe" "Sage Wand" "Abyssal Axe" "Savant's Robe" "Penetrating Arrow Quiver" "Cedar Tower Shield" "Gladiator Plate" "Vaal Regalia" "Sacrificial Garb" "Archon Kite Shield" "Onyx Amulet" "Two-Stone Ring" "Gold Ring" "Goathide Boots" "Ebony Tower Shield"
+    BaseType "Blinder" "Granite Flask" "Grand Mana Flask" "Jasper Chopper" "Fiend Dagger" "Jingling Spirit Shield" "Imperial Staff" "Carnal Sceptre" "Labrys" "Siege Axe" "Abyssal Axe" "Savant's Robe" "Penetrating Arrow Quiver" "Cedar Tower Shield" "Gladiator Plate" "Vaal Regalia" "Sacrificial Garb" "Archon Kite Shield" "Onyx Amulet" "Two-Stone Ring" "Gold Ring" "Goathide Boots" "Ebony Tower Shield" "Blinder" "Ritual Sceptre" "Judgement Staff" "Vaal Sceptre" "Legion Gloves" "Raven Mask" "Champion Kite Shield" "Ironscale Gauntlets" "Murder Boots" "Ancient Greaves" "Sharkskin Tunic" "Elegant Ringmail" "Saintly Chainmail" "Tiger Sword"
     Rarity = Unique
     SetBorderColor 175 96 37
     SetFontSize 42
@@ -1505,33 +1515,38 @@ Show
     SetFontSize 36
     PlayAlertSound 9 300
 
-Show
+# Ultra
+Show 
     Class "Divination"
     BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Formless Sea" "The Brittle Emperor" "The Immortal" "The Artist" "The Thaumaturgist" "Wealth and Power" "The Demoness" "Pride Before the Fall" "The Enlightened" "Heterochromia" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "The Porcupine" "Spark and the Flame"
     SetBorderColor 175 96 37
     SetFontSize 44
     PlayAlertSound 4 300
 
-Show
+# Super
+Show 
     Class "Divination"
-    BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "Time-Lost Relic" "The Harvester" "The Hoarder" "Emperor of Purity" "The Chains that Bind" "The Warlord" "The Wolf" "The Fletcher" "The Aesthete" "Earth Drinker" "Polymath" "The Forsaken" "Saint's Treasure" "Standoff"
+    BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "Time-Lost Relic" "The Harvester" "The Hoarder" "Emperor of Purity" "The Chains that Bind" "The Warlord" "The Wolf" "The Aesthete" "Earth Drinker" "Polymath" "Saint's Treasure" "Standoff"
     SetBorderColor 255 255 0
     SetFontSize 42
     PlayAlertSound 6 300
 
-Show
+# Decent
+Show 
     Class "Divination"
-    BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "The Stormcaller" "Glimmer of Hope" "The Tyrant" "The Cursed King" "The Avenger" "The Scavenger" "Lost Worlds" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Watcher" "The Soul" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Hubris" "Jack in the Box" "The Traitor" "Assassin's Favour" "The Battle Born" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched"
+    BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "The Stormcaller" "Glimmer of Hope" "The Tyrant" "The Cursed King" "The Avenger" "Lost Worlds" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Watcher" "The Soul" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Hubris" "Jack in the Box" "The Traitor" "Assassin's Favour" "The Battle Born" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken"
     SetBorderColor 136 136 255
     SetFontSize 38
     PlayAlertSound 2 300
 
-Show
+# Trash
+Show 
     Class "Divination"
     BaseType "Carrion Crow" "Other Cheek" "Hermit" "King's Blade" "Thunderous Skies" "Metalsmith's Gift"
     SetBorderColor 0 0 0 0
 
-Show
+# Everything else
+Show 
     Class "Divination"
     SetBorderColor 127 127 127
     SetFontSize 36
@@ -2174,7 +2189,44 @@ Show
     SetFontSize 45
     PlayAlertSound 4 300
 
-# Section: 11. Obsolete Gear
+# Section: 11. Animate Weapon
+
+#Show # Just toggle "disable" on these to reenable them
+#	Class "One Hand" "Two Hand" "Staves" "Daggers" "Thrusting" "Sceptres" "Claws"
+#	Rarity Normal
+#	SetBackgroundColor 0 0 0 255
+#	SetTextColor 150 0 0 255
+#	SetBorderColor 150 0 0 255
+#	SetFontSize 20
+
+#Show # With Jewel
+#	Class "Bows" "Wands"
+#	Rarity Normal
+#	SetBackgroundColor 0 0 0 255
+#	SetTextColor 150 0 0 255
+#	SetBorderColor 150 0 0 255
+#	SetFontSize 20
+
+#Show # Tawm'r Isley
+#	Class "One Hand" "Two Hand" "Staves" "Daggers" "Thrusting" "Sceptres" "Claws"
+#	Rarity Magic
+#	SetBackgroundColor 0 0 0 255
+#	SetTextColor 150 0 0 255
+#	SetBorderColor 150 0 0 255
+#	SetFontSize 20
+#	Identified True
+
+#Show  # With Jewel+Tawm'r Isley
+#	Class "Bows" "Wands"
+#	Rarity Magic
+#	SetBackgroundColor 0 0 0 255
+#	SetTextColor 150 0 0 255
+#	SetBorderColor 150 0 0 255
+#	SetFontSize 20
+#	Identified True
+
+
+# Section: 12. Obsolete Gear
 
 Hide # Obsolete - By Prisoner's Gate Normal
     DropLevel <= 5
@@ -2255,9 +2307,9 @@ Hide # Obsolete - Old Bases
     ItemLevel > 77
     SetBackgroundColor 0 0 0 190
 
-# Section: 12. Endgame Armours
+# Section: 13. Endgame Armours
 
-# Section: 12a. Top AR Bases
+# Section: 13a. Top AR Bases
 
 Show # Crafting - Armours - Armour - Tier 1 Mods - Normal - Unsocketed
     Sockets < 4
@@ -2442,7 +2494,7 @@ Hide # Crafting - Armours - Armour - Tier 2 Mods - Magic - Socketed
     ItemLevel >= 73
     SetBorderColor 127 127 127
 
-# Section: 12b. Top EV Bases
+# Section: 13b. Top EV Bases
 
 Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Unsocketed
     Sockets < 4
@@ -2628,7 +2680,7 @@ Hide # Crafting - Armours - Evasion - Tier 2 Mods - Magic - Socketed
     ItemLevel >= 73
     SetBorderColor 127 127 127
 
-# Section: 12c. Top ES Bases
+# Section: 13c. Top ES Bases
 
 Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Unsocketed
     Sockets < 4
@@ -2814,7 +2866,7 @@ Hide # Crafting - Armours - Energy Shield - Tier 2 Mods - Magic - Socketed
     ItemLevel >= 72
     SetBorderColor 127 127 127
 
-# Section: 12d. Top EV/ES Bases
+# Section: 13d. Top EV/ES Bases
 
 Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Unsocketed
     Sockets < 4
@@ -3000,7 +3052,7 @@ Hide # Crafting - Armours - EV/ES - Tier 2 Mods - Magic - Socketed
     ItemLevel >= 73
     SetBorderColor 127 127 127
 
-# Section: 12e. Top AR/ES Bases
+# Section: 13e. Top AR/ES Bases
 
 Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Unsocketed
     Sockets < 4
@@ -3186,7 +3238,7 @@ Hide # Crafting - Armours - AR/ES - Tier 2 Mods - Magic - Socketed
     ItemLevel >= 73
     SetBorderColor 127 127 127
 
-# Section: 12f. Top AR/EV Bases
+# Section: 13f. Top AR/EV Bases
 
 Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Unsocketed
     Sockets < 4
@@ -3372,9 +3424,9 @@ Hide # Crafting - Armours - AR/EV - Tier 2 Mods - Magic - Socketed
     ItemLevel >= 73
     SetBorderColor 127 127 127
 
-# Section: 13. Endgame Weapons
+# Section: 14. Endgame Weapons
 
-# Section: 13a. 1H Axes
+# Section: 14a. 1H Axes
 
 Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Normal - Unsocketed
     Sockets < 3
@@ -3468,7 +3520,7 @@ Hide # Crafting - Weapons - 1H Axes - Ilvl 77+ - Magic - Socketed
     ItemLevel >= 77
     SetBorderColor 127 127 127
 
-# Section: 13b. Generic 1H Swords
+# Section: 14b. Generic 1H Swords
 
 Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Normal - Unsocketed
     Sockets < 3
@@ -3562,7 +3614,7 @@ Hide # Crafting - Weapons - Generic 1H Swords - Ilvl 77+ - Magic - Socketed
     ItemLevel >= 77
     SetBorderColor 127 127 127
 
-# Section: 13c. 2H Maces
+# Section: 14c. 2H Maces
 
 Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Normal - Unsocketed
     Sockets < 4
@@ -3656,7 +3708,7 @@ Hide # Crafting - Weapons - 2H Maces - Ilvl 77+ - Magic - Socketed
     ItemLevel >= 77
     SetBorderColor 127 127 127
 
-# Section: 13d. Bows
+# Section: 14d. Bows
 
 Show # Crafting - Weapons - Bows - Ilvl 83+ - Normal - Unsocketed
     Sockets < 4
@@ -3750,7 +3802,7 @@ Hide # Crafting - Weapons - Bows - Ilvl 77+ - Magic - Socketed
     ItemLevel >= 77
     SetBorderColor 127 127 127
 
-# Section: 13e. 1H Thrusting Swords
+# Section: 14e. 1H Thrusting Swords
 
 Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Normal - Unsocketed
     Sockets < 3
@@ -3844,7 +3896,7 @@ Hide # Crafting - Weapons - 1H Thrusting Swords - Ilvl 77+ - Magic - Socketed
     ItemLevel >= 77
     SetBorderColor 127 127 127
 
-# Section: 13f. Daggers
+# Section: 14f. Daggers
 
 Show # Crafting - Weapons - Daggers - Ilvl 84+ - Normal - Unsocketed
     Sockets < 3
@@ -3950,7 +4002,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Magic - Socketed
     ItemLevel >= 77
     SetBorderColor 127 127 127
 
-# Section: 13g. 1H Maces
+# Section: 14g. 1H Maces
 
 Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Normal - Unsocketed
     Sockets < 3
@@ -4044,7 +4096,7 @@ Hide # Crafting - Weapons - 1H Maces - Ilvl 77+ - Magic - Socketed
     ItemLevel >= 77
     SetBorderColor 127 127 127
 
-# Section: 13h. 2H Axes
+# Section: 14h. 2H Axes
 
 Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Normal - Unsocketed
     Sockets < 4
@@ -4138,7 +4190,7 @@ Hide # Crafting - Weapons - 2H Axes - Ilvl 77+ - Magic - Socketed
     ItemLevel >= 77
     SetBorderColor 127 127 127
 
-# Section: 13i. 2H Swords
+# Section: 14i. 2H Swords
 
 Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Normal - Unsocketed
     Sockets < 4
@@ -4232,7 +4284,7 @@ Hide # Crafting - Weapons - 2H Swords - Ilvl 77+ - Magic - Socketed
     ItemLevel >= 77
     SetBorderColor 127 127 127
 
-# Section: 13j. Claws
+# Section: 14j. Claws
 
 Show # Crafting - Weapons - Claws - Ilvl 83+ - Normal - Unsocketed
     Sockets < 3
@@ -4326,7 +4378,7 @@ Hide # Crafting - Weapons - Claws - Ilvl 77+ - Magic - Socketed
     ItemLevel >= 77
     SetBorderColor 127 127 127
 
-# Section: 13k. Sceptres
+# Section: 14k. Sceptres
 
 Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Normal - Unsocketed
     Sockets < 3
@@ -4420,7 +4472,7 @@ Hide # Crafting - Weapons - Sceptres - Ilvl 77+ - Magic - Socketed
     ItemLevel >= 77
     SetBorderColor 127 127 127
 
-# Section: 13l. Staves
+# Section: 14l. Staves
 
 Show # Crafting - Weapons - Staves - Ilvl 84+ - Normal - Unsocketed
     Sockets < 4
@@ -4514,7 +4566,7 @@ Hide # Crafting - Weapons - Staves - Ilvl 77+ - Magic - Socketed
     ItemLevel >= 77
     SetBorderColor 127 127 127
 
-# Section: 13m. Wands
+# Section: 14m. Wands
 
 Show # Crafting - Weapons - Wands - Ilvl 84+ - Normal - Unsocketed
     Sockets < 3
@@ -4608,11 +4660,11 @@ Hide # Crafting - Weapons - Wands - Ilvl 77+ - Magic - Socketed
     ItemLevel >= 77
     SetBorderColor 127 127 127
 
-# Section: 14. Rare Equipment Progression
+# Section: 15. Rare Equipment Progression
 
-# Section: 14a. AR
+# Section: 15a. AR
 
-# Section: 14a1. AR Body Armours
+# Section: 15a1. AR Body Armours
 
 # Best AR with Implicit
 Show
@@ -4767,7 +4819,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14a2. AR Helmets
+# Section: 15a2. AR Helmets
 
 # Best AR
 Show
@@ -4880,7 +4932,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14a3. AR Gloves
+# Section: 15a3. AR Gloves
 
 # Best AR
 Show
@@ -4962,7 +5014,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14a4. AR Boots
+# Section: 15a4. AR Boots
 
 # Best AR
 Show
@@ -5044,7 +5096,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14a5. AR Shields
+# Section: 15a5. AR Shields
 
 # Best AR Block
 Show
@@ -5199,9 +5251,9 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14b. EV
+# Section: 15b. EV
 
-# Section: 14b1. EV Body Armours
+# Section: 15b1. EV Body Armours
 
 # Best EV with Implicit
 Show
@@ -5356,7 +5408,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14b2. EV Helmets
+# Section: 15b2. EV Helmets
 
 # Best EV
 Show
@@ -5445,7 +5497,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14b3. EV Gloves
+# Section: 15b3. EV Gloves
 
 # Best EV
 Show
@@ -5527,7 +5579,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14b4. EV Boots
+# Section: 15b4. EV Boots
 
 # Best EV
 Show
@@ -5609,7 +5661,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14b5. EV Shields
+# Section: 15b5. EV Shields
 
 # Best EV
 Show
@@ -5757,9 +5809,9 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14c. ES
+# Section: 15c. ES
 
-# Section: 14c1. ES Body Armours
+# Section: 15c1. ES Body Armours
 
 # Best ES with Implicit
 Show
@@ -5914,7 +5966,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14c2. ES Helmets
+# Section: 15c2. ES Helmets
 
 # Best ES
 Show
@@ -6010,7 +6062,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14c3. ES Gloves
+# Section: 15c3. ES Gloves
 
 # Best ES
 Show
@@ -6092,7 +6144,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14c4. ES Boots
+# Section: 15c4. ES Boots
 
 # Best ES
 Show
@@ -6174,7 +6226,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14c5. ES Shields
+# Section: 15c5. ES Shields
 
 # Best ES Block
 Show
@@ -6339,9 +6391,9 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14d. EV/ES
+# Section: 15d. EV/ES
 
-# Section: 14d1. EV/ES Body Armours
+# Section: 15d1. EV/ES Body Armours
 
 # Best ES/EV with Implicit
 Show
@@ -6496,7 +6548,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14d2. EV/ES Helmets
+# Section: 15d2. EV/ES Helmets
 
 # Best ES/EV
 Show
@@ -6609,7 +6661,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14d3. EV/ES Gloves
+# Section: 15d3. EV/ES Gloves
 
 # Best EV/ES
 Show
@@ -6684,7 +6736,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14d4. EV/ES Boots
+# Section: 15d4. EV/ES Boots
 
 # Best EV/ES
 Show
@@ -6766,7 +6818,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14d5. EV/ES Shields
+# Section: 15d5. EV/ES Shields
 
 # Best EV/ES
 Show
@@ -6876,9 +6928,9 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14e. AR/ES
+# Section: 15e. AR/ES
 
-# Section: 14e1. AR/ES Body Armours
+# Section: 15e1. AR/ES Body Armours
 
 # Best ES/AR
 Show
@@ -7033,7 +7085,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14e2. AR/ES Helmets
+# Section: 15e2. AR/ES Helmets
 
 # Best ES/AR
 Show
@@ -7139,7 +7191,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14e3. AR/ES Gloves
+# Section: 15e3. AR/ES Gloves
 
 # Best AR/ES
 Show
@@ -7214,7 +7266,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14e4. AR/ES Boots
+# Section: 15e4. AR/ES Boots
 
 # Best AR/ES
 Show
@@ -7289,7 +7341,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14e5. AR/ES Shields
+# Section: 15e5. AR/ES Shields
 
 # Best AR/ES with Implicit
 Show
@@ -7416,9 +7468,9 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14f. AR/EV
+# Section: 15f. AR/EV
 
-# Section: 14f1. AR/EV Body Armours
+# Section: 15f1. AR/EV Body Armours
 
 # Best EV/AR
 Show
@@ -7573,7 +7625,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14f2. AR/EV Helmets
+# Section: 15f2. AR/EV Helmets
 
 # Best EV/AR
 Show
@@ -7679,7 +7731,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14f3. AR/EV Gloves
+# Section: 15f3. AR/EV Gloves
 
 # Best AR/EV
 Show
@@ -7754,7 +7806,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14f4. AR/EV Boots
+# Section: 15f4. AR/EV Boots
 
 # Best AR/EV
 Show
@@ -7829,7 +7881,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 14f5. AR/EV Shields
+# Section: 15f5. AR/EV Shields
 
 # Best AR/EV with Implicit
 Show
@@ -7956,9 +8008,9 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 15. Rare Weapon Progression
+# Section: 16. Rare Weapon Progression
 
-# Section: 15a. 1H Axes
+# Section: 16a. 1H Axes
 
 # Maraketh
 Show
@@ -8171,7 +8223,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 15b. Generic 1H Swords
+# Section: 16b. Generic 1H Swords
 
 # Maraketh
 Show
@@ -8401,7 +8453,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 15c. 2H Maces
+# Section: 16c. 2H Maces
 
 # Maraketh
 Show
@@ -8610,7 +8662,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 15d. Bows
+# Section: 16d. Bows
 
 # Maraketh
 Show
@@ -8857,7 +8909,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 15e. 1H Thrusting Swords
+# Section: 16e. 1H Thrusting Swords
 
 # Maraketh
 Show
@@ -9104,7 +9156,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 15f. Daggers
+# Section: 16f. Daggers
 
 # Maraketh
 Show
@@ -9354,7 +9406,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 15g. 1H Maces
+# Section: 16g. 1H Maces
 
 # Maraketh
 Show
@@ -9584,7 +9636,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 15h. 2H Axes
+# Section: 16h. 2H Axes
 
 # Maraketh
 Show
@@ -9793,7 +9845,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 15i. 2H Swords
+# Section: 16i. 2H Swords
 
 # Maraketh
 Show
@@ -9985,7 +10037,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 15j. Claws
+# Section: 16j. Claws
 
 # Maraketh
 Show
@@ -10198,7 +10250,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 255 255 119
 
-# Section: 15k. Sceptres
+# Section: 16k. Sceptres
 
 # Maraketh
 Show
@@ -10428,7 +10480,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 15l. Staves
+# Section: 16l. Staves
 
 # Maraketh
 Show
@@ -10622,7 +10674,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 15m. Wands
+# Section: 16m. Wands
 
 # Maraketh
 Show
@@ -10809,7 +10861,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-# Section: 16. Other Rares
+# Section: 17. Other Rares
 
 # Bad Rares show until...
 Show
@@ -10875,9 +10927,9 @@ Show # Meh Rares
     Rarity = Rare
     SetBorderColor 127 127 127
 
-# Section: 17. Armour Socketing
+# Section: 18. Armour Socketing
 
-# Section: 17a. Helmets
+# Section: 18a. Helmets
 
 Show
     LinkedSockets >= 3
@@ -10924,7 +10976,7 @@ Hide
     Class "Helmets"
     SetBorderColor 127 127 127
 
-# Section: 17b. Body Armours
+# Section: 18b. Body Armours
 
 Show
     LinkedSockets >= 3
@@ -10971,7 +11023,7 @@ Hide
     Class "Body Armours"
     SetBorderColor 127 127 127
 
-# Section: 17c. Gloves
+# Section: 18c. Gloves
 
 Show
     LinkedSockets >= 3
@@ -11018,7 +11070,7 @@ Hide
     Class "Gloves"
     SetBorderColor 127 127 127
 
-# Section: 17d. Boots
+# Section: 18d. Boots
 
 Show
     LinkedSockets >= 3
@@ -11065,7 +11117,7 @@ Hide
     Class "Boots"
     SetBorderColor 127 127 127
 
-# Section: 17e. Shields
+# Section: 18e. Shields
 
 Show
     LinkedSockets >= 3
@@ -11112,9 +11164,9 @@ Hide
     Class "Shields"
     SetBorderColor 127 127 127
 
-# Section: 18. Weapon Socketing
+# Section: 19. Weapon Socketing
 
-# Section: 18a. 1H Axes
+# Section: 19a. 1H Axes
 
 Show
     LinkedSockets >= 3
@@ -11161,7 +11213,7 @@ Hide
     Class "One Hand Axes"
     SetBorderColor 127 127 127
 
-# Section: 18b. Generic 1H Swords
+# Section: 19b. Generic 1H Swords
 
 Show
     LinkedSockets >= 3
@@ -11208,7 +11260,7 @@ Hide
     Class "One Hand Swords"
     SetBorderColor 127 127 127
 
-# Section: 18c. 2H Maces
+# Section: 19c. 2H Maces
 
 Show
     LinkedSockets >= 3
@@ -11255,7 +11307,7 @@ Hide
     Class "Two Hand Maces"
     SetBorderColor 127 127 127
 
-# Section: 18d. Bows
+# Section: 19d. Bows
 
 Show
     LinkedSockets >= 3
@@ -11302,7 +11354,7 @@ Hide
     Class "Bows"
     SetBorderColor 127 127 127
 
-# Section: 18e. 1H Thrusting Swords
+# Section: 19e. 1H Thrusting Swords
 
 Show
     LinkedSockets >= 3
@@ -11349,7 +11401,7 @@ Hide
     Class "Thrusting One Hand Swords"
     SetBorderColor 127 127 127
 
-# Section: 18f. Daggers
+# Section: 19f. Daggers
 
 Show
     LinkedSockets >= 3
@@ -11396,7 +11448,7 @@ Hide
     Class "Daggers"
     SetBorderColor 127 127 127
 
-# Section: 18g. 1H Maces
+# Section: 19g. 1H Maces
 
 Show
     LinkedSockets >= 3
@@ -11443,7 +11495,7 @@ Hide
     Class "One Hand Maces"
     SetBorderColor 127 127 127
 
-# Section: 18h. 2H Axes
+# Section: 19h. 2H Axes
 
 Show
     LinkedSockets >= 3
@@ -11490,7 +11542,7 @@ Hide
     Class "Two Hand Axes"
     SetBorderColor 127 127 127
 
-# Section: 18i. 2H Swords
+# Section: 19i. 2H Swords
 
 Show
     LinkedSockets >= 3
@@ -11537,7 +11589,7 @@ Hide
     Class "Two Hand Swords"
     SetBorderColor 127 127 127
 
-# Section: 18j. Claws
+# Section: 19j. Claws
 
 Show
     LinkedSockets >= 3
@@ -11584,7 +11636,7 @@ Hide
     Class "Claws"
     SetBorderColor 127 127 127
 
-# Section: 18k. Sceptres
+# Section: 19k. Sceptres
 
 Show
     LinkedSockets >= 3
@@ -11631,7 +11683,7 @@ Hide
     Class "Sceptres"
     SetBorderColor 127 127 127
 
-# Section: 18l. Staves
+# Section: 19l. Staves
 
 Show
     LinkedSockets >= 3
@@ -11678,7 +11730,7 @@ Hide
     Class "Staves"
     SetBorderColor 127 127 127
 
-# Section: 18m. Wands
+# Section: 19m. Wands
 
 Show
     LinkedSockets >= 3
@@ -11725,7 +11777,7 @@ Hide
     Class "Wands"
     SetBorderColor 127 127 127
 
-# Section: 19. Else
+# Section: 20. Else
 
 # This means I screwed up somewhere. Please tell me in the thread what highlighted in this way so I can fix it.  I need Rarity, Base Type, Sockets/Links, Item Level, and anything else that might be relevant.
 Show
@@ -11733,7 +11785,7 @@ Show
     SetBackgroundColor 255 192 203
     SetFontSize 45
 
-# Section: 20. Tutorial
+# Section: 21. Tutorial
 
 # A special border (like shown) means the item doesn't fall into the other categories, and is either league specific or part of a recipe. You should pick these up if they're relevant to you (shown is the border for a chance orb, and chance bases).
 Show
