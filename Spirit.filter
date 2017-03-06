@@ -1369,7 +1369,15 @@ Show
 # Section: 3g. Legacy
 
 Show
-    BaseType "Leaguestone" "Reliquary"
+    BaseType "Reliquary"
+    SetTextColor 0 0 0
+    SetBackgroundColor 175 96 37
+    SetBorderColor 229 160 12
+    SetFontSize 40
+    PlayAlertSound 5 300
+
+Show
+    BaseType "Leaguestone"
     SetTextColor 0 0 0
     SetBackgroundColor 175 96 37
     SetBorderColor 229 160 12
@@ -1416,7 +1424,7 @@ Show
 
 # Ultra
 Show
-    BaseType "Stibnite Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask" "Void Axe" "Prophecy Wand" "Jewelled Foil" "Sorcerer Boots" "Occultist's Vestment" "Crusader Boots" "Clasped Mitts" "Rawhide Boots" "Ezomyte Tower Shield" "Deicide Mask" "Glorious Plate" "Cutlass" "Ezomyte Burgonet" "Assassin's Garb" "Royal Axe" 
+    BaseType "Stibnite Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask" "Void Axe" "Prophecy Wand" "Jewelled Foil" "Sorcerer Boots" "Occultist's Vestment" "Crusader Boots" "Clasped Mitts" "Rawhide Boots" "Ezomyte Tower Shield" "Deicide Mask" "Glorious Plate" "Cutlass" "Ezomyte Burgonet" "Assassin's Garb" "Royal Axe"
     Rarity = Unique
     SetTextColor 175 96 37
     SetBackgroundColor 255 255 255
@@ -1511,43 +1519,48 @@ Hide # Accessories - Normal - After Act II Normal
 Show
     Class "Divination"
     BaseType "The Wolf's Shadow"
+    SetBackgroundColor 34 42 48
     SetBorderColor 127 127 127
     SetFontSize 36
     PlayAlertSound 9 300
 
 # Ultra
-Show 
+Show
     Class "Divination"
     BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Formless Sea" "The Brittle Emperor" "The Immortal" "The Artist" "The Thaumaturgist" "Wealth and Power" "The Demoness" "Pride Before the Fall" "The Enlightened" "Heterochromia" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "The Porcupine" "Spark and the Flame"
+    SetBackgroundColor 72 115 148
     SetBorderColor 175 96 37
     SetFontSize 44
     PlayAlertSound 4 300
 
 # Super
-Show 
+Show
     Class "Divination"
     BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "Time-Lost Relic" "The Harvester" "The Hoarder" "Emperor of Purity" "The Chains that Bind" "The Warlord" "The Wolf" "The Aesthete" "Earth Drinker" "Polymath" "Saint's Treasure" "Standoff"
+    SetBackgroundColor 64 83 97
     SetBorderColor 255 255 0
     SetFontSize 42
     PlayAlertSound 6 300
 
 # Decent
-Show 
+Show
     Class "Divination"
     BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "The Stormcaller" "Glimmer of Hope" "The Tyrant" "The Cursed King" "The Avenger" "Lost Worlds" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Watcher" "The Soul" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Hubris" "Jack in the Box" "The Traitor" "Assassin's Favour" "The Battle Born" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken"
+    SetBackgroundColor 34 42 48
     SetBorderColor 136 136 255
     SetFontSize 38
     PlayAlertSound 2 300
 
 # Trash
-Show 
+Show
     Class "Divination"
     BaseType "Carrion Crow" "Other Cheek" "Hermit" "King's Blade" "Thunderous Skies" "Metalsmith's Gift"
     SetBorderColor 0 0 0 0
 
 # Everything else
-Show 
+Show
     Class "Divination"
+    SetBackgroundColor 33 42 48
     SetBorderColor 127 127 127
     SetFontSize 36
     PlayAlertSound 9 300
@@ -2190,41 +2203,6 @@ Show
     PlayAlertSound 4 300
 
 # Section: 11. Animate Weapon
-
-#Show # Just toggle "disable" on these to reenable them
-#	Class "One Hand" "Two Hand" "Staves" "Daggers" "Thrusting" "Sceptres" "Claws"
-#	Rarity Normal
-#	SetBackgroundColor 0 0 0 255
-#	SetTextColor 150 0 0 255
-#	SetBorderColor 150 0 0 255
-#	SetFontSize 20
-
-#Show # With Jewel
-#	Class "Bows" "Wands"
-#	Rarity Normal
-#	SetBackgroundColor 0 0 0 255
-#	SetTextColor 150 0 0 255
-#	SetBorderColor 150 0 0 255
-#	SetFontSize 20
-
-#Show # Tawm'r Isley
-#	Class "One Hand" "Two Hand" "Staves" "Daggers" "Thrusting" "Sceptres" "Claws"
-#	Rarity Magic
-#	SetBackgroundColor 0 0 0 255
-#	SetTextColor 150 0 0 255
-#	SetBorderColor 150 0 0 255
-#	SetFontSize 20
-#	Identified True
-
-#Show  # With Jewel+Tawm'r Isley
-#	Class "Bows" "Wands"
-#	Rarity Magic
-#	SetBackgroundColor 0 0 0 255
-#	SetTextColor 150 0 0 255
-#	SetBorderColor 150 0 0 255
-#	SetFontSize 20
-#	Identified True
-
 
 # Section: 12. Obsolete Gear
 
