@@ -364,10 +364,10 @@ Show
 # Section: 2c. Atlas
 
 Show
-    BaseType "Shaper's Orb"
+    BaseType "Shaper's Orb (Tier 4)"
     SetTextColor 74 230 58
     SetBorderColor 74 230 58
-    SetFontSize 40
+    SetFontSize 38
 
 Show # Atlas - 84+ - Steel Ring - Normal
     BaseType "Steel Ring"
@@ -1167,6 +1167,7 @@ Hide # Warbands - Redblade
     Class "Helmets"
     Rarity = Magic
     ItemLevel >= 68
+    SetBackgroundColor 99 8 8
     SetBorderColor 175 30 30
 
 Hide # Warbands - Brinerot
@@ -1174,6 +1175,7 @@ Hide # Warbands - Brinerot
     Class "Gloves"
     Rarity = Magic
     ItemLevel >= 68
+    SetBackgroundColor 26 13 87
     SetBorderColor 97 97 255
 
 Hide # Warbands - Mutewind
@@ -1181,6 +1183,7 @@ Hide # Warbands - Mutewind
     Class "Boots"
     Rarity = Magic
     ItemLevel >= 68
+    SetBackgroundColor 1 54 4
     SetBorderColor 25 150 90
 
 Hide # Warbands - Renegade
@@ -1190,6 +1193,7 @@ Hide # Warbands - Renegade
     Class "Axe" "Bow" "Claw" "Dagger" "Mace" "Staves" "Sword" "Wand"
     Rarity = Magic
     ItemLevel >= 68
+    SetBackgroundColor 89 37 70
     SetBorderColor 255 0 220
 
 # Section: 3b. Talisman
@@ -1370,18 +1374,34 @@ Show
 
 Show
     BaseType "Reliquary"
+    SetTextColor 229 160 12
+    SetBackgroundColor 0 0 0
+    SetBorderColor 175 96 37
+    SetFontSize 44
+    PlayAlertSound 4 300
+
+Show
+    BaseType "Nemesis Leaguestone" "Perandus Leaguestone" "Breach Leaguestone" "Essence Leaguestone"
     SetTextColor 0 0 0
-    SetBackgroundColor 175 96 37
+    SetBackgroundColor 175 96 37 220
     SetBorderColor 229 160 12
-    SetFontSize 40
-    PlayAlertSound 5 300
+    SetFontSize 38
+    PlayAlertSound 5 220
+
+Show
+    BaseType "Ambush Leaguestone" "Anarchy Leaguestone" "Onslaught Leaguestone" "Talisman Leaguestone" "Warbands Leaguestone"
+    SetTextColor 0 0 0
+    SetBackgroundColor 175 96 37 220
+    SetBorderColor 229 160 12
+    SetFontSize 36
+    PlayAlertSound 5 220
 
 Show
     BaseType "Leaguestone"
     SetTextColor 0 0 0
-    SetBackgroundColor 175 96 37
+    SetBackgroundColor 175 96 37 220
     SetBorderColor 229 160 12
-    SetFontSize 38
+    SetFontSize 34
     PlayAlertSound 5 220
 
 # Section: 4. Vitals
