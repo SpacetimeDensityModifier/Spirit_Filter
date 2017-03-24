@@ -1611,20 +1611,20 @@ Show # Recipes - Quality Gems - High
 Show # Gems - Drop Only
     Quality = 0
     Class "Gems"
-    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach"
+    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach" "Item Quantity Support"
     SetBorderColor 255 255 255
 
 Show # Recipes - Quality Gems - Low
     Quality < 10
     Class "Gems"
-    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach"
+    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach" "Item Quantity Support"
     SetTextColor 184 218 242
     SetBorderColor 255 255 255
 
 Show # Recipes - Quality Gems - High
     Quality >= 10
     Class "Gems"
-    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach"
+    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach" "Item Quantity Support"
     SetTextColor 184 218 242
     SetBorderColor 255 255 255
     PlayAlertSound 2 120
