@@ -1382,6 +1382,7 @@ Show
 
 Show
     BaseType "Nemesis Leaguestone" "Perandus Leaguestone" "Breach Leaguestone" "Essence Leaguestone"
+    Rarity = Magic
     SetTextColor 0 0 0
     SetBackgroundColor 175 96 37 220
     SetBorderColor 229 160 12
@@ -1389,7 +1390,15 @@ Show
     PlayAlertSound 5 220
 
 Show
+    BaseType "Nemesis Leaguestone" "Perandus Leaguestone" "Breach Leaguestone" "Essence Leaguestone"
+    SetBackgroundColor 175 96 37 220
+    SetBorderColor 229 160 12
+    SetFontSize 34
+    PlayAlertSound 5 220
+
+Show
     BaseType "Ambush Leaguestone" "Anarchy Leaguestone" "Onslaught Leaguestone" "Talisman Leaguestone" "Warbands Leaguestone"
+    Rarity = Magic
     SetTextColor 0 0 0
     SetBackgroundColor 175 96 37 220
     SetBorderColor 229 160 12
@@ -1397,11 +1406,26 @@ Show
     PlayAlertSound 5 220
 
 Show
+    BaseType "Ambush Leaguestone" "Anarchy Leaguestone" "Onslaught Leaguestone" "Talisman Leaguestone" "Warbands Leaguestone"
+    SetBackgroundColor 175 96 37 220
+    SetBorderColor 229 160 12
+    SetFontSize 32
+    PlayAlertSound 5 220
+
+Show
     BaseType "Leaguestone"
+    Rarity = Magic
     SetTextColor 0 0 0
     SetBackgroundColor 175 96 37 220
     SetBorderColor 229 160 12
     SetFontSize 34
+    PlayAlertSound 5 220
+
+Show
+    BaseType "Leaguestone"
+    SetBackgroundColor 175 96 37 220
+    SetBorderColor 229 160 12
+    SetFontSize 30
     PlayAlertSound 5 220
 
 # Section: 4. Vitals
@@ -1501,36 +1525,47 @@ Show
     SetFontSize 36
 
 Show
-    Class "Amulets" "Rings" "Belts" "Quivers"
+    Class "Amulets" "Rings" "Belts"
     Rarity = Magic
-    ItemLevel < 35
+    ItemLevel < 25
+    SetTextColor 30 144 255
     SetBorderColor 136 136 255
-    SetFontSize 36
+    SetFontSize 34
+
+Show
+    Class "Quivers"
+    Rarity = Magic
+    ItemLevel < 15
+    SetBorderColor 136 136 255
+    SetFontSize 32
 
 Hide # Accessories - Magic - After Act IV Normal
     Class "Amulets" "Rings" "Belts" "Quivers"
     Rarity = Magic
-    ItemLevel >= 35
+    ItemLevel >= 25
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     Class "Amulets" "Rings" "Belts" "Quivers"
     Rarity = Normal
     ItemLevel < 10
+    SetTextColor 255 255 255
     SetBorderColor 136 136 255
-    SetFontSize 36
+    SetFontSize 34
 
 Show
     Class "Amulets" "Rings" "Belts" "Quivers"
     Rarity = Normal
-    ItemLevel < 20
+    ItemLevel < 15
+    SetTextColor 255 255 255
     SetBorderColor 127 127 127
     SetFontSize 32
 
 Hide # Accessories - Normal - After Act II Normal
     Class "Amulets" "Rings" "Belts" "Quivers"
     Rarity = Normal
-    ItemLevel >= 20
+    ItemLevel >= 15
     SetFontSize 32
 
 # Section: 5. Divination Cards: Tiers from Neversink
@@ -1680,8 +1715,7 @@ Show
     BaseType "Flask"
     Rarity <= Magic
     ItemLevel < 60
-    SetBackgroundColor 0 0 0 200
-    SetBorderColor 184 218 242 154
+    SetBorderColor 184 218 242 229
 
 Show
     Quality >= 15
@@ -1695,12 +1729,14 @@ Show
     Class "Life Flasks"
     Rarity = Normal
     ItemLevel <= 6
+    SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
 Show
     Class "Life Flasks"
     Rarity = Magic
     ItemLevel <= 6
+    SetTextColor 30 144 255
     SetBorderColor 255 255 119
 
 Show
@@ -1953,12 +1989,19 @@ Show
 
 Show
     Class "Utility Flasks"
+    ItemLevel <= 20
+    SetBackgroundColor 0 0 0
+    SetBorderColor 136 136 255
+
+Show
+    Class "Utility Flasks"
     ItemLevel <= 60
     SetBorderColor 127 127 127
 
 Hide # Show bad flask drops
     Class "Flasks"
     SetBackgroundColor 0 0 0 150
+    SetFontSize 30
 
 # Section: 9. Recipes
 
@@ -1982,7 +2025,7 @@ Show # Recipes - Six Socket
     SetBorderColor 210 0 0
     PlayAlertSound 2 300
 
-Hide # Recipes - Chromatics - Large - After Act II Cruel
+Show # Recipes - Chromatics - Large - After Act II Cruel
     SocketGroup "RGB"
     Height = 4
     Width = 2
@@ -2002,7 +2045,7 @@ Show # Recipes - Chromatics - Large - Before Act II Cruel
     SetBackgroundColor 0 0 0 140
     SetBorderColor 0 0 0 0
 
-Hide # Recipes - Chromatics - Medium - In Maps
+Show # Recipes - Chromatics - Medium - In Maps
     SocketGroup "RGB"
     Height = 3
     Width = 2
@@ -2061,7 +2104,7 @@ Show # Recipes - Chisel
     SetBackgroundColor 0 0 0 220
     SetBorderColor 184 218 242
 
-Show # Recipes - Quality Items - Low - Very Early
+Hide # Recipes - Quality Items - Low - Very Early
     LinkedSockets < 4
     Quality > 0
     Quality < 15
@@ -2069,8 +2112,9 @@ Show # Recipes - Quality Items - Low - Very Early
     ItemLevel < 10
     SetBackgroundColor 0 0 0 220
     SetBorderColor 232 198 159 150
+    SetFontSize 32
 
-Show # Recipes - Quality Items - Low - Early
+Hide # Recipes - Quality Items - Low - Early
     LinkedSockets < 4
     Quality > 0
     Quality < 15
@@ -2078,24 +2122,27 @@ Show # Recipes - Quality Items - Low - Early
     ItemLevel < 25
     SetBackgroundColor 0 0 0 150
     SetBorderColor 232 198 159 150
+    SetFontSize 32
 
-Show # Recipes - Quality Items - High - Early
+Hide # Recipes - Quality Items - High - Early
     LinkedSockets < 4
     Quality > 14
     Quality < 20
-    Rarity < Unique
+    Rarity < Rare
     ItemLevel < 30
     SetBackgroundColor 0 0 0
     SetBorderColor 232 198 159 190
+    SetFontSize 32
 
-Show # Recipes - Quality Items - High - Midgame
+Hide # Recipes - Quality Items - High - Midgame
     LinkedSockets < 4
     Quality > 14
     Quality < 20
-    Rarity < Unique
+    Rarity < Rare
     ItemLevel < 50
     SetBackgroundColor 0 0 0 220
     SetBorderColor 232 198 159 190
+    SetFontSize 32
 
 Show # Recipes - Quality Items - Perfect - Before Maps
     LinkedSockets < 4
@@ -2105,7 +2152,7 @@ Show # Recipes - Quality Items - Perfect - Before Maps
     SetBackgroundColor 0 0 0
     SetBorderColor 232 198 159
 
-Hide # Recipes - Quality Items - Perfect - In Maps
+Show # Recipes - Quality Items - Perfect - In Maps
     LinkedSockets < 4
     Quality = 20
     Rarity = Normal
@@ -2231,72 +2278,84 @@ Hide # Obsolete - By Prisoner's Gate Normal
     Rarity <= Magic
     ItemLevel >= 10
     SetBackgroundColor 0 0 0 190
+    SetFontSize 30
 
 Hide # Obsolete - By Act II Normal
     DropLevel <= 10
     Rarity <= Magic
     ItemLevel >= 15
     SetBackgroundColor 0 0 0 190
+    SetFontSize 30
 
 Hide # Obsolete - By Vaal Ruins Normal
     DropLevel <= 13
     Rarity <= Magic
     ItemLevel >= 20
     SetBackgroundColor 0 0 0 190
+    SetFontSize 30
 
 Hide # Obsolete - By Crematorium Normal
     DropLevel <= 20
     Rarity <= Magic
     ItemLevel >= 25
     SetBackgroundColor 0 0 0 190
+    SetFontSize 30
 
 Hide # Obsolete - By Imperial Gardens Normal
     DropLevel <= 25
     Rarity <= Magic
     ItemLevel >= 30
     SetBackgroundColor 0 0 0 190
+    SetFontSize 30
 
 Hide # Obsolete - By Crystal Mines Normal
     DropLevel <= 30
     Rarity <= Magic
     ItemLevel >= 35
     SetBackgroundColor 0 0 0 190
+    SetFontSize 30
 
 Hide # Obsolete - By Harvest Normal
     DropLevel <= 35
     Rarity <= Magic
     ItemLevel >= 40
     SetBackgroundColor 0 0 0 190
+    SetFontSize 30
 
 Hide # Obsolete - By Act II Cruel
     DropLevel <= 40
     Rarity <= Magic
     ItemLevel >= 45
     SetBackgroundColor 0 0 0 190
+    SetFontSize 30
 
 Hide # Obsolete - By The Battlefront Cruel
     DropLevel <= 46
     Rarity <= Magic
     ItemLevel >= 50
     SetBackgroundColor 0 0 0 190
+    SetFontSize 30
 
 Hide # Obsolete - By Dried Lake Cruel
     DropLevel <= 52
     Rarity <= Magic
     ItemLevel >= 55
     SetBackgroundColor 0 0 0 190
+    SetFontSize 30
 
 Hide # Obsolete - By Act II Merciless
     DropLevel < 56
     Rarity <= Magic
     ItemLevel >= 60
     SetBackgroundColor 0 0 0 190
+    SetFontSize 30
 
 Hide # Obsolete - Old Bases
     BaseType "Alder Spiked Shield" "Ancestral Club" "Arcanist Gloves" "Arcanist Slippers" "Assassin Bow" "Assassin's Boots" "Assassin's Mitts" "Blood Raiment" "Branded Kite Shield" "Butcher Axe" "Carnal Sceptre" "Citadel Bow" "Colossus Mallet" "Conquest Chainmail" "Corsair Sword" "Courtesan Sword" "Crusader Buckler" "Crusader Plate" "Crypt Armour" "Demon's Horn" "Desert Brigandine" "Destiny Leather" "Dragonbone Rapier" "Dragonscale Doublet" "Ebony Tower Shield" "Elegant Ringmail" "Engraved Hatchet" "Exquisite Leather" "Eye Gouger" "Ezomyte Axe" "Ezomyte Blade" "Ezomyte Burgonet" "Ezomyte Dagger" "Ezomyte Spiked Shield" "Ezomyte Staff" "Ezomyte Tower Shield" "Fluted Bascinet" "Gavel" "Gemstone Sword" "General's Brigandine" "Gladiator Plate" "Gladius" "Golden Plate" "Great White Claw" "Gutting Knife" "Harlequin Mask" "Headman's Sword" "Hellion's Paw" "Hydrascale Boots" "Hydrascale Gauntlets" "Imperial Maul" "Imperial Skean" "Ironwood Buckler" "Judgement Staff" "Karui Axe" "Karui Chopper" "Karui Maul" "Karui Sceptre" "Lacewood Spirit Shield" "Lacquered Buckler" "Lathi" "Legion Boots" "Legion Gloves" "Legion Hammer" "Legion Sword" "Lion Sword" "Lithe Blade" "Loricated Ringmail" "Magistrate Crown" "Meatgrinder" "Mind Cage" "Mirrored Spiked Shield" "Moon Staff" "Mosaic Kite Shield" "Necromancer Silks" "Opal Wand" "Pecoraro" "Pernarch" "Platinum Sceptre" "Primordial Staff" "Ranger Bow" "Reaver Axe" "Reaver Sword" "Royal Axe" "Savant's Robe" "Sentinel Jacket" "Shagreen Tower Shield" "Sharkskin Tunic" "Siege Axe" "Silken Hood" "Sinner Tricorne" "Slaughter Knife" "Solaris Circlet" "Solar Maul" "Spine Bow" "Spiny Round Shield" "Spiraled Foil" "Stealth Boots" "Stealth Gloves" "Steelwood Bow" "Sundering Axe" "Talon Axe" "Teak Round Shield" "Tempered Foil" "Tenderizer" "Throat Stabber" "Tornado Wand" "Twin Claw" "Tyrant's Sekhem" "Vaal Blade" "Vaal Claw" "Vaal Gauntlets" "Vaal Greatsword" "Vaal Greaves" "Vaal Hatchet" "Vaal Sceptre" "Vaal Spirit Shield" "Varnished Coat" "Void Axe" "Widowsilk Robe"
     Rarity <= Magic
     ItemLevel >= 65
     SetBackgroundColor 0 0 0 190
+    SetFontSize 30
 
 Hide # Obsolete - Old Bases
     DropLevel = 64
@@ -2304,6 +2363,7 @@ Hide # Obsolete - Old Bases
     Rarity <= Magic
     ItemLevel > 77
     SetBackgroundColor 0 0 0 190
+    SetFontSize 30
 
 # Section: 13. Endgame Armours
 
@@ -10942,12 +11002,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 4
     Class "Helmets"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 4
@@ -10989,12 +11050,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 4
     Class "Body Armours"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 4
@@ -11036,12 +11098,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 4
     Class "Gloves"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 4
@@ -11074,7 +11137,7 @@ Show
     LinkedSockets >= 3
     Class "Boots"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 15
     SetBorderColor 136 136 255
 
 Show
@@ -11083,12 +11146,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 4
     Class "Boots"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 4
@@ -11130,12 +11194,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 3
     Class "Shields"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 3
@@ -11179,12 +11244,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 3
     Class "One Hand Axes"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 3
@@ -11226,12 +11292,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 3
     Class "One Hand Swords"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 3
@@ -11273,12 +11340,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 4
     Class "Two Hand Maces"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 4
@@ -11320,12 +11388,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 4
     Class "Bows"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 4
@@ -11367,12 +11436,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 3
     Class "Thrusting One Hand Swords"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 3
@@ -11414,12 +11484,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 3
     Class "Daggers"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 3
@@ -11461,12 +11532,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 3
     Class "One Hand Maces"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 3
@@ -11508,12 +11580,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 4
     Class "Two Hand Axes"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 4
@@ -11555,12 +11628,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 4
     Class "Two Hand Swords"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 4
@@ -11602,12 +11676,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 3
     Class "Claws"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 3
@@ -11649,12 +11724,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 3
     Class "Sceptres"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 3
@@ -11696,12 +11772,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 4
     Class "Staves"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 4
@@ -11743,12 +11820,13 @@ Show
     ItemLevel <= 8
     SetBorderColor 127 127 127
 
-Show
+Hide
     Sockets < 3
     Class "Wands"
     Rarity <= Magic
     ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Show
     LinkedSockets >= 3
