@@ -1447,12 +1447,13 @@ Show
     Class "Labyrinth"
     SetTextColor 74 230 58
     SetBorderColor 175 96 37
-    SetFontSize 36
+    SetFontSize 38
 
 Show
     Class "Quest Items"
     SetTextColor 74 230 58
-    SetFontSize 38
+    SetBorderColor 127 127 127
+    SetFontSize 34
 
 # Section: 4c. Uniques: Tiers from Neversink
 
@@ -1535,7 +1536,7 @@ Show
 Show
     Class "Quivers"
     Rarity = Magic
-    ItemLevel < 15
+    ItemLevel <= 15
     SetBorderColor 136 136 255
     SetFontSize 32
 
@@ -1549,7 +1550,7 @@ Hide # Accessories - Magic - After Act IV Normal
 Show
     Class "Amulets" "Rings" "Belts" "Quivers"
     Rarity = Normal
-    ItemLevel < 10
+    ItemLevel < 7
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
     SetFontSize 34
@@ -1557,7 +1558,7 @@ Show
 Show
     Class "Amulets" "Rings" "Belts" "Quivers"
     Rarity = Normal
-    ItemLevel < 15
+    ItemLevel < 12
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
     SetFontSize 32
@@ -1565,8 +1566,9 @@ Show
 Hide # Accessories - Normal - After Act II Normal
     Class "Amulets" "Rings" "Belts" "Quivers"
     Rarity = Normal
-    ItemLevel >= 15
-    SetFontSize 32
+    ItemLevel >= 12
+    SetBackgroundColor 0 0 0
+    SetFontSize 30
 
 # Section: 5. Divination Cards: Tiers from Neversink
 
@@ -1744,6 +1746,7 @@ Show
     Class "Life Flasks"
     Rarity = Normal
     ItemLevel <= 12
+    SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
 Show
@@ -1751,6 +1754,7 @@ Show
     Class "Life Flasks"
     Rarity = Magic
     ItemLevel <= 12
+    SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
 Show
@@ -1874,12 +1878,14 @@ Show
     Class "Mana Flasks"
     Rarity = Normal
     ItemLevel <= 6
+    SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
 Show
     Class "Mana Flasks"
     Rarity = Magic
     ItemLevel <= 6
+    SetTextColor 30 144 255
     SetBorderColor 255 255 119
 
 Show
@@ -1887,6 +1893,7 @@ Show
     Class "Mana Flasks"
     Rarity = Normal
     ItemLevel <= 12
+    SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
 Show
@@ -1894,6 +1901,7 @@ Show
     Class "Mana Flasks"
     Rarity = Magic
     ItemLevel <= 12
+    SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
 Show
@@ -1989,9 +1997,19 @@ Show
 
 Show
     Class "Utility Flasks"
+    Rarity = Normal
     ItemLevel <= 20
+    SetTextColor 255 255 255
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
+
+Show
+    Class "Utility Flasks"
+    Rarity = Magic
+    ItemLevel <= 20
+    SetTextColor 30 144 255
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 255 119
 
 Show
     Class "Utility Flasks"
@@ -2104,12 +2122,22 @@ Show # Recipes - Chisel
     SetBackgroundColor 0 0 0 220
     SetBorderColor 184 218 242
 
+Show # Recipes - Quality Items - Low - Very Early
+    LinkedSockets < 4
+    Quality > 0
+    Quality < 15
+    Rarity < Rare
+    ItemLevel <= 8
+    SetBackgroundColor 0 0 0 220
+    SetBorderColor 232 198 159 150
+    SetFontSize 32
+
 Hide # Recipes - Quality Items - Low - Very Early
     LinkedSockets < 4
     Quality > 0
     Quality < 15
     Rarity < Rare
-    ItemLevel < 10
+    ItemLevel < 12
     SetBackgroundColor 0 0 0 220
     SetBorderColor 232 198 159 150
     SetFontSize 32
@@ -2272,6 +2300,14 @@ Show
 # Section: 11. Animate Weapon
 
 # Section: 12. Obsolete Gear
+
+# Leveling boots exception.
+Show
+    Class "Boots"
+    Rarity = Magic
+    ItemLevel <= 15
+    SetTextColor 30 144 255
+    SetBorderColor 127 127 127
 
 Hide # Obsolete - By Prisoner's Gate Normal
     DropLevel <= 5
@@ -11136,20 +11172,37 @@ Hide
 Show
     LinkedSockets >= 3
     Class "Boots"
-    Rarity <= Magic
+    Rarity = Magic
     ItemLevel <= 15
+    SetTextColor 30 144 255
+    SetBorderColor 255 255 119
+
+Show
+    LinkedSockets >= 3
+    Class "Boots"
+    Rarity = Magic
+    ItemLevel <= 15
+    SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
 Show
     Class "Boots"
     Rarity <= Magic
     ItemLevel <= 8
+    SetBorderColor 136 136 255
+
+Show
+    Sockets < 4
+    Class "Boots"
+    Rarity = Magic
+    ItemLevel < 16
     SetBorderColor 127 127 127
+    SetFontSize 32
 
 Hide
     Sockets < 4
     Class "Boots"
-    Rarity <= Magic
+    Rarity = Normal
     ItemLevel < 16
     SetBorderColor 127 127 127
     SetFontSize 32
@@ -11812,13 +11865,13 @@ Show
     Class "Wands"
     Rarity <= Magic
     ItemLevel <= 10
-    SetBorderColor 136 136 255
+    SetBorderColor 255 255 119
 
 Show
     Class "Wands"
     Rarity <= Magic
     ItemLevel <= 8
-    SetBorderColor 127 127 127
+    SetBorderColor 136 136 255
 
 Hide
     Sockets < 3
