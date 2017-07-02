@@ -8,7 +8,7 @@
 # Sections. Ctrl+F "Section: #" without the quotes to go to it.
 # -------------------------------------------------------------
 # 1: Chance Bases
-# 2: Mapping
+# 2: Mapping change  dasssssss
 # 3: Leagues
 # 4: Vitals
 # 5: Divination Cards
@@ -34,13 +34,22 @@
 # =============================================================
 # Section 1. Chance Bases
 # =============================================================
-# =============================================================
-# Section 2. Mapping
+# Section 2. Leagues
 # -------------------------------------------------------------
-# 2a. Warbands Maps
-# 2b. Atziri and Friends
-# 2c. Atlas
-# 2d. Map Progression
+# 2a. Warbands
+# 2b. Talisman
+# 2c. Perandus
+# 2d. Prophecy
+# 2e. Essence
+# 2f. Breach
+# 2g. Legacy
+# =============================================================
+# Section 3. Mapping
+# -------------------------------------------------------------
+# 3a. Warbands Maps
+# 3b. Atziri and Friends
+# 3c. Atlas
+# 3d. Map Progression
 # =============================================================
 # =============================================================
 # Section 3. Leagues
@@ -304,9 +313,279 @@ Show # Chance Bases - Varunastra
 #    SetBorderColor 224 109 73
 #Disabled Block End
 
-# Section: 2. Mapping
+# Section: 2. Leagues
 
-# Section: 2a. Warbands Maps
+# Section: 2a. Warbands
+
+Hide # Warbands - Redblade
+    Identified True
+    Class "Helmets"
+    Rarity = Magic
+    ItemLevel >= 68
+    SetBackgroundColor 99 8 8
+    SetBorderColor 175 30 30
+
+Hide # Warbands - Brinerot
+    Identified True
+    Class "Gloves"
+    Rarity = Magic
+    ItemLevel >= 68
+    SetBackgroundColor 26 13 87
+    SetBorderColor 97 97 255
+
+Hide # Warbands - Mutewind
+    Identified True
+    Class "Boots"
+    Rarity = Magic
+    ItemLevel >= 68
+    SetBackgroundColor 1 54 4
+    SetBorderColor 25 150 90
+
+Hide # Warbands - Renegade
+    LinkedSockets < 5
+    Sockets < 6
+    Identified True
+    Class "Axe" "Bow" "Claw" "Dagger" "Mace" "Staves" "Sword" "Wand"
+    Rarity = Magic
+    ItemLevel >= 68
+    SetBackgroundColor 89 37 70
+    SetBorderColor 255 0 220
+
+# Section: 2b. Talisman
+
+Show
+    BaseType "Greatwolf Talisman"
+    SetBackgroundColor 77 105 66
+    SetBorderColor 175 96 37
+    SetFontSize 42
+
+Show
+    BaseType "Longtooth Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Rotfeather Talisman" "Spinefuse Talisman" "Three Hands Talisman" "Three Rat Talisman"
+    Rarity >= Rare
+    SetBackgroundColor 77 105 66
+    SetBorderColor 255 255 119
+    SetFontSize 40
+
+Show
+    BaseType "Longtooth Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Rotfeather Talisman" "Spinefuse Talisman" "Three Hands Talisman" "Three Rat Talisman"
+    SetBackgroundColor 77 105 66
+    SetBorderColor 136 136 255
+    SetFontSize 36
+
+Show
+    BaseType "Avian Twins Talisman" "Clutching Talisman" "Fangjaw Talisman" "Hexclaw Talisman" "Horned Talisman" "Primal Skull Talisman" "Splitnewt Talisman" "Wereclaw Talisman"
+    Rarity >= Rare
+    SetBackgroundColor 77 105 66
+    SetBorderColor 136 136 255
+    SetFontSize 38
+
+Show
+    BaseType "Avian Twins Talisman" "Clutching Talisman" "Fangjaw Talisman" "Hexclaw Talisman" "Horned Talisman" "Primal Skull Talisman" "Splitnewt Talisman" "Wereclaw Talisman"
+    SetBackgroundColor 77 105 66
+    SetBorderColor 127 127 127
+
+Show
+    BaseType "Ashscale Talisman" "Black Maw Talisman" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Deadhand Talisman" "Deep One Talisman" "Lone Antler Talisman" "Mandible Talisman" "Rot Head Talisman" "Undying Flesh Talisman" "Writhing Talisman"
+    SetBackgroundColor 77 105 66
+    SetBorderColor 127 127 127
+    SetFontSize 30
+
+# Section: 2c. Perandus
+
+Show
+    Class "Currency"
+    BaseType "Perandus Coin"
+    SetTextColor 0 0 0
+    SetBackgroundColor 255 255 119
+    SetBorderColor 0 0 0
+    PlayAlertSound 2 50
+
+# Section: 2d. Prophecy
+
+Show
+    Class "Currency"
+    BaseType "Prophecy" "Silver Coin"
+    SetTextColor 200 200 200
+    SetBackgroundColor 74 15 199
+    SetBorderColor 200 200 200
+    PlayAlertSound 3 100
+
+# Section: 2e. Essence
+
+Show
+    Class "Currency"
+    BaseType "Whispering Essence"
+    SetTextColor 255 255 255
+    SetBackgroundColor 20 10 50
+    SetBorderColor 10 150 250
+    PlayAlertSound 8 300
+
+Show
+    Class "Currency"
+    BaseType "Muttering Essence"
+    SetTextColor 250 222 241
+    SetBackgroundColor 20 10 50
+    SetBorderColor 10 150 250
+    PlayAlertSound 8 300
+
+Show
+    Class "Currency"
+    BaseType "Weeping Essence"
+    SetTextColor 255 200 200
+    SetBackgroundColor 20 10 50
+    SetBorderColor 10 150 250
+    PlayAlertSound 8 300
+
+Show
+    Class "Currency"
+    BaseType "Wailing Essence"
+    SetTextColor 255 178 186
+    SetBackgroundColor 20 10 50
+    SetBorderColor 10 150 250
+    PlayAlertSound 8 300
+
+Show
+    Class "Currency"
+    BaseType "Screaming Essence"
+    SetTextColor 255 150 150
+    SetBackgroundColor 20 10 50
+    SetBorderColor 10 150 250
+    PlayAlertSound 8 300
+
+Show
+    Class "Currency"
+    BaseType "Shrieking Essence"
+    SetTextColor 235 99 99
+    SetBackgroundColor 20 10 50
+    SetBorderColor 10 150 250
+    PlayAlertSound 8 300
+
+Show
+    Class "Currency"
+    BaseType "Deafening Essence"
+    SetTextColor 247 40 40
+    SetBackgroundColor 20 10 50
+    SetBorderColor 10 150 250
+    PlayAlertSound 8 300
+
+Show
+    Class "Currency"
+    BaseType "Remnant"
+    SetTextColor 255 0 45
+    SetBackgroundColor 20 10 50
+    SetBorderColor 10 150 250
+    PlayAlertSound 8 300
+
+Show
+    Class "Currency"
+    BaseType "Essence"
+    SetTextColor 255 13 152
+    SetBackgroundColor 20 10 50
+    SetBorderColor 10 150 250
+    PlayAlertSound 8 300
+
+# Section: 2f. Breach
+
+Show
+    BaseType "Splinter of Xoph" "Blessing of Xoph" "Xoph's Breachstone"
+    SetBackgroundColor 70 0 0
+    SetBorderColor 240 40 40
+    PlayAlertSound 1 300
+
+Show
+    BaseType "Splinter of Tul" "Blessing of Tul" "Tul's Breachstone"
+    SetBackgroundColor 0 100 80
+    SetBorderColor 0 180 0
+    PlayAlertSound 1 300
+
+Show
+    BaseType "Splinter of Esh" "Blessing of Esh" "Esh's Breachstone"
+    SetBackgroundColor 0 40 100
+    SetBorderColor 74 74 232
+    SetFontSize 36
+    PlayAlertSound 1 300
+
+Show
+    BaseType "Splinter of Uul-Netol" "Blessing of Uul-Netol" "Uul-Netol's Breachstone"
+    SetBackgroundColor 60 60 60
+    SetBorderColor 0 0 0
+    SetFontSize 38
+    PlayAlertSound 1 300
+
+Show
+    BaseType "Splinter of Chayula" "Blessing of Chayula" "Chayula's Breachstone"
+    SetBackgroundColor 80 0 120
+    SetBorderColor 147 29 168
+    SetFontSize 42
+    PlayAlertSound 1 300
+
+Show
+    Class "Rings"
+    BaseType "Breach Ring"
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+# Section: 2g. Legacy
+
+Show
+    BaseType "Reliquary"
+    SetTextColor 229 160 12
+    SetBackgroundColor 0 0 0
+    SetBorderColor 175 96 37
+    SetFontSize 44
+    PlayAlertSound 4 300
+
+Show
+    BaseType "Nemesis Leaguestone" "Perandus Leaguestone" "Breach Leaguestone" "Essence Leaguestone"
+    Rarity = Magic
+    SetTextColor 0 0 0
+    SetBackgroundColor 175 96 37 220
+    SetBorderColor 229 160 12
+    SetFontSize 38
+    PlayAlertSound 5 220
+
+Show
+    BaseType "Nemesis Leaguestone" "Perandus Leaguestone" "Breach Leaguestone" "Essence Leaguestone"
+    SetBackgroundColor 175 96 37 220
+    SetBorderColor 229 160 12
+    SetFontSize 34
+    PlayAlertSound 5 220
+
+Show
+    BaseType "Ambush Leaguestone" "Anarchy Leaguestone" "Onslaught Leaguestone" "Talisman Leaguestone" "Warbands Leaguestone"
+    Rarity = Magic
+    SetTextColor 0 0 0
+    SetBackgroundColor 175 96 37 220
+    SetBorderColor 229 160 12
+    SetFontSize 36
+    PlayAlertSound 5 220
+
+Show
+    BaseType "Ambush Leaguestone" "Anarchy Leaguestone" "Onslaught Leaguestone" "Talisman Leaguestone" "Warbands Leaguestone"
+    SetBackgroundColor 175 96 37 220
+    SetBorderColor 229 160 12
+    SetFontSize 32
+    PlayAlertSound 5 220
+
+Show
+    BaseType "Leaguestone"
+    Rarity = Magic
+    SetTextColor 0 0 0
+    SetBackgroundColor 175 96 37 220
+    SetBorderColor 229 160 12
+    SetFontSize 34
+    PlayAlertSound 5 220
+
+Show
+    BaseType "Leaguestone"
+    SetBackgroundColor 175 96 37 220
+    SetBorderColor 229 160 12
+    SetFontSize 30
+    PlayAlertSound 5 220
+
+# Section: 3. Mapping
+
+# Section: 3a. Warbands Maps
 
 Show
     Class "Map"
@@ -341,7 +620,7 @@ Show
     SetFontSize 38
     PlayAlertSound 8 300
 
-# Section: 2b. Atziri and Friends
+# Section: 3b. Atziri and Friends
 
 Show
     Class "Map Fragments"
@@ -361,7 +640,7 @@ Show
     SetBackgroundColor 33 27 28
     SetBorderColor 215 115 210
 
-# Section: 2c. Atlas
+# Section: 3c. Atlas
 
 Show
     BaseType "Shaper's Orb (Tier 4)"
@@ -840,7 +1119,7 @@ Show
     SetFontSize 40
     PlayAlertSound 8 300
 
-# Section: 2d. Map Progression
+# Section: 3d. Map Progression
 
 Show
     Class "Map"
@@ -1157,276 +1436,6 @@ Show
     SetBorderColor 255 0 0
     SetFontSize 44
     PlayAlertSound 8 300
-
-# Section: 3. Leagues
-
-# Section: 3a. Warbands
-
-Hide # Warbands - Redblade
-    Identified True
-    Class "Helmets"
-    Rarity = Magic
-    ItemLevel >= 68
-    SetBackgroundColor 99 8 8
-    SetBorderColor 175 30 30
-
-Hide # Warbands - Brinerot
-    Identified True
-    Class "Gloves"
-    Rarity = Magic
-    ItemLevel >= 68
-    SetBackgroundColor 26 13 87
-    SetBorderColor 97 97 255
-
-Hide # Warbands - Mutewind
-    Identified True
-    Class "Boots"
-    Rarity = Magic
-    ItemLevel >= 68
-    SetBackgroundColor 1 54 4
-    SetBorderColor 25 150 90
-
-Hide # Warbands - Renegade
-    LinkedSockets < 5
-    Sockets < 6
-    Identified True
-    Class "Axe" "Bow" "Claw" "Dagger" "Mace" "Staves" "Sword" "Wand"
-    Rarity = Magic
-    ItemLevel >= 68
-    SetBackgroundColor 89 37 70
-    SetBorderColor 255 0 220
-
-# Section: 3b. Talisman
-
-Show
-    BaseType "Greatwolf Talisman"
-    SetBackgroundColor 77 105 66
-    SetBorderColor 175 96 37
-    SetFontSize 42
-
-Show
-    BaseType "Longtooth Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Rotfeather Talisman" "Spinefuse Talisman" "Three Hands Talisman" "Three Rat Talisman"
-    Rarity >= Rare
-    SetBackgroundColor 77 105 66
-    SetBorderColor 255 255 119
-    SetFontSize 40
-
-Show
-    BaseType "Longtooth Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Rotfeather Talisman" "Spinefuse Talisman" "Three Hands Talisman" "Three Rat Talisman"
-    SetBackgroundColor 77 105 66
-    SetBorderColor 136 136 255
-    SetFontSize 36
-
-Show
-    BaseType "Avian Twins Talisman" "Clutching Talisman" "Fangjaw Talisman" "Hexclaw Talisman" "Horned Talisman" "Primal Skull Talisman" "Splitnewt Talisman" "Wereclaw Talisman"
-    Rarity >= Rare
-    SetBackgroundColor 77 105 66
-    SetBorderColor 136 136 255
-    SetFontSize 38
-
-Show
-    BaseType "Avian Twins Talisman" "Clutching Talisman" "Fangjaw Talisman" "Hexclaw Talisman" "Horned Talisman" "Primal Skull Talisman" "Splitnewt Talisman" "Wereclaw Talisman"
-    SetBackgroundColor 77 105 66
-    SetBorderColor 127 127 127
-
-Show
-    BaseType "Ashscale Talisman" "Black Maw Talisman" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Deadhand Talisman" "Deep One Talisman" "Lone Antler Talisman" "Mandible Talisman" "Rot Head Talisman" "Undying Flesh Talisman" "Writhing Talisman"
-    SetBackgroundColor 77 105 66
-    SetBorderColor 127 127 127
-    SetFontSize 30
-
-# Section: 3c. Perandus
-
-Show
-    Class "Currency"
-    BaseType "Perandus Coin"
-    SetTextColor 0 0 0
-    SetBackgroundColor 255 255 119
-    SetBorderColor 0 0 0
-    PlayAlertSound 2 50
-
-# Section: 3d. Prophecy
-
-Show
-    Class "Currency"
-    BaseType "Prophecy" "Silver Coin"
-    SetTextColor 200 200 200
-    SetBackgroundColor 74 15 199
-    SetBorderColor 200 200 200
-    PlayAlertSound 3 100
-
-# Section: 3e. Essence
-
-Show
-    Class "Currency"
-    BaseType "Whispering Essence"
-    SetTextColor 255 255 255
-    SetBackgroundColor 20 10 50
-    SetBorderColor 10 150 250
-    PlayAlertSound 8 300
-
-Show
-    Class "Currency"
-    BaseType "Muttering Essence"
-    SetTextColor 250 222 241
-    SetBackgroundColor 20 10 50
-    SetBorderColor 10 150 250
-    PlayAlertSound 8 300
-
-Show
-    Class "Currency"
-    BaseType "Weeping Essence"
-    SetTextColor 255 200 200
-    SetBackgroundColor 20 10 50
-    SetBorderColor 10 150 250
-    PlayAlertSound 8 300
-
-Show
-    Class "Currency"
-    BaseType "Wailing Essence"
-    SetTextColor 255 178 186
-    SetBackgroundColor 20 10 50
-    SetBorderColor 10 150 250
-    PlayAlertSound 8 300
-
-Show
-    Class "Currency"
-    BaseType "Screaming Essence"
-    SetTextColor 255 150 150
-    SetBackgroundColor 20 10 50
-    SetBorderColor 10 150 250
-    PlayAlertSound 8 300
-
-Show
-    Class "Currency"
-    BaseType "Shrieking Essence"
-    SetTextColor 235 99 99
-    SetBackgroundColor 20 10 50
-    SetBorderColor 10 150 250
-    PlayAlertSound 8 300
-
-Show
-    Class "Currency"
-    BaseType "Deafening Essence"
-    SetTextColor 247 40 40
-    SetBackgroundColor 20 10 50
-    SetBorderColor 10 150 250
-    PlayAlertSound 8 300
-
-Show
-    Class "Currency"
-    BaseType "Remnant"
-    SetTextColor 255 0 45
-    SetBackgroundColor 20 10 50
-    SetBorderColor 10 150 250
-    PlayAlertSound 8 300
-
-Show
-    Class "Currency"
-    BaseType "Essence"
-    SetTextColor 255 13 152
-    SetBackgroundColor 20 10 50
-    SetBorderColor 10 150 250
-    PlayAlertSound 8 300
-
-# Section: 3f. Breach
-
-Show
-    BaseType "Splinter of Xoph" "Blessing of Xoph" "Xoph's Breachstone"
-    SetBackgroundColor 70 0 0
-    SetBorderColor 240 40 40
-    PlayAlertSound 1 300
-
-Show
-    BaseType "Splinter of Tul" "Blessing of Tul" "Tul's Breachstone"
-    SetBackgroundColor 0 100 80
-    SetBorderColor 0 180 0
-    PlayAlertSound 1 300
-
-Show
-    BaseType "Splinter of Esh" "Blessing of Esh" "Esh's Breachstone"
-    SetBackgroundColor 0 40 100
-    SetBorderColor 74 74 232
-    SetFontSize 36
-    PlayAlertSound 1 300
-
-Show
-    BaseType "Splinter of Uul-Netol" "Blessing of Uul-Netol" "Uul-Netol's Breachstone"
-    SetBackgroundColor 60 60 60
-    SetBorderColor 0 0 0
-    SetFontSize 38
-    PlayAlertSound 1 300
-
-Show
-    BaseType "Splinter of Chayula" "Blessing of Chayula" "Chayula's Breachstone"
-    SetBackgroundColor 80 0 120
-    SetBorderColor 147 29 168
-    SetFontSize 42
-    PlayAlertSound 1 300
-
-Show
-    Class "Rings"
-    BaseType "Breach Ring"
-    SetBorderColor 215 115 210
-    PlayAlertSound 2 150
-
-# Section: 3g. Legacy
-
-Show
-    BaseType "Reliquary"
-    SetTextColor 229 160 12
-    SetBackgroundColor 0 0 0
-    SetBorderColor 175 96 37
-    SetFontSize 44
-    PlayAlertSound 4 300
-
-Show
-    BaseType "Nemesis Leaguestone" "Perandus Leaguestone" "Breach Leaguestone" "Essence Leaguestone"
-    Rarity = Magic
-    SetTextColor 0 0 0
-    SetBackgroundColor 175 96 37 220
-    SetBorderColor 229 160 12
-    SetFontSize 38
-    PlayAlertSound 5 220
-
-Show
-    BaseType "Nemesis Leaguestone" "Perandus Leaguestone" "Breach Leaguestone" "Essence Leaguestone"
-    SetBackgroundColor 175 96 37 220
-    SetBorderColor 229 160 12
-    SetFontSize 34
-    PlayAlertSound 5 220
-
-Show
-    BaseType "Ambush Leaguestone" "Anarchy Leaguestone" "Onslaught Leaguestone" "Talisman Leaguestone" "Warbands Leaguestone"
-    Rarity = Magic
-    SetTextColor 0 0 0
-    SetBackgroundColor 175 96 37 220
-    SetBorderColor 229 160 12
-    SetFontSize 36
-    PlayAlertSound 5 220
-
-Show
-    BaseType "Ambush Leaguestone" "Anarchy Leaguestone" "Onslaught Leaguestone" "Talisman Leaguestone" "Warbands Leaguestone"
-    SetBackgroundColor 175 96 37 220
-    SetBorderColor 229 160 12
-    SetFontSize 32
-    PlayAlertSound 5 220
-
-Show
-    BaseType "Leaguestone"
-    Rarity = Magic
-    SetTextColor 0 0 0
-    SetBackgroundColor 175 96 37 220
-    SetBorderColor 229 160 12
-    SetFontSize 34
-    PlayAlertSound 5 220
-
-Show
-    BaseType "Leaguestone"
-    SetBackgroundColor 175 96 37 220
-    SetBorderColor 229 160 12
-    SetFontSize 30
-    PlayAlertSound 5 220
 
 # Section: 4. Vitals
 
@@ -2122,7 +2131,7 @@ Show # Recipes - Chisel
     SetBackgroundColor 0 0 0 220
     SetBorderColor 184 218 242
 
-Show # Recipes - Quality Items - Low - Very Early
+Hide # Recipes - Quality Items - Low - Very Early
     LinkedSockets < 4
     Quality > 0
     Quality < 15
@@ -2401,7 +2410,7 @@ Hide # Obsolete - Old Bases
     SetBackgroundColor 0 0 0 190
     SetFontSize 30
 
-# Section: 13. Endgame Armours
+# Section: 13. Armour Crafting
 
 # Section: 13a. Top AR Bases
 
@@ -3518,7 +3527,7 @@ Hide # Crafting - Armours - AR/EV - Tier 2 Mods - Magic - Socketed
     ItemLevel >= 73
     SetBorderColor 127 127 127
 
-# Section: 14. Endgame Weapons
+# Section: 14. Weapon Crafting
 
 # Section: 14a. 1H Axes
 
