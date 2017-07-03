@@ -1861,7 +1861,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Normal - Penetrating
 
 Hide # Progression - Accessories - Quivers - In Maps - Normal - Spike Point
     Class "Quivers"
-    BaseType "Spike-Point Quiver"
+    BaseType "Spike-Point Arrow Quiver"
     Rarity = Normal
     ItemLevel >= 68
     SetBorderColor 127 127 127
@@ -2157,7 +2157,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Magic - Penetrating
 
 Hide # Progression - Accessories - Quivers - In Maps - Magic - Spike Point
     Class "Quivers"
-    BaseType "Spike-Point Quiver"
+    BaseType "Spike-Point Arrow Quiver"
     Rarity = Magic
     ItemLevel >= 68
     SetBorderColor 127 127 127
@@ -2453,7 +2453,7 @@ Show # Progression - Accessories - Quivers - After Act 4 - Normal - Penetrating
 
 Show # Progression - Accessories - Quivers - After Act 4 - Normal - Spike Point
     Class "Quivers"
-    BaseType "Spike-Point Quiver"
+    BaseType "Spike-Point Arrow Quiver"
     Rarity = Normal
     ItemLevel >= 40
     SetBorderColor 127 127 127
@@ -2749,7 +2749,7 @@ Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Penetrating
 
 Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Spike Point
     Class "Quivers"
-    BaseType "Spike-Point Quiver"
+    BaseType "Spike-Point Arrow Quiver"
     Rarity = Magic
     ItemLevel >= 40
     SetBorderColor 127 127 127
@@ -3045,7 +3045,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Normal - Penetrating
 
 Show # Progression - Accessories - Quivers - After Act 2 - Normal - Spike Point
     Class "Quivers"
-    BaseType "Spike-Point Quiver"
+    BaseType "Spike-Point Arrow Quiver"
     Rarity = Normal
     ItemLevel >= 23
     SetBorderColor 127 127 127
@@ -3341,7 +3341,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Magic - Penetrating
 
 Show # Progression - Accessories - Quivers - After Act 2 - Magic - Spike Point
     Class "Quivers"
-    BaseType "Spike-Point Quiver"
+    BaseType "Spike-Point Arrow Quiver"
     Rarity = Magic
     ItemLevel >= 23
     SetBorderColor 127 127 127
@@ -3673,7 +3673,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Magic - Penetrati
 
 Show # Progression - Accessories - Quivers - Very Early Game - Magic - Spike Point
     Class "Quivers"
-    BaseType "Spike-Point Quiver"
+    BaseType "Spike-Point Arrow Quiver"
     Rarity = Magic
     ItemLevel < 23
     SetTextColor 30 144 255
@@ -4006,7 +4006,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Normal - Penetrat
 
 Show # Progression - Accessories - Quivers - Very Early Game - Normal - Spike Point
     Class "Quivers"
-    BaseType "Spike-Point Quiver"
+    BaseType "Spike-Point Arrow Quiver"
     Rarity = Normal
     ItemLevel < 23
     SetTextColor 255 255 255
