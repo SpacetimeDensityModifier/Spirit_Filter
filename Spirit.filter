@@ -1571,7 +1571,7 @@ Show
     SetBorderColor 255 255 119
     SetFontSize 36
 
-Hide # Progression - Accessories - Amulets - In Maps - Normal - Coral
+Hide # Progression - Accessories - Amulets - Coral - Normal - In Maps
     Class "Amulets"
     BaseType "Coral Amulet"
     Rarity = Normal
@@ -1579,7 +1579,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Normal - Coral
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Normal - Paua
+Hide # Progression - Accessories - Amulets - Paua - Normal - In Maps
     Class "Amulets"
     BaseType "Paua Amulet"
     Rarity = Normal
@@ -1587,7 +1587,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Normal - Paua
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Normal - Amber
+Hide # Progression - Accessories - Amulets - Amber - Normal - In Maps
     Class "Amulets"
     BaseType "Amber Amulet"
     Rarity = Normal
@@ -1595,7 +1595,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Normal - Amber
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Normal - Jade
+Hide # Progression - Accessories - Amulets - Jade - Normal - In Maps
     Class "Amulets"
     BaseType "Jade Amulet"
     Rarity = Normal
@@ -1603,7 +1603,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Normal - Jade
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Normal - Lapis
+Hide # Progression - Accessories - Amulets - Lapis - Normal - In Maps
     Class "Amulets"
     BaseType "Lapis Amulet"
     Rarity = Normal
@@ -1611,7 +1611,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Normal - Lapis
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Normal - Gold
+Hide # Progression - Accessories - Amulets - Gold - Normal - In Maps
     Class "Amulets"
     BaseType "Gold Amulet"
     Rarity = Normal
@@ -1619,7 +1619,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Normal - Gold
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Normal - Agate
+Hide # Progression - Accessories - Amulets - Agate - Normal - In Maps
     Class "Amulets"
     BaseType "Agate Amulet"
     Rarity = Normal
@@ -1627,7 +1627,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Normal - Agate
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Normal - Citrine
+Hide # Progression - Accessories - Amulets - Citrine - Normal - In Maps
     Class "Amulets"
     BaseType "Citrine Amulet"
     Rarity = Normal
@@ -1635,7 +1635,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Normal - Citrine
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Normal - Turquoise
+Hide # Progression - Accessories - Amulets - Turquoise - Normal - In Maps
     Class "Amulets"
     BaseType "Turquoise Amulet"
     Rarity = Normal
@@ -1643,7 +1643,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Normal - Turquoise
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Normal - Onyx
+Hide # Progression - Accessories - Amulets - Onyx - Normal - In Maps
     Class "Amulets"
     BaseType "Onyx Amulet"
     Rarity = Normal
@@ -1651,7 +1651,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Normal - Onyx
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Normal - Coral
+Hide # Progression - Accessories - Rings - Coral - Normal - In Maps
     Class "Rings"
     BaseType "Coral Ring"
     Rarity = Normal
@@ -1659,7 +1659,7 @@ Hide # Progression - Accessories - Rings - In Maps - Normal - Coral
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Normal - Paua
+Hide # Progression - Accessories - Rings - Paua - Normal - In Maps
     Class "Rings"
     BaseType "Paua Ring"
     Rarity = Normal
@@ -1667,7 +1667,7 @@ Hide # Progression - Accessories - Rings - In Maps - Normal - Paua
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Normal - Iron
+Hide # Progression - Accessories - Rings - Iron - Normal - In Maps
     Class "Rings"
     BaseType "Iron Ring"
     Rarity = Normal
@@ -1675,7 +1675,7 @@ Hide # Progression - Accessories - Rings - In Maps - Normal - Iron
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Normal - Unset
+Hide # Progression - Accessories - Rings - Unset - Normal - In Maps
     Class "Rings"
     BaseType "Unset Ring"
     Rarity = Normal
@@ -1683,7 +1683,7 @@ Hide # Progression - Accessories - Rings - In Maps - Normal - Unset
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Normal - Sapphire
+Hide # Progression - Accessories - Rings - Sapphire - Normal - In Maps
     Class "Rings"
     BaseType "Sapphire Ring"
     Rarity = Normal
@@ -1691,7 +1691,7 @@ Hide # Progression - Accessories - Rings - In Maps - Normal - Sapphire
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Normal - Topaz
+Hide # Progression - Accessories - Rings - Topaz - Normal - In Maps
     Class "Rings"
     BaseType "Topaz Ring"
     Rarity = Normal
@@ -1699,7 +1699,7 @@ Hide # Progression - Accessories - Rings - In Maps - Normal - Topaz
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Normal - Ruby
+Hide # Progression - Accessories - Rings - Ruby - Normal - In Maps
     Class "Rings"
     BaseType "Ruby Ring"
     Rarity = Normal
@@ -1707,7 +1707,7 @@ Hide # Progression - Accessories - Rings - In Maps - Normal - Ruby
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Normal - Diamond
+Hide # Progression - Accessories - Rings - Diamond - Normal - In Maps
     Class "Rings"
     BaseType "Diamond Ring"
     Rarity = Normal
@@ -1715,7 +1715,7 @@ Hide # Progression - Accessories - Rings - In Maps - Normal - Diamond
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Normal - Gold
+Hide # Progression - Accessories - Rings - Gold - Normal - In Maps
     Class "Rings"
     BaseType "Gold Ring"
     Rarity = Normal
@@ -1723,7 +1723,7 @@ Hide # Progression - Accessories - Rings - In Maps - Normal - Gold
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Normal - Moonstone
+Hide # Progression - Accessories - Rings - Moonstone - Normal - In Maps
     Class "Rings"
     BaseType "Moonstone Ring"
     Rarity = Normal
@@ -1731,7 +1731,7 @@ Hide # Progression - Accessories - Rings - In Maps - Normal - Moonstone
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Normal - Two Stone
+Hide # Progression - Accessories - Rings - Two Stone - Normal - In Maps
     Class "Rings"
     BaseType "Two-Stone Ring"
     Rarity = Normal
@@ -1739,7 +1739,7 @@ Hide # Progression - Accessories - Rings - In Maps - Normal - Two Stone
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Normal - Amethyst
+Hide # Progression - Accessories - Rings - Amethyst - Normal - In Maps
     Class "Rings"
     BaseType "Amethyst Ring"
     Rarity = Normal
@@ -1747,7 +1747,7 @@ Hide # Progression - Accessories - Rings - In Maps - Normal - Amethyst
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Normal - Prismatic
+Hide # Progression - Accessories - Rings - Prismatic - Normal - In Maps
     Class "Rings"
     BaseType "Prismatic Ring"
     Rarity = Normal
@@ -1755,7 +1755,7 @@ Hide # Progression - Accessories - Rings - In Maps - Normal - Prismatic
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - In Maps - Normal - Chain
+Hide # Progression - Accessories - Belts - Chain - Normal - In Maps
     Class "Belts"
     BaseType "Chain Belt"
     Rarity = Normal
@@ -1763,7 +1763,7 @@ Hide # Progression - Accessories - Belts - In Maps - Normal - Chain
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - In Maps - Normal - Rustic
+Hide # Progression - Accessories - Belts - Rustic - Normal - In Maps
     Class "Belts"
     BaseType "Rustic Sash"
     Rarity = Normal
@@ -1771,7 +1771,7 @@ Hide # Progression - Accessories - Belts - In Maps - Normal - Rustic
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - In Maps - Normal - Heavy
+Hide # Progression - Accessories - Belts - Heavy - Normal - In Maps
     Class "Belts"
     BaseType "Heavy Belt"
     Rarity = Normal
@@ -1779,7 +1779,7 @@ Hide # Progression - Accessories - Belts - In Maps - Normal - Heavy
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - In Maps - Normal - Leather
+Hide # Progression - Accessories - Belts - Leather - Normal - In Maps
     Class "Belts"
     BaseType "Leather Belt"
     Rarity = Normal
@@ -1787,7 +1787,7 @@ Hide # Progression - Accessories - Belts - In Maps - Normal - Leather
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - In Maps - Normal - Cloth
+Hide # Progression - Accessories - Belts - Cloth - Normal - In Maps
     Class "Belts"
     BaseType "Cloth Belt"
     Rarity = Normal
@@ -1795,7 +1795,7 @@ Hide # Progression - Accessories - Belts - In Maps - Normal - Cloth
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - In Maps - Normal - Studded
+Hide # Progression - Accessories - Belts - Studded - Normal - In Maps
     Class "Belts"
     BaseType "Studded Belt"
     Rarity = Normal
@@ -1803,7 +1803,7 @@ Hide # Progression - Accessories - Belts - In Maps - Normal - Studded
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Normal - Two Point
+Hide # Progression - Accessories - Quivers - Two Point - Normal - In Maps
     Class "Quivers"
     BaseType "Two-Point Arrow Quiver"
     Rarity = Normal
@@ -1811,7 +1811,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Normal - Two Point
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Normal - Serrated
+Hide # Progression - Accessories - Quivers - Serrated - Normal - In Maps
     Class "Quivers"
     BaseType "Serrated Arrow Quiver"
     Rarity = Normal
@@ -1819,7 +1819,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Normal - Serrated
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Normal - Sharktooth
+Hide # Progression - Accessories - Quivers - Sharktooth - Normal - In Maps
     Class "Quivers"
     BaseType "Sharktooth Arrow Quiver"
     Rarity = Normal
@@ -1827,7 +1827,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Normal - Sharktooth
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Normal - Blunt
+Hide # Progression - Accessories - Quivers - Blunt - Normal - In Maps
     Class "Quivers"
     BaseType "Blunt Arrow Quiver"
     Rarity = Normal
@@ -1835,7 +1835,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Normal - Blunt
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Normal - Fire
+Hide # Progression - Accessories - Quivers - Fire - Normal - In Maps
     Class "Quivers"
     BaseType "Fire Arrow Quiver"
     Rarity = Normal
@@ -1843,7 +1843,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Normal - Fire
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Normal - Broadhead
+Hide # Progression - Accessories - Quivers - Broadhead - Normal - In Maps
     Class "Quivers"
     BaseType "Broadhead Arrow Quiver"
     Rarity = Normal
@@ -1851,7 +1851,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Normal - Broadhead
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Normal - Penetrating
+Hide # Progression - Accessories - Quivers - Penetrating - Normal - In Maps
     Class "Quivers"
     BaseType "Penetrating Arrow Quiver"
     Rarity = Normal
@@ -1859,7 +1859,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Normal - Penetrating
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Normal - Spike Point
+Hide # Progression - Accessories - Quivers - Spike Point - Normal - In Maps
     Class "Quivers"
     BaseType "Spike-Point Arrow Quiver"
     Rarity = Normal
@@ -1867,7 +1867,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Normal - Spike Point
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Magic - Coral
+Hide # Progression - Accessories - Amulets - Coral - Magic - In Maps
     Class "Amulets"
     BaseType "Coral Amulet"
     Rarity = Magic
@@ -1875,7 +1875,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Magic - Coral
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Magic - Paua
+Hide # Progression - Accessories - Amulets - Paua - Magic - In Maps
     Class "Amulets"
     BaseType "Paua Amulet"
     Rarity = Magic
@@ -1883,7 +1883,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Magic - Paua
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Magic - Amber
+Hide # Progression - Accessories - Amulets - Amber - Magic - In Maps
     Class "Amulets"
     BaseType "Amber Amulet"
     Rarity = Magic
@@ -1891,7 +1891,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Magic - Amber
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Magic - Jade
+Hide # Progression - Accessories - Amulets - Jade - Magic - In Maps
     Class "Amulets"
     BaseType "Jade Amulet"
     Rarity = Magic
@@ -1899,7 +1899,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Magic - Jade
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Magic - Lapis
+Hide # Progression - Accessories - Amulets - Lapis - Magic - In Maps
     Class "Amulets"
     BaseType "Lapis Amulet"
     Rarity = Magic
@@ -1907,7 +1907,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Magic - Lapis
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Magic - Gold
+Hide # Progression - Accessories - Amulets - Gold - Magic - In Maps
     Class "Amulets"
     BaseType "Gold Amulet"
     Rarity = Magic
@@ -1915,7 +1915,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Magic - Gold
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Magic - Agate
+Hide # Progression - Accessories - Amulets - Agate - Magic - In Maps
     Class "Amulets"
     BaseType "Agate Amulet"
     Rarity = Magic
@@ -1923,7 +1923,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Magic - Agate
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Magic - Citrine
+Hide # Progression - Accessories - Amulets - Citrine - Magic - In Maps
     Class "Amulets"
     BaseType "Citrine Amulet"
     Rarity = Magic
@@ -1931,7 +1931,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Magic - Citrine
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Magic - Turquoise
+Hide # Progression - Accessories - Amulets - Turquoise - Magic - In Maps
     Class "Amulets"
     BaseType "Turquoise Amulet"
     Rarity = Magic
@@ -1939,7 +1939,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Magic - Turquoise
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - In Maps - Magic - Onyx
+Hide # Progression - Accessories - Amulets - Onyx - Magic - In Maps
     Class "Amulets"
     BaseType "Onyx Amulet"
     Rarity = Magic
@@ -1947,7 +1947,7 @@ Hide # Progression - Accessories - Amulets - In Maps - Magic - Onyx
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Magic - Coral
+Hide # Progression - Accessories - Rings - Coral - Magic - In Maps
     Class "Rings"
     BaseType "Coral Ring"
     Rarity = Magic
@@ -1955,7 +1955,7 @@ Hide # Progression - Accessories - Rings - In Maps - Magic - Coral
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Magic - Paua
+Hide # Progression - Accessories - Rings - Paua - Magic - In Maps
     Class "Rings"
     BaseType "Paua Ring"
     Rarity = Magic
@@ -1963,7 +1963,7 @@ Hide # Progression - Accessories - Rings - In Maps - Magic - Paua
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Magic - Iron
+Hide # Progression - Accessories - Rings - Iron - Magic - In Maps
     Class "Rings"
     BaseType "Iron Ring"
     Rarity = Magic
@@ -1971,7 +1971,7 @@ Hide # Progression - Accessories - Rings - In Maps - Magic - Iron
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Magic - Unset
+Hide # Progression - Accessories - Rings - Unset - Magic - In Maps
     Class "Rings"
     BaseType "Unset Ring"
     Rarity = Magic
@@ -1979,7 +1979,7 @@ Hide # Progression - Accessories - Rings - In Maps - Magic - Unset
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Magic - Sapphire
+Hide # Progression - Accessories - Rings - Sapphire - Magic - In Maps
     Class "Rings"
     BaseType "Sapphire Ring"
     Rarity = Magic
@@ -1987,7 +1987,7 @@ Hide # Progression - Accessories - Rings - In Maps - Magic - Sapphire
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Magic - Topaz
+Hide # Progression - Accessories - Rings - Topaz - Magic - In Maps
     Class "Rings"
     BaseType "Topaz Ring"
     Rarity = Magic
@@ -1995,7 +1995,7 @@ Hide # Progression - Accessories - Rings - In Maps - Magic - Topaz
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Magic - Ruby
+Hide # Progression - Accessories - Rings - Ruby - Magic - In Maps
     Class "Rings"
     BaseType "Ruby Ring"
     Rarity = Magic
@@ -2003,7 +2003,7 @@ Hide # Progression - Accessories - Rings - In Maps - Magic - Ruby
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Magic - Diamond
+Hide # Progression - Accessories - Rings - Diamond - Magic - In Maps
     Class "Rings"
     BaseType "Diamond Ring"
     Rarity = Magic
@@ -2011,7 +2011,7 @@ Hide # Progression - Accessories - Rings - In Maps - Magic - Diamond
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Magic - Gold
+Hide # Progression - Accessories - Rings - Gold - Magic - In Maps
     Class "Rings"
     BaseType "Gold Ring"
     Rarity = Magic
@@ -2019,7 +2019,7 @@ Hide # Progression - Accessories - Rings - In Maps - Magic - Gold
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Magic - Moonstone
+Hide # Progression - Accessories - Rings - Moonstone - Magic - In Maps
     Class "Rings"
     BaseType "Moonstone Ring"
     Rarity = Magic
@@ -2027,7 +2027,7 @@ Hide # Progression - Accessories - Rings - In Maps - Magic - Moonstone
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Magic - Two Stone
+Hide # Progression - Accessories - Rings - Two Stone - Magic - In Maps
     Class "Rings"
     BaseType "Two-Stone Ring"
     Rarity = Magic
@@ -2035,7 +2035,7 @@ Hide # Progression - Accessories - Rings - In Maps - Magic - Two Stone
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Magic - Amethyst
+Hide # Progression - Accessories - Rings - Amethyst - Magic - In Maps
     Class "Rings"
     BaseType "Amethyst Ring"
     Rarity = Magic
@@ -2043,7 +2043,7 @@ Hide # Progression - Accessories - Rings - In Maps - Magic - Amethyst
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - In Maps - Magic - Prismatic
+Hide # Progression - Accessories - Rings - Prismatic - Magic - In Maps
     Class "Rings"
     BaseType "Prismatic Ring"
     Rarity = Magic
@@ -2051,7 +2051,7 @@ Hide # Progression - Accessories - Rings - In Maps - Magic - Prismatic
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - In Maps - Magic - Chain
+Hide # Progression - Accessories - Belts - Chain - Magic - In Maps
     Class "Belts"
     BaseType "Chain Belt"
     Rarity = Magic
@@ -2059,7 +2059,7 @@ Hide # Progression - Accessories - Belts - In Maps - Magic - Chain
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - In Maps - Magic - Rustic
+Hide # Progression - Accessories - Belts - Rustic - Magic - In Maps
     Class "Belts"
     BaseType "Rustic Sash"
     Rarity = Magic
@@ -2067,7 +2067,7 @@ Hide # Progression - Accessories - Belts - In Maps - Magic - Rustic
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - In Maps - Magic - Heavy
+Hide # Progression - Accessories - Belts - Heavy - Magic - In Maps
     Class "Belts"
     BaseType "Heavy Belt"
     Rarity = Magic
@@ -2075,7 +2075,7 @@ Hide # Progression - Accessories - Belts - In Maps - Magic - Heavy
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - In Maps - Magic - Leather
+Hide # Progression - Accessories - Belts - Leather - Magic - In Maps
     Class "Belts"
     BaseType "Leather Belt"
     Rarity = Magic
@@ -2083,7 +2083,7 @@ Hide # Progression - Accessories - Belts - In Maps - Magic - Leather
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - In Maps - Magic - Cloth
+Hide # Progression - Accessories - Belts - Cloth - Magic - In Maps
     Class "Belts"
     BaseType "Cloth Belt"
     Rarity = Magic
@@ -2091,7 +2091,7 @@ Hide # Progression - Accessories - Belts - In Maps - Magic - Cloth
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - In Maps - Magic - Studded
+Hide # Progression - Accessories - Belts - Studded - Magic - In Maps
     Class "Belts"
     BaseType "Studded Belt"
     Rarity = Magic
@@ -2099,7 +2099,7 @@ Hide # Progression - Accessories - Belts - In Maps - Magic - Studded
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Magic - Two Point
+Hide # Progression - Accessories - Quivers - Two Point - Magic - In Maps
     Class "Quivers"
     BaseType "Two-Point Arrow Quiver"
     Rarity = Magic
@@ -2107,7 +2107,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Magic - Two Point
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Magic - Serrated
+Hide # Progression - Accessories - Quivers - Serrated - Magic - In Maps
     Class "Quivers"
     BaseType "Serrated Arrow Quiver"
     Rarity = Magic
@@ -2115,7 +2115,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Magic - Serrated
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Magic - Sharktooth
+Hide # Progression - Accessories - Quivers - Sharktooth - Magic - In Maps
     Class "Quivers"
     BaseType "Sharktooth Arrow Quiver"
     Rarity = Magic
@@ -2123,7 +2123,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Magic - Sharktooth
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Magic - Blunt
+Hide # Progression - Accessories - Quivers - Blunt - Magic - In Maps
     Class "Quivers"
     BaseType "Blunt Arrow Quiver"
     Rarity = Magic
@@ -2131,7 +2131,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Magic - Blunt
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Magic - Fire
+Hide # Progression - Accessories - Quivers - Fire - Magic - In Maps
     Class "Quivers"
     BaseType "Fire Arrow Quiver"
     Rarity = Magic
@@ -2139,7 +2139,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Magic - Fire
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Magic - Broadhead
+Hide # Progression - Accessories - Quivers - Broadhead - Magic - In Maps
     Class "Quivers"
     BaseType "Broadhead Arrow Quiver"
     Rarity = Magic
@@ -2147,7 +2147,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Magic - Broadhead
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Magic - Penetrating
+Hide # Progression - Accessories - Quivers - Penetrating - Magic - In Maps
     Class "Quivers"
     BaseType "Penetrating Arrow Quiver"
     Rarity = Magic
@@ -2155,7 +2155,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Magic - Penetrating
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - In Maps - Magic - Spike Point
+Hide # Progression - Accessories - Quivers - Spike Point - Magic - In Maps
     Class "Quivers"
     BaseType "Spike-Point Arrow Quiver"
     Rarity = Magic
@@ -2163,7 +2163,7 @@ Hide # Progression - Accessories - Quivers - In Maps - Magic - Spike Point
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 4 - Normal - Coral
+Hide # Progression - Accessories - Amulets - Coral - Normal - After Act 4
     Class "Amulets"
     BaseType "Coral Amulet"
     Rarity = Normal
@@ -2171,7 +2171,7 @@ Show # Progression - Accessories - Amulets - After Act 4 - Normal - Coral
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Amulets - After Act 4 - Normal - Paua
+Hide # Progression - Accessories - Amulets - Paua - Normal - After Act 4
     Class "Amulets"
     BaseType "Paua Amulet"
     Rarity = Normal
@@ -2179,7 +2179,7 @@ Show # Progression - Accessories - Amulets - After Act 4 - Normal - Paua
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Amulets - After Act 4 - Normal - Amber
+Hide # Progression - Accessories - Amulets - Amber - Normal - After Act 4
     Class "Amulets"
     BaseType "Amber Amulet"
     Rarity = Normal
@@ -2187,7 +2187,7 @@ Show # Progression - Accessories - Amulets - After Act 4 - Normal - Amber
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Amulets - After Act 4 - Normal - Jade
+Hide # Progression - Accessories - Amulets - Jade - Normal - After Act 4
     Class "Amulets"
     BaseType "Jade Amulet"
     Rarity = Normal
@@ -2195,7 +2195,7 @@ Show # Progression - Accessories - Amulets - After Act 4 - Normal - Jade
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Amulets - After Act 4 - Normal - Lapis
+Hide # Progression - Accessories - Amulets - Lapis - Normal - After Act 4
     Class "Amulets"
     BaseType "Lapis Amulet"
     Rarity = Normal
@@ -2203,7 +2203,7 @@ Show # Progression - Accessories - Amulets - After Act 4 - Normal - Lapis
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Amulets - After Act 4 - Normal - Gold
+Hide # Progression - Accessories - Amulets - Gold - Normal - After Act 4
     Class "Amulets"
     BaseType "Gold Amulet"
     Rarity = Normal
@@ -2211,7 +2211,7 @@ Show # Progression - Accessories - Amulets - After Act 4 - Normal - Gold
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Amulets - After Act 4 - Normal - Agate
+Hide # Progression - Accessories - Amulets - Agate - Normal - After Act 4
     Class "Amulets"
     BaseType "Agate Amulet"
     Rarity = Normal
@@ -2219,7 +2219,7 @@ Show # Progression - Accessories - Amulets - After Act 4 - Normal - Agate
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Amulets - After Act 4 - Normal - Citrine
+Hide # Progression - Accessories - Amulets - Citrine - Normal - After Act 4
     Class "Amulets"
     BaseType "Citrine Amulet"
     Rarity = Normal
@@ -2227,7 +2227,7 @@ Show # Progression - Accessories - Amulets - After Act 4 - Normal - Citrine
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Amulets - After Act 4 - Normal - Turquoise
+Hide # Progression - Accessories - Amulets - Turquoise - Normal - After Act 4
     Class "Amulets"
     BaseType "Turquoise Amulet"
     Rarity = Normal
@@ -2235,7 +2235,7 @@ Show # Progression - Accessories - Amulets - After Act 4 - Normal - Turquoise
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Amulets - After Act 4 - Normal - Onyx
+Hide # Progression - Accessories - Amulets - Onyx - Normal - After Act 4
     Class "Amulets"
     BaseType "Onyx Amulet"
     Rarity = Normal
@@ -2243,7 +2243,7 @@ Show # Progression - Accessories - Amulets - After Act 4 - Normal - Onyx
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Rings - After Act 4 - Normal - Coral
+Hide # Progression - Accessories - Rings - Coral - Normal - After Act 4
     Class "Rings"
     BaseType "Coral Ring"
     Rarity = Normal
@@ -2251,7 +2251,7 @@ Show # Progression - Accessories - Rings - After Act 4 - Normal - Coral
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Rings - After Act 4 - Normal - Paua
+Hide # Progression - Accessories - Rings - Paua - Normal - After Act 4
     Class "Rings"
     BaseType "Paua Ring"
     Rarity = Normal
@@ -2259,7 +2259,7 @@ Show # Progression - Accessories - Rings - After Act 4 - Normal - Paua
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Rings - After Act 4 - Normal - Iron
+Hide # Progression - Accessories - Rings - Iron - Normal - After Act 4
     Class "Rings"
     BaseType "Iron Ring"
     Rarity = Normal
@@ -2267,7 +2267,7 @@ Show # Progression - Accessories - Rings - After Act 4 - Normal - Iron
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Rings - After Act 4 - Normal - Unset
+Hide # Progression - Accessories - Rings - Unset - Normal - After Act 4
     Class "Rings"
     BaseType "Unset Ring"
     Rarity = Normal
@@ -2275,7 +2275,7 @@ Show # Progression - Accessories - Rings - After Act 4 - Normal - Unset
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Rings - After Act 4 - Normal - Sapphire
+Hide # Progression - Accessories - Rings - Sapphire - Normal - After Act 4
     Class "Rings"
     BaseType "Sapphire Ring"
     Rarity = Normal
@@ -2283,7 +2283,7 @@ Show # Progression - Accessories - Rings - After Act 4 - Normal - Sapphire
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Rings - After Act 4 - Normal - Topaz
+Hide # Progression - Accessories - Rings - Topaz - Normal - After Act 4
     Class "Rings"
     BaseType "Topaz Ring"
     Rarity = Normal
@@ -2291,7 +2291,7 @@ Show # Progression - Accessories - Rings - After Act 4 - Normal - Topaz
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Rings - After Act 4 - Normal - Ruby
+Hide # Progression - Accessories - Rings - Ruby - Normal - After Act 4
     Class "Rings"
     BaseType "Ruby Ring"
     Rarity = Normal
@@ -2299,7 +2299,7 @@ Show # Progression - Accessories - Rings - After Act 4 - Normal - Ruby
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Rings - After Act 4 - Normal - Diamond
+Hide # Progression - Accessories - Rings - Diamond - Normal - After Act 4
     Class "Rings"
     BaseType "Diamond Ring"
     Rarity = Normal
@@ -2307,7 +2307,7 @@ Show # Progression - Accessories - Rings - After Act 4 - Normal - Diamond
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Rings - After Act 4 - Normal - Gold
+Hide # Progression - Accessories - Rings - Gold - Normal - After Act 4
     Class "Rings"
     BaseType "Gold Ring"
     Rarity = Normal
@@ -2315,7 +2315,7 @@ Show # Progression - Accessories - Rings - After Act 4 - Normal - Gold
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Rings - After Act 4 - Normal - Moonstone
+Hide # Progression - Accessories - Rings - Moonstone - Normal - After Act 4
     Class "Rings"
     BaseType "Moonstone Ring"
     Rarity = Normal
@@ -2323,7 +2323,7 @@ Show # Progression - Accessories - Rings - After Act 4 - Normal - Moonstone
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Rings - After Act 4 - Normal - Two Stone
+Hide # Progression - Accessories - Rings - Two Stone - Normal - After Act 4
     Class "Rings"
     BaseType "Two-Stone Ring"
     Rarity = Normal
@@ -2331,7 +2331,7 @@ Show # Progression - Accessories - Rings - After Act 4 - Normal - Two Stone
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Rings - After Act 4 - Normal - Amethyst
+Hide # Progression - Accessories - Rings - Amethyst - Normal - After Act 4
     Class "Rings"
     BaseType "Amethyst Ring"
     Rarity = Normal
@@ -2339,7 +2339,7 @@ Show # Progression - Accessories - Rings - After Act 4 - Normal - Amethyst
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Rings - After Act 4 - Normal - Prismatic
+Hide # Progression - Accessories - Rings - Prismatic - Normal - After Act 4
     Class "Rings"
     BaseType "Prismatic Ring"
     Rarity = Normal
@@ -2347,7 +2347,7 @@ Show # Progression - Accessories - Rings - After Act 4 - Normal - Prismatic
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Belts - After Act 4 - Normal - Chain
+Hide # Progression - Accessories - Belts - Chain - Normal - After Act 4
     Class "Belts"
     BaseType "Chain Belt"
     Rarity = Normal
@@ -2355,7 +2355,7 @@ Show # Progression - Accessories - Belts - After Act 4 - Normal - Chain
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Belts - After Act 4 - Normal - Rustic
+Hide # Progression - Accessories - Belts - Rustic - Normal - After Act 4
     Class "Belts"
     BaseType "Rustic Sash"
     Rarity = Normal
@@ -2363,7 +2363,7 @@ Show # Progression - Accessories - Belts - After Act 4 - Normal - Rustic
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Belts - After Act 4 - Normal - Heavy
+Hide # Progression - Accessories - Belts - Heavy - Normal - After Act 4
     Class "Belts"
     BaseType "Heavy Belt"
     Rarity = Normal
@@ -2371,7 +2371,7 @@ Show # Progression - Accessories - Belts - After Act 4 - Normal - Heavy
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Belts - After Act 4 - Normal - Leather
+Hide # Progression - Accessories - Belts - Leather - Normal - After Act 4
     Class "Belts"
     BaseType "Leather Belt"
     Rarity = Normal
@@ -2379,7 +2379,7 @@ Show # Progression - Accessories - Belts - After Act 4 - Normal - Leather
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Belts - After Act 4 - Normal - Cloth
+Hide # Progression - Accessories - Belts - Cloth - Normal - After Act 4
     Class "Belts"
     BaseType "Cloth Belt"
     Rarity = Normal
@@ -2387,7 +2387,7 @@ Show # Progression - Accessories - Belts - After Act 4 - Normal - Cloth
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Belts - After Act 4 - Normal - Studded
+Hide # Progression - Accessories - Belts - Studded - Normal - After Act 4
     Class "Belts"
     BaseType "Studded Belt"
     Rarity = Normal
@@ -2395,7 +2395,7 @@ Show # Progression - Accessories - Belts - After Act 4 - Normal - Studded
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Quivers - After Act 4 - Normal - Two Point
+Hide # Progression - Accessories - Quivers - Two Point - Normal - After Act 4
     Class "Quivers"
     BaseType "Two-Point Arrow Quiver"
     Rarity = Normal
@@ -2403,7 +2403,7 @@ Show # Progression - Accessories - Quivers - After Act 4 - Normal - Two Point
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Quivers - After Act 4 - Normal - Serrated
+Hide # Progression - Accessories - Quivers - Serrated - Normal - After Act 4
     Class "Quivers"
     BaseType "Serrated Arrow Quiver"
     Rarity = Normal
@@ -2411,7 +2411,7 @@ Show # Progression - Accessories - Quivers - After Act 4 - Normal - Serrated
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Quivers - After Act 4 - Normal - Sharktooth
+Hide # Progression - Accessories - Quivers - Sharktooth - Normal - After Act 4
     Class "Quivers"
     BaseType "Sharktooth Arrow Quiver"
     Rarity = Normal
@@ -2419,7 +2419,7 @@ Show # Progression - Accessories - Quivers - After Act 4 - Normal - Sharktooth
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Quivers - After Act 4 - Normal - Blunt
+Hide # Progression - Accessories - Quivers - Blunt - Normal - After Act 4
     Class "Quivers"
     BaseType "Blunt Arrow Quiver"
     Rarity = Normal
@@ -2427,7 +2427,7 @@ Show # Progression - Accessories - Quivers - After Act 4 - Normal - Blunt
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Quivers - After Act 4 - Normal - Fire
+Hide # Progression - Accessories - Quivers - Fire - Normal - After Act 4
     Class "Quivers"
     BaseType "Fire Arrow Quiver"
     Rarity = Normal
@@ -2435,7 +2435,7 @@ Show # Progression - Accessories - Quivers - After Act 4 - Normal - Fire
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Quivers - After Act 4 - Normal - Broadhead
+Hide # Progression - Accessories - Quivers - Broadhead - Normal - After Act 4
     Class "Quivers"
     BaseType "Broadhead Arrow Quiver"
     Rarity = Normal
@@ -2443,7 +2443,7 @@ Show # Progression - Accessories - Quivers - After Act 4 - Normal - Broadhead
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Quivers - After Act 4 - Normal - Penetrating
+Hide # Progression - Accessories - Quivers - Penetrating - Normal - After Act 4
     Class "Quivers"
     BaseType "Penetrating Arrow Quiver"
     Rarity = Normal
@@ -2451,7 +2451,7 @@ Show # Progression - Accessories - Quivers - After Act 4 - Normal - Penetrating
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Show # Progression - Accessories - Quivers - After Act 4 - Normal - Spike Point
+Hide # Progression - Accessories - Quivers - Spike Point - Normal - After Act 4
     Class "Quivers"
     BaseType "Spike-Point Arrow Quiver"
     Rarity = Normal
@@ -2459,7 +2459,7 @@ Show # Progression - Accessories - Quivers - After Act 4 - Normal - Spike Point
     SetBorderColor 127 127 127
     SetFontSize 30
 
-Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Coral
+Hide # Progression - Accessories - Amulets - Coral - Magic - After Act 4
     Class "Amulets"
     BaseType "Coral Amulet"
     Rarity = Magic
@@ -2467,7 +2467,7 @@ Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Coral
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Paua
+Hide # Progression - Accessories - Amulets - Paua - Magic - After Act 4
     Class "Amulets"
     BaseType "Paua Amulet"
     Rarity = Magic
@@ -2475,7 +2475,7 @@ Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Paua
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Amber
+Hide # Progression - Accessories - Amulets - Amber - Magic - After Act 4
     Class "Amulets"
     BaseType "Amber Amulet"
     Rarity = Magic
@@ -2483,7 +2483,7 @@ Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Amber
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Jade
+Hide # Progression - Accessories - Amulets - Jade - Magic - After Act 4
     Class "Amulets"
     BaseType "Jade Amulet"
     Rarity = Magic
@@ -2491,7 +2491,7 @@ Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Jade
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Lapis
+Hide # Progression - Accessories - Amulets - Lapis - Magic - After Act 4
     Class "Amulets"
     BaseType "Lapis Amulet"
     Rarity = Magic
@@ -2499,7 +2499,7 @@ Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Lapis
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Gold
+Hide # Progression - Accessories - Amulets - Gold - Magic - After Act 4
     Class "Amulets"
     BaseType "Gold Amulet"
     Rarity = Magic
@@ -2507,7 +2507,7 @@ Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Gold
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Agate
+Hide # Progression - Accessories - Amulets - Agate - Magic - After Act 4
     Class "Amulets"
     BaseType "Agate Amulet"
     Rarity = Magic
@@ -2515,7 +2515,7 @@ Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Agate
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Citrine
+Hide # Progression - Accessories - Amulets - Citrine - Magic - After Act 4
     Class "Amulets"
     BaseType "Citrine Amulet"
     Rarity = Magic
@@ -2523,7 +2523,7 @@ Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Citrine
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Turquoise
+Hide # Progression - Accessories - Amulets - Turquoise - Magic - After Act 4
     Class "Amulets"
     BaseType "Turquoise Amulet"
     Rarity = Magic
@@ -2531,7 +2531,7 @@ Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Turquoise
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Onyx
+Hide # Progression - Accessories - Amulets - Onyx - Magic - After Act 4
     Class "Amulets"
     BaseType "Onyx Amulet"
     Rarity = Magic
@@ -2539,7 +2539,7 @@ Hide # Progression - Accessories - Amulets - After Act 4 - Magic - Onyx
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - After Act 4 - Magic - Coral
+Hide # Progression - Accessories - Rings - Coral - Magic - After Act 4
     Class "Rings"
     BaseType "Coral Ring"
     Rarity = Magic
@@ -2547,7 +2547,7 @@ Hide # Progression - Accessories - Rings - After Act 4 - Magic - Coral
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - After Act 4 - Magic - Paua
+Hide # Progression - Accessories - Rings - Paua - Magic - After Act 4
     Class "Rings"
     BaseType "Paua Ring"
     Rarity = Magic
@@ -2555,7 +2555,7 @@ Hide # Progression - Accessories - Rings - After Act 4 - Magic - Paua
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - After Act 4 - Magic - Iron
+Hide # Progression - Accessories - Rings - Iron - Magic - After Act 4
     Class "Rings"
     BaseType "Iron Ring"
     Rarity = Magic
@@ -2563,7 +2563,7 @@ Hide # Progression - Accessories - Rings - After Act 4 - Magic - Iron
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - After Act 4 - Magic - Unset
+Hide # Progression - Accessories - Rings - Unset - Magic - After Act 4
     Class "Rings"
     BaseType "Unset Ring"
     Rarity = Magic
@@ -2571,7 +2571,7 @@ Hide # Progression - Accessories - Rings - After Act 4 - Magic - Unset
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - After Act 4 - Magic - Sapphire
+Hide # Progression - Accessories - Rings - Sapphire - Magic - After Act 4
     Class "Rings"
     BaseType "Sapphire Ring"
     Rarity = Magic
@@ -2579,7 +2579,7 @@ Hide # Progression - Accessories - Rings - After Act 4 - Magic - Sapphire
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - After Act 4 - Magic - Topaz
+Hide # Progression - Accessories - Rings - Topaz - Magic - After Act 4
     Class "Rings"
     BaseType "Topaz Ring"
     Rarity = Magic
@@ -2587,7 +2587,7 @@ Hide # Progression - Accessories - Rings - After Act 4 - Magic - Topaz
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - After Act 4 - Magic - Ruby
+Hide # Progression - Accessories - Rings - Ruby - Magic - After Act 4
     Class "Rings"
     BaseType "Ruby Ring"
     Rarity = Magic
@@ -2595,7 +2595,7 @@ Hide # Progression - Accessories - Rings - After Act 4 - Magic - Ruby
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - After Act 4 - Magic - Diamond
+Hide # Progression - Accessories - Rings - Diamond - Magic - After Act 4
     Class "Rings"
     BaseType "Diamond Ring"
     Rarity = Magic
@@ -2603,7 +2603,7 @@ Hide # Progression - Accessories - Rings - After Act 4 - Magic - Diamond
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - After Act 4 - Magic - Gold
+Hide # Progression - Accessories - Rings - Gold - Magic - After Act 4
     Class "Rings"
     BaseType "Gold Ring"
     Rarity = Magic
@@ -2611,7 +2611,7 @@ Hide # Progression - Accessories - Rings - After Act 4 - Magic - Gold
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - After Act 4 - Magic - Moonstone
+Hide # Progression - Accessories - Rings - Moonstone - Magic - After Act 4
     Class "Rings"
     BaseType "Moonstone Ring"
     Rarity = Magic
@@ -2619,7 +2619,7 @@ Hide # Progression - Accessories - Rings - After Act 4 - Magic - Moonstone
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - After Act 4 - Magic - Two Stone
+Hide # Progression - Accessories - Rings - Two Stone - Magic - After Act 4
     Class "Rings"
     BaseType "Two-Stone Ring"
     Rarity = Magic
@@ -2627,7 +2627,7 @@ Hide # Progression - Accessories - Rings - After Act 4 - Magic - Two Stone
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - After Act 4 - Magic - Amethyst
+Hide # Progression - Accessories - Rings - Amethyst - Magic - After Act 4
     Class "Rings"
     BaseType "Amethyst Ring"
     Rarity = Magic
@@ -2635,7 +2635,7 @@ Hide # Progression - Accessories - Rings - After Act 4 - Magic - Amethyst
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Rings - After Act 4 - Magic - Prismatic
+Hide # Progression - Accessories - Rings - Prismatic - Magic - After Act 4
     Class "Rings"
     BaseType "Prismatic Ring"
     Rarity = Magic
@@ -2643,7 +2643,7 @@ Hide # Progression - Accessories - Rings - After Act 4 - Magic - Prismatic
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - After Act 4 - Magic - Chain
+Hide # Progression - Accessories - Belts - Chain - Magic - After Act 4
     Class "Belts"
     BaseType "Chain Belt"
     Rarity = Magic
@@ -2651,7 +2651,7 @@ Hide # Progression - Accessories - Belts - After Act 4 - Magic - Chain
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - After Act 4 - Magic - Rustic
+Hide # Progression - Accessories - Belts - Rustic - Magic - After Act 4
     Class "Belts"
     BaseType "Rustic Sash"
     Rarity = Magic
@@ -2659,7 +2659,7 @@ Hide # Progression - Accessories - Belts - After Act 4 - Magic - Rustic
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - After Act 4 - Magic - Heavy
+Hide # Progression - Accessories - Belts - Heavy - Magic - After Act 4
     Class "Belts"
     BaseType "Heavy Belt"
     Rarity = Magic
@@ -2667,7 +2667,7 @@ Hide # Progression - Accessories - Belts - After Act 4 - Magic - Heavy
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - After Act 4 - Magic - Leather
+Hide # Progression - Accessories - Belts - Leather - Magic - After Act 4
     Class "Belts"
     BaseType "Leather Belt"
     Rarity = Magic
@@ -2675,7 +2675,7 @@ Hide # Progression - Accessories - Belts - After Act 4 - Magic - Leather
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - After Act 4 - Magic - Cloth
+Hide # Progression - Accessories - Belts - Cloth - Magic - After Act 4
     Class "Belts"
     BaseType "Cloth Belt"
     Rarity = Magic
@@ -2683,7 +2683,7 @@ Hide # Progression - Accessories - Belts - After Act 4 - Magic - Cloth
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Belts - After Act 4 - Magic - Studded
+Hide # Progression - Accessories - Belts - Studded - Magic - After Act 4
     Class "Belts"
     BaseType "Studded Belt"
     Rarity = Magic
@@ -2691,7 +2691,7 @@ Hide # Progression - Accessories - Belts - After Act 4 - Magic - Studded
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Two Point
+Hide # Progression - Accessories - Quivers - Two Point - Magic - After Act 4
     Class "Quivers"
     BaseType "Two-Point Arrow Quiver"
     Rarity = Magic
@@ -2699,7 +2699,7 @@ Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Two Point
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Serrated
+Hide # Progression - Accessories - Quivers - Serrated - Magic - After Act 4
     Class "Quivers"
     BaseType "Serrated Arrow Quiver"
     Rarity = Magic
@@ -2707,7 +2707,7 @@ Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Serrated
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Sharktooth
+Hide # Progression - Accessories - Quivers - Sharktooth - Magic - After Act 4
     Class "Quivers"
     BaseType "Sharktooth Arrow Quiver"
     Rarity = Magic
@@ -2715,7 +2715,7 @@ Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Sharktooth
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Blunt
+Hide # Progression - Accessories - Quivers - Blunt - Magic - After Act 4
     Class "Quivers"
     BaseType "Blunt Arrow Quiver"
     Rarity = Magic
@@ -2723,7 +2723,7 @@ Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Blunt
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Fire
+Hide # Progression - Accessories - Quivers - Fire - Magic - After Act 4
     Class "Quivers"
     BaseType "Fire Arrow Quiver"
     Rarity = Magic
@@ -2731,7 +2731,7 @@ Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Fire
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Broadhead
+Hide # Progression - Accessories - Quivers - Broadhead - Magic - After Act 4
     Class "Quivers"
     BaseType "Broadhead Arrow Quiver"
     Rarity = Magic
@@ -2739,7 +2739,7 @@ Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Broadhead
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Penetrating
+Hide # Progression - Accessories - Quivers - Penetrating - Magic - After Act 4
     Class "Quivers"
     BaseType "Penetrating Arrow Quiver"
     Rarity = Magic
@@ -2747,7 +2747,7 @@ Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Penetrating
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Spike Point
+Hide # Progression - Accessories - Quivers - Spike Point - Magic - After Act 4
     Class "Quivers"
     BaseType "Spike-Point Arrow Quiver"
     Rarity = Magic
@@ -2755,7 +2755,7 @@ Hide # Progression - Accessories - Quivers - After Act 4 - Magic - Spike Point
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Normal - Coral
+Hide # Progression - Accessories - Amulets - Coral - Normal - After Act 2
     Class "Amulets"
     BaseType "Coral Amulet"
     Rarity = Normal
@@ -2763,7 +2763,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Normal - Coral
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Normal - Paua
+Hide # Progression - Accessories - Amulets - Paua - Normal - After Act 2
     Class "Amulets"
     BaseType "Paua Amulet"
     Rarity = Normal
@@ -2771,7 +2771,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Normal - Paua
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Normal - Amber
+Hide # Progression - Accessories - Amulets - Amber - Normal - After Act 2
     Class "Amulets"
     BaseType "Amber Amulet"
     Rarity = Normal
@@ -2779,7 +2779,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Normal - Amber
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Normal - Jade
+Hide # Progression - Accessories - Amulets - Jade - Normal - After Act 2
     Class "Amulets"
     BaseType "Jade Amulet"
     Rarity = Normal
@@ -2787,7 +2787,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Normal - Jade
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Normal - Lapis
+Hide # Progression - Accessories - Amulets - Lapis - Normal - After Act 2
     Class "Amulets"
     BaseType "Lapis Amulet"
     Rarity = Normal
@@ -2795,7 +2795,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Normal - Lapis
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Normal - Gold
+Hide # Progression - Accessories - Amulets - Gold - Normal - After Act 2
     Class "Amulets"
     BaseType "Gold Amulet"
     Rarity = Normal
@@ -2803,7 +2803,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Normal - Gold
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Normal - Agate
+Hide # Progression - Accessories - Amulets - Agate - Normal - After Act 2
     Class "Amulets"
     BaseType "Agate Amulet"
     Rarity = Normal
@@ -2811,7 +2811,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Normal - Agate
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Normal - Citrine
+Hide # Progression - Accessories - Amulets - Citrine - Normal - After Act 2
     Class "Amulets"
     BaseType "Citrine Amulet"
     Rarity = Normal
@@ -2819,7 +2819,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Normal - Citrine
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Normal - Turquoise
+Hide # Progression - Accessories - Amulets - Turquoise - Normal - After Act 2
     Class "Amulets"
     BaseType "Turquoise Amulet"
     Rarity = Normal
@@ -2827,7 +2827,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Normal - Turquoise
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Normal - Onyx
+Hide # Progression - Accessories - Amulets - Onyx - Normal - After Act 2
     Class "Amulets"
     BaseType "Onyx Amulet"
     Rarity = Normal
@@ -2835,7 +2835,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Normal - Onyx
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Normal - Coral
+Hide # Progression - Accessories - Rings - Coral - Normal - After Act 2
     Class "Rings"
     BaseType "Coral Ring"
     Rarity = Normal
@@ -2843,7 +2843,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Normal - Coral
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Normal - Paua
+Hide # Progression - Accessories - Rings - Paua - Normal - After Act 2
     Class "Rings"
     BaseType "Paua Ring"
     Rarity = Normal
@@ -2851,7 +2851,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Normal - Paua
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Normal - Iron
+Hide # Progression - Accessories - Rings - Iron - Normal - After Act 2
     Class "Rings"
     BaseType "Iron Ring"
     Rarity = Normal
@@ -2859,7 +2859,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Normal - Iron
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Normal - Unset
+Hide # Progression - Accessories - Rings - Unset - Normal - After Act 2
     Class "Rings"
     BaseType "Unset Ring"
     Rarity = Normal
@@ -2867,7 +2867,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Normal - Unset
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Normal - Sapphire
+Hide # Progression - Accessories - Rings - Sapphire - Normal - After Act 2
     Class "Rings"
     BaseType "Sapphire Ring"
     Rarity = Normal
@@ -2875,7 +2875,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Normal - Sapphire
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Normal - Topaz
+Hide # Progression - Accessories - Rings - Topaz - Normal - After Act 2
     Class "Rings"
     BaseType "Topaz Ring"
     Rarity = Normal
@@ -2883,7 +2883,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Normal - Topaz
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Normal - Ruby
+Hide # Progression - Accessories - Rings - Ruby - Normal - After Act 2
     Class "Rings"
     BaseType "Ruby Ring"
     Rarity = Normal
@@ -2891,7 +2891,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Normal - Ruby
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Normal - Diamond
+Hide # Progression - Accessories - Rings - Diamond - Normal - After Act 2
     Class "Rings"
     BaseType "Diamond Ring"
     Rarity = Normal
@@ -2899,7 +2899,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Normal - Diamond
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Normal - Gold
+Show # Progression - Accessories - Rings - Gold - Normal - After Act 2
     Class "Rings"
     BaseType "Gold Ring"
     Rarity = Normal
@@ -2907,7 +2907,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Normal - Gold
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Normal - Moonstone
+Show # Progression - Accessories - Rings - Moonstone - Normal - After Act 2
     Class "Rings"
     BaseType "Moonstone Ring"
     Rarity = Normal
@@ -2915,7 +2915,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Normal - Moonstone
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Normal - Two Stone
+Show # Progression - Accessories - Rings - Two Stone - Normal - After Act 2
     Class "Rings"
     BaseType "Two-Stone Ring"
     Rarity = Normal
@@ -2923,7 +2923,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Normal - Two Stone
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Normal - Amethyst
+Show # Progression - Accessories - Rings - Amethyst - Normal - After Act 2
     Class "Rings"
     BaseType "Amethyst Ring"
     Rarity = Normal
@@ -2931,7 +2931,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Normal - Amethyst
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Normal - Prismatic
+Show # Progression - Accessories - Rings - Prismatic - Normal - After Act 2
     Class "Rings"
     BaseType "Prismatic Ring"
     Rarity = Normal
@@ -2939,7 +2939,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Normal - Prismatic
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Belts - After Act 2 - Normal - Chain
+Hide # Progression - Accessories - Belts - Chain - Normal - After Act 2
     Class "Belts"
     BaseType "Chain Belt"
     Rarity = Normal
@@ -2947,7 +2947,7 @@ Show # Progression - Accessories - Belts - After Act 2 - Normal - Chain
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Belts - After Act 2 - Normal - Rustic
+Hide # Progression - Accessories - Belts - Rustic - Normal - After Act 2
     Class "Belts"
     BaseType "Rustic Sash"
     Rarity = Normal
@@ -2955,7 +2955,7 @@ Show # Progression - Accessories - Belts - After Act 2 - Normal - Rustic
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Belts - After Act 2 - Normal - Heavy
+Hide # Progression - Accessories - Belts - Heavy - Normal - After Act 2
     Class "Belts"
     BaseType "Heavy Belt"
     Rarity = Normal
@@ -2963,7 +2963,7 @@ Show # Progression - Accessories - Belts - After Act 2 - Normal - Heavy
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Belts - After Act 2 - Normal - Leather
+Hide # Progression - Accessories - Belts - Leather - Normal - After Act 2
     Class "Belts"
     BaseType "Leather Belt"
     Rarity = Normal
@@ -2971,7 +2971,7 @@ Show # Progression - Accessories - Belts - After Act 2 - Normal - Leather
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Belts - After Act 2 - Normal - Cloth
+Hide # Progression - Accessories - Belts - Cloth - Normal - After Act 2
     Class "Belts"
     BaseType "Cloth Belt"
     Rarity = Normal
@@ -2979,7 +2979,7 @@ Show # Progression - Accessories - Belts - After Act 2 - Normal - Cloth
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Belts - After Act 2 - Normal - Studded
+Hide # Progression - Accessories - Belts - Studded - Normal - After Act 2
     Class "Belts"
     BaseType "Studded Belt"
     Rarity = Normal
@@ -2987,7 +2987,7 @@ Show # Progression - Accessories - Belts - After Act 2 - Normal - Studded
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Normal - Two Point
+Hide # Progression - Accessories - Quivers - Two Point - Normal - After Act 2
     Class "Quivers"
     BaseType "Two-Point Arrow Quiver"
     Rarity = Normal
@@ -2995,7 +2995,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Normal - Two Point
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Normal - Serrated
+Hide # Progression - Accessories - Quivers - Serrated - Normal - After Act 2
     Class "Quivers"
     BaseType "Serrated Arrow Quiver"
     Rarity = Normal
@@ -3003,7 +3003,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Normal - Serrated
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Normal - Sharktooth
+Hide # Progression - Accessories - Quivers - Sharktooth - Normal - After Act 2
     Class "Quivers"
     BaseType "Sharktooth Arrow Quiver"
     Rarity = Normal
@@ -3011,7 +3011,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Normal - Sharktooth
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Normal - Blunt
+Hide # Progression - Accessories - Quivers - Blunt - Normal - After Act 2
     Class "Quivers"
     BaseType "Blunt Arrow Quiver"
     Rarity = Normal
@@ -3019,7 +3019,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Normal - Blunt
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Normal - Fire
+Hide # Progression - Accessories - Quivers - Fire - Normal - After Act 2
     Class "Quivers"
     BaseType "Fire Arrow Quiver"
     Rarity = Normal
@@ -3027,7 +3027,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Normal - Fire
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Normal - Broadhead
+Show # Progression - Accessories - Quivers - Broadhead - Normal - After Act 2
     Class "Quivers"
     BaseType "Broadhead Arrow Quiver"
     Rarity = Normal
@@ -3035,7 +3035,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Normal - Broadhead
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Normal - Penetrating
+Show # Progression - Accessories - Quivers - Penetrating - Normal - After Act 2
     Class "Quivers"
     BaseType "Penetrating Arrow Quiver"
     Rarity = Normal
@@ -3043,7 +3043,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Normal - Penetrating
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Normal - Spike Point
+Show # Progression - Accessories - Quivers - Spike Point - Normal - After Act 2
     Class "Quivers"
     BaseType "Spike-Point Arrow Quiver"
     Rarity = Normal
@@ -3051,7 +3051,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Normal - Spike Point
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Magic - Coral
+Show # Progression - Accessories - Amulets - Coral - Magic - After Act 2
     Class "Amulets"
     BaseType "Coral Amulet"
     Rarity = Magic
@@ -3059,7 +3059,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Magic - Coral
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Magic - Paua
+Show # Progression - Accessories - Amulets - Paua - Magic - After Act 2
     Class "Amulets"
     BaseType "Paua Amulet"
     Rarity = Magic
@@ -3067,7 +3067,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Magic - Paua
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Magic - Amber
+Show # Progression - Accessories - Amulets - Amber - Magic - After Act 2
     Class "Amulets"
     BaseType "Amber Amulet"
     Rarity = Magic
@@ -3075,7 +3075,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Magic - Amber
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Magic - Jade
+Show # Progression - Accessories - Amulets - Jade - Magic - After Act 2
     Class "Amulets"
     BaseType "Jade Amulet"
     Rarity = Magic
@@ -3083,7 +3083,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Magic - Jade
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Magic - Lapis
+Show # Progression - Accessories - Amulets - Lapis - Magic - After Act 2
     Class "Amulets"
     BaseType "Lapis Amulet"
     Rarity = Magic
@@ -3091,7 +3091,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Magic - Lapis
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Magic - Gold
+Show # Progression - Accessories - Amulets - Gold - Magic - After Act 2
     Class "Amulets"
     BaseType "Gold Amulet"
     Rarity = Magic
@@ -3099,7 +3099,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Magic - Gold
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Magic - Agate
+Show # Progression - Accessories - Amulets - Agate - Magic - After Act 2
     Class "Amulets"
     BaseType "Agate Amulet"
     Rarity = Magic
@@ -3107,7 +3107,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Magic - Agate
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Magic - Citrine
+Show # Progression - Accessories - Amulets - Citrine - Magic - After Act 2
     Class "Amulets"
     BaseType "Citrine Amulet"
     Rarity = Magic
@@ -3115,7 +3115,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Magic - Citrine
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Magic - Turquoise
+Show # Progression - Accessories - Amulets - Turquoise - Magic - After Act 2
     Class "Amulets"
     BaseType "Turquoise Amulet"
     Rarity = Magic
@@ -3123,7 +3123,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Magic - Turquoise
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - After Act 2 - Magic - Onyx
+Show # Progression - Accessories - Amulets - Onyx - Magic - After Act 2
     Class "Amulets"
     BaseType "Onyx Amulet"
     Rarity = Magic
@@ -3131,7 +3131,7 @@ Show # Progression - Accessories - Amulets - After Act 2 - Magic - Onyx
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Magic - Coral
+Show # Progression - Accessories - Rings - Coral - Magic - After Act 2
     Class "Rings"
     BaseType "Coral Ring"
     Rarity = Magic
@@ -3139,7 +3139,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Magic - Coral
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Magic - Paua
+Show # Progression - Accessories - Rings - Paua - Magic - After Act 2
     Class "Rings"
     BaseType "Paua Ring"
     Rarity = Magic
@@ -3147,7 +3147,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Magic - Paua
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Magic - Iron
+Show # Progression - Accessories - Rings - Iron - Magic - After Act 2
     Class "Rings"
     BaseType "Iron Ring"
     Rarity = Magic
@@ -3155,7 +3155,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Magic - Iron
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Magic - Unset
+Show # Progression - Accessories - Rings - Unset - Magic - After Act 2
     Class "Rings"
     BaseType "Unset Ring"
     Rarity = Magic
@@ -3163,7 +3163,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Magic - Unset
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Magic - Sapphire
+Show # Progression - Accessories - Rings - Sapphire - Magic - After Act 2
     Class "Rings"
     BaseType "Sapphire Ring"
     Rarity = Magic
@@ -3171,7 +3171,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Magic - Sapphire
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Magic - Topaz
+Show # Progression - Accessories - Rings - Topaz - Magic - After Act 2
     Class "Rings"
     BaseType "Topaz Ring"
     Rarity = Magic
@@ -3179,7 +3179,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Magic - Topaz
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Magic - Ruby
+Show # Progression - Accessories - Rings - Ruby - Magic - After Act 2
     Class "Rings"
     BaseType "Ruby Ring"
     Rarity = Magic
@@ -3187,7 +3187,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Magic - Ruby
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Magic - Diamond
+Show # Progression - Accessories - Rings - Diamond - Magic - After Act 2
     Class "Rings"
     BaseType "Diamond Ring"
     Rarity = Magic
@@ -3195,7 +3195,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Magic - Diamond
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Magic - Gold
+Show # Progression - Accessories - Rings - Gold - Magic - After Act 2
     Class "Rings"
     BaseType "Gold Ring"
     Rarity = Magic
@@ -3203,7 +3203,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Magic - Gold
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Magic - Moonstone
+Show # Progression - Accessories - Rings - Moonstone - Magic - After Act 2
     Class "Rings"
     BaseType "Moonstone Ring"
     Rarity = Magic
@@ -3211,7 +3211,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Magic - Moonstone
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Magic - Two Stone
+Show # Progression - Accessories - Rings - Two Stone - Magic - After Act 2
     Class "Rings"
     BaseType "Two-Stone Ring"
     Rarity = Magic
@@ -3219,7 +3219,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Magic - Two Stone
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Magic - Amethyst
+Show # Progression - Accessories - Rings - Amethyst - Magic - After Act 2
     Class "Rings"
     BaseType "Amethyst Ring"
     Rarity = Magic
@@ -3227,7 +3227,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Magic - Amethyst
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Rings - After Act 2 - Magic - Prismatic
+Show # Progression - Accessories - Rings - Prismatic - Magic - After Act 2
     Class "Rings"
     BaseType "Prismatic Ring"
     Rarity = Magic
@@ -3235,7 +3235,7 @@ Show # Progression - Accessories - Rings - After Act 2 - Magic - Prismatic
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Belts - After Act 2 - Magic - Chain
+Show # Progression - Accessories - Belts - Chain - Magic - After Act 2
     Class "Belts"
     BaseType "Chain Belt"
     Rarity = Magic
@@ -3243,7 +3243,7 @@ Show # Progression - Accessories - Belts - After Act 2 - Magic - Chain
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Belts - After Act 2 - Magic - Rustic
+Show # Progression - Accessories - Belts - Rustic - Magic - After Act 2
     Class "Belts"
     BaseType "Rustic Sash"
     Rarity = Magic
@@ -3251,7 +3251,7 @@ Show # Progression - Accessories - Belts - After Act 2 - Magic - Rustic
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Belts - After Act 2 - Magic - Heavy
+Show # Progression - Accessories - Belts - Heavy - Magic - After Act 2
     Class "Belts"
     BaseType "Heavy Belt"
     Rarity = Magic
@@ -3259,7 +3259,7 @@ Show # Progression - Accessories - Belts - After Act 2 - Magic - Heavy
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Belts - After Act 2 - Magic - Leather
+Show # Progression - Accessories - Belts - Leather - Magic - After Act 2
     Class "Belts"
     BaseType "Leather Belt"
     Rarity = Magic
@@ -3267,7 +3267,7 @@ Show # Progression - Accessories - Belts - After Act 2 - Magic - Leather
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Belts - After Act 2 - Magic - Cloth
+Show # Progression - Accessories - Belts - Cloth - Magic - After Act 2
     Class "Belts"
     BaseType "Cloth Belt"
     Rarity = Magic
@@ -3275,7 +3275,7 @@ Show # Progression - Accessories - Belts - After Act 2 - Magic - Cloth
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Belts - After Act 2 - Magic - Studded
+Show # Progression - Accessories - Belts - Studded - Magic - After Act 2
     Class "Belts"
     BaseType "Studded Belt"
     Rarity = Magic
@@ -3283,7 +3283,7 @@ Show # Progression - Accessories - Belts - After Act 2 - Magic - Studded
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Magic - Two Point
+Show # Progression - Accessories - Quivers - Two Point - Magic - After Act 2
     Class "Quivers"
     BaseType "Two-Point Arrow Quiver"
     Rarity = Magic
@@ -3291,7 +3291,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Magic - Two Point
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Magic - Serrated
+Show # Progression - Accessories - Quivers - Serrated - Magic - After Act 2
     Class "Quivers"
     BaseType "Serrated Arrow Quiver"
     Rarity = Magic
@@ -3299,7 +3299,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Magic - Serrated
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Magic - Sharktooth
+Show # Progression - Accessories - Quivers - Sharktooth - Magic - After Act 2
     Class "Quivers"
     BaseType "Sharktooth Arrow Quiver"
     Rarity = Magic
@@ -3307,7 +3307,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Magic - Sharktooth
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Magic - Blunt
+Show # Progression - Accessories - Quivers - Blunt - Magic - After Act 2
     Class "Quivers"
     BaseType "Blunt Arrow Quiver"
     Rarity = Magic
@@ -3315,7 +3315,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Magic - Blunt
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Magic - Fire
+Show # Progression - Accessories - Quivers - Fire - Magic - After Act 2
     Class "Quivers"
     BaseType "Fire Arrow Quiver"
     Rarity = Magic
@@ -3323,7 +3323,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Magic - Fire
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Magic - Broadhead
+Show # Progression - Accessories - Quivers - Broadhead - Magic - After Act 2
     Class "Quivers"
     BaseType "Broadhead Arrow Quiver"
     Rarity = Magic
@@ -3331,7 +3331,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Magic - Broadhead
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Magic - Penetrating
+Show # Progression - Accessories - Quivers - Penetrating - Magic - After Act 2
     Class "Quivers"
     BaseType "Penetrating Arrow Quiver"
     Rarity = Magic
@@ -3339,7 +3339,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Magic - Penetrating
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Quivers - After Act 2 - Magic - Spike Point
+Show # Progression - Accessories - Quivers - Spike Point - Magic - After Act 2
     Class "Quivers"
     BaseType "Spike-Point Arrow Quiver"
     Rarity = Magic
@@ -3347,7 +3347,7 @@ Show # Progression - Accessories - Quivers - After Act 2 - Magic - Spike Point
     SetBorderColor 127 127 127
     SetFontSize 32
 
-Show # Progression - Accessories - Amulets - Very Early Game - Magic - Coral
+Show # Progression - Accessories - Amulets - Coral - Magic - Very Early Game
     Class "Amulets"
     BaseType "Coral Amulet"
     Rarity = Magic
@@ -3356,7 +3356,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Magic - Coral
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Magic - Paua
+Show # Progression - Accessories - Amulets - Paua - Magic - Very Early Game
     Class "Amulets"
     BaseType "Paua Amulet"
     Rarity = Magic
@@ -3365,7 +3365,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Magic - Paua
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Magic - Amber
+Show # Progression - Accessories - Amulets - Amber - Magic - Very Early Game
     Class "Amulets"
     BaseType "Amber Amulet"
     Rarity = Magic
@@ -3374,7 +3374,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Magic - Amber
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Magic - Jade
+Show # Progression - Accessories - Amulets - Jade - Magic - Very Early Game
     Class "Amulets"
     BaseType "Jade Amulet"
     Rarity = Magic
@@ -3383,7 +3383,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Magic - Jade
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Magic - Lapis
+Show # Progression - Accessories - Amulets - Lapis - Magic - Very Early Game
     Class "Amulets"
     BaseType "Lapis Amulet"
     Rarity = Magic
@@ -3392,7 +3392,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Magic - Lapis
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Magic - Gold
+Show # Progression - Accessories - Amulets - Gold - Magic - Very Early Game
     Class "Amulets"
     BaseType "Gold Amulet"
     Rarity = Magic
@@ -3401,7 +3401,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Magic - Gold
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Magic - Agate
+Show # Progression - Accessories - Amulets - Agate - Magic - Very Early Game
     Class "Amulets"
     BaseType "Agate Amulet"
     Rarity = Magic
@@ -3410,7 +3410,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Magic - Agate
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Magic - Citrine
+Show # Progression - Accessories - Amulets - Citrine - Magic - Very Early Game
     Class "Amulets"
     BaseType "Citrine Amulet"
     Rarity = Magic
@@ -3419,7 +3419,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Magic - Citrine
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Magic - Turquoise
+Show # Progression - Accessories - Amulets - Turquoise - Magic - Very Early Game
     Class "Amulets"
     BaseType "Turquoise Amulet"
     Rarity = Magic
@@ -3428,7 +3428,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Magic - Turquoise
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Magic - Onyx
+Show # Progression - Accessories - Amulets - Onyx - Magic - Very Early Game
     Class "Amulets"
     BaseType "Onyx Amulet"
     Rarity = Magic
@@ -3437,7 +3437,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Magic - Onyx
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Magic - Coral
+Show # Progression - Accessories - Rings - Coral - Magic - Very Early Game
     Class "Rings"
     BaseType "Coral Ring"
     Rarity = Magic
@@ -3446,7 +3446,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Magic - Coral
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Magic - Paua
+Show # Progression - Accessories - Rings - Paua - Magic - Very Early Game
     Class "Rings"
     BaseType "Paua Ring"
     Rarity = Magic
@@ -3455,7 +3455,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Magic - Paua
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Magic - Iron
+Show # Progression - Accessories - Rings - Iron - Magic - Very Early Game
     Class "Rings"
     BaseType "Iron Ring"
     Rarity = Magic
@@ -3464,7 +3464,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Magic - Iron
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Magic - Unset
+Show # Progression - Accessories - Rings - Unset - Magic - Very Early Game
     Class "Rings"
     BaseType "Unset Ring"
     Rarity = Magic
@@ -3473,7 +3473,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Magic - Unset
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Magic - Sapphire
+Show # Progression - Accessories - Rings - Sapphire - Magic - Very Early Game
     Class "Rings"
     BaseType "Sapphire Ring"
     Rarity = Magic
@@ -3482,7 +3482,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Magic - Sapphire
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Magic - Topaz
+Show # Progression - Accessories - Rings - Topaz - Magic - Very Early Game
     Class "Rings"
     BaseType "Topaz Ring"
     Rarity = Magic
@@ -3491,7 +3491,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Magic - Topaz
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Magic - Ruby
+Show # Progression - Accessories - Rings - Ruby - Magic - Very Early Game
     Class "Rings"
     BaseType "Ruby Ring"
     Rarity = Magic
@@ -3500,7 +3500,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Magic - Ruby
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Magic - Diamond
+Show # Progression - Accessories - Rings - Diamond - Magic - Very Early Game
     Class "Rings"
     BaseType "Diamond Ring"
     Rarity = Magic
@@ -3509,7 +3509,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Magic - Diamond
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Magic - Gold
+Show # Progression - Accessories - Rings - Gold - Magic - Very Early Game
     Class "Rings"
     BaseType "Gold Ring"
     Rarity = Magic
@@ -3518,7 +3518,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Magic - Gold
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Magic - Moonstone
+Show # Progression - Accessories - Rings - Moonstone - Magic - Very Early Game
     Class "Rings"
     BaseType "Moonstone Ring"
     Rarity = Magic
@@ -3527,7 +3527,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Magic - Moonstone
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Magic - Two Stone
+Show # Progression - Accessories - Rings - Two Stone - Magic - Very Early Game
     Class "Rings"
     BaseType "Two-Stone Ring"
     Rarity = Magic
@@ -3536,7 +3536,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Magic - Two Stone
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Magic - Amethyst
+Show # Progression - Accessories - Rings - Amethyst - Magic - Very Early Game
     Class "Rings"
     BaseType "Amethyst Ring"
     Rarity = Magic
@@ -3545,7 +3545,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Magic - Amethyst
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Magic - Prismatic
+Show # Progression - Accessories - Rings - Prismatic - Magic - Very Early Game
     Class "Rings"
     BaseType "Prismatic Ring"
     Rarity = Magic
@@ -3554,7 +3554,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Magic - Prismatic
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Belts - Very Early Game - Magic - Chain
+Show # Progression - Accessories - Belts - Chain - Magic - Very Early Game
     Class "Belts"
     BaseType "Chain Belt"
     Rarity = Magic
@@ -3563,7 +3563,7 @@ Show # Progression - Accessories - Belts - Very Early Game - Magic - Chain
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Belts - Very Early Game - Magic - Rustic
+Show # Progression - Accessories - Belts - Rustic - Magic - Very Early Game
     Class "Belts"
     BaseType "Rustic Sash"
     Rarity = Magic
@@ -3572,7 +3572,7 @@ Show # Progression - Accessories - Belts - Very Early Game - Magic - Rustic
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Belts - Very Early Game - Magic - Heavy
+Show # Progression - Accessories - Belts - Heavy - Magic - Very Early Game
     Class "Belts"
     BaseType "Heavy Belt"
     Rarity = Magic
@@ -3581,7 +3581,7 @@ Show # Progression - Accessories - Belts - Very Early Game - Magic - Heavy
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Belts - Very Early Game - Magic - Leather
+Show # Progression - Accessories - Belts - Leather - Magic - Very Early Game
     Class "Belts"
     BaseType "Leather Belt"
     Rarity = Magic
@@ -3590,7 +3590,7 @@ Show # Progression - Accessories - Belts - Very Early Game - Magic - Leather
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Belts - Very Early Game - Magic - Cloth
+Show # Progression - Accessories - Belts - Cloth - Magic - Very Early Game
     Class "Belts"
     BaseType "Cloth Belt"
     Rarity = Magic
@@ -3599,7 +3599,7 @@ Show # Progression - Accessories - Belts - Very Early Game - Magic - Cloth
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Belts - Very Early Game - Magic - Studded
+Show # Progression - Accessories - Belts - Studded - Magic - Very Early Game
     Class "Belts"
     BaseType "Studded Belt"
     Rarity = Magic
@@ -3608,7 +3608,7 @@ Show # Progression - Accessories - Belts - Very Early Game - Magic - Studded
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Magic - Two Point
+Show # Progression - Accessories - Quivers - Two Point - Magic - Very Early Game
     Class "Quivers"
     BaseType "Two-Point Arrow Quiver"
     Rarity = Magic
@@ -3617,7 +3617,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Magic - Two Point
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Magic - Serrated
+Show # Progression - Accessories - Quivers - Serrated - Magic - Very Early Game
     Class "Quivers"
     BaseType "Serrated Arrow Quiver"
     Rarity = Magic
@@ -3626,7 +3626,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Magic - Serrated
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Magic - Sharktooth
+Show # Progression - Accessories - Quivers - Sharktooth - Magic - Very Early Game
     Class "Quivers"
     BaseType "Sharktooth Arrow Quiver"
     Rarity = Magic
@@ -3635,7 +3635,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Magic - Sharktoot
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Magic - Blunt
+Show # Progression - Accessories - Quivers - Blunt - Magic - Very Early Game
     Class "Quivers"
     BaseType "Blunt Arrow Quiver"
     Rarity = Magic
@@ -3644,7 +3644,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Magic - Blunt
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Magic - Fire
+Show # Progression - Accessories - Quivers - Fire - Magic - Very Early Game
     Class "Quivers"
     BaseType "Fire Arrow Quiver"
     Rarity = Magic
@@ -3653,7 +3653,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Magic - Fire
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Magic - Broadhead
+Show # Progression - Accessories - Quivers - Broadhead - Magic - Very Early Game
     Class "Quivers"
     BaseType "Broadhead Arrow Quiver"
     Rarity = Magic
@@ -3662,7 +3662,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Magic - Broadhead
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Magic - Penetrating
+Show # Progression - Accessories - Quivers - Penetrating - Magic - Very Early Game
     Class "Quivers"
     BaseType "Penetrating Arrow Quiver"
     Rarity = Magic
@@ -3671,7 +3671,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Magic - Penetrati
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Magic - Spike Point
+Show # Progression - Accessories - Quivers - Spike Point - Magic - Very Early Game
     Class "Quivers"
     BaseType "Spike-Point Arrow Quiver"
     Rarity = Magic
@@ -3680,7 +3680,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Magic - Spike Poi
     SetBorderColor 136 136 255
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Normal - Coral
+Show # Progression - Accessories - Amulets - Coral - Normal - Very Early Game
     Class "Amulets"
     BaseType "Coral Amulet"
     Rarity = Normal
@@ -3689,7 +3689,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Normal - Coral
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Normal - Paua
+Show # Progression - Accessories - Amulets - Paua - Normal - Very Early Game
     Class "Amulets"
     BaseType "Paua Amulet"
     Rarity = Normal
@@ -3698,7 +3698,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Normal - Paua
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Normal - Amber
+Show # Progression - Accessories - Amulets - Amber - Normal - Very Early Game
     Class "Amulets"
     BaseType "Amber Amulet"
     Rarity = Normal
@@ -3707,7 +3707,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Normal - Amber
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Normal - Jade
+Show # Progression - Accessories - Amulets - Jade - Normal - Very Early Game
     Class "Amulets"
     BaseType "Jade Amulet"
     Rarity = Normal
@@ -3716,7 +3716,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Normal - Jade
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Normal - Lapis
+Show # Progression - Accessories - Amulets - Lapis - Normal - Very Early Game
     Class "Amulets"
     BaseType "Lapis Amulet"
     Rarity = Normal
@@ -3725,7 +3725,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Normal - Lapis
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Normal - Gold
+Show # Progression - Accessories - Amulets - Gold - Normal - Very Early Game
     Class "Amulets"
     BaseType "Gold Amulet"
     Rarity = Normal
@@ -3734,7 +3734,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Normal - Gold
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Normal - Agate
+Show # Progression - Accessories - Amulets - Agate - Normal - Very Early Game
     Class "Amulets"
     BaseType "Agate Amulet"
     Rarity = Normal
@@ -3743,7 +3743,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Normal - Agate
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Normal - Citrine
+Show # Progression - Accessories - Amulets - Citrine - Normal - Very Early Game
     Class "Amulets"
     BaseType "Citrine Amulet"
     Rarity = Normal
@@ -3752,7 +3752,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Normal - Citrine
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Normal - Turquoise
+Show # Progression - Accessories - Amulets - Turquoise - Normal - Very Early Game
     Class "Amulets"
     BaseType "Turquoise Amulet"
     Rarity = Normal
@@ -3761,7 +3761,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Normal - Turquois
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Amulets - Very Early Game - Normal - Onyx
+Show # Progression - Accessories - Amulets - Onyx - Normal - Very Early Game
     Class "Amulets"
     BaseType "Onyx Amulet"
     Rarity = Normal
@@ -3770,7 +3770,7 @@ Show # Progression - Accessories - Amulets - Very Early Game - Normal - Onyx
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Normal - Coral
+Show # Progression - Accessories - Rings - Coral - Normal - Very Early Game
     Class "Rings"
     BaseType "Coral Ring"
     Rarity = Normal
@@ -3779,7 +3779,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Normal - Coral
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Normal - Paua
+Show # Progression - Accessories - Rings - Paua - Normal - Very Early Game
     Class "Rings"
     BaseType "Paua Ring"
     Rarity = Normal
@@ -3788,7 +3788,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Normal - Paua
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Normal - Iron
+Show # Progression - Accessories - Rings - Iron - Normal - Very Early Game
     Class "Rings"
     BaseType "Iron Ring"
     Rarity = Normal
@@ -3797,7 +3797,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Normal - Iron
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Normal - Unset
+Show # Progression - Accessories - Rings - Unset - Normal - Very Early Game
     Class "Rings"
     BaseType "Unset Ring"
     Rarity = Normal
@@ -3806,7 +3806,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Normal - Unset
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Normal - Sapphire
+Show # Progression - Accessories - Rings - Sapphire - Normal - Very Early Game
     Class "Rings"
     BaseType "Sapphire Ring"
     Rarity = Normal
@@ -3815,7 +3815,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Normal - Sapphire
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Normal - Topaz
+Show # Progression - Accessories - Rings - Topaz - Normal - Very Early Game
     Class "Rings"
     BaseType "Topaz Ring"
     Rarity = Normal
@@ -3824,7 +3824,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Normal - Topaz
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Normal - Ruby
+Show # Progression - Accessories - Rings - Ruby - Normal - Very Early Game
     Class "Rings"
     BaseType "Ruby Ring"
     Rarity = Normal
@@ -3833,7 +3833,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Normal - Ruby
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Normal - Diamond
+Show # Progression - Accessories - Rings - Diamond - Normal - Very Early Game
     Class "Rings"
     BaseType "Diamond Ring"
     Rarity = Normal
@@ -3842,7 +3842,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Normal - Diamond
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Normal - Gold
+Show # Progression - Accessories - Rings - Gold - Normal - Very Early Game
     Class "Rings"
     BaseType "Gold Ring"
     Rarity = Normal
@@ -3851,7 +3851,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Normal - Gold
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Normal - Moonstone
+Show # Progression - Accessories - Rings - Moonstone - Normal - Very Early Game
     Class "Rings"
     BaseType "Moonstone Ring"
     Rarity = Normal
@@ -3860,7 +3860,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Normal - Moonstone
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Normal - Two Stone
+Show # Progression - Accessories - Rings - Two Stone - Normal - Very Early Game
     Class "Rings"
     BaseType "Two-Stone Ring"
     Rarity = Normal
@@ -3869,7 +3869,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Normal - Two Stone
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Normal - Amethyst
+Show # Progression - Accessories - Rings - Amethyst - Normal - Very Early Game
     Class "Rings"
     BaseType "Amethyst Ring"
     Rarity = Normal
@@ -3878,7 +3878,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Normal - Amethyst
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Rings - Very Early Game - Normal - Prismatic
+Show # Progression - Accessories - Rings - Prismatic - Normal - Very Early Game
     Class "Rings"
     BaseType "Prismatic Ring"
     Rarity = Normal
@@ -3887,7 +3887,7 @@ Show # Progression - Accessories - Rings - Very Early Game - Normal - Prismatic
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Belts - Very Early Game - Normal - Chain
+Show # Progression - Accessories - Belts - Chain - Normal - Very Early Game
     Class "Belts"
     BaseType "Chain Belt"
     Rarity = Normal
@@ -3896,7 +3896,7 @@ Show # Progression - Accessories - Belts - Very Early Game - Normal - Chain
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Belts - Very Early Game - Normal - Rustic
+Show # Progression - Accessories - Belts - Rustic - Normal - Very Early Game
     Class "Belts"
     BaseType "Rustic Sash"
     Rarity = Normal
@@ -3905,7 +3905,7 @@ Show # Progression - Accessories - Belts - Very Early Game - Normal - Rustic
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Belts - Very Early Game - Normal - Heavy
+Show # Progression - Accessories - Belts - Heavy - Normal - Very Early Game
     Class "Belts"
     BaseType "Heavy Belt"
     Rarity = Normal
@@ -3914,7 +3914,7 @@ Show # Progression - Accessories - Belts - Very Early Game - Normal - Heavy
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Belts - Very Early Game - Normal - Leather
+Show # Progression - Accessories - Belts - Leather - Normal - Very Early Game
     Class "Belts"
     BaseType "Leather Belt"
     Rarity = Normal
@@ -3923,7 +3923,7 @@ Show # Progression - Accessories - Belts - Very Early Game - Normal - Leather
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Belts - Very Early Game - Normal - Cloth
+Show # Progression - Accessories - Belts - Cloth - Normal - Very Early Game
     Class "Belts"
     BaseType "Cloth Belt"
     Rarity = Normal
@@ -3932,7 +3932,7 @@ Show # Progression - Accessories - Belts - Very Early Game - Normal - Cloth
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Belts - Very Early Game - Normal - Studded
+Show # Progression - Accessories - Belts - Studded - Normal - Very Early Game
     Class "Belts"
     BaseType "Studded Belt"
     Rarity = Normal
@@ -3941,7 +3941,7 @@ Show # Progression - Accessories - Belts - Very Early Game - Normal - Studded
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Normal - Two Point
+Show # Progression - Accessories - Quivers - Two Point - Normal - Very Early Game
     Class "Quivers"
     BaseType "Two-Point Arrow Quiver"
     Rarity = Normal
@@ -3950,7 +3950,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Normal - Two Poin
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Normal - Serrated
+Show # Progression - Accessories - Quivers - Serrated - Normal - Very Early Game
     Class "Quivers"
     BaseType "Serrated Arrow Quiver"
     Rarity = Normal
@@ -3959,7 +3959,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Normal - Serrated
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Normal - Sharktooth
+Show # Progression - Accessories - Quivers - Sharktooth - Normal - Very Early Game
     Class "Quivers"
     BaseType "Sharktooth Arrow Quiver"
     Rarity = Normal
@@ -3968,7 +3968,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Normal - Sharktoo
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Normal - Blunt
+Show # Progression - Accessories - Quivers - Blunt - Normal - Very Early Game
     Class "Quivers"
     BaseType "Blunt Arrow Quiver"
     Rarity = Normal
@@ -3977,7 +3977,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Normal - Blunt
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Normal - Fire
+Show # Progression - Accessories - Quivers - Fire - Normal - Very Early Game
     Class "Quivers"
     BaseType "Fire Arrow Quiver"
     Rarity = Normal
@@ -3986,7 +3986,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Normal - Fire
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Normal - Broadhead
+Show # Progression - Accessories - Quivers - Broadhead - Normal - Very Early Game
     Class "Quivers"
     BaseType "Broadhead Arrow Quiver"
     Rarity = Normal
@@ -3995,7 +3995,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Normal - Broadhea
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Normal - Penetrating
+Show # Progression - Accessories - Quivers - Penetrating - Normal - Very Early Game
     Class "Quivers"
     BaseType "Penetrating Arrow Quiver"
     Rarity = Normal
@@ -4004,7 +4004,7 @@ Show # Progression - Accessories - Quivers - Very Early Game - Normal - Penetrat
     SetBorderColor 127 127 127
     SetFontSize 34
 
-Show # Progression - Accessories - Quivers - Very Early Game - Normal - Spike Point
+Show # Progression - Accessories - Quivers - Spike Point - Normal - Very Early Game
     Class "Quivers"
     BaseType "Spike-Point Arrow Quiver"
     Rarity = Normal
@@ -13509,7 +13509,7 @@ Show # Progression - Armours - AR - Helmets - Early Game - Linked
     Class "Helmets"
     BaseType "Iron Hat" "Cone Helmet"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - AR - Helmets - Very Early Game - Any
@@ -13559,7 +13559,7 @@ Show # Progression - Armours - EV - Helmets - Early Game - Linked
     Class "Helmets"
     BaseType "Leather Cap" "Tricorne"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - EV - Helmets - Early Game - Any
@@ -13609,7 +13609,7 @@ Show # Progression - Armours - ES - Helmets - Early Game - Linked
     Class "Helmets"
     BaseType "Vine Circlet" "Iron Circlet"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - ES - Helmets - Early Game - Any
@@ -13659,7 +13659,7 @@ Show # Progression - Armours - EV/ES - Helmets - Early Game - Linked
     Class "Helmets"
     BaseType "Scare Mask" "Plague Mask"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - EV/ES - Helmets - Early Game - Any
@@ -13709,7 +13709,7 @@ Show # Progression - Armours - AR/ES - Helmets - Early Game - Linked
     Class "Helmets"
     BaseType "Rusted Coif"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - AR/ES - Helmets - Early Game - Any
@@ -13759,7 +13759,7 @@ Show # Progression - Armours - AR/EV - Helmets - Early Game - Linked
     Class "Helmets"
     BaseType "Battered Helm"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - AR/EV - Helmets - Early Game - Any
@@ -13815,7 +13815,7 @@ Show # Progression - Armours - AR - Body - Early Game - Linked
     Class "Body Armours"
     BaseType "Plate Vest" "Chestplate"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - AR - Body - Very Early Game - Any
@@ -13865,7 +13865,7 @@ Show # Progression - Armours - EV - Body - Early Game - Linked
     Class "Body Armours"
     BaseType "Shabby Jerkin" "Strapped Leather"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - EV - Body - Very Early Game - Any
@@ -13915,7 +13915,7 @@ Show # Progression - Armours - ES - Body - Early Game - Linked
     Class "Body Armours"
     BaseType "Simple Robe"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - ES - Body - Very Early Game - Any
@@ -13965,7 +13965,7 @@ Show # Progression - Armours - EV/ES - Body - Early Game - Linked
     Class "Body Armours"
     BaseType "Padded Vest" "Oiled Vest"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - EV/ES - Body - Very Early Game - Any
@@ -14015,7 +14015,7 @@ Show # Progression - Armours - AR/ES - Body - Early Game - Linked
     Class "Body Armours"
     BaseType "Chainmail Vest" "Chainmail Tunic"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - AR/ES - Body - Very Early Game - Any
@@ -14065,7 +14065,7 @@ Show # Progression - Armours - AR/EV - Body - Early Game - Linked
     Class "Body Armours"
     BaseType "Scale Vest" "Light Brigandine"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - AR/EV - Body - Very Early Game - Any
@@ -14121,7 +14121,7 @@ Show # Progression - Armours - AR - Gloves - Early Game - Linked
     Class "Gloves"
     BaseType "Iron Gauntlets"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - AR - Gloves - Very Early Game - Any
@@ -14171,7 +14171,7 @@ Show # Progression - Armours - EV - Gloves - Early Game - Linked
     Class "Gloves"
     BaseType "Rawhide Gloves" "Goathide Gloves"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - EV - Gloves - Very Early Game - Any
@@ -14221,7 +14221,7 @@ Show # Progression - Armours - ES - Gloves - Early Game - Linked
     Class "Gloves"
     BaseType "Wool Gloves"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - ES - Gloves - Very Early Game - Any
@@ -14271,7 +14271,7 @@ Show # Progression - Armours - EV/ES - Gloves - Early Game - Linked
     Class "Gloves"
     BaseType "Wrapped Mitts"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - EV/ES - Gloves - Very Early Game - Any
@@ -14321,7 +14321,7 @@ Show # Progression - Armours - AR/ES - Gloves - Early Game - Linked
     Class "Gloves"
     BaseType "Chain Gloves"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - AR/ES - Gloves - Very Early Game - Any
@@ -14371,7 +14371,7 @@ Show # Progression - Armours - AR/EV - Gloves - Early Game - Linked
     Class "Gloves"
     BaseType "Fishscale Gauntlets"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - AR/EV - Gloves - Very Early Game - Any
@@ -14423,7 +14423,6 @@ Hide
 # Section: 18d1. AR Boots
 
 Show # Progression - Armours - AR - Boots - Early Game - Linked
-    LinkedSockets >= 2
     Class "Boots"
     BaseType "Iron Greaves" "Steel Greaves"
     Rarity = Magic
@@ -14483,7 +14482,6 @@ Show # Progression - Armours - AR - Boots - Mid Game - Socketed
 # Section: 18d2. EV Boots
 
 Show # Progression - Armours - EV - Boots - Early Game - Linked
-    LinkedSockets >= 2
     Class "Boots"
     BaseType "Rawhide Boots" "Goathide Boots"
     Rarity = Magic
@@ -14543,7 +14541,6 @@ Show # Progression - Armours - EV - Boots - Mid Game - Socketed
 # Section: 18d3. ES Boots
 
 Show # Progression - Armours - ES - Boots - Early Game - Linked
-    LinkedSockets >= 2
     Class "Boots"
     BaseType "Wool Shoes" "Velvet Slippers"
     Rarity = Magic
@@ -14603,7 +14600,6 @@ Show # Progression - Armours - ES - Boots - Mid Game - Socketed
 # Section: 18d4. EV/ES Boots
 
 Show # Progression - Armours - EV/ES - Boots - Early Game - Linked
-    LinkedSockets >= 2
     Class "Boots"
     BaseType "Wrapped Boots"
     Rarity = Magic
@@ -14663,7 +14659,6 @@ Show # Progression - Armours - EV/ES - Boots - Mid Game - Socketed
 # Section: 18d5. AR/ES Boots
 
 Show # Progression - Armours - AR/ES - Boots - Early Game - Linked
-    LinkedSockets >= 2
     Class "Boots"
     BaseType "Chain Boots" "Ringmail Boots"
     Rarity = Magic
@@ -14723,7 +14718,6 @@ Show # Progression - Armours - AR/ES - Boots - Mid Game - Socketed
 # Section: 18d6. AR/EV Boots
 
 Show # Progression - Armours - AR/EV - Boots - Early Game - Linked
-    LinkedSockets >= 2
     Class "Boots"
     BaseType "Leatherscale Boots"
     Rarity = Magic
@@ -14793,7 +14787,7 @@ Show # Progression - Armours - AR - Shields - Early Game - Linked
     Class "Shields"
     BaseType "Splintered Tower Shield" "Corroded Tower Shield"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - AR - Shields - Very Early Game - Any
@@ -14843,7 +14837,7 @@ Show # Progression - Armours - EV - Shields - Early Game - Linked
     Class "Shields"
     BaseType "Goathide Buckler" "Pine Buckler"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - EV - Shields - Very Early Game - Any
@@ -14893,12 +14887,14 @@ Show # Progression - Armours - ES - Shields - Early Game - Linked
     Class "Shields"
     BaseType "Twig Spirit Shield" "Yew Spirit Shield"
     Rarity <= Magic
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - ES - Shields - Very Early Game - Any
     Class "Shields"
     BaseType "Twig Spirit Shield"
     Rarity <= Magic
+    ItemLevel <= 8
     SetBorderColor 127 127 127
 
 Hide # Progression - Armours - ES - Shields - Early Game - Unsocketed
@@ -14906,6 +14902,7 @@ Hide # Progression - Armours - ES - Shields - Early Game - Unsocketed
     Class "Shields"
     BaseType "Twig Spirit Shield" "Yew Spirit Shield" "Bone Spirit Shield"
     Rarity <= Magic
+    ItemLevel < 16
     SetBorderColor 127 127 127
     SetFontSize 32
 
@@ -14914,6 +14911,7 @@ Show # Progression - Armours - ES - Shields - Mid Game - Linked
     Class "Shields"
     BaseType "Twig Spirit Shield" "Yew Spirit Shield" "Tarnished Spirit Shield" "Jingling Spirit Shield"
     Rarity <= Magic
+    ItemLevel < 32
     SetBorderColor 136 136 255
 
 Hide # Progression - Armours - ES - Shields - Late Game - Linked
@@ -14921,6 +14919,7 @@ Hide # Progression - Armours - ES - Shields - Late Game - Linked
     Class "Shields"
     BaseType "Twig Spirit Shield" "Yew Spirit Shield" "Tarnished Spirit Shield" "Jingling Spirit Shield" "Brass Spirit Shield" "Walnut Spirit Shield" "Ivory Spirit Shield" "Ancient Spirit Shield" "Chiming Spirit Shield" "Thorium Spirit Shield" "Lacewood Spirit Shield" "Fossilised Spirit Shield" "Vaal Spirit Shield"
     Rarity = Normal
+    ItemLevel < 65
     SetBorderColor 127 127 127
 
 Show # Progression - Armours - ES - Shields - Mid Game - Socketed
@@ -14928,6 +14927,7 @@ Show # Progression - Armours - ES - Shields - Mid Game - Socketed
     Class "Shields"
     BaseType "Twig Spirit Shield" "Yew Spirit Shield" "Tarnished Spirit Shield"
     Rarity <= Magic
+    ItemLevel < 28
     SetBorderColor 127 127 127
 
 # Section: 18e4. EV/ES Shields
@@ -14937,12 +14937,14 @@ Show # Progression - Armours - EV/ES - Shields - Early Game - Linked
     Class "Shields"
     BaseType "Spiked Bundle"
     Rarity <= Magic
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - EV/ES - Shields - Very Early Game - Any
     Class "Shields"
     BaseType "Spiked Bundle"
     Rarity <= Magic
+    ItemLevel <= 8
     SetBorderColor 127 127 127
 
 Hide # Progression - Armours - EV/ES - Shields - Early Game - Unsocketed
@@ -14950,6 +14952,7 @@ Hide # Progression - Armours - EV/ES - Shields - Early Game - Unsocketed
     Class "Shields"
     BaseType "Spiked Bundle" "Driftwood Spiked Shield"
     Rarity <= Magic
+    ItemLevel < 16
     SetBorderColor 127 127 127
     SetFontSize 32
 
@@ -14958,6 +14961,7 @@ Show # Progression - Armours - EV/ES - Shields - Mid Game - Linked
     Class "Shields"
     BaseType "Spiked Bundle" "Driftwood Spiked Shield" "Alloyed Spiked Shield" "Burnished Spiked Shield"
     Rarity <= Magic
+    ItemLevel < 32
     SetBorderColor 136 136 255
 
 Hide # Progression - Armours - EV/ES - Shields - Late Game - Linked
@@ -14965,6 +14969,7 @@ Hide # Progression - Armours - EV/ES - Shields - Late Game - Linked
     Class "Shields"
     BaseType "Spiked Bundle" "Driftwood Spiked Shield" "Alloyed Spiked Shield" "Burnished Spiked Shield" "Ornate Spiked Shield" "Redwood Spiked Shield" "Compound Spiked Shield" "Polished Spiked Shield" "Sovereign Spiked Shield" "Alder Spiked Shield" "Ezomyte Spiked Shield"
     Rarity = Normal
+    ItemLevel < 65
     SetBorderColor 127 127 127
 
 Show # Progression - Armours - EV/ES - Shields - Mid Game - Socketed
@@ -14972,6 +14977,7 @@ Show # Progression - Armours - EV/ES - Shields - Mid Game - Socketed
     Class "Shields"
     BaseType "Spiked Bundle" "Driftwood Spiked Shield" "Alloyed Spiked Shield" "Burnished Spiked Shield"
     Rarity <= Magic
+    ItemLevel < 28
     SetBorderColor 127 127 127
 
 # Section: 18e5. EV/ES Shields
@@ -14981,12 +14987,14 @@ Show # Progression - Armours - EV/ES - Shields - Early Game - Linked
     Class "Shields"
     BaseType "Plank Kite Shield"
     Rarity <= Magic
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - EV/ES - Shields - Very Early Game - Any
     Class "Shields"
     BaseType "Plank Kite Shield"
     Rarity <= Magic
+    ItemLevel <= 8
     SetBorderColor 127 127 127
 
 Hide # Progression - Armours - EV/ES - Shields - Early Game - Unsocketed
@@ -14994,6 +15002,7 @@ Hide # Progression - Armours - EV/ES - Shields - Early Game - Unsocketed
     Class "Shields"
     BaseType "Plank Kite Shield" "Linden Kite Shield"
     Rarity <= Magic
+    ItemLevel < 16
     SetBorderColor 127 127 127
     SetFontSize 32
 
@@ -15002,6 +15011,7 @@ Show # Progression - Armours - EV/ES - Shields - Mid Game - Linked
     Class "Shields"
     BaseType "Plank Kite Shield" "Linden Kite Shield" "Reinforced Kite Shield" "Layered Kite Shield"
     Rarity <= Magic
+    ItemLevel < 32
     SetBorderColor 136 136 255
 
 Hide # Progression - Armours - EV/ES - Shields - Late Game - Linked
@@ -15009,6 +15019,7 @@ Hide # Progression - Armours - EV/ES - Shields - Late Game - Linked
     Class "Shields"
     BaseType "Plank Kite Shield" "Linden Kite Shield" "Reinforced Kite Shield" "Layered Kite Shield" "Ceremonial Kite Shield" "Etched Kite Shield" "Steel Kite Shield" "Laminated Kite Shield" "Angelic Kite Shield" "Branded Kite Shield" "Champion Kite Shield"
     Rarity = Normal
+    ItemLevel < 65
     SetBorderColor 127 127 127
 
 Show # Progression - Armours - EV/ES - Shields - Mid Game - Socketed
@@ -15016,6 +15027,7 @@ Show # Progression - Armours - EV/ES - Shields - Mid Game - Socketed
     Class "Shields"
     BaseType "Plank Kite Shield" "Linden Kite Shield" "Reinforced Kite Shield"
     Rarity <= Magic
+    ItemLevel < 28
     SetBorderColor 127 127 127
 
 # Section: 18e6. AR/EV Shields
@@ -15025,12 +15037,14 @@ Show # Progression - Armours - AR/EV - Shields - Early Game - Linked
     Class "Shields"
     BaseType "Rotted Round Shield"
     Rarity <= Magic
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Armours - AR/EV - Shields - Very Early Game - Any
     Class "Shields"
     BaseType "Rotted Round Shield"
     Rarity <= Magic
+    ItemLevel <= 8
     SetBorderColor 127 127 127
 
 Hide # Progression - Armours - AR/EV - Shields - Early Game - Unsocketed
@@ -15038,6 +15052,7 @@ Hide # Progression - Armours - AR/EV - Shields - Early Game - Unsocketed
     Class "Shields"
     BaseType "Rotted Round Shield" "Fir Round Shield"
     Rarity <= Magic
+    ItemLevel < 16
     SetBorderColor 127 127 127
     SetFontSize 32
 
@@ -15046,6 +15061,7 @@ Show # Progression - Armours - AR/EV - Shields - Mid Game - Linked
     Class "Shields"
     BaseType "Rotted Round Shield" "Fir Round Shield" "Studded Round Shield" "Scarlet Round Shield"
     Rarity <= Magic
+    ItemLevel < 32
     SetBorderColor 136 136 255
 
 Hide # Progression - Armours - AR/EV - Shields - Late Game - Linked
@@ -15053,6 +15069,7 @@ Hide # Progression - Armours - AR/EV - Shields - Late Game - Linked
     Class "Shields"
     BaseType "Rotted Round Shield" "Fir Round Shield" "Studded Round Shield" "Scarlet Round Shield" "Splendid Round Shield" "Maple Round Shield" "Spiked Round Shield" "Crimson Round Shield" "Baroque Round Shield" "Teak Round Shield" "Spiny Round Shield"
     Rarity = Normal
+    ItemLevel < 65
     SetBorderColor 127 127 127
 
 Show # Progression - Armours - AR/EV - Shields - Mid Game - Socketed
@@ -15060,6 +15077,7 @@ Show # Progression - Armours - AR/EV - Shields - Mid Game - Socketed
     Class "Shields"
     BaseType "Rotted Round Shield" "Fir Round Shield" "Studded Round Shield" "Scarlet Round Shield"
     Rarity <= Magic
+    ItemLevel < 28
     SetBorderColor 127 127 127
 
 Hide
@@ -15074,7 +15092,7 @@ Show # Progression - Weapons - Attack - 1H Axes - Early Game - Linked
     LinkedSockets = 2
     Class "One Hand Axes"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Weapons - Attack - 1H Axes - Very Early Game - Any
@@ -15122,7 +15140,7 @@ Show # Progression - Weapons - Attack - 1H Swords - Early Game - Linked
     LinkedSockets = 2
     Class "One Hand Swords"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Weapons - Attack - 1H Swords - Very Early Game - Any
@@ -15167,10 +15185,10 @@ Hide
 # Section: 19c. 2H Maces
 
 Show # Progression - Weapons - Attack - 2H Maces - Early Game - Linked
-    LinkedSockets >= 3
+    LinkedSockets >= 2
     Class "Two Hand Maces"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Weapons - Attack - 2H Maces - Very Early Game - Any
@@ -15215,10 +15233,10 @@ Hide
 # Section: 19d. Bows
 
 Show # Progression - Weapons - Attack - Bows - Early Game - Linked
-    LinkedSockets >= 3
+    LinkedSockets >= 2
     Class "Bows"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Weapons - Attack - Bows - Very Early Game - Any
@@ -15266,7 +15284,7 @@ Show # Progression - Weapons - Attack - 1H Thrusting Swords - Early Game - Linke
     LinkedSockets >= 2
     Class "Thrusting One Hand Swords"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Weapons - Attack - 1H Thrusting Swords - Very Early Game - Any
@@ -15314,7 +15332,7 @@ Show # Progression - Weapons - Attack/Caster - Daggers - Early Game - Linked
     LinkedSockets >= 2
     Class "Daggers"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Weapons - Attack/Caster - Daggers - Very Early Game - Any
@@ -15362,7 +15380,7 @@ Show # Progression - Weapons - Attack - 1H Maces - Early Game - Linked
     LinkedSockets >= 2
     Class "One Hand Maces"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Weapons - Attack - 1H Maces - Very Early Game - Any
@@ -15407,10 +15425,10 @@ Hide
 # Section: 19h. 2H Axes
 
 Show # Progression - Weapons - Attack - 2H Axes - Early Game - Linked
-    LinkedSockets >= 3
+    LinkedSockets >= 2
     Class "Two Hand Axes"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Weapons - Attack - 2H Axes - Very Early Game - Any
@@ -15455,10 +15473,10 @@ Hide
 # Section: 19i. 2H Swords
 
 Show # Progression - Weapons - Attack - 2H Swords - Early Game - Linked
-    LinkedSockets >= 3
+    LinkedSockets >= 2
     Class "Two Hand Swords"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Weapons - Attack - 2H Swords - Very Early Game - Any
@@ -15506,7 +15524,7 @@ Show # Progression - Weapons - Attack - Claws - Early Game - Linked
     LinkedSockets >= 2
     Class "Claws"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Weapons - Attack - Claws - Very Early Game - Any
@@ -15554,7 +15572,7 @@ Show # Progression - Weapons - Attack/Caster - Sceptres - Early Game - Linked
     LinkedSockets >= 2
     Class "Sceptres"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Weapons - Attack/Caster - Sceptres - Very Early Game - Any
@@ -15599,10 +15617,10 @@ Hide
 # Section: 19l. Staves
 
 Show # Progression - Weapons - Attack/Caster - Staves - Early Game - Linked
-    LinkedSockets >= 3
+    LinkedSockets >= 2
     Class "Staves"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Weapons - Attack/Caster - Staves - Very Early Game - Any
@@ -15650,7 +15668,7 @@ Show # Progression - Weapons - Attack/Caster - Wands - Early Game - Linked
     LinkedSockets >= 2
     Class "Wands"
     Rarity <= Magic
-    ItemLevel <= 10
+    ItemLevel <= 6
     SetBorderColor 136 136 255
 
 Show # Progression - Weapons - Attack/Caster - Wands - Very Early Game - Any
