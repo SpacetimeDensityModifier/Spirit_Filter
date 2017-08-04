@@ -43,6 +43,7 @@
 # 2e. Essence
 # 2f. Breach
 # 2g. Legacy
+# 2h. Harbinger
 # =============================================================
 # Section 3. Mapping
 # -------------------------------------------------------------
@@ -281,13 +282,11 @@ Show # Chance Bases - Headhunter
 #    SetBorderColor 224 109 73
 #Disabled Block End
 
-#Disabled Block Start
-#Show # Chance Bases - Void Battery
-#    Corrupted False
-#    BaseType "Prophecy Wand"
-#    Rarity = Normal
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Show # Chance Bases - Void Battery
+    Corrupted False
+    BaseType "Prophecy Wand"
+    Rarity = Normal
+    SetBorderColor 224 109 73
 
 Show # Chance Bases - Skyforth
     Corrupted False
@@ -336,12 +335,14 @@ Show # Chance Bases - Shavronne's Wrappings
 #    SetBorderColor 224 109 73
 #Disabled Block End
 
-Show # Chance Bases - Varunastra
-    Corrupted False
-    BaseType "Vaal Blade"
-    Rarity = Normal
-    ItemLevel < 84
-    SetBorderColor 224 109 73
+#Disabled Block Start
+#Show # Chance Bases - Varunastra
+#    Corrupted False
+#    BaseType "Vaal Blade"
+#    Rarity = Normal
+#    ItemLevel < 84
+#    SetBorderColor 224 109 73
+#Disabled Block End
 
 #Disabled Block Start
 #Show # Chance Bases - Taste of Hate
@@ -551,8 +552,8 @@ Show
 
 Show
     BaseType "Splinter of Chayula" "Blessing of Chayula" "Chayula's Breachstone"
-    SetBackgroundColor 80 0 120
-    SetBorderColor 147 29 168
+    SetBackgroundColor 60 18 110
+    SetBorderColor 125 81 242
     SetFontSize 42
     PlayAlertSound 1 300
 
@@ -620,6 +621,92 @@ Show
     SetFontSize 30
     PlayAlertSound 5 220
 
+# Section: 2h. Harbinger
+
+Show
+    Class "Currency"
+    BaseType "Binding Shard" "Orb of Binding"
+    SetTextColor 0 0 0
+    SetBackgroundColor 255 40 0 220
+    SetBorderColor 150 0 0
+    PlayAlertSound 2 150
+
+Show
+    Class "Currency"
+    BaseType "Engineer's Shard" "Engineer's Orb"
+    SetTextColor 0 0 0
+    SetBackgroundColor 127 127 127
+    SetBorderColor 136 136 255
+    SetFontSize 32
+    PlayAlertSound 8 150
+
+Show
+    Class "Currency"
+    BaseType "Ancient Shard" "Ancient Orb"
+    SetTextColor 175 96 37
+    SetBackgroundColor 54 100 146
+    SetBorderColor 255 40 0 220
+    SetFontSize 40
+    PlayAlertSound 4 300
+
+Show
+    Class "Currency"
+    BaseType "Horizon Shard" "Orb of Horizons"
+    SetTextColor 0 0 0
+    SetBackgroundColor 170 158 130
+    SetBorderColor 175 96 37
+    SetFontSize 36
+    PlayAlertSound 4 100
+
+Show
+    Class "Currency"
+    BaseType "Annulment Shard" "Orb of Annulment"
+    SetTextColor 74 0 160 200
+    SetBackgroundColor 27 162 155
+    SetBorderColor 74 0 160 200
+    SetFontSize 36
+    PlayAlertSound 7 150
+
+Show
+    Class "Currency"
+    BaseType "Chaos Shard"
+    SetTextColor 210 0 0
+    SetBackgroundColor 235 233 234
+    SetBorderColor 250 150 167
+    PlayAlertSound 6 150
+
+Show
+    Class "Currency"
+    BaseType "Regal Shard"
+    SetBackgroundColor 4 20 36
+    SetBorderColor 30 144 255
+    PlayAlertSound 1 100
+
+Show
+    Class "Currency"
+    BaseType "Exalted Shard"
+    SetTextColor 0 0 0
+    SetBackgroundColor 255 255 172
+    SetBorderColor 175 96 37
+    SetFontSize 38
+    PlayAlertSound 4 150
+
+Show
+    Class "Currency"
+    BaseType "Mirror Shard"
+    SetTextColor 175 96 37
+    SetBackgroundColor 255 255 255
+    SetBorderColor 175 96 37
+    SetFontSize 45
+    PlayAlertSound 4 300
+
+Show
+    Class "Piece"
+    SetTextColor 30 144 255
+    SetBackgroundColor 0 0 0
+    SetBorderColor 54 100 146
+    SetFontSize 40
+
 # Section: 3. Mapping
 
 # Section: 3a. Warbands Maps
@@ -661,6 +748,23 @@ Show
 
 Show
     Class "Map Fragments"
+    BaseType "Divine Vessel"
+    SetTextColor 0 128 0
+    SetBackgroundColor 41 24 5
+    SetBorderColor 175 96 37
+    SetFontSize 40
+    PlayAlertSound 8 300
+
+Show
+    Class "Pantheon Soul"
+    SetTextColor 74 230 58
+    SetBackgroundColor 41 24 5
+    SetBorderColor 175 96 37
+    SetFontSize 40
+    PlayAlertSound 8 300
+
+Show
+    Class "Map Fragments"
     BaseType "Sacrifice at Midnight" "Mortal Hope" "Phoenix" "Minotaur" "Chimera" "Hydra"
     SetBackgroundColor 41 24 5
     SetBorderColor 175 96 37
@@ -680,7 +784,7 @@ Show
 # Section: 3c. Atlas
 
 Show
-    BaseType "Shaper's Orb (Tier 4)"
+    BaseType "Shaper's Orb"
     SetTextColor 74 230 58
     SetBorderColor 74 230 58
     SetFontSize 38
@@ -1143,16 +1247,16 @@ Show
 
 Show
     BaseType "Unshaping Orb" "Cartographer's Seal"
-    SetBackgroundColor 60 10 80
-    SetBorderColor 134 48 219
+    SetBackgroundColor 42 64 128
+    SetBorderColor 30 144 255
     SetFontSize 40
     PlayAlertSound 8 300
 
 Show
     Class "Map"
     BaseType "Shaped"
-    SetBackgroundColor 60 10 80
-    SetBorderColor 134 48 219
+    SetBackgroundColor 42 64 128
+    SetBorderColor 30 144 255
     SetFontSize 40
     PlayAlertSound 8 300
 
@@ -1515,7 +1619,7 @@ Show
 
 # Ultra
 Show
-    BaseType "Stibnite Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask" "Void Axe" "Prophecy Wand" "Jewelled Foil" "Sorcerer Boots" "Occultist's Vestment" "Crusader Boots" "Clasped Mitts" "Rawhide Boots" "Ezomyte Tower Shield" "Deicide Mask" "Glorious Plate" "Cutlass" "Ezomyte Burgonet" "Assassin's Garb" "Royal Axe"
+    BaseType "Crusader Boots" "Cutlass" "Ezomyte Tower Shield" "Glorious Plate" "Hubris Circlet" "Jewelled Foil" "Legion Gloves" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Ritual Sceptre" "Royal Axe" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Sorcerer Boots" "Topaz Flask" "Void Axe" "Wyrmscale Doublet"
     Rarity = Unique
     SetTextColor 175 96 37
     SetBackgroundColor 255 255 255
@@ -1525,7 +1629,7 @@ Show
 
 # Super
 Show
-    BaseType "Blinder" "Granite Flask" "Grand Mana Flask" "Jasper Chopper" "Fiend Dagger" "Jingling Spirit Shield" "Imperial Staff" "Carnal Sceptre" "Labrys" "Siege Axe" "Abyssal Axe" "Savant's Robe" "Penetrating Arrow Quiver" "Cedar Tower Shield" "Gladiator Plate" "Vaal Regalia" "Sacrificial Garb" "Archon Kite Shield" "Onyx Amulet" "Two-Stone Ring" "Gold Ring" "Goathide Boots" "Ebony Tower Shield" "Blinder" "Ritual Sceptre" "Judgement Staff" "Vaal Sceptre" "Legion Gloves" "Raven Mask" "Champion Kite Shield" "Ironscale Gauntlets" "Murder Boots" "Ancient Greaves" "Sharkskin Tunic" "Elegant Ringmail" "Saintly Chainmail" "Tiger Sword"
+    BaseType "Arcanist Gloves" "Assassin's Garb" "Bismuth Flask" "Carnal Sceptre" "Clasped Mitts" "Deicide Mask" "Gladiator Plate" "Gold Ring" "Highborn Staff" "Imperial Maul" "Imperial Staff" "Jingling Spirit Shield" "Sacrificial Garb" "Siege Axe" "Stibnite Flask" "Trapper Boots" "Ebony Tower Shield" "Goathide Boots" "Leather Belt" "Onyx Amulet" "Two-Stone Ring"
     Rarity = Unique
     SetBorderColor 175 96 37
     SetFontSize 42
@@ -4149,8 +4253,8 @@ Show # Recipes - Quality Gems - High
 
 Show
     BaseType "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel" "Prismatic Jewel"
-    SetBackgroundColor 0 0 0
-    SetBorderColor 157 73 255
+    SetBackgroundColor 57 39 79
+    SetBorderColor 74 0 160 200
 
 # Section: 8. Flasks
 
@@ -4291,12 +4395,6 @@ Show
     Rarity = Magic
     ItemLevel <= 70
     SetBorderColor 127 127 127
-
-# I roll and sell them
-Show # Highlight - Certain Flasks
-    BaseType "Eternal Life Flask" "Basalt Flask" "Diamond Flask"
-    SetBackgroundColor 0 0 0
-    SetBorderColor 136 136 255
 
 Show
     DropLevel >= 50
@@ -4486,7 +4584,7 @@ Show # Recipes - Six Socket
     SetBorderColor 210 0 0
     PlayAlertSound 2 300
 
-Show # Recipes - Chromatics - Large - After Act II Cruel
+Show # Recipes - Chromatics - Large - After Act V
     SocketGroup "RGB"
     Height = 4
     Width = 2
@@ -4496,7 +4594,7 @@ Show # Recipes - Chromatics - Large - After Act II Cruel
     SetBackgroundColor 0 0 0 140
     SetBorderColor 0 0 0 0
 
-Show # Recipes - Chromatics - Large - Before Act II Cruel
+Show # Recipes - Chromatics - Large - Before Act V
     SocketGroup "RGB"
     Height = 4
     Width = 2
@@ -4743,7 +4841,7 @@ Show
 # Section: 11. Animate Weapon
 
 #Disabled Block Start
-#Show # Animate
+#Show # Animate - Melee
 #    Class "One Hand" "Two Hand" "Staves" "Daggers" "Thrusting" "Sceptres" "Claws"
 #    Rarity = Normal
 #    SetTextColor 150 0 0
@@ -4758,12 +4856,12 @@ Show
 #    Rarity = Normal
 #    SetTextColor 150 0 0
 #    SetBackgroundColor 0 0 0
-#    SetBorderColor 150 0 0
+#    SetBorderColor 74 230 58
 #    SetFontSize 20
 #Disabled Block End
 
 #Disabled Block Start
-#Show # Animate - Identified
+#Show # Animate - Identified - Melee
 #    Identified True
 #    Class "One Hand" "Two Hand" "Staves" "Daggers" "Thrusting" "Sceptres" "Claws"
 #    Rarity = Magic
@@ -4780,7 +4878,7 @@ Show
 #    Rarity = Magic
 #    SetTextColor 150 0 0
 #    SetBackgroundColor 0 0 0
-#    SetBorderColor 150 0 0
+#    SetBorderColor 74 230 58
 #    SetFontSize 20
 #Disabled Block End
 
@@ -4835,28 +4933,28 @@ Hide # Obsolete - By Harvest Normal
     SetBackgroundColor 0 0 0 190
     SetFontSize 30
 
-Hide # Obsolete - By Act II Cruel
+Hide # Obsolete - By Act V
     DropLevel <= 40
     Rarity <= Magic
     ItemLevel >= 45
     SetBackgroundColor 0 0 0 190
     SetFontSize 30
 
-Hide # Obsolete - By The Battlefront Cruel
+Hide # Obsolete - By Act VI
     DropLevel <= 46
     Rarity <= Magic
     ItemLevel >= 50
     SetBackgroundColor 0 0 0 190
     SetFontSize 30
 
-Hide # Obsolete - By Dried Lake Cruel
+Hide # Obsolete - By Act VII
     DropLevel <= 52
     Rarity <= Magic
     ItemLevel >= 55
     SetBackgroundColor 0 0 0 190
     SetFontSize 30
 
-Hide # Obsolete - By Act II Merciless
+Hide # Obsolete - By Act VIII
     DropLevel < 56
     Rarity <= Magic
     ItemLevel >= 60
@@ -13505,7 +13603,7 @@ Show # Rare Drops - Okay Rares
 # Section: 18a1. AR Helmets
 
 Show # Progression - Armours - AR - Helmets - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Helmets"
     BaseType "Iron Hat" "Cone Helmet"
     Rarity <= Magic
@@ -13555,7 +13653,7 @@ Show # Progression - Armours - AR - Helmets - Mid Game - Socketed
 # Section: 18a2. EV Helmets
 
 Show # Progression - Armours - EV - Helmets - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Helmets"
     BaseType "Leather Cap" "Tricorne"
     Rarity <= Magic
@@ -13605,7 +13703,7 @@ Show # Progression - Armours - EV - Helmets - Mid Game - Socketed
 # Section: 18a3. ES Helmets
 
 Show # Progression - Armours - ES - Helmets - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Helmets"
     BaseType "Vine Circlet" "Iron Circlet"
     Rarity <= Magic
@@ -13655,7 +13753,7 @@ Show # Progression - Armours - ES - Helmets - Mid Game - Socketed
 # Section: 18a4. EV/ES Helmets
 
 Show # Progression - Armours - EV/ES - Helmets - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Helmets"
     BaseType "Scare Mask" "Plague Mask"
     Rarity <= Magic
@@ -13705,7 +13803,7 @@ Show # Progression - Armours - EV/ES - Helmets - Mid Game - Socketed
 # Section: 18a5. AR/ES Helmets
 
 Show # Progression - Armours - AR/ES - Helmets - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Helmets"
     BaseType "Rusted Coif"
     Rarity <= Magic
@@ -13755,7 +13853,7 @@ Show # Progression - Armours - AR/ES - Helmets - Mid Game - Socketed
 # Section: 18a6. AR/EV Helmets
 
 Show # Progression - Armours - AR/EV - Helmets - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Helmets"
     BaseType "Battered Helm"
     Rarity <= Magic
@@ -13811,7 +13909,7 @@ Hide
 # Section: 18b1. AR Body Armours
 
 Show # Progression - Armours - AR - Body - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Body Armours"
     BaseType "Plate Vest" "Chestplate"
     Rarity <= Magic
@@ -13861,7 +13959,7 @@ Show # Progression - Armours - AR - Body - Mid Game - Socketed
 # Section: 18b2. EV Body Armours
 
 Show # Progression - Armours - EV - Body - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Body Armours"
     BaseType "Shabby Jerkin" "Strapped Leather"
     Rarity <= Magic
@@ -13911,7 +14009,7 @@ Show # Progression - Armours - EV - Body - Mid Game - Socketed
 # Section: 18b3. ES Body Armours
 
 Show # Progression - Armours - ES - Body - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Body Armours"
     BaseType "Simple Robe"
     Rarity <= Magic
@@ -13961,7 +14059,7 @@ Show # Progression - Armours - ES - Body - Mid Game - Socketed
 # Section: 18b4. EV/ES Body Armours
 
 Show # Progression - Armours - EV/ES - Body - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Body Armours"
     BaseType "Padded Vest" "Oiled Vest"
     Rarity <= Magic
@@ -14011,7 +14109,7 @@ Show # Progression - Armours - EV/ES - Body - Mid Game - Socketed
 # Section: 18b5. AR/ES Body Armours
 
 Show # Progression - Armours - AR/ES - Body - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Body Armours"
     BaseType "Chainmail Vest" "Chainmail Tunic"
     Rarity <= Magic
@@ -14061,7 +14159,7 @@ Show # Progression - Armours - AR/ES - Body - Mid Game - Socketed
 # Section: 18b6. AR/EV Body Armours
 
 Show # Progression - Armours - AR/EV - Body - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Body Armours"
     BaseType "Scale Vest" "Light Brigandine"
     Rarity <= Magic
@@ -14117,7 +14215,7 @@ Hide
 # Section: 18c1. AR Gloves
 
 Show # Progression - Armours - AR - Gloves - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Gloves"
     BaseType "Iron Gauntlets"
     Rarity <= Magic
@@ -14167,7 +14265,7 @@ Show # Progression - Armours - AR - Gloves - Mid Game - Socketed
 # Section: 18c2. EV Gloves
 
 Show # Progression - Armours - EV - Gloves - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Gloves"
     BaseType "Rawhide Gloves" "Goathide Gloves"
     Rarity <= Magic
@@ -14217,7 +14315,7 @@ Show # Progression - Armours - EV - Gloves - Mid Game - Socketed
 # Section: 18c3. ES Gloves
 
 Show # Progression - Armours - ES - Gloves - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Gloves"
     BaseType "Wool Gloves"
     Rarity <= Magic
@@ -14267,7 +14365,7 @@ Show # Progression - Armours - ES - Gloves - Mid Game - Socketed
 # Section: 18c4. EV/ES Gloves
 
 Show # Progression - Armours - EV/ES - Gloves - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Gloves"
     BaseType "Wrapped Mitts"
     Rarity <= Magic
@@ -14317,7 +14415,7 @@ Show # Progression - Armours - EV/ES - Gloves - Mid Game - Socketed
 # Section: 18c5. AR/ES Gloves
 
 Show # Progression - Armours - AR/ES - Gloves - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Gloves"
     BaseType "Chain Gloves"
     Rarity <= Magic
@@ -14367,7 +14465,7 @@ Show # Progression - Armours - AR/ES - Gloves - Mid Game - Socketed
 # Section: 18c6. AR/EV Gloves
 
 Show # Progression - Armours - AR/EV - Gloves - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Gloves"
     BaseType "Fishscale Gauntlets"
     Rarity <= Magic
@@ -15089,7 +15187,7 @@ Hide
 # Section: 19a. 1H Axes
 
 Show # Progression - Weapons - Attack - 1H Axes - Early Game - Linked
-    LinkedSockets = 2
+    LinkedSockets = 3
     Class "One Hand Axes"
     Rarity <= Magic
     ItemLevel <= 6
@@ -15137,7 +15235,7 @@ Hide
 # Section: 19b. Generic 1H Swords
 
 Show # Progression - Weapons - Attack - 1H Swords - Early Game - Linked
-    LinkedSockets = 2
+    LinkedSockets = 3
     Class "One Hand Swords"
     Rarity <= Magic
     ItemLevel <= 6
@@ -15185,7 +15283,7 @@ Hide
 # Section: 19c. 2H Maces
 
 Show # Progression - Weapons - Attack - 2H Maces - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Two Hand Maces"
     Rarity <= Magic
     ItemLevel <= 6
@@ -15233,7 +15331,7 @@ Hide
 # Section: 19d. Bows
 
 Show # Progression - Weapons - Attack - Bows - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Bows"
     Rarity <= Magic
     ItemLevel <= 6
@@ -15281,7 +15379,7 @@ Hide
 # Section: 19e. 1H Thrusting Swords
 
 Show # Progression - Weapons - Attack - 1H Thrusting Swords - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Thrusting One Hand Swords"
     Rarity <= Magic
     ItemLevel <= 6
@@ -15329,7 +15427,7 @@ Hide
 # Section: 19f. Daggers
 
 Show # Progression - Weapons - Attack/Caster - Daggers - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Daggers"
     Rarity <= Magic
     ItemLevel <= 6
@@ -15377,7 +15475,7 @@ Hide
 # Section: 19g. 1H Maces
 
 Show # Progression - Weapons - Attack - 1H Maces - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "One Hand Maces"
     Rarity <= Magic
     ItemLevel <= 6
@@ -15425,7 +15523,7 @@ Hide
 # Section: 19h. 2H Axes
 
 Show # Progression - Weapons - Attack - 2H Axes - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Two Hand Axes"
     Rarity <= Magic
     ItemLevel <= 6
@@ -15473,7 +15571,7 @@ Hide
 # Section: 19i. 2H Swords
 
 Show # Progression - Weapons - Attack - 2H Swords - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Two Hand Swords"
     Rarity <= Magic
     ItemLevel <= 6
@@ -15521,7 +15619,7 @@ Hide
 # Section: 19j. Claws
 
 Show # Progression - Weapons - Attack - Claws - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Claws"
     Rarity <= Magic
     ItemLevel <= 6
@@ -15569,7 +15667,7 @@ Hide
 # Section: 19k. Sceptres
 
 Show # Progression - Weapons - Attack/Caster - Sceptres - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Sceptres"
     Rarity <= Magic
     ItemLevel <= 6
@@ -15617,7 +15715,7 @@ Hide
 # Section: 19l. Staves
 
 Show # Progression - Weapons - Attack/Caster - Staves - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Staves"
     Rarity <= Magic
     ItemLevel <= 6
@@ -15665,7 +15763,7 @@ Hide
 # Section: 19m. Wands
 
 Show # Progression - Weapons - Attack/Caster - Wands - Early Game - Linked
-    LinkedSockets >= 2
+    LinkedSockets >= 3
     Class "Wands"
     Rarity <= Magic
     ItemLevel <= 6
