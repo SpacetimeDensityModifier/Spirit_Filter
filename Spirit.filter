@@ -661,11 +661,20 @@ Show
 Show
     Class "Currency"
     BaseType "Annulment Shard" "Orb of Annulment"
+    SetTextColor 136 136 255
+    SetBackgroundColor 54 100 146
+    SetBorderColor 136 136 255
+    SetFontSize 36
+    PlayAlertSound 7 100
+
+Show
+    Class "Currency"
+    BaseType "Harbinger's Shard" "Harbinger's Orb"
     SetTextColor 74 0 160 200
     SetBackgroundColor 27 162 155
     SetBorderColor 74 0 160 200
     SetFontSize 36
-    PlayAlertSound 7 150
+    PlayAlertSound 4 100
 
 Show
     Class "Currency"
