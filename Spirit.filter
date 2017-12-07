@@ -808,7 +808,7 @@ Show
 
 # Shaper Touched
 Show
-    ShaperItem = True
+    ShaperItem True
     SetTextColor 74 230 58
     SetBorderColor 255 255 255
     SetFontSize 38
@@ -816,7 +816,7 @@ Show
 
 # Elder Touched
 Show
-    ElderItem = True
+    ElderItem True
     SetTextColor 128 0 128
     SetBorderColor 255 255 255
     SetFontSize 38
@@ -1288,7 +1288,7 @@ Show
 # Shaped Maps
 Show
     Class "Map"
-    ShapedMap = True
+    ShapedMap True
     SetBackgroundColor 42 64 128
     SetBorderColor 30 144 255
     SetFontSize 40
