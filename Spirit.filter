@@ -727,39 +727,39 @@ Show
 # Section: 3. Mapping
 
 # Section: 3a. Warbands Maps
-
-Show
-    Class "Map"
-    BaseType "Beacon"
-    SetBackgroundColor 60 0 0
-    SetBorderColor 175 30 30
-    SetFontSize 38
-    PlayAlertSound 8 300
-
-Show
-    Class "Map"
-    BaseType "Shipyard"
-    SetBackgroundColor 60 0 0
-    SetBorderColor 109 109 235
-    SetFontSize 38
-    PlayAlertSound 8 300
-
+# Will update once we know where they are!
+#Show
+#    Class "Map"
+#    BaseType "Beacon"
+#    SetBackgroundColor 60 0 0
+#    SetBorderColor 175 30 30
+#    SetFontSize 38
+#    PlayAlertSound 8 300
+#
+#Show
+#    Class "Map"
+#    BaseType "Shipyard"
+#    SetBackgroundColor 60 0 0
+#    SetBorderColor 109 109 235
+#    SetFontSize 38
+#    PlayAlertSound 8 300
+#
 # MUTEWIND#
-Show
-    Class "Map"
-    BaseType "Sulphur Wastes"
-    SetBackgroundColor 60 0 0
-    SetBorderColor 25 150 90
-    SetFontSize 38
-    PlayAlertSound 8 300
-
-Show
-    Class "Map"
-    BaseType "Overgrown Ruin"
-    SetBackgroundColor 60 0 0
-    SetBorderColor 255 0 220
-    SetFontSize 38
-    PlayAlertSound 8 300
+#Show
+#    Class "Map"
+#    BaseType "Sulphur Wastes"
+#    SetBackgroundColor 60 0 0
+#   SetBorderColor 25 150 90
+#    SetFontSize 38
+#    PlayAlertSound 8 300
+#
+#Show
+#    Class "Map"
+#    BaseType "Overgrown Ruin"
+#    SetBackgroundColor 60 0 0
+#    SetBorderColor 255 0 220
+#    SetFontSize 38
+#    PlayAlertSound 8 300
 
 # Section: 3b. Atziri and Friends
 
