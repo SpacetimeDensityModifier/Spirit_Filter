@@ -740,41 +740,37 @@ Show
 
 # Section: 3a. Warbands Maps: Will be enabled once we know what the new bases are for Warbands.
 
-#Disabled Block Start
-#Show
-#    Class "Map"
-#    BaseType "Beacon"
-#    SetBackgroundColor 60 0 0
-#    SetBorderColor 175 30 30
-#    SetFontSize 38
-#    PlayAlertSound 8 300
-#Disabled Block End
+Show
+    Class "Map"
+    BaseType "Lighthouse Map"
+    SetBackgroundColor 120 97 96
+    SetBorderColor 150 0 0
+    SetFontSize 38
+    PlayAlertSound 8 300
 
 #Disabled Block Start
 #Show
 #    Class "Map"
 #    BaseType "Shipyard"
-#    SetBackgroundColor 60 0 0
+#    SetBackgroundColor 120 97 96
 #    SetBorderColor 109 109 235
 #    SetFontSize 38
 #    PlayAlertSound 8 300
 #Disabled Block End
 
-#Disabled Block Start
-#Show
-#    Class "Map"
-#    BaseType "Sulphur Wastes"
-#    SetBackgroundColor 60 0 0
-#    SetBorderColor 25 150 90
-#    SetFontSize 38
-#    PlayAlertSound 8 300
-#Disabled Block End
+Show
+    Class "Map"
+    BaseType "Iceberg Map"
+    SetBackgroundColor 120 97 96
+    SetBorderColor 25 150 90
+    SetFontSize 38
+    PlayAlertSound 8 300
 
 #Disabled Block Start
 #Show
 #    Class "Map"
 #    BaseType "Overgrown Ruin"
-#    SetBackgroundColor 60 0 0
+#    SetBackgroundColor 120 97 96
 #    SetBorderColor 255 0 220
 #    SetFontSize 38
 #    PlayAlertSound 8 300
@@ -1672,6 +1668,7 @@ Show
 
 # Ultra
 Show
+    LinkedSockets < 6
     Rarity = Unique
     BaseType "Arcanist Slippers" "Callous Mask" "Carnal Sceptre" "Cedar Tower Shield" "Clasped Mitts" "Close Helmet" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Full Wyrmscale" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Imperial Maul" "Legion Gloves" "Occultist's Vestment" "Prophecy Wand" "Raven Mask" "Rawhide Boots" "Rawhide Tower Shield" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Flask" "Siege Axe" "Steelhead" "Thorium Spirit Shield" "Topaz Flask" "Varnished Coat" "Void Axe" "Wereclaw Talisman" "Wyrmscale Doublet"
     SetTextColor 175 96 37
@@ -1682,6 +1679,7 @@ Show
 
 # Super
 Show
+    LinkedSockets < 6
     Rarity = Unique
     BaseType "Abyssal Axe" "Arcanist Gloves" "Assassin's Garb" "Bismuth Flask" "Champion Kite Shield" "Citrine Amulet" "Corrugated Buckler" "Crystal Belt" "Cutlass" "Deicide Mask" "Ezomyte Burgonet" "Granite Flask" "Hellion's Paw" "Highborn Staff" "Imperial Claw" "Imperial Staff" "Ironscale Gauntlets" "Jewelled Foil" "Jingling Spirit Shield" "Maelstr" "Meatgrinder" "Mosaic Kite Shield" "Necromancer Silks" "Nightmare Bascinet" "Penetrating Arrow Quiver" "Regicide Mask" "Sacrificial Garb" "Sacrificial Garb" "Sharkskin Tunic" "Terror Maul" "Tornado Wand" "Ursine Pelt" "Vaal Sceptre" "Vanguard Belt" "Nubuck Gloves"
     SetBackgroundColor 0 0 0
@@ -1691,6 +1689,7 @@ Show
 
 # Standard
 Show
+    LinkedSockets < 6
     Rarity = Unique
     SetBackgroundColor 0 0 0
     SetBorderColor 255 255 119
