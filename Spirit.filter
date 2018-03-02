@@ -46,6 +46,7 @@
 # 2g. Legacy
 # 2h. Harbinger
 # 2i. Abyss
+# 2j. Bestiary
 # =============================================================
 # =============================================================
 # Section 3. Mapping
@@ -265,13 +266,11 @@ Show # Chance Bases - Abberath's Hooves
     BaseType "Goathide Boots"
     SetBorderColor 224 109 73
 
-#Disabled Block Start
-#Show # Chance Bases - Headhunter
-#    Corrupted False
-#    Rarity = Normal
-#    BaseType "Leather Belt"
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Show # Chance Bases - Headhunter
+    Corrupted False
+    Rarity = Normal
+    BaseType "Leather Belt"
+    SetBorderColor 224 109 73
 
 #Disabled Block Start
 #Show # Chance Bases - Voll's Devotion
@@ -281,11 +280,13 @@ Show # Chance Bases - Abberath's Hooves
 #    SetBorderColor 224 109 73
 #Disabled Block End
 
-Show # Chance Bases - Void Battery
-    Corrupted False
-    Rarity = Normal
-    BaseType "Prophecy Wand"
-    SetBorderColor 224 109 73
+#Disabled Block Start
+#Show # Chance Bases - Void Battery
+#    Corrupted False
+#    Rarity = Normal
+#    BaseType "Prophecy Wand"
+#    SetBorderColor 224 109 73
+#Disabled Block End
 
 Show # Chance Bases - Lycosidae
     Corrupted False
@@ -300,14 +301,16 @@ Show # Chance Bases - Skyforth
     BaseType "Sorcerer Boots"
     SetBorderColor 224 109 73
 
-Show # Chance Bases - Kaom's Heart
-    LinkedSockets < 5
-    Sockets < 6
-    Corrupted False
-    ItemLevel < 84
-    Rarity = Normal
-    BaseType "Glorious Plate"
-    SetBorderColor 224 109 73
+#Disabled Block Start
+#Show # Chance Bases - Kaom's Heart
+#    LinkedSockets < 5
+#    Sockets < 6
+#    Corrupted False
+#    ItemLevel < 84
+#    Rarity = Normal
+#    BaseType "Glorious Plate"
+#    SetBorderColor 224 109 73
+#Disabled Block End
 
 #Disabled Block Start
 #Show # Chance Bases - Cospri's Will
@@ -320,14 +323,16 @@ Show # Chance Bases - Kaom's Heart
 #    SetBorderColor 224 109 73
 #Disabled Block End
 
-Show # Chance Bases - Shavronne's Wrappings
-    LinkedSockets < 5
-    Sockets < 6
-    Corrupted False
-    ItemLevel < 84
-    Rarity = Normal
-    BaseType "Occultist's Vestment"
-    SetBorderColor 224 109 73
+#Disabled Block Start
+#Show # Chance Bases - Shavronne's Wrappings
+#    LinkedSockets < 5
+#    Sockets < 6
+#    Corrupted False
+#    ItemLevel < 84
+#    Rarity = Normal
+#    BaseType "Occultist's Vestment"
+#    SetBorderColor 224 109 73
+#Disabled Block End
 
 #Disabled Block Start
 #Show # Chance Bases - Heretic's Veil
@@ -722,9 +727,17 @@ Show
 # Section: 2i. Abyss
 
 Show
+    Rarity < Rare
     Class "Abyss Jewel"
     SetBackgroundColor 107 65 17
     SetBorderColor 0 0 0
+    SetFontSize 34
+
+Show
+    Rarity = Rare
+    Class "Abyss Jewel"
+    SetBackgroundColor 107 65 17
+    SetBorderColor 255 255 119
     SetFontSize 34
     PlayAlertSound 1 255
 
@@ -735,6 +748,34 @@ Show
     SetBorderColor 175 96 37
     SetFontSize 36
     PlayAlertSound 1 255
+
+# Section: 2j. Bestiary
+
+Show
+    Class "Currency"
+    BaseType "Thaumaturgical Net"
+    SetTextColor 217 130 41
+    SetBackgroundColor 42 92 16 232
+    SetFontSize 38
+    PlayAlertSound 4 200
+
+Show
+    Class "Currency"
+    BaseType "Net"
+    SetTextColor 217 130 41
+    SetBackgroundColor 42 92 16 232
+
+Show
+    Class "Currency"
+    BaseType "Imprinted Bestiary Orb"
+    SetTextColor 217 130 41
+    SetBackgroundColor 11 125 11 232
+
+Show
+    Class "Currency"
+    BaseType "Bestiary Orb"
+    SetTextColor 217 130 41
+    SetBackgroundColor 54 69 54
 
 # Section: 3. Mapping
 
@@ -1670,7 +1711,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Arcanist Slippers" "Callous Mask" "Carnal Sceptre" "Cedar Tower Shield" "Clasped Mitts" "Close Helmet" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Full Wyrmscale" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Imperial Maul" "Legion Gloves" "Occultist's Vestment" "Prophecy Wand" "Raven Mask" "Rawhide Boots" "Rawhide Tower Shield" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Flask" "Siege Axe" "Steelhead" "Thorium Spirit Shield" "Topaz Flask" "Varnished Coat" "Void Axe" "Wereclaw Talisman" "Wyrmscale Doublet"
+    BaseType "Arcanist Slippers" "Callous Mask" "Carnal Sceptre" "Cedar Tower Shield" "Clasped Mitts" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Full Wyrmscale" "Gladiator Plate" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Jewelled Foil" "Legion Gloves" "Occultist's Vestment" "Prophecy Wand" "Raven Mask" "Rawhide Boots" "Rawhide Tower Shield" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Flask" "Steelhead" "Void Axe" "Wereclaw Talisman"
     SetTextColor 175 96 37
     SetBackgroundColor 255 255 255
     SetBorderColor 175 96 37
@@ -1681,7 +1722,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Abyssal Axe" "Arcanist Gloves" "Assassin's Garb" "Bismuth Flask" "Champion Kite Shield" "Citrine Amulet" "Corrugated Buckler" "Crystal Belt" "Cutlass" "Deicide Mask" "Ezomyte Burgonet" "Granite Flask" "Hellion's Paw" "Highborn Staff" "Imperial Claw" "Imperial Staff" "Ironscale Gauntlets" "Jewelled Foil" "Jingling Spirit Shield" "Maelstr" "Meatgrinder" "Mosaic Kite Shield" "Necromancer Silks" "Nightmare Bascinet" "Penetrating Arrow Quiver" "Regicide Mask" "Sacrificial Garb" "Sacrificial Garb" "Sharkskin Tunic" "Terror Maul" "Tornado Wand" "Ursine Pelt" "Vaal Sceptre" "Vanguard Belt" "Nubuck Gloves"
+    BaseType "Arcanist Gloves" "Bismuth Flask" "Cardinal Round Shield" "Cutlass" "Destiny Leather" "Ezomyte Burgonet" "Imperial Maul" "Imperial Staff" "Jingling Spirit Shield" "Maelstr" "Necromancer Silks" "Nubuck Boots" "Nubuck Gloves" "Savant's Robe" "Serpentscale Gauntlets" "Sharkskin Tunic" "Siege Axe" "Thorium Spirit Shield" "Topaz Flask" "Ursine Pelt" "Vaal Mask" "Vaal Spirit Shield" "Wyrmscale Doublet" "Zealot Gloves"
     SetBackgroundColor 0 0 0
     SetBorderColor 175 96 37
     SetFontSize 42
@@ -4184,7 +4225,7 @@ Show
 # Ultra
 Show
     Class "Divination"
-    BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Formless Sea" "The Brittle Emperor" "The Immortal" "The Artist" "The Thaumaturgist" "Wealth and Power" "The Demoness" "Pride Before the Fall" "The Enlightened" "Heterochromia" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "The Porcupine" "Spark and the Flame"
+    BaseType "Abandoned Wealth" "Heterochromia" "House of Mirrors" "Hunter's Reward" "Last Hope" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Doctor" "The Dragon's Heart" "The Fiend" "The Formless Sea" "The Hunger" "The Immortal" "The King's Heart" "The Last One Standing" "The Queen" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Standoff" "The Thaumaturgist" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "Wealth and Power" "The Iron Bard" "The World Eater"
     SetBackgroundColor 72 115 148
     SetBorderColor 175 96 37
     SetFontSize 44
@@ -4193,7 +4234,7 @@ Show
 # Super
 Show
     Class "Divination"
-    BaseType "Chaotic Disposition" "The Eye of the Dragon" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "Time-Lost Relic" "The Harvester" "The Hoarder" "Emperor of Purity" "The Chains that Bind" "The Warlord" "The Wolf" "The Aesthete" "Earth Drinker" "Polymath" "Saint's Treasure" "Standoff"
+    BaseType "Bowyer's Dream" "Chaotic Disposition" "Emperor of Purity" "Humility" "Left to Fate" "Lingering Remnants" "Saint's Treasure" "The Cartographer" "The Chains that Bind" "The Dapper Prodigy" "The Enlightened" "The Ethereal" "The Hoarder" "The Offering" "The Polymath" "The Porcupine" "The Risk" "The Soul" "The Throne" "The Valley of Steel Boxes" "The Void" "The Warlord" "Time-Lost Relic" "The Breach" "The Dreamer" "The Obscured"
     SetBackgroundColor 64 83 97
     SetBorderColor 255 255 0
     SetFontSize 42
@@ -4202,7 +4243,7 @@ Show
 # Decent
 Show
     Class "Divination"
-    BaseType "The Road to Power" "Left to Fate" "No Traces" "The Arena Champion" "The Gladiator" "The Stormcaller" "Glimmer of Hope" "The Tyrant" "The Cursed King" "The Avenger" "Lost Worlds" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Watcher" "The Soul" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Hubris" "Jack in the Box" "The Traitor" "Assassin's Favour" "The Battle Born" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken"
+    BaseType "Jack in the Box" "Lucky Connections" "Lucky Deck" "No Traces" "Rebirth" "Scholar of the Seas" "Standoff" "The Cursed King" "The Dark Mage" "The Fletcher" "The Forsaken" "The Inventor" "The Jester" "The Trial" "The Wrath" "The Wretched" "Valley of Steel Boxes" "Wolven King's Bite" "The Deceiver" "Blessing of God"
     SetBackgroundColor 34 42 48
     SetBorderColor 136 136 255
     SetFontSize 38
@@ -4211,7 +4252,7 @@ Show
 # Trash
 Show
     Class "Divination"
-    BaseType "Carrion Crow" "Other Cheek" "Hermit" "King's Blade" "Thunderous Skies" "Metalsmith's Gift"
+    BaseType "A Mother's Parting Gift" "Anarchy's Price" "Audacity" "Birth of the Three" "Carrion Crow" "Cartographer's Delight" "Death" "Dying Anguish" "Hermit" "King's Blade" "Lantador's Lost Love" "Light and Truth" "Metalsmith's Gift" "Might is Right" "Other Cheek" "Prosperity" "Rain of Chaos" "Rain Tempter" "Shard of Fate" "Struck by Lightning" "The Avenger" "The Blazing Fire" "The Coming Storm" "The Conduit" "The Eye of the Dragon" "The Feast" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Sigil" "The Siren" "The Sun" "The Surgeon" "The Tower" "The Twins" "The Warden" "The Wolverine" "Thunderous Skies" "Volatile Power"
     SetBorderColor 0 0 0 0
 
 # Everything else
@@ -4938,22 +4979,22 @@ Show
 # Section: 12. Obsolete Gear
 
 Hide # Obsolete - By Prisoner's Gate Normal
-    ItemLevel >= 10
-    DropLevel <= 5
+    ItemLevel >= 8
+    DropLevel <= 4
     Rarity <= Magic
     SetBackgroundColor 0 0 0 190
     SetFontSize 30
 
 Hide # Obsolete - By Act II Normal
-    ItemLevel >= 15
-    DropLevel <= 10
+    ItemLevel >= 12
+    DropLevel <= 8
     Rarity <= Magic
     SetBackgroundColor 0 0 0 190
     SetFontSize 30
 
 Hide # Obsolete - By Vaal Ruins Normal
     ItemLevel >= 20
-    DropLevel <= 13
+    DropLevel <= 12
     Rarity <= Magic
     SetBackgroundColor 0 0 0 190
     SetFontSize 30
