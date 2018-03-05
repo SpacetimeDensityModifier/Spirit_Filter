@@ -1343,6 +1343,14 @@ Show
 
 # Shaped Maps
 Show
+    Class "Map"
+    SetBackgroundColor 59 59 87
+    SetBorderColor 74 0 160 200
+    SetFontSize 40
+    PlayAlertSound 8 300
+
+# Shaped Maps
+Show
     ShapedMap True
     Class "Map"
     SetBackgroundColor 42 64 128
