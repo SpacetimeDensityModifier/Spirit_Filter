@@ -757,7 +757,6 @@ Show
     SetTextColor 217 130 41
     SetBackgroundColor 42 92 16 232
     SetFontSize 38
-    PlayAlertSound 4 200
 
 Show
     Class "Currency"
