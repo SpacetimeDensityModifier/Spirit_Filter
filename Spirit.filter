@@ -54,6 +54,10 @@
 # 3a. Warbands Maps
 # 3b. Atziri and Friends
 # 3c. Atlas
+# 3c1. Shaper Armor Bases
+# 3c2. Shaper Weapon Bases
+# 3c3. Elder Armor Bases
+# 3c4. Elder Weapon Bases
 # 3d. Map Progression
 # =============================================================
 # =============================================================
@@ -753,7 +757,7 @@ Show
 
 Show
     Class "Currency"
-    BaseType "Thaumaturgical Net"
+    BaseType "Thaumaturgical Net" "Necromancy Net"
     SetTextColor 217 130 41
     SetBackgroundColor 42 92 16 232
     SetFontSize 38
@@ -856,26 +860,10 @@ Show
 # Section: 3c. Atlas
 
 Show
-    BaseType "Shaper's Orb"
+    BaseType "Shaper's Orb" "Elder's Orb"
     SetTextColor 74 230 58
     SetBorderColor 74 230 58
     SetFontSize 38
-
-# Shaper Touched
-Show
-    ShaperItem True
-    SetBackgroundColor 100 115 125
-    SetBorderColor 74 0 160 200
-    SetFontSize 38
-    PlayAlertSound 8 255
-
-# Elder Touched
-Show
-    ElderItem True
-    SetBackgroundColor 59 59 87
-    SetBorderColor 74 0 160 200
-    SetFontSize 38
-    PlayAlertSound 8 255
 
 Show # Atlas - 84+ - Steel Ring - Normal
     ItemLevel >= 84
@@ -1358,6 +1346,1464 @@ Show
     SetFontSize 40
     PlayAlertSound 8 300
 
+# Section: 3c1. Shaper Armor Bases
+
+# Body
+
+Show # Shaper Crafting - Armors - Body - AR - Astral Plate
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Astral Plate"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Body - AR - Glorious Plate
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Glorious Plate"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Body - EV - Assassin's Garb
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Assassin's Garb"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Body - EV - Zodiac Leather
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Zodiac Leather"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Body - ES - Occultist's Vestment
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Occultist's Vestment"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Body - ES - Vaal Regalia
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Vaal Regalia"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Body - ES/EV - Carnal Armour
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Carnal Armour"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Body - ES/EV - Sadist Garb
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Sadist Garb"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Body - AR/ES - Saintly Chainmail
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Saintly Chainmail"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Body -  AR/ES - Saint's Hauberk
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Saint's Hauberk"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Body - AR/EV - Triumphant Lamellar
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Triumphant Lamellar"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Body - AR/EV - Full Dragonscale
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Full Dragonscale"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Helmets
+
+Show # Shaper Crafting - Armors - Helmets - AR - Eternal Burgonet
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Eternal Burgonet"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Helmets - AR - Royal Burgonet
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Royal Burgonet"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Helmets - EV - Lion Pelt
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Lion Pelt"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Helmets - ES - Hubris Circlet
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Hubris Circlet"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Helmets - EV/ES - Deicide Mask
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Deicide Mask"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Helmets - EV/ES - Vaal Mask
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Vaal Mask"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Helmets - AR/ES - Praetor Crown
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Praetor Crown"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Helmets - AR/ES - Prophet Crown
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Prophet Crown"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Helmets - AR/EV - Nightmare Bascinet
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Nightmare Bascinet"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Helmets - AR/EV - Pig Faced Bascinet
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Pig-Faced Bascinet"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Gloves
+
+Show # Shaper Crafting - Armors - Gloves - AR - Titan Gauntlets
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Titan Gauntlets"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Gloves - EV - Slink Gloves
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Slink Gloves"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Gloves - ES - Sorcerer Gloves
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Sorcerer Gloves"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Gloves - EV/ES - Murder Mitts
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Murder Mitts"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Gloves - AR/ES - Crusader Gloves
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Crusader Gloves"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Gloves - AR/EV - Dragonscale Gauntlets
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Dragonscale Gauntlets"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Boots
+
+Show # Shaper Crafting - Armors - Boots - AR - Titan Greaves
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Titan Greaves"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Boots - EV - Slink Boots
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Slink Boots"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Boots - ES - Sorcerer Boots
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Sorcerer Boots"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Boots - EV/ES - Murder Boots
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Murder Boots"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Boots - AR/ES - Crusader Boots
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Crusader Boots"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Boots - AR/EV - Dragonscale Boots
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Dragonscale Boots"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Shields
+
+Show # Shaper Crafting - Armors - Shields - AR - Pinnacle Tower Shield
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Pinnacle Tower Shield"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Shields - AR - Colossal Tower Shield
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Colossal Tower Shield"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Shields - EV - Imperial Buckler
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Imperial Buckler"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Shields - EV - Vaal Buckler
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Vaal Buckler"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Shields - ES - Titanium Spirit Shield
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Titanium Spirit Shield"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Shields - ES - Fossilised Spirit Shield
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Fossilised Spirit Shield"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Shields - ES - Harmonic Spirit Shield
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Harmonic Spirit Shield"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Shields - EV/ES - Supreme Spiked Shield
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Supreme Spiked Shield"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Shields - AR/ES - Archon Kite Shield
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Archon Kite Shield"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Shields - AR/ES - Champion Kite Shield
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Champion Kite Shield"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Shields - AR/EV - Elegant Round Shield
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Elegant Round Shield"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Armors - Shields - AR/EV - Cardinal Round Shield
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Cardinal Round Shield"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Section: 3c2. Shaper Weapon Bases
+
+# 1H Axes
+
+Show # Shaper Crafting - Weapons - 1H Axes - Runic Hatchet
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Runic Hatchet"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - 1H Axes - Infernal Axe
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Infernal Axe"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Generic 1H Swords
+
+Show # Shaper Crafting - Weapons - Generic 1H Swords - Tiger Hook
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Tiger Hook"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Generic 1H Swords - Eternal Sword
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Eternal Sword"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Generic 1H Swords - Midnight Blade
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Midnight Blade"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# 2H Maces
+
+Show # Shaper Crafting - Weapons - 2H Maces - Coronal Maul
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Coronal Maul"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - 2H Maces - Piledriver
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Piledriver"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - 2H Maces - Terror Maul
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Terror Maul"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Bows
+
+Show # Shaper Crafting - Weapons - Bows - Maraketh Bow
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Maraketh Bow"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Bows - Thicket Bow
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Thicket Bow"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Bows - Imperial Bow
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Imperial Bow"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Bows - Harbinger Bow
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Harbinger Bow"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Thrusting Swords
+
+Show # Shaper Crafting - Weapons - Thrusting Swords - Dragoon Sword
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Dragoon Sword"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Thrusting Swords - Vaal Rapier
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Vaal Rapier"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Thrusting Swords - Jewelled Foil
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Jewelled Foil"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Thrusting Swords - Harpy Rapier
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Harpy Rapier"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Daggers
+
+Show # Shaper Crafting - Weapons - Daggers - Sai
+    ShaperItem True
+    PlayAlertSound 8 255
+    Class "Daggers"
+    BaseType "Sai"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Daggers - Ambusher
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Ambusher"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Daggers - Platinum Kris
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Platinum Kris"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Daggers - Demon Dagger
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Demon Dagger"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# 1H Maces
+
+Show # Shaper Crafting - Weapons - 1H Maces - Behemoth Mace
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Behemoth Mace"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - 1H Maces - Auric Mace
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Auric Mace"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - 1H Maces - Nightmare Mace
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Nightmare Mace"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# 2H Axes
+
+Show # Shaper Crafting - Weapons - 2H Axes - Fleshripper
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Fleshripper"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - 2H Axes - Vaal Axe
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Vaal Axe"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - 2H Axes - Despot Axe
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Despot Axe"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# 2H Swords
+
+Show # Shaper Crafting - Weapons - 2H Swords - Exquisite Blade
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Exquisite Blade"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - 2H Swords - Infernal Sword
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Infernal Sword"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Claws
+
+Show # Shaper Crafting - Weapons - Claws - Gemini Claw
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Gemini Claw"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Claws - Imperial Claw
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Imperial Claw"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Claws - Terror Claw
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Terror Claw"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Sceptres
+
+Show # Shaper Crafting - Weapons - Sceptres - Sambar Sceptre
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Sambar Sceptre"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Sceptres - Opal Sceptre
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Opal Sceptre"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Sceptres - Void Sceptre
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Void Sceptre"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Staves
+
+Show # Shaper Crafting - Weapons - Staves - Eclipse Staff
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Eclipse Staff"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Staves - Imperial Staff
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Imperial Staff"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Wands
+
+Show # Shaper Crafting - Weapons - Wands - Profane Wand
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Profane Wand"
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Wands - Imbued Wand
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Imbued Wand"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Weapons - Wands - Prophecy Wand
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Prophecy Wand"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Section: 3c3. Elder Armor Bases
+
+# Body
+
+Show # Elder Crafting - Armors - Body - AR - Astral Plate
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Astral Plate"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Body - AR - Glorious Plate
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Glorious Plate"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Body - EV - Assassin's Garb
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Assassin's Garb"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Body - EV - Zodiac Leather
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Zodiac Leather"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Body - ES - Occultist's Vestment
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Occultist's Vestment"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Body - ES - Vaal Regalia
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Vaal Regalia"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Body - ES/EV - Carnal Armour
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Carnal Armour"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Body - ES/EV - Sadist Garb
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Sadist Garb"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Body - AR/ES - Saintly Chainmail
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Saintly Chainmail"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Body -  AR/ES - Saint's Hauberk
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Saint's Hauberk"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Body - AR/EV - Triumphant Lamellar
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Triumphant Lamellar"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Body - AR/EV - Full Dragonscale
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Full Dragonscale"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Helmets
+
+Show # Elder Crafting - Armors - Helmets - AR - Eternal Burgonet
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Eternal Burgonet"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Helmets - AR - Royal Burgonet
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Royal Burgonet"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Helmets - EV - Lion Pelt
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Lion Pelt"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Helmets - ES - Hubris Circlet
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Hubris Circlet"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Helmets - EV/ES - Deicide Mask
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Deicide Mask"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Helmets - EV/ES - Vaal Mask
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Vaal Mask"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Helmets - AR/ES - Praetor Crown
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Praetor Crown"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Helmets - AR/ES - Prophet Crown
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Prophet Crown"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Helmets - AR/EV - Nightmare Bascinet
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Nightmare Bascinet"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Helmets - AR/EV - Pig Faced Bascinet
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Pig-Faced Bascinet"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Gloves
+
+Show # Elder Crafting - Armors - Gloves - AR - Titan Gauntlets
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Titan Gauntlets"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Gloves - EV - Slink Gloves
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Slink Gloves"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Gloves - ES - Sorcerer Gloves
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Sorcerer Gloves"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Gloves - EV/ES - Murder Mitts
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Murder Mitts"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Gloves - AR/ES - Crusader Gloves
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Crusader Gloves"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Gloves - AR/EV - Dragonscale Gauntlets
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Dragonscale Gauntlets"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Boots
+
+Show # Elder Crafting - Armors - Boots - AR - Titan Greaves
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Titan Greaves"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Boots - EV - Slink Boots
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Slink Boots"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Boots - ES - Sorcerer Boots
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Sorcerer Boots"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Boots - EV/ES - Murder Boots
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Murder Boots"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Boots - AR/ES - Crusader Boots
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Crusader Boots"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Boots - AR/EV - Dragonscale Boots
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Dragonscale Boots"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Shields
+
+Show # Elder Crafting - Armors - Shields - AR - Pinnacle Tower Shield
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Pinnacle Tower Shield"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Shields - AR - Colossal Tower Shield
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Colossal Tower Shield"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Shields - EV - Imperial Buckler
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Imperial Buckler"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Shields - EV - Vaal Buckler
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Vaal Buckler"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Shields - ES - Titanium Spirit Shield
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Titanium Spirit Shield"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Shields - ES - Fossilised Spirit Shield
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Fossilised Spirit Shield"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Shields - ES - Harmonic Spirit Shield
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Harmonic Spirit Shield"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Shields - EV/ES - Supreme Spiked Shield
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Supreme Spiked Shield"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Shields - AR/ES - Archon Kite Shield
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Archon Kite Shield"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Shields - AR/ES - Champion Kite Shield
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Champion Kite Shield"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Shields - AR/EV - Elegant Round Shield
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Elegant Round Shield"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Armors - Shields - AR/EV - Cardinal Round Shield
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Cardinal Round Shield"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Section: 3c4. Elder Weapon Bases
+
+# 1H Axes
+
+Show # Elder Crafting - Weapons - 1H Axes - Runic Hatchet
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Runic Hatchet"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - 1H Axes - Infernal Axe
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Infernal Axe"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Generic 1H Swords
+
+Show # Elder Crafting - Weapons - Generic 1H Swords - Tiger Hook
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Tiger Hook"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Generic 1H Swords - Eternal Sword
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Eternal Sword"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Generic 1H Swords - Midnight Blade
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Midnight Blade"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# 2H Maces
+
+Show # Elder Crafting - Weapons - 2H Maces - Coronal Maul
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Coronal Maul"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - 2H Maces - Piledriver
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Piledriver"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - 2H Maces - Terror Maul
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Terror Maul"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Bows
+
+Show # Elder Crafting - Weapons - Bows - Maraketh Bow
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Maraketh Bow"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Bows - Thicket Bow
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Thicket Bow"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Bows - Imperial Bow
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Imperial Bow"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Bows - Harbinger Bow
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Harbinger Bow"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Thrusting Swords
+
+Show # Elder Crafting - Weapons - Thrusting Swords - Dragoon Sword
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Dragoon Sword"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Thrusting Swords - Vaal Rapier
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Vaal Rapier"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Thrusting Swords - Jewelled Foil
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Jewelled Foil"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Thrusting Swords - Harpy Rapier
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Harpy Rapier"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Daggers
+
+Show # Elder Crafting - Weapons - Daggers - Sai
+    ElderItem True
+    PlayAlertSound 8 255
+    Class "Daggers"
+    BaseType "Sai"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Daggers - Ambusher
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Ambusher"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Daggers - Platinum Kris
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Platinum Kris"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Daggers - Demon Dagger
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Demon Dagger"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# 1H Maces
+
+Show # Elder Crafting - Weapons - 1H Maces - Behemoth Mace
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Behemoth Mace"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - 1H Maces - Auric Mace
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Auric Mace"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - 1H Maces - Nightmare Mace
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Nightmare Mace"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# 2H Axes
+
+Show # Elder Crafting - Weapons - 2H Axes - Fleshripper
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Fleshripper"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - 2H Axes - Vaal Axe
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Vaal Axe"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - 2H Axes - Despot Axe
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Despot Axe"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# 2H Swords
+
+Show # Elder Crafting - Weapons - 2H Swords - Exquisite Blade
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Exquisite Blade"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - 2H Swords - Infernal Sword
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Infernal Sword"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Claws
+
+Show # Elder Crafting - Weapons - Claws - Gemini Claw
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Gemini Claw"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Claws - Imperial Claw
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Imperial Claw"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Claws - Terror Claw
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Terror Claw"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Sceptres
+
+Show # Elder Crafting - Weapons - Sceptres - Sambar Sceptre
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Sambar Sceptre"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Sceptres - Opal Sceptre
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Opal Sceptre"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Sceptres - Void Sceptre
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Void Sceptre"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Staves
+
+Show # Elder Crafting - Weapons - Staves - Eclipse Staff
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Eclipse Staff"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Staves - Imperial Staff
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Imperial Staff"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Wands
+
+Show # Elder Crafting - Weapons - Wands - Profane Wand
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Profane Wand"
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Wands - Imbued Wand
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Imbued Wand"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Weapons - Wands - Prophecy Wand
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Prophecy Wand"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Catchall
+
+# Shaper Touched
+Show
+    ShaperItem True
+    SetBackgroundColor 100 115 125
+    SetBorderColor 74 0 160 200
+    SetFontSize 32
+    PlayAlertSound 8 85
+
+# Elder Touched
+Show
+    ElderItem True
+    SetBackgroundColor 59 59 87
+    SetBorderColor 74 0 160 200
+    SetFontSize 32
+    PlayAlertSound 8 85
+
 # Section: 3d. Map Progression
 
 Show
@@ -1719,7 +3165,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Arcanist Slippers" "Callous Mask" "Carnal Sceptre" "Cedar Tower Shield" "Clasped Mitts" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Full Wyrmscale" "Gladiator Plate" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Jewelled Foil" "Legion Gloves" "Occultist's Vestment" "Prophecy Wand" "Raven Mask" "Rawhide Boots" "Rawhide Tower Shield" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Flask" "Steelhead" "Void Axe" "Wereclaw Talisman"
+    BaseType "Arcanist Slippers" "Callous Mask" "Carnal Sceptre" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Legion Gloves" "Nubuck Gloves" "Occultist's Vestment" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sapphire Flask" "Thorium Spirit Shield" "Vaal Spirit Shield" "Void Axe" "Wereclaw Talisman"
     SetTextColor 175 96 37
     SetBackgroundColor 255 255 255
     SetBorderColor 175 96 37
@@ -1730,11 +3176,31 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Arcanist Gloves" "Bismuth Flask" "Cardinal Round Shield" "Cutlass" "Destiny Leather" "Ezomyte Burgonet" "Imperial Maul" "Imperial Staff" "Jingling Spirit Shield" "Maelstr" "Necromancer Silks" "Nubuck Boots" "Nubuck Gloves" "Savant's Robe" "Serpentscale Gauntlets" "Sharkskin Tunic" "Siege Axe" "Thorium Spirit Shield" "Topaz Flask" "Ursine Pelt" "Vaal Mask" "Vaal Spirit Shield" "Wyrmscale Doublet" "Zealot Gloves"
-    SetBackgroundColor 0 0 0
+    BaseType "Arcanist Gloves" "Cutlass" "Full Wyrmscale" "Imperial Maul" "Maelstr" "Nubuck Boots" "Sacrificial Garb" "Sanctified Life Flask" "Savant's Robe" "Siege Axe" "Topaz Flask" "Vaal Mask" "Zealot Gloves"
+    SetBackgroundColor 40 40 0
     SetBorderColor 175 96 37
-    SetFontSize 42
-    PlayAlertSound 4 200
+    SetFontSize 44
+    PlayAlertSound 4 250
+
+# Multi-Base Uniques
+Show
+    LinkedSockets < 6
+    Rarity = Unique
+    BaseType "Amber Amulet" "Carved Wand" "Ebony Tower Shield" "Exquisite Leather" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Imperial Bow" "Imperial Staff" "Judgement Staff" "Leather Belt" "Onyx Amulet" "Paua Ring" "Sorcerer Boots" "Stibnite Flask" "Titan Greaves" "Two-Stone Ring"
+    SetBackgroundColor 0 0 0
+    SetBorderColor 155 255 40
+    SetFontSize 36
+    PlayAlertSound 3 250
+
+# Prophecy
+Show
+    LinkedSockets < 6
+    Rarity = Unique
+    BaseType "Coral Amulet" "Coral Ring" "Crude Bow" "Death Bow" "Fire Arrow Quiver" "Gavel" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Golden Buckler" "Iron Hat" "Iron Ring" "Iron Staff" "Jade Amulet" "Jade Hatchet" "Jagged Maul" "Long Bow" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Scholar Boots" "Serrated Arrow Quiver" "Sledgehammer" "Spiraled Wand" "Studded Belt" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
+    SetBackgroundColor 0 0 0
+    SetBorderColor 155 55 180
+    SetFontSize 36
+    PlayAlertSound 3 250
 
 # Standard
 Show
@@ -1743,7 +3209,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 255 255 119
     SetFontSize 36
-    PlayAlertSound 3 300
+    PlayAlertSound 3 200
 
 # Section: 4d. Accessories
 
@@ -4233,7 +5699,7 @@ Show
 # Ultra
 Show
     Class "Divination"
-    BaseType "Abandoned Wealth" "Heterochromia" "House of Mirrors" "Hunter's Reward" "Last Hope" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Doctor" "The Dragon's Heart" "The Fiend" "The Formless Sea" "The Hunger" "The Immortal" "The King's Heart" "The Last One Standing" "The Queen" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Standoff" "The Thaumaturgist" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "Wealth and Power" "The Iron Bard" "The World Eater"
+    BaseType "Abandoned Wealth" "Heterochromia" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Artist" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Queen" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
     SetBackgroundColor 72 115 148
     SetBorderColor 175 96 37
     SetFontSize 44
@@ -4242,7 +5708,7 @@ Show
 # Super
 Show
     Class "Divination"
-    BaseType "Bowyer's Dream" "Chaotic Disposition" "Emperor of Purity" "Humility" "Left to Fate" "Lingering Remnants" "Saint's Treasure" "The Cartographer" "The Chains that Bind" "The Dapper Prodigy" "The Enlightened" "The Ethereal" "The Hoarder" "The Offering" "The Polymath" "The Porcupine" "The Risk" "The Soul" "The Throne" "The Valley of Steel Boxes" "The Void" "The Warlord" "Time-Lost Relic" "The Breach" "The Dreamer" "The Obscured"
+    BaseType "Bowyer's Dream" "Chaotic Disposition" "Last Hope" "Left to Fate" "Saint's Treasure" "The Brittle Emperor" "The Cartographer" "The Celestial Justicar" "The Dreamer" "The Ethereal" "The Formless Sea" "The Hoarder" "The Hunger" "The Offering" "The Risk" "The Thaumaturgist" "The Void"
     SetBackgroundColor 64 83 97
     SetBorderColor 255 255 0
     SetFontSize 42
@@ -4251,7 +5717,7 @@ Show
 # Decent
 Show
     Class "Divination"
-    BaseType "Jack in the Box" "Lucky Connections" "Lucky Deck" "No Traces" "Rebirth" "Scholar of the Seas" "Standoff" "The Cursed King" "The Dark Mage" "The Fletcher" "The Forsaken" "The Inventor" "The Jester" "The Trial" "The Wrath" "The Wretched" "Valley of Steel Boxes" "Wolven King's Bite" "The Deceiver" "Blessing of God"
+    BaseType "Blessing of God" "Dialla's Subjugation" "Emperor of Purity" "Hope" "Humility" "Jack in the Box" "Lingering Remnants" "Lucky Connections" "Lucky Deck" "No Traces" "Rebirth" "Scholar of the Seas" "Standoff" "The Breach" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Fletcher" "The Forsaken" "The Inventor" "The Jester" "The Lion" "The Obscured" "The Polymath" "The Porcupine" "The Soul" "The Standoff" "The Surveyor" "The Throne" "The Trial" "The Union" "The Valley of Steel Boxes" "The Warlord" "The Wrath" "The Wretched" "Time-Lost Relic" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite"    
     SetBackgroundColor 34 42 48
     SetBorderColor 136 136 255
     SetFontSize 38
@@ -4260,7 +5726,7 @@ Show
 # Trash
 Show
     Class "Divination"
-    BaseType "A Mother's Parting Gift" "Anarchy's Price" "Audacity" "Birth of the Three" "Carrion Crow" "Cartographer's Delight" "Death" "Dying Anguish" "Hermit" "King's Blade" "Lantador's Lost Love" "Light and Truth" "Metalsmith's Gift" "Might is Right" "Other Cheek" "Prosperity" "Rain Tempter" "Shard of Fate" "Struck by Lightning" "The Avenger" "The Blazing Fire" "The Coming Storm" "The Conduit" "The Eye of the Dragon" "The Feast" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Sigil" "The Siren" "The Sun" "The Surgeon" "The Tower" "The Twins" "The Warden" "The Wolverine" "Thunderous Skies" "Volatile Power"
+    BaseType "A Mother's Parting Gift" "Anarchy's Price" "Birth of the Three" "Carrion Crow" "Cartographer's Delight" "Death" "Dying Anguish" "Hermit" "King's Blade" "Lantador's Lost Love" "Light and Truth" "Metalsmith's Gift" "Might is Right" "Other Cheek" "Prosperity" "Rain of Chaos" "Rain Tempter" "Shard of Fate" "Struck by Lightning" "The Avenger" "The Blazing Fire" "The Coming Storm" "The Conduit" "The Eye of the Dragon" "The Feast" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Sigil" "The Siren" "The Sun" "The Surgeon" "The Tower" "The Twins" "The Warden" "The Wolverine" "Thunderous Skies" "Volatile Power"
     SetBorderColor 0 0 0 0
 
 # Everything else
@@ -4370,7 +5836,7 @@ Show
 
 Show
     Quality >= 15
-    ItemLevel < 78
+    ItemLevel < 68
     Rarity <= Magic
     BaseType "Flask"
     SetBackgroundColor 0 0 0
