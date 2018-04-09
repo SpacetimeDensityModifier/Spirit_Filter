@@ -58,6 +58,8 @@
 # 3c2. Shaper Weapon Bases
 # 3c3. Elder Armor Bases
 # 3c4. Elder Weapon Bases
+# 3c5. Shaper Accessory Bases
+# 3c6. Elder Accessory Bases
 # 3d. Map Progression
 # =============================================================
 # =============================================================
@@ -864,6 +866,24 @@ Show
     SetTextColor 74 230 58
     SetBorderColor 74 230 58
     SetFontSize 38
+
+# Atlas Shaper Bases
+Show
+    ShaperItem True
+    PlayAlertSound 4 255
+    BaseType "Marble Amulet" "Blue Pearl Amulet" "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 215 115 210
+
+# Atlas Elder Bases
+Show
+    ElderItem True
+    PlayAlertSound 4 255
+    BaseType "Marble Amulet" "Blue Pearl Amulet" "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 215 115 210
 
 Show # Atlas - 84+ - Steel Ring - Normal
     ItemLevel >= 84
@@ -2785,6 +2805,680 @@ Show # Elder Crafting - Weapons - Wands - Prophecy Wand
     SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+
+# Section: 3c5. Shaper Accessory Bases
+
+# Accessories
+
+# Amulets
+
+Show # Shaper Crafting - Accessories - Amulets - Coral
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Coral Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Amulets - Paua
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Paua Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Amulets - Amber
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Amber Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Amulets - Jade
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Jade Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Amulets - Lapis
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Lapis Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Amulets - Gold
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Gold Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Amulets - Agate
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Agate Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Amulets - Citrine
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Citrine Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Amulets - Turquoise
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Turquoise Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Amulets - Onyx
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Onyx Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Rings
+
+Show # Shaper Crafting - Accessories - Rings - Coral
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Coral Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Rings - Iron
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Iron Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Rings - Paua
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Paua Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Rings - Unset
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Unset Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Rings - Sapphire
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Sapphire Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Rings - Topaz
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Topaz Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Rings - Ruby
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Ruby Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Rings - Diamond
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Diamond Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Rings - Gold
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Gold Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Rings - Moonstone
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Moonstone Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Rings - Two Stone
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Two-Stone Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Rings - Amethyst
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Amethyst Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Rings - Prismatic
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Prismatic Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Belts
+
+Show # Shaper Crafting - Accessories - Belts - Chain
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Chain Belt"
+    Class "Belts" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Belts - Rustic Sash
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Rustic Sash"
+    Class "Belts" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Belts - Heavy
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Heavy Belt"
+    Class "Belts" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Belts - Leather
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Leather Belt"
+    Class "Belts" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Belts - Cloth
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Cloth Belt"
+    Class "Belts" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+Show # Shaper Crafting - Accessories - Belts - Studded
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Studded Belt"
+    Class "Belts" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+    SetBorderColor 255 255 119
+
+# Quivers
+
+Show # Shaper Crafting - Accessories - Quivers - Two Point
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Two-Point Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+
+Show # Shaper Crafting - Accessories - Quivers - Serrated
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Serrated Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+
+Show # Shaper Crafting - Accessories - Quivers - Sharktooth
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Sharktooth Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+
+Show # Shaper Crafting - Accessories - Quivers - Blunt
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Blunt Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+
+Show # Shaper Crafting - Accessories - Quivers - Fire Arrow
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Fire Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+
+Show # Shaper Crafting - Accessories - Quivers - Broadhead
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Broadhead Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+
+Show # Shaper Crafting - Accessories - Quivers - Penetrating
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Penetrating Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+
+Show # Shaper Crafting - Accessories - Quivers - Spike Point
+    ShaperItem True
+    PlayAlertSound 8 255
+    BaseType "Spike-Point Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 100 115 125
+
+# Section: 3c6. Elder Accessory Bases
+
+# Accessories
+
+# Amulets
+
+Show # Elder Crafting - Accessories - Amulets - Coral
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Coral Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Amulets - Paua
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Paua Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Amulets - Amber
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Amber Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Amulets - Jade
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Jade Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Amulets - Lapis
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Lapis Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Amulets - Gold
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Gold Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Amulets - Agate
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Agate Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Amulets - Citrine
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Citrine Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Amulets - Turquoise
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Turquoise Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Amulets - Onyx
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Onyx Amulet"
+    Class "Amulets" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Rings
+
+Show # Elder Crafting - Accessories - Rings - Coral
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Coral Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Rings - Iron
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Iron Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Rings - Paua
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Paua Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Rings - Unset
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Unset Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Rings - Sapphire
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Sapphire Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Rings - Topaz
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Topaz Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Rings - Ruby
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Ruby Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Rings - Diamond
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Diamond Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Rings - Gold
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Gold Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Rings - Moonstone
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Moonstone Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Rings - Two Stone
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Two-Stone Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Rings - Amethyst
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Amethyst Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Rings - Prismatic
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Prismatic Ring"
+    Class "Rings"
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Belts
+
+Show # Elder Crafting - Accessories - Belts - Chain
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Chain Belt"
+    Class "Belts" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Belts - Rustic Sash
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Rustic Sash"
+    Class "Belts" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Belts - Heavy
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Heavy Belt"
+    Class "Belts" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Belts - Leather
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Leather Belt"
+    Class "Belts" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Belts - Cloth
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Cloth Belt"
+    Class "Belts" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+Show # Elder Crafting - Accessories - Belts - Studded
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Studded Belt"
+    Class "Belts" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+    SetBorderColor 255 255 119
+
+# Quivers
+
+Show # Elder Crafting - Accessories - Quivers - Two Point
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Two-Point Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+
+Show # Elder Crafting - Accessories - Quivers - Serrated
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Serrated Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+
+Show # Elder Crafting - Accessories - Quivers - Sharktooth
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Sharktooth Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+
+Show # Elder Crafting - Accessories - Quivers - Blunt
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Blunt Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+
+Show # Elder Crafting - Accessories - Quivers - Fire Arrow
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Fire Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+
+Show # Elder Crafting - Accessories - Quivers - Broadhead
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Broadhead Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+
+Show # Elder Crafting - Accessories - Quivers - Penetrating
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Penetrating Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
+
+Show # Elder Crafting - Accessories - Quivers - Spike Point
+    ElderItem True
+    PlayAlertSound 8 255
+    BaseType "Spike-Point Arrow Quiver"
+    Class "Quivers" 
+    SetFontSize 38
+    SetBackgroundColor 59 59 87
 
 # Catchall
 
