@@ -6989,7 +6989,7 @@ Show
 
 Show
     Class "Currency"
-    BaseType "Orb of Scouring" "Orb of Regret"
+    BaseType "Orb of Scouring" "Orb of Regret" "Stacked Deck"
     SetBackgroundColor 38 38 38
     SetBorderColor 255 255 255
     PlayAlertSound 3 120
@@ -7014,7 +7014,7 @@ Show
 
 Show
     Class "Currency"
-    BaseType "Exalted Orb" "Stacked Deck"
+    BaseType "Exalted Orb"
     SetTextColor 0 20 0
     SetBackgroundColor 255 255 172
     SetBorderColor 175 96 37
