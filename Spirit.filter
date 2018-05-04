@@ -1,5 +1,7 @@
 ﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
 # EnableBlockGroups
+# Item filter downloaded at FilterBLAST - for updates visit:
+# http://filterblast.oversoul.xyz/Felix35071/r7r49v
 # Scroll all the way to the bottom for a quick tutorial (best if this is opened in Filtration).
 # =============================================================
 # =============================================================
@@ -266,10 +268,18 @@
 
 # Section: 1. Chance Bases
 
-Show # Chance Bases - Abberath's Hooves
+#Disabled Block Start
+#Show # Chance Bases - Abberath's Hooves
+#    Corrupted False
+#    Rarity = Normal
+#    BaseType "Goathide Boots"
+#    SetBorderColor 224 109 73
+#Disabled Block End
+
+Show # Chance Bases - Poet's Pen
     Corrupted False
     Rarity = Normal
-    BaseType "Goathide Boots"
+    BaseType "Carved Wand"
     SetBorderColor 224 109 73
 
 Show # Chance Bases - Headhunter
@@ -369,39 +379,47 @@ Show # Chance Bases - Skyforth
 
 # Section: 2a. Warbands
 
-Hide # Warbands - Redblade
-    Identified True
-    ItemLevel >= 68
-    Rarity = Magic
-    Class "Helmets"
-    SetBackgroundColor 99 8 8
-    SetBorderColor 175 30 30
+#Disabled Block Start
+#Hide # Warbands - Redblade
+#    Identified True
+#    ItemLevel >= 68
+#    Rarity = Magic
+#    Class "Helmets"
+#    SetBackgroundColor 99 8 8
+#    SetBorderColor 175 30 30
+#Disabled Block End
 
-Hide # Warbands - Brinerot
-    Identified True
-    ItemLevel >= 68
-    Rarity = Magic
-    Class "Gloves"
-    SetBackgroundColor 26 13 87
-    SetBorderColor 97 97 255
+#Disabled Block Start
+#Hide # Warbands - Brinerot
+#    Identified True
+#    ItemLevel >= 68
+#    Rarity = Magic
+#    Class "Gloves"
+#    SetBackgroundColor 26 13 87
+#    SetBorderColor 97 97 255
+#Disabled Block End
 
-Hide # Warbands - Mutewind
-    Identified True
-    ItemLevel >= 68
-    Rarity = Magic
-    Class "Boots"
-    SetBackgroundColor 1 54 4
-    SetBorderColor 25 150 90
+#Disabled Block Start
+#Hide # Warbands - Mutewind
+#    Identified True
+#    ItemLevel >= 68
+#    Rarity = Magic
+#    Class "Boots"
+#    SetBackgroundColor 1 54 4
+#    SetBorderColor 25 150 90
+#Disabled Block End
 
-Hide # Warbands - Renegade
-    LinkedSockets < 5
-    Sockets < 6
-    Identified True
-    ItemLevel >= 68
-    Rarity = Magic
-    Class "Axe" "Bow" "Claw" "Dagger" "Mace" "Staves" "Sword" "Wand"
-    SetBackgroundColor 89 37 70
-    SetBorderColor 255 0 220
+#Disabled Block Start
+#Hide # Warbands - Renegade
+#    LinkedSockets < 5
+#    Sockets < 6
+#    Identified True
+#    ItemLevel >= 68
+#    Rarity = Magic
+#    Class "Axe" "Bow" "Claw" "Dagger" "Mace" "Staves" "Sword" "Wand"
+#    SetBackgroundColor 89 37 70
+#    SetBorderColor 255 0 220
+#Disabled Block End
 
 # Section: 2b. Talisman
 
@@ -763,6 +781,7 @@ Show
     SetTextColor 217 130 41
     SetBackgroundColor 42 92 16 232
     SetFontSize 38
+    PlayAlertSound 3 75
 
 Show
     Class "Currency"
@@ -784,7 +803,7 @@ Show
 
 # Section: 3. Mapping
 
-# Section: 3a. Warbands Maps: Will be enabled once we know what the new bases are for Warbands.
+# Section: 3a. Warbands Maps
 
 Show
     Class "Map"
@@ -794,15 +813,13 @@ Show
     SetFontSize 38
     PlayAlertSound 8 300
 
-#Disabled Block Start
-#Show
-#    Class "Map"
-#    BaseType "Shipyard"
-#    SetBackgroundColor 120 97 96
-#    SetBorderColor 109 109 235
-#    SetFontSize 38
-#    PlayAlertSound 8 300
-#Disabled Block End
+Show
+    Class "Map"
+    BaseType "Shipyard"
+    SetBackgroundColor 120 97 96
+    SetBorderColor 109 109 235
+    SetFontSize 38
+    PlayAlertSound 8 300
 
 Show
     Class "Map"
@@ -812,15 +829,13 @@ Show
     SetFontSize 38
     PlayAlertSound 8 300
 
-#Disabled Block Start
-#Show
-#    Class "Map"
-#    BaseType "Overgrown Ruin"
-#    SetBackgroundColor 120 97 96
-#    SetBorderColor 255 0 220
-#    SetFontSize 38
-#    PlayAlertSound 8 300
-#Disabled Block End
+Show
+    Class "Map"
+    BaseType "Acid Lakes Map"
+    SetBackgroundColor 120 97 96
+    SetBorderColor 255 0 220
+    SetFontSize 38
+    PlayAlertSound 8 300
 
 # Section: 3b. Atziri and Friends
 
@@ -870,20 +885,20 @@ Show
 # Atlas Shaper Bases
 Show
     ShaperItem True
-    PlayAlertSound 4 255
     BaseType "Marble Amulet" "Blue Pearl Amulet" "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 215 115 210
+    SetFontSize 38
+    PlayAlertSound 4 255
 
 # Atlas Elder Bases
 Show
     ElderItem True
-    PlayAlertSound 4 255
     BaseType "Marble Amulet" "Blue Pearl Amulet" "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 215 115 210
+    SetFontSize 38
+    PlayAlertSound 4 255
 
 Show # Atlas - 84+ - Steel Ring - Normal
     ItemLevel >= 84
@@ -1348,7 +1363,7 @@ Show
     SetFontSize 40
     PlayAlertSound 8 300
 
-# Shaped Maps
+# Elder Maps
 Show
     ElderMap True
     Class "Map"
@@ -1368,2119 +1383,2025 @@ Show
 
 # Section: 3c1. Shaper Armor Bases
 
-# Body
-
 Show # Shaper Crafting - Armors - Body - AR - Astral Plate
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Astral Plate"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Body - AR - Glorious Plate
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Glorious Plate"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Body - EV - Assassin's Garb
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Assassin's Garb"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Body - EV - Zodiac Leather
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Zodiac Leather"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Body - ES - Occultist's Vestment
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Occultist's Vestment"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Body - ES - Vaal Regalia
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Vaal Regalia"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Body - ES/EV - Carnal Armour
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Carnal Armour"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Body - ES/EV - Sadist Garb
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Sadist Garb"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Body - AR/ES - Saintly Chainmail
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Saintly Chainmail"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-Show # Shaper Crafting - Armors - Body -  AR/ES - Saint's Hauberk
-    ShaperItem True
+    SetFontSize 38
     PlayAlertSound 8 255
+
+Show # Shaper Crafting - Armors - Body - AR/ES - Saint's Hauberk
+    ShaperItem True
     BaseType "Saint's Hauberk"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Body - AR/EV - Triumphant Lamellar
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Triumphant Lamellar"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Body - AR/EV - Full Dragonscale
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Full Dragonscale"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# Helmets
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Helmets - AR - Eternal Burgonet
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Eternal Burgonet"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Helmets - AR - Royal Burgonet
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Royal Burgonet"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Helmets - EV - Lion Pelt
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Lion Pelt"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Helmets - ES - Hubris Circlet
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Hubris Circlet"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Helmets - EV/ES - Deicide Mask
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Deicide Mask"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Helmets - EV/ES - Vaal Mask
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Vaal Mask"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Helmets - AR/ES - Praetor Crown
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Praetor Crown"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Helmets - AR/ES - Prophet Crown
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Prophet Crown"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Helmets - AR/EV - Nightmare Bascinet
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Nightmare Bascinet"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Helmets - AR/EV - Pig Faced Bascinet
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Pig-Faced Bascinet"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# Gloves
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Gloves - AR - Titan Gauntlets
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Titan Gauntlets"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Gloves - EV - Slink Gloves
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Slink Gloves"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Gloves - ES - Sorcerer Gloves
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Sorcerer Gloves"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Gloves - EV/ES - Murder Mitts
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Murder Mitts"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Gloves - AR/ES - Crusader Gloves
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Crusader Gloves"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Gloves - AR/EV - Dragonscale Gauntlets
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Dragonscale Gauntlets"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# Boots
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Boots - AR - Titan Greaves
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Titan Greaves"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Boots - EV - Slink Boots
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Slink Boots"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Boots - ES - Sorcerer Boots
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Sorcerer Boots"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Boots - EV/ES - Murder Boots
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Murder Boots"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Boots - AR/ES - Crusader Boots
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Crusader Boots"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Boots - AR/EV - Dragonscale Boots
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Dragonscale Boots"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# Shields
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Shields - AR - Pinnacle Tower Shield
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Pinnacle Tower Shield"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Shields - AR - Colossal Tower Shield
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Colossal Tower Shield"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Shields - EV - Imperial Buckler
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Imperial Buckler"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Shields - EV - Vaal Buckler
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Vaal Buckler"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Shields - ES - Titanium Spirit Shield
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Titanium Spirit Shield"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Shields - ES - Fossilised Spirit Shield
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Fossilised Spirit Shield"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Shields - ES - Harmonic Spirit Shield
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Harmonic Spirit Shield"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Shields - EV/ES - Supreme Spiked Shield
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Supreme Spiked Shield"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Shields - AR/ES - Archon Kite Shield
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Archon Kite Shield"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Shields - AR/ES - Champion Kite Shield
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Champion Kite Shield"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Shields - AR/EV - Elegant Round Shield
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Elegant Round Shield"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Armors - Shields - AR/EV - Cardinal Round Shield
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Cardinal Round Shield"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 # Section: 3c2. Shaper Weapon Bases
 
-# 1H Axes
-
 Show # Shaper Crafting - Weapons - 1H Axes - Runic Hatchet
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Runic Hatchet"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - 1H Axes - Infernal Axe
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Infernal Axe"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# Generic 1H Swords
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Generic 1H Swords - Tiger Hook
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Tiger Hook"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Generic 1H Swords - Eternal Sword
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Eternal Sword"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Generic 1H Swords - Midnight Blade
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Midnight Blade"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# 2H Maces
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - 2H Maces - Coronal Maul
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Coronal Maul"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - 2H Maces - Piledriver
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Piledriver"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - 2H Maces - Terror Maul
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Terror Maul"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# Bows
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Bows - Maraketh Bow
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Maraketh Bow"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Bows - Thicket Bow
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Thicket Bow"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Bows - Imperial Bow
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Imperial Bow"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Bows - Harbinger Bow
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Harbinger Bow"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# Thrusting Swords
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Thrusting Swords - Dragoon Sword
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Dragoon Sword"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Thrusting Swords - Vaal Rapier
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Vaal Rapier"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Thrusting Swords - Jewelled Foil
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Jewelled Foil"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Thrusting Swords - Harpy Rapier
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Harpy Rapier"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# Daggers
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Daggers - Sai
     ShaperItem True
-    PlayAlertSound 8 255
     Class "Daggers"
     BaseType "Sai"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Daggers - Ambusher
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Ambusher"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Daggers - Platinum Kris
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Platinum Kris"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Daggers - Demon Dagger
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Demon Dagger"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# 1H Maces
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - 1H Maces - Behemoth Mace
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Behemoth Mace"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - 1H Maces - Auric Mace
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Auric Mace"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - 1H Maces - Nightmare Mace
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Nightmare Mace"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# 2H Axes
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - 2H Axes - Fleshripper
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Fleshripper"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - 2H Axes - Vaal Axe
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Vaal Axe"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - 2H Axes - Despot Axe
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Despot Axe"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# 2H Swords
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - 2H Swords - Exquisite Blade
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Exquisite Blade"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - 2H Swords - Infernal Sword
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Infernal Sword"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# Claws
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Claws - Gemini Claw
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Gemini Claw"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Claws - Imperial Claw
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Imperial Claw"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Claws - Terror Claw
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Terror Claw"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# Sceptres
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Sceptres - Sambar Sceptre
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Sambar Sceptre"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Sceptres - Opal Sceptre
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Opal Sceptre"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Sceptres - Void Sceptre
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Void Sceptre"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# Staves
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Staves - Eclipse Staff
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Eclipse Staff"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Staves - Imperial Staff
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Imperial Staff"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# Wands
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Wands - Profane Wand
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Profane Wand"
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Wands - Imbued Wand
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Imbued Wand"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Weapons - Wands - Prophecy Wand
     ShaperItem True
-    PlayAlertSound 8 255
     BaseType "Prophecy Wand"
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 # Section: 3c3. Elder Armor Bases
 
-# Body
-
 Show # Elder Crafting - Armors - Body - AR - Astral Plate
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Astral Plate"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Body - AR - Glorious Plate
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Glorious Plate"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Body - EV - Assassin's Garb
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Assassin's Garb"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Body - EV - Zodiac Leather
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Zodiac Leather"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Body - ES - Occultist's Vestment
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Occultist's Vestment"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Body - ES - Vaal Regalia
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Vaal Regalia"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Body - ES/EV - Carnal Armour
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Carnal Armour"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Body - ES/EV - Sadist Garb
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Sadist Garb"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Body - AR/ES - Saintly Chainmail
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Saintly Chainmail"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-Show # Elder Crafting - Armors - Body -  AR/ES - Saint's Hauberk
-    ElderItem True
+    SetFontSize 38
     PlayAlertSound 8 255
+
+Show # Elder Crafting - Armors - Body - AR/ES - Saint's Hauberk
+    ElderItem True
     BaseType "Saint's Hauberk"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Body - AR/EV - Triumphant Lamellar
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Triumphant Lamellar"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Body - AR/EV - Full Dragonscale
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Full Dragonscale"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# Helmets
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Helmets - AR - Eternal Burgonet
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Eternal Burgonet"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Helmets - AR - Royal Burgonet
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Royal Burgonet"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Helmets - EV - Lion Pelt
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Lion Pelt"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Helmets - ES - Hubris Circlet
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Hubris Circlet"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Helmets - EV/ES - Deicide Mask
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Deicide Mask"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Helmets - EV/ES - Vaal Mask
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Vaal Mask"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Helmets - AR/ES - Praetor Crown
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Praetor Crown"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Helmets - AR/ES - Prophet Crown
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Prophet Crown"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Helmets - AR/EV - Nightmare Bascinet
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Nightmare Bascinet"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Helmets - AR/EV - Pig Faced Bascinet
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Pig-Faced Bascinet"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# Gloves
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Gloves - AR - Titan Gauntlets
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Titan Gauntlets"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Gloves - EV - Slink Gloves
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Slink Gloves"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Gloves - ES - Sorcerer Gloves
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Sorcerer Gloves"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Gloves - EV/ES - Murder Mitts
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Murder Mitts"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Gloves - AR/ES - Crusader Gloves
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Crusader Gloves"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Gloves - AR/EV - Dragonscale Gauntlets
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Dragonscale Gauntlets"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# Boots
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Boots - AR - Titan Greaves
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Titan Greaves"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Boots - EV - Slink Boots
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Slink Boots"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Boots - ES - Sorcerer Boots
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Sorcerer Boots"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Boots - EV/ES - Murder Boots
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Murder Boots"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Boots - AR/ES - Crusader Boots
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Crusader Boots"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Boots - AR/EV - Dragonscale Boots
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Dragonscale Boots"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# Shields
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Shields - AR - Pinnacle Tower Shield
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Pinnacle Tower Shield"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Shields - AR - Colossal Tower Shield
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Colossal Tower Shield"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Shields - EV - Imperial Buckler
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Imperial Buckler"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Shields - EV - Vaal Buckler
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Vaal Buckler"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Shields - ES - Titanium Spirit Shield
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Titanium Spirit Shield"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Shields - ES - Fossilised Spirit Shield
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Fossilised Spirit Shield"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Shields - ES - Harmonic Spirit Shield
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Harmonic Spirit Shield"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Shields - EV/ES - Supreme Spiked Shield
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Supreme Spiked Shield"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Shields - AR/ES - Archon Kite Shield
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Archon Kite Shield"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Shields - AR/ES - Champion Kite Shield
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Champion Kite Shield"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Shields - AR/EV - Elegant Round Shield
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Elegant Round Shield"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Armors - Shields - AR/EV - Cardinal Round Shield
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Cardinal Round Shield"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 # Section: 3c4. Elder Weapon Bases
 
-# 1H Axes
-
 Show # Elder Crafting - Weapons - 1H Axes - Runic Hatchet
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Runic Hatchet"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - 1H Axes - Infernal Axe
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Infernal Axe"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# Generic 1H Swords
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Generic 1H Swords - Tiger Hook
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Tiger Hook"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Generic 1H Swords - Eternal Sword
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Eternal Sword"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Generic 1H Swords - Midnight Blade
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Midnight Blade"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# 2H Maces
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - 2H Maces - Coronal Maul
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Coronal Maul"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - 2H Maces - Piledriver
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Piledriver"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - 2H Maces - Terror Maul
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Terror Maul"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# Bows
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Bows - Maraketh Bow
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Maraketh Bow"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Bows - Thicket Bow
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Thicket Bow"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Bows - Imperial Bow
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Imperial Bow"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Bows - Harbinger Bow
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Harbinger Bow"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# Thrusting Swords
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Thrusting Swords - Dragoon Sword
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Dragoon Sword"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Thrusting Swords - Vaal Rapier
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Vaal Rapier"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Thrusting Swords - Jewelled Foil
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Jewelled Foil"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Thrusting Swords - Harpy Rapier
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Harpy Rapier"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# Daggers
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Daggers - Sai
     ElderItem True
-    PlayAlertSound 8 255
     Class "Daggers"
     BaseType "Sai"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Daggers - Ambusher
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Ambusher"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Daggers - Platinum Kris
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Platinum Kris"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Daggers - Demon Dagger
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Demon Dagger"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# 1H Maces
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - 1H Maces - Behemoth Mace
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Behemoth Mace"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - 1H Maces - Auric Mace
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Auric Mace"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - 1H Maces - Nightmare Mace
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Nightmare Mace"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# 2H Axes
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - 2H Axes - Fleshripper
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Fleshripper"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - 2H Axes - Vaal Axe
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Vaal Axe"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - 2H Axes - Despot Axe
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Despot Axe"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# 2H Swords
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - 2H Swords - Exquisite Blade
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Exquisite Blade"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - 2H Swords - Infernal Sword
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Infernal Sword"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# Claws
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Claws - Gemini Claw
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Gemini Claw"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Claws - Imperial Claw
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Imperial Claw"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Claws - Terror Claw
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Terror Claw"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# Sceptres
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Sceptres - Sambar Sceptre
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Sambar Sceptre"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Sceptres - Opal Sceptre
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Opal Sceptre"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Sceptres - Void Sceptre
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Void Sceptre"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# Staves
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Staves - Eclipse Staff
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Eclipse Staff"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Staves - Imperial Staff
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Imperial Staff"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# Wands
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Wands - Profane Wand
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Profane Wand"
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Wands - Imbued Wand
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Imbued Wand"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Weapons - Wands - Prophecy Wand
     ElderItem True
-    PlayAlertSound 8 255
     BaseType "Prophecy Wand"
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 # Section: 3c5. Shaper Accessory Bases
 
-# Accessories
-
-# Amulets
-
 Show # Shaper Crafting - Accessories - Amulets - Coral
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Coral Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Amulets - Paua
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Paua Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Amulets - Amber
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Amber Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Amulets - Jade
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Jade Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Amulets - Lapis
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Lapis Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Amulets - Gold
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Gold Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Amulets - Agate
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Agate Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Amulets - Citrine
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Citrine Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Amulets - Turquoise
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Turquoise Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Amulets - Onyx
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Onyx Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# Rings
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Rings - Coral
     ShaperItem True
-    PlayAlertSound 8 255
-    BaseType "Coral Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Coral Ring"
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Rings - Iron
     ShaperItem True
-    PlayAlertSound 8 255
-    BaseType "Iron Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Iron Ring"
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Rings - Paua
     ShaperItem True
-    PlayAlertSound 8 255
-    BaseType "Paua Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Paua Ring"
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Rings - Unset
     ShaperItem True
-    PlayAlertSound 8 255
-    BaseType "Unset Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Unset Ring"
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Rings - Sapphire
     ShaperItem True
-    PlayAlertSound 8 255
-    BaseType "Sapphire Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Sapphire Ring"
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Rings - Topaz
     ShaperItem True
-    PlayAlertSound 8 255
-    BaseType "Topaz Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Topaz Ring"
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Rings - Ruby
     ShaperItem True
-    PlayAlertSound 8 255
-    BaseType "Ruby Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Ruby Ring"
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Rings - Diamond
     ShaperItem True
-    PlayAlertSound 8 255
-    BaseType "Diamond Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Diamond Ring"
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Rings - Gold
     ShaperItem True
-    PlayAlertSound 8 255
-    BaseType "Gold Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Gold Ring"
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Rings - Moonstone
     ShaperItem True
-    PlayAlertSound 8 255
-    BaseType "Moonstone Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Moonstone Ring"
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Rings - Two Stone
     ShaperItem True
-    PlayAlertSound 8 255
-    BaseType "Two-Stone Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Two-Stone Ring"
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Rings - Amethyst
     ShaperItem True
-    PlayAlertSound 8 255
-    BaseType "Amethyst Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Amethyst Ring"
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Rings - Prismatic
     ShaperItem True
-    PlayAlertSound 8 255
-    BaseType "Prismatic Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Prismatic Ring"
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# Belts
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Belts - Chain
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Belts"
     BaseType "Chain Belt"
-    Class "Belts" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Belts - Rustic Sash
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Belts"
     BaseType "Rustic Sash"
-    Class "Belts" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Belts - Heavy
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Belts"
     BaseType "Heavy Belt"
-    Class "Belts" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Belts - Leather
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Belts"
     BaseType "Leather Belt"
-    Class "Belts" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Belts - Cloth
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Belts"
     BaseType "Cloth Belt"
-    Class "Belts" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Belts - Studded
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Belts"
     BaseType "Studded Belt"
-    Class "Belts" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
     SetBorderColor 255 255 119
-
-# Quivers
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Quivers - Two Point
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Two-Point Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Quivers - Serrated
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Serrated Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Quivers - Sharktooth
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Sharktooth Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Quivers - Blunt
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Blunt Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Quivers - Fire Arrow
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Fire Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Quivers - Broadhead
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Broadhead Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Quivers - Penetrating
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Penetrating Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Shaper Crafting - Accessories - Quivers - Spike Point
     ShaperItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Spike-Point Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 100 115 125
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 # Section: 3c6. Elder Accessory Bases
 
-# Accessories
-
-# Amulets
-
 Show # Elder Crafting - Accessories - Amulets - Coral
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Coral Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Amulets - Paua
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Paua Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Amulets - Amber
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Amber Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Amulets - Jade
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Jade Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Amulets - Lapis
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Lapis Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Amulets - Gold
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Gold Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Amulets - Agate
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Agate Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Amulets - Citrine
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Citrine Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Amulets - Turquoise
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Turquoise Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Amulets - Onyx
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Amulets"
     BaseType "Onyx Amulet"
-    Class "Amulets" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# Rings
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Rings - Coral
     ElderItem True
-    PlayAlertSound 8 255
-    BaseType "Coral Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Coral Ring"
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Rings - Iron
     ElderItem True
-    PlayAlertSound 8 255
-    BaseType "Iron Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Iron Ring"
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Rings - Paua
     ElderItem True
-    PlayAlertSound 8 255
-    BaseType "Paua Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Paua Ring"
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Rings - Unset
     ElderItem True
-    PlayAlertSound 8 255
-    BaseType "Unset Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Unset Ring"
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Rings - Sapphire
     ElderItem True
-    PlayAlertSound 8 255
-    BaseType "Sapphire Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Sapphire Ring"
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Rings - Topaz
     ElderItem True
-    PlayAlertSound 8 255
-    BaseType "Topaz Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Topaz Ring"
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Rings - Ruby
     ElderItem True
-    PlayAlertSound 8 255
-    BaseType "Ruby Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Ruby Ring"
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Rings - Diamond
     ElderItem True
-    PlayAlertSound 8 255
-    BaseType "Diamond Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Diamond Ring"
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Rings - Gold
     ElderItem True
-    PlayAlertSound 8 255
-    BaseType "Gold Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Gold Ring"
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Rings - Moonstone
     ElderItem True
-    PlayAlertSound 8 255
-    BaseType "Moonstone Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Moonstone Ring"
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Rings - Two Stone
     ElderItem True
-    PlayAlertSound 8 255
-    BaseType "Two-Stone Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Two-Stone Ring"
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Rings - Amethyst
     ElderItem True
-    PlayAlertSound 8 255
-    BaseType "Amethyst Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Amethyst Ring"
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Rings - Prismatic
     ElderItem True
-    PlayAlertSound 8 255
-    BaseType "Prismatic Ring"
     Class "Rings"
-    SetFontSize 38
+    BaseType "Prismatic Ring"
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# Belts
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Belts - Chain
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Belts"
     BaseType "Chain Belt"
-    Class "Belts" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Belts - Rustic Sash
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Belts"
     BaseType "Rustic Sash"
-    Class "Belts" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Belts - Heavy
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Belts"
     BaseType "Heavy Belt"
-    Class "Belts" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Belts - Leather
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Belts"
     BaseType "Leather Belt"
-    Class "Belts" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Belts - Cloth
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Belts"
     BaseType "Cloth Belt"
-    Class "Belts" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Belts - Studded
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Belts"
     BaseType "Studded Belt"
-    Class "Belts" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
     SetBorderColor 255 255 119
-
-# Quivers
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Quivers - Two Point
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Two-Point Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Quivers - Serrated
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Serrated Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Quivers - Sharktooth
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Sharktooth Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Quivers - Blunt
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Blunt Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Quivers - Fire Arrow
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Fire Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Quivers - Broadhead
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Broadhead Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Quivers - Penetrating
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Penetrating Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 Show # Elder Crafting - Accessories - Quivers - Spike Point
     ElderItem True
-    PlayAlertSound 8 255
+    Class "Quivers"
     BaseType "Spike-Point Arrow Quiver"
-    Class "Quivers" 
-    SetFontSize 38
     SetBackgroundColor 59 59 87
-
-# Catchall
+    SetFontSize 38
+    PlayAlertSound 8 255
 
 # Shaper Touched
 Show
@@ -3907,13 +3828,15 @@ Show
 
 # Section: 4d. Accessories
 
+#Disabled Block Start
 # Check for good implicits for Lead to Gold crafting
-Show
-    Corrupted True
-    Rarity = Normal
-    Class "Amulets" "Rings" "Quivers" "Belts"
-    SetTextColor 255 204 204
-    SetBorderColor 136 136 255
+#Show
+#    Corrupted True
+#    Rarity = Normal
+#    Class "Amulets" "Rings" "Quivers" "Belts"
+#    SetTextColor 255 204 204
+#    SetBorderColor 136 136 255
+#Disabled Block End
 
 Show
     ItemLevel >= 84
@@ -6411,7 +6334,7 @@ Show
 # Decent
 Show
     Class "Divination"
-    BaseType "Blessing of God" "Dialla's Subjugation" "Emperor of Purity" "Hope" "Humility" "Jack in the Box" "Lingering Remnants" "Lucky Connections" "Lucky Deck" "No Traces" "Rebirth" "Scholar of the Seas" "Standoff" "The Breach" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Fletcher" "The Forsaken" "The Inventor" "The Jester" "The Lion" "The Obscured" "The Polymath" "The Porcupine" "The Soul" "The Standoff" "The Surveyor" "The Throne" "The Trial" "The Union" "The Valley of Steel Boxes" "The Warlord" "The Wrath" "The Wretched" "Time-Lost Relic" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite"    
+    BaseType "Blessing of God" "Dialla's Subjugation" "Emperor of Purity" "Hope" "Humility" "Jack in the Box" "Lingering Remnants" "Lucky Connections" "Lucky Deck" "No Traces" "Rebirth" "Scholar of the Seas" "Standoff" "The Breach" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Fletcher" "The Forsaken" "The Inventor" "The Jester" "The Lion" "The Obscured" "The Polymath" "The Porcupine" "The Soul" "The Standoff" "The Surveyor" "The Throne" "The Trial" "The Union" "The Valley of Steel Boxes" "The Warlord" "The Wrath" "The Wretched" "Time-Lost Relic" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite"
     SetBackgroundColor 34 42 48
     SetBorderColor 136 136 255
     SetFontSize 38
@@ -6443,7 +6366,7 @@ Show # Recipes - Quality Gems - Low
     Quality < 10
     Class "Active Skill Gems"
     BaseType "Vaal"
-    SetTextColor 184 218 242
+    SetTextColor 111 181 207
     SetBorderColor 150 0 0
 
 Show # Recipes - Quality Gems - High
@@ -6464,7 +6387,7 @@ Show # Recipes - Quality Gems - Low
     Quality < 10
     Class "Gems"
     BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach" "Item Quantity Support"
-    SetTextColor 184 218 242
+    SetTextColor 111 181 207
     SetBorderColor 255 255 255
 
 Show # Recipes - Quality Gems - High
@@ -6483,7 +6406,7 @@ Show # Gems - Skill
 Show # Recipes - Quality Gems - Low
     Quality < 10
     Class "Active Skill Gems"
-    SetTextColor 184 218 242
+    SetTextColor 111 181 207
     SetBorderColor 27 162 155
 
 Show # Recipes - Quality Gems - High
@@ -6501,7 +6424,7 @@ Show # Gems - Support
 Show # Recipes - Quality Gems - Low
     Quality < 10
     Class "Support Skill Gems"
-    SetTextColor 184 218 242
+    SetTextColor 111 181 207
     SetBorderColor 0 100 150 200
 
 Show # Recipes - Quality Gems - High
@@ -6800,11 +6723,9 @@ Show
 
 Show
     ItemLevel <= 20
-    Rarity = Normal
-    Class "Utility Flasks"
-    SetTextColor 255 255 255
+    BaseType "Quicksilver Flask"
     SetBackgroundColor 0 0 0
-    SetBorderColor 136 136 255
+    SetBorderColor 255 255 119
 
 Show
     ItemLevel <= 20
@@ -6813,6 +6734,14 @@ Show
     SetTextColor 30 144 255
     SetBackgroundColor 0 0 0
     SetBorderColor 255 255 119
+
+Show
+    ItemLevel <= 20
+    Rarity = Normal
+    Class "Utility Flasks"
+    SetTextColor 255 255 255
+    SetBackgroundColor 0 0 0
+    SetBorderColor 136 136 255
 
 Show
     ItemLevel <= 60
@@ -6983,7 +6912,7 @@ Show # Recipes - Quality Items - Perfect - Before Maps
     SetBackgroundColor 0 0 0
     SetBorderColor 232 198 159
 
-Show # Recipes - Quality Items - Perfect - In Maps
+Hide # Recipes - Quality Items - Perfect - In Maps
     LinkedSockets < 4
     Quality = 20
     Rarity = Normal
@@ -7242,14 +7171,14 @@ Hide # Obsolete - Old Bases
 
 # Section: 13a. Top AR Bases
 
-Show # Crafting - Armours - Armour - Tier 1 Mods - Normal - Unsocketed
+Hide # Crafting - Armours - Armour - Tier 1 Mods - Normal - Unsocketed
     Sockets < 4
     ItemLevel >= 84
     Rarity = Normal
     BaseType "Glorious Plate" "Astral Plate" "Titan Greaves" "Titan Gauntlets" "Eternal Burgonet" "Royal Burgonet"
     SetTextColor 255 255 255
 
-Show # Crafting - Armours - Armour - Tier 1 Mods - Normal - Linked
+Hide # Crafting - Armours - Armour - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 4
     ItemLevel >= 84
     Rarity = Normal
@@ -7257,7 +7186,7 @@ Show # Crafting - Armours - Armour - Tier 1 Mods - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - Armour - Tier 1 Mods - Normal - Socketed
+Hide # Crafting - Armours - Armour - Tier 1 Mods - Normal - Socketed
     Sockets >= 4
     ItemLevel >= 84
     Rarity = Normal
@@ -7265,7 +7194,7 @@ Show # Crafting - Armours - Armour - Tier 1 Mods - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Armour - Tier 1 Mods - Magic - Unsocketed
+Hide # Crafting - Armours - Armour - Tier 1 Mods - Magic - Unsocketed
     Sockets < 4
     ItemLevel >= 84
     Rarity = Magic
@@ -7273,7 +7202,7 @@ Show # Crafting - Armours - Armour - Tier 1 Mods - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Armour - Tier 1 Mods - Magic - Linked
+Hide # Crafting - Armours - Armour - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 4
     ItemLevel >= 84
     Rarity = Magic
@@ -7281,7 +7210,7 @@ Show # Crafting - Armours - Armour - Tier 1 Mods - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - Armour - Tier 1 Mods - Magic - Socketed
+Hide # Crafting - Armours - Armour - Tier 1 Mods - Magic - Socketed
     Sockets >= 4
     ItemLevel >= 84
     Rarity = Magic
@@ -7333,7 +7262,7 @@ Hide # Crafting - Armours - Armour - Tier 2 Mods - Magic - Socketed
     BaseType "Titan Greaves" "Titan Gauntlets" "Eternal Burgonet" "Royal Burgonet"
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Armour - Tier 1 Mods - Normal - Unsocketed
+Hide # Crafting - Armours - Armour - Tier 1 Mods - Normal - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Normal
@@ -7341,7 +7270,7 @@ Show # Crafting - Armours - Armour - Tier 1 Mods - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Armour - Tier 1 Mods - Normal - Linked
+Hide # Crafting - Armours - Armour - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -7349,7 +7278,7 @@ Show # Crafting - Armours - Armour - Tier 1 Mods - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - Armour - Tier 1 Mods - Normal - Socketed
+Hide # Crafting - Armours - Armour - Tier 1 Mods - Normal - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -7357,7 +7286,7 @@ Show # Crafting - Armours - Armour - Tier 1 Mods - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Armour - Tier 1 Mods - Magic - Unsocketed
+Hide # Crafting - Armours - Armour - Tier 1 Mods - Magic - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Magic
@@ -7365,7 +7294,7 @@ Show # Crafting - Armours - Armour - Tier 1 Mods - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Armour - Tier 1 Mods - Magic - Linked
+Hide # Crafting - Armours - Armour - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -7373,7 +7302,7 @@ Show # Crafting - Armours - Armour - Tier 1 Mods - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - Armour - Tier 1 Mods - Magic - Socketed
+Hide # Crafting - Armours - Armour - Tier 1 Mods - Magic - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -7427,7 +7356,7 @@ Hide # Crafting - Armours - Armour - Tier 2 Mods - Magic - Socketed
 
 # Section: 13b. Top EV Bases
 
-Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Unsocketed
+Hide # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Unsocketed
     Sockets < 4
     ItemLevel >= 84
     Rarity = Normal
@@ -7435,7 +7364,7 @@ Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Linked
+Hide # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 4
     ItemLevel >= 84
     Rarity = Normal
@@ -7443,7 +7372,7 @@ Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Socketed
+Hide # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Socketed
     Sockets >= 4
     ItemLevel >= 84
     Rarity = Normal
@@ -7451,7 +7380,7 @@ Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Unsocketed
+Hide # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Unsocketed
     Sockets < 4
     ItemLevel >= 84
     Rarity = Magic
@@ -7459,7 +7388,7 @@ Show # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Linked
+Hide # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 4
     ItemLevel >= 84
     Rarity = Magic
@@ -7467,7 +7396,7 @@ Show # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Socketed
+Hide # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Socketed
     Sockets >= 4
     ItemLevel >= 84
     Rarity = Magic
@@ -7519,7 +7448,7 @@ Hide # Crafting - Armours - Evasion - Tier 2 Mods - Magic - Socketed
     BaseType "Slink Boots" "Slink Gloves" "Lion Pelt"
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Unsocketed
+Hide # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Normal
@@ -7527,7 +7456,7 @@ Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Linked
+Hide # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -7535,7 +7464,7 @@ Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Socketed
+Hide # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -7543,7 +7472,7 @@ Show # Crafting - Armours - Evasion - Tier 1 Mods - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Unsocketed
+Hide # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Magic
@@ -7551,7 +7480,7 @@ Show # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Linked
+Hide # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -7559,7 +7488,7 @@ Show # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Socketed
+Hide # Crafting - Armours - Evasion - Tier 1 Mods - Magic - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -7613,7 +7542,7 @@ Hide # Crafting - Armours - Evasion - Tier 2 Mods - Magic - Socketed
 
 # Section: 13c. Top ES Bases
 
-Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Unsocketed
+Hide # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Unsocketed
     Sockets < 4
     ItemLevel >= 84
     Rarity = Normal
@@ -7621,7 +7550,7 @@ Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Linked
+Hide # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 4
     ItemLevel >= 84
     Rarity = Normal
@@ -7629,7 +7558,7 @@ Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Socketed
+Hide # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Socketed
     Sockets >= 4
     ItemLevel >= 84
     Rarity = Normal
@@ -7637,7 +7566,7 @@ Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Unsocketed
+Hide # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Unsocketed
     Sockets < 4
     ItemLevel >= 84
     Rarity = Magic
@@ -7645,7 +7574,7 @@ Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Linked
+Hide # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 4
     ItemLevel >= 84
     Rarity = Magic
@@ -7653,7 +7582,7 @@ Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Socketed
+Hide # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Socketed
     Sockets >= 4
     ItemLevel >= 84
     Rarity = Magic
@@ -7705,7 +7634,7 @@ Hide # Crafting - Armours - Energy Shield - Tier 2 Mods - Magic - Socketed
     BaseType "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Occultist's Vestment"
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Unsocketed
+Hide # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Normal
@@ -7713,7 +7642,7 @@ Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Linked
+Hide # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -7721,7 +7650,7 @@ Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Socketed
+Hide # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -7729,7 +7658,7 @@ Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Unsocketed
+Hide # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Magic
@@ -7737,7 +7666,7 @@ Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Linked
+Hide # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -7745,7 +7674,7 @@ Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Socketed
+Hide # Crafting - Armours - Energy Shield - Tier 1 Mods - Magic - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -7799,7 +7728,7 @@ Hide # Crafting - Armours - Energy Shield - Tier 2 Mods - Magic - Socketed
 
 # Section: 13d. Top EV/ES Bases
 
-Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Unsocketed
+Hide # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Unsocketed
     Sockets < 4
     ItemLevel >= 84
     Rarity = Normal
@@ -7807,7 +7736,7 @@ Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Linked
+Hide # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 4
     ItemLevel >= 84
     Rarity = Normal
@@ -7815,7 +7744,7 @@ Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Socketed
+Hide # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Socketed
     Sockets >= 4
     ItemLevel >= 84
     Rarity = Normal
@@ -7823,7 +7752,7 @@ Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Unsocketed
+Hide # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Unsocketed
     Sockets < 4
     ItemLevel >= 84
     Rarity = Magic
@@ -7831,7 +7760,7 @@ Show # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Linked
+Hide # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 4
     ItemLevel >= 84
     Rarity = Magic
@@ -7839,7 +7768,7 @@ Show # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Socketed
+Hide # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Socketed
     Sockets >= 4
     ItemLevel >= 84
     Rarity = Magic
@@ -7891,7 +7820,7 @@ Hide # Crafting - Armours - EV/ES - Tier 2 Mods - Magic - Socketed
     BaseType "Murder Boots" "Murder Mitts" "Deicide Mask" "Vaal Mask"
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Unsocketed
+Hide # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Normal
@@ -7899,7 +7828,7 @@ Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Linked
+Hide # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -7907,7 +7836,7 @@ Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Socketed
+Hide # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -7915,7 +7844,7 @@ Show # Crafting - Armours - EV/ES - Tier 1 Mods - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Unsocketed
+Hide # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Magic
@@ -7923,7 +7852,7 @@ Show # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Linked
+Hide # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -7931,7 +7860,7 @@ Show # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Socketed
+Hide # Crafting - Armours - EV/ES - Tier 1 Mods - Magic - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -7985,7 +7914,7 @@ Hide # Crafting - Armours - EV/ES - Tier 2 Mods - Magic - Socketed
 
 # Section: 13e. Top AR/ES Bases
 
-Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Unsocketed
+Hide # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Unsocketed
     Sockets < 4
     ItemLevel >= 84
     Rarity = Normal
@@ -7993,7 +7922,7 @@ Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Linked
+Hide # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 4
     ItemLevel >= 84
     Rarity = Normal
@@ -8001,7 +7930,7 @@ Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Socketed
+Hide # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Socketed
     Sockets >= 4
     ItemLevel >= 84
     Rarity = Normal
@@ -8009,7 +7938,7 @@ Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Unsocketed
+Hide # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Unsocketed
     Sockets < 4
     ItemLevel >= 84
     Rarity = Magic
@@ -8017,7 +7946,7 @@ Show # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Linked
+Hide # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 4
     ItemLevel >= 84
     Rarity = Magic
@@ -8025,7 +7954,7 @@ Show # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Socketed
+Hide # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Socketed
     Sockets >= 4
     ItemLevel >= 84
     Rarity = Magic
@@ -8077,7 +8006,7 @@ Hide # Crafting - Armours - AR/ES - Tier 2 Mods - Magic - Socketed
     BaseType "Crusader Boots" "Crusader Gloves" "Praetor Crown" "Prophet Crown"
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Unsocketed
+Hide # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Normal
@@ -8085,7 +8014,7 @@ Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Linked
+Hide # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -8093,7 +8022,7 @@ Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Socketed
+Hide # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -8101,7 +8030,7 @@ Show # Crafting - Armours - AR/ES - Tier 1 Mods - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Unsocketed
+Hide # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Magic
@@ -8109,7 +8038,7 @@ Show # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Linked
+Hide # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -8117,7 +8046,7 @@ Show # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Socketed
+Hide # Crafting - Armours - AR/ES - Tier 1 Mods - Magic - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -8171,7 +8100,7 @@ Hide # Crafting - Armours - AR/ES - Tier 2 Mods - Magic - Socketed
 
 # Section: 13f. Top AR/EV Bases
 
-Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Unsocketed
+Hide # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Unsocketed
     Sockets < 4
     ItemLevel >= 84
     Rarity = Normal
@@ -8179,7 +8108,7 @@ Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Linked
+Hide # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 4
     ItemLevel >= 84
     Rarity = Normal
@@ -8187,7 +8116,7 @@ Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Socketed
+Hide # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Socketed
     Sockets >= 4
     ItemLevel >= 84
     Rarity = Normal
@@ -8195,7 +8124,7 @@ Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Unsocketed
+Hide # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Unsocketed
     Sockets < 4
     ItemLevel >= 84
     Rarity = Magic
@@ -8203,7 +8132,7 @@ Show # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Linked
+Hide # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 4
     ItemLevel >= 84
     Rarity = Magic
@@ -8211,7 +8140,7 @@ Show # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Socketed
+Hide # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Socketed
     Sockets >= 4
     ItemLevel >= 84
     Rarity = Magic
@@ -8263,7 +8192,7 @@ Hide # Crafting - Armours - AR/EV - Tier 2 Mods - Magic - Socketed
     BaseType "Dragonscale Boots" "Dragonscale Gauntlets" "Nightmare Bascinet" "Pig-Faced Bascinet"
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Unsocketed
+Hide # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Normal
@@ -8271,7 +8200,7 @@ Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Linked
+Hide # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -8279,7 +8208,7 @@ Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Socketed
+Hide # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -8287,7 +8216,7 @@ Show # Crafting - Armours - AR/EV - Tier 1 Mods - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Unsocketed
+Hide # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Magic
@@ -8295,7 +8224,7 @@ Show # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Linked
+Hide # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -8303,7 +8232,7 @@ Show # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Socketed
+Hide # Crafting - Armours - AR/EV - Tier 1 Mods - Magic - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -8359,7 +8288,7 @@ Hide # Crafting - Armours - AR/EV - Tier 2 Mods - Magic - Socketed
 
 # Section: 14a. 1H Axes
 
-Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Normal - Unsocketed
+Hide # Crafting - Weapons - 1H Axes - Ilvl 83+ - Normal - Unsocketed
     Sockets < 3
     ItemLevel >= 83
     Rarity = Normal
@@ -8367,7 +8296,7 @@ Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Normal - Linked
+Hide # Crafting - Weapons - 1H Axes - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 3
     ItemLevel >= 83
     Rarity = Normal
@@ -8375,7 +8304,7 @@ Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Normal - Socketed
+Hide # Crafting - Weapons - 1H Axes - Ilvl 83+ - Normal - Socketed
     Sockets >= 3
     ItemLevel >= 83
     Rarity = Normal
@@ -8383,7 +8312,7 @@ Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Magic - Unsocketed
+Hide # Crafting - Weapons - 1H Axes - Ilvl 83+ - Magic - Unsocketed
     Sockets < 3
     ItemLevel >= 83
     Rarity = Magic
@@ -8391,7 +8320,7 @@ Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Magic - Linked
+Hide # Crafting - Weapons - 1H Axes - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 3
     ItemLevel >= 83
     Rarity = Magic
@@ -8399,7 +8328,7 @@ Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - 1H Axes - Ilvl 83+ - Magic - Socketed
+Hide # Crafting - Weapons - 1H Axes - Ilvl 83+ - Magic - Socketed
     Sockets >= 3
     ItemLevel >= 83
     Rarity = Magic
@@ -8453,7 +8382,7 @@ Hide # Crafting - Weapons - 1H Axes - Ilvl 77+ - Magic - Socketed
 
 # Section: 14b. Generic 1H Swords
 
-Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Normal - Unsocketed
+Hide # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Normal - Unsocketed
     Sockets < 3
     ItemLevel >= 83
     Rarity = Normal
@@ -8461,7 +8390,7 @@ Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Normal - Linked
+Hide # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 3
     ItemLevel >= 83
     Rarity = Normal
@@ -8469,7 +8398,7 @@ Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Normal - Socketed
+Hide # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Normal - Socketed
     Sockets >= 3
     ItemLevel >= 83
     Rarity = Normal
@@ -8477,7 +8406,7 @@ Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Magic - Unsocketed
+Hide # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Magic - Unsocketed
     Sockets < 3
     ItemLevel >= 83
     Rarity = Magic
@@ -8485,7 +8414,7 @@ Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Magic - Linked
+Hide # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 3
     ItemLevel >= 83
     Rarity = Magic
@@ -8493,7 +8422,7 @@ Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Magic - Socketed
+Hide # Crafting - Weapons - Generic 1H Swords - Ilvl 83+ - Magic - Socketed
     Sockets >= 3
     ItemLevel >= 83
     Rarity = Magic
@@ -8547,7 +8476,7 @@ Hide # Crafting - Weapons - Generic 1H Swords - Ilvl 77+ - Magic - Socketed
 
 # Section: 14c. 2H Maces
 
-Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Normal - Unsocketed
+Hide # Crafting - Weapons - 2H Maces - Ilvl 83+ - Normal - Unsocketed
     Sockets < 4
     ItemLevel >= 83
     Rarity = Normal
@@ -8555,7 +8484,7 @@ Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Normal - Linked
+Hide # Crafting - Weapons - 2H Maces - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 4
     ItemLevel >= 83
     Rarity = Normal
@@ -8563,7 +8492,7 @@ Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Normal - Socketed
+Hide # Crafting - Weapons - 2H Maces - Ilvl 83+ - Normal - Socketed
     Sockets >= 4
     ItemLevel >= 83
     Rarity = Normal
@@ -8571,7 +8500,7 @@ Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Magic - Unsocketed
+Hide # Crafting - Weapons - 2H Maces - Ilvl 83+ - Magic - Unsocketed
     Sockets < 4
     ItemLevel >= 83
     Rarity = Magic
@@ -8579,7 +8508,7 @@ Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Magic - Linked
+Hide # Crafting - Weapons - 2H Maces - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 4
     ItemLevel >= 83
     Rarity = Magic
@@ -8587,7 +8516,7 @@ Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - 2H Maces - Ilvl 83+ - Magic - Socketed
+Hide # Crafting - Weapons - 2H Maces - Ilvl 83+ - Magic - Socketed
     Sockets >= 4
     ItemLevel >= 83
     Rarity = Magic
@@ -8641,7 +8570,7 @@ Hide # Crafting - Weapons - 2H Maces - Ilvl 77+ - Magic - Socketed
 
 # Section: 14d. Bows
 
-Show # Crafting - Weapons - Bows - Ilvl 83+ - Normal - Unsocketed
+Hide # Crafting - Weapons - Bows - Ilvl 83+ - Normal - Unsocketed
     Sockets < 4
     ItemLevel >= 83
     Rarity = Normal
@@ -8649,7 +8578,7 @@ Show # Crafting - Weapons - Bows - Ilvl 83+ - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Bows - Ilvl 83+ - Normal - Linked
+Hide # Crafting - Weapons - Bows - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 4
     ItemLevel >= 83
     Rarity = Normal
@@ -8657,7 +8586,7 @@ Show # Crafting - Weapons - Bows - Ilvl 83+ - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - Bows - Ilvl 83+ - Normal - Socketed
+Hide # Crafting - Weapons - Bows - Ilvl 83+ - Normal - Socketed
     Sockets >= 4
     ItemLevel >= 83
     Rarity = Normal
@@ -8665,7 +8594,7 @@ Show # Crafting - Weapons - Bows - Ilvl 83+ - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Bows - Ilvl 83+ - Magic - Unsocketed
+Hide # Crafting - Weapons - Bows - Ilvl 83+ - Magic - Unsocketed
     Sockets < 4
     ItemLevel >= 83
     Rarity = Magic
@@ -8673,7 +8602,7 @@ Show # Crafting - Weapons - Bows - Ilvl 83+ - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Bows - Ilvl 83+ - Magic - Linked
+Hide # Crafting - Weapons - Bows - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 4
     ItemLevel >= 83
     Rarity = Magic
@@ -8681,7 +8610,7 @@ Show # Crafting - Weapons - Bows - Ilvl 83+ - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - Bows - Ilvl 83+ - Magic - Socketed
+Hide # Crafting - Weapons - Bows - Ilvl 83+ - Magic - Socketed
     Sockets >= 4
     ItemLevel >= 83
     Rarity = Magic
@@ -8735,7 +8664,7 @@ Hide # Crafting - Weapons - Bows - Ilvl 77+ - Magic - Socketed
 
 # Section: 14e. 1H Thrusting Swords
 
-Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Normal - Unsocketed
+Hide # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Normal - Unsocketed
     Sockets < 3
     ItemLevel >= 83
     Rarity = Normal
@@ -8743,7 +8672,7 @@ Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Normal - Linked
+Hide # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 3
     ItemLevel >= 83
     Rarity = Normal
@@ -8751,7 +8680,7 @@ Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Normal - Socketed
+Hide # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Normal - Socketed
     Sockets >= 3
     ItemLevel >= 83
     Rarity = Normal
@@ -8759,7 +8688,7 @@ Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Magic - Unsocketed
+Hide # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Magic - Unsocketed
     Sockets < 3
     ItemLevel >= 83
     Rarity = Magic
@@ -8767,7 +8696,7 @@ Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Magic - Linked
+Hide # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 3
     ItemLevel >= 83
     Rarity = Magic
@@ -8775,7 +8704,7 @@ Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Magic - Socketed
+Hide # Crafting - Weapons - 1H Thrusting Swords - Ilvl 83+ - Magic - Socketed
     Sockets >= 3
     ItemLevel >= 83
     Rarity = Magic
@@ -8829,7 +8758,7 @@ Hide # Crafting - Weapons - 1H Thrusting Swords - Ilvl 77+ - Magic - Socketed
 
 # Section: 14f. Daggers
 
-Show # Crafting - Weapons - Daggers - Ilvl 84+ - Normal - Unsocketed
+Hide # Crafting - Weapons - Daggers - Ilvl 84+ - Normal - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Normal
@@ -8838,7 +8767,7 @@ Show # Crafting - Weapons - Daggers - Ilvl 84+ - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Daggers - Ilvl 84+ - Normal - Linked
+Hide # Crafting - Weapons - Daggers - Ilvl 84+ - Normal - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -8847,7 +8776,7 @@ Show # Crafting - Weapons - Daggers - Ilvl 84+ - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - Daggers - Ilvl 84+ - Normal - Socketed
+Hide # Crafting - Weapons - Daggers - Ilvl 84+ - Normal - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -8856,7 +8785,7 @@ Show # Crafting - Weapons - Daggers - Ilvl 84+ - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Daggers - Ilvl 84+ - Magic - Unsocketed
+Hide # Crafting - Weapons - Daggers - Ilvl 84+ - Magic - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Magic
@@ -8865,7 +8794,7 @@ Show # Crafting - Weapons - Daggers - Ilvl 84+ - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Daggers - Ilvl 84+ - Magic - Linked
+Hide # Crafting - Weapons - Daggers - Ilvl 84+ - Magic - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -8874,7 +8803,7 @@ Show # Crafting - Weapons - Daggers - Ilvl 84+ - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - Daggers - Ilvl 84+ - Magic - Socketed
+Hide # Crafting - Weapons - Daggers - Ilvl 84+ - Magic - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -8935,7 +8864,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Magic - Socketed
 
 # Section: 14g. 1H Maces
 
-Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Normal - Unsocketed
+Hide # Crafting - Weapons - 1H Maces - Ilvl 83+ - Normal - Unsocketed
     Sockets < 3
     ItemLevel >= 83
     Rarity = Normal
@@ -8943,7 +8872,7 @@ Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Normal - Linked
+Hide # Crafting - Weapons - 1H Maces - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 3
     ItemLevel >= 83
     Rarity = Normal
@@ -8951,7 +8880,7 @@ Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Normal - Socketed
+Hide # Crafting - Weapons - 1H Maces - Ilvl 83+ - Normal - Socketed
     Sockets >= 3
     ItemLevel >= 83
     Rarity = Normal
@@ -8959,7 +8888,7 @@ Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Magic - Unsocketed
+Hide # Crafting - Weapons - 1H Maces - Ilvl 83+ - Magic - Unsocketed
     Sockets < 3
     ItemLevel >= 83
     Rarity = Magic
@@ -8967,7 +8896,7 @@ Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Magic - Linked
+Hide # Crafting - Weapons - 1H Maces - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 3
     ItemLevel >= 83
     Rarity = Magic
@@ -8975,7 +8904,7 @@ Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - 1H Maces - Ilvl 83+ - Magic - Socketed
+Hide # Crafting - Weapons - 1H Maces - Ilvl 83+ - Magic - Socketed
     Sockets >= 3
     ItemLevel >= 83
     Rarity = Magic
@@ -9029,7 +8958,7 @@ Hide # Crafting - Weapons - 1H Maces - Ilvl 77+ - Magic - Socketed
 
 # Section: 14h. 2H Axes
 
-Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Normal - Unsocketed
+Hide # Crafting - Weapons - 2H Axes - Ilvl 83+ - Normal - Unsocketed
     Sockets < 4
     ItemLevel >= 83
     Rarity = Normal
@@ -9037,7 +8966,7 @@ Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Normal - Linked
+Hide # Crafting - Weapons - 2H Axes - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 4
     ItemLevel >= 83
     Rarity = Normal
@@ -9045,7 +8974,7 @@ Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Normal - Socketed
+Hide # Crafting - Weapons - 2H Axes - Ilvl 83+ - Normal - Socketed
     Sockets >= 4
     ItemLevel >= 83
     Rarity = Normal
@@ -9053,7 +8982,7 @@ Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Magic - Unsocketed
+Hide # Crafting - Weapons - 2H Axes - Ilvl 83+ - Magic - Unsocketed
     Sockets < 4
     ItemLevel >= 83
     Rarity = Magic
@@ -9061,7 +8990,7 @@ Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Magic - Linked
+Hide # Crafting - Weapons - 2H Axes - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 4
     ItemLevel >= 83
     Rarity = Magic
@@ -9069,7 +8998,7 @@ Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - 2H Axes - Ilvl 83+ - Magic - Socketed
+Hide # Crafting - Weapons - 2H Axes - Ilvl 83+ - Magic - Socketed
     Sockets >= 4
     ItemLevel >= 83
     Rarity = Magic
@@ -9123,7 +9052,7 @@ Hide # Crafting - Weapons - 2H Axes - Ilvl 77+ - Magic - Socketed
 
 # Section: 14i. 2H Swords
 
-Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Normal - Unsocketed
+Hide # Crafting - Weapons - 2H Swords - Ilvl 83+ - Normal - Unsocketed
     Sockets < 4
     ItemLevel >= 83
     Rarity = Normal
@@ -9131,7 +9060,7 @@ Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Normal - Linked
+Hide # Crafting - Weapons - 2H Swords - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 4
     ItemLevel >= 83
     Rarity = Normal
@@ -9139,7 +9068,7 @@ Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Normal - Socketed
+Hide # Crafting - Weapons - 2H Swords - Ilvl 83+ - Normal - Socketed
     Sockets >= 4
     ItemLevel >= 83
     Rarity = Normal
@@ -9147,7 +9076,7 @@ Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Magic - Unsocketed
+Hide # Crafting - Weapons - 2H Swords - Ilvl 83+ - Magic - Unsocketed
     Sockets < 4
     ItemLevel >= 83
     Rarity = Magic
@@ -9155,7 +9084,7 @@ Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Magic - Linked
+Hide # Crafting - Weapons - 2H Swords - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 4
     ItemLevel >= 83
     Rarity = Magic
@@ -9163,7 +9092,7 @@ Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - 2H Swords - Ilvl 83+ - Magic - Socketed
+Hide # Crafting - Weapons - 2H Swords - Ilvl 83+ - Magic - Socketed
     Sockets >= 4
     ItemLevel >= 83
     Rarity = Magic
@@ -9217,7 +9146,7 @@ Hide # Crafting - Weapons - 2H Swords - Ilvl 77+ - Magic - Socketed
 
 # Section: 14j. Claws
 
-Show # Crafting - Weapons - Claws - Ilvl 83+ - Normal - Unsocketed
+Hide # Crafting - Weapons - Claws - Ilvl 83+ - Normal - Unsocketed
     Sockets < 3
     ItemLevel >= 83
     Rarity = Normal
@@ -9225,7 +9154,7 @@ Show # Crafting - Weapons - Claws - Ilvl 83+ - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Claws - Ilvl 83+ - Normal - Linked
+Hide # Crafting - Weapons - Claws - Ilvl 83+ - Normal - Linked
     LinkedSockets >= 3
     ItemLevel >= 83
     Rarity = Normal
@@ -9233,7 +9162,7 @@ Show # Crafting - Weapons - Claws - Ilvl 83+ - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - Claws - Ilvl 83+ - Normal - Socketed
+Hide # Crafting - Weapons - Claws - Ilvl 83+ - Normal - Socketed
     Sockets >= 3
     ItemLevel >= 83
     Rarity = Normal
@@ -9241,7 +9170,7 @@ Show # Crafting - Weapons - Claws - Ilvl 83+ - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Claws - Ilvl 83+ - Magic - Unsocketed
+Hide # Crafting - Weapons - Claws - Ilvl 83+ - Magic - Unsocketed
     Sockets < 3
     ItemLevel >= 83
     Rarity = Magic
@@ -9249,7 +9178,7 @@ Show # Crafting - Weapons - Claws - Ilvl 83+ - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Claws - Ilvl 83+ - Magic - Linked
+Hide # Crafting - Weapons - Claws - Ilvl 83+ - Magic - Linked
     LinkedSockets >= 3
     ItemLevel >= 83
     Rarity = Magic
@@ -9257,7 +9186,7 @@ Show # Crafting - Weapons - Claws - Ilvl 83+ - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - Claws - Ilvl 83+ - Magic - Socketed
+Hide # Crafting - Weapons - Claws - Ilvl 83+ - Magic - Socketed
     Sockets >= 3
     ItemLevel >= 83
     Rarity = Magic
@@ -9311,7 +9240,7 @@ Hide # Crafting - Weapons - Claws - Ilvl 77+ - Magic - Socketed
 
 # Section: 14k. Sceptres
 
-Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Normal - Unsocketed
+Hide # Crafting - Weapons - Sceptres - Ilvl 84+ - Normal - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Normal
@@ -9319,7 +9248,7 @@ Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Normal - Linked
+Hide # Crafting - Weapons - Sceptres - Ilvl 84+ - Normal - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -9327,7 +9256,7 @@ Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Normal - Socketed
+Hide # Crafting - Weapons - Sceptres - Ilvl 84+ - Normal - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -9335,7 +9264,7 @@ Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Magic - Unsocketed
+Hide # Crafting - Weapons - Sceptres - Ilvl 84+ - Magic - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Magic
@@ -9343,7 +9272,7 @@ Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Magic - Linked
+Hide # Crafting - Weapons - Sceptres - Ilvl 84+ - Magic - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -9351,7 +9280,7 @@ Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - Sceptres - Ilvl 84+ - Magic - Socketed
+Hide # Crafting - Weapons - Sceptres - Ilvl 84+ - Magic - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -9405,7 +9334,7 @@ Hide # Crafting - Weapons - Sceptres - Ilvl 77+ - Magic - Socketed
 
 # Section: 14l. Staves
 
-Show # Crafting - Weapons - Staves - Ilvl 84+ - Normal - Unsocketed
+Hide # Crafting - Weapons - Staves - Ilvl 84+ - Normal - Unsocketed
     Sockets < 4
     ItemLevel >= 84
     Rarity = Normal
@@ -9413,7 +9342,7 @@ Show # Crafting - Weapons - Staves - Ilvl 84+ - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Staves - Ilvl 84+ - Normal - Linked
+Hide # Crafting - Weapons - Staves - Ilvl 84+ - Normal - Linked
     LinkedSockets >= 4
     ItemLevel >= 84
     Rarity = Normal
@@ -9421,7 +9350,7 @@ Show # Crafting - Weapons - Staves - Ilvl 84+ - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - Staves - Ilvl 84+ - Normal - Socketed
+Hide # Crafting - Weapons - Staves - Ilvl 84+ - Normal - Socketed
     Sockets >= 4
     ItemLevel >= 84
     Rarity = Normal
@@ -9429,7 +9358,7 @@ Show # Crafting - Weapons - Staves - Ilvl 84+ - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Staves - Ilvl 84+ - Magic - Unsocketed
+Hide # Crafting - Weapons - Staves - Ilvl 84+ - Magic - Unsocketed
     Sockets < 4
     ItemLevel >= 84
     Rarity = Magic
@@ -9437,7 +9366,7 @@ Show # Crafting - Weapons - Staves - Ilvl 84+ - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Staves - Ilvl 84+ - Magic - Linked
+Hide # Crafting - Weapons - Staves - Ilvl 84+ - Magic - Linked
     LinkedSockets >= 4
     ItemLevel >= 84
     Rarity = Magic
@@ -9445,7 +9374,7 @@ Show # Crafting - Weapons - Staves - Ilvl 84+ - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Staves - Ilvl 84+ - Magic - Socketed
+Hide # Crafting - Weapons - Staves - Ilvl 84+ - Magic - Socketed
     Sockets >= 4
     ItemLevel >= 84
     Rarity = Magic
@@ -9499,7 +9428,7 @@ Hide # Crafting - Weapons - Staves - Ilvl 77+ - Magic - Socketed
 
 # Section: 14m. Wands
 
-Show # Crafting - Weapons - Wands - Ilvl 84+ - Normal - Unsocketed
+Hide # Crafting - Weapons - Wands - Ilvl 84+ - Normal - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Normal
@@ -9507,7 +9436,7 @@ Show # Crafting - Weapons - Wands - Ilvl 84+ - Normal - Unsocketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Wands - Ilvl 84+ - Normal - Linked
+Hide # Crafting - Weapons - Wands - Ilvl 84+ - Normal - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -9515,7 +9444,7 @@ Show # Crafting - Weapons - Wands - Ilvl 84+ - Normal - Linked
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - Wands - Ilvl 84+ - Normal - Socketed
+Hide # Crafting - Weapons - Wands - Ilvl 84+ - Normal - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Normal
@@ -9523,7 +9452,7 @@ Show # Crafting - Weapons - Wands - Ilvl 84+ - Normal - Socketed
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Wands - Ilvl 84+ - Magic - Unsocketed
+Hide # Crafting - Weapons - Wands - Ilvl 84+ - Magic - Unsocketed
     Sockets < 3
     ItemLevel >= 84
     Rarity = Magic
@@ -9531,7 +9460,7 @@ Show # Crafting - Weapons - Wands - Ilvl 84+ - Magic - Unsocketed
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
-Show # Crafting - Weapons - Wands - Ilvl 84+ - Magic - Linked
+Hide # Crafting - Weapons - Wands - Ilvl 84+ - Magic - Linked
     LinkedSockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -9539,7 +9468,7 @@ Show # Crafting - Weapons - Wands - Ilvl 84+ - Magic - Linked
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
-Show # Crafting - Weapons - Wands - Ilvl 84+ - Magic - Socketed
+Hide # Crafting - Weapons - Wands - Ilvl 84+ - Magic - Socketed
     Sockets >= 3
     ItemLevel >= 84
     Rarity = Magic
@@ -15837,21 +15766,6 @@ Show
     ItemLevel < 60
     Rarity = Rare
     SetBorderColor 127 127 127
-
-Show # Highlight - Wands
-    Rarity = Rare
-    Class "Wands"
-    SetBorderColor 136 136 255
-
-Show # Highlight - Daggers
-    Rarity = Rare
-    Class "Daggers"
-    SetBorderColor 136 136 255
-
-Show # Highlight - Spirit Shields
-    Rarity = Rare
-    BaseType "Spirit Shield"
-    SetBorderColor 136 136 255
 
 # Bases over level 60, so they "might" be worth IDing if you really want to.
 Show # Rare Drops - Okay Rares
