@@ -386,7 +386,7 @@ Show # Warbands - Redblade
     Identified True
     Rarity = Magic
     Class "Helmets"
-    HasExplicitMod "Redblade" True
+    HasExplicitMod "Redblade"
     SetBackgroundColor 99 8 8
     SetBorderColor 175 30 30
 
@@ -394,7 +394,7 @@ Show # Warbands - Brinerot
     Identified True
     Rarity = Magic
     Class "Gloves"
-    HasExplicitMod "Brinerot" True
+    HasExplicitMod "Brinerot"
     SetBackgroundColor 26 13 87
     SetBorderColor 97 97 255
 
@@ -402,7 +402,7 @@ Show # Warbands - Mutewind
     Identified True
     Rarity = Magic
     Class "Boots"
-    HasExplicitMod "Mutewind" True
+    HasExplicitMod "Mutewind"
     SetBackgroundColor 1 54 4
     SetBorderColor 25 150 90
 
@@ -410,7 +410,7 @@ Show # Warbands - Renegade
     Identified True
     Rarity = Magic
     Class "Axe" "Bow" "Claw" "Dagger" "Mace" "Staves" "Sword" "Wand" "Sceptre"
-    HasExplicitMod "Betrayer's" "Deceiver's" "Turncoat's" True
+    HasExplicitMod "Betrayer's" "Deceiver's" "Turncoat's"
     SetBackgroundColor 89 37 70
     SetBorderColor 255 0 220
 
@@ -6335,7 +6335,7 @@ Show
 # Ultra
 Show
     Class "Divination"
-    BaseType "Abandoned Wealth" "Immortal Resolve" "The Sword King's Salute" "The Master" "The Samura's Eye" "The Mayor" "The Professor" "Heterochromia" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Artist" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Queen" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
+    BaseType "Abandoned Wealth" "Immortal Resolve" "The Sword King's Salute" "The Master" "The Samurai's Eye" "The Mayor" "The Professor" "Heterochromia" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Artist" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Queen" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
     SetBackgroundColor 72 115 148
     SetBorderColor 175 96 37
     SetFontSize 44
