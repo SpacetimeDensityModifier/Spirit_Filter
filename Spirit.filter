@@ -49,6 +49,7 @@
 # 2h. Harbinger
 # 2i. Abyss
 # 2j. Bestiary
+# 2k. Incursion
 # =============================================================
 # =============================================================
 # Section 3. Mapping
@@ -282,11 +283,13 @@ Show # Chance Bases - Poet's Pen
     BaseType "Carved Wand"
     SetBorderColor 224 109 73
 
-Show # Chance Bases - Headhunter
-    Corrupted False
-    Rarity = Normal
-    BaseType "Leather Belt"
-    SetBorderColor 224 109 73
+#Disabled Block Start
+#Show # Chance Bases - Headhunter
+#    Corrupted False
+#    Rarity = Normal
+#    BaseType "Leather Belt"
+#    SetBorderColor 224 109 73
+#Disabled Block End
 
 #Disabled Block Start
 #Show # Chance Bases - Voll's Devotion
@@ -379,47 +382,37 @@ Show # Chance Bases - Skyforth
 
 # Section: 2a. Warbands
 
-#Disabled Block Start
-#Hide # Warbands - Redblade
-#    Identified True
-#    ItemLevel >= 68
-#    Rarity = Magic
-#    Class "Helmets"
-#    SetBackgroundColor 99 8 8
-#    SetBorderColor 175 30 30
-#Disabled Block End
+Show # Warbands - Redblade
+    Identified True
+    Rarity = Magic
+    Class "Helmets"
+    HasExplicitMod "Redblade" True
+    SetBackgroundColor 99 8 8
+    SetBorderColor 175 30 30
 
-#Disabled Block Start
-#Hide # Warbands - Brinerot
-#    Identified True
-#    ItemLevel >= 68
-#    Rarity = Magic
-#    Class "Gloves"
-#    SetBackgroundColor 26 13 87
-#    SetBorderColor 97 97 255
-#Disabled Block End
+Show # Warbands - Brinerot
+    Identified True
+    Rarity = Magic
+    Class "Gloves"
+    HasExplicitMod "Brinerot" True
+    SetBackgroundColor 26 13 87
+    SetBorderColor 97 97 255
 
-#Disabled Block Start
-#Hide # Warbands - Mutewind
-#    Identified True
-#    ItemLevel >= 68
-#    Rarity = Magic
-#    Class "Boots"
-#    SetBackgroundColor 1 54 4
-#    SetBorderColor 25 150 90
-#Disabled Block End
+Show # Warbands - Mutewind
+    Identified True
+    Rarity = Magic
+    Class "Boots"
+    HasExplicitMod "Mutewind" True
+    SetBackgroundColor 1 54 4
+    SetBorderColor 25 150 90
 
-#Disabled Block Start
-#Hide # Warbands - Renegade
-#    LinkedSockets < 5
-#    Sockets < 6
-#    Identified True
-#    ItemLevel >= 68
-#    Rarity = Magic
-#    Class "Axe" "Bow" "Claw" "Dagger" "Mace" "Staves" "Sword" "Wand"
-#    SetBackgroundColor 89 37 70
-#    SetBorderColor 255 0 220
-#Disabled Block End
+Show # Warbands - Renegade
+    Identified True
+    Rarity = Magic
+    Class "Axe" "Bow" "Claw" "Dagger" "Mace" "Staves" "Sword" "Wand" "Sceptre"
+    HasExplicitMod "Betrayer's" "Deceiver's" "Turncoat's" True
+    SetBackgroundColor 89 37 70
+    SetBorderColor 255 0 220
 
 # Section: 2b. Talisman
 
@@ -800,6 +793,32 @@ Show
     BaseType "Bestiary Orb"
     SetTextColor 217 130 41
     SetBackgroundColor 54 69 54
+    
+# Section: 2k. Incursion
+
+Show
+    Class "Currency"
+    BaseType "Vial of"
+    SetTextColor 130 180 120
+    SetBackgroundColor 80 30 20
+    SetBorderColor 220 220 120
+    
+Show
+    BaseType "Stone of Passage"
+    SetTextColor 130 180 120
+    SetBackgroundColor 80 30 20
+    PlayAlertSound 3 120
+        
+Show
+    BaseType "Flashpowder Keg"
+    SetTextColor 130 180 120
+    SetBackgroundColor 80 30 60
+    
+Show
+    HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's" "Xopec's" "Guatelitzi's" "of Tacati" "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
+    SetBorderColor 180 120 80
+    SetTextColor 130 180 120
+    SetBackgroundColor 80 30 90
 
 # Section: 3. Mapping
 
@@ -6316,7 +6335,7 @@ Show
 # Ultra
 Show
     Class "Divination"
-    BaseType "Abandoned Wealth" "Heterochromia" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Artist" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Queen" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
+    BaseType "Abandoned Wealth" "Immortal Resolve" "The Sword King's Salute" "The Master" "The Samura's Eye" "The Mayor" "The Professor" "Heterochromia" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Artist" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Queen" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
     SetBackgroundColor 72 115 148
     SetBorderColor 175 96 37
     SetFontSize 44
@@ -6325,7 +6344,7 @@ Show
 # Super
 Show
     Class "Divination"
-    BaseType "Bowyer's Dream" "Chaotic Disposition" "Last Hope" "Left to Fate" "Saint's Treasure" "The Brittle Emperor" "The Cartographer" "The Celestial Justicar" "The Dreamer" "The Ethereal" "The Formless Sea" "The Hoarder" "The Hunger" "The Offering" "The Risk" "The Thaumaturgist" "The Void"
+    BaseType "Bowyer's Dream" "Chaotic Disposition" "The Jeweller's Boon" "The Dreamland" "Harmony of Souls" "Last Hope" "The Beast" "Left to Fate" "Saint's Treasure" "The Brittle Emperor" "The Cartographer" "The Celestial Justicar" "The Dreamer" "The Ethereal" "The Formless Sea" "The Hoarder" "The Hunger" "The Offering" "The Risk" "The Thaumaturgist" "The Void"
     SetBackgroundColor 64 83 97
     SetBorderColor 255 255 0
     SetFontSize 42
@@ -6334,7 +6353,7 @@ Show
 # Decent
 Show
     Class "Divination"
-    BaseType "Blessing of God" "Dialla's Subjugation" "Emperor of Purity" "Hope" "Humility" "Jack in the Box" "Lingering Remnants" "Lucky Connections" "Lucky Deck" "No Traces" "Rebirth" "Scholar of the Seas" "Standoff" "The Breach" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Fletcher" "The Forsaken" "The Inventor" "The Jester" "The Lion" "The Obscured" "The Polymath" "The Porcupine" "The Soul" "The Standoff" "The Surveyor" "The Throne" "The Trial" "The Union" "The Valley of Steel Boxes" "The Warlord" "The Wrath" "The Wretched" "Time-Lost Relic" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite"
+    BaseType "Blessing of God" "Dialla's Subjugation" "The Undaunted" "The Rite of Elements" "Emperor of Purity" "The Darkest Dream" "The Admirer" "Hope" "Humility" "Jack in the Box" "Lingering Remnants" "Lucky Connections" "Lucky Deck" "No Traces" "Rebirth" "Scholar of the Seas" "Standoff" "The Breach" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Fletcher" "The Forsaken" "The Inventor" "The Jester" "The Lion" "The Obscured" "The Polymath" "The Porcupine" "The Soul" "The Standoff" "The Surveyor" "The Throne" "The Trial" "The Union" "The Valley of Steel Boxes" "The Warlord" "The Wrath" "The Wretched" "Time-Lost Relic" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite"
     SetBackgroundColor 34 42 48
     SetBorderColor 136 136 255
     SetFontSize 38
@@ -6358,9 +6377,43 @@ Show
 
 Show # Gems - Vaal
     Quality = 0
+    GemLevel >= 18
     Class "Active Skill Gems"
     BaseType "Vaal"
     SetBorderColor 150 0 0
+    SetBackgroundColor 80 80 80
+
+Show # Gems - Vaal - No Quality or Levels
+    Quality = 0
+    ItemLevel >= 68
+    Class "Active Skill Gems"
+    BaseType "Vaal"
+    SetBorderColor 150 0 0
+
+Show # Gems - Vaal
+    Quality = 0
+    Class "Active Skill Gems"
+    BaseType "Vaal"
+    SetBorderColor 150 0 0
+
+Show # Recipes - Quality Gems - Low
+    Quality < 10
+    GemLevel >= 18
+    SetBackgroundColor 80 80 80
+    Class "Active Skill Gems"
+    BaseType "Vaal"
+    SetTextColor 111 181 207
+    SetBorderColor 150 0 0
+
+Show # Recipes - Quality Gems - High
+    Quality >= 10
+    GemLevel >= 18
+    SetBackgroundColor 80 80 80
+    Class "Active Skill Gems"
+    BaseType "Vaal"
+    SetTextColor 184 218 242
+    SetBorderColor 150 0 0
+    PlayAlertSound 2 120
 
 Show # Recipes - Quality Gems - Low
     Quality < 10
@@ -6375,6 +6428,33 @@ Show # Recipes - Quality Gems - High
     BaseType "Vaal"
     SetTextColor 184 218 242
     SetBorderColor 150 0 0
+    PlayAlertSound 2 120
+
+Show # Gems - Drop Only
+    Quality = 0
+    GemLevel >= 18
+    SetBackgroundColor 80 80 80
+    Class "Gems"
+    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach" "Item Quantity Support"
+    SetBorderColor 255 255 255
+
+Show # Recipes - Quality Gems - Low
+    Quality < 10
+    GemLevel >= 18
+    SetBackgroundColor 80 80 80
+    Class "Gems"
+    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach" "Item Quantity Support"
+    SetTextColor 111 181 207
+    SetBorderColor 255 255 255
+
+Show # Recipes - Quality Gems - High
+    Quality >= 10
+    GemLevel >= 18
+    SetBackgroundColor 80 80 80
+    Class "Gems"
+    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach" "Item Quantity Support"
+    SetTextColor 184 218 242
+    SetBorderColor 255 255 255
     PlayAlertSound 2 120
 
 Show # Gems - Drop Only
@@ -6400,6 +6480,36 @@ Show # Recipes - Quality Gems - High
 
 Show # Gems - Skill
     Quality = 0
+    GemLevel >= 18
+    SetBackgroundColor 80 80 80
+    Class "Active Skill Gems"
+    SetBorderColor 27 162 155
+
+Show # Recipes - Quality Gems - Low
+    Quality < 10
+    GemLevel >= 18
+    SetBackgroundColor 80 80 80
+    Class "Active Skill Gems"
+    SetTextColor 111 181 207
+    SetBorderColor 27 162 155
+
+Show # Recipes - Quality Gems - High
+    Quality >= 10
+    GemLevel >= 18
+    SetBackgroundColor 80 80 80
+    Class "Active Skill Gems"
+    SetTextColor 184 218 242
+    SetBorderColor 27 162 155
+    PlayAlertSound 2 120
+
+Hide # Gems - Skill - No Quality or Levels
+    Quality = 0
+    ItemLevel >= 68
+    Class "Active Skill Gems"
+    SetBorderColor 27 162 155
+
+Show # Gems - Skill
+    Quality = 0
     Class "Active Skill Gems"
     SetBorderColor 27 162 155
 
@@ -6415,6 +6525,36 @@ Show # Recipes - Quality Gems - High
     SetTextColor 184 218 242
     SetBorderColor 27 162 155
     PlayAlertSound 2 120
+
+Show # Gems - Support
+    Quality = 0
+    GemLevel >= 18
+    SetBackgroundColor 80 80 80
+    Class "Support Skill Gems"
+    SetBorderColor 0 100 150 200
+
+Show # Recipes - Quality Gems - Low
+    Quality < 10
+    GemLevel >= 18
+    SetBackgroundColor 80 80 80
+    Class "Support Skill Gems"
+    SetTextColor 111 181 207
+    SetBorderColor 0 100 150 200
+
+Show # Recipes - Quality Gems - High
+    Quality >= 10
+    GemLevel >= 18
+    SetBackgroundColor 80 80 80
+    Class "Support Skill Gems"
+    SetTextColor 184 218 242
+    SetBorderColor 0 100 150 200
+    PlayAlertSound 2 120
+
+Hide # Gems - Support - No Quality or Levels
+    Quality = 0
+    ItemLevel >= 68
+    Class "Support Skill Gems"
+    SetBorderColor 0 100 150 200
 
 Show # Gems - Support
     Quality = 0
