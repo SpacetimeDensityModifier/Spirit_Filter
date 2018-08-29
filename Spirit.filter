@@ -1,8 +1,4 @@
-﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
-# EnableBlockGroups
-# Item filter downloaded at FilterBLAST - for updates visit:
-# http://filterblast.oversoul.xyz/Felix35071/r7r49v
-# Scroll all the way to the bottom for a quick tutorial (best if this is opened in Filtration).
+﻿# Scroll all the way to the bottom for a quick tutorial (best if this is opened in Filterblast or equivalent tool).
 # =============================================================
 # =============================================================
 # Index
@@ -13,7 +9,7 @@
 # 1: Chance Bases
 # 2: Leagues
 # 3: Mapping
-# 4: Vitals: Quest, Uniques, Accessories
+# 4: Vitals: Quests, Uniques, Accessories, Specific Mods
 # 5: Divination Cards
 # 6: Gems
 # 7: Jewels
@@ -50,6 +46,7 @@
 # 2i. Abyss
 # 2j. Bestiary
 # 2k. Incursion
+# 2l. Delve
 # =============================================================
 # =============================================================
 # Section 3. Mapping
@@ -71,7 +68,8 @@
 # 4a. Demigod Items
 # 4b. Misc Quest
 # 4c. Uniques
-# 4d. Accessories
+# 4d. Explicit Mods
+# 4e. Accessories
 # =============================================================
 # =============================================================
 # Section 5. Divination Cards
@@ -593,6 +591,8 @@ Show
     SetBorderColor 175 96 37
     SetFontSize 44
     PlayAlertSound 4 300
+    MinimapIcon 0 Red Triangle
+    PlayEffect Red
 
 Show
     Rarity = Magic
@@ -842,6 +842,53 @@ Show
     SetBorderColor 180 120 80
     SetTextColor 130 180 120
     SetBackgroundColor 80 30 90
+
+# Section: 2l. Delve
+# Reliquary Keys are handled in the Legacy section 
+Show
+    Class "Currency"
+    BaseType "Primitive Alchemical Resonator" "Primitive Chaotic Resonator"
+    SetBorderColor 30 60 180
+    SetTextColor 120 90 210
+    PlayAlertSound 16 150
+    MinimapIcon 2 Blue Triangle
+    PlayEffect Blue
+
+Show
+    Class "Currency"
+    BaseType "Potent Alchemical Resonator" "Potent Chaotic Resonator"
+    SetBorderColor 50 90 180
+    SetTextColor 140 110 210
+    PlayAlertSound 16 150
+    MinimapIcon 2 Blue Triangle
+    PlayEffect Blue
+
+Show
+    Class "Currency"
+    BaseType "Powerful Alchemical Resonator" "Powerful Chaotic Resonator"
+    SetBorderColor 70 110 180
+    SetTextColor 180 120 210
+    PlayAlertSound 16 150
+    MinimapIcon 2 Blue Triangle
+    PlayEffect Blue
+
+Show
+    Class "Currency"
+    BaseType "Prime Alchemical Resonator" "Prime Chaotic Resonator"
+    SetBorderColor 110 130 180
+    SetTextColor 200 130 210
+    PlayAlertSound 16 150
+    MinimapIcon 2 Blue Triangle
+    PlayEffect Blue
+
+Show
+    Class "Currency"
+    BaseType "Fossil"
+    SetBorderColor 30 60 180
+    SetTextColor 150 110 250
+    PlayAlertSound 16 150
+    MinimapIcon 2 Blue Triangle
+    PlayEffect Blue
 
 # Section: 3. Mapping
 
@@ -3791,6 +3838,7 @@ Show
     SetBorderColor 175 96 37
     SetFontSize 44
     PlayAlertSound 4 300
+    PlayEffect Red
 
 # Section: 4b. Misc Quest
 
@@ -3805,6 +3853,7 @@ Show
     SetTextColor 74 230 58
     SetBorderColor 127 127 127
     SetFontSize 34
+    MinimapIcon 2 Green Square
 
 # Section: 4c. Uniques: Tiers from Neversink
 
@@ -3817,6 +3866,8 @@ Show
     SetBorderColor 255 255 119
     SetFontSize 38
     PlayAlertSound 7 150
+    MinimapIcon 2 Blue Hexagon
+    PlayEffect Blue Temp
 
 # Ultra
 Show
@@ -3828,6 +3879,8 @@ Show
     SetBorderColor 175 96 37
     SetFontSize 45
     PlayAlertSound 4 300
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
 
 # Super
 Show
@@ -3838,6 +3891,8 @@ Show
     SetBorderColor 175 96 37
     SetFontSize 44
     PlayAlertSound 4 250
+    MinimapIcon 1 Yellow Hexagon
+    PlayEffect Yellow
 
 # Multi-Base Uniques
 Show
@@ -3848,6 +3903,8 @@ Show
     SetBorderColor 155 255 40
     SetFontSize 36
     PlayAlertSound 3 250
+    MinimapIcon 2 Blue Hexagon
+    PlayEffect Blue Temp
 
 # Prophecy
 Show
@@ -3858,6 +3915,8 @@ Show
     SetBorderColor 155 55 180
     SetFontSize 36
     PlayAlertSound 3 250
+    MinimapIcon 2 Blue Hexagon
+    PlayEffect Blue Temp
 
 # Standard
 Show
@@ -3867,8 +3926,18 @@ Show
     SetBorderColor 255 255 119
     SetFontSize 36
     PlayAlertSound 3 200
+    MinimapIcon 2 Blue Hexagon
+    PlayEffect Blue Temp
 
-# Section: 4d. Accessories
+# Section: 4d. Explicit Mods
+
+Show
+    HasExplicitMod "Subterranean" "of the Underground" "of Weaponcraft" "of Spellcraft" "of Crafting" "Flaring" "Merciless" "Dictator's" "Runic" "Overpowering" "of Celebration"
+    SetTextColor 180 20 80
+    SetBackgroundColor 0 30 0
+    PlayAlertSound 10 150
+
+# Section: 4e. Accessories
 
 #Disabled Block Start
 # Check for good implicits for Lead to Gold crafting
@@ -6358,29 +6427,35 @@ Show
 # Ultra
 Show
     Class "Divination"
-    BaseType "Abandoned Wealth" "Heterochromia" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Celestial Justicar" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Master" "The Mayor" "The Saint's Treasure" "The Samurai's Eye" "The Spark and the Flame" "The Wind" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
+    BaseType "Abandoned Wealth" "Heterochromia" "House of Mirrors" "Beauty Through Death" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Celestial Justicar" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Master" "The Mayor" "The Saint's Treasure" "The Samurai's Eye" "The Spark and the Flame" "The Wind" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
     SetBackgroundColor 72 115 148
     SetBorderColor 175 96 37
     SetFontSize 44
     PlayAlertSound 4 300
+    MinimapIcon 2 Red Diamond
+    PlayEffect Red
 
 # Super
 Show
     Class "Divination"
-    BaseType "Chaotic Disposition" "Last Hope" "Perfection" "Saint's Treasure" "The Artist" "The Brittle Emperor" "The Cartographer" "The Dapper Prodigy" "The Dreamer" "The Enlightened" "The Ethereal" "The Hoarder" "The Hunger" "The Professor" "The Queen" "The Risk" "The Sephirot" "The Undaunted" "The Undisputed" "The Valkyrie" "The Vast" "The Void" "The Wolf"
+    BaseType "Chaotic Disposition" "Boon of the First Ones" "The Cacaphony" "The Innocent" "Last Hope" "Perfection" "Saint's Treasure" "The Artist" "The Brittle Emperor" "The Cartographer" "The Dapper Prodigy" "The Dreamer" "The Enlightened" "The Ethereal" "The Hoarder" "The Hunger" "The Professor" "The Queen" "The Risk" "The Sephirot" "The Undaunted" "The Undisputed" "The Valkyrie" "The Vast" "The Void" "The Wolf"
     SetBackgroundColor 64 83 97
     SetBorderColor 255 255 0
     SetFontSize 42
     PlayAlertSound 6 300
+    MinimapIcon 2 Yellow Diamond
+    PlayEffect Yellow
 
 # Decent
 Show
     Class "Divination"
-    BaseType "Blessing of God" "Boundless Realms" "Bowyer's Dream" "Coveted Possession" "Earth Drinker" "Emperor of Purity" "Gemcutter's Promise" "Harmony of Souls" "Hope" "Humility" "Jack in the Box" "Left to Fate" "Lingering Remnants" "Lost Worlds" "Lucky Connections" "Lucky Deck" "Merciless Armament" "No Traces" "Rebirth" "Scholar of the Seas" "Shard of Fate" "Standoff" "The Admirer" "The Aesthete" "The Beast" "The Body" "The Breach" "The Chains that Bind" "The Cursed King" "The Dark Mage" "The Darkest Dream" "The Dragon" "The Dreamland" "The Encroaching Darkness" "The Fletcher" "The Formless Sea" "The Forsaken" "The Hale Heart" "The Insatiable" "The Inventor" "The Jester" "The Jeweller's Boon" "The Obscured" "The Offering" "The Penitent" "The Poet" "The Polymath" "The Porcupine" "The Realm" "The Road to Power" "The Soul" "The Standoff" "The Surveyor" "The Survivalist" "The Sword King's Salute" "The Thaumaturgist" "The Throne" "The Trial" "The Tyrant" "The Union" "The Valley of Steel Boxes" "The Warlord" "The Wrath" "The Wretched" "Time-Lost Relic" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite"
+    BaseType "Blessing of God" "Boundless Realms" "Bowyer's Dream" "The Price of Protection" "The Twilight Moon" "Coveted Possession" "Earth Drinker" "Emperor of Purity" "Gemcutter's Promise" "Harmony of Souls" "Hope" "Humility" "Jack in the Box" "Left to Fate" "Lingering Remnants" "Lost Worlds" "Lucky Connections" "Lucky Deck" "Merciless Armament" "No Traces" "Rebirth" "Scholar of the Seas" "Shard of Fate" "Standoff" "The Admirer" "The Aesthete" "The Beast" "The Body" "The Breach" "The Chains that Bind" "The Cursed King" "The Dark Mage" "The Darkest Dream" "The Dragon" "The Dreamland" "The Encroaching Darkness" "The Fletcher" "The Formless Sea" "The Forsaken" "The Hale Heart" "The Insatiable" "The Inventor" "The Jester" "The Jeweller's Boon" "The Obscured" "The Offering" "The Penitent" "The Poet" "The Polymath" "The Porcupine" "The Realm" "The Road to Power" "The Soul" "The Standoff" "The Surveyor" "The Survivalist" "The Sword King's Salute" "The Thaumaturgist" "The Throne" "The Trial" "The Tyrant" "The Union" "The Valley of Steel Boxes" "The Warlord" "The Wrath" "The Wretched" "Time-Lost Relic" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite" "The Wilted Rose"
     SetBackgroundColor 34 42 48
     SetBorderColor 136 136 255
     SetFontSize 38
     PlayAlertSound 2 300
+    MinimapIcon 2 Blue Diamond
+    PlayEffect Blue Temp
 
 # Trash
 Show
@@ -6395,6 +6470,7 @@ Show
     SetBorderColor 127 127 127
     SetFontSize 36
     PlayAlertSound 9 300
+    PlayEffect Blue Temp
 
 # Section: 6. Gems
 
@@ -6924,6 +7000,8 @@ Show
     SetBorderColor 175 96 37
     SetFontSize 45
     PlayAlertSound 4 300
+    MinimapIcon 1 Yellow Hexagon
+    PlayEffect Green
 
 Show # Links - Five Link
     LinkedSockets = 5
@@ -6931,12 +7009,16 @@ Show # Links - Five Link
     SetBorderColor 210 0 0
     SetFontSize 38
     PlayAlertSound 6 300
+    MinimapIcon 2 Blue Hexagon
+    PlayEffect Green Temp
 
 Show # Recipes - Six Socket
     Sockets = 6
     SetBackgroundColor 0 0 0
     SetBorderColor 210 0 0
     PlayAlertSound 2 300
+    MinimapIcon 2 Blue Hexagon
+    PlayEffect Green Temp
 
 Show # Recipes - Chromatics - Large - After Act V
     SocketGroup "RGB"
@@ -6947,6 +7029,7 @@ Show # Recipes - Chromatics - Large - After Act V
     SetTextColor 0 128 0
     SetBackgroundColor 0 0 0 140
     SetBorderColor 0 0 0 0
+    PlayEffect Green Temp
 
 Show # Recipes - Chromatics - Large - Before Act V
     SocketGroup "RGB"
@@ -6957,6 +7040,7 @@ Show # Recipes - Chromatics - Large - Before Act V
     SetTextColor 0 128 0
     SetBackgroundColor 0 0 0 140
     SetBorderColor 0 0 0 0
+    PlayEffect Green Temp
 
 Show # Recipes - Chromatics - Medium - In Maps
     SocketGroup "RGB"
@@ -6966,6 +7050,7 @@ Show # Recipes - Chromatics - Medium - In Maps
     Rarity < Unique
     SetTextColor 0 128 0
     SetBorderColor 0 0 0 0
+    PlayEffect Green Temp
 
 Show # Recipes - Chromatics - Medium - Before Maps
     SocketGroup "RGB"
@@ -6975,6 +7060,7 @@ Show # Recipes - Chromatics - Medium - Before Maps
     Rarity < Unique
     SetTextColor 0 128 0
     SetBorderColor 0 0 0 0
+    PlayEffect Green Temp
 
 Show # Recipes - Chromatics - Thin
     Sockets < 6
@@ -6985,6 +7071,7 @@ Show # Recipes - Chromatics - Thin
     SetTextColor 0 128 0
     SetBackgroundColor 0 0 0 220
     SetBorderColor 127 127 127
+    PlayEffect Green Temp
 
 Show # Recipes - Chromatics - Small
     Sockets < 6
@@ -6996,6 +7083,7 @@ Show # Recipes - Chromatics - Small
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
     PlayAlertSound 9 200
+    PlayEffect Green Temp
 
 Show # Recipes - Chisel
     Rarity = Normal
@@ -7107,6 +7195,7 @@ Show # Currency - Chromes
     SetBackgroundColor 3 23 3
     SetBorderColor 37 130 66
     PlayAlertSound 9 200
+    PlayEffect Blue Temp
 
 Show # Currency - Chances
     Class "Currency"
@@ -7114,6 +7203,7 @@ Show # Currency - Chances
     SetBackgroundColor 33 16 11
     SetBorderColor 224 109 73
     PlayAlertSound 3 150
+    PlayEffect Blue Temp
 
 Show # Currency - Alchs, Blessed
     Class "Currency"
@@ -7121,6 +7211,7 @@ Show # Currency - Alchs, Blessed
     SetBackgroundColor 28 24 0
     SetBorderColor 255 215 0
     PlayAlertSound 3 100
+    PlayEffect Blue Temp
 
 Show
     Class "Currency"
@@ -7128,6 +7219,8 @@ Show
     SetBackgroundColor 23 1 1
     SetBorderColor 210 0 0
     PlayAlertSound 3 60
+    MinimapIcon 2 Blue Circle
+    PlayEffect Blue Temp
 
 Show
     Class "Currency"
@@ -7135,6 +7228,8 @@ Show
     SetBackgroundColor 23 1 1
     SetBorderColor 210 0 0
     PlayAlertSound 2 150
+    MinimapIcon 2 Blue Circle
+    PlayEffect Blue Temp
 
 Show
     Class "Currency"
@@ -7142,6 +7237,8 @@ Show
     SetBackgroundColor 28 34 38
     SetBorderColor 184 218 242
     PlayAlertSound 1 150
+    MinimapIcon 2 Blue Circle
+    PlayEffect Blue Temp
 
 Show
     Class "Currency"
@@ -7149,6 +7246,8 @@ Show
     SetBackgroundColor 4 20 36
     SetBorderColor 30 144 255
     PlayAlertSound 1 150
+    MinimapIcon 2 Blue Circle
+    PlayEffect Blue Temp
 
 Show
     Class "Currency"
@@ -7156,6 +7255,8 @@ Show
     SetBackgroundColor 38 38 38
     SetBorderColor 255 255 255
     PlayAlertSound 3 120
+    MinimapIcon 2 Blue Circle
+    PlayEffect Blue Temp
 
 Show
     Class "Currency"
@@ -7165,6 +7266,8 @@ Show
     SetBorderColor 250 150 167
     SetFontSize 35
     PlayAlertSound 6 300
+    MinimapIcon 2 Yellow Circle
+    PlayEffect Yellow
 
 Show
     Class "Currency"
@@ -7174,6 +7277,8 @@ Show
     SetBorderColor 0 220 0
     SetFontSize 37
     PlayAlertSound 4 200
+    MinimapIcon 1 Yellow Circle
+    PlayEffect Yellow
 
 Show
     Class "Currency"
@@ -7183,6 +7288,8 @@ Show
     SetBorderColor 175 96 37
     SetFontSize 40
     PlayAlertSound 4 300
+    MinimapIcon 1 Red Circle
+    PlayEffect Red
 
 Show
     BaseType "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Eternal Orb" "Imprint"
@@ -7191,6 +7298,8 @@ Show
     SetBorderColor 175 96 37
     SetFontSize 45
     PlayAlertSound 4 300
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
 
 # Section: 11. Animate Weapon
 
@@ -18154,6 +18263,8 @@ Show
     SetTextColor 210 0 0
     SetBackgroundColor 255 192 203
     SetFontSize 45
+    MinimapIcon 0 Red Square
+    PlayEffect Red
 
 # Section: 21. Tutorial
 
