@@ -3838,6 +3838,7 @@ Show
     SetBorderColor 175 96 37
     SetFontSize 44
     PlayAlertSound 4 300
+    MinimapIcon 0 Red Star
     PlayEffect Red
 
 # Section: 4b. Misc Quest
@@ -3847,6 +3848,7 @@ Show
     SetTextColor 74 230 58
     SetBorderColor 175 96 37
     SetFontSize 38
+    MinimapIcon 2 Green Square
 
 Show
     Class "Quest Items"
@@ -3866,7 +3868,7 @@ Show
     SetBorderColor 255 255 119
     SetFontSize 38
     PlayAlertSound 7 150
-    MinimapIcon 2 Blue Hexagon
+    MinimapIcon 2 Blue Star
     PlayEffect Blue Temp
 
 # Ultra
@@ -3879,7 +3881,7 @@ Show
     SetBorderColor 175 96 37
     SetFontSize 45
     PlayAlertSound 4 300
-    MinimapIcon 0 Red Hexagon
+    MinimapIcon 0 Red Star
     PlayEffect Red
 
 # Super
@@ -3891,7 +3893,7 @@ Show
     SetBorderColor 175 96 37
     SetFontSize 44
     PlayAlertSound 4 250
-    MinimapIcon 1 Yellow Hexagon
+    MinimapIcon 1 Yellow Star
     PlayEffect Yellow
 
 # Multi-Base Uniques
@@ -3903,7 +3905,7 @@ Show
     SetBorderColor 155 255 40
     SetFontSize 36
     PlayAlertSound 3 250
-    MinimapIcon 2 Blue Hexagon
+    MinimapIcon 2 Blue Star
     PlayEffect Blue Temp
 
 # Prophecy
@@ -3915,7 +3917,7 @@ Show
     SetBorderColor 155 55 180
     SetFontSize 36
     PlayAlertSound 3 250
-    MinimapIcon 2 Blue Hexagon
+    MinimapIcon 2 Blue Star
     PlayEffect Blue Temp
 
 # Standard
@@ -3926,7 +3928,7 @@ Show
     SetBorderColor 255 255 119
     SetFontSize 36
     PlayAlertSound 3 200
-    MinimapIcon 2 Blue Hexagon
+    MinimapIcon 2 Blue Star
     PlayEffect Blue Temp
 
 # Section: 4d. Explicit Mods
@@ -3936,6 +3938,7 @@ Show
     SetTextColor 180 20 80
     SetBackgroundColor 0 30 0
     PlayAlertSound 10 150
+    MinimapIcon 2 Blue Hexagon
 
 # Section: 4e. Accessories
 
