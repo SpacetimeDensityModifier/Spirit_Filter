@@ -6441,7 +6441,7 @@ Show
 # Super
 Show
     Class "Divination"
-    BaseType "Chaotic Disposition" "Boon of the First Ones" "The Cacaphony" "The Innocent" "Last Hope" "Perfection" "Saint's Treasure" "The Artist" "The Brittle Emperor" "The Cartographer" "The Dapper Prodigy" "The Dreamer" "The Enlightened" "The Ethereal" "The Hoarder" "The Hunger" "The Professor" "The Queen" "The Risk" "The Sephirot" "The Undaunted" "The Undisputed" "The Valkyrie" "The Vast" "The Void" "The Wolf"
+    BaseType "Chaotic Disposition" "Boon of the First Ones" "The Cacophony" "The Innocent" "Last Hope" "Perfection" "Saint's Treasure" "The Artist" "The Brittle Emperor" "The Cartographer" "The Dapper Prodigy" "The Dreamer" "The Enlightened" "The Ethereal" "The Hoarder" "The Hunger" "The Professor" "The Queen" "The Risk" "The Sephirot" "The Undaunted" "The Undisputed" "The Valkyrie" "The Vast" "The Void" "The Wolf"
     SetBackgroundColor 64 83 97
     SetBorderColor 255 255 0
     SetFontSize 42
