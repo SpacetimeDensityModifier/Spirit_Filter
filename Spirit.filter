@@ -47,6 +47,7 @@
 # 2j. Bestiary
 # 2k. Incursion
 # 2l. Delve
+# 2m. Betrayal
 # =============================================================
 # =============================================================
 # Section 3. Mapping
@@ -280,6 +281,12 @@ Show # Chance Bases - Poet's Pen
     Rarity = Normal
     BaseType "Carved Wand"
     SetBorderColor 224 109 73
+    
+Show # Chance Bases - Bisco's Collar
+    Corrupted False
+    Rarity = Normal
+    BaseType "Gold Amulet"
+    SetBorderColor 224 109 73
 
 #Disabled Block Start
 #Show # Chance Bases - Headhunter
@@ -305,11 +312,13 @@ Show # Chance Bases - Poet's Pen
 #    SetBorderColor 224 109 73
 #Disabled Block End
 
-Show # Chance Bases - Lycosidae
-    Corrupted False
-    Rarity = Normal
-    BaseType "Rawhide Tower Shield"
-    SetBorderColor 224 109 73
+#Disabled Block Start
+#Show # Chance Bases - Lycosidae
+#    Corrupted False
+#    Rarity = Normal
+#    BaseType "Rawhide Tower Shield"
+#    SetBorderColor 224 109 73
+#Disabled Block End
 
 Show # Chance Bases - Skyforth
     Corrupted False
@@ -548,44 +557,47 @@ Show
     SetBackgroundColor 70 0 0
     SetBorderColor 240 40 40
     PlayAlertSound 1 300
+    MinimapIcon 1 Yellow Circle
 
 Show
     BaseType "Splinter of Tul" "Blessing of Tul" "Tul's Breachstone"
     SetBackgroundColor 0 100 80
     SetBorderColor 0 180 0
     PlayAlertSound 1 300
+    MinimapIcon 1 Yellow Circle
 
 Show
     BaseType "Splinter of Esh" "Blessing of Esh" "Esh's Breachstone"
     SetBackgroundColor 0 40 100
     SetBorderColor 74 74 232
-    SetFontSize 36
     PlayAlertSound 1 300
+    MinimapIcon 1 Yellow Circle
 
 Show
     BaseType "Splinter of Uul-Netol" "Blessing of Uul-Netol" "Uul-Netol's Breachstone"
     SetBackgroundColor 60 60 60
     SetBorderColor 0 0 0
-    SetFontSize 38
     PlayAlertSound 1 300
+    MinimapIcon 1 Yellow Circle
 
 Show
     BaseType "Splinter of Chayula" "Blessing of Chayula" "Chayula's Breachstone"
     SetBackgroundColor 60 18 110
     SetBorderColor 125 81 242
-    SetFontSize 42
     PlayAlertSound 1 300
+    MinimapIcon 1 Yellow Circle
 
 Show
     Class "Rings"
     BaseType "Breach Ring"
     SetBorderColor 215 115 210
     PlayAlertSound 2 150
+    MinimapIcon 1 White Hexagon
 
 # Section: 2g. Legacy
 
 Show
-    BaseType "Reliquary"
+    BaseType "Timeworn Reliquary" "Ancient Reliquary"
     SetTextColor 229 160 12
     SetBackgroundColor 0 0 0
     SetBorderColor 175 96 37
@@ -881,50 +893,244 @@ Show
     MinimapIcon 2 Blue Triangle
     PlayEffect Blue
 
+# Extreme Value
 Show
     Class "Currency"
-    BaseType "Fossil"
+    BaseType "Bloodstained Fossil" "Faceted Fossil" "Fractured Fossil" "Glyphic Fossil" "Hollow Fossil" "Tangled Fossil"
+    SetBorderColor 30 60 180
+    SetTextColor 250 110 250
+    PlayAlertSound 16 250
+    MinimapIcon 2 Red Triangle
+    PlayEffect Red
+
+# High Value
+Show
+    Class "Currency"
+    BaseType "Encrusted Fossil" "Gilded Fossil" "Sanctified Fossil"
+    SetBorderColor 30 60 180
+    SetTextColor 200 110 250
+    PlayAlertSound 16 200
+    MinimapIcon 2 Yellow Triangle
+    PlayEffect Yellow
+
+# Good Value
+Show
+    Class "Currency"
+    BaseType "Aetheric Fossil" "Enchanted Fossil" "Jagged Fossil" "Lucent Fossil" "Perfect Fossil" "Prismatic Fossil" "Serrated Fossil" "Shuddering Fossil"
     SetBorderColor 30 60 180
     SetTextColor 150 110 250
     PlayAlertSound 16 150
     MinimapIcon 2 Blue Triangle
     PlayEffect Blue
 
+# Average Value
+Show
+    Class "Currency"
+    BaseType "Bound Fossil" "Corroded Fossil" "Dense Fossil" "Frigid Fossil" "Metallic Fossil" "Pristine Fossil" "Scorched Fossil"
+    SetBorderColor 30 60 180
+    SetTextColor 130 110 200
+    PlayAlertSound 16 100
+    MinimapIcon 2 White Triangle
+    PlayEffect White Temp
+
+# Low Value
+Show
+    Class "Currency"
+    BaseType "Aberrant Fossil"
+    SetBorderColor 30 60 180
+    SetTextColor 80 90 190
+    PlayAlertSound 16 50
+    MinimapIcon 2 White Triangle
+
+# Section: 2m. Betrayal
+
+# Extreme Value
+Show
+Class "Map Fragments"
+BaseType "Rusted Breach Scarab" "Rusted Perandus Scarab"
+SetTextColor 255 80 0
+SetBackgroundColor 100 60 0
+SetBorderColor 255 0 0
+MinimapIcon 2 Blue Triangle
+
+# High Value
+Show
+Class "Map Fragments"
+BaseType "Rusted Cartography Scarab" "Rusted Shaper Scarab" "Rusted Elder Scarab"
+SetTextColor 255 80 0
+SetBackgroundColor 100 60 0
+SetBorderColor 220 220 0
+MinimapIcon 2 Blue Triangle
+
+# Good Value
+Show
+Class "Map Fragments"
+BaseType "Rusted Divination Scarab" "Rusted Sulphite Scarab"
+SetTextColor 255 80 0
+SetBackgroundColor 100 60 0
+SetBorderColor 120 120 255
+MinimapIcon 2 Blue Triangle
+
+# Average Value
+Show
+Class "Map Fragments"
+BaseType "Rusted Reliquary Scarab" "Rusted Bestiary Scarab" "Rusted Ambush Scarab" "Rusted Harbinger Scarab"
+SetTextColor 255 80 0
+SetBackgroundColor 100 60 0
+SetBorderColor 127 127 127
+MinimapIcon 2 Blue Triangle
+
+# Low Value
+Show
+Class "Map Fragments"
+BaseType "Rusted Torment Scarab"
+SetTextColor 255 80 0
+SetBackgroundColor 100 60 0
+SetBorderColor 0 0 0 0
+MinimapIcon 2 Blue Triangle
+
+# Extreme Value
+Show
+Class "Map Fragments"
+BaseType "Polished Breach Scarab" "Polished Perandus Scarab"
+SetTextColor 255 80 0
+SetBackgroundColor 90 90 120
+SetBorderColor 255 0 0
+MinimapIcon 2 Blue Triangle
+
+# High Value
+Show
+Class "Map Fragments"
+BaseType "Polished Cartography Scarab" "Polished Shaper Scarab" "Polished Elder Scarab"
+SetTextColor 255 80 0
+SetBackgroundColor 90 90 120
+SetBorderColor 220 220 0
+MinimapIcon 2 Blue Triangle
+
+# Good Value
+Show
+Class "Map Fragments"
+BaseType "Polished Divination Scarab" "Polished Sulphite Scarab"
+SetTextColor 255 80 0
+SetBackgroundColor 90 90 120
+SetBorderColor 120 120 255
+MinimapIcon 2 Blue Triangle
+
+# Average Value
+Show
+Class "Map Fragments"
+BaseType "Polished Reliquary Scarab" "Polished Bestiary Scarab" "Polished Ambush Scarab" "Polished Harbinger Scarab"
+SetTextColor 255 80 0
+SetBackgroundColor 90 90 120
+SetBorderColor 127 127 127
+MinimapIcon 2 Blue Triangle
+
+# Low Value
+Show
+Class "Map Fragments"
+BaseType "Polished Torment Scarab"
+SetTextColor 255 80 0
+SetBackgroundColor 90 90 120
+SetBorderColor 0 0 0 0
+MinimapIcon 2 Blue Triangle
+
+# Extreme Value
+Show
+Class "Map Fragments"
+BaseType "Gilded Breach Scarab" "Gilded Perandus Scarab"
+SetTextColor 255 80 0
+SetBackgroundColor 190 160 40
+SetBorderColor 255 0 0
+MinimapIcon 2 Blue Triangle
+
+# High Value
+Show
+Class "Map Fragments"
+BaseType "Gilded Cartography Scarab" "Gilded Shaper Scarab" "Gilded Elder Scarab"
+SetTextColor 255 80 0
+SetBackgroundColor 190 160 40
+SetBorderColor 220 220 0
+MinimapIcon 2 Blue Triangle
+
+# Good Value
+Show
+Class "Map Fragments"
+BaseType "Gilded Divination Scarab" "Gilded Sulphite Scarab"
+SetTextColor 255 80 0
+SetBackgroundColor 190 160 40
+SetBorderColor 120 120 255
+MinimapIcon 2 Blue Triangle
+
+# Average Value
+Show
+Class "Map Fragments"
+BaseType "Gilded Reliquary Scarab" "Gilded Bestiary Scarab" "Gilded Ambush Scarab" "Gilded Harbinger Scarab"
+SetTextColor 255 80 0
+SetBackgroundColor 190 160 40
+SetBorderColor 127 127 127
+MinimapIcon 2 Blue Triangle
+
+# Low Value
+Show
+Class "Map Fragments"
+BaseType "Gilded Torment Scarab"
+SetTextColor 255 80 0
+SetBackgroundColor 190 160 40
+SetBorderColor 0 0 0 0
+MinimapIcon 2 Blue Triangle
+
+Show
+HasExplicitMod "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of the Veil" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil" "Veiled"
+SetBorderColor 180 120 80
+SetTextColor 130 180 120
+SetBackgroundColor 80 30 90
+MinimapIcon 2 Blue Triangle
+
 # Section: 3. Mapping
 
 # Section: 3a. Warbands Maps
 
-Show
-    Class "Map"
-    BaseType "Lighthouse Map"
-    SetBackgroundColor 120 97 96
-    SetBorderColor 150 0 0
-    SetFontSize 38
-    PlayAlertSound 8 300
+# Will update once we know which maps the warbands bosses call home in this new map series
 
-Show
-    Class "Map"
-    BaseType "Shipyard"
-    SetBackgroundColor 120 97 96
-    SetBorderColor 109 109 235
-    SetFontSize 38
-    PlayAlertSound 8 300
+#Disabled Block Start
+#Show
+#    Class "Map"
+#    BaseType "Lighthouse Map"
+#    SetBackgroundColor 120 97 96
+#    SetBorderColor 150 0 0
+#    SetFontSize 38
+#    PlayAlertSound 8 300
+#Disabled Block End
 
-Show
-    Class "Map"
-    BaseType "Iceberg Map"
-    SetBackgroundColor 120 97 96
-    SetBorderColor 25 150 90
-    SetFontSize 38
-    PlayAlertSound 8 300
+#Disabled Block Start
+#Show
+#    Class "Map"
+#    BaseType "Shipyard"
+#    SetBackgroundColor 120 97 96
+#    SetBorderColor 109 109 235
+#    SetFontSize 38
+#    PlayAlertSound 8 300
+#Disabled Block End
 
-Show
-    Class "Map"
-    BaseType "Acid Lakes Map"
-    SetBackgroundColor 120 97 96
-    SetBorderColor 255 0 220
-    SetFontSize 38
-    PlayAlertSound 8 300
+#Disabled Block Start
+#Show
+#    Class "Map"
+#    BaseType "Iceberg Map"
+#    SetBackgroundColor 120 97 96
+#    SetBorderColor 25 150 90
+#    SetFontSize 38
+#    PlayAlertSound 8 300
+#Disabled Block End
+
+#Disabled Block Start
+#Show
+#    Class "Map"
+#    BaseType "Acid Lakes Map"
+#    SetBackgroundColor 120 97 96
+#    SetBorderColor 255 0 220
+#    SetFontSize 38
+#    PlayAlertSound 8 300
+#Disabled Block End
 
 # Section: 3b. Atziri and Friends
 
@@ -1430,6 +1636,7 @@ Show
     SetBackgroundColor 50 50 50
     SetBorderColor 255 255 255
     PlayAlertSound 8 100
+    MinimapIcon 1 White Circle
 
 Show
     BaseType "Journeyman Cartographer's Sextant" "Journeyman Cartographer's Seal"
@@ -1437,6 +1644,7 @@ Show
     SetBorderColor 255 255 0
     SetFontSize 36
     PlayAlertSound 8 200
+    MinimapIcon 1 Blue Circle
 
 Show
     BaseType "Master Cartographer's Sextant" "Master Cartographer's Seal"
@@ -1444,6 +1652,7 @@ Show
     SetBorderColor 255 0 0
     SetFontSize 38
     PlayAlertSound 8 300
+    MinimapIcon 1 Yellow Circle
 
 Show
     BaseType "Unshaping Orb" "Cartographer's Seal"
@@ -1460,6 +1669,7 @@ Show
     SetBorderColor 74 0 160 200
     SetFontSize 40
     PlayAlertSound 8 300
+    MinimapIcon 0 Yellow Square
 
 # Shaped Maps
 Show
@@ -1469,6 +1679,7 @@ Show
     SetBorderColor 30 144 255
     SetFontSize 40
     PlayAlertSound 8 300
+    MinimapIcon 1 Blue Square
 
 # Section: 3c1. Shaper Armor Bases
 
@@ -3520,7 +3731,7 @@ Show
 
 Show # Outdated Maps - White - Tier 1
     ItemLevel >= 73
-    DropLevel = 58
+    MapTier = 1
     Class "Map"
     SetBackgroundColor 64 63 63 160
     SetBorderColor 255 255 255
@@ -3528,21 +3739,21 @@ Show # Outdated Maps - White - Tier 1
 
 Show
     ItemLevel >= 71
-    DropLevel = 58
+    MapTier = 1
     Class "Map"
     SetBackgroundColor 64 62 62 200
     SetBorderColor 255 255 255
     SetFontSize 30
 
 Show
-    DropLevel = 58
+    MapTier = 1
     Class "Map"
     SetBackgroundColor 50 50 50
     SetBorderColor 255 255 255
 
 Show # Outdated Maps - White - Tier 2
     ItemLevel >= 74
-    DropLevel = 69
+    MapTier = 2
     Class "Map"
     SetBackgroundColor 50 50 50 160
     SetBorderColor 255 255 255
@@ -3550,21 +3761,21 @@ Show # Outdated Maps - White - Tier 2
 
 Show
     ItemLevel >= 72
-    DropLevel = 69
+    MapTier = 2
     Class "Map"
     SetBackgroundColor 50 50 50 200
     SetBorderColor 255 255 255
     SetFontSize 30
 
 Show
-    DropLevel = 69
+    MapTier = 2
     Class "Map"
     SetBackgroundColor 50 50 50
     SetBorderColor 255 255 255
 
 Show # Outdated Maps - White - Tier 3
     ItemLevel >= 75
-    DropLevel = 70
+    MapTier = 3
     Class "Map"
     SetBackgroundColor 50 50 50 160
     SetBorderColor 255 255 255
@@ -3572,21 +3783,21 @@ Show # Outdated Maps - White - Tier 3
 
 Show
     ItemLevel >= 73
-    DropLevel = 70
+    MapTier = 3
     Class "Map"
     SetBackgroundColor 50 50 50 200
     SetBorderColor 255 255 255
     SetFontSize 30
 
 Show
-    DropLevel = 70
+    MapTier = 3
     Class "Map"
     SetBackgroundColor 50 50 50
     SetBorderColor 255 255 255
 
 Show # Outdated Maps - White - Tier 4
     ItemLevel >= 76
-    DropLevel = 71
+    MapTier = 4
     Class "Map"
     SetBackgroundColor 50 50 50 160
     SetBorderColor 255 255 255
@@ -3594,21 +3805,21 @@ Show # Outdated Maps - White - Tier 4
 
 Show
     ItemLevel >= 74
-    DropLevel = 71
+    MapTier = 4
     Class "Map"
     SetBackgroundColor 50 50 50 200
     SetBorderColor 255 255 255
     SetFontSize 30
 
 Show
-    DropLevel = 71
+    MapTier = 4
     Class "Map"
     SetBackgroundColor 50 50 50
     SetBorderColor 255 255 255
 
 Show # Outdated Maps - White - Tier 5
     ItemLevel >= 77
-    DropLevel = 72
+    MapTier = 5
     Class "Map"
     SetBackgroundColor 50 50 50 160
     SetBorderColor 255 255 255
@@ -3616,21 +3827,21 @@ Show # Outdated Maps - White - Tier 5
 
 Show
     ItemLevel >= 75
-    DropLevel = 72
+    MapTier = 5
     Class "Map"
     SetBackgroundColor 50 50 50 200
     SetBorderColor 255 255 255
     SetFontSize 30
 
 Show
-    DropLevel = 72
+    MapTier = 5
     Class "Map"
     SetBackgroundColor 50 50 50
     SetBorderColor 255 255 255
 
 Show # Outdated Maps - Yellow - Tier 6
     ItemLevel >= 78
-    DropLevel = 73
+    MapTier = 6
     Class "Map"
     SetBackgroundColor 60 60 0 200
     SetBorderColor 255 255 0
@@ -3638,14 +3849,14 @@ Show # Outdated Maps - Yellow - Tier 6
 
 Show
     ItemLevel >= 76
-    DropLevel = 73
+    MapTier = 6
     Class "Map"
     SetBackgroundColor 60 60 0
     SetBorderColor 255 255 0
     SetFontSize 32
 
 Show
-    DropLevel = 73
+    MapTier = 6
     Class "Map"
     SetBackgroundColor 60 60 0
     SetBorderColor 255 255 0
@@ -3653,7 +3864,7 @@ Show
 
 Show # Outdated Maps - Yellow - Tier 7
     ItemLevel >= 79
-    DropLevel = 74
+    MapTier = 7
     Class "Map"
     SetBackgroundColor 60 60 0 200
     SetBorderColor 255 255 0
@@ -3661,14 +3872,14 @@ Show # Outdated Maps - Yellow - Tier 7
 
 Show
     ItemLevel >= 77
-    DropLevel = 74
+    MapTier = 7
     Class "Map"
     SetBackgroundColor 60 60 0
     SetBorderColor 255 255 0
     SetFontSize 32
 
 Show
-    DropLevel = 74
+    MapTier = 7
     Class "Map"
     SetBackgroundColor 60 60 0
     SetBorderColor 255 255 0
@@ -3676,7 +3887,7 @@ Show
 
 Show # Outdated Maps - Yellow - Tier 8
     ItemLevel >= 80
-    DropLevel = 75
+    MapTier = 8
     Class "Map"
     SetBackgroundColor 60 60 0 200
     SetBorderColor 255 255 0
@@ -3684,14 +3895,14 @@ Show # Outdated Maps - Yellow - Tier 8
 
 Show
     ItemLevel >= 78
-    DropLevel = 75
+    MapTier = 8
     Class "Map"
     SetBackgroundColor 60 60 0
     SetBorderColor 255 255 0
     SetFontSize 32
 
 Show
-    DropLevel = 75
+    MapTier = 8
     Class "Map"
     SetBackgroundColor 60 60 0
     SetBorderColor 255 255 0
@@ -3699,7 +3910,7 @@ Show
 
 Show # Outdated Maps - Yellow - Tier 9
     ItemLevel >= 81
-    DropLevel = 76
+    MapTier = 9
     Class "Map"
     SetBackgroundColor 60 60 0 200
     SetBorderColor 255 255 0
@@ -3707,14 +3918,14 @@ Show # Outdated Maps - Yellow - Tier 9
 
 Show
     ItemLevel >= 79
-    DropLevel = 76
+    MapTier = 9
     Class "Map"
     SetBackgroundColor 60 60 0
     SetBorderColor 255 255 0
     SetFontSize 32
 
 Show
-    DropLevel = 76
+    MapTier = 9
     Class "Map"
     SetBackgroundColor 60 60 0
     SetBorderColor 255 255 0
@@ -3722,7 +3933,7 @@ Show
 
 Show # Outdated Maps - Yellow - Tier 10
     ItemLevel >= 82
-    DropLevel = 77
+    MapTier = 10
     Class "Map"
     SetBackgroundColor 60 60 0 200
     SetBorderColor 255 255 0
@@ -3730,14 +3941,14 @@ Show # Outdated Maps - Yellow - Tier 10
 
 Show
     ItemLevel >= 80
-    DropLevel = 77
+    MapTier = 10
     Class "Map"
     SetBackgroundColor 60 60 0
     SetBorderColor 255 255 0
     SetFontSize 32
 
 Show
-    DropLevel = 77
+    MapTier = 10
     Class "Map"
     SetBackgroundColor 60 60 0
     SetBorderColor 255 255 0
@@ -3745,86 +3956,96 @@ Show
 
 Show # Outdated Maps - Red - Tier 11
     ItemLevel >= 83
-    DropLevel = 78
+    MapTier = 11
     Class "Map"
     SetBackgroundColor 60 0 0
     SetBorderColor 255 0 0
     SetFontSize 32
     PlayAlertSound 8 300
+    MinimapIcon 0 Blue Square
 
 Show
     ItemLevel >= 81
-    DropLevel = 78
+    MapTier = 11
     Class "Map"
     SetBackgroundColor 60 0 0
     SetBorderColor 255 0 0
     SetFontSize 34
     PlayAlertSound 8 300
+    MinimapIcon 0 Blue Square
 
 Show
-    DropLevel = 78
+    MapTier = 11
     Class "Map"
     SetBackgroundColor 60 0 0
     SetBorderColor 255 0 0
     SetFontSize 36
     PlayAlertSound 8 300
+    MinimapIcon 0 Blue Square
 
 Show # Outdated Maps - Red - Tier 12
     ItemLevel >= 82
-    DropLevel = 79
+    MapTier = 12
     Class "Map"
     SetBackgroundColor 60 0 0
     SetBorderColor 255 0 0
     PlayAlertSound 8 300
+    MinimapIcon 0 Blue Square
 
 Show
-    DropLevel = 79
+    MapTier = 12
     Class "Map"
     SetBackgroundColor 60 0 0
     SetBorderColor 255 0 0
     SetFontSize 36
     PlayAlertSound 8 300
+    MinimapIcon 0 Blue Square
 
 Show
     ItemLevel >= 83
-    DropLevel = 80
+    MapTier = 13
     Class "Map"
     SetBackgroundColor 60 0 0
     SetBorderColor 255 0 0
     SetFontSize 36
     PlayAlertSound 8 300
+    MinimapIcon 0 Blue Square
 
 Show
-    DropLevel = 80
+    MapTier = 13
     Class "Map"
     SetBackgroundColor 60 0 0
     SetBorderColor 255 0 0
     SetFontSize 38
     PlayAlertSound 8 300
+    MinimapIcon 0 Blue Square
 
 Show
-    DropLevel = 81
+    MapTier = 14
     Class "Map"
     SetBackgroundColor 60 0 0
     SetBorderColor 255 0 0
     SetFontSize 40
     PlayAlertSound 8 300
+    MinimapIcon 0 Blue Square
 
 Show
-    DropLevel = 82
+    MapTier = 15
     Class "Map"
     SetBackgroundColor 60 0 0
     SetBorderColor 255 0 0
     SetFontSize 42
     PlayAlertSound 8 300
+    MinimapIcon 0 Yellow Square
 
 Show
-    DropLevel = 83
+    MapTier = 16
     Class "Map"
     SetBackgroundColor 60 0 0
     SetBorderColor 255 0 0
     SetFontSize 44
     PlayAlertSound 8 300
+    MinimapIcon 0 Yellow Square
 
 # Section: 4. Vitals
 
@@ -3875,7 +4096,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Callous Mask" "Carnal Sceptre" "Crusader Boots" "Ezomyte Tower Shield" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Hydrascale Gauntlets" "Occultist's Vestment" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Royal Axe" "Ruby Flask" "Sanctified Mana Flask" "Sapphire Flask" "Thorium Spirit Shield" "Vaal Spirit Shield" "Void Axe"
+    BaseType "Arcanist Gloves" "Assassin's Boots" "Callous Mask" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Glorious Plate" "Greatwolf Talisman" "Harlequin Mask" "Imperial Maul" "Legion Gloves" "Nightmare Mace" "Occultist's Vestment" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Riveted Gloves" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sanctified Life Flask" "Sapphire Flask" "Wereclaw Talisman" "Jewelled Foil" "Lion Pelt" "Crystal Belt"
     SetTextColor 175 96 37
     SetBackgroundColor 255 255 255
     SetBorderColor 175 96 37
@@ -3888,7 +4109,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Ambush Mitts" "Arcanist Gloves" "Arcanist Slippers" "Assassin's Boots" "Bismuth Flask" "Blood Raiment" "Cardinal Round Shield" "Carnal Boots" "Citadel Bow" "Cloth Belt Piece" "Clutching Talisman" "Cutlass" "Destiny Leather" "Full Wyrmscale" "Gemstone Sword" "Gladiator Plate" "Harlequin Mask" "Hydrascale Boots" "Imperial Maul" "Legion Gloves" "Magistrate Crown" "Nubuck Boots" "Rotfeather Talisman" "Royal Burgonet" "Sacrificial Garb" "Sadist Garb" "Sanctified Life Flask" "Savant's Robe" "Siege Axe" "Silken Hood" "Vaal Mask" "Wereclaw Talisman"
+    BaseType "Abyssal Axe" "Arcanist Slippers" "Bismuth Flask" "Black Maw Talisman" "Blood Raiment" "Blood Sceptre" "Carnal Sceptre" "Cedar Tower Shield" "Citadel Bow" "Clasped Mitts" "Cutlass" "Deicide Mask" "Destiny Leather" "Ezomyte Burgonet" "Full Wyrmscale" "Gladiator Plate" "Grand Mana Flask" "Hellion's Paw" "Highborn Staff" "Hydrascale Boots" "Hydrascale Gauntlets" "Jingling Spirit Shield" "Leather Cap" "Nubuck Boots" "Nubuck Gloves" "Penetrating Arrow Quiver" "Pinnacle Tower Shield" "Raven Mask" "Ritual Sceptre" "Royal Burgonet" "Sacrificial Garb" "Sanctified Mana Flask" "Savant's Robe" "Sharkskin Tunic" "Siege Axe" "Silken Hood" "Steelhead" "Thorium Spirit Shield" "Titan Greaves" "Topaz Flask" "Vaal Mask" "Vaal Spirit Shield" "Void Axe" "Wyrmscale Doublet" "Lacquered Garb" "Varnished Coat" "Nightmare Bascinet" "Champion Kite Shield"
     SetBackgroundColor 40 40 0
     SetBorderColor 175 96 37
     SetFontSize 44
@@ -3900,7 +4121,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Amber Amulet" "Carved Wand" "Citrine Amulet" "Ebony Tower Shield" "Exquisite Leather" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Hubris Circlet" "Imperial Bow" "Imperial Claw" "Imperial Staff" "Lacquered Garb" "Leather Belt" "Midnight Blade" "Nubuck Gloves" "Onyx Amulet" "Opal Ring" "Paua Ring" "Sorcerer Boots" "Steel Ring" "Stibnite Flask" "Topaz Flask" "Tornado Wand" "Two-Stone Ring" "Unset Ring" "Zealot Gloves"
+    BaseType "Amber Amulet" "Exquisite Leather" "Lapis Amulet" "Leather Belt" "Magistrate Crown" "Onyx Amulet" "Topaz Ring" "Carved Wand" "Citrine Amulet" "Ebony Tower Shield" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Hubris Circlet" "Imperial Bow" "Imperial Staff" "Murder Boots" "Paua Ring" "Sadist Garb" "Sorcerer Boots" "Stibnite Flask" "Terror Claw" "Tornado Wand" "Two-Stone Ring" "Unset Ring" "Vaal Sceptre"
     SetBackgroundColor 0 0 0
     SetBorderColor 155 255 40
     SetFontSize 36
@@ -3912,7 +4133,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Coral Amulet" "Coral Ring" "Crude Bow" "Death Bow" "Fire Arrow Quiver" "Gavel" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Golden Buckler" "Iron Hat" "Iron Ring" "Iron Staff" "Jade Amulet" "Jade Hatchet" "Jagged Maul" "Long Bow" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Scholar Boots" "Serrated Arrow Quiver" "Sledgehammer" "Spiraled Wand" "Studded Belt" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
+    BaseType "Coral Amulet" "Coral Ring" "Crude Bow" "Death Bow" "Fire Arrow Quiver" "Gavel" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Golden Buckler" "Iron Circlet" "Iron Hat" "Iron Ring" "Iron Staff" "Jade Amulet" "Jade Hatchet" "Jagged Maul" "Long Bow" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Scholar Boots" "Serrated Arrow Quiver" "Sledgehammer" "Spiraled Wand" "Studded Belt" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
     SetBackgroundColor 0 0 0
     SetBorderColor 155 55 180
     SetFontSize 36
@@ -3934,7 +4155,7 @@ Show
 # Section: 4d. Explicit Mods
 
 Show
-    HasExplicitMod "Subterranean" "of the Underground" "of Weaponcraft" "of Spellcraft" "of Crafting" "Flaring" "Merciless" "Dictator's" "Runic" "Overpowering" "of Celebration"
+    HasExplicitMod "Subterranean" "of the Underground" "of Weaponcraft" "of Spellcraft" "of Crafting" 
     SetTextColor 180 20 80
     SetBackgroundColor 0 30 0
     PlayAlertSound 10 150
@@ -6421,7 +6642,7 @@ Show # Progression - Accessories - Quivers - Spike Point - Normal - Very Early G
 # Makes "The Wolf" not highlight both cards.
 Show
     Class "Divination"
-    BaseType "The Wolf's Shadow"
+    BaseType "The Wolf's Shadow" "The Master Artisan" 
     SetBackgroundColor 34 42 48
     SetBorderColor 127 127 127
     SetFontSize 36
@@ -6430,7 +6651,7 @@ Show
 # Ultra
 Show
     Class "Divination"
-    BaseType "Abandoned Wealth" "Heterochromia" "House of Mirrors" "Beauty Through Death" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Celestial Justicar" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Master" "The Mayor" "The Saint's Treasure" "The Samurai's Eye" "The Spark and the Flame" "The Wind" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
+    BaseType "Abandoned Wealth" "Beauty Through Death" "Heterochromia" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Pride Before the Fall" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Mayor" "The Queen" "The Samurai's Eye" "The Spark and the Flame" "The Undaunted" "The Wolf" "The Wolven King's Bite" "The Master" "The Nurse" "The Sacrifice"
     SetBackgroundColor 72 115 148
     SetBorderColor 175 96 37
     SetFontSize 44
@@ -6441,7 +6662,7 @@ Show
 # Super
 Show
     Class "Divination"
-    BaseType "Chaotic Disposition" "Boon of the First Ones" "The Cacophony" "The Innocent" "Last Hope" "Perfection" "Saint's Treasure" "The Artist" "The Brittle Emperor" "The Cartographer" "The Dapper Prodigy" "The Dreamer" "The Enlightened" "The Ethereal" "The Hoarder" "The Hunger" "The Professor" "The Queen" "The Risk" "The Sephirot" "The Undaunted" "The Undisputed" "The Valkyrie" "The Vast" "The Void" "The Wolf"
+    BaseType "Boon of the First Ones" "Chaotic Disposition" "Last Hope" "Perfection" "The Artist" "The Cartographer" "The Celestial Justicar" "The Enlightened" "The Hoarder" "The Hunger" "The Last One Standing" "The Offering" "The Professor" "The Saint's Treasure" "The Sephirot" "The Undisputed" "The Valkyrie" "The Vast" "The Void" "The Wind" "The World Eater" "Wealth and Power" "The Life Thief"
     SetBackgroundColor 64 83 97
     SetBorderColor 255 255 0
     SetFontSize 42
@@ -6460,10 +6681,21 @@ Show
     MinimapIcon 2 Blue Diamond
     PlayEffect Blue Temp
 
+# Alt-Currency Cards
+Show
+    Class "Divination"
+    BaseType "Coveted Possession" "Emperor's Luck" "Loyalty" "The Catalyst" "The Gemcutter" "The Survivalist" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Vinia's Token" "Rain of Chaos" "The Puzzle" "The Scholar"
+    SetBackgroundColor 94 122 117
+    SetBorderColor 255 255 0
+    SetFontSize 42
+    PlayAlertSound 6 300
+    MinimapIcon 2 Yellow Diamond
+    PlayEffect Yellow
+
 # Trash
 Show
     Class "Divination"
-    BaseType "A Mother's Parting Gift" "Anarchy's Price" "Birth of the Three" "Carrion Crow" "Cartographer's Delight" "Death" "Dying Anguish" "Hermit" "King's Blade" "Lantador's Lost Love" "Light and Truth" "Metalsmith's Gift" "Might is Right" "Other Cheek" "Prosperity" "Rain of Chaos" "Rain Tempter" "Struck by Lightning" "The Blazing Fire" "The Coming Storm" "The Conduit" "The Eye of the Dragon" "The Feast" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Sigil" "The Siren" "The Surgeon" "The Tower" "The Twins" "The Warden" "The Wolverine" "Thunderous Skies" "Volatile Power"
+    BaseType "A Mother's Parting Gift" "Anarchy's Price" "Audacity" "Birth of the Three" "Carrion Crow" "Cartographer's Delight" "Death" "Destined to Crumble" "Doedre's Madness" "Dying Anguish" "Hermit" "King's Blade" "Lantador's Lost Love" "Light and Truth" "Metalsmith's Gift" "Might is Right" "Other Cheek" "Prosperity" "Rain Tempter" "Struck by Lightning" "The Army of Blood" "The Betrayal" "The Coming Storm" "The Conduit" "The Eye of the Dragon" "The Feast" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Sigil" "The Siren" "The Surgeon" "The Tower" "The Twins" "The Warden" "The Wolverine" "Thunderous Skies" "Volatile Power"
     SetBorderColor 0 0 0 0
 
 # Everything else
