@@ -48,6 +48,7 @@
 # 2k. Incursion
 # 2l. Delve
 # 2m. Betrayal
+# 2n. Synthesis
 # =============================================================
 # =============================================================
 # Section 3. Mapping
@@ -261,129 +262,112 @@
 # =============================================================
 # =============================================================
 
-#Disabled Block Start
-# Necessary false block to get sections to work.
-#Show
-#Disabled Block End
-
 # Section: 1. Chance Bases
 
-#Disabled Block Start
-#Show # Chance Bases - Abberath's Hooves
-#    Corrupted False
-#    Rarity = Normal
-#    BaseType "Goathide Boots"
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Remove # Chance Bases - Abberath's Hooves
+    Corrupted False
+    Rarity = Normal
+    BaseType "Goathide Boots"
+    SetBorderColor 224 109 73
 
-Show # Chance Bases - Poet's Pen
+Remove # Chance Bases - Poet's Pen
     Corrupted False
     Rarity = Normal
     BaseType "Carved Wand"
     SetBorderColor 224 109 73
-    
-Show # Chance Bases - Bisco's Collar
+ 
+Remove # Chance Bases - Bisco's Collar
     Corrupted False
     Rarity = Normal
     BaseType "Gold Amulet"
     SetBorderColor 224 109 73
 
-#Disabled Block Start
-#Show # Chance Bases - Headhunter
-#    Corrupted False
-#    Rarity = Normal
-#    BaseType "Leather Belt"
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Show # Chance Bases - Headhunter
+    Corrupted False
+    Rarity = Normal
+    BaseType "Leather Belt"
+    SetBorderColor 224 109 73
 
-#Disabled Block Start
-#Show # Chance Bases - Voll's Devotion
-#    Corrupted False
-#    Rarity = Normal
-#    BaseType "Agate Amulet"
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Show # Chance Bases - Inpulsa's Broken Heart
+    Corrupted False
+    LinkedSockets < 5
+    Sockets < 6
+    ItemLevel < 84
+    Rarity = Normal
+    BaseType "Sadist Garb"
+    SetBorderColor 224 109 73
 
-#Disabled Block Start
-#Show # Chance Bases - Void Battery
-#    Corrupted False
-#    Rarity = Normal
-#    BaseType "Prophecy Wand"
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Remove # Chance Bases - Voll's Devotion
+    Corrupted False
+    Rarity = Normal
+    BaseType "Agate Amulet"
+    SetBorderColor 224 109 73
 
-#Disabled Block Start
-#Show # Chance Bases - Lycosidae
-#    Corrupted False
-#    Rarity = Normal
-#    BaseType "Rawhide Tower Shield"
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Show # Chance Bases - Void Battery
+    Corrupted False
+    Rarity = Normal
+    BaseType "Prophecy Wand"
+    SetBorderColor 224 109 73
 
-Show # Chance Bases - Skyforth
+
+Remove # Chance Bases - Lycosidae
+    Corrupted False
+    Rarity = Normal
+    BaseType "Rawhide Tower Shield"
+    SetBorderColor 224 109 73
+
+Remove # Chance Bases - Skyforth
     Corrupted False
     ItemLevel < 84
     Rarity = Normal
     BaseType "Sorcerer Boots"
     SetBorderColor 224 109 73
 
-#Disabled Block Start
-#Show # Chance Bases - Kaom's Heart
-#    LinkedSockets < 5
-#    Sockets < 6
-#    Corrupted False
-#    ItemLevel < 84
-#    Rarity = Normal
-#    BaseType "Glorious Plate"
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Show # Chance Bases - Kaom's Heart
+    LinkedSockets < 5
+    Sockets < 6
+    Corrupted False
+    ItemLevel < 84
+    Rarity = Normal
+    BaseType "Glorious Plate"
+    SetBorderColor 224 109 73
 
-#Disabled Block Start
-#Show # Chance Bases - Cospri's Will
-#    LinkedSockets < 5
-#    Sockets < 6
-#    Corrupted False
-#    ItemLevel < 84
-#    Rarity = Normal
-#    BaseType "Assassin's Garb"
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Remove # Chance Bases - Cospri's Will
+    LinkedSockets < 5
+    Sockets < 6
+    Corrupted False
+    ItemLevel < 84
+    Rarity = Normal
+    BaseType "Assassin's Garb"
+    SetBorderColor 224 109 73
 
-#Disabled Block Start
-#Show # Chance Bases - Shavronne's Wrappings
-#    LinkedSockets < 5
-#    Sockets < 6
-#    Corrupted False
-#    ItemLevel < 84
-#    Rarity = Normal
-#    BaseType "Occultist's Vestment"
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Show # Chance Bases - Shavronne's Wrappings
+    LinkedSockets < 5
+    Sockets < 6
+    Corrupted False
+    ItemLevel < 84
+    Rarity = Normal
+    BaseType "Occultist's Vestment"
+    SetBorderColor 224 109 73
 
-#Disabled Block Start
-#Show # Chance Bases - Heretic's Veil
-#    Corrupted False
-#    ItemLevel < 84
-#    Rarity = Normal
-#    BaseType "Deicide Mask"
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Remove # Chance Bases - Heretic's Veil
+    Corrupted False
+    ItemLevel < 84
+    Rarity = Normal
+    BaseType "Deicide Mask"
+    SetBorderColor 224 109 73
 
-#Disabled Block Start
-#Show # Chance Bases - Varunastra
-#    Corrupted False
-#    ItemLevel < 84
-#    Rarity = Normal
-#    BaseType "Vaal Blade"
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Remove # Chance Bases - Varunastra
+    Corrupted False
+    ItemLevel < 84
+    Rarity = Normal
+    BaseType "Vaal Blade"
+    SetBorderColor 224 109 73
 
-#Disabled Block Start
-#Show # Chance Bases - Taste of Hate
-#    Rarity = Normal
-#    BaseType "Sapphire Flask"
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Show # Chance Bases - Taste of Hate
+    Rarity = Normal
+    BaseType "Sapphire Flask"
+    SetBorderColor 224 109 73
 
 # Section: 2. Leagues
 
@@ -1086,6 +1070,24 @@ SetTextColor 130 180 120
 SetBackgroundColor 80 30 90
 MinimapIcon 2 Blue Triangle
 
+# Section: 2n. Synthesis
+
+Show
+FracturedItem True
+PlayEffect Blue
+PlayAlertSound 10 220
+MinimapIcon 0 Blue Triangle
+SetTextColor 140 130 80
+SetBorderColor 0 120 220
+
+Show
+SynthesisedItem True
+PlayEffect Blue
+MinimapIcon 0 Blue Triangle
+SetBackgroundColor 0 50 180
+SetBorderColor 0 120 220
+PlayAlertSound 10 220
+
 # Section: 3. Mapping
 
 # Section: 3a. Warbands Maps
@@ -1168,6 +1170,12 @@ Show
     BaseType "Sacrificial Garb"
     SetBackgroundColor 33 27 28
     SetBorderColor 215 115 210
+
+Show
+    AnyEnchantment True
+    SetBorderColor 220 90 90
+    PlayEffect Blue
+    MinimapIcon 0 Blue Hexagon
 
 # Section: 3c. Atlas
 
@@ -4096,7 +4104,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Arcanist Gloves" "Assassin's Boots" "Callous Mask" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Glorious Plate" "Greatwolf Talisman" "Jewelled Foil" "Nightmare Mace" "Occultist's Vestment" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Riveted Gloves" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sapphire Flask" "Wereclaw Talisman"
+    BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Clutching Talisman" "Crusader Boots" "Gemstone Sword" "Glorious Plate" "Greatwolf Talisman" "Jewelled Foil" "Legion Gloves" "Nubuck Boots" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Riveted Gloves" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Ornate Quiver"
     SetTextColor 175 96 37
     SetBackgroundColor 255 255 255
     SetBorderColor 175 96 37
@@ -4109,7 +4117,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Ambush Mitts" "Ancient Gauntlets" "Arcanist Slippers" "Bismuth Flask" "Blood Sceptre" "Carnal Boots" "Carnal Sceptre" "Citadel Bow" "Cutlass" "Full Wyrmscale" "Gemstone Sword" "Gladiator Plate" "Grand Mana Flask" "Harlequin Mask" "Highborn Staff" "Hydrascale Gauntlets" "Imperial Maul" "Iron Sceptre" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Bascinet" "Nubuck Boots" "Royal Burgonet" "Sacrificial Garb" "Sanctified Mana Flask" "Savant's Robe" "Siege Axe" "Thorium Spirit Shield" "Topaz Flask" "Vaal Mask" "Vaal Spirit Shield" "Varnished Coat" "Void Axe" "Zodiac Leather"
+    BaseType "Arcanist Slippers" "Assassin's Boots" "Bismuth Flask" "Cardinal Round Shield" "Cutlass" "Destiny Leather" "Ezomyte Tower Shield" "Full Wyrmscale" "Gladiator Plate" "Grand Mana Flask" "Highborn Staff" "Jingling Spirit Shield" "Nightmare Bascinet" "Nightmare Mace" "Occultist's Vestment" "Sacrificial Garb" "Sapphire Flask" "Savant's Robe" "Siege Axe" "Thorium Spirit Shield" "Topaz Flask" "Vaal Mask" "Vaal Rapier" "Vaal Spirit Shield" "Varnished Coat" "Wereclaw Talisman" "Wyrmscale Doublet" "Zodiac Leather"
     SetBackgroundColor 40 40 0
     SetBorderColor 175 96 37
     SetFontSize 44
@@ -4121,7 +4129,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Amber Amulet" "Imperial Staff" "Lapis Amulet" "Leather Belt" "Magistrate Crown" "Onyx Amulet" "Carved Wand" "Citrine Amulet" "Ebony Tower Shield" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Hubris Circlet" "Imperial Bow" "Murder Boots" "Sadist Garb" "Sorcerer Boots" "Stibnite Flask" "Terror Claw" "Tornado Wand" "Two-Stone Ring" "Unset Ring" "Vaal Sceptre"
+    BaseType "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Magistrate Crown" "Onyx Amulet" "Citrine Amulet" "Ebony Tower Shield" "Eternal Sword" "Fiend Dagger" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Imperial Bow" "Imperial Staff" "Murder Boots" "Sadist Garb" "Sage Wand" "Sorcerer Boots" "Stealth Boots" "Stibnite Flask" "Terror Claw" "Titan Greaves" "Tornado Wand" "Two-Stone Ring" "Unset Ring" "Vaal Sceptre"
     SetBackgroundColor 0 0 0
     SetBorderColor 155 255 40
     SetFontSize 36
@@ -4133,7 +4141,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Coral Amulet" "Crude Bow" "Death Bow" "Fire Arrow Quiver" "Gavel" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Golden Buckler" "Iron Circlet" "Iron Hat" "Iron Ring" "Iron Staff" "Jade Amulet" "Jade Hatchet" "Jagged Maul" "Long Bow" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Scholar Boots" "Serrated Arrow Quiver" "Sledgehammer" "Spiraled Wand" "Studded Belt" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
+    BaseType "Coral Amulet" "Crude Bow" "Death Bow" "Fire Arrow Quiver" "Gavel" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Golden Buckler" "Iron Circlet" "Iron Hat" "Iron Ring" "Iron Staff" "Jade Hatchet" "Jagged Maul" "Long Bow" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Scholar Boots" "Serrated Arrow Quiver" "Sledgehammer" "Spiraled Wand" "Studded Belt" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
     SetBackgroundColor 0 0 0
     SetBorderColor 155 55 180
     SetFontSize 36
@@ -6651,7 +6659,7 @@ Show
 # Ultra
 Show
     Class "Divination"
-    BaseType "A Dab of Ink" "Abandoned Wealth" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Pride Before the Fall" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Mayor" "The Nurse" "The Queen" "The Samurai's Eye" "The Spark and the Flame" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
+    BaseType "Abandoned Wealth" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Pride Before the Fall" "Seven Years Bad Luck" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Mayor" "The Nurse" "The Queen" "The Risk" "The Saint's Treasure" "The Samurai's Eye" "The Spark and the Flame" "The Wolven King's Bite" "Wealth and Power"
     SetBackgroundColor 72 115 148
     SetBorderColor 175 96 37
     SetFontSize 44
@@ -6662,7 +6670,7 @@ Show
 # Super
 Show
     Class "Divination"
-    BaseType "Chaotic Disposition" "Mawr Blaidd" "Perfection" "The Artist" "The Brittle Emperor" "The Cartographer" "The Celestial Justicar" "The Celestial Stone" "The Endless Darkness" "The Enlightened" "The Ethereal" "The Hoarder" "The Hunger" "The Last One Standing" "The Life Thief" "The Master" "The Offering" "The Polymath" "The Professor" "The Risk" "The Sacrifice" "The Saint's Treasure" "The Sephirot" "The Undaunted" "The Valkyrie" "The Void"
+    BaseType "Boon of the First Ones" "Bowyer's Dream" "Chaotic Disposition" "Last Hope" "Monochrome" "Perfection" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Dreamer" "The Enlightened" "The Hale Heart" "The Hoarder" "The King's Heart" "The Landing" "The Life Thief" "The Mad King" "The Messenger" "The Obscured" "The Professor" "The Seeker" "The Sephirot" "The Throne" "The Undaunted" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Vast" "The Void" "The Wolf"
     SetBackgroundColor 64 83 97
     SetBorderColor 255 255 0
     SetFontSize 42
@@ -6673,7 +6681,7 @@ Show
 # Decent
 Show
     Class "Divination"
-    BaseType "Atziri's Arsenal" "Boon of the First Ones" "Bowyer's Dream" "Emperor of Purity" "Glimmer of Hope" "Harmony of Souls" "Heterochromia" "Hope" "Humility" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Connections" "Lucky Deck" "No Traces" "Rebirth" "Scholar of the Seas" "The Admirer" "The Beast" "The Body" "The Breach" "The Cacophony" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Dreamer" "The Dreamland" "The Encroaching Darkness" "The Fletcher" "The Formless Sea" "The Gladiator" "The Hale Heart" "The Innocent" "The Inventor" "The Jester" "The Jeweller's Boon" "The Lion" "The Mercenary" "The Obscured" "The Penitent" "The Porcupine" "The Price of Protection" "The Soul" "The Sword King's Salute" "The Thaumaturgist" "The Throne" "The Trial" "The Twilight Moon" "The Undisputed" "The Valley of Steel Boxes" "The Vast" "The Warlord" "The Wilted Rose" "The Wind" "The Wolf" "The Wretched" "Time-Lost Relic" "Coveted Possession" "Emperor's Luck" "Loyalty" "The Catalyst" "The Gemcutter" "The Survivalist" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Vinia's Token"
+    BaseType "Alone in the Darkness" "Arrogance of the Vaal" "Assassin's Favour" "Atziri's Arsenal" "Blind Venture" "Emperor of Purity" "Glimmer of Hope" "Harmony of Souls" "Heterochromia" "Humility" "Jack in the Box" "Left to Fate" "Lingering Remnants" "Lucky Connections" "Lucky Deck" "No Traces" "Rebirth" "Sambodhi's Vow" "Scholar of the Seas" "The Admirer" "The Avenger" "The Body" "The Breach" "The Cacophony" "The Cartographer" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Encroaching Darkness" "The Endless Darkness" "The Ethereal" "The Formless Sea" "The Gladiator" "The Hunger" "The Innocent" "The Inventor" "The Jester" "The Jeweller's Boon" "The Journey" "The Last One Standing" "The Lion" "The Master" "The Mercenary" "The Offering" "The Penitent" "The Polymath" "The Porcupine" "The Price of Protection" "The Sacrifice" "The Thaumaturgist" "The Traitor" "The Twilight Moon" "The Warlord" "The Wilted Rose" "The Wind" "The World Eater" "The Wretched" "Time-Lost Relic" "Coveted Possession" "Emperor's Luck" "Loyalty" "The Catalyst" "The Gemcutter" "The Survivalist" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Vinia's Token"
     SetBackgroundColor 34 42 48
     SetBorderColor 136 136 255
     SetFontSize 38
@@ -6684,7 +6692,7 @@ Show
 # Trash
 Show
     Class "Divination"
-    BaseType "A Mother's Parting Gift" "Anarchy's Price" "Audacity" "Birth of the Three" "Carrion Crow" "Cartographer's Delight" "Death" "Destined to Crumble" "Doedre's Madness" "Dying Anguish" "Hermit" "King's Blade" "Lantador's Lost Love" "Light and Truth" "Metalsmith's Gift" "Might is Right" "Other Cheek" "Prosperity" "Rain Tempter" "Struck by Lightning" "The Army of Blood" "The Betrayal" "The Coming Storm" "The Conduit" "The Eye of the Dragon" "The Feast" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Sigil" "The Siren" "The Surgeon" "The Tower" "The Twins" "The Warden" "The Wolverine" "Thunderous Skies" "Volatile Power"
+    BaseType "A Mother's Parting Gift" "Anarchy's Price" "Birth of the Three" "Carrion Crow" "Cartographer's Delight" "Dark Temptation" "Death" "Destined to Crumble" "Doedre's Madness" "Dying Anguish" "Forbidden Power" "Grave Knowledge" "Hermit" "King's Blade" "Lantador's Lost Love" "Light and Truth" "Metalsmith's Gift" "Might is Right" "Other Cheek" "Prosperity" "Rain Tempter" "Rats" "Struck by Lightning" "The Army of Blood" "The Betrayal" "The Blazing Fire" "The Calling" "The Coming Storm" "The Deceiver" "The Eye of the Dragon" "The Fox" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Oath" "The Opulent" "The Pack Leader" "The Pact" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Sigil" "The Siren" "The Sun" "The Surgeon" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Witch" "Thunderous Skies" "Tranquillity" "Volatile Power"
     SetBorderColor 0 0 0 0
 
 # Everything else
@@ -6758,7 +6766,7 @@ Show # Gems - Drop Only
     GemLevel >= 18
     SetBackgroundColor 80 80 80
     Class "Gems"
-    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach" "Item Quantity Support"
+    BaseType "Portal" "Enlighten Support" "Enhance Support" "Empower Support" "Vaal Breach" "Item Quantity Support"
     SetBorderColor 255 255 255
 
 Show # Recipes - Quality Gems - Low
@@ -6766,7 +6774,7 @@ Show # Recipes - Quality Gems - Low
     GemLevel >= 18
     SetBackgroundColor 80 80 80
     Class "Gems"
-    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach" "Item Quantity Support"
+    BaseType "Portal" "Enlighten Support" "Enhance Support" "Empower Support" "Vaal Breach" "Item Quantity Support"
     SetTextColor 111 181 207
     SetBorderColor 255 255 255
 
@@ -6775,7 +6783,7 @@ Show # Recipes - Quality Gems - High
     GemLevel >= 18
     SetBackgroundColor 80 80 80
     Class "Gems"
-    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach" "Item Quantity Support"
+    BaseType "Portal" "Enlighten Support" "Enhance Support" "Empower Support" "Vaal Breach" "Item Quantity Support"
     SetTextColor 184 218 242
     SetBorderColor 255 255 255
     PlayAlertSound 2 120
@@ -6783,20 +6791,20 @@ Show # Recipes - Quality Gems - High
 Show # Gems - Drop Only
     Quality = 0
     Class "Gems"
-    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach" "Item Quantity Support"
+    BaseType "Portal" "Enlighten Support" "Enhance Support" "Empower Support" "Vaal Breach" "Item Quantity Support"
     SetBorderColor 255 255 255
 
 Show # Recipes - Quality Gems - Low
     Quality < 10
     Class "Gems"
-    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach" "Item Quantity Support"
+    BaseType "Portal" "Enlighten Support" "Enhance Support" "Empower Support" "Vaal Breach" "Item Quantity Support"
     SetTextColor 111 181 207
     SetBorderColor 255 255 255
 
 Show # Recipes - Quality Gems - High
     Quality >= 10
     Class "Gems"
-    BaseType "Portal" "Added Chaos Damage Support" "Enlighten Support" "Enhance Support" "Empower Support" "Detonate Mines" "Vaal Breach" "Item Quantity Support"
+    BaseType "Portal" "Enlighten Support" "Enhance Support" "Empower Support" "Vaal Breach" "Item Quantity Support"
     SetTextColor 184 218 242
     SetBorderColor 255 255 255
     PlayAlertSound 2 120
