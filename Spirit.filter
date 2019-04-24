@@ -16659,7 +16659,7 @@ Show # Progression - Armours - AR/EV - Helmets - Mid Game - Socketed
     BaseType "Battered Helm" "Sallet" "Visored Sallet"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - Helmets
     Class "Helmets"
     SetBorderColor 127 127 127
 
@@ -16965,7 +16965,7 @@ Show # Progression - Armours - AR/EV - Body - Mid Game - Socketed
     BaseType "Scale Vest" "Light Brigandine" "Scale Doublet" "Infantry Brigandine"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - Body Armours
     Class "Body Armours"
     SetBorderColor 127 127 127
 
@@ -17271,7 +17271,7 @@ Show # Progression - Armours - AR/EV - Gloves - Mid Game - Socketed
     BaseType "Fishscale Gauntlets" "Ironscale Gauntlets" "Bronzescale Gauntlets"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - Gloves
     Class "Gloves"
     SetBorderColor 127 127 127
 
@@ -17631,7 +17631,7 @@ Show # Progression - Armours - AR/EV - Boots - Mid Game - Socketed
     BaseType "Leatherscale Boots" "Ironscale Boots"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - Boots
     Class "Boots"
     SetBorderColor 127 127 127
 
@@ -17937,7 +17937,7 @@ Show # Progression - Armours - AR/EV - Shields - Mid Game - Socketed
     BaseType "Rotted Round Shield" "Fir Round Shield" "Studded Round Shield" "Scarlet Round Shield"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - Shields
     Class "Shields"
     SetBorderColor 127 127 127
 
@@ -17987,7 +17987,7 @@ Show # Progression - Weapons - Attack - 1H Axes - Mid Game - Socketed
     Class "One Hand Axes"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - 1H Axes
     Class "One Hand Axes"
     SetBorderColor 127 127 127
 
@@ -18035,7 +18035,7 @@ Show # Progression - Weapons - Attack - 1H Swords - Mid Game - Socketed
     Class "One Hand Swords"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - 1H Swords
     Class "One Hand Swords"
     SetBorderColor 127 127 127
 
@@ -18083,7 +18083,7 @@ Show # Progression - Weapons - Attack - 2H Maces - Mid Game - Socketed
     Class "Two Hand Maces"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - 2H Maces
     Class "Two Hand Maces"
     SetBorderColor 127 127 127
 
@@ -18131,7 +18131,7 @@ Show # Progression - Weapons - Attack - Bows - Mid Game - Socketed
     Class "Bows"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - Bows
     Class "Bows"
     SetBorderColor 127 127 127
 
@@ -18179,7 +18179,7 @@ Show # Progression - Weapons - Attack - 1H Thrusting Swords - Mid Game - Sockete
     Class "Thrusting One Hand Swords"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - Thrusting Swords
     Class "Thrusting One Hand Swords"
     SetBorderColor 127 127 127
 
@@ -18227,7 +18227,7 @@ Show # Progression - Weapons - Attack/Caster - Daggers - Mid Game - Socketed
     Class "Daggers"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - Daggers
     Class "Daggers"
     SetBorderColor 127 127 127
 
@@ -18275,7 +18275,7 @@ Show # Progression - Weapons - Attack - 1H Maces - Mid Game - Socketed
     Class "One Hand Maces"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - 1H Maces
     Class "One Hand Maces"
     SetBorderColor 127 127 127
 
@@ -18323,7 +18323,7 @@ Show # Progression - Weapons - Attack - 2H Axes - Mid Game - Socketed
     Class "Two Hand Axes"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - 2H Axes
     Class "Two Hand Axes"
     SetBorderColor 127 127 127
 
@@ -18371,7 +18371,7 @@ Show # Progression - Weapons - Attack - 2H Swords - Mid Game - Socketed
     Class "Two Hand Swords"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - 2H Swords
     Class "Two Hand Swords"
     SetBorderColor 127 127 127
 
@@ -18419,7 +18419,7 @@ Show # Progression - Weapons - Attack - Claws - Mid Game - Socketed
     Class "Claws"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - Claws
     Class "Claws"
     SetBorderColor 127 127 127
 
@@ -18467,7 +18467,7 @@ Show # Progression - Weapons - Attack/Caster - Sceptres - Mid Game - Socketed
     Class "Sceptres"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - Sceptres
     Class "Sceptres"
     SetBorderColor 127 127 127
 
@@ -18515,7 +18515,7 @@ Show # Progression - Weapons - Attack/Caster - Staves - Mid Game - Socketed
     Class "Staves"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - Staves
     Class "Staves"
     SetBorderColor 127 127 127
 
@@ -18563,7 +18563,7 @@ Show # Progression - Weapons - Attack/Caster - Wands - Mid Game - Socketed
     Class "Wands"
     SetBorderColor 127 127 127
 
-Hide
+Hide # Base Hunting - Wands
     Class "Wands"
     SetBorderColor 127 127 127
 
