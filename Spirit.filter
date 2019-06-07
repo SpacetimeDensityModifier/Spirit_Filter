@@ -49,6 +49,7 @@
 # 2l. Delve
 # 2m. Betrayal
 # 2n. Synthesis
+# 2o. Legion
 # =============================================================
 # =============================================================
 # Section 3. Mapping
@@ -288,11 +289,13 @@
 #    SetBorderColor 224 109 73
 #Disabled Block End
 
-Show # Chance Bases - Headhunter
-    Corrupted False
-    Rarity = Normal
-    BaseType "Leather Belt"
-    SetBorderColor 224 109 73
+#Disabled Block Start
+#Show # Chance Bases - Headhunter
+#    Corrupted False
+#    Rarity = Normal
+#    BaseType "Leather Belt"
+#    SetBorderColor 224 109 73
+#Disabled Block End
 
 Show # Chance Bases - Inpulsa's Broken Heart
     Corrupted False
@@ -469,9 +472,33 @@ Show
 
 # Section: 2d. Prophecy
 
+# Extreme Value
+
 Show
     Class "Currency"
-    BaseType "Prophecy" "Silver Coin"
+    BaseType "Prophecy"
+    Prophecy "Fated Connections" "Monstrous Treasure" "The Queen's Sacrifice" "Trash to Treasure"
+    SetTextColor 200 200 200
+    SetBackgroundColor 74 15 199
+    SetBorderColor 200 0 0
+    PlayAlertSound 4 250
+
+# Good Value
+
+Show
+    Class "Currency"
+    BaseType "Prophecy"
+    Prophecy "A Vision of Ice and Fire" "Cleanser of Sins" "Darktongue's Shriek" "The Feral Lord V" "The Jeweller's Touch" "The King's Path" "The Plaguemaw V" "The Unbreathing Queen V" "Twice Enchanted" "Unbearable Whispers V" "Vaal Winds" "Wind and Thunder"
+    SetTextColor 200 200 200
+    SetBackgroundColor 74 15 199
+    SetBorderColor 0 0 200
+    PlayAlertSound 3 250
+
+# Others
+
+Show
+    Class "Currency"
+    BaseType "Silver Coin" "Prophecy"
     SetTextColor 200 200 200
     SetBackgroundColor 74 15 199
     SetBorderColor 200 200 200
@@ -690,7 +717,7 @@ Show
     SetBackgroundColor 170 158 130
     SetBorderColor 175 96 37
     SetFontSize 36
-    PlayAlertSound 4 100
+    PlayAlertSound 6 200
 
 Show
     Class "Currency"
@@ -698,8 +725,8 @@ Show
     SetTextColor 136 136 255
     SetBackgroundColor 54 100 146
     SetBorderColor 136 136 255
-    SetFontSize 36
-    PlayAlertSound 7 100
+    SetFontSize 38
+    PlayAlertSound 7 200
 
 Show
     Class "Currency"
@@ -844,6 +871,7 @@ Show
     SetTextColor 130 180 120
     SetBackgroundColor 80 30 20
     PlayAlertSound 3 120
+    MinimapIcon 2 Green Square
         
 Show
     BaseType "Flashpowder Keg"
@@ -897,7 +925,7 @@ Show
 # Extreme Value
 Show
     Class "Currency"
-    BaseType "Faceted Fossil" "Fractured Fossil" "Hollow Fossil" "Bloodstained Fossil"
+    BaseType "Bloodstained Fossil" "Faceted Fossil" "Fractured Fossil" "Glyphic Fossil" "Hollow Fossil" "Sanctified Fossil"
     SetBorderColor 30 60 180
     SetTextColor 250 110 250
     PlayAlertSound 16 250
@@ -907,7 +935,7 @@ Show
 # High Value
 Show
     Class "Currency"
-    BaseType "Gilded Fossil" "Sanctified Fossil" "Tangled Fossil" "Glyphic Fossil"
+    BaseType "Dense Fossil" "Tangled Fossil"
     SetBorderColor 30 60 180
     SetTextColor 200 110 250
     PlayAlertSound 16 200
@@ -917,7 +945,7 @@ Show
 # Bad Value Value
 Show
     Class "Currency"
-    BaseType "Aberrant Fossil" "Frigid Fossil" "Corroded Fossil" "Jagged Fossil" "Lucent Fossil" "Scorched Fossil" "Bound Fossil" "Serrated Fossil" "Encrusted Fossil"
+    BaseType "Corroded Fossil" "Jagged Fossil" "Lucent Fossil" "Scorched Fossil"
     SetBorderColor 30 60 180
     SetTextColor 130 110 200
     PlayAlertSound 16 100
@@ -927,7 +955,7 @@ Show
 # Average Value
 Show
     Class "Currency"
-    BaseType "Fossil"
+    BaseType " Fossil"
     SetBorderColor 30 60 180
     SetTextColor 150 110 250
     PlayAlertSound 16 150
@@ -1124,7 +1152,143 @@ SetBackgroundColor 0 50 180 180
 SetBorderColor 0 120 220
 PlayAlertSound 10 120
 
+# Section: 2o. Legion
 
+Show
+Class "Jewel"
+BaseType "Timeless"
+PlayEffect Red
+PlayAlertSound 4 250
+Rarity = Unique
+SetBorderColor 40 10 90 220
+SetTextColor 255 20 20
+SetBackgroundColor 40 10 90 220
+SetBorderColor 175 96 37
+SetFontSize 44
+MinimapIcon 1 Red Triangle
+
+# Ultra
+
+Show
+BaseType "Geomancer's Incubator"
+PlayEffect Red
+MinimapIcon 1 Red Triangle
+PlayAlertSound 16 250
+SetBackgroundColor 40 10 90 220
+SetBorderColor 255 210 255 120
+SetTextColor 245 130 30
+
+# Good
+
+Show
+BaseType "Cartographer's Incubator" "Singular Incubator" "Abyssal Incubator"
+PlayEffect Yellow
+MinimapIcon 1 Yellow Triangle
+PlayAlertSound 16 200
+SetBackgroundColor 40 10 90 220
+SetBorderColor 255 210 255 120
+SetTextColor 215 200 50
+
+# Others will be sorted as we find out how good they are
+
+Show
+BaseType "Incubator"
+PlayEffect Yellow
+MinimapIcon 1 Yellow Triangle
+PlayAlertSound 16 200
+SetBackgroundColor 40 10 90 220
+SetBorderColor 255 210 255 120
+SetTextColor 255 200 240
+
+Show
+BaseType "Karui Emblem"
+PlayEffect Red
+MinimapIcon 1 Red Triangle
+PlayAlertSound 11 250
+SetBorderColor 40 10 90
+SetBackgroundColor 190 70 20
+SetTextColor 40 10 90
+
+Show
+BaseType "Karui Splinter"
+PlayEffect Red
+MinimapIcon 1 Red Circle
+PlayAlertSound 11 250
+SetBorderColor 40 10 90
+SetBackgroundColor 190 70 20
+SetTextColor 255 200 240
+
+Show
+BaseType "Maraketh Emblem"
+PlayEffect Red
+MinimapIcon 1 Red Triangle
+PlayAlertSound 11 250
+SetBackgroundColor 240 180 40
+SetBorderColor 40 10 90
+SetTextColor 40 10 90
+
+Show
+BaseType "Maraketh Splinter"
+PlayEffect Red
+MinimapIcon 1 Red Circle
+PlayAlertSound 11 250
+SetBackgroundColor 240 180 40
+SetBorderColor 40 10 90
+SetTextColor 255 200 240
+
+Show
+BaseType "Eternal Emblem"
+PlayEffect Red
+MinimapIcon 1 Red Triangle
+PlayAlertSound 11 250
+SetBackgroundColor 45 125 30
+SetBorderColor 40 10 90
+SetTextColor 40 10 90
+
+Show
+BaseType "Eternal Empire Splinter"
+PlayEffect Red
+MinimapIcon 1 Red Circle
+PlayAlertSound 11 250
+SetBackgroundColor 45 125 30
+SetBorderColor 40 10 90
+SetTextColor 255 200 240
+
+Show
+BaseType "Templar Emblem"
+PlayEffect Red
+MinimapIcon 1 Red Triangle
+PlayAlertSound 11 250
+SetBackgroundColor 65 100 130
+SetBorderColor 40 10 90
+SetTextColor 40 10 90
+
+Show
+BaseType "Templar Splinter"
+PlayEffect Red
+MinimapIcon 1 Red Circle
+PlayAlertSound 11 250
+SetBackgroundColor 65 100 130
+SetBorderColor 40 10 90
+SetTextColor 255 200 240
+
+Show
+BaseType "Vaal Emblem"
+PlayEffect Red
+MinimapIcon 1 Red Triangle
+PlayAlertSound 11 250
+SetBackgroundColor 155 20 30
+SetBorderColor 40 10 90
+SetTextColor 40 10 90
+
+Show
+BaseType "Vaal Splinter"
+PlayEffect Red
+MinimapIcon 1 Red Circle
+PlayAlertSound 11 250
+SetBackgroundColor 155 20 30
+SetBorderColor 40 10 90
+SetTextColor 255 200 240
 
 # Section: 3. Mapping
 
@@ -2227,7 +2391,7 @@ Show # Shaper Crafting - Weapons - Thrusting Swords - Harpy Rapier
     SetFontSize 38
     PlayAlertSound 8 255
 
-Show # Shaper Crafting - Weapons - Daggers - Sai
+Show # Shaper Crafting - Weapons -  Attack Daggers - Sai
     ShaperItem True
     Class "Daggers"
     BaseType "Sai"
@@ -2236,7 +2400,7 @@ Show # Shaper Crafting - Weapons - Daggers - Sai
     SetFontSize 38
     PlayAlertSound 8 255
 
-Show # Shaper Crafting - Weapons - Daggers - Ambusher
+Show # Shaper Crafting - Weapons - Attack Daggers - Ambusher
     ShaperItem True
     BaseType "Ambusher"
     SetBackgroundColor 100 115 125
@@ -2911,7 +3075,7 @@ Show # Elder Crafting - Weapons - Thrusting Swords - Harpy Rapier
     SetFontSize 38
     PlayAlertSound 8 255
 
-Show # Elder Crafting - Weapons - Daggers - Sai
+Show # Elder Crafting - Weapons - Attack Daggers - Sai
     ElderItem True
     Class "Daggers"
     BaseType "Sai"
@@ -2920,7 +3084,7 @@ Show # Elder Crafting - Weapons - Daggers - Sai
     SetFontSize 38
     PlayAlertSound 8 255
 
-Show # Elder Crafting - Weapons - Daggers - Ambusher
+Show # Elder Crafting - Weapons - Attack Daggers - Ambusher
     ElderItem True
     BaseType "Ambusher"
     SetBackgroundColor 59 59 87
@@ -4183,7 +4347,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Ambush Mitts" "Callous Mask" "Champion Kite Shield" "Clutching Talisman" "Crusader Boots" "Glorious Plate" "Greatwolf Talisman" "Highborn Staff" "Jewelled Foil" "Jingling Spirit Shield" "Legion Gloves" "Nubuck Boots" "Occultist's Vestment" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Riveted Gloves" "Ruby Flask" "Sapphire Flask" "Vaal Spirit Shield"
+    BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Golden Mantle" "Golden Wreath" "Grand Mana Flask" "Greatwolf Talisman" "Highborn Staff" "Hydrascale Gauntlets" "Imperial Maul" "Jewelled Foil" "Jingling Spirit Shield" "Legion Gloves" "Nubuck Boots" "Occultist's Vestment" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Riveted Gloves" "Rotfeather Talisman" "Royal Axe" "Ruby Amulet" "Ruby Flask" "Sorcerer Boots" "Wereclaw Talisman" "Wyrmscale Doublet" "Zodiac Leather"
     SetTextColor 175 96 37
     SetBackgroundColor 255 255 255
     SetBorderColor 175 96 37
@@ -4196,7 +4360,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Ancient Gauntlets" "Arcanist Gloves" "Arcanist Slippers" "Assassin's Boots" "Bismuth Flask" "Blood Raiment" "Blood Sceptre" "Cardinal Round Shield" "Carnal Boots" "Carnal Sceptre" "Coronal Leather" "Cutlass" "Destiny Leather" "Ezomyte Tower Shield" "Full Wyrmscale" "Gemstone Sword" "Gladiator Plate" "Grand Mana Flask" "Hydrascale Gauntlets" "Nightmare Mace" "Rotfeather Talisman" "Royal Axe" "Sacrificial Garb" "Sanctified Life Flask" "Savant's Robe" "Siege Axe" "Steelwood Bow" "Thorium Spirit Shield" "Topaz Flask" "Vaal Mask" "Vaal Rapier" "Varnished Coat" "Wereclaw Talisman" "Ornate Quiver"
+    BaseType "Abyssal Axe" "Ancient Gauntlets" "Assassin's Boots" "Bismuth Flask" "Carnal Sceptre" "Champion Kite Shield" "Clasped Mitts" "Coiled Staff" "Corsair Sword" "Destiny Leather" "Ezomyte Burgonet" "Full Wyrmscale" "Granite Flask" "Hellion's Paw" "Imperial Claw" "Iron Sceptre" "Jasper Chopper" "Midnight Blade" "Necromancer Silks" "Nightmare Bascinet" "Nightmare Mace" "Ritual Sceptre" "Sacrificial Garb" "Sanctified Life Flask" "Sapphire Flask" "Serpentscale Gauntlets" "Siege Axe" "Sorcerer Gloves" "Steelwood Bow" "Two-Stone Ring" "Vaal Axe" "Vaal Mask" "Vaal Rapier" "Vaal Sceptre" "Vaal Spirit Shield" "Varnished Coat" "Void Axe"
     SetBackgroundColor 40 40 0
     SetBorderColor 175 96 37
     SetFontSize 44
@@ -4208,7 +4372,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Magistrate Crown" "Onyx Amulet" "Citrine Amulet" "Ebony Tower Shield" "Eternal Sword" "Fiend Dagger" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Imperial Bow" "Imperial Staff" "Murder Boots" "Nightmare Bascinet" "Sadist Garb" "Sage Wand" "Sorcerer Boots" "Stealth Boots" "Stibnite Flask" "Terror Claw" "Titan Greaves" "Tornado Wand" "Two-Stone Ring" "Unset Ring" "Vaal Sceptre"
+    BaseType "Agate Amulet" "Amber Amulet" "Hubris Circlet" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Silver Flask" "Topaz Ring" "Unset Ring" "Blood Raiment" "Coral Amulet" "Ebony Tower Shield" "Ezomyte Staff" "Fiend Dagger" "Goathide Boots" "Gold Amulet" "Gold Ring" "Imperial Bow" "Iron Ring" "Judgement Staff" "Magistrate Crown" "Onyx Amulet" "Sadist Garb" "Sage Wand" "Stibnite Flask" "Studded Belt"
     SetBackgroundColor 0 0 0
     SetBorderColor 155 255 40
     SetFontSize 36
@@ -4223,6 +4387,18 @@ Show
     BaseType "Coral Amulet" "Crude Bow" "Death Bow" "Fire Arrow Quiver" "Gavel" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Golden Buckler" "Iron Circlet" "Iron Hat" "Iron Ring" "Iron Staff" "Jade Hatchet" "Jagged Maul" "Long Bow" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Scholar Boots" "Serrated Arrow Quiver" "Sledgehammer" "Spiraled Wand" "Studded Belt" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
     SetBackgroundColor 0 0 0
     SetBorderColor 155 55 180
+    SetFontSize 36
+    PlayAlertSound 3 250
+    MinimapIcon 2 Blue Star
+    PlayEffect Blue Temp
+
+# Legion bases, will sort into other tiers once economy settles.
+Show
+    LinkedSockets < 6
+    Rarity = Unique
+    BaseType "Assassin Bow" "Bronzescale Boots" "Deerskin Gloves" "Ezomyte Blade" "Holy Chainmail" "Imperial Skean" "Karui Maul" "Opal Wand" "Silk Gloves" "Soldier Helmet" "Sulphur Flask" "Timeworn Claw" "Titanium Spirit Shield" "Vaal Blade" "War Hammer"
+    SetBackgroundColor 30 0 30
+    SetBorderColor 125 25 100
     SetFontSize 36
     PlayAlertSound 3 250
     MinimapIcon 2 Blue Star
@@ -6738,7 +6914,7 @@ Show
 # Ultra
 Show
     Class "Divination"
-    BaseType "Abandoned Wealth" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Pride Before the Fall" "Seven Years Bad Luck" "The Doctor" "The Dragon's Heart" "The Ethereal" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Life Thief" "The Master" "The Mayor" "The Nurse" "The Offering" "The Risk" "The Samurai's Eye" "The Spark and the Flame" "The Wind" "The Wolven King's Bite" "Wealth and Power"
+    BaseType "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "Burning Blood" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Pride of the First Ones" "Seven Years Bad Luck" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Life Thief" "The Mayor" "The Nurse" "The Risk" "The Saint's Treasure" "The Samurai's Eye" "The Spark and the Flame" "The Vast" "The Wolven King's Bite" "Wealth and Power"
     SetBackgroundColor 72 115 148
     SetBorderColor 175 96 37
     SetFontSize 44
@@ -6749,7 +6925,7 @@ Show
 # Super
 Show
     Class "Divination"
-    BaseType "Chaotic Disposition" "The Artist" "The Brittle Emperor" "The Cartographer" "The Celestial Justicar" "The Celestial Stone" "The Dreamer" "The Enlightened" "The Hoarder" "The Landing" "The Polymath" "The Professor" "The Queen" "The Sacrifice" "The Saint's Treasure" "The Sephirot" "The Undaunted" "The Vast" "The Void" "The Wolf" "The World Eater"
+    BaseType "Buried Treasure" "Chaotic Disposition" "Dark Dreams" "Pride Before the Fall" "The Cartographer" "The Deep Ones" "The Landing" "The Professor" "The Queen" "The Seeker" "The Sephirot" "The Undaunted" "The Void" "Harmony of Souls" "Lucky Connections"
     SetBackgroundColor 64 83 97
     SetBorderColor 255 255 0
     SetFontSize 42
@@ -6760,7 +6936,7 @@ Show
 # Decent
 Show
     Class "Divination"
-    BaseType "Alone in the Darkness" "Arrogance of the Vaal" "Assassin's Favour" "Atziri's Arsenal" "Blind Venture" "Boon of the First Ones" "Bowyer's Dream" "Emperor of Purity" "Glimmer of Hope" "Harmony of Souls" "Heterochromia" "Humility" "Jack in the Box" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Connections" "Lucky Deck" "Monochrome" "No Traces" "Perfection" "Rebirth" "Sambodhi's Vow" "Scholar of the Seas" "The Admirer" "The Aesthete" "The Avenger" "The Body" "The Breach" "The Cacophony" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Encroaching Darkness" "The Endless Darkness" "The Formless Sea" "The Gladiator" "The Hale Heart" "The Hunger" "The Innocent" "The Inventor" "The Jester" "The Jeweller's Boon" "The Journey" "The Last One Standing" "The Lion" "The Mad King" "The Mercenary" "The Messenger" "The Obscured" "The Penitent" "The Porcupine" "The Price of Protection" "The Seeker" "The Surveyor" "The Thaumaturgist" "The Throne" "The Traitor" "The Trial" "The Twilight Moon" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Warlord" "The Wilted Rose" "The Wretched" "Time-Lost Relic" "Coveted Possession" "Emperor's Luck" "Loyalty" "The Catalyst" "The Gemcutter" "The Survivalist" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Vinia's Token" "Boon of Justice"
+    BaseType "Alone in the Darkness" "Arrogance of the Vaal" "Boon of the First Ones" "Bowyer's Dream" "Demigod's Wager" "Echoes of Love" "Emperor of Purity" "Heterochromia" "Humility" "Last Hope" "Left to Fate" "Lucky Deck" "Merciless Armament" "Monochrome" "No Traces" "Perfection" "Rebirth" "Sambodhi's Vow" "The Artist" "The Breach" "The Brittle Emperor" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Enlightened" "The Ethereal" "The Hale Heart" "The Hoarder" "The Insatiable" "The Inventor" "The Jeweller's Boon" "The Journey" "The King's Heart" "The Master" "The Offering" "The Polymath" "The Porcupine" "The Primordial" "The Sacrifice" "The Thaumaturgist" "The Throne" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Warlord" "The Wilted Rose" "The Wolf" "The World Eater" "Time-Lost Relic" "Vanity" "Coveted Possession" "Emperor's Luck" "Loyalty" "The Cacophony" "The Fool" "Three Voices" "The Innocent" "The Survivalist" "The Union"
     SetBackgroundColor 34 42 48
     SetBorderColor 136 136 255
     SetFontSize 38
@@ -6771,7 +6947,7 @@ Show
 # Trash
 Show
     Class "Divination"
-    BaseType "A Mother's Parting Gift" "Anarchy's Price" "Birth of the Three" "Carrion Crow" "Cartographer's Delight" "Dark Temptation" "Death" "Destined to Crumble" "Doedre's Madness" "Dying Anguish" "Forbidden Power" "Grave Knowledge" "Hermit" "King's Blade" "Lantador's Lost Love" "Light and Truth" "Metalsmith's Gift" "Might is Right" "Other Cheek" "Prosperity" "Rain Tempter" "Rats" "Struck by Lightning" "The Army of Blood" "The Betrayal" "The Blazing Fire" "The Calling" "The Coming Storm" "The Deceiver" "The Eye of the Dragon" "The Fox" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Opulent" "The Pack Leader" "The Pact" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Sigil" "The Siren" "The Sun" "The Surgeon" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Witch" "Thunderous Skies" "Tranquillity" "Volatile Power" "The Golden Era" "The Scholar"
+    BaseType "A Mother's Parting Gift" "Anarchy's Price" "Audacity" "Birth of the Three" "Dark Temptation" "Destined to Crumble" "Dying Anguish" "Grave Knowledge" "Lantador's Lost Love" "Might is Right" "Struck by Lightning" "The Betrayal" "The Carrion Crow" "The Coming Storm" "The Drunken Aristocrat" "The Flora's Gift" "The Hermit" "The Incantation" "The King's Blade" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Opulent" "The Scarred Meadow" "The Summoner" "The Warden" "The Watcher" "The Witch" "Thunderous Skies" "Turn the Other Cheek" "Volatile Power" "The Scholar"
     SetBorderColor 0 0 0 0
 
 # Everything else
@@ -7316,7 +7492,7 @@ Show
 
 Show # Links - Five Link
     LinkedSockets = 5
-    SetBackgroundColor 54 5 5
+    SetBackgroundColor 30 10 10
     SetBorderColor 210 0 0
     SetFontSize 38
     PlayAlertSound 6 300
@@ -14602,30 +14778,30 @@ Show
 # Section: 16f. Daggers
 
 # Maraketh
-Show
+Show # Attack Daggers
     ItemLevel >= 84
     Rarity = Rare
     Class "Daggers"
     BaseType "Sai"
     SetTextColor 255 215 0
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 255 255 119
 
 # Maraketh
-Show
+Show # Attack Daggers
     ItemLevel >= 77
     Rarity = Rare
     Class "Daggers"
     BaseType "Sai"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 255 255 119
 
 # Maraketh
-Show
+Show # Attack Daggers
     Rarity = Rare
     Class "Daggers"
     BaseType "Sai"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
 Show
@@ -14635,11 +14811,11 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 255 255 119
 
-Show
+Show # Attack Daggers
     ItemLevel <= 10
     Rarity = Rare
     BaseType "Skinning Knife"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 255 255 119
 
 Show
@@ -14649,11 +14825,11 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 255 255 119
 
-Show
+Show # Attack Daggers
     ItemLevel <= 20
     Rarity = Rare
     BaseType "Stiletto"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
 Show
@@ -14684,19 +14860,19 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-Show
+Show # Attack Daggers
     ItemLevel <= 36
     Rarity = Rare
     BaseType "Flaying Knife"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
 # Maraketh
-Show
+Show # Attack Daggers
     ItemLevel <= 38
     Rarity = Rare
     BaseType "Prong Dagger"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 255 255 119
 
 Show
@@ -14706,11 +14882,11 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-Show
+Show # Attack Daggers
     ItemLevel <= 44
     Rarity = Rare
     BaseType "Poignard"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
 Show
@@ -14742,18 +14918,18 @@ Show
     SetBorderColor 136 136 255
 
 # Maraketh
-Show
+Show # Attack Daggers
     ItemLevel <= 56
     Rarity = Rare
     BaseType "Trisula"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 255 255 119
 
-Show
+Show # Attack Daggers
     ItemLevel <= 58
     Rarity = Rare
     BaseType "Gutting Knife"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
 Show
@@ -14764,27 +14940,27 @@ Show
     SetBorderColor 136 136 255
 
 # Speed
-Show
+Show # Attack Daggers
     ItemLevel >= 84
     Rarity = Rare
     BaseType "Ambusher"
     SetTextColor 255 215 0
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 255 255 119
 
 # Speed
-Show
+Show # Attack Daggers
     ItemLevel >= 77
     Rarity = Rare
     BaseType "Ambusher"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 255 255 119
 
 # Speed
-Show
+Show # Attack Daggers
     Rarity = Rare
     BaseType "Ambusher"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
 Show
@@ -15970,18 +16146,18 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 255 255 119
 
-Show
+Show # War Staff
     ItemLevel <= 23
     Rarity = Rare
     BaseType "Iron Staff"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
-Show
+Show # War Staff
     ItemLevel <= 28
     Rarity = Rare
     BaseType "Coiled Staff"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
 Show
@@ -15991,11 +16167,11 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-Show
+Show # War Staff
     ItemLevel <= 36
     Rarity = Rare
     BaseType "Vile Staff"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
 # Maraketh
@@ -16020,18 +16196,18 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-Show
+Show # War Staff
     ItemLevel <= 49
     Rarity = Rare
     BaseType "Military Staff"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
-Show
+Show # War Staff
     ItemLevel <= 52
     Rarity = Rare
     BaseType "Serpentine Staff"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
 Show
@@ -16041,11 +16217,11 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-Show
+Show # War Staff
     ItemLevel <= 57
     Rarity = Rare
     BaseType "Foul Staff"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
 # Maraketh
@@ -16070,20 +16246,20 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-Show
+Show # War Staff
     ItemLevel <= 64
     Rarity = Rare
     BaseType "Ezomyte Staff"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
 # Maelstrom Best Implicit
-Show
+Show # War Staff
     ItemLevel <= 66
     DropLevel = 64
     Rarity = Rare
     Class "Staves"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
 # Crit Chance Damage
@@ -16110,11 +16286,11 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-Show
+Show # War Staff
     ItemLevel <= 70
     Rarity = Rare
     BaseType "Judgement Staff"
-    SetBackgroundColor 0 0 0
+    SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
 # Section: 16m. Wands
