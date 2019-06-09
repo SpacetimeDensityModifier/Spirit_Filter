@@ -1181,7 +1181,7 @@ SetTextColor 245 130 30
 # Good
 
 Show
-BaseType "Cartographer's Incubator" "Singular Incubator" "Abyssal Incubator"
+BaseType "Cartographer's Incubator" "Singular Incubator" "Abyssal Incubator" "Celestial Jeweller's Incubator" "Eldritch Incubator" "Infused Incubator"
 PlayEffect Yellow
 MinimapIcon 1 Yellow Triangle
 PlayAlertSound 16 200
@@ -1237,7 +1237,7 @@ SetBorderColor 40 10 90
 SetTextColor 255 200 240
 
 Show
-BaseType "Eternal Emblem"
+BaseType "Templar Emblem"
 PlayEffect Red
 MinimapIcon 1 Red Triangle
 PlayAlertSound 11 250
@@ -1246,7 +1246,7 @@ SetBorderColor 40 10 90
 SetTextColor 40 10 90
 
 Show
-BaseType "Eternal Empire Splinter"
+BaseType "Templar Splinter"
 PlayEffect Red
 MinimapIcon 1 Red Circle
 PlayAlertSound 11 250
@@ -1255,7 +1255,7 @@ SetBorderColor 40 10 90
 SetTextColor 255 200 240
 
 Show
-BaseType "Templar Emblem"
+BaseType "Eternal Emblem"
 PlayEffect Red
 MinimapIcon 1 Red Triangle
 PlayAlertSound 11 250
@@ -1264,7 +1264,7 @@ SetBorderColor 40 10 90
 SetTextColor 40 10 90
 
 Show
-BaseType "Templar Splinter"
+BaseType "Eternal Empire Splinter"
 PlayEffect Red
 MinimapIcon 1 Red Circle
 PlayAlertSound 11 250
