@@ -4439,7 +4439,15 @@ Show
 Show
     ItemLevel >= 84
     Rarity = Rare
-    Class "Amulets" "Rings" "Belts" "Quivers"
+    Class "Amulets" "Rings" "Belts"
+    SetTextColor 255 215 0
+    SetBorderColor 255 215 0
+    SetFontSize 40
+
+Show # Rare Drops - Quivers - 84+ Rare Quivers
+    ItemLevel >= 84
+    Rarity = Rare
+    Class "Quivers"
     SetTextColor 255 215 0
     SetBorderColor 255 215 0
     SetFontSize 40
@@ -4447,14 +4455,28 @@ Show
 Show
     ItemLevel >= 72
     Rarity = Rare
-    Class "Amulets" "Rings" "Belts" "Quivers"
+    Class "Amulets" "Rings" "Belts"
+    SetTextColor 255 215 0
+    SetBorderColor 255 255 119
+    SetFontSize 38
+
+Show # Rare Drops - Quivers - 72+ Rare Quivers
+    ItemLevel >= 72
+    Rarity = Rare
+    Class "Quivers"
     SetTextColor 255 215 0
     SetBorderColor 255 255 119
     SetFontSize 38
 
 Show
     Rarity = Rare
-    Class "Amulets" "Rings" "Belts" "Quivers"
+    Class "Amulets" "Rings" "Belts"
+    SetBorderColor 255 255 119
+    SetFontSize 36
+
+Show # Rare Drops - Quivers - Other Rare Quivers
+    Rarity = Rare
+    Class "Quivers"
     SetBorderColor 255 255 119
     SetFontSize 36
 
@@ -6969,13 +6991,6 @@ Show # Gems - Vaal
     SetBorderColor 150 0 0
     SetBackgroundColor 80 80 80
 
-Show # Gems - Vaal - No Quality or Levels
-    Quality = 0
-    ItemLevel >= 68
-    Class "Active Skill Gems"
-    BaseType "Vaal"
-    SetBorderColor 150 0 0
-
 Show # Gems - Vaal
     Quality = 0
     Class "Active Skill Gems"
@@ -7088,12 +7103,6 @@ Show # Recipes - Quality Gems - High
     SetBorderColor 27 162 155
     PlayAlertSound 2 120
 
-Hide # Gems - Skill - No Quality or Levels
-    Quality = 0
-    ItemLevel >= 68
-    Class "Active Skill Gems"
-    SetBorderColor 27 162 155
-
 Show # Gems - Skill
     Quality = 0
     Class "Active Skill Gems"
@@ -7135,12 +7144,6 @@ Show # Recipes - Quality Gems - High
     SetTextColor 184 218 242
     SetBorderColor 0 100 150 200
     PlayAlertSound 2 120
-
-Hide # Gems - Support - No Quality or Levels
-    Quality = 0
-    ItemLevel >= 68
-    Class "Support Skill Gems"
-    SetBorderColor 0 100 150 200
 
 Show # Gems - Support
     Quality = 0
@@ -7511,7 +7514,7 @@ Show # Recipes - Chromatics - Large - After Act V
     SocketGroup "RGB"
     Height = 4
     Width = 2
-    ItemLevel > 45
+    ItemLevel >= 45
     Rarity < Unique
     SetTextColor 0 128 0
     SetBackgroundColor 0 0 0 140
@@ -7533,7 +7536,7 @@ Show # Recipes - Chromatics - Medium - In Maps
     SocketGroup "RGB"
     Height = 3
     Width = 2
-    ItemLevel > 68
+    ItemLevel >= 68
     Rarity < Unique
     SetTextColor 0 128 0
     SetBorderColor 0 0 0 0
