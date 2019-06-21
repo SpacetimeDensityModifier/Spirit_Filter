@@ -7685,6 +7685,7 @@ Show # Currency - Chromes
     SetBackgroundColor 3 23 3
     SetBorderColor 37 130 66
     PlayAlertSound 9 200
+    MinimapIcon 2 White Circle
     PlayEffect Blue Temp
 
 Show # Currency - Chances
@@ -7701,6 +7702,7 @@ Show # Currency - Alchs, Blessed
     SetBackgroundColor 28 24 0
     SetBorderColor 255 215 0
     PlayAlertSound 3 100
+    MinimapIcon 2 Blue Circle
     PlayEffect Blue Temp
 
 Show
