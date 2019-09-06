@@ -50,6 +50,7 @@
 # 2m. Betrayal
 # 2n. Synthesis
 # 2o. Legion
+# 2p. Blight
 # =============================================================
 # =============================================================
 # Section 3. Mapping
@@ -117,13 +118,15 @@
 # 14d. Bows
 # 14e. 1H Thrusting Swords
 # 14f. Daggers
-# 14g. 1H Maces
-# 14h. 2H Axes
-# 14i. 2H Swords
-# 14j. Claws
-# 14k. Sceptres
-# 14l. Staves
-# 134. Wands
+# 14g. Rune Daggers
+# 14h. 1H Maces
+# 14i. 2H Axes
+# 14j. 2H Swords
+# 14k. Claws
+# 14l. Sceptres
+# 14m. Staves
+# 14n. War Staffs
+# 14o. Wands
 # =============================================================
 # =============================================================
 # Section 15. Rare Armour Progression
@@ -242,12 +245,15 @@
 # 19d. Bows
 # 19e. 1H Thrusting Swords
 # 19f. Daggers
-# 19g. 1H Maces
-# 19h. 2H Axes
-# 19i. 2H Swords
-# 19j. Claws
-# 19k. Sceptres
-# 19l. Staves
+# 19g. Rune Daggers
+# 19h. 1H Maces
+# 19i. 2H Axes
+# 19j. 2H Swords
+# 19k. Claws
+# 19l. Sceptres
+# 19m. Staves
+# 19n. War Staffs
+# 19o. Wands 
 # =============================================================
 # =============================================================
 # 20. Else
@@ -255,8 +261,6 @@
 # =============================================================
 # 21. Tutorial
 # -------------------------------------------------------------
-# Open this filter in Filtration to see the relevant borders
-# for different types of items.
 # =============================================================
 # =============================================================
 # ========================FILTER START=========================
@@ -289,13 +293,12 @@
 #    SetBorderColor 224 109 73
 #Disabled Block End
 
-#Disabled Block Start
-#Show # Chance Bases - Headhunter
-#    Corrupted False
-#    Rarity = Normal
-#    BaseType "Leather Belt"
-#    SetBorderColor 224 109 73
-#Disabled Block End
+Show # Chance Bases - Headhunter
+    Corrupted False
+   Rarity = Normal
+   BaseType "Leather Belt"
+    SetBorderColor 224 109 73
+
 
 Show # Chance Bases - Inpulsa's Broken Heart
     Corrupted False
@@ -477,7 +480,7 @@ Show
 Show
     Class "Currency"
     BaseType "Prophecy"
-    Prophecy "Fated Connections" "Monstrous Treasure" "The Queen's Sacrifice" "Trash to Treasure"
+    Prophecy "Cleanser of Sins" "Fated Connections" "Monstrous Treasure" "Possessed Foe" "The Great Leader of the North" "The Queen's Sacrifice" "Trash to Treasure" "Wind and Thunder"
     SetTextColor 200 200 200
     SetBackgroundColor 74 15 199
     SetBorderColor 200 0 0
@@ -488,7 +491,7 @@ Show
 Show
     Class "Currency"
     BaseType "Prophecy"
-    Prophecy "A Vision of Ice and Fire" "Cleanser of Sins" "Darktongue's Shriek" "The Feral Lord V" "The Jeweller's Touch" "The King's Path" "The Plaguemaw V" "The Unbreathing Queen V" "Twice Enchanted" "Unbearable Whispers V" "Vaal Winds" "Wind and Thunder"
+    Prophecy "A Master Seeks Help" "A Prodigious Hand" "Ancient Doom" "Pools of Wealth" "Song of the Sekhema" "The Great Mind of the North" "The Jeweller's Touch" "Twice Enchanted" "Vaal Invasion" "Vaal Winds"
     SetTextColor 200 200 200
     SetBackgroundColor 74 15 199
     SetBorderColor 0 0 200
@@ -835,7 +838,7 @@ Show
 # Really Rare
 Show
     Class "Currency"
-    BaseType "Vial of Sacrifice" "Vial of the Ghost"
+    BaseType "Vial of Awakening" "Vial of Sacrifice" "Vial of the Ghost"
     SetTextColor 130 180 120
     SetBackgroundColor 180 70 20
     SetBorderColor 225 146 37
@@ -844,24 +847,16 @@ Show
 # Decent
 Show
     Class "Currency"
-    BaseType "Vial of Awakening"
+    BaseType "Vial of Consequence" "Vial of Dominance" "Vial of Fate" "Vial of Summoning" "Vial of the Ritual" "Vial of Transcendence"
     SetTextColor 130 180 120
     SetBackgroundColor 180 30 20
     SetBorderColor 255 255 119
     PlayAlertSound 6 220
 
-# Meh
+# Others
 Show
     Class "Currency"
-    BaseType "Vial of Dominance"
-    SetTextColor 130 180 120
-    SetBackgroundColor 160 30 20
-    SetBorderColor 136 136 255
-
-# Bad
-Show
-    Class "Currency"
-    BaseType "Vial of Consequence" "Vial of Fate" "Vial of the Ritual" "Vial of Transcendence" "Vial of Summoning"
+    BaseType "Vial of"
     SetTextColor 130 180 120
     SetBackgroundColor 120 30 20
     SetBorderColor 127 127 127
@@ -925,7 +920,7 @@ Show
 # Extreme Value
 Show
     Class "Currency"
-    BaseType "Bloodstained Fossil" "Faceted Fossil" "Fractured Fossil" "Hollow Fossil"
+    BaseType "Bloodstained Fossil" "Faceted Fossil" "Fractured Fossil" "Glyphic Fossil" "Hollow Fossil"
     SetBorderColor 30 60 180
     SetTextColor 250 110 250
     PlayAlertSound 16 250
@@ -935,7 +930,7 @@ Show
 # High Value
 Show
     Class "Currency"
-    BaseType "Glyphic Fossil" "Serrated Fossil"
+    BaseType "Enchanted Fossil" "Gilded Fossil" "Perfect Fossil" "Prismatic Fossil" "Sanctified Fossil" "Serrated Fossil" "Shuddering Fossil" "Tangled Fossil"
     SetBorderColor 30 60 180
     SetTextColor 200 110 250
     PlayAlertSound 16 200
@@ -945,7 +940,7 @@ Show
 # Bad Value Value
 Show
     Class "Currency"
-    BaseType "Frigid Fossil" "Metallic Fossil"
+    BaseType "Lucent Fossil" "Metallic Fossil" "Scorched Fossil"
     SetBorderColor 30 60 180
     SetTextColor 130 110 200
     PlayAlertSound 16 100
@@ -966,27 +961,19 @@ Show
 # Section: 2m. Betrayal
 
 # Extreme Value
-Show
-Class "Map Fragments"
-BaseType "Rusted Breach Scarab" "Rusted Perandus Scarab"
-SetTextColor 255 80 0
-SetBackgroundColor 100 60 0
-SetBorderColor 255 0 0
-MinimapIcon 2 Blue Triangle
 
-# High Value
 Show
 Class "Map Fragments"
-BaseType "Rusted Cartography Scarab" "Rusted Shaper Scarab" "Rusted Elder Scarab"
+BaseType "Gilded Bestiary Scarab" "Gilded Perandus Scarab" "Gilded Sulphite Scarab" "Polished Sulphite Scarab" "Rusted Sulphite Scarab"
 SetTextColor 255 80 0
 SetBackgroundColor 100 60 0
 SetBorderColor 220 220 0
-MinimapIcon 2 Blue Triangle
+MinimapIcon 2 Yellow Triangle
 
 # Good Value
 Show
 Class "Map Fragments"
-BaseType "Rusted Divination Scarab" "Rusted Sulphite Scarab"
+BaseType "Gilded Ambush Scarab" "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Divination Scarab" "Gilded Elder Scarab" "Gilded Harbinger Scarab" "Gilded Torment Scarab" "Polished Ambush Scarab" "Polished Bestiary Scarab" "Polished Cartography Scarab" "Polished Divination Scarab" "Polished Harbinger Scarab" "Polished Perandus Scarab" "Rusted Bestiary Scarab"
 SetTextColor 255 80 0
 SetBackgroundColor 100 60 0
 SetBorderColor 120 120 255
@@ -995,110 +982,12 @@ MinimapIcon 2 Blue Triangle
 # Average Value
 Show
 Class "Map Fragments"
-BaseType "Rusted Reliquary Scarab" "Rusted Bestiary Scarab" "Rusted Ambush Scarab" "Rusted Harbinger Scarab"
+BaseType "Scarab"
 SetTextColor 255 80 0
 SetBackgroundColor 100 60 0
 SetBorderColor 127 127 127
-MinimapIcon 2 Blue Triangle
+MinimapIcon 2 White Triangle
 
-# Low Value
-Show
-Class "Map Fragments"
-BaseType "Rusted Torment Scarab"
-SetTextColor 255 80 0
-SetBackgroundColor 100 60 0
-SetBorderColor 0 0 0 0
-MinimapIcon 2 Blue Triangle
-
-# Extreme Value
-Show
-Class "Map Fragments"
-BaseType "Polished Breach Scarab" "Polished Perandus Scarab"
-SetTextColor 255 80 0
-SetBackgroundColor 90 90 120
-SetBorderColor 255 0 0
-MinimapIcon 2 Blue Triangle
-
-# High Value
-Show
-Class "Map Fragments"
-BaseType "Polished Cartography Scarab" "Polished Shaper Scarab" "Polished Elder Scarab"
-SetTextColor 255 80 0
-SetBackgroundColor 90 90 120
-SetBorderColor 220 220 0
-MinimapIcon 2 Blue Triangle
-
-# Good Value
-Show
-Class "Map Fragments"
-BaseType "Polished Divination Scarab" "Polished Sulphite Scarab"
-SetTextColor 255 80 0
-SetBackgroundColor 90 90 120
-SetBorderColor 120 120 255
-MinimapIcon 2 Blue Triangle
-
-# Average Value
-Show
-Class "Map Fragments"
-BaseType "Polished Reliquary Scarab" "Polished Bestiary Scarab" "Polished Ambush Scarab" "Polished Harbinger Scarab"
-SetTextColor 255 80 0
-SetBackgroundColor 90 90 120
-SetBorderColor 127 127 127
-MinimapIcon 2 Blue Triangle
-
-# Low Value
-Show
-Class "Map Fragments"
-BaseType "Polished Torment Scarab"
-SetTextColor 255 80 0
-SetBackgroundColor 90 90 120
-SetBorderColor 0 0 0 0
-MinimapIcon 2 Blue Triangle
-
-# Extreme Value
-Show
-Class "Map Fragments"
-BaseType "Gilded Breach Scarab" "Gilded Perandus Scarab"
-SetTextColor 255 80 0
-SetBackgroundColor 190 160 40
-SetBorderColor 255 0 0
-MinimapIcon 2 Blue Triangle
-
-# High Value
-Show
-Class "Map Fragments"
-BaseType "Gilded Cartography Scarab" "Gilded Shaper Scarab" "Gilded Elder Scarab"
-SetTextColor 255 80 0
-SetBackgroundColor 190 160 40
-SetBorderColor 220 220 0
-MinimapIcon 2 Blue Triangle
-
-# Good Value
-Show
-Class "Map Fragments"
-BaseType "Gilded Divination Scarab" "Gilded Sulphite Scarab"
-SetTextColor 255 80 0
-SetBackgroundColor 190 160 40
-SetBorderColor 120 120 255
-MinimapIcon 2 Blue Triangle
-
-# Average Value
-Show
-Class "Map Fragments"
-BaseType "Gilded Reliquary Scarab" "Gilded Bestiary Scarab" "Gilded Ambush Scarab" "Gilded Harbinger Scarab"
-SetTextColor 255 80 0
-SetBackgroundColor 190 160 40
-SetBorderColor 127 127 127
-MinimapIcon 2 Blue Triangle
-
-# Low Value
-Show
-Class "Map Fragments"
-BaseType "Gilded Torment Scarab"
-SetTextColor 255 80 0
-SetBackgroundColor 190 160 40
-SetBorderColor 0 0 0 0
-MinimapIcon 2 Blue Triangle
 
 Show
 HasExplicitMod "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of the Veil" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil" "Veiled"
@@ -1170,7 +1059,7 @@ MinimapIcon 1 Red Triangle
 # Ultra
 
 Show
-BaseType "Eldritch Incubator" "Geomancer's Incubator" "Time-Lost Incubator"
+BaseType "Geomancer's Incubator" "Time-Lost Incubator"
 PlayEffect Red
 MinimapIcon 1 Red Triangle
 PlayAlertSound 16 250
@@ -1181,15 +1070,13 @@ SetTextColor 245 130 30
 # Good
 
 Show
-BaseType "Cartographer's Incubator" "Singular Incubator" "Abyssal Incubator" "Celestial Jeweller's Incubator" "Eldritch Incubator" "Infused Incubator"
+BaseType "Eldritch Incubator" "Foreboding Incubator" "Thaumaturge's Incubator"
 PlayEffect Yellow
 MinimapIcon 1 Yellow Triangle
 PlayAlertSound 16 200
 SetBackgroundColor 40 10 90 220
 SetBorderColor 255 210 255 120
 SetTextColor 215 200 50
-
-# Others will be sorted as we find out how good they are
 
 Show
 BaseType "Incubator"
@@ -1223,7 +1110,7 @@ BaseType "Maraketh Emblem"
 PlayEffect Red
 MinimapIcon 1 Red Triangle
 PlayAlertSound 11 250
-SetBackgroundColor 240 180 40
+SetBackgroundColor 200 150 30
 SetBorderColor 40 10 90
 SetTextColor 40 10 90
 
@@ -1232,7 +1119,7 @@ BaseType "Maraketh Splinter"
 PlayEffect Red
 MinimapIcon 1 Red Circle
 PlayAlertSound 11 250
-SetBackgroundColor 240 180 40
+SetBackgroundColor 200 150 30
 SetBorderColor 40 10 90
 SetTextColor 255 200 240
 
@@ -1290,11 +1177,47 @@ SetBackgroundColor 155 20 30
 SetBorderColor 40 10 90
 SetTextColor 255 200 240
 
+# Section: 2p. Blight
+
+Show
+BlightedMap True
+MapTier < 6
+SetTextColor 200 140 30
+
+Show
+BlightedMap True
+MapTier < 11
+SetTextColor 200 140 30
+SetBackgroundColor 40 40 0
+
+Show
+BlightedMap True
+MapTier >= 11
+SetTextColor 200 140 30
+SetBackgroundColor 40 0 0
+
+# Extreme Value
+
+Show
+BaseType "Golden Oil"
+SetBackgroundColor 180 130 50
+SetTextColor 0 0 0
+SetBorderColor 170 0 0
+PlayAlertSound 3 200
+PlayEffect Red
+MinimapIcon 2 Red Triangle
+
+Show
+BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Silver Oil" "Golden Oil"
+SetBackgroundColor 180 130 50
+SetTextColor 0 0 0
+PlayAlertSound 3 200
+PlayEffect Blue
+MinimapIcon 2 Yellow Triangle
+
 # Section: 3. Mapping
 
 # Section: 3a. Warbands Maps
-
-# Will update once we know which maps the warbands bosses call home in this new map series
 
 #Disabled Block Start
 #Show
@@ -1390,7 +1313,7 @@ Show
 # Atlas Shaper Bases
 Show
     ShaperItem True
-    BaseType "Marble Amulet" "Blue Pearl Amulet" "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring"
+    BaseType "Marble Amulet" "Blue Pearl Amulet" "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring" "Bone Helmet" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Two-Toned Boots" "Vermillion Ring" "Cerulean Ring" "Convoking Wand"
     SetBackgroundColor 100 115 125
     SetBorderColor 215 115 210
     SetFontSize 38
@@ -1399,11 +1322,32 @@ Show
 # Atlas Elder Bases
 Show
     ElderItem True
-    BaseType "Marble Amulet" "Blue Pearl Amulet" "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring"
+    BaseType "Marble Amulet" "Blue Pearl Amulet" "Vanguard Belt" "Crystal Belt" "Opal Ring" "Steel Ring" "Bone Helmet" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Two-Toned Boots" "Vermillion Ring" "Cerulean Ring" "Convoking Wand"
     SetBackgroundColor 59 59 87
     SetBorderColor 215 115 210
     SetFontSize 38
     PlayAlertSound 4 255
+
+Show # Atlas - 84+ - Convoking Wand - Normal
+    ItemLevel >= 84
+    Rarity = Normal
+    BaseType "Convoking Wand"
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+
+Show # Atlas - 84+ - Cerulean Ring - Normal
+    ItemLevel >= 84
+    Rarity = Normal
+    BaseType "Cerulean Ring"
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+
+Show # Atlas - 84+ - Vermillion Ring - Normal
+    ItemLevel >= 84
+    Rarity = Normal
+    BaseType "Vermillion Ring"
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
 
 Show # Atlas - 84+ - Steel Ring - Normal
     ItemLevel >= 84
@@ -1481,6 +1425,30 @@ Show # Atlas - 84+ - Fingerless Silk Gloves - Normal
     BaseType "Fingerless Silk Gloves"
     SetBackgroundColor 190 60 250 180
     SetBorderColor 215 115 210
+
+Show # Atlas - 84+ - Convoking Wand - Magic
+    ItemLevel >= 84
+    Rarity = Magic
+    BaseType "Convoking Wand"
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Cerulean Ring - Magic
+    ItemLevel >= 84
+    Rarity = Magic
+    BaseType "Cerulean Ring"
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Vermillion Ring - Magic
+    ItemLevel >= 84
+    Rarity = Magic
+    BaseType "Vermillion Ring"
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
 
 Show # Atlas - 84+ - Steel Ring - Magic
     ItemLevel >= 84
@@ -1566,6 +1534,30 @@ Show # Atlas - 84+ - Fingerless Silk Gloves - Magic
     ItemLevel >= 84
     Rarity = Magic
     BaseType "Fingerless Silk Gloves"
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Convoking Wand - Rare
+    ItemLevel >= 84
+    Rarity = Rare
+    BaseType "Convoking Wand"
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Cerulean Ring - Rare
+    ItemLevel >= 84
+    Rarity = Rare
+    BaseType "Cerulean Ring"
+    SetBackgroundColor 190 60 250 180
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - 84+ - Vermillion Ring - Rare
+    ItemLevel >= 84
+    Rarity = Rare
+    BaseType "Vermillion Ring"
     SetBackgroundColor 190 60 250 180
     SetBorderColor 215 115 210
     PlayAlertSound 2 150
@@ -1660,10 +1652,25 @@ Show # Atlas - 84+ - Fingerless Silk Gloves - Rare
 
 Show
     Rarity = Unique
-    BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+    BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Vermillion Ring" "Cerulean Ring" "Convoking Wand"
     SetBorderColor 215 115 210
     SetFontSize 38
     PlayAlertSound 2 150
+
+Show # Atlas - Other - Convoking Wand - Normal
+    Rarity = Normal
+    BaseType "Convoking Wand"
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Cerulean Ring - Normal
+    Rarity = Normal
+    BaseType "Cerulean Ring"
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Vermillion Ring - Normal
+    Rarity = Normal
+    BaseType "Vermillion Ring"
+    SetBorderColor 215 115 210
 
 Show # Atlas - Other - Steel Ring - Normal
     Rarity = Normal
@@ -1720,6 +1727,21 @@ Show # Atlas - Other - Fingerless Silk Gloves - Normal
     BaseType "Fingerless Silk Gloves"
     SetBorderColor 215 115 210
 
+Show # Atlas - Other - Convoking Wand - Magic
+    Rarity = Magic
+    BaseType "Convoking Wand"
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Cerulean Ring - Magic
+    Rarity = Magic
+    BaseType "Cerulean Ring"
+    SetBorderColor 215 115 210
+
+Show # Atlas - Other - Vermillion Ring - Magic
+    Rarity = Magic
+    BaseType "Vermillion Ring"
+    SetBorderColor 215 115 210
+
 Show # Atlas - Other - Steel Ring - Magic
     Rarity = Magic
     BaseType "Steel Ring"
@@ -1774,6 +1796,24 @@ Show # Atlas - Other - Fingerless Silk Gloves - Magic
     Rarity = Magic
     BaseType "Fingerless Silk Gloves"
     SetBorderColor 215 115 210
+
+Show # Atlas - Other - Convoking - Rare
+    Rarity = Rare
+    BaseType "Convoking Wand"
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - Other - Cerulean Ring - Rare
+    Rarity = Rare
+    BaseType "Cerulean Ring"
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
+
+Show # Atlas - Other - Vermillion Ring - Rare
+    Rarity = Rare
+    BaseType "Vermillion Ring"
+    SetBorderColor 215 115 210
+    PlayAlertSound 2 150
 
 Show # Atlas - Other - Steel Ring - Rare
     Rarity = Rare
@@ -4347,7 +4387,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Coronal Leather" "Crusader Boots" "Ezomyte Tower Shield" "Full Dragonscale" "Full Wyrmscale" "Gemstone Sword" "Glorious Plate" "Greatwolf Talisman" "Hydrascale Gauntlets" "Imperial Maul" "Jewelled Foil" "Legion Gloves" "Nubuck Boots" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Riveted Gloves" "Royal Axe" "Ruby Amulet" "Ruby Flask" "Sapphire Flask" "Siege Axe" "Sorcerer Boots" "Vaal Blade" "Vaal Rapier" "Varnished Coat" "Void Axe" "Zodiac Leather"
+    BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Full Dragonscale" "Gemstone Sword" "Glorious Plate" "Greatwolf Talisman" "Imperial Maul" "Jewelled Foil" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Nubuck Boots" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Riveted Gloves" "Royal Axe" "Ruby Amulet" "Sapphire Flask" "Savant's Robe" "Siege Axe" "Silk Gloves" "Sorcerer Boots" "Timeless Jewel" "Vaal Rapier" "Wereclaw Talisman" "Wyrmscale Doublet" "Zodiac Leather"
     SetTextColor 175 96 37
     SetBackgroundColor 255 255 255
     SetBorderColor 175 96 37
@@ -4360,7 +4400,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Arcanist Gloves" "Assassin's Boots" "Blood Sceptre" "Carnal Sceptre" "Champion Kite Shield" "Gladiator Plate" "Jingling Spirit Shield" "Karui Maul" "Midnight Blade" "Nightmare Mace" "Occultist's Vestment" "Polished Spiked Shield" "Rawhide Tower Shield" "Sacrificial Garb" "Serpentscale Gauntlets" "Silk Gloves" "Steel Ring" "Steelwood Bow" "Vaal Spirit Shield" "Wereclaw Talisman" "Wyrmscale Doublet"
+    BaseType "Ancient Gauntlets" "Ancient Spirit Shield" "Arcanist Gloves" "Archon Kite Shield Piece" "Assassin's Boots" "Bismuth Flask" "Blood Raiment" "Blood Sceptre" "Blue Pearl Amulet" "Blunt Arrow Quiver Piece" "Callous Mask Piece" "Carnal Sceptre" "Champion Kite Shield" "Citrine Amulet" "Clasped Mitts" "Cloth Belt Piece" "Coiled Staff" "Cutlass" "Deerskin Gloves" "Elegant Foil" "Ezomyte Burgonet" "Gladiator Plate" "Grand Mana Flask" "Harlequin Mask" "Highborn Staff" "Hydrascale Gauntlets" "Imperial Claw" "Imperial Staff" "Iron Sceptre" "Jasper Chopper" "Necromancer Silks" "Occultist's Vestment" "Rawhide Tower Shield" "Ruby Flask" "Sacrificial Garb" "Sanctified Life Flask" "Steel Ring" "Steelscale Gauntlets" "Steelwood Bow" "Timeworn Claw" "Two-Stone Ring" "Vaal Spirit Shield" "Variscite Blade" "Varnished Coat" "Void Axe"
     SetBackgroundColor 40 40 0
     SetBorderColor 175 96 37
     SetFontSize 44
@@ -4372,7 +4412,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Agate Amulet" "Amber Amulet" "Hubris Circlet" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Rustic Sash" "Silver Flask" "Topaz Ring" "Two-Stone Ring" "Unset Ring" "Vaal Axe" "Blood Raiment" "Ebony Tower Shield" "Fiend Dagger" "Gold Amulet" "Gold Ring" "Harlequin Mask" "Imperial Bow" "Iron Ring" "Onyx Amulet" "Prismatic Ring" "Prophet Crown" "Sadist Garb" "Stibnite Flask" "Studded Belt"
+    BaseType "Agate Amulet" "Amber Amulet" "Fiend Dagger" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Ruby Ring" "Sapphire Ring" "Silver Flask" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Carved Wand" "Coral Amulet" "Ebony Tower Shield" "Gavel" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Heavy Belt" "Imperial Bow" "Imperial Skean" "Iron Ring" "Judgement Staff" "Lacquered Garb" "Magistrate Crown" "Murder Boots" "Nightmare Bascinet" "Onyx Amulet" "Prophet Crown" "Sadist Garb" "Sage Wand" "Stealth Boots" "Stibnite Flask" "Studded Belt" "Unset Ring"
     SetBackgroundColor 0 0 0
     SetBorderColor 155 255 40
     SetFontSize 36
@@ -4384,7 +4424,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Brass Maul" "Clasped Boots" "Cleaver" "Coral Ring" "Crude Bow" "Crusader Plate" "Crystal Wand" "Death Bow" "Fire Arrow Quiver" "Gavel" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Golden Buckler" "Great Crown" "Great Mallet" "Iron Circlet" "Iron Hat" "Iron Mask" "Ironscale Boots" "Jade Hatchet" "Jagged Maul" "Latticed Ringmail" "Leather Hood" "Long Bow" "Moonstone Ring" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Rusted Sword" "Scholar Boots" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Skinning Knife" "Sledgehammer" "Spiraled Wand" "Steel Circlet" "Strapped Leather" "Tarnished Spirit Shield" "Tyrant's Sekhem" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
+    BaseType "Brass Maul" "Clasped Boots" "Cleaver" "Coral Ring" "Crude Bow" "Crusader Plate" "Crystal Wand" "Death Bow" "Fire Arrow Quiver" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Golden Buckler" "Great Crown" "Great Mallet" "Iron Circlet" "Iron Hat" "Iron Mask" "Iron Staff" "Ironscale Boots" "Jade Hatchet" "Jagged Maul" "Latticed Ringmail" "Leather Hood" "Long Bow" "Moonstone Ring" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Rusted Sword" "Scholar Boots" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Skinning Knife" "Sledgehammer" "Spiraled Wand" "Strapped Leather" "Tarnished Spirit Shield" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
     SetBackgroundColor 0 0 0
     SetBorderColor 155 55 180
     SetFontSize 36
@@ -4396,7 +4436,7 @@ Show
 Show
     LinkedSockets < 6
     Rarity = Unique
-    BaseType "Assassin Bow" "Bronzescale Boots" "Deerskin Gloves" "Ezomyte Blade" "Holy Chainmail" "Imperial Skean" "Judgement Staff" "Opal Wand" "Soldier Helmet" "Sulphur Flask" "Timeworn Claw" "Titanium Spirit Shield" "War Hammer"
+    BaseType "Abyssal Axe" "Conjurer Gloves" "Coronal Leather" "Corsair Sword" "Deicide Mask" "Destiny Leather" "Engraved Wand" "Ezomyte Staff" "Full Wyrmscale" "Hellion's Paw" "Leather Cap" "Midnight Blade" "Nubuck Gloves" "Opal Ring" "Penetrating Arrow Quiver" "Raven Mask" "Serpentscale Gauntlets" "Silken Hood" "Sinner Tricorne" "Sorcerer Gloves" "Thorium Spirit Shield" "Throat Stabber" "Tornado Wand" "Vaal Regalia"
     SetBackgroundColor 30 0 30
     SetBorderColor 125 25 100
     SetFontSize 36
@@ -6927,7 +6967,7 @@ Show # Progression - Accessories - Quivers - Spike Point - Normal - Very Early G
 # Fixes partial name highlighting between cards.
 Show
     Class "Divination"
-    BaseType "The Wolf's Shadow" "The Master Artisan" 
+    BaseType "The Wolf's Shadow" "The Master Artisan" "The Demoness" "The Wolf's Legacy"
     SetBackgroundColor 34 42 48
     SetBorderColor 127 127 127
     SetFontSize 36
@@ -6936,7 +6976,7 @@ Show
 # Ultra
 Show
     Class "Divination"
-    BaseType "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "Burning Blood" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Pride Before the Fall" "Pride of the First Ones" "The Celestial Justicar" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Life Thief" "The Nurse" "The Samurai's Eye" "The Spark and the Flame" "The Undisputed" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
+    BaseType "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "Burning Blood" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Nook's Crown" "Pride of the First Ones" "Seven Years Bad Luck" "The Celestial Stone" "The Damned" "The Demon" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Landing" "The Life Thief" "The Mayor" "The Nurse" "The Price of Loyalty" "The Professor" "The Queen" "The Risk" "The Saint's Treasure" "The Samurai's Eye" "The Sephirot" "The Spark and the Flame" "The Undaunted" "The Valkyrie" "The Vast" "The Wolven King's Bite" "The World Eater" "Void of the Elements" "Wealth and Power"
     SetBackgroundColor 72 115 148
     SetBorderColor 175 96 37
     SetFontSize 44
@@ -6947,7 +6987,7 @@ Show
 # Super
 Show
     Class "Divination"
-    BaseType "Chaotic Disposition" "Last Hope" "Seven Years Bad Luck" "The Cartographer" "The Enlightened" "The Gladiator" "The Porcupine" "The Queen" "The Risk" "The Sacrifice" "The Saint's Treasure" "The Void" "Harmony of Souls" "Lucky Connections"
+    BaseType "Chaotic Disposition" "Last Hope" "Seven Years Bad Luck" "The Cartographer" "The Enlightened" "The Gladiator" "The Porcupine" "The Queen" "The Risk" "The Sacrifice" "The Saint's Treasure" "The Void" "Harmony of Souls" "Lucky Connections" "Azyran's Reward" "Boon of the First Ones" "Buried Treasure" "Chaotic Disposition" "Dark Dreams" "Pride Before the Fall" "Remembrance" "The Artist" "The Bargain" "The Cartographer" "The Celestial Justicar" "The Enlightened" "The Eye of Terror" "The Hoarder" "The King's Heart" "The Seeker" "The Void" "The Wolf"
     SetBackgroundColor 64 83 97
     SetBorderColor 255 255 0
     SetFontSize 42
@@ -6958,7 +6998,7 @@ Show
 # Decent
 Show
     Class "Divination"
-    BaseType "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Dark Dreams" "Earth Drinker" "Emperor of Purity" "Heterochromia" "Humility" "Left to Fate" "Mawr Blaidd" "Monochrome" "Sambodhi's Vow" "The Artist" "The Beast" "The Breach" "The Brittle Emperor" "The Celestial Stone" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Deep Ones" "The Dreamer" "The Endless Darkness" "The Ethereal" "The Hale Heart" "The Hoarder" "The Hunger" "The Jeweller's Boon" "The Journey" "The Landing" "The Master" "The Mayor" "The Offering" "The Polymath" "The Professor" "The Scavenger" "The Seeker" "The Sephirot" "The Soul" "The Standoff" "The Throne" "The Undaunted" "The Valkyrie" "The Vast" "The Warlord" "The Wind" "The Wolf" "Emperor's Luck" "Loyalty" "The Cacophony" "The Fool" "Three Voices" "The Innocent" "The Survivalist" "The Union"
+    BaseType "Akil's Prophecy" "Alone in the Darkness" "Arrogance of the Vaal" "Bowyer's Dream" "Demigod's Wager" "Emperor of Purity" "Glimmer of Hope" "Heterochromia" "Hope" "Humility" "Last Hope" "Left to Fate" "Lucky Deck" "Monochrome" "Perfection" "Rebirth" "Sambodhi's Vow" "The Breach" "The Brittle Emperor" "The Cacophony" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Deal" "The Dreamer" "The Endless Darkness" "The Ethereal" "The Formless Sea" "The Hale Heart" "The Hunger" "The Innocent" "The Insatiable" "The Jeweller's Boon" "The Journey" "The Last One Standing" "The Master" "The Offering" "The Old Man" "The Polymath" "The Porcupine" "The Sacrifice" "The Side Quest" "The Skeleton" "The Soul" "The Thaumaturgist" "The Throne" "The Twilight Moon" "The Undisputed" "The Valley of Steel Boxes" "The Warlord" "The Wind" "The Wretched" "Three Voices" "Time-Lost Relic" "Vanity" "Vile Power" "Boon of Justice" "Coveted Possession" "Harmony of Souls" "Lucky Connections" "More is Never Enough" "No Traces" "The Fool" "The Inventor" "The Union" "Vinia's Token"
     SetBackgroundColor 34 42 48
     SetBorderColor 136 136 255
     SetFontSize 38
@@ -6969,7 +7009,7 @@ Show
 # Trash
 Show
     Class "Divination"
-    BaseType "A Mother's Parting Gift" "Anarchy's Price" "Birth of the Three" "Boundless Realms" "Call to the First Ones" "Cartographer's Delight" "Dark Temptation" "Death" "Destined to Crumble" "Dying Anguish" "Grave Knowledge" "Lantador's Lost Love" "Light and Truth" "Might is Right" "Prosperity" "Rain Tempter" "Rats" "Shard of Fate" "Struck by Lightning" "The Army of Blood" "The Blazing Fire" "The Calling" "The Carrion Crow" "The Cataclysm" "The Coming Storm" "The Conduit" "The Doppelganger" "The Endurance" "The Explorer" "The Feast" "The Flora's Gift" "The Hermit" "The Incantation" "The King's Blade" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Opulent" "The Pack Leader" "The Pact" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Sigil" "The Summoner" "The Sun" "The Surgeon" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Witch" "Thirst for Knowledge" "Thunderous Skies" "Tranquillity" "Turn the Other Cheek" "Volatile Power" "The Scholar"
+    BaseType "A Mother's Parting Gift" "Anarchy's Price" "Birth of the Three" "Dying Anguish" "Lantador's Lost Love" "Prosperity" "Struck by Lightning" "The Carrion Crow" "The Coming Storm" "The Endurance" "The Hermit" "The Incantation" "The King's Blade" "The Lich" "The Lunaris Priestess" "The Metalsmith's Gift" "The Opulent" "The Rabid Rhoa" "The Warden" "The Watcher" "Turn the Other Cheek"
     SetBorderColor 0 0 0 0
 
 # Everything else
@@ -9527,7 +9567,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 84+ - Normal - Unsocketed
     ItemLevel >= 84
     Rarity = Normal
     Class "Daggers"
-    BaseType "Sai" "Ambusher" "Platinum Kris" "Demon Dagger"
+    BaseType "Sai" "Ambusher"    
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
@@ -9536,7 +9576,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 84+ - Normal - Linked
     ItemLevel >= 84
     Rarity = Normal
     Class "Daggers"
-    BaseType "Sai" "Ambusher" "Platinum Kris" "Demon Dagger"
+    BaseType "Sai" "Ambusher"    
     SetTextColor 255 255 255
     SetBorderColor 136 136 255
 
@@ -9545,7 +9585,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 84+ - Normal - Socketed
     ItemLevel >= 84
     Rarity = Normal
     Class "Daggers"
-    BaseType "Sai" "Demon Dagger" "Platinum Kris" "Ambusher"
+    BaseType "Sai"     "Ambusher"
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
@@ -9554,7 +9594,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 84+ - Magic - Unsocketed
     ItemLevel >= 84
     Rarity = Magic
     Class "Daggers"
-    BaseType "Sai" "Ambusher" "Platinum Kris" "Demon Dagger"
+    BaseType "Sai" "Ambusher"    
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
@@ -9563,7 +9603,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 84+ - Magic - Linked
     ItemLevel >= 84
     Rarity = Magic
     Class "Daggers"
-    BaseType "Sai" "Demon Dagger" "Platinum Kris" "Ambusher"
+    BaseType "Sai"     "Ambusher"
     SetTextColor 30 144 255
     SetBorderColor 136 136 255
 
@@ -9572,7 +9612,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 84+ - Magic - Socketed
     ItemLevel >= 84
     Rarity = Magic
     Class "Daggers"
-    BaseType "Sai" "Ambusher" "Demon Dagger" "Platinum Kris"
+    BaseType "Sai" "Ambusher"    
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
@@ -9581,7 +9621,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Normal - Unsocketed
     ItemLevel >= 77
     Rarity = Normal
     Class "Daggers"
-    BaseType "Sai" "Platinum Kris" "Ambusher" "Demon Dagger"
+    BaseType "Sai"   "Ambusher"  
     SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Normal - Linked
@@ -9589,7 +9629,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Normal - Linked
     ItemLevel >= 77
     Rarity = Normal
     Class "Daggers"
-    BaseType "Sai" "Demon Dagger" "Ambusher" "Platinum Kris"
+    BaseType "Sai"   "Ambusher"  
     SetTextColor 255 255 255
     SetBorderColor 127 127 127
 
@@ -9598,7 +9638,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Normal - Socketed
     ItemLevel >= 77
     Rarity = Normal
     Class "Daggers"
-    BaseType "Sai" "Ambusher" "Demon Dagger" "Platinum Kris"
+    BaseType "Sai" "Ambusher"    
     SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Magic - Unsocketed
@@ -9606,7 +9646,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Magic - Unsocketed
     ItemLevel >= 77
     Rarity = Magic
     Class "Daggers"
-    BaseType "Sai" "Platinum Kris" "Ambusher" "Demon Dagger"
+    BaseType "Sai"   "Ambusher"  
     SetBorderColor 127 127 127
 
 Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Magic - Linked
@@ -9614,7 +9654,7 @@ Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Magic - Linked
     ItemLevel >= 77
     Rarity = Magic
     Class "Daggers"
-    BaseType "Sai" "Demon Dagger" "Ambusher" "Platinum Kris"
+    BaseType "Sai"   "Ambusher"  
     SetTextColor 30 144 255
     SetBorderColor 127 127 127
 
@@ -9623,10 +9663,116 @@ Hide # Crafting - Weapons - Daggers - Ilvl 77+ - Magic - Socketed
     ItemLevel >= 77
     Rarity = Magic
     Class "Daggers"
-    BaseType "Sai" "Platinum Kris" "Demon Dagger" "Ambusher"
+    BaseType "Sai"     "Ambusher"
     SetBorderColor 127 127 127
 
-# Section: 14g. 1H Maces
+# Section: 14g. Rune Daggers
+
+Hide # Crafting - Weapons - Rune Dagger - Ilvl 84+ - Normal - Unsocketed
+    Sockets < 3
+    ItemLevel >= 84
+    Rarity = Normal
+    Class "Rune Dagger"
+    BaseType "Platinum Kris" "Demon Dagger"        
+    SetTextColor 255 255 255
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - Rune Dagger - Ilvl 84+ - Normal - Linked
+    LinkedSockets >= 3
+    ItemLevel >= 84
+    Rarity = Normal
+    Class "Rune Dagger"
+    BaseType "Platinum Kris" "Demon Dagger"        
+    SetTextColor 255 255 255
+    SetBorderColor 136 136 255
+
+Hide # Crafting - Weapons - Rune Dagger - Ilvl 84+ - Normal - Socketed
+    Sockets >= 3
+    ItemLevel >= 84
+    Rarity = Normal
+    Class "Rune Dagger"
+    BaseType "Platinum Kris" "Demon Dagger"        
+    SetTextColor 255 255 255
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - Rune Dagger - Ilvl 84+ - Magic - Unsocketed
+    Sockets < 3
+    ItemLevel >= 84
+    Rarity = Magic
+    Class "Rune Dagger"
+    BaseType "Platinum Kris" "Demon Dagger"        
+    SetTextColor 30 144 255
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - Rune Dagger - Ilvl 84+ - Magic - Linked
+    LinkedSockets >= 3
+    ItemLevel >= 84
+    Rarity = Magic
+    Class "Rune Dagger"
+    BaseType "Platinum Kris" "Demon Dagger"        
+    SetTextColor 30 144 255
+    SetBorderColor 136 136 255
+
+Hide # Crafting - Weapons - Rune Dagger - Ilvl 84+ - Magic - Socketed
+    Sockets >= 3
+    ItemLevel >= 84
+    Rarity = Magic
+    Class "Rune Dagger"
+    BaseType "Platinum Kris" "Demon Dagger"        
+    SetTextColor 30 144 255
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - Rune Dagger - Ilvl 77+ - Normal - Unsocketed
+    Sockets < 3
+    ItemLevel >= 77
+    Rarity = Normal
+    Class "Rune Dagger"
+    BaseType "Platinum Kris" "Demon Dagger"        
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - Rune Dagger - Ilvl 77+ - Normal - Linked
+    LinkedSockets >= 3
+    ItemLevel >= 77
+    Rarity = Normal
+    Class "Rune Dagger"
+    BaseType "Platinum Kris" "Demon Dagger"        
+    SetTextColor 255 255 255
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - Rune Dagger - Ilvl 77+ - Normal - Socketed
+    Sockets >= 3
+    ItemLevel >= 77
+    Rarity = Normal
+    Class "Rune Dagger"
+    BaseType "Platinum Kris" "Demon Dagger"        
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - Rune Dagger - Ilvl 77+ - Magic - Unsocketed
+    Sockets < 3
+    ItemLevel >= 77
+    Rarity = Magic
+    Class "Rune Dagger"
+    BaseType "Platinum Kris" "Demon Dagger"        
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - Rune Dagger - Ilvl 77+ - Magic - Linked
+    LinkedSockets >= 3
+    ItemLevel >= 77
+    Rarity = Magic
+    Class "Rune Dagger"
+    BaseType "Platinum Kris" "Demon Dagger"        
+    SetTextColor 30 144 255
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - Rune Dagger - Ilvl 77+ - Magic - Socketed
+    Sockets >= 3
+    ItemLevel >= 77
+    Rarity = Magic
+    Class "Rune Dagger"
+    BaseType "Platinum Kris" "Demon Dagger"        
+    SetBorderColor 127 127 127
+
+# Section: 14h. 1H Maces
 
 Hide # Crafting - Weapons - 1H Maces - Ilvl 83+ - Normal - Unsocketed
     Sockets < 3
@@ -9720,7 +9866,7 @@ Hide # Crafting - Weapons - 1H Maces - Ilvl 77+ - Magic - Socketed
     BaseType "Behemoth Mace" "Nightmare Mace" "Auric Mace"
     SetBorderColor 127 127 127
 
-# Section: 14h. 2H Axes
+# Section: 14i. 2H Axes
 
 Hide # Crafting - Weapons - 2H Axes - Ilvl 83+ - Normal - Unsocketed
     Sockets < 4
@@ -9814,7 +9960,7 @@ Hide # Crafting - Weapons - 2H Axes - Ilvl 77+ - Magic - Socketed
     BaseType "Fleshripper" "Vaal Axe" "Despot Axe"
     SetBorderColor 127 127 127
 
-# Section: 14i. 2H Swords
+# Section: 14j. 2H Swords
 
 Hide # Crafting - Weapons - 2H Swords - Ilvl 83+ - Normal - Unsocketed
     Sockets < 4
@@ -9908,7 +10054,7 @@ Hide # Crafting - Weapons - 2H Swords - Ilvl 77+ - Magic - Socketed
     BaseType "Exquisite Blade" "Infernal Sword"
     SetBorderColor 127 127 127
 
-# Section: 14j. Claws
+# Section: 14k. Claws
 
 Hide # Crafting - Weapons - Claws - Ilvl 83+ - Normal - Unsocketed
     Sockets < 3
@@ -10002,7 +10148,7 @@ Hide # Crafting - Weapons - Claws - Ilvl 77+ - Magic - Socketed
     BaseType "Gemini Claw" "Terror Claw" "Imperial Claw"
     SetBorderColor 127 127 127
 
-# Section: 14k. Sceptres
+# Section: 14l. Sceptres
 
 Hide # Crafting - Weapons - Sceptres - Ilvl 84+ - Normal - Unsocketed
     Sockets < 3
@@ -10096,7 +10242,7 @@ Hide # Crafting - Weapons - Sceptres - Ilvl 77+ - Magic - Socketed
     BaseType "Sambar Sceptre" "Opal Sceptre" "Void Sceptre"
     SetBorderColor 127 127 127
 
-# Section: 14l. Staves
+# Section: 14m. Staves
 
 Hide # Crafting - Weapons - Staves - Ilvl 84+ - Normal - Unsocketed
     Sockets < 4
@@ -10190,7 +10336,7 @@ Hide # Crafting - Weapons - Staves - Ilvl 77+ - Magic - Socketed
     BaseType "Eclipse Staff" "Imperial Staff"
     SetBorderColor 127 127 127
 
-# Section: 14m. Wands
+# Section: 14n. Wands
 
 Hide # Crafting - Weapons - Wands - Ilvl 84+ - Normal - Unsocketed
     Sockets < 3
@@ -14783,7 +14929,7 @@ Show
 # Section: 16f. Daggers
 
 # Maraketh
-Show # Attack Daggers
+Show # Rare Attack Daggers
     ItemLevel >= 84
     Rarity = Rare
     Class "Daggers"
@@ -14793,7 +14939,7 @@ Show # Attack Daggers
     SetBorderColor 255 255 119
 
 # Maraketh
-Show # Attack Daggers
+Show # Rare Attack Daggers
     ItemLevel >= 77
     Rarity = Rare
     Class "Daggers"
@@ -14802,7 +14948,7 @@ Show # Attack Daggers
     SetBorderColor 255 255 119
 
 # Maraketh
-Show # Attack Daggers
+Show # Rare Attack Daggers
     Rarity = Rare
     Class "Daggers"
     BaseType "Sai"
@@ -14816,7 +14962,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 255 255 119
 
-Show # Attack Daggers
+Show # Rare Attack Daggers
     ItemLevel <= 10
     Rarity = Rare
     BaseType "Skinning Knife"
@@ -14830,7 +14976,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 255 255 119
 
-Show # Attack Daggers
+Show # Rare Attack Daggers
     ItemLevel <= 20
     Rarity = Rare
     BaseType "Stiletto"
@@ -14865,7 +15011,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-Show # Attack Daggers
+Show # Rare Attack Daggers
     ItemLevel <= 36
     Rarity = Rare
     BaseType "Flaying Knife"
@@ -14873,7 +15019,7 @@ Show # Attack Daggers
     SetBorderColor 136 136 255
 
 # Maraketh
-Show # Attack Daggers
+Show # Rare Attack Daggers
     ItemLevel <= 38
     Rarity = Rare
     BaseType "Prong Dagger"
@@ -14887,7 +15033,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-Show # Attack Daggers
+Show # Rare Attack Daggers
     ItemLevel <= 44
     Rarity = Rare
     BaseType "Poignard"
@@ -14923,14 +15069,14 @@ Show
     SetBorderColor 136 136 255
 
 # Maraketh
-Show # Attack Daggers
+Show # Rare Attack Daggers
     ItemLevel <= 56
     Rarity = Rare
     BaseType "Trisula"
     SetBackgroundColor 50 0 0
     SetBorderColor 255 255 119
 
-Show # Attack Daggers
+Show # Rare Attack Daggers
     ItemLevel <= 58
     Rarity = Rare
     BaseType "Gutting Knife"
@@ -14945,7 +15091,7 @@ Show
     SetBorderColor 136 136 255
 
 # Speed
-Show # Attack Daggers
+Show # Rare Attack Daggers
     ItemLevel >= 84
     Rarity = Rare
     BaseType "Ambusher"
@@ -14954,7 +15100,7 @@ Show # Attack Daggers
     SetBorderColor 255 255 119
 
 # Speed
-Show # Attack Daggers
+Show # Rare Attack Daggers
     ItemLevel >= 77
     Rarity = Rare
     BaseType "Ambusher"
@@ -14962,7 +15108,7 @@ Show # Attack Daggers
     SetBorderColor 255 255 119
 
 # Speed
-Show # Attack Daggers
+Show # Rare Attack Daggers
     Rarity = Rare
     BaseType "Ambusher"
     SetBackgroundColor 50 0 0
@@ -16151,14 +16297,14 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 255 255 119
 
-Show # War Staff
+Show # Rare War Staffs
     ItemLevel <= 23
     Rarity = Rare
     BaseType "Iron Staff"
     SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
-Show # War Staff
+Show # Rare War Staffs
     ItemLevel <= 28
     Rarity = Rare
     BaseType "Coiled Staff"
@@ -16172,7 +16318,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-Show # War Staff
+Show # Rare War Staffs
     ItemLevel <= 36
     Rarity = Rare
     BaseType "Vile Staff"
@@ -16201,14 +16347,14 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-Show # War Staff
+Show # Rare War Staffs
     ItemLevel <= 49
     Rarity = Rare
     BaseType "Military Staff"
     SetBackgroundColor 50 0 0
     SetBorderColor 136 136 255
 
-Show # War Staff
+Show # Rare War Staffs
     ItemLevel <= 52
     Rarity = Rare
     BaseType "Serpentine Staff"
@@ -16222,7 +16368,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-Show # War Staff
+Show # Rare War Staffs
     ItemLevel <= 57
     Rarity = Rare
     BaseType "Foul Staff"
@@ -16251,7 +16397,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-Show # War Staff
+Show # Rare War Staffs
     ItemLevel <= 64
     Rarity = Rare
     BaseType "Ezomyte Staff"
@@ -16259,7 +16405,7 @@ Show # War Staff
     SetBorderColor 136 136 255
 
 # Maelstrom Best Implicit
-Show # War Staff
+Show # Rare War Staffs
     ItemLevel <= 66
     DropLevel = 64
     Rarity = Rare
@@ -16291,7 +16437,7 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 136 136 255
 
-Show # War Staff
+Show # Rare War Staffs
     ItemLevel <= 70
     Rarity = Rare
     BaseType "Judgement Staff"
@@ -16486,13 +16632,31 @@ Show
     SetBorderColor 136 136 255
 
 # Section: 17. Other Rares
-
 # Bad Rares show until...
-Show
+
+Show # Rare Drops - Bad Rares - Act X
     ItemLevel >= 60
     ItemLevel < 68
     DropLevel <= 56
     Rarity = Rare
+    Class "Warstaff" "Daggers"
+    SetBorderColor 0 0 0 0
+    SetBackgroundColor 50 0 0
+
+Show # Rare Drops - Bad Rares - Act X
+    ItemLevel >= 60
+    ItemLevel < 68
+    DropLevel <= 56
+    Rarity = Rare
+    SetBorderColor 0 0 0 0
+
+Show # Rare Drops - Bad Rares - In White Maps
+    ItemLevel >= 68
+    ItemLevel < 73
+    DropLevel <= 56
+    Rarity = Rare
+    Class "Warstaff" "Daggers"
+    SetBackgroundColor 50 0 0 150
     SetBorderColor 0 0 0 0
 
 Show # Rare Drops - Bad Rares - In White Maps
@@ -16508,9 +16672,28 @@ Show # Rare Drops - Bad Rares - In Yellow Maps
     ItemLevel < 78
     DropLevel <= 56
     Rarity = Rare
+    Class "Warstaff" "Daggers"
+    SetBackgroundColor 50 0 0 150
+    SetBorderColor 0 0 0 0
+    SetFontSize 32
+
+Show # Rare Drops - Bad Rares - In Yellow Maps
+    ItemLevel >= 73
+    ItemLevel < 78
+    DropLevel <= 56
+    Rarity = Rare
     SetBackgroundColor 0 0 0 150
     SetBorderColor 0 0 0 0
     SetFontSize 32
+
+Show # Rare Drops - Bad Rares - In Red Maps
+    ItemLevel >= 78
+    DropLevel <= 56
+    Rarity = Rare
+    Class "Warstaff" "Daggers"
+    SetBackgroundColor 50 0 0 150
+    SetBorderColor 0 0 0 0
+    SetFontSize 30
 
 Show # Rare Drops - Bad Rares - In Red Maps
     ItemLevel >= 78
@@ -16521,17 +16704,37 @@ Show # Rare Drops - Bad Rares - In Red Maps
     SetFontSize 30
 
 # Early rares are pretty much all equal
-Show
+Show # Rare Drops - Very Early Rares
+    ItemLevel < 20
+    Rarity = Rare
+    Class "Warstaff" "Daggers"
+    SetBackgroundColor 50 0 0
+    SetBorderColor 136 136 255
+
+Show # Rare Drops - Very Early Rares
     ItemLevel < 20
     Rarity = Rare
     SetBorderColor 136 136 255
 
-Show
+Show # Rare Drops - Pre 60 Rares
+    ItemLevel < 60
+    Rarity = Rare
+    Class "Warstaff" "Daggers"
+    SetBackgroundColor 50 0 0
+    SetBorderColor 127 127 127
+    
+Show # Rare Drops - Pre 60 Rares
     ItemLevel < 60
     Rarity = Rare
     SetBorderColor 127 127 127
 
 # Bases over level 60, so they "might" be worth IDing if you really want to.
+Show # Rare Drops - Okay Rares
+    Rarity = Rare
+    Class "Warstaff" "Daggers"
+    SetBackgroundColor 50 0 0
+    SetBorderColor 127 127 127
+
 Show # Rare Drops - Okay Rares
     Rarity = Rare
     SetBorderColor 127 127 127
@@ -18372,12 +18575,14 @@ Show # Progression - Weapons - Attack/Caster - Daggers - Early Game - Linked
     Rarity <= Magic
     Class "Daggers"
     SetBorderColor 136 136 255
+    SetBackgroundColor 50 0 0
 
 Show # Progression - Weapons - Attack/Caster - Daggers - Very Early Game - Any
     ItemLevel <= 8
     Rarity <= Magic
     Class "Daggers"
     SetBorderColor 127 127 127
+    SetBackgroundColor 50 0 0
 
 Hide # Progression - Weapons - Attack/Caster - Daggers - Early Game - Unsocketed
     Sockets < 3
@@ -18385,6 +18590,7 @@ Hide # Progression - Weapons - Attack/Caster - Daggers - Early Game - Unsocketed
     Rarity <= Magic
     Class "Daggers"
     SetBorderColor 127 127 127
+    SetBackgroundColor 50 0 0
     SetFontSize 32
 
 Show # Progression - Weapons - Attack/Caster - Daggers - Mid Game - Linked
@@ -18393,6 +18599,7 @@ Show # Progression - Weapons - Attack/Caster - Daggers - Mid Game - Linked
     Rarity <= Magic
     Class "Daggers"
     SetBorderColor 136 136 255
+    SetBackgroundColor 50 0 0
 
 Hide # Progression - Weapons - Attack/Caster - Daggers - Late Game - Linked
     LinkedSockets >= 3
@@ -18400,6 +18607,7 @@ Hide # Progression - Weapons - Attack/Caster - Daggers - Late Game - Linked
     Rarity = Normal
     Class "Daggers"
     SetBorderColor 127 127 127
+    SetBackgroundColor 50 0 0
 
 Show # Progression - Weapons - Attack/Caster - Daggers - Mid Game - Socketed
     Sockets >= 3
@@ -18407,12 +18615,62 @@ Show # Progression - Weapons - Attack/Caster - Daggers - Mid Game - Socketed
     Rarity <= Magic
     Class "Daggers"
     SetBorderColor 127 127 127
+    SetBackgroundColor 50 0 0
 
 Hide # Base Hunting - Daggers
     Class "Daggers"
     SetBorderColor 127 127 127
+    SetBackgroundColor 50 0 0
 
-# Section: 19g. 1H Maces
+# Section: 19g. Rune Daggers
+
+Show # Progression - Weapons - Attack/Caster - Rune Daggers - Early Game - Linked
+    LinkedSockets >= 3
+    ItemLevel <= 6
+    Rarity <= Magic
+    Class "Rune Dagger"
+    SetBorderColor 136 136 255
+
+Show # Progression - Weapons - Attack/Caster - Rune Daggers - Very Early Game - Any
+    ItemLevel <= 8
+    Rarity <= Magic
+    Class "Rune Dagger"
+    SetBorderColor 127 127 127
+
+Hide # Progression - Weapons - Attack/Caster - Rune Daggers - Early Game - Unsocketed
+    Sockets < 3
+    ItemLevel < 16
+    Rarity <= Magic
+    Class "Rune Dagger"
+    SetBorderColor 127 127 127
+    SetFontSize 32
+
+Show # Progression - Weapons - Attack/Caster - Rune Daggers - Mid Game - Linked
+    LinkedSockets >= 3
+    ItemLevel < 32
+    Rarity <= Magic
+    Class "Rune Dagger"
+    SetBorderColor 136 136 255
+
+Hide # Progression - Weapons - Attack/Caster - Rune Daggers - Late Game - Linked
+    LinkedSockets >= 3
+    ItemLevel < 65
+    Rarity = Normal
+    Class "Rune Dagger"
+    SetBorderColor 127 127 127
+
+Show # Progression - Weapons - Attack/Caster - Rune Daggers - Mid Game - Socketed
+    Sockets >= 3
+    ItemLevel < 28
+    Rarity <= Magic
+    Class "Rune Dagger"
+    SetBorderColor 127 127 127
+
+Hide # Base Hunting - Rune Daggers
+    Class "Rune Dagger"
+    SetBorderColor 127 127 127
+
+# Section: 19h. 1H Maces
 
 Show # Progression - Weapons - Attack - 1H Maces - Early Game - Linked
     LinkedSockets >= 3
@@ -18460,7 +18718,7 @@ Hide # Base Hunting - 1H Maces
     Class "One Hand Maces"
     SetBorderColor 127 127 127
 
-# Section: 19h. 2H Axes
+# Section: 19i. 2H Axes
 
 Show # Progression - Weapons - Attack - 2H Axes - Early Game - Linked
     LinkedSockets >= 3
@@ -18508,7 +18766,7 @@ Hide # Base Hunting - 2H Axes
     Class "Two Hand Axes"
     SetBorderColor 127 127 127
 
-# Section: 19i. 2H Swords
+# Section: 19j. 2H Swords
 
 Show # Progression - Weapons - Attack - 2H Swords - Early Game - Linked
     LinkedSockets >= 3
@@ -18556,7 +18814,7 @@ Hide # Base Hunting - 2H Swords
     Class "Two Hand Swords"
     SetBorderColor 127 127 127
 
-# Section: 19j. Claws
+# Section: 19k. Claws
 
 Show # Progression - Weapons - Attack - Claws - Early Game - Linked
     LinkedSockets >= 3
@@ -18604,7 +18862,7 @@ Hide # Base Hunting - Claws
     Class "Claws"
     SetBorderColor 127 127 127
 
-# Section: 19k. Sceptres
+# Section: 19l. Sceptres
 
 Show # Progression - Weapons - Attack/Caster - Sceptres - Early Game - Linked
     LinkedSockets >= 3
@@ -18652,7 +18910,7 @@ Hide # Base Hunting - Sceptres
     Class "Sceptres"
     SetBorderColor 127 127 127
 
-# Section: 19l. Staves
+# Section: 19m. Staves
 
 Show # Progression - Weapons - Attack/Caster - Staves - Early Game - Linked
     LinkedSockets >= 3
@@ -18700,7 +18958,62 @@ Hide # Base Hunting - Staves
     Class "Staves"
     SetBorderColor 127 127 127
 
-# Section: 19m. Wands
+# Section: 19n. Warstaves
+
+Show # Progression - Weapons - Attack - Warstaff - Early Game - Linked
+    LinkedSockets >= 3
+    ItemLevel <= 6
+    Rarity <= Magic
+    Class "Warstaff"
+    SetBorderColor 136 136 255
+    SetBackgroundColor 50 0 0
+
+Show # Progression - Weapons - Attack - Warstaff - Very Early Game - Any
+    ItemLevel <= 8
+    Rarity <= Magic
+    Class "Warstaff"
+    SetBorderColor 127 127 127
+    SetBackgroundColor 50 0 0
+
+Hide # Progression - Weapons - Attack - Warstaff - Early Game - Unsocketed
+    Sockets < 3
+    ItemLevel < 16
+    Rarity <= Magic
+    Class "Warstaff"
+    SetBorderColor 127 127 127
+    SetBackgroundColor 50 0 0
+    SetFontSize 32
+
+Show # Progression - Weapons - Attack - Warstaff - Mid Game - Linked
+    LinkedSockets >= 3
+    ItemLevel < 32
+    Rarity <= Magic
+    Class "Warstaff"
+    SetBorderColor 136 136 255
+    SetBackgroundColor 50 0 0
+
+Hide # Progression - Weapons - Attack - Warstaff - Late Game - Linked
+    LinkedSockets >= 4
+    ItemLevel < 65
+    Rarity = Normal
+    Class "Warstaff"
+    SetBorderColor 127 127 127
+    SetBackgroundColor 50 0 0
+
+Show # Progression - Weapons - Attack - Warstaff - Mid Game - Socketed
+    Sockets >= 3
+    ItemLevel < 28
+    Rarity <= Magic
+    Class "Warstaff"
+    SetBorderColor 127 127 127
+    SetBackgroundColor 50 0 0
+
+Hide # Base Hunting - Warstaff
+    Class "Warstaff"
+    SetBorderColor 127 127 127
+    SetBackgroundColor 50 0 0
+
+# Section: 19o. Wands
 
 Show # Progression - Weapons - Attack/Caster - Wands - Early Game - Linked
     LinkedSockets >= 3
