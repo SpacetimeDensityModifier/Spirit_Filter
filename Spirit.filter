@@ -10336,7 +10336,101 @@ Hide # Crafting - Weapons - Staves - Ilvl 77+ - Magic - Socketed
     BaseType "Eclipse Staff" "Imperial Staff"
     SetBorderColor 127 127 127
 
-# Section: 14n. Wands
+# Section: 14n. War Staffs
+
+Hide # Crafting - Weapons - War Staffs - Ilvl 84+ - Normal - Unsocketed
+    Sockets < 4
+    ItemLevel >= 84
+    Rarity = Normal
+    BaseType "Maelstr" "Judgement Staff"
+    SetTextColor 255 255 255
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - War Staffs - Ilvl 84+ - Normal - Linked
+    LinkedSockets >= 4
+    ItemLevel >= 84
+    Rarity = Normal
+    BaseType "Maelstr" "Judgement Staff"
+    SetTextColor 255 255 255
+    SetBorderColor 136 136 255
+
+Hide # Crafting - Weapons - War Staffs - Ilvl 84+ - Normal - Socketed
+    Sockets >= 4
+    ItemLevel >= 84
+    Rarity = Normal
+    BaseType "Maelstr" "Judgement Staff"
+    SetTextColor 255 255 255
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - War Staffs - Ilvl 84+ - Magic - Unsocketed
+    Sockets < 4
+    ItemLevel >= 84
+    Rarity = Magic
+    BaseType "Maelstr" "Judgement Staff"
+    SetTextColor 30 144 255
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - War Staffs - Ilvl 84+ - Magic - Linked
+    LinkedSockets >= 4
+    ItemLevel >= 84
+    Rarity = Magic
+    BaseType "Maelstr" "Judgement Staff"
+    SetTextColor 30 144 255
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - War Staffs - Ilvl 84+ - Magic - Socketed
+    Sockets >= 4
+    ItemLevel >= 84
+    Rarity = Magic
+    BaseType "Maelstr" "Judgement Staff"
+    SetTextColor 30 144 255
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - War Staffs - Ilvl 77+ - Normal - Unsocketed
+    Sockets < 4
+    ItemLevel >= 77
+    Rarity = Normal
+    BaseType "Maelstr" "Judgement Staff"
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - War Staffs - Ilvl 77+ - Normal - Linked
+    LinkedSockets >= 4
+    ItemLevel >= 77
+    Rarity = Normal
+    BaseType "Maelstr" "Judgement Staff"
+    SetTextColor 255 255 255
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - War Staffs - Ilvl 77+ - Normal - Socketed
+    Sockets >= 4
+    ItemLevel >= 77
+    Rarity = Normal
+    BaseType "Maelstr" "Judgement Staff"
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - War Staffs - Ilvl 77+ - Magic - Unsocketed
+    Sockets < 4
+    ItemLevel >= 77
+    Rarity = Magic
+    BaseType "Maelstr" "Judgement Staff"
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - War Staffs - Ilvl 77+ - Magic - Linked
+    LinkedSockets >= 4
+    ItemLevel >= 77
+    Rarity = Magic
+    BaseType "Maelstr" "Judgement Staff"
+    SetTextColor 30 144 255
+    SetBorderColor 127 127 127
+
+Hide # Crafting - Weapons - War Staffs - Ilvl 77+ - Magic - Socketed
+    Sockets >= 4
+    ItemLevel >= 77
+    Rarity = Magic
+    BaseType "Maelstr" "Judgement Staff"
+    SetBorderColor 127 127 127
+
+# Section: 14o. Wands
 
 Hide # Crafting - Weapons - Wands - Ilvl 84+ - Normal - Unsocketed
     Sockets < 3
