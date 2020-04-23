@@ -1,5 +1,5 @@
 # Item filter downloaded at FilterBLAST - for updates visit:
-# https://filterblast.xyz/advanced/Felix35071/1n0pug0
+# https://filterblast.xyz/advanced/Felix35071/3hni44b
 
 
 Show
@@ -1758,7 +1758,7 @@ Show
 	SetTextColor 27 162 155
 	MinimapIcon 2 White Kite
 	PlayEffect White Temp
-	PlayAlertSound 2 250
+	PlayAlertSound 2 200
 	Continue
 
 Show
@@ -1790,8 +1790,8 @@ Show
 	Continue
 
 Show
-	DropLevel <= 4
-	AreaLevel >= 8
+	DropLevel <= 1
+	AreaLevel >= 6
 	Rarity = Normal
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 127 127 127
@@ -1799,16 +1799,16 @@ Show
 	Continue
 
 Hide
-	DropLevel <= 4
-	AreaLevel >= 8
+	DropLevel <= 1
+	AreaLevel >= 6
 	Rarity = Normal
 	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetBackgroundColor 0 0 0 150
 	Continue
 
 Show
-	DropLevel <= 8
-	AreaLevel >= 12
+	DropLevel <= 6
+	AreaLevel >= 11
 	Rarity = Normal
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 127 127 127
@@ -1816,15 +1816,15 @@ Show
 	Continue
 
 Hide
-	DropLevel <= 8
-	AreaLevel >= 12
+	DropLevel <= 6
+	AreaLevel >= 11
 	Rarity = Normal
 	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetBackgroundColor 0 0 0 150
 	Continue
 
 Show
-	DropLevel <= 12
+	DropLevel <= 11
 	AreaLevel >= 16
 	Rarity = Normal
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -1833,7 +1833,7 @@ Show
 	Continue
 
 Hide
-	DropLevel <= 12
+	DropLevel <= 11
 	AreaLevel >= 16
 	Rarity = Normal
 	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -1842,7 +1842,7 @@ Hide
 
 Show
 	DropLevel <= 16
-	AreaLevel >= 20
+	AreaLevel >= 21
 	Rarity = Normal
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 127 127 127
@@ -1851,15 +1851,15 @@ Show
 
 Hide
 	DropLevel <= 16
-	AreaLevel >= 20
+	AreaLevel >= 21
 	Rarity = Normal
 	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetBackgroundColor 0 0 0 150
 	Continue
 
 Show
-	DropLevel <= 20
-	AreaLevel >= 24
+	DropLevel <= 21
+	AreaLevel >= 26
 	Rarity = Normal
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 127 127 127
@@ -1867,16 +1867,16 @@ Show
 	Continue
 
 Hide
-	DropLevel <= 20
-	AreaLevel >= 24
+	DropLevel <= 21
+	AreaLevel >= 26
 	Rarity = Normal
 	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetBackgroundColor 0 0 0 150
 	Continue
 
 Show
-	DropLevel <= 24
-	AreaLevel >= 28
+	DropLevel <= 26
+	AreaLevel >= 31
 	Rarity = Normal
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 127 127 127
@@ -1884,32 +1884,15 @@ Show
 	Continue
 
 Hide
-	DropLevel <= 24
-	AreaLevel >= 28
+	DropLevel <= 26
+	AreaLevel >= 31
 	Rarity = Normal
 	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetBackgroundColor 0 0 0 150
 	Continue
 
 Show
-	DropLevel <= 28
-	AreaLevel >= 32
-	Rarity = Normal
-	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
-	SetTextColor 127 127 127
-	MinimapIcon 2 Grey Circle
-	Continue
-
-Hide
-	DropLevel <= 28
-	AreaLevel >= 32
-	Rarity = Normal
-	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
-	SetBackgroundColor 0 0 0 150
-	Continue
-
-Show
-	DropLevel <= 32
+	DropLevel <= 31
 	AreaLevel >= 36
 	Rarity = Normal
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -1918,7 +1901,7 @@ Show
 	Continue
 
 Hide
-	DropLevel <= 32
+	DropLevel <= 31
 	AreaLevel >= 36
 	Rarity = Normal
 	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -1927,7 +1910,7 @@ Hide
 
 Show
 	DropLevel <= 36
-	AreaLevel >= 40
+	AreaLevel >= 41
 	Rarity = Normal
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 127 127 127
@@ -1936,15 +1919,15 @@ Show
 
 Hide
 	DropLevel <= 36
-	AreaLevel >= 40
+	AreaLevel >= 41
 	Rarity = Normal
 	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetBackgroundColor 0 0 0 150
 	Continue
 
 Show
-	DropLevel <= 40
-	AreaLevel >= 44
+	DropLevel <= 41
+	AreaLevel >= 46
 	Rarity = Normal
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 127 127 127
@@ -1952,16 +1935,16 @@ Show
 	Continue
 
 Hide
-	DropLevel <= 40
-	AreaLevel >= 44
+	DropLevel <= 41
+	AreaLevel >= 46
 	Rarity = Normal
 	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetBackgroundColor 0 0 0 150
 	Continue
 
 Show
-	DropLevel <= 44
-	AreaLevel >= 48
+	DropLevel <= 46
+	AreaLevel >= 51
 	Rarity = Normal
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 127 127 127
@@ -1969,32 +1952,15 @@ Show
 	Continue
 
 Hide
-	DropLevel <= 44
-	AreaLevel >= 48
+	DropLevel <= 46
+	AreaLevel >= 51
 	Rarity = Normal
 	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetBackgroundColor 0 0 0 150
 	Continue
 
 Show
-	DropLevel <= 48
-	AreaLevel >= 52
-	Rarity = Normal
-	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
-	SetTextColor 127 127 127
-	MinimapIcon 2 Grey Circle
-	Continue
-
-Hide
-	DropLevel <= 48
-	AreaLevel >= 52
-	Rarity = Normal
-	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
-	SetBackgroundColor 0 0 0 150
-	Continue
-
-Show
-	DropLevel <= 52
+	DropLevel <= 51
 	AreaLevel >= 56
 	Rarity = Normal
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -2003,7 +1969,7 @@ Show
 	Continue
 
 Hide
-	DropLevel <= 52
+	DropLevel <= 51
 	AreaLevel >= 56
 	Rarity = Normal
 	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -2012,7 +1978,7 @@ Hide
 
 Show
 	DropLevel <= 56
-	AreaLevel >= 60
+	AreaLevel >= 61
 	Rarity = Normal
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 127 127 127
@@ -2021,7 +1987,41 @@ Show
 
 Hide
 	DropLevel <= 56
-	AreaLevel >= 60
+	AreaLevel >= 61
+	Rarity = Normal
+	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
+	SetBackgroundColor 0 0 0 150
+	Continue
+
+Show
+	DropLevel <= 61
+	AreaLevel >= 66
+	Rarity = Normal
+	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
+	SetTextColor 127 127 127
+	MinimapIcon 2 Grey Circle
+	Continue
+
+Hide
+	DropLevel <= 61
+	AreaLevel >= 66
+	Rarity = Normal
+	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
+	SetBackgroundColor 0 0 0 150
+	Continue
+
+Show
+	DropLevel <= 66
+	AreaLevel >= 71
+	Rarity = Normal
+	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
+	SetTextColor 127 127 127
+	MinimapIcon 2 Grey Circle
+	Continue
+
+Hide
+	DropLevel <= 66
+	AreaLevel >= 71
 	Rarity = Normal
 	Class "Gems" "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetBackgroundColor 0 0 0 150
@@ -2161,16 +2161,16 @@ Show
 	Continue
 
 Show
-	DropLevel <= 4
-	AreaLevel >= 8
+	DropLevel <= 1
+	AreaLevel >= 6
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Blue Circle
 	Continue
 
 Hide
-	DropLevel <= 4
-	AreaLevel >= 8
+	DropLevel <= 1
+	AreaLevel >= 6
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 70 70 240
@@ -2178,16 +2178,16 @@ Hide
 	Continue
 
 Show
-	DropLevel <= 8
-	AreaLevel >= 12
+	DropLevel <= 6
+	AreaLevel >= 11
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Blue Circle
 	Continue
 
 Hide
-	DropLevel <= 8
-	AreaLevel >= 12
+	DropLevel <= 6
+	AreaLevel >= 11
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 70 70 240
@@ -2195,7 +2195,7 @@ Hide
 	Continue
 
 Show
-	DropLevel <= 12
+	DropLevel <= 11
 	AreaLevel >= 16
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -2203,7 +2203,7 @@ Show
 	Continue
 
 Hide
-	DropLevel <= 12
+	DropLevel <= 11
 	AreaLevel >= 16
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -2213,7 +2213,7 @@ Hide
 
 Show
 	DropLevel <= 16
-	AreaLevel >= 20
+	AreaLevel >= 21
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Blue Circle
@@ -2221,7 +2221,7 @@ Show
 
 Hide
 	DropLevel <= 16
-	AreaLevel >= 20
+	AreaLevel >= 21
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 70 70 240
@@ -2229,16 +2229,16 @@ Hide
 	Continue
 
 Show
-	DropLevel <= 20
-	AreaLevel >= 24
+	DropLevel <= 21
+	AreaLevel >= 26
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Blue Circle
 	Continue
 
 Hide
-	DropLevel <= 20
-	AreaLevel >= 24
+	DropLevel <= 21
+	AreaLevel >= 26
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 70 70 240
@@ -2246,16 +2246,16 @@ Hide
 	Continue
 
 Show
-	DropLevel <= 24
-	AreaLevel >= 28
+	DropLevel <= 26
+	AreaLevel >= 31
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Blue Circle
 	Continue
 
 Hide
-	DropLevel <= 24
-	AreaLevel >= 28
+	DropLevel <= 26
+	AreaLevel >= 31
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 70 70 240
@@ -2263,24 +2263,7 @@ Hide
 	Continue
 
 Show
-	DropLevel <= 28
-	AreaLevel >= 32
-	Rarity = Magic
-	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
-	MinimapIcon 2 Blue Circle
-	Continue
-
-Hide
-	DropLevel <= 28
-	AreaLevel >= 32
-	Rarity = Magic
-	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
-	SetTextColor 70 70 240
-	SetBackgroundColor 0 0 0 150
-	Continue
-
-Show
-	DropLevel <= 32
+	DropLevel <= 31
 	AreaLevel >= 36
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -2288,7 +2271,7 @@ Show
 	Continue
 
 Hide
-	DropLevel <= 32
+	DropLevel <= 31
 	AreaLevel >= 36
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -2298,7 +2281,7 @@ Hide
 
 Show
 	DropLevel <= 36
-	AreaLevel >= 40
+	AreaLevel >= 41
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Blue Circle
@@ -2306,7 +2289,7 @@ Show
 
 Hide
 	DropLevel <= 36
-	AreaLevel >= 40
+	AreaLevel >= 41
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 70 70 240
@@ -2314,16 +2297,16 @@ Hide
 	Continue
 
 Show
-	DropLevel <= 40
-	AreaLevel >= 44
+	DropLevel <= 41
+	AreaLevel >= 46
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Blue Circle
 	Continue
 
 Hide
-	DropLevel <= 40
-	AreaLevel >= 44
+	DropLevel <= 41
+	AreaLevel >= 46
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 70 70 240
@@ -2331,16 +2314,16 @@ Hide
 	Continue
 
 Show
-	DropLevel <= 44
-	AreaLevel >= 48
+	DropLevel <= 46
+	AreaLevel >= 51
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Blue Circle
 	Continue
 
 Hide
-	DropLevel <= 44
-	AreaLevel >= 48
+	DropLevel <= 46
+	AreaLevel >= 51
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 70 70 240
@@ -2348,24 +2331,7 @@ Hide
 	Continue
 
 Show
-	DropLevel <= 48
-	AreaLevel >= 52
-	Rarity = Magic
-	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
-	MinimapIcon 2 Blue Circle
-	Continue
-
-Hide
-	DropLevel <= 48
-	AreaLevel >= 52
-	Rarity = Magic
-	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
-	SetTextColor 70 70 240
-	SetBackgroundColor 0 0 0 150
-	Continue
-
-Show
-	DropLevel <= 52
+	DropLevel <= 51
 	AreaLevel >= 56
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -2373,7 +2339,7 @@ Show
 	Continue
 
 Hide
-	DropLevel <= 52
+	DropLevel <= 51
 	AreaLevel >= 56
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -2383,7 +2349,7 @@ Hide
 
 Show
 	DropLevel <= 56
-	AreaLevel >= 60
+	AreaLevel >= 61
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Blue Circle
@@ -2391,7 +2357,41 @@ Show
 
 Hide
 	DropLevel <= 56
-	AreaLevel >= 60
+	AreaLevel >= 61
+	Rarity = Magic
+	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
+	SetTextColor 70 70 240
+	SetBackgroundColor 0 0 0 150
+	Continue
+
+Show
+	DropLevel <= 61
+	AreaLevel >= 66
+	Rarity = Magic
+	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
+	MinimapIcon 2 Blue Circle
+	Continue
+
+Hide
+	DropLevel <= 61
+	AreaLevel >= 66
+	Rarity = Magic
+	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
+	SetTextColor 70 70 240
+	SetBackgroundColor 0 0 0 150
+	Continue
+
+Show
+	DropLevel <= 66
+	AreaLevel >= 71
+	Rarity = Magic
+	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
+	MinimapIcon 2 Blue Circle
+	Continue
+
+Hide
+	DropLevel <= 66
+	AreaLevel >= 71
 	Rarity = Magic
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 70 70 240
@@ -2476,22 +2476,49 @@ Hide
 	Continue
 
 Show
-	LinkedSockets = 3
-	Rarity = Rare
-	MinimapIcon 1 White Cross
-	PlayEffect Blue
+	LinkedSockets < 3
+	Sockets <= 3
+	AreaLevel < 8
+	Rarity < Rare
+	BaseType "Leatherscale Boots" "Ironscale Boots" "Bronzescale Boots" "Steelscale Boots" "Serpentscale Boots" "Wyrmscale Boots" "Hydrascale Boots" "Dragonscale Boots" "Two-Toned Boots" "Fishscale Gauntlets" "Ironscale Gauntlets" "Bronzescale Gauntlets" "Steelscale Gauntlets" "Serpentscale Gauntlets" "Wyrmscale Gauntlets" "Hydrascale Gauntlets" "Dragonscale Gauntlets" "Battered Helm" "Sallet" "Visored Sallet" "Gilded Sallet" "Secutor Helm" "Fencer Helm" "Lacquered Helmet" "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Scale Vest" "Light Brigandine" "Scale Doublet" "Infantry Brigandine" "Full Scale Armour" "Soldier's Brigandine" "Field Lamellar" "Wyrmscale Doublet" "Hussar Brigandine" "Full Wyrmscale" "Commander's Brigandine" "Battle Lamellar" "Dragonscale Doublet" "Desert Brigandine" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Rawhide Boots" "Goathide Boots" "Deerskin Boots" "Nubuck Boots" "Eelskin Boots" "Sharkskin Boots" "Shagreen Boots" "Stealth Boots" "Slink Boots" "Two-Toned Boots" "Rawhide Gloves" "Goathide Gloves" "Deerskin Gloves" "Nubuck Gloves" "Eelskin Gloves" "Sharkskin Gloves" "Shagreen Gloves" "Stealth Gloves" "Gripped Gloves" "Slink Gloves" "Leather Cap" "Tricorne" "Leather Hood" "Wolf Pelt" "Hunter Hood" "Noble Tricorne" "Ursine Pelt" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Shabby Jerkin" "Strapped Leather" "Buckskin Tunic" "Wild Leather" "Full Leather" "Sun Leather" "Thief's Garb" "Eelskin Tunic" "Frontier Leather" "Glorious Leather" "Coronal Leather" "Cutthroat's Garb" "Sharkskin Tunic" "Destiny Leather" "Exquisite Leather" "Zodiac Leather" "Assassin's Garb"
+	Continue
+
+Show
+	LinkedSockets < 3
+	Sockets <= 3
+	AreaLevel < 5
+	Rarity < Rare
+	Class "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes"
 	Continue
 
 Show
 	LinkedSockets = 3
-	AreaLevel <= 15
-	Rarity < Unique
+	Rarity = Rare
+	Class "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes"
+	MinimapIcon 1 White Cross
+	PlayEffect Blue Temp
+	Continue
+
+Show
+	LinkedSockets = 3
+	Rarity = Rare
+	BaseType "Leatherscale Boots" "Ironscale Boots" "Bronzescale Boots" "Steelscale Boots" "Serpentscale Boots" "Wyrmscale Boots" "Hydrascale Boots" "Dragonscale Boots" "Two-Toned Boots" "Fishscale Gauntlets" "Ironscale Gauntlets" "Bronzescale Gauntlets" "Steelscale Gauntlets" "Serpentscale Gauntlets" "Wyrmscale Gauntlets" "Hydrascale Gauntlets" "Dragonscale Gauntlets" "Battered Helm" "Sallet" "Visored Sallet" "Gilded Sallet" "Secutor Helm" "Fencer Helm" "Lacquered Helmet" "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Scale Vest" "Light Brigandine" "Scale Doublet" "Infantry Brigandine" "Full Scale Armour" "Soldier's Brigandine" "Field Lamellar" "Wyrmscale Doublet" "Hussar Brigandine" "Full Wyrmscale" "Commander's Brigandine" "Battle Lamellar" "Dragonscale Doublet" "Desert Brigandine" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Rawhide Boots" "Goathide Boots" "Deerskin Boots" "Nubuck Boots" "Eelskin Boots" "Sharkskin Boots" "Shagreen Boots" "Stealth Boots" "Slink Boots" "Two-Toned Boots" "Rawhide Gloves" "Goathide Gloves" "Deerskin Gloves" "Nubuck Gloves" "Eelskin Gloves" "Sharkskin Gloves" "Shagreen Gloves" "Stealth Gloves" "Gripped Gloves" "Slink Gloves" "Leather Cap" "Tricorne" "Leather Hood" "Wolf Pelt" "Hunter Hood" "Noble Tricorne" "Ursine Pelt" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Shabby Jerkin" "Strapped Leather" "Buckskin Tunic" "Wild Leather" "Full Leather" "Sun Leather" "Thief's Garb" "Eelskin Tunic" "Frontier Leather" "Glorious Leather" "Coronal Leather" "Cutthroat's Garb" "Sharkskin Tunic" "Destiny Leather" "Exquisite Leather" "Zodiac Leather" "Assassin's Garb"
+	MinimapIcon 1 White Cross
+	PlayEffect Blue Temp
 	Continue
 
 Hide
 	LinkedSockets = 3
-	AreaLevel > 15
+	AreaLevel >= 8
 	Rarity < Rare
+	Continue
+
+Show
+	LinkedSockets = 3
+	AreaLevel <= 10
+	Rarity < Rare
+	BaseType "Leatherscale Boots" "Ironscale Boots" "Bronzescale Boots" "Steelscale Boots" "Serpentscale Boots" "Wyrmscale Boots" "Hydrascale Boots" "Dragonscale Boots" "Two-Toned Boots" "Fishscale Gauntlets" "Ironscale Gauntlets" "Bronzescale Gauntlets" "Steelscale Gauntlets" "Serpentscale Gauntlets" "Wyrmscale Gauntlets" "Hydrascale Gauntlets" "Dragonscale Gauntlets" "Battered Helm" "Sallet" "Visored Sallet" "Gilded Sallet" "Secutor Helm" "Fencer Helm" "Lacquered Helmet" "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Scale Vest" "Light Brigandine" "Scale Doublet" "Infantry Brigandine" "Full Scale Armour" "Soldier's Brigandine" "Field Lamellar" "Wyrmscale Doublet" "Hussar Brigandine" "Full Wyrmscale" "Commander's Brigandine" "Battle Lamellar" "Dragonscale Doublet" "Desert Brigandine" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Rawhide Boots" "Goathide Boots" "Deerskin Boots" "Nubuck Boots" "Eelskin Boots" "Sharkskin Boots" "Shagreen Boots" "Stealth Boots" "Slink Boots" "Two-Toned Boots" "Rawhide Gloves" "Goathide Gloves" "Deerskin Gloves" "Nubuck Gloves" "Eelskin Gloves" "Sharkskin Gloves" "Shagreen Gloves" "Stealth Gloves" "Gripped Gloves" "Slink Gloves" "Leather Cap" "Tricorne" "Leather Hood" "Wolf Pelt" "Hunter Hood" "Noble Tricorne" "Ursine Pelt" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Shabby Jerkin" "Strapped Leather" "Buckskin Tunic" "Wild Leather" "Full Leather" "Sun Leather" "Thief's Garb" "Eelskin Tunic" "Frontier Leather" "Glorious Leather" "Coronal Leather" "Cutthroat's Garb" "Sharkskin Tunic" "Destiny Leather" "Exquisite Leather" "Zodiac Leather" "Assassin's Garb"
+	PlayEffect Grey
 	Continue
 
 Show
@@ -2555,7 +2582,7 @@ Show
 	Class "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes"
 	SetTextColor 255 140 80
 	MinimapIcon 0 Yellow Circle # By default, all items have a minimap icon and effect. As the filter continues, it will override this setting if necessary.
-	PlayEffect Yellow
+	PlayEffect Yellow Temp
 	Continue
 
 Show
@@ -2563,43 +2590,43 @@ Show
 	BaseType "Leatherscale Boots" "Ironscale Boots" "Bronzescale Boots" "Steelscale Boots" "Serpentscale Boots" "Wyrmscale Boots" "Hydrascale Boots" "Dragonscale Boots" "Two-Toned Boots" "Fishscale Gauntlets" "Ironscale Gauntlets" "Bronzescale Gauntlets" "Steelscale Gauntlets" "Serpentscale Gauntlets" "Wyrmscale Gauntlets" "Hydrascale Gauntlets" "Dragonscale Gauntlets" "Battered Helm" "Sallet" "Visored Sallet" "Gilded Sallet" "Secutor Helm" "Fencer Helm" "Lacquered Helmet" "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Scale Vest" "Light Brigandine" "Scale Doublet" "Infantry Brigandine" "Full Scale Armour" "Soldier's Brigandine" "Field Lamellar" "Wyrmscale Doublet" "Hussar Brigandine" "Full Wyrmscale" "Commander's Brigandine" "Battle Lamellar" "Dragonscale Doublet" "Desert Brigandine" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Rawhide Boots" "Goathide Boots" "Deerskin Boots" "Nubuck Boots" "Eelskin Boots" "Sharkskin Boots" "Shagreen Boots" "Stealth Boots" "Slink Boots" "Two-Toned Boots" "Rawhide Gloves" "Goathide Gloves" "Deerskin Gloves" "Nubuck Gloves" "Eelskin Gloves" "Sharkskin Gloves" "Shagreen Gloves" "Stealth Gloves" "Gripped Gloves" "Slink Gloves" "Leather Cap" "Tricorne" "Leather Hood" "Wolf Pelt" "Hunter Hood" "Noble Tricorne" "Ursine Pelt" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Shabby Jerkin" "Strapped Leather" "Buckskin Tunic" "Wild Leather" "Full Leather" "Sun Leather" "Thief's Garb" "Eelskin Tunic" "Frontier Leather" "Glorious Leather" "Coronal Leather" "Cutthroat's Garb" "Sharkskin Tunic" "Destiny Leather" "Exquisite Leather" "Zodiac Leather" "Assassin's Garb"
 	SetTextColor 45 210 120
 	MinimapIcon 0 Yellow Circle # By default, all items have a minimap icon and effect. As the filter continues, it will override this setting if necessary.
-	PlayEffect Yellow
+	PlayEffect Yellow Temp
 	Continue
 
 Show
-	DropLevel <= 4
-	AreaLevel >= 8
+	DropLevel <= 1
+	AreaLevel >= 6
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Yellow Circle
 	Continue
 
 Hide
-	DropLevel <= 4
-	AreaLevel >= 8
+	DropLevel <= 1
+	AreaLevel >= 6
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 170 170 20
 	Continue
 
 Show
-	DropLevel <= 8
-	AreaLevel >= 12
+	DropLevel <= 6
+	AreaLevel >= 11
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Yellow Circle
 	Continue
 
 Hide
-	DropLevel <= 8
-	AreaLevel >= 12
+	DropLevel <= 6
+	AreaLevel >= 11
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 170 170 20
 	Continue
 
 Show
-	DropLevel <= 12
+	DropLevel <= 11
 	AreaLevel >= 16
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -2607,7 +2634,7 @@ Show
 	Continue
 
 Hide
-	DropLevel <= 12
+	DropLevel <= 11
 	AreaLevel >= 16
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -2616,7 +2643,7 @@ Hide
 
 Show
 	DropLevel <= 16
-	AreaLevel >= 20
+	AreaLevel >= 21
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Yellow Circle
@@ -2624,62 +2651,46 @@ Show
 
 Hide
 	DropLevel <= 16
-	AreaLevel >= 20
+	AreaLevel >= 21
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 170 170 20
 	Continue
 
 Show
-	DropLevel <= 20
-	AreaLevel >= 24
+	DropLevel <= 21
+	AreaLevel >= 26
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Yellow Circle
 	Continue
 
 Hide
-	DropLevel <= 20
-	AreaLevel >= 24
+	DropLevel <= 21
+	AreaLevel >= 26
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 170 170 20
 	Continue
 
 Show
-	DropLevel <= 24
-	AreaLevel >= 28
+	DropLevel <= 26
+	AreaLevel >= 31
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Yellow Circle
 	Continue
 
 Hide
-	DropLevel <= 24
-	AreaLevel >= 28
+	DropLevel <= 26
+	AreaLevel >= 31
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 170 170 20
 	Continue
 
 Show
-	DropLevel <= 28
-	AreaLevel >= 32
-	Rarity = Rare
-	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
-	MinimapIcon 2 Yellow Circle
-	Continue
-
-Hide
-	DropLevel <= 28
-	AreaLevel >= 32
-	Rarity = Rare
-	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
-	SetTextColor 170 170 20
-	Continue
-
-Show
-	DropLevel <= 32
+	DropLevel <= 31
 	AreaLevel >= 36
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -2687,7 +2698,7 @@ Show
 	Continue
 
 Hide
-	DropLevel <= 32
+	DropLevel <= 31
 	AreaLevel >= 36
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -2696,7 +2707,7 @@ Hide
 
 Show
 	DropLevel <= 36
-	AreaLevel >= 40
+	AreaLevel >= 41
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Yellow Circle
@@ -2704,62 +2715,46 @@ Show
 
 Hide
 	DropLevel <= 36
-	AreaLevel >= 40
+	AreaLevel >= 41
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 170 170 20
 	Continue
 
 Show
-	DropLevel <= 40
-	AreaLevel >= 44
+	DropLevel <= 41
+	AreaLevel >= 46
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Yellow Circle
 	Continue
 
 Hide
-	DropLevel <= 40
-	AreaLevel >= 44
+	DropLevel <= 41
+	AreaLevel >= 46
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 170 170 20
 	Continue
 
 Show
-	DropLevel <= 44
-	AreaLevel >= 48
+	DropLevel <= 46
+	AreaLevel >= 51
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Yellow Circle
 	Continue
 
 Hide
-	DropLevel <= 44
-	AreaLevel >= 48
+	DropLevel <= 46
+	AreaLevel >= 51
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 170 170 20
 	Continue
 
 Show
-	DropLevel <= 48
-	AreaLevel >= 52
-	Rarity = Rare
-	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
-	MinimapIcon 2 Yellow Circle
-	Continue
-
-Hide
-	DropLevel <= 48
-	AreaLevel >= 52
-	Rarity = Rare
-	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
-	SetTextColor 170 170 20
-	Continue
-
-Show
-	DropLevel <= 52
+	DropLevel <= 51
 	AreaLevel >= 56
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -2767,7 +2762,7 @@ Show
 	Continue
 
 Hide
-	DropLevel <= 52
+	DropLevel <= 51
 	AreaLevel >= 56
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
@@ -2776,7 +2771,7 @@ Hide
 
 Show
 	DropLevel <= 56
-	AreaLevel >= 60
+	AreaLevel >= 61
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	MinimapIcon 2 Yellow Circle
@@ -2784,7 +2779,39 @@ Show
 
 Hide
 	DropLevel <= 56
-	AreaLevel >= 60
+	AreaLevel >= 61
+	Rarity = Rare
+	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
+	SetTextColor 170 170 20
+	Continue
+
+Show
+	DropLevel <= 61
+	AreaLevel >= 66
+	Rarity = Rare
+	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
+	MinimapIcon 2 Yellow Circle
+	Continue
+
+Hide
+	DropLevel <= 61
+	AreaLevel >= 66
+	Rarity = Rare
+	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
+	SetTextColor 170 170 20
+	Continue
+
+Show
+	DropLevel <= 66
+	AreaLevel >= 71
+	Rarity = Rare
+	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
+	MinimapIcon 2 Yellow Circle
+	Continue
+
+Hide
+	DropLevel <= 66
+	AreaLevel >= 71
 	Rarity = Rare
 	Class "Flasks" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Rune Daggers" "Warstaves"
 	SetTextColor 170 170 20
@@ -2852,20 +2879,20 @@ Show
 	Continue
 
 Hide
-	AreaLevel > 11
+	AreaLevel > 6
 	Rarity < Rare
 	Class "Belts" "Rings" "Amulets"
 	Continue
 
 Show
-	AreaLevel < 12
+	AreaLevel < 6
 	Rarity = Normal
 	Class "Belts" "Rings" "Amulets"
 	PlayEffect Blue
 	Continue
 
 Show
-	AreaLevel < 25
+	AreaLevel < 12
 	Rarity = Magic
 	Class "Belts" "Rings" "Amulets"
 	MinimapIcon 1 Blue Circle
@@ -3228,19 +3255,20 @@ Show
 
 Show
 	Corrupted True # Check for good ones
-	SetBackgroundColor 50 0 0
+	SetBackgroundColor 50 0 0 200
 	PlayEffect Red
 	Continue
 
 Show
 	CorruptedMods >= 1
-	SetBackgroundColor 100 0 0
+	SetBackgroundColor 100 0 0 255
 	PlayEffect Red
 
 Show
 	ItemLevel < 12
 	Rarity = Magic
 	Class "Boots"
+	BaseType "Leatherscale Boots" "Ironscale Boots" "Bronzescale Boots" "Steelscale Boots" "Serpentscale Boots" "Wyrmscale Boots" "Hydrascale Boots" "Dragonscale Boots" "Two-Toned Boots" "Fishscale Gauntlets" "Ironscale Gauntlets" "Bronzescale Gauntlets" "Steelscale Gauntlets" "Serpentscale Gauntlets" "Wyrmscale Gauntlets" "Hydrascale Gauntlets" "Dragonscale Gauntlets" "Battered Helm" "Sallet" "Visored Sallet" "Gilded Sallet" "Secutor Helm" "Fencer Helm" "Lacquered Helmet" "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Scale Vest" "Light Brigandine" "Scale Doublet" "Infantry Brigandine" "Full Scale Armour" "Soldier's Brigandine" "Field Lamellar" "Wyrmscale Doublet" "Hussar Brigandine" "Full Wyrmscale" "Commander's Brigandine" "Battle Lamellar" "Dragonscale Doublet" "Desert Brigandine" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Rawhide Boots" "Goathide Boots" "Deerskin Boots" "Nubuck Boots" "Eelskin Boots" "Sharkskin Boots" "Shagreen Boots" "Stealth Boots" "Slink Boots" "Two-Toned Boots" "Rawhide Gloves" "Goathide Gloves" "Deerskin Gloves" "Nubuck Gloves" "Eelskin Gloves" "Sharkskin Gloves" "Shagreen Gloves" "Stealth Gloves" "Gripped Gloves" "Slink Gloves" "Leather Cap" "Tricorne" "Leather Hood" "Wolf Pelt" "Hunter Hood" "Noble Tricorne" "Ursine Pelt" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Shabby Jerkin" "Strapped Leather" "Buckskin Tunic" "Wild Leather" "Full Leather" "Sun Leather" "Thief's Garb" "Eelskin Tunic" "Frontier Leather" "Glorious Leather" "Coronal Leather" "Cutthroat's Garb" "Sharkskin Tunic" "Destiny Leather" "Exquisite Leather" "Zodiac Leather" "Assassin's Garb"
 	SetFontSize 36
 	SetBorderColor 127 127 220
 	MinimapIcon 2 Blue Square
@@ -3252,6 +3280,7 @@ Show
 	AreaLevel < 32
 	Rarity = Rare
 	Class "Boots"
+	BaseType "Leatherscale Boots" "Ironscale Boots" "Bronzescale Boots" "Steelscale Boots" "Serpentscale Boots" "Wyrmscale Boots" "Hydrascale Boots" "Dragonscale Boots" "Two-Toned Boots" "Fishscale Gauntlets" "Ironscale Gauntlets" "Bronzescale Gauntlets" "Steelscale Gauntlets" "Serpentscale Gauntlets" "Wyrmscale Gauntlets" "Hydrascale Gauntlets" "Dragonscale Gauntlets" "Battered Helm" "Sallet" "Visored Sallet" "Gilded Sallet" "Secutor Helm" "Fencer Helm" "Lacquered Helmet" "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Scale Vest" "Light Brigandine" "Scale Doublet" "Infantry Brigandine" "Full Scale Armour" "Soldier's Brigandine" "Field Lamellar" "Wyrmscale Doublet" "Hussar Brigandine" "Full Wyrmscale" "Commander's Brigandine" "Battle Lamellar" "Dragonscale Doublet" "Desert Brigandine" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Rawhide Boots" "Goathide Boots" "Deerskin Boots" "Nubuck Boots" "Eelskin Boots" "Sharkskin Boots" "Shagreen Boots" "Stealth Boots" "Slink Boots" "Two-Toned Boots" "Rawhide Gloves" "Goathide Gloves" "Deerskin Gloves" "Nubuck Gloves" "Eelskin Gloves" "Sharkskin Gloves" "Shagreen Gloves" "Stealth Gloves" "Gripped Gloves" "Slink Gloves" "Leather Cap" "Tricorne" "Leather Hood" "Wolf Pelt" "Hunter Hood" "Noble Tricorne" "Ursine Pelt" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Shabby Jerkin" "Strapped Leather" "Buckskin Tunic" "Wild Leather" "Full Leather" "Sun Leather" "Thief's Garb" "Eelskin Tunic" "Frontier Leather" "Glorious Leather" "Coronal Leather" "Cutthroat's Garb" "Sharkskin Tunic" "Destiny Leather" "Exquisite Leather" "Zodiac Leather" "Assassin's Garb"
 	SetFontSize 40
 	SetBorderColor 127 127 220
 	MinimapIcon 1 Blue Square
