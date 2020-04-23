@@ -1775,7 +1775,7 @@ Show
 
 Show
 	Rarity = Normal
-	Class "One Hand Swords" "One Hand Thrusting Swords" "One Hand Axes"
+	Class "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes"
 	SetTextColor 255 255 255
 	MinimapIcon 0 White Circle # By default, all items have a minimap icon and effect. As the filter continues, it will override this setting if necessary.
 	PlayEffect White Temp
@@ -2146,7 +2146,7 @@ Show
 # Magic
 Show
 	Rarity = Magic
-	Class "One Hand Swords" "One Hand Thrusting Swords" "One Hand Axes"
+	Class "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes"
 	SetTextColor 80 180 255
 	MinimapIcon 0 Blue Circle # By default, all items have a minimap icon and effect. As the filter continues, it will override this setting if necessary.
 	PlayEffect Blue Temp
@@ -2552,7 +2552,7 @@ Hide
 
 Show
 	Rarity = Rare
-	Class "One Hand Swords" "One Hand Thrusting Swords" "One Hand Axes"
+	Class "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes"
 	SetTextColor 255 140 80
 	MinimapIcon 0 Yellow Circle # By default, all items have a minimap icon and effect. As the filter continues, it will override this setting if necessary.
 	PlayEffect Yellow
