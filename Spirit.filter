@@ -451,6 +451,18 @@ Show
     Continue
     AreaLevel < 20
     SocketGroup >= $RacingColors
+    BaseType $Offenses $Defenses $Extra
+
+SetTab [Accessories]
+SetOption $Rings input ["Coral Ring" "Iron Ring" "Paua Ring" "Unset Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Diamond Ring" "Gold Ring" "Moonstone Ring" "Two-Stone Ring" "Amethyst Ring" "Prismatic Ring"] # Just remove the rings you don't want to use from this list.
+SetOption $Amulets input ["Coral Amulet" "Paua Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Gold Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet"] # Just remove the amulets you don't want to use from this list.
+SetOption $Belts input ["Studded Belt" "Chain Belt" "Rustic Sash" "Heavy Belt" "Leather Belt" "Cloth Belt"] # Just remove the belts you don't want to use from this list.
+   
+Show
+    AreaLevel < 10
+    Rarity <= Magic
+    BaseType $Rings $Amulets $Belts
+    Continue
 
 Hide
     Rarity Normal
@@ -7021,9 +7033,6 @@ Show
 # End Progression
     
 SetTab [Accessories]
-SetOption $Rings input ["Coral Ring" "Iron Ring" "Paua Ring" "Unset Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Diamond Ring" "Gold Ring" "Moonstone Ring" "Two-Stone Ring" "Amethyst Ring" "Prismatic Ring"] # Just remove the rings you don't want to use from this list.
-SetOption $Amulets input ["Coral Amulet" "Paua Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Gold Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet"] # Just remove the amulets you don't want to use from this list.
-SetOption $Belts input ["Studded Belt" "Chain Belt" "Rustic Sash" "Heavy Belt" "Leather Belt" "Cloth Belt"] # Just remove the belts you don't want to use from this list.
 
 Hide
     Class "Rings"
@@ -9305,29 +9314,7 @@ Show
 	Continue
 	BaseType "Primal"
 	SetBackgroundColor 20 20 30
-	
-Remove
-    Class "Harvest Infrastructure"
-    MinimapIcon 1 Blue Triangle
-    SetBorderColor 20 160 220
-    Continue
 
-Remove
-    Class "Harvest Infrastructure"
-    MinimapIcon 1 Blue Triangle
-    SetBorderColor 20 160 220
-	Branch
-	Continue
-	BaseType "Wild"
-	SetBackgroundColor 30 20 20
-	Branch
-	Continue
-	BaseType "Vivid"
-	SetBackgroundColor 20 30 20
-	Branch
-	Continue
-	BaseType "Primal"
-	SetBackgroundColor 20 20 30
 	
 Show
     BaseType "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll"
