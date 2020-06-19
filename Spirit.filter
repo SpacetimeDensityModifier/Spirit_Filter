@@ -9306,13 +9306,13 @@ Show
 	BaseType "Primal"
 	SetBackgroundColor 20 20 30
 	
-Show
+Remove
     Class "Harvest Infrastructure"
     MinimapIcon 1 Blue Triangle
     SetBorderColor 20 160 220
     Continue
 
-Show
+Remove
     Class "Harvest Infrastructure"
     MinimapIcon 1 Blue Triangle
     SetBorderColor 20 160 220
