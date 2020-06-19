@@ -210,37 +210,40 @@ SetOption $Extra input [$1HAxes] # If your build is dependent on more than two o
 
 
 SetTab [Spirit+]
-Show
+
+SetOption $SizeBasedSize switch [Show] [Remove] # This toggle removes the added layer of size based scaling applied before anything else. This makes smaller items (like rings) have a larger nameplate and larger items (like 2handers) have a smaller one. Items with a FontSize applied elsewhere in the filter are not affected by this toggle.
+
+$SizeBasedSize
     Width = 1
     Height = 1
     SetFontSize 40
     Continue
 
-Show
+$SizeBasedSize
     Width = 1
     Height = 3
     SetFontSize 34
     Continue
     
-Show
+$SizeBasedSize
     Width = 2
     Height = 2
     SetFontSize 30
     Continue
     
-Show
+$SizeBasedSize
     Width = 2
     Height = 3
     SetFontSize 28
     Continue
     
-Show
+$SizeBasedSize
     Width = 1
     Height = 4
     SetFontSize 30
     Continue
 
-Show
+$SizeBasedSize
     Width = 2
     Height = 4
     SetFontSize 26
@@ -7526,14 +7529,14 @@ Show
     SetTextColor 170 80 60
     Branch
     Continue
-    BaseType "Scroll"
+    BaseType "Scroll of Wisdom" "Portal Scroll" "Scroll Fragment"
     SetBackgroundColor 30 30 10 255
     MinimapIcon 1 Grey Hexagon
     PlayEffect White Temp
     PlayAlertSound 12 200
     Branch
     Continue
-    BaseType "Scroll"
+    BaseType "Scroll of Wisdom" "Portal Scroll"
     StackSize > 1
     SetBackgroundColor 40 40 30 255
     PlayEffect Grey
@@ -7550,7 +7553,7 @@ Show
     SetBackgroundColor 10 10 0 150
     Branch
     Continue
-    BaseType "Scroll"
+    BaseType "Scroll of Wisdom" "Portal Scroll"
     AreaLevel >= 68
     SwitchTo Hide
  
@@ -9153,7 +9156,7 @@ Show
 	PlayEffect Blue
 
 Show
-	BaseType "Clear Oil" "Sepia Oil" "Verdant Oil"
+	BaseType "Clear Oil" "Sepia Oil" "Verdant Oil" "Indigo Oil"
 	MinimapIcon 2 White Triangle
 	SetFontSize 28
 	PlayEffect White
@@ -9265,6 +9268,98 @@ Show
     
 # End Delirium
 
+# Harvest
+
+Show
+    Class "Harvest Seed"
+    SetTextColor 20 160 220
+	Branch
+	Continue
+	BaseType "Grain"
+    MinimapIcon 2 Grey Triangle
+	SetFontSize 30
+	Branch
+	Continue
+	BaseType "Seed"
+	SetFontSize 32
+    MinimapIcon 2 White Triangle
+	Branch
+	Continue
+	BaseType "Bulb"
+	SetFontSize 34
+    MinimapIcon 2 Blue Triangle
+	Branch
+	Continue
+	BaseType "Thornfruit" "Scalefruit" "Blisterfruit"
+	SetFontSize 36
+    MinimapIcon 2 Yellow Triangle
+	Branch
+	Continue
+	BaseType "Wild"
+	SetBackgroundColor 30 20 20
+	Branch
+	Continue
+	BaseType "Vivid"
+	SetBackgroundColor 20 30 20
+	Branch
+	Continue
+	BaseType "Primal"
+	SetBackgroundColor 20 20 30
+	
+Show
+    Class "Harvest Infrastructure"
+    MinimapIcon 1 Blue Triangle
+    SetBorderColor 20 160 220
+    Continue
+
+Show
+    Class "Harvest Infrastructure"
+    MinimapIcon 1 Blue Triangle
+    SetBorderColor 20 160 220
+	Branch
+	Continue
+	BaseType "Wild"
+	SetBackgroundColor 30 20 20
+	Branch
+	Continue
+	BaseType "Vivid"
+	SetBackgroundColor 20 30 20
+	Branch
+	Continue
+	BaseType "Primal"
+	SetBackgroundColor 20 20 30
+	
+Show
+    BaseType "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll"
+    MinimapIcon 2 Yellow Triangle
+    SetBorderColor 20 160 220
+    Continue
+    
+Show
+    BaseType "Facetor's Lens" "Infused Engineer's Orb"
+    MinimapIcon 1 Blue Triangle
+    SetTextColor 20 160 220
+    SetBorderColor 20 160 220
+    Continue
+    
+    
+Show
+    BaseType "Scarab" "Winged"
+    SetBorderColor 20 160 220
+    Continue
+    
+Show
+    SetBorderColor 20 160 220
+    Branch
+    Continue
+    BaseType "Tribute to the Goddess"
+    Branch
+    Continue
+    BaseType "Gift to the Goddess"
+    Branch
+    Continue
+    BaseType "Dedication to the Goddess"
+    
 # End Leagues
 
 Show
@@ -9466,21 +9561,21 @@ $DivinationCards
     
 $T1Cards
     Class "Divination"
-    BaseType "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "House of Mirrors" "Immortal Resolve" "Nook's Crown" "Pride of the First Ones" "Seven Years Bad Luck" "Succor of the Sinless" "The Betrayal" "The Cheater" "The Demon" "The Doctor" "The Fiend" "The Immortal" "The Iron Bard" "The Nurse" "The Price of Loyalty" "The Samurai's Eye" "The Strategist" "The World Eater"
+    BaseType "The Greatest Intentions" "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "House of Mirrors" "Immortal Resolve" "Nook's Crown" "Pride of the First Ones" "Seven Years Bad Luck" "Succor of the Sinless" "The Betrayal" "The Cheater" "The Demon" "The Doctor" "The Fiend" "The Immortal" "The Iron Bard" "The Nurse" "The Price of Loyalty" "The Samurai's Eye" "The Strategist" "The World Eater"
 	SetFontSize 45
 	SetTextColor 0 40 150
 	PlayAlertSound 4 250
 	
 $T2Cards
     Class "Divination"
-    BaseType "Azyran's Reward" "Blessing of God" "Chaotic Disposition" "Council of Cats" "Dark Dreams" "Etched in Blood" "Hunter's Reward" "Perfection" "Squandered Prosperity" "The Cartographer" "The Damned" "The Dragon's Heart" "The Eldritch Decay" "The Escape" "The Eye of Terror" "The Hale Heart" "The Life Thief" "The Lord of Celebration" "The Mayor" "The Offering" "The Polymath" "The Progeny of Lunaris" "The Queen" "The Saint's Treasure" "The Spark and the Flame" "The Undaunted" "The Void" "Void of the Elements" "Wealth and Power"
+    BaseType "Peaceful Moments" "The Sustenance" "Azyran's Reward" "Blessing of God" "Chaotic Disposition" "Council of Cats" "Dark Dreams" "Etched in Blood" "Hunter's Reward" "Perfection" "Squandered Prosperity" "The Cartographer" "The Damned" "The Dragon's Heart" "The Eldritch Decay" "The Escape" "The Eye of Terror" "The Hale Heart" "The Life Thief" "The Lord of Celebration" "The Mayor" "The Offering" "The Polymath" "The Progeny of Lunaris" "The Queen" "The Saint's Treasure" "The Spark and the Flame" "The Undaunted" "The Void" "Void of the Elements" "Wealth and Power"
     SetFontSize 40
     SetTextColor 30 0 40
     PlayAlertSound 8 300
     
 $T3Cards
     Class "Divination"
-    BaseType "Arrogance of the Vaal" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Burning Blood" "Cameria's Cut" "Divine Justice" "Echoes of Love" "Emperor of Purity" "Heterochromia" "Humility" "Loyalty" "Lucky Deck" "Mawr Blaidd" "More is Never Enough" "Pride Before the Fall" "Rebirth" "Remembrance" "The Artist" "The Bargain" "The Celestial Justicar" "The Celestial Stone" "The Chosen" "The Craving" "The Dapper Prodigy" "The Dark Mage" "The Deal" "The Dreamer" "The Endless Darkness" "The Enlightened" "The Ethereal" "The Gemcutter" "The Heroic Shot" "The Hoarder" "The Jeweller's Boon" "The King's Heart" "The Landing" "The Last One Standing" "The Old Man" "The Porcupine" "The Price of Protection" "The Professor" "The Puzzle" "The Risk" "The Sacrifice" "The Sephirot" "The Tinkerer's Table" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Warlord" "The Wolven King's Bite" "The Wrath" "The Wretched" "Three Faces in the Dark" "Vanity"
+    BaseType "The White Knight" "The Awakened" "Arrogance of the Vaal" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Burning Blood" "Cameria's Cut" "Divine Justice" "Echoes of Love" "Emperor of Purity" "Heterochromia" "Humility" "Loyalty" "Lucky Deck" "Mawr Blaidd" "More is Never Enough" "Pride Before the Fall" "Rebirth" "Remembrance" "The Artist" "The Bargain" "The Celestial Justicar" "The Celestial Stone" "The Chosen" "The Craving" "The Dapper Prodigy" "The Dark Mage" "The Deal" "The Dreamer" "The Endless Darkness" "The Enlightened" "The Ethereal" "The Gemcutter" "The Heroic Shot" "The Hoarder" "The Jeweller's Boon" "The King's Heart" "The Landing" "The Last One Standing" "The Old Man" "The Porcupine" "The Price of Protection" "The Professor" "The Puzzle" "The Risk" "The Sacrifice" "The Sephirot" "The Tinkerer's Table" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Warlord" "The Wolven King's Bite" "The Wrath" "The Wretched" "Three Faces in the Dark" "Vanity"
 	SetFontSize 35
 	SetTextColor 80 40 140
 	
@@ -9587,7 +9682,7 @@ Show
 
 
 SetTab [Gems]
-SetOption $MyGems input ["Portal"] # Add gems you know you'll use here will show with a pink minimap icon and beam effect.
+SetOption $MyGems input ["Portal"] # Add gems you know you'll use here, they'll show with a pink minimap icon and beam effect.
 
 # Gem, Vaal, Level, Quality, Drop Only, Awakened, Attack, Support, Active Skill Gem, Spell Skill Gem
 
