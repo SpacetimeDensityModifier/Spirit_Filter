@@ -7033,6 +7033,7 @@ Show
 # End Progression
     
 SetTab [Accessories]
+SetOption $RareJewelleryToggle switch [Show] [Remove]
 
 Hide
     Class "Rings"
@@ -7210,7 +7211,10 @@ Hide
     SetBackgroundColor 50 50 30
     Continue
 
-
+$RareJewelleryToggle
+	Rarity Rare
+	Class "Rings" "Amulets" "Belts"
+	Continue
 
 
 Show
@@ -7403,6 +7407,7 @@ Show
     SetTextColor 255 0 0
     SetBackgroundColor 50 30 30
     MinimapIcon 0 Yellow Hexagon
+    PlayEffect Yellow
     SetFontSize 35
     Branch
     Continue
@@ -9305,16 +9310,91 @@ Show
 	Branch
 	Continue
 	BaseType "Wild"
-	SetBackgroundColor 30 20 20
+	SetBackgroundColor 30 0 30
 	Branch
 	Continue
 	BaseType "Vivid"
-	SetBackgroundColor 20 30 20
+	SetBackgroundColor 30 30 10
 	Branch
 	Continue
 	BaseType "Primal"
-	SetBackgroundColor 20 20 30
-
+	SetBackgroundColor 10 20 35
+	Branch
+	Continue
+	BaseType "Ursaling"
+	SetBorderColor 30 30 150
+	Branch
+	Continue
+	BaseType "Hellion" 
+	SetBorderColor 70 70 0
+	Branch
+	Continue
+	BaseType "Hatchling"
+	SetBorderColor 120 120 120
+	Branch
+	Continue
+	BaseType "Ape"
+	SetBorderColor 120 0 0
+	Branch
+	Continue
+	BaseType "Thornwolf"
+	SetBorderColor 0 0 0
+	Branch
+	Continue
+	BaseType "Bristlebeast"
+	SetBorderColor 150 150 50
+	Branch
+	Continue
+	BaseType "Homunculus"
+	SetBorderColor 255 255 255
+	Branch
+	Continue
+	BaseType "Razorleg"
+	SetBorderColor 0 90 40
+	Branch
+	Continue
+	BaseType "Dustspitter"
+	SetBorderColor 0 0 120
+	Branch
+	Continue
+	BaseType "Rhoa"
+	SetBorderColor 120 120 200
+	Branch
+	Continue
+	BaseType "Viper"
+	SetBorderColor 200 120 50
+	Branch
+	Continue
+	BaseType "Weta"
+	SetBorderColor 200 100 100
+	Branch
+	Continue
+	BaseType "Arachnid"
+	SetBorderColor 200 50 40
+	Branch
+	Continue
+	BaseType "Thornweaver"
+	SetBorderColor 255 255 0
+	Branch
+	Continue
+	BaseType "Thornwolf"
+	SetBorderColor 70 50 0
+	Branch
+	Continue
+	BaseType "Scorpion"
+	SetBorderColor 0 125 0
+	Branch
+	Continue
+	BaseType "Feasting Horror"
+	SetBorderColor 90 25 90
+	Branch
+	Continue
+	BaseType "Leech"
+	SetBorderColor 120 120 0
+	Branch
+	Continue
+	BaseType "Rhex"
+	SetBorderColor 150 0 220
 	
 Show
     BaseType "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll"
