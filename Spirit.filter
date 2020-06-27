@@ -202,7 +202,7 @@ SetOption $Defenses input [$AR_AREV] # Enter a defense code (BaseType presets) f
 
 SetTab [Offenses]
 SetOption $Offense info [Here you can choose your highlighted offensive equipment for your build.] 
-SetOption $OffenseList info [Sceptre, 1HMace, 2HMace, 1HAxes, 2HAxes, 1HSwords, 1HThrustingSwords, 2HSwords, Bows, Quivers, Claws, Daggers, Rune Daggers, Staves, Warstaves, Wands. Adding _ARShields, _AREVShields, etc to any 1H weapon will also highlight that grouping. You can append similar codes with an underscore as well, though only once, in the event that you dual wield or aren't picky. For example, 1HAxes_1HSwords will reference both of those weapon groupings. The order must be in the same as the list here.]
+SetOption $OffenseList info [Sceptres, 1HMaces, 2HMaces, 1HAxes, 2HAxes, 1HSwords, 1HThrustingSwords, 2HSwords, Bows, Quivers, Claws, Daggers, Rune Daggers, Staves, Warstaves, Wands. Adding _ARShields, _AREVShields, etc to any 1H weapon will also highlight that grouping. You can append similar codes with an underscore as well, though only once, in the event that you dual wield or aren't picky. For example, 1HAxes_1HSwords will reference both of those weapon groupings. The order must be in the same as the list here.]
 SetOption $Offenses input [$1HSwords_1HThrustingSwords] # Enter an offense code (BaseType presets) from the list above. 
 
 SetTab [Extras]
@@ -7208,6 +7208,7 @@ Hide
     Class "Rings" "Amulets" "Belts"
     BaseType $Rings $Amulets $Belts
     Rarity < $MF_Threshold
+    AreaLevel > 10
     SetBackgroundColor 50 50 30
     Continue
 
@@ -9378,7 +9379,7 @@ Show
 	Branch
 	Continue
 	BaseType "Thornwolf"
-	SetBorderColor 70 50 0
+	SetBorderColor 110 50 0
 	Branch
 	Continue
 	BaseType "Scorpion"
@@ -9395,6 +9396,42 @@ Show
 	Continue
 	BaseType "Rhex"
 	SetBorderColor 150 0 220
+	Branch
+	Continue
+	BaseType "Maw"
+	SetBorderColor 150 60 255
+	Branch
+	Continue
+	BaseType "Striketail"
+	SetBorderColor 70 110 255
+	Branch
+	Continue
+	BaseType "Snap Hound"
+	SetBorderColor 200 50 50
+	Branch
+	Continue
+	BaseType "Parasite"
+	SetBorderColor 240 150 150
+	Branch
+	Continue
+	BaseType "Chimeral"
+	SetBorderColor 0 50 120
+	Branch
+	Continue
+	BaseType "Hellion Alpha"
+	SetBorderColor 220 50 220
+	Branch
+	Continue
+	BaseType "Crushclaw"
+	SetBorderColor 120 120 240
+	Branch
+	Continue
+	BaseType "Cleaveling"
+	SetBorderColor 220 120 0
+	Branch
+	Continue
+	BaseType "Spikeback"
+	SetBorderColor 220 220 0
 	
 Show
     BaseType "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll"
