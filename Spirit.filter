@@ -463,7 +463,16 @@ SetTab [Accessories]
 SetOption $Rings input ["Coral Ring" "Iron Ring" "Paua Ring" "Unset Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Diamond Ring" "Gold Ring" "Moonstone Ring" "Two-Stone Ring" "Amethyst Ring" "Prismatic Ring"] # Just remove the rings you don't want to use from this list.
 SetOption $Amulets input ["Coral Amulet" "Paua Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Gold Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet"] # Just remove the amulets you don't want to use from this list.
 SetOption $Belts input ["Studded Belt" "Chain Belt" "Rustic Sash" "Heavy Belt" "Leather Belt" "Cloth Belt"] # Just remove the belts you don't want to use from this list.
-   
+SetOption $LoreweaveRecipe dropdown [Show] [Remove] 
+
+$LoreweaveRecipe
+    Rarity Unique
+    Class "Rings"
+    SetBorderColor 85 170 40
+	PlayEffect Green
+	MinimapIcon 1 Green Star
+	Continue
+	
 Show
     AreaLevel < 10
     Rarity <= Magic
@@ -3041,6 +3050,7 @@ Hide
     SetTextColor 180 180 60
     MinimapIcon $OutdatedRareBases
     PlayEffect None
+    PlayAlertSound None
 Branch
  Continue
     BaseType "Splintered Tower Shield"
@@ -6114,6 +6124,7 @@ Hide
     SetTextColor 180 180 60
     MinimapIcon $OutdatedRareBases
     PlayEffect None
+    PlayAlertSound None
 Branch
  Continue
     BaseType "Driftwood Club" "Rusted Sword" "Crude Bow" "Glass Shank" "Driftwood Sceptre"
@@ -9542,7 +9553,6 @@ SetOption $UniqueBase dropdown [Show] [Hide] [Remove]
 SetOption $T1Uniques dropdown [Show]
 SetOption $T2Uniques dropdown [Show]
 SetOption $MultiBaseUniques dropdown [Show]
-SetOption $LoreweaveRecipe dropdown [Show] [Remove]
 SetOption $UniqueJewels dropdown [Show]
 SetOption $T3Uniques dropdown [Show]
 SetOption $T4Uniques dropdown [Show]
@@ -9603,14 +9613,6 @@ $MultiBaseUniques
 	MinimapIcon 1 Cyan Star
 	PlayEffect Cyan
 	PlayAlertSound 16 200
-	Continue
-	
-$LoreweaveRecipe
-    Rarity Unique
-    Class "Rings"
-    SetBorderColor 85 170 40
-	PlayEffect Green
-	MinimapIcon 1 Green Star
 	Continue
 	
 $UniqueJewels
