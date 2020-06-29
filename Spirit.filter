@@ -3,7 +3,7 @@ SetTab [Defenses]
 SetTab [Offenses]
 SetTab [Extras]
 SetTab [Accessories]
-SetTab [Gems]
+SetTab [Progression]
 SetTab [Endgame Gear]
 SetTab [Leagues]
 SetTab [Uniques]
@@ -248,20 +248,26 @@ $SizeBasedSize
     Height = 4
     SetFontSize 26
     Continue
+
+SetTab [Progression]
+SetOption $ProgressionInfo info [These options remove the MinimapIcon from items the filter considers low or negligible value. These are enabled by default to provide the most information regarding drops. An outdated item is any base which has a better version of the same type available in the current area.]
+SetOption $UpdatedNormalBases switch [1 Grey Circle] [-1] 
+SetOption $UpdatedMagicBases switch [1 Blue Circle] [-1]
+SetOption $UpdatedRareBases switch [1 Yellow Circle] [-1]
     
 Show
     Branch
     Continue
     Rarity Normal
-    MinimapIcon 1 Grey Circle
+    MinimapIcon $UpdatedNormalBases
     Branch
     Continue
     Rarity Magic
-    MinimapIcon 1 Blue Circle
+    MinimapIcon $UpdatedMagicBases
     Branch
     Continue
     Rarity Rare
-    MinimapIcon 1 Yellow Circle
+    MinimapIcon $UpdatedRareBases
 
 SetTab [Extras] 
 SetOption $ChaosRecipe switch [Hide] [Show] [Hide] [Remove] # Do you prioritize the chaos recipe, use it to fill in the gaps, or avoid it completely (this nullifies the next option).
@@ -464,10 +470,13 @@ Show
     BaseType $Rings $Amulets $Belts
     Continue
 
+SetTab [Progression]
+SetOption $OutdatedNormalBases switch [2 Grey Circle] [-1]
+
 Hide
     Rarity Normal
     SetTextColor 127 127 127
-    MinimapIcon 2 Grey Circle
+    MinimapIcon $OutdatedNormalBases
     PlayEffect Grey Temp   
 Branch
  Continue
@@ -1741,10 +1750,12 @@ Hide
 
 # End Normal Progression
 
+SetOption $OutdatedMagicBases switch [2 Blue Circle] [-1]
+
 Hide
     Rarity Magic
     SetTextColor 70 70 200
-    MinimapIcon 2 Blue Circle
+    MinimapIcon $OutdatedMagicBases
     PlayEffect Blue Temp    
 Branch
  Continue
@@ -3023,11 +3034,12 @@ Hide
 # End Magic Progression
  
    
+SetOption $OutdatedRareBases switch [2 Yellow Circle] [-1]
 
 Hide
     Rarity Rare
     SetTextColor 180 180 60
-    MinimapIcon 2 Yellow Circle
+    MinimapIcon $OutdatedRareBases
     PlayEffect None
 Branch
  Continue
@@ -4306,7 +4318,7 @@ Hide
 Hide
     Rarity Normal
     SetTextColor 127 127 127
-    MinimapIcon 2 Grey Circle
+    MinimapIcon $OutdatedNormalBases
     PlayEffect Grey Temp   
 Branch
  Continue
@@ -5203,7 +5215,7 @@ Branch
 Hide
     Rarity Magic
     SetTextColor 70 70 200
-    MinimapIcon 2 Blue Circle
+    MinimapIcon $OutdatedMagicBases
     PlayEffect Blue Temp   
 Branch
  Continue
@@ -6100,7 +6112,7 @@ Branch
 Hide
     Rarity Rare
     SetTextColor 180 180 60
-    MinimapIcon 2 Yellow Circle
+    MinimapIcon $OutdatedRareBases
     PlayEffect None
 Branch
  Continue
@@ -7353,7 +7365,7 @@ Show
     Branch
     Continue
     BaseType "Ancient Shard" "Annulment Shard" "Engineer's Orb" "Harbinger's Shard" "Bestiary Orb" "Orb of Binding" "Orb of Horizons"
-	SetBackgroundColor 80 80 80 # T2
+	SetBackgroundColor 80 80 80
 	MinimapIcon 2 Yellow Hexagon
 	PlayEffect Yellow
 	PlayAlertSound 2 250  
@@ -7368,7 +7380,7 @@ Show
     Branch
     Continue
     BaseType "Cartographer's Seal" "Unshaping Orb" 
-	SetBackgroundColor 80 80 80 # T2
+	SetBackgroundColor 80 80 80
 	MinimapIcon 2 Pink Hexagon
 	PlayEffect White
 	PlayAlertSound 2 200
@@ -7991,7 +8003,7 @@ Show
     Rarity < Unique
     SetBackgroundColor 90 90 30
     MinimapIcon 2 White Triangle # Talismans share this minimap icon
-    PlayAlertSound 11 300 # Sound for Talismans
+    PlayAlertSound 11 300 # Talismans
     PlayEffect Red
     Continue
     
@@ -9785,7 +9797,7 @@ Show
     SetBackgroundColor 150 30 30
 
 
-SetTab [Gems]
+SetTab [Progression]
 SetOption $MyGems input ["Portal"] # Add gems you know you'll use here, they'll show with a pink minimap icon and beam effect.
 
 # Gem, Vaal, Level, Quality, Drop Only, Awakened, Attack, Support, Active Skill Gem, Spell Skill Gem
