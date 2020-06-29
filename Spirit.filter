@@ -270,6 +270,8 @@ Show
     MinimapIcon $UpdatedRareBases
 
 SetTab [Extras] 
+SetOption $HiddenQuivers switch [Hide] [Remove] # If you use quivers, set this to remove.
+
 SetOption $ChaosRecipe switch [Hide] [Show] [Hide] [Remove] # Do you prioritize the chaos recipe, use it to fill in the gaps, or avoid it completely (this nullifies the next option).
 SetOption $ChaosHate switch [Grey] [None] # Should the chaos recipe have an effect?
 SetOption $RegalRecipe switch [Remove] [Show] [Hide] [Remove] # Do you prioritize the regal recipe, use it to fill in the gaps, or avoid it completely (this nullifies the next option).
@@ -372,8 +374,10 @@ Continue
 	SetBackgroundColor 0 0 80 # Extra Items for your build
 	Class "Body Armours" "Gloves" "Boots" "Helmets" "Shields" "One Hand Axes" "Two Hand Axes" "Bows" "Claws" "Daggers" "Rune Daggers" "One Hand Maces" "Two Hand Maces" "Staves" "Warstaves" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Swords" "Wands" "Quivers"
 
-Hide
+
+$HiddenQuivers
     Class "Quivers"
+    MinimapIcon -1
     Continue
  
 Hide
@@ -1559,11 +1563,11 @@ Branch
     AreaLevel >= 69
     DropLevel = 65
  
-
+SetOption $NormalEndgameBases switch [2 White Circle] [-1]
     
 Hide
     Rarity Normal
-    MinimapIcon 2 White Circle
+    MinimapIcon $NormalEndgameBases
     PlayEffect White Temp  
 Branch
  Continue       
@@ -5044,7 +5048,7 @@ Branch
 
 Hide
 	Rarity Normal
-    MinimapIcon 1 White Circle
+    MinimapIcon $NormalEndgameBases
     PlayEffect White Temp 
 Branch
  Continue
@@ -7056,7 +7060,7 @@ Show
 # End Progression
     
 SetTab [Accessories]
-SetOption $RareJewelleryToggle switch [Show] [Remove]
+SetOption $RareJewelleryToggle switch [Show] [Remove] # Do you want rare jewellery to ignore your MF Threshold?
 
 Hide
     Class "Rings"
@@ -7190,12 +7194,34 @@ Hide
     Continue
     BaseType "Studded Belt"
     AreaLevel >= 23
-  
+
+SetOption $JewelleryInfo info [The toggles below control whether your build related jewellery has an icon, by rarity. Jewellery outside of your build (anything you remove from the list) has an icon based on similar toggles in Progression under Updated bases.]
+
+SetOption $NormalJewelleryIcon switch [1 White Circle] [-1]
+SetOption $MagicJewelleryIcon switch [1 Blue Circle] [-1]
+SetOption $RareJewelleryIcon switch [1 Yellow Circle] [-1]
+   
+Hide
+    Class "Rings" "Amulets" "Belts"
+    Rarity < $MF_Threshold
+    Branch
+    Continue
+    Rarity Normal
+    MinimapIcon $UpdatedNormalBases
+    Branch
+    Continue
+    Rarity Magic
+    MinimapIcon $UpdatedMagicBases
+    Branch
+    Continue
+    Rarity Rare
+    MinimapIcon $UpdatedRareBases
+    
 Show
     Class "Rings" "Amulets" "Belts"
     BaseType $Rings $Amulets $Belts
     Rarity Normal
-    MinimapIcon 1 White Circle
+    MinimapIcon $NormalJewelleryIcon
     SetBackgroundColor 50 50 30
     SetTextColor 255 255 255
     SetFontSize 34
@@ -7205,7 +7231,7 @@ Show
     Class "Rings" "Amulets" "Belts"
     BaseType $Rings $Amulets $Belts
     Rarity Magic
-    MinimapIcon 1 Blue Circle
+    MinimapIcon $MagicJewelleryIcon
     SetBackgroundColor 50 50 30
     SetTextColor 80 180 255
     SetFontSize 36
@@ -7219,14 +7245,9 @@ Show
     SetBackgroundColor 50 50 30
     SetTextColor 245 120 80
     SetFontSize 38
-    MinimapIcon 1 Yellow Circle
+    MinimapIcon $RareJewelleryIcon
     Continue
-    
-Hide
-    Class "Rings" "Amulets" "Belts"
-    Rarity < $MF_Threshold
-    Continue
-    
+ 
 Hide
     Class "Rings" "Amulets" "Belts"
     BaseType $Rings $Amulets $Belts
@@ -7603,7 +7624,6 @@ SetOption $MyFlasks input ["Quicksilver Flask" "Bismuth Flask" "Stibnite Flask" 
 
     
 Hide
-    MinimapIcon 2 White Circle
     Rarity = Normal
     Branch
     Continue
@@ -7611,24 +7631,28 @@ Hide
     AreaLevel < 68
     SetFontSize 32
     SwitchTo Show
+    MinimapIcon 2 White Circle
     Branch
     Continue
     BaseType "Mana Flask"
     AreaLevel < 68
     SetFontSize 30
     SwitchTo Show
+    MinimapIcon 2 White Circle
     Branch
     Continue
     BaseType "Hybrid Flask"
     AreaLevel < 68
     SetFontSize 30
     SwitchTo Show
+    MinimapIcon 2 White Circle
     Branch
     Continue
     Class "Utility Flasks"
     AreaLevel > 70
     SetFontSize 34
     SetBorderColor 50 110 150
+    MinimapIcon 2 White Circle
     Branch
     Continue
     AreaLevel >= 3
@@ -7699,7 +7723,6 @@ Hide
     
     
 Hide
-    MinimapIcon 2 Blue Circle
     Rarity = Magic
     SetTextColor 70 70 200
     Branch
@@ -7707,18 +7730,21 @@ Hide
     BaseType "Life Flask"
     AreaLevel < 68
     SetFontSize 32
+    MinimapIcon 2 Blue Circle
     SwitchTo Show
     Branch
     Continue
     BaseType "Mana Flask"
     AreaLevel < 68
     SetFontSize 30
+    MinimapIcon 2 Blue Circle
     SwitchTo Show
     Branch
     Continue
     BaseType "Hybrid Flask"
     AreaLevel < 68
     SetFontSize 30
+    MinimapIcon 2 Blue Circle
     SwitchTo Show
     Branch
     Continue
@@ -7726,6 +7752,7 @@ Hide
     AreaLevel > 70
     SetFontSize 34
     SetBorderColor 40 80 140
+    MinimapIcon 2 Blue Circle
     Branch
     Continue
     AreaLevel >= 3
