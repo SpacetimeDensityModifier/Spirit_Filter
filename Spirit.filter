@@ -94,7 +94,7 @@ SetVar $ARES_EVES $ARES $EVES
 SetTab [Weapons]
 SetOption $Weapon_Info info [Here are complete lists of weapon BaseTypes, grouped by class.]
 SetOption $Sceptres input ["Driftwood Sceptre" "Darkwood Sceptre" "Bronze Sceptre" "Quartz Sceptre" "Iron Sceptre" "Ochre Sceptre" "Ritual Sceptre" "Shadow Sceptre" "Grinning Fetish" "Horned Sceptre" "Sekhem" "Crystal Sceptre" "Lead Sceptre" "Blood Sceptre" "Royal Sceptre" "Abyssal Sceptre" "Stag Sceptre" "Karui Sceptre" "Tyrant's Sekhem" "Opal Sceptre" "Platinum Sceptre" "Vaal Sceptre" "Carnal Sceptre" "Void Sceptre" "Sambar Sceptre"]
-SetOption $1HMaces input ["Driftwood Club" "Tribal Club" "Spiked Club" "Stone Hammer" "War Hammer" "Bladed Mace" "Ceremonial Mace" "Dream Mace" "Wyrm Mace" "Petrified Club" "Barbed Club" "Rock Breaker" "Battle Hammer" "Flanged Mace" "Ornate Mace" "Phantom Mace" "Dragon Mace" "Ancestral Club" "Tenderizer" "Gavel" "Legion Hammer" "Pernarch" "Auric Mace" "Nightmare Mace" "Behemoth Mace"]
+SetOption $1HMaces input ["Driftwood Club" "Tribal Club" "Spiked Club" "Stone Hammer" "War Hammer" "Bladed Mace" "Ceremonial Mace" "Dream Mace" "Wyrm Mace" "Petrified Club" "Barbed Club" "Rock Breaker" "Battle Hammer" "Flanged Mace" "Ornate Mace" "Phantom Mace" "Dragon Mace" "Ancestral Club" "Tenderizer" "Gavel" "Legion Hammer" "Pernach" "Auric Mace" "Nightmare Mace" "Behemoth Mace"]
 SetOption $2HMaces input ["Driftwood Maul" "Tribal Maul" "Mallet" "Sledgehammer" "Jagged Maul" "Brass Maul" "Fright Maul" "Morning Star" "Totemic Maul" "Great Mallet" "Steelhead" "Spiny Maul" "Plated Maul" "Dread Maul" "Solar Maul" "Karui Maul" "Colossus Mallet" "Piledriver" "Meatgrinder" "Imperial Maul" "Terror Maul" "Coronal Maul"]
 SetOption $1HAxes input ["Rusted Hatchet" "Jade Hatchet" "Boarding Axe" "Cleaver" "Broad Axe" "Arming Axe" "Decorative Axe" "Spectral Axe" "Etched Hatchet" "Jasper Axe" "Tomahawk" "Wrist Chopper" "War Axe" "Chest Splitter" "Ceremonial Axe" "Wraith Axe" "Engraved Hatchet" "Karui Axe" "Siege Axe" "Reaver Axe" "Butcher" "Vaal Hatchet" "Royal Axe" "Infernal Axe" "Runic Hatchet"]
 SetOption $2HAxes input ["Stone Axe" "Jade Chopper" "Woodsplitter" "Poleaxe" "Double Axe" "Gilded Axe" "Shadow Axe" "Dagger Axe" "Jasper Chopper" "Timber Axe" "Headsman Axe" "Labrys" "Noble Axe" "Abyssal Axe" "Karui Chopper" "Talon Axe" "Sundering Axe" "Ezomyte Axe" "Vaal Axe" "Despot Axe" "Void Axe" "Fleshripper"]
@@ -5026,7 +5026,7 @@ Branch
     DropLevel = 63 
 Branch
  Continue
-    BaseType "Pernarch" "Vaal Blade" "Spine Bow" "Vaal Sceptre"
+    BaseType "Pernach" "Vaal Blade" "Spine Bow" "Vaal Sceptre"
     AreaLevel >= 66
     DropLevel = 64    
 Branch
@@ -5923,7 +5923,7 @@ Branch
     DropLevel = 63 
 Branch
  Continue
-    BaseType "Pernarch" "Vaal Blade" "Spine Bow" "Vaal Sceptre"
+    BaseType "Pernach" "Vaal Blade" "Spine Bow" "Vaal Sceptre"
     AreaLevel >= 66
     DropLevel = 64    
 Branch
@@ -6821,7 +6821,7 @@ Branch
     DropLevel = 63 
 Branch
  Continue
-    BaseType "Pernarch" "Vaal Blade" "Spine Bow" "Vaal Sceptre"
+    BaseType "Pernach" "Vaal Blade" "Spine Bow" "Vaal Sceptre"
     AreaLevel >= 66
     DropLevel = 64    
 Branch
@@ -7886,6 +7886,10 @@ Show
     PlayEffect Grey
     Branch
     Continue
+    BaseType "Offering to the Goddess"
+    SetBackgroundColor 70 20 0
+    Branch
+    Continue
     BaseType "Sacrifice at "
     SetBackgroundColor 80 20 10
     Branch
@@ -8780,6 +8784,7 @@ Show
 	
 Show
     Rarity Unique
+	Replica False
     MinimapIcon 1 Cyan Triangle
     BaseType "Ancient Spirit Shield" "Strapped Mitts" "Chain Belt" "Shackled Boots" "Gemstone Sword" "Crusader Helmet" "Paua Amulet" "Sacrificial Garb" "Quartz Flask" "Heavy Belt"
     SetTextColor 255 0 0
@@ -8857,6 +8862,7 @@ Show
     
 Show
     Rarity Unique
+	Replica False
     BaseType "Silver Flask" "Unset Ring" "Leather Belt" "Necromancer Circlet" "Steelwood Bow" "Vaal Rapier" "Titanium Spirit Shield" "Vaal Regalia"
     SetTextColor 210 250 40
     MinimapIcon 1 Cyan Triangle
@@ -9004,6 +9010,7 @@ Show
     
 Show
     Rarity Unique
+	Replica False
     BaseType "Sulphur Flask" "Ornate Quiver" "Legion Boots" "Jade Amulet"
     SetTextColor 210 200 110
     MinimapIcon 1 Cyan Triangle
@@ -9355,7 +9362,7 @@ Show
     MinimapIcon 2 Blue Triangle
 	Branch
 	Continue
-	BaseType "Thornfruit" "Scalefruit" "Blisterfruit"
+	BaseType "Thornfruit" "Scalefruit" "Blisterfruit" 
 	SetFontSize 36
     MinimapIcon 2 Yellow Triangle
 	Branch
@@ -9482,6 +9489,14 @@ Show
 	Continue
 	BaseType "Spikeback"
 	SetBorderColor 220 220 0
+
+Show
+	BaseType "Fortune Bud" "Fortune Flower" "Fortune Blossom" "Lifeforce Bud" "Lifeforce Flower" "Lifeforce Blossom" "Horticrafting Bud" "Horticrafting Flower" "Horticrafting Blossom"
+	SetBackgroundColor 30 10 50
+	SetTextColor 20 160 220
+	SetBorderColor 120 140 0
+	MinimapIcon 1 Yellow Triangle
+	Continue
 	
 Show
     BaseType "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll"
@@ -9490,7 +9505,7 @@ Show
     Continue
     
 Show
-    BaseType "Facetor's Lens" "Infused Engineer's Orb"
+    BaseType "Facetor's Lens" "Infused Engineer's Orb" "Farric Lure" "Saqawine Lure" "Fenumal Lure" "Craicic Lure"
     MinimapIcon 1 Blue Triangle
     SetTextColor 20 160 220
     SetBorderColor 20 160 220
@@ -9513,7 +9528,173 @@ Show
     Branch
     Continue
     BaseType "Dedication to the Goddess"
+
+# Heist
+
+Show
+	Class Gem
+	AlternateQuality True
+	SetBackgroundColor 150 80 30
+	MinimapIcon 2 Yellow Triangle
+	Continue
+
+Show
+	BaseType "Regrading Lens"
+	SetBorderColor 200 140 0
+	MinimapIcon 1 Blue Triangle
+	Continue
+
+Show
+	BaseType "Tempering Orb" "Tailoring Orb"
+	SetBorderColor 180 50 30
+	MinimapIcon 1 Blue Triangle
+	Continue
+
+Show
+	BaseType "Rogue's Marker"
+	SetBorderColor 110 60 0
+	SetTextColor 150 30 0
+	MinimapIcon 2 White Triangle
+	Continue
     
+Show
+	Class "Heist Target"
+	SetBorderColor 0 255 0
+	SetTextColor 0 255 0
+	MinimapIcon 1 Green Triangle
+	Continue
+
+Show
+	BaseType "Contract"
+	SetBackgroundColor 80 100 0
+	SetBorderColor 0 90 0
+	MinimapIcon 1 Green Triangle
+	Continue
+
+Show
+	Class "Blueprint"
+	SetBackgroundColor 0 20 120
+	SetBorderColor 200 200 200
+	MinimapIcon 2 Green Triangle
+	Continue
+
+Show
+	Class "Heist"
+	SetBackgroundColor 90 20 70
+	MinimapIcon 2 White Triangle
+	Continue
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Assembler Wand" "Congregator Wand" "Accumulator Wand"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" 
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Flickerflame Blade" "Flashfire Blade" "Infernal Blade"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Shadow Fangs" "Malign Fangs" "Void Fangs"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Flare Mace" "Crack Mace" "Boom Mace"
+	MinimapIcon 2 Yellow Triangle
+	
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Hedron Bow" "Foundry Bow" "Solarine Bow"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Transformer Staff" "Reciprocation Staff" "Battery Staff"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Capacity Rod" "Potentiality Rod" "Eventuality Rod"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Prime Cleaver" "Honed Cleaver" "Apex Cleaver"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Rebuking Blade" "Blasting Blade" "Banishing Blade"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Micro-Distillery Belt" "Mechalarm Belt"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Astrolabe Amulet" "Simplex Amulet"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	SetBackgroundColor 150 30 0
+	BaseType "Cogwork Ring" "Geodesic Ring"
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	Class "Trinket"
+	SetBackgroundColor 120 20 20
+
+Show
+	Replica True
+	SetBackgroundColor 100 60 40
+	MinimapIcon 1 Orange Triangle
+	PlayEffect Orange
+    
+
 # End Leagues
 
 Show
@@ -9690,7 +9871,8 @@ Show
     SetBackgroundColor 185 115 185
     PlayAlertSound 1 300
     Continue
-    
+
+
 # End Uniques    
 
     
@@ -9706,21 +9888,21 @@ $DivinationCards
     
 $T1Cards
     Class "Divination"
-    BaseType "The Greatest Intentions" "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "House of Mirrors" "Immortal Resolve" "Nook's Crown" "Pride of the First Ones" "Seven Years Bad Luck" "Succor of the Sinless" "The Betrayal" "The Cheater" "The Demon" "The Doctor" "The Fiend" "The Immortal" "The Iron Bard" "The Nurse" "The Price of Loyalty" "The Samurai's Eye" "The Strategist" "The World Eater"
+    BaseType "Desecrated Virtue" "Brother's Stash" "Unrequited Love" "The Gulf" "The Greatest Intentions" "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "House of Mirrors" "Immortal Resolve" "Nook's Crown" "Pride of the First Ones" "Seven Years Bad Luck" "Succor of the Sinless" "The Betrayal" "The Cheater" "The Demon" "The Doctor" "The Fiend" "The Immortal" "The Iron Bard" "The Nurse" "The Price of Loyalty" "The Samurai's Eye" "The Strategist" "The World Eater"
 	SetFontSize 45
 	SetTextColor 0 40 150
 	PlayAlertSound 4 250
 	
 $T2Cards
     Class "Divination"
-    BaseType "Peaceful Moments" "The Sustenance" "Azyran's Reward" "Blessing of God" "Chaotic Disposition" "Council of Cats" "Dark Dreams" "Etched in Blood" "Hunter's Reward" "Perfection" "Squandered Prosperity" "The Cartographer" "The Damned" "The Dragon's Heart" "The Eldritch Decay" "The Escape" "The Eye of Terror" "The Hale Heart" "The Life Thief" "The Lord of Celebration" "The Mayor" "The Offering" "The Polymath" "The Progeny of Lunaris" "The Queen" "The Saint's Treasure" "The Spark and the Flame" "The Undaunted" "The Void" "Void of the Elements" "Wealth and Power"
+    BaseType "Cursed Words" "Unchained" "Triskaidekaphobia" "Peaceful Moments" "The Sustenance" "Azyran's Reward" "Blessing of God" "Chaotic Disposition" "Council of Cats" "Dark Dreams" "Etched in Blood" "Hunter's Reward" "Perfection" "Squandered Prosperity" "The Cartographer" "The Damned" "The Dragon's Heart" "The Eldritch Decay" "The Escape" "The Eye of Terror" "The Hale Heart" "The Life Thief" "The Lord of Celebration" "The Mayor" "The Offering" "The Polymath" "The Progeny of Lunaris" "The Queen" "The Saint's Treasure" "The Spark and the Flame" "The Undaunted" "The Void" "Void of the Elements" "Wealth and Power"
     SetFontSize 40
     SetTextColor 30 0 40
     PlayAlertSound 8 300
     
 $T3Cards
     Class "Divination"
-    BaseType "The White Knight" "The Awakened" "Arrogance of the Vaal" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Burning Blood" "Cameria's Cut" "Divine Justice" "Echoes of Love" "Emperor of Purity" "Heterochromia" "Humility" "Loyalty" "Lucky Deck" "Mawr Blaidd" "More is Never Enough" "Pride Before the Fall" "Rebirth" "Remembrance" "The Artist" "The Bargain" "The Celestial Justicar" "The Celestial Stone" "The Chosen" "The Craving" "The Dapper Prodigy" "The Dark Mage" "The Deal" "The Dreamer" "The Endless Darkness" "The Enlightened" "The Ethereal" "The Gemcutter" "The Heroic Shot" "The Hoarder" "The Jeweller's Boon" "The King's Heart" "The Landing" "The Last One Standing" "The Old Man" "The Porcupine" "The Price of Protection" "The Professor" "The Puzzle" "The Risk" "The Sacrifice" "The Sephirot" "The Tinkerer's Table" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Warlord" "The Wolven King's Bite" "The Wrath" "The Wretched" "Three Faces in the Dark" "Vanity"
+    BaseType "The Journalist" "Unexpected Prize" "The White Knight" "The Awakened" "Arrogance of the Vaal" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Burning Blood" "Cameria's Cut" "Divine Justice" "Echoes of Love" "Emperor of Purity" "Heterochromia" "Humility" "Loyalty" "Lucky Deck" "Mawr Blaidd" "More is Never Enough" "Pride Before the Fall" "Rebirth" "Remembrance" "The Artist" "The Bargain" "The Celestial Justicar" "The Celestial Stone" "The Chosen" "The Craving" "The Dapper Prodigy" "The Dark Mage" "The Deal" "The Dreamer" "The Endless Darkness" "The Enlightened" "The Ethereal" "The Gemcutter" "The Heroic Shot" "The Hoarder" "The Jeweller's Boon" "The King's Heart" "The Landing" "The Last One Standing" "The Old Man" "The Porcupine" "The Price of Protection" "The Professor" "The Puzzle" "The Risk" "The Sacrifice" "The Sephirot" "The Tinkerer's Table" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Warlord" "The Wolven King's Bite" "The Wrath" "The Wretched" "Three Faces in the Dark" "Vanity"
 	SetFontSize 35
 	SetTextColor 80 40 140
 	
@@ -9812,6 +9994,7 @@ Show
     Branch
     Continue
     Corrupted True
+    Rarity < Unique
     SetBackgroundColor 50 0 0
     PlayEffect Red Temp
     SwitchTo Hide
