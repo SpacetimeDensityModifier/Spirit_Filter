@@ -61,7 +61,7 @@ SetOption $ARESBodyArmour input ["Chainmail Vest" "Chainmail Tunic" "Ringmail Co
 SetOption $ARESBoots input ["Chain Boots" "Ringmail Boots" "Mesh Boots" "Riveted Boots" "Zealot Boots" "Soldier Boots" "Legion Boots" "Crusader Boots"]
 SetOption $ARESGloves input ["Chain Gloves" "Ringmail Gloves" "Mesh Gloves" "Riveted Gloves" "Zealot Gloves" "Soldier Gloves" "Legion Gloves" "Crusader Gloves"]
 SetOption $ARESHelmets input ["Rusted Coif" "Soldier Helmet" "Great Helmet" "Crusader Helmet" "Aventail Helmet" "Zealot Helmet" "Great Crown" "Magistrate Crown" "Prophet Crown" "Praetor Crown"]
-SetOption $ARESShields input ["Plank Kite Shield" "Linded Kite Shield" "Reinforced Kite Shield" "Layered Kite Shield" "Ceremonial Kite Shield" "Etched Kite Shield" "Steel Kite Shield" "Laminated Kite Shield" "Angelic Kite Shield" "Branded Kite Shield" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield"]
+SetOption $ARESShields input ["Plank Kite Shield" "Linden Kite Shield" "Reinforced Kite Shield" "Layered Kite Shield" "Ceremonial Kite Shield" "Etched Kite Shield" "Steel Kite Shield" "Laminated Kite Shield" "Angelic Kite Shield" "Branded Kite Shield" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield"]
 
 SetVar $ARES $ARESBodyArmour $ARESBoots $ARESGloves $ARESHelmets
 
