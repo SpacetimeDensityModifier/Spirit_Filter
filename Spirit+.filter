@@ -199,6 +199,7 @@ $SizeBasedSize
     Continue
     
 Show
+    Class $Armours $Weapons $Accessories
     Branch
     Continue
     Rarity Normal
@@ -296,7 +297,7 @@ Continue
 
 # Flasks by Utility/Life/Mana
 
-Hide
+Show
     Class "Flasks"
     Rarity < Unique
     Continue
@@ -587,7 +588,7 @@ $EVES_Upgrades
 
 Show
     LinkedSockets = 3
-    AreaLevel < 32
+    AreaLevel < 15
     MinimapIcon 2 Grey Cross
     ModFontSize + 1
     SetBorderColor 70 70 70 200
@@ -595,7 +596,7 @@ Show
     
 Show
     LinkedSockets = 4
-    AreaLevel < 48
+    AreaLevel < 32
     MinimapIcon 1 Grey Cross
     ModFontSize + 2
     SetBorderColor 140 140 140 255
@@ -973,7 +974,7 @@ Show
     Class "Misc Map Items"
     BaseType "Maven's Invitation" 
     SetTextColor 0 0 80
-    SetBackgroundColor 20 60 20 255
+    SetBackgroundColor 20 60 20 235
     SetBorderColor 0 0 90
     MinimapIcon 1 Red UpsideDownHouse
     ModFontSize + 15
