@@ -287,6 +287,14 @@ ModFontSize - 2
 MinimapIcon -1
 Continue
 
+Hide
+    Class $Armours $Weapons
+    Rarity < Rare
+    LinkedSockets <= 3
+    AreaLevel > 12
+    SetBorderColor 0 0 0
+    Continue
+    
 $OffBuild_Rares
 Rarity Rare
 Class $Weapons $Armours
@@ -297,7 +305,7 @@ Continue
 
 # Flasks by Utility/Life/Mana
 
-Show
+Hide
     Class "Flasks"
     Rarity < Unique
     Continue
@@ -312,7 +320,9 @@ $UtilityFlasks
     Continue
     
 $LifeFlasks
-    Class "Flasks"
+    Branch
+    Continue
+    Class "Life Flasks"
     MinimapIcon 2 Grey Square
     Branch
     Continue
@@ -401,7 +411,9 @@ $LifeFlasks
     Continue
     
 $ManaFlasks
-    Class "Flasks"
+    Branch
+    Continue
+    Class "Mana Flasks"
     MinimapIcon 2 Grey Square
     Branch
     Continue
@@ -487,18 +499,6 @@ $ManaFlasks
     SwitchTo Show
     SetTextColor 255 255 255
     MinimapIcon 2 White Square
-    Continue
-    
-SetTab [Equipment]
-
-# Rule out poorly socketed/linked equipment
-
-Hide
-    Class $Armours $Weapons
-    Rarity < Rare
-    Sockets > 0
-    LinkedSockets < 3
-    SetBorderColor 0 0 0
     Continue
 
 $Weapon_Upgrades
@@ -596,7 +596,7 @@ Show
     
 Show
     LinkedSockets = 4
-    AreaLevel < 32
+    AreaLevel < 24
     MinimapIcon 1 Grey Cross
     ModFontSize + 2
     SetBorderColor 140 140 140 255
@@ -784,6 +784,7 @@ $LargeChromatic_Recipe
     Branch
     Continue
     AreaLevel >= $LargeChromatic_lvl
+    DropLevel < 62
     SwitchTo Hide
     Continue
     
@@ -796,6 +797,7 @@ $SmallChromatic_Recipe
     Branch
     Continue
     AreaLevel >= $SmallChromatic_lvl
+    DropLevel < 62
     SwitchTo Hide
     Continue
 
@@ -808,7 +810,6 @@ Show
     Continue
     
 Show
-    LinkedSockets < 6
     SocketGroup >= $LinkColors
     SetBackgroundColor 110 30 110 255
     MinimapIcon 1 Pink Cross
@@ -2834,6 +2835,7 @@ Continue
     BaseType "Vaal "
     ModFontSize + 2
     SetBorderColor 255 0 0
+    SetBackgroundColor 50 0 0 220
     MinimapIcon 2 Red Kite
 Branch
 Continue
