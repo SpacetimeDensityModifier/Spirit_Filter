@@ -752,7 +752,7 @@ $5L
     LinkedSockets = 5
     ModFontSize + 6
     MinimapIcon 2 White Cross
-    SetBackgroundColor 180 180 180 255
+    SetBackgroundColor 180 180 180 225
     Continue
 
 $Quality_Recipe
@@ -3315,7 +3315,7 @@ Show
     Rarity < Unique
     MinimapIcon 1 White Cross
     ModFontSize + 2
-    SetBackgroundColor 130 130 130 255
+    SetBackgroundColor 130 130 130 235
     Continue
     
 Show
@@ -3323,7 +3323,7 @@ Show
     Rarity < Unique
     ModFontSize + 4
     MinimapIcon 1 Blue Cross
-    SetBackgroundColor 150 80 120 255
+    SetBackgroundColor 150 80 120 245
     Continue
     
 Show
