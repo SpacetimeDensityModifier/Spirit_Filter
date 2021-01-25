@@ -102,7 +102,7 @@ SetOption $UtilityFlasks switch [Show] [Hide] [Remove] # Do you need any Utility
 SetOption $MyFlasks checkbox ["Quicksilver Flask"] ["Bismuth Flask"] ["Stibnite Flask"] ["Amethyst Flask"] ["Ruby Flask"] ["Sapphire Flask"] ["Topaz Flask"] ["Silver Flask"] ["Aquamarine Flask"] ["Diamond Flask"] ["Granite Flask"] ["Jade Flask"] ["Quartz Flask"] ["Sulphur Flask"] ["Basalt Flask"] # Remove flasks from this list until you have the utility flasks you'll use.
 SetOption $EmptyLine
 SetOption $LinkColors input [W] # Input a color combination here when looking for specific links. RRG, RRRRR, BBG - will show an item with that combination of sockets.
-SetOption $GemDrops switch [Show] [Hide] # Do you want non-build gems to show while leveling?
+# SetOption $GemDrops switch [Show] [Hide] # Do you want non-build gems to show while leveling?
 SetOption $MyGems input ["Portal"] # Add gems you know you'll use here, they'll show with a pink minimap icon and beam effect. Any field requiring quoted items requires a space between each item.
 SetOption $EmptyLine
 SetOption $ChromaticJewels checkbox ["Crimson"] ["Viridian"] ["Cobalt"] # Which < Rare chromatic jewels do you want to see?
@@ -2807,7 +2807,7 @@ Show
 
 # Gem, Vaal, Level, Quality, Drop Only, Awakened, Attack, Support, Active Skill Gem, Spell Skill Gem
 
-$GemDrops
+Show
     Class "Gem"
 	SetTextColor 27 162 155 
     MinimapIcon 2 Grey Kite
