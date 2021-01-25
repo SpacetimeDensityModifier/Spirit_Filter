@@ -213,7 +213,6 @@ Show
     Rarity Rare
     ModFontSize + 6
     Continue
-    
 # Setting default equipment behaviors by class category (Accessories, Weapons, Armours - together these make equipment)
 
 Show
@@ -273,7 +272,7 @@ Continue
 Show
 Rarity Normal
 Class $Weapons $Armours
-AreaLevel > 12
+AreaLevel >= 6
 SwitchTo Hide
 MinimapIcon -1
 ModFontSize - 4
@@ -282,7 +281,8 @@ Continue
 Hide
 Rarity Magic
 Class $Weapons $Armours
-AreaLevel > 22
+AreaLevel > 12
+LinkedSockets < 3
 ModFontSize - 2
 MinimapIcon -1
 Continue
