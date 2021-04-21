@@ -355,6 +355,7 @@ Continue
     AreaLevel >= $EarlyLinkALVL
     PlayAlertSound None
 	SwitchTo Hide
+	MinimapIcon -1
 Branch
 Continue
     Rarity = Rare
@@ -573,6 +574,7 @@ Continue
     AreaLevel >= $Relevant3to4LinkALVL 
     PlayAlertSound None
 	SwitchTo Hide
+	MinimapIcon -1
 Branch
 Continue
     Rarity = Rare
@@ -859,13 +861,14 @@ $LifeFlasks
     BaseType "Eternal Life" "Divine Life" "Divine Mana" "Hallowed Hybrid"
     SwitchTo Hide
     ModFontSize - 2
+    MinimapIcon -1
     Branch
     Continue
     BaseType "Eternal Life" "Hallowed Hybrid"
     AreaLevel < 68
     SwitchTo Show
     SetTextColor 255 255 255
-    MinimapIcon 2 White Square
+    MinimapIcon 2 White Raindrop
     Continue
     
 $ManaFlasks
@@ -962,6 +965,7 @@ $ManaFlasks
     AreaLevel >= 72
     BaseType "Eternal Mana" "Divine Life" "Divine Mana" "Hallowed Hybrid"
     SwitchTo Hide
+    MinimapIcon -1
     ModFontSize - 2
     Branch
     Continue
@@ -1145,7 +1149,7 @@ SetOption $AffixesBracket19 input ["of Haze" "of Invocations" "Atrophying" "Geli
 SetOption $AffixesBracket20 input ["Assailant's" "of Exile" "Festering" "Haruspex's" "Dissolving" "Blue" "Unleashed" "of Longevity" "Harrowing" "Archmage's"] # Outdated by lvl 81. You can add or remove mods to/from this bracket but probably shouldn't.
 SetOption $AffixesBracket21 input ["of the Phantom" "of Dispersion" "of Sortilege" "of the Virtuoso" "of the Troll" "Emperor's" "Tyrannical" "of the Zephyr" "of the Titan"] # Outdated by lvl 83. You can add or remove mods to/from this bracket but probably shouldn't.
 SetOption $AffixesBracket22 input ["of Splintering" "of the Infinite" "of the Rainbow" "of Refilling" "Cryomancer's" "of the Ice" "of Vibrance" "Pyroclastic" "of the Magma" "Girded" "Rapturous" "of Walling" "Overpowering" "Dragon's" "of the Lightning" "Interpolated" "Unreal" "Hero's" "Nightmare's" "Summoner's" "Encased" "of Dampening" "Glyphic" "Cheetah's"] # Outdated by lvl 86. You can add or remove mods to/from this bracket but probably shouldn't. One case where it's useful to move an affix from one bracket to another is if you're trying to craft an item that separated from its normal level pattern (%cold damage takes a higher iLvl to reach T2 on staves, 64 for wands and sceptres but 79 for staves, despite both reaching T1 at 84), you can move that typically outdated mod to a higher tier while looking for it on that base.
-SetOption $AffixesBracket23 input ["of Many" "of the Multiverse" "of the Span" "of Haste" "Predator's" "of Will" "of Relentlessness" "of Persistence" "of Surefootedness" "of Composure" "Recovering" "Inspiring" "of Overflowing" "of Savouring" "of Sipping" "of Exsanguination" "of Conflagrating" "of Fog" "of Incantations" "of Freezing" "of Ignition" "of Shocking" "Disintegrating" "of Bameth" "Mortifying" "Entombing" "Crystalising" "Heartstopping" "of Glaciation" "Tul's" "of Haast" "of Rending" "of Incision" "of Destruction" "of the Wind" "of the Blur" "Harbinger's" "Dazzling" "Resplendent" "of Exuberance" "Vaporous" "Phased" "Corrosive" "Cremating" "Carbonising" "Fanatical" "of Immolation" "of Ashes" "Xoph's" "of Tzteosh" "of Revitalization" "of Utilisation" "of Liquefaction" "Unassailable" "Unfaltering" "Splintermind's" "Mad Lord's" "Winter Beckoner's" "Frost Singer's" "Lava Conjurer's" "Flame Shaper's" "Tempest Master's" "Thunderhand's" "Tecton's" "Lithomancer's" "Magister's" "Impregnable" "Impenetrable" "of Grandmastery" "of Celebration" "of Finesse" "Athlete's" "Rapturous" "Fecund" "Vigorous" "Prime" "Ultramarine" "Zaffre" "of Blocking" "of the Bulwark" "Devastating" "of the Polymath" "of the Genius" "Perandus'" "of Excavation" "Vampire's" "of the Phoenix" "of Ryslatha" "of Immortality" "of Radiance" "Excruciating" "Electrocuting" "Vapourising" "of Arcing" "of Discharge" "Esh's" "of Ephij" "of Lioneye" "of the Ranger" "Interpermeated" "Inspired" "Incorporeal" "Legend's" "Victor's" "Seraphim's" "Mammoth's" "Hummingbird's" "Consecrated" "Resilient" "Nautilus's" "Crocodile's" "Abbot's" "Exarch's" "Bishop's" "Spirit's" "Eidolon's" "Ram's" "Ibex's" "of the Apt" "Malicious" "Illusion's" "Mirage's" "Sharpshooter's" "Anarchist's" "Winterbringer's" "Lava Caller's" "Paragon's" "Flawless" "Tempest King's" "Weaponmaster's" "Necromancer's" "Dictator's" "Flaring" "Merciless" "Enveloped" "Carapaced" "Unfailing" "of Consumption" "Parched" "Thirsty" "of Nirvana" "of Virulence" "of the Gale" "of Numbing" "of Unmaking" "Runic" "Wizard's" "Lich's" "of the Gods" "of the Godslayer" "of Staggering" "of Corundum Skin"] # The mods in this bracket are the top tier for at least one item class, often with iLvl 86+ as a drop requirement, though it also contains affixes that cap out early (many mods reach their Tier 1 affix at 75, 60, or even lower, which can sometimes indicate that they are powerful, only have one naturally occuring tier <the elemental ailments, ie % chance to ignite, shock, or freeze> or are limited in usefulness, depending on a variety of factors). Mods that cap out on one base very early (some affixes appear on rings only in low tiers, but also on amulets or other bases at higher tiers) are not treated as top tier (rather, those bases stop being great combinations with the affix). Just because a mod is top tier doesn't mean it necessarily has market value or is useful for your build, and Disqualifiers are how we handle that.
+SetOption $AffixesBracket23 input ["of Many" "of the Multiverse" "of the Span" "of Haste" "Predator's" "of Overflowing" "of Exsanguination" "of Conflagrating" "of Incantations" "Disintegrating" "of Bameth" "Mortifying" "Entombing" "Crystalising" "Heartstopping" "of Glaciation" "Tul's" "of Haast" "of Rending" "of Incision" "of Destruction" "of the Wind" "of the Blur" "Harbinger's" "Dazzling" "Resplendent" "of Exuberance" "Vaporous" "Phased" "Corrosive" "Cremating" "Carbonising" "Fanatical" "of Immolation" "of Ashes" "Xoph's" "of Tzteosh" "of Revitalization" "of Utilisation" "of Liquefaction" "Unassailable" "Unfaltering" "Splintermind's" "Mad Lord's" "Winter Beckoner's" "Frost Singer's" "Lava Conjurer's" "Flame Shaper's" "Tempest Master's" "Thunderhand's" "Tecton's" "Lithomancer's" "Magister's" "Impregnable" "Impenetrable" "of Grandmastery" "of Celebration" "of Finesse" "Athlete's" "Rapturous" "Fecund" "Vigorous" "Prime" "Ultramarine" "Zaffre" "of Blocking" "of the Bulwark" "Devastating" "of the Polymath" "of the Genius" "Perandus'" "of Excavation" "Vampire's" "of the Phoenix" "of Ryslatha" "of Immortality" "Excruciating" "Electrocuting" "Vapourising" "of Arcing" "of Discharge" "Esh's" "of Ephij" "of Lioneye" "of the Ranger" "Interpermeated" "Inspired" "Incorporeal" "Legend's" "Victor's" "Seraphim's" "Mammoth's" "Hummingbird's" "Consecrated" "Resilient" "Nautilus's" "Crocodile's" "Abbot's" "Exarch's" "Bishop's" "Spirit's" "Eidolon's" "Ram's" "Ibex's" "of the Apt" "Malicious" "Illusion's" "Mirage's" "Sharpshooter's" "Anarchist's" "Winterbringer's" "Lava Caller's" "Paragon's" "Flawless" "Tempest King's" "Weaponmaster's" "Necromancer's" "Dictator's" "Flaring" "Merciless" "Enveloped" "Carapaced" "Unfailing" "Parched" "of Nirvana" "of Virulence" "of the Gale" "of Numbing" "of Unmaking" "Runic" "Lich's" "of the Gods" "of the Godslayer" "of Staggering" "of Corundum Skin"] # The mods in this bracket are the top tier for at least one item class, often with iLvl 86+ as a drop requirement, though it also contains affixes that cap out early (many mods reach their Tier 1 affix at 75, 60, or even lower, which can sometimes indicate that they are powerful, only have one naturally occuring tier <the elemental ailments, ie % chance to ignite, shock, or freeze> or are limited in usefulness, depending on a variety of factors). Mods that cap out on one base very early (some affixes appear on rings only in low tiers, but also on amulets or other bases at higher tiers) are not treated as top tier (rather, those bases stop being great combinations with the affix). Just because a mod is top tier doesn't mean it necessarily has market value or is useful for your build, and Disqualifiers are how we handle that.
 
 
 
@@ -1475,7 +1479,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 # 
 ItemLevel >= 5 # +5 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1483,7 +1487,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 # 
 ItemLevel >= 10 # +5 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1491,7 +1495,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 # 
 ItemLevel >= 15 # +5 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1499,7 +1503,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4 # 
 ItemLevel >= 20 # +5 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1507,7 +1511,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 # 
 ItemLevel >= 25 # +5 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1515,7 +1519,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 # 
 ItemLevel >= 30 # +5 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1523,7 +1527,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 # 
 ItemLevel >= 35 # +5 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1531,7 +1535,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 # 
 ItemLevel >= 40 # +5 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1539,7 +1543,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 # 
 ItemLevel >= 45 # +5 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1547,7 +1551,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 # 
 ItemLevel >= 50 # +5 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1555,7 +1559,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 # 
 ItemLevel >= 55 # +5 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1563,7 +1567,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 # 
 ItemLevel >= 60 # +5 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1571,7 +1575,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 # 
 ItemLevel >= 65 # +5 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1579,7 +1583,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 # 
 ItemLevel >= 68 # +2 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1587,7 +1591,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 # 
 ItemLevel >= 70 # +2 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1595,7 +1599,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 # 
 ItemLevel >= 72 # +3 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1603,7 +1607,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 # 
 ItemLevel >= 75 # +2 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1611,7 +1615,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 # 
 ItemLevel >= 77 # +2 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1619,7 +1623,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 # 
 ItemLevel >= 79 # +2 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1627,7 +1631,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 $AffixesBracket20 # 
 ItemLevel >= 81 # +2 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1635,7 +1639,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 $AffixesBracket20 $AffixesBracket21 # 
 ItemLevel >= 83 # +3 per increment
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1643,7 +1647,7 @@ Hide
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 $AffixesBracket20 $AffixesBracket21 $AffixesBracket22 # 
 ItemLevel >= 86 # High End Areas
-SetTextColor 160 120 80 # Outdated Rare Items
+SetTextColor 140 130 100 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1691,7 +1695,7 @@ SetTab [Mapping]
 #################
 SetOption $Mapping info [] # Here you can customize which Atlas bases you want and which maps or regions matter to you.
 SetOption $EmptyLine
-SetOption $Atlas_Choices checkbox ["Fingerless Silk Gloves"] ["Gripped Gloves"] ["Spiked Gloves"] ["Two-Toned Boots"] ["Convoking Wand"] ["Bone Helmet"] ["Marble Amulet"] ["Blue Pearl Amulet"] ["Vanguard Belt"] ["Crystal Belt"] ["Cerulean Ring"] ["Opal Ring"] ["Steel Ring"] ["Vermillion Ring"] ["Seaglass Amulet"] ["Blessed Boots"] ["Apothecary's Gloves"] ["Artillery Quiver"] ["Iolite Ring"] ["Grasping Mail"] # These are drop-restricted bases that can be found only in specific regions of the Atlas. If you're only looking for certain ones just remove the ones you don't want.
+SetOption $Atlas_Choices checkbox ["Fingerless Silk Gloves"] ["Gripped Gloves"] ["Spiked Gloves"] ["Two-Toned Boots"] ["Convoking Wand"] ["Bone Helmet"] ["Marble Amulet"] ["Blue Pearl Amulet"] ["Vanguard Belt"] ["Crystal Belt"] ["Cerulean Ring"] ["Opal Ring"] ["Steel Ring"] ["Vermillion Ring"] ["Seaglass Amulet"] ["Blessed Boots"] ["Apothecary's Gloves"] ["Artillery Quiver"] ["Iolite Ring"] # These are drop-restricted bases that can be found only in specific regions of the Atlas. If you're only looking for certain ones just remove the ones you don't want.
 SetOption $EmptyLine
 
 Show
@@ -1701,7 +1705,7 @@ Show
 	Continue
 
 Show
-    BaseType "Sacrificial Garb"
+    BaseType "Sacrificial Garb" "Grasping Mail"
     MinimapIcon 2 Blue Triangle
     PlayEffect Blue
     SetBackgroundColor 60 20 30 200
@@ -2432,7 +2436,7 @@ Show
 Show
     BaseType "Talisman"
     Rarity < Unique
-    SetBackgroundColor 90 90 30
+    SetBackgroundColor 90 90 30 255
     MinimapIcon 2 White Triangle # Talismans share this minimap icon
     PlayAlertSound 11 300 # Talismans
     PlayEffect Red
@@ -2465,11 +2469,6 @@ Show
 	PlayEffect Orange
     MinimapIcon 1 Orange Triangle
     Continue
-    
-Show
-    BaseType "Talisman"
-    Rarity < Unique
-    SetBackgroundColor 90 90 30
     
     Show
     BaseType "Talisman"
@@ -4199,15 +4198,16 @@ Continue
 SetTab [Corrupt Items]
 #################
 
-SetOption $Corrupted switch [Show] [Remove] [Hide] [Show]
+SetOption $Corrupted switch [Hide] [Remove] [Hide] [Show]
 SetOption $CorruptedMod switch [Show] [Remove] [Hide] [Show]
-SetOption $CorruptedUnique switch [Show] [Remove] [Hide] [Show]
+SetOption $CorruptedRare_Unique switch [Show] [Remove] [Hide] [Show]
 SetOption $Corrupted6L switch [Show] [Remove] [Hide] [Show]
 
 $Corrupted
 Branch
 Continue
 	Corrupted True
+	Rarity < Rare
 	SetBackgroundColor 50 0 0 220 # Basic Corruption
 Branch
 Continue
@@ -4223,11 +4223,11 @@ Continue
 	SwitchTo $CorruptedMod
 Branch
 Continue
-	Rarity Unique
+	Rarity >= Rare
 	CorruptedMods >= 1
 	SetBorderColor 110 0 0 # Corrupt Unique/6L
 	MinimapIcon 1 Red Star
-	SwitchTo $CorruptedUnique
+	SwitchTo $CorruptedRare_Unique
 Branch
 Continue
 	LinkedSockets = 6
@@ -4899,12 +4899,11 @@ Continue
     	Class "Support Skill Gems"
 	SetBorderColor 0 180 110 
 
-Show
+Hide
     Class "Gems"
     AreaLevel >= 68
     Quality <= 3
     GemLevel < 18
-    SwitchTo Hide
     ModFontSize - 4
 Continue
 
@@ -5009,7 +5008,7 @@ Show
 	AreaLevel <= $MagicSafetyNet 
 	Continue
 
-SetOption $RareSafetyNet slider [25] [1] [100] # This is a global Show override for the earliest areas of the game, but you can set it higher if you want to see every Magic item (with other highlights applied) for some reason.
+SetOption $RareSafetyNet slider [25] [1] [100] # This is a global Show override for the earliest areas of the game, but you can set it higher if you want to see every Rare item (with other highlights applied) for some reason.
 Show
 	Rarity Rare
 	AreaLevel <= $RareSafetyNet 
@@ -5041,7 +5040,7 @@ Show
 Show
 	Class "Quest Items"
 	BaseType "Ankh of Eternity" "Kishara's Star" "Thaumetic Emblem" "Tukohama's Tooth" "Allflame" "Bust of Gaius Sentari" "Bust of Hector Titucius" "Bust of Marceus Lioneye" "Sekhema Feather" "Miasmeter" "Valako's Jaw" "Bottled Storm" "Hinekora's Hair" "Wings of Vastiri" # Passive Rewarding Quests
-	SetBackgroundColor 255 255 255
+	SetBackgroundColor 255 255 255 220
 	ModFontSize + 6
 
 SetOption $Merveil_Ring switch [Show] [Remove]
@@ -5081,9 +5080,19 @@ SetOption $RunningShoes switch [Show] [Remove]
 $RunningShoes
 	Identified False
 	Class "Boots"
-	Rarity > Normal
-	AreaLevel <= $MagicSafetyNet
+	Rarity >= Rare
+	AreaLevel <= $RareSafetyNet
 	SetBorderColor 60 210 60 
+	PlayEffect Green
+	MinimapIcon 2 Green Circle
+	Continue
+
+$RunningShoes
+	Identified False
+	Class "Boots"
+	Rarity Magic
+	AreaLevel <= $MagicSafetyNet
+	SetBorderColor 60 150 60 
 	PlayEffect Green
 	MinimapIcon 2 Green Circle
 	Continue
@@ -5093,7 +5102,6 @@ $RunningShoes
 	Class "Boots"
 	HasExplicitMod >=1 "Runner's" "Sprinter's" "Stallion's" "Gazelle's" "Cheetah's" "Hellion's"
 	Rarity > Normal
-	AreaLevel <= $MagicSafetyNet
 	SetBorderColor 60 210 60 
 	PlayEffect Green
 	MinimapIcon 2 Green Circle
