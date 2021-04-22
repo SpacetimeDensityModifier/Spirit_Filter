@@ -5,7 +5,6 @@ SetTab [Weapons]
 SetTab [Armours]
 SetTab [Accessories]
 SetTab [General Strictness]
-SetTab [Build Highlights]
 SetTab [Affixes - Customization]
 SetTab [Racing]
 SetTab [Jewels]
@@ -329,46 +328,6 @@ Continue
 	SwitchTo $RareJewelOverride
 
 #################
-SetTab [Sockets and Links]
-#################
-
-
-SetOption $3to4LinkItems switch [Show] [Remove] [Show]
-SetOption $3to4LinkItemIconSize slider [2] [0] [2]
-SetOption $3to4LinkItemTextSize slider [32] [18] [45]
-SetOption $EarlyLinkALVL slider [9] [1] [100] # What Area Level should regular linked items stop showing at?
-SetOption $3to4LinkItemRare switch [Show] [Remove] [Hide] [Show]
-SetOption $3to4LinkItemUnique switch [Show] [Remove] [Hide] [Show]
-SetOption $EmptyLine
-
-$3to4LinkItems
-    LinkedSockets >= 3
-    LinkedSockets <= 4
-    SetBackgroundColor 50 50 50 225 # 4Link
-    SetFontSize $3to4LinkItemTextSize
-    MinimapIcon $3to4LinkItemIconSize Grey Cross
-Branch
-Continue
-Branch
-Continue
-    Rarity < Rare
-    AreaLevel >= $EarlyLinkALVL
-    PlayAlertSound None
-	SwitchTo Hide
-	MinimapIcon -1
-Branch
-Continue
-    Rarity = Rare
-    PlayAlertSoundPositional 2 50 # 4Link Sound
-    ModFontSize + 4
-	SwitchTo $3to4LinkItemRare
-Branch
-Continue
-    Rarity = Unique
-    ModFontSize + 6
-	SwitchTo $3to4LinkItemUnique
-
-#################
 SetTab [Weapons]
 #################
 
@@ -543,49 +502,79 @@ $Belt_Upgrades
     Continue
     
 #################
-SetTab [Build Highlights]
+SetTab [Sockets and Links]
 #################
 
-SetOption $Build_Highlights info [Items for your build that meet these requirements will display with a purple or pink icon or beam. The default state of the filter has Off Build rares showing, and all build overlays Removed (every top rare, 3 to 4L, and 5L would be pink otherwise).] 
-SetOption $EmptyLine
-SetOption $Relevant3to4Link switch [Remove] [Remove] [Hide] [Show] # This toggle controls a highlight for top bases, narrowed down by your selections in the Weapons tab (Armour needs more extravagant filtering). Toggling this on without making the other Equipment customizations will show any linked top base for the area level.
-SetOption $Relevant3to4LinkItemIconSize slider [1] [0] [2]
-SetOption $Relevant3to4LinkItemTextSize slider [32] [18] [45]
-SetOption $Relevant3to4LinkItemLowRarity switch [Show] [Remove] [Hide] [Show]
-SetOption $Relevant3to4LinkALVL slider [22] [1] [100] # When do you want low rarity 4L's from your base selections to stop showing?
-SetOption $Relevant3to4LinkItemRare switch [Show] [Remove] [Hide] [Show]
-SetOption $Relevant3to4LinkItemUnique switch [Show] [Remove] [Hide] [Show]
-SetOption $EmptyLine
 
-$Relevant3to4Link
-    LinkedSockets >= 3
-    LinkedSockets <= 4
-    Class $Weapon_choices # Armour needs separate highlighting
-    SetBackgroundColor 50 50 50 225 # Relevant3to4Link
-    SetFontSize $3to4LinkItemTextSize
-    MinimapIcon $3to4LinkItemIconSize Purple Cross
+SetOption $LinkedItems switch [Show] [Remove] # This toggle controls the behavior that highlights items with the maximum links available while leveling, other than items that can reach 6 Links (where a 5L is used instead, 6Ls are handled elsewhere).
+
+
+$LinkedItems
+    Rarity < Unique
+    LinkedSockets = 3 
+ #   SocketGroup < RGB
+    SetBackgroundColor 100 100 100 205 # Linked Item
+    MinimapIcon 2 Grey Cross
+    AreaLevel <= 12
+    Continue
+
+$LinkedItems
+    Rarity < Unique
+    Class "One Hand" "Shields" "Wands" "Sceptres" "Daggers" "Rune Daggers" "Claws"
+    LinkedSockets = 3 
+    SetBackgroundColor 100 100 100 205 # Linked Item
+    MinimapIcon 2 Grey Cross
+    PlayAlertSound 2 200 #  Linked Item
+    ModFontSize + 2
 Branch
 Continue
+    AreaLevel > 12
     Rarity < Rare
-	SwitchTo $Relevant3to4LinkItemLowRarity
+    SwitchTo Hide
+    MinimapIcon -1
+
+$LinkedItems
+    Rarity < Unique
+    Class "Helmets" "Boots" "Gloves"
+    LinkedSockets = 4 
+    SetBackgroundColor 100 100 100 205 # Linked Item
+    MinimapIcon 1 Blue Cross
+    PlayAlertSound 2 200 #  Linked Item
+    ModFontSize + 4
+Continue
 Branch
 Continue
+    AreaLevel >= 25
     Rarity < Rare
-    AreaLevel >= $Relevant3to4LinkALVL 
-    PlayAlertSound None
-	SwitchTo Hide
-	MinimapIcon -1
+    SwitchTo Hide
+    MinimapIcon -1
+
+$LinkedItems 
+    Class "Two Hand" "Staves" "Warstaves" "Bows" "Body Armours" 
+    Sockets = 5 
+    SetBackgroundColor 60 60 60 205
+    ModFontSize + 4
+Continue
 Branch
 Continue
-    Rarity = Rare
-    PlayAlertSoundPositional 2 250 # Relevant3to4Link Sound
-    ModFontSize + 3
-	SwitchTo $Relevant3to4LinkItemRare
-Branch
-Continue
-    Rarity = Unique
+    AreaLevel >= 55
+    Rarity < Rare
+    SwitchTo Hide
+
+$LinkedItems
+    Rarity < Unique
+    Class "Two Hand" "Staves" "Warstaves" "Bows" "Body Armours" 
+    LinkedSockets = 5 
+    SetBackgroundColor 100 100 100 205 # Linked Item
+    MinimapIcon 1 Yellow Cross
+    PlayAlertSound 2 200 #  Linked Item
     ModFontSize + 6
-	SwitchTo $Relevant3to4LinkItemUnique
+Continue
+Branch
+Continue
+    AreaLevel >= 75
+    Rarity < Rare
+    SwitchTo Hide
 
 #################
 SetTab [General Strictness]
@@ -1704,13 +1693,6 @@ Show
 	PlayEffect Pink Temp
 	Continue
 
-Show
-    BaseType "Sacrificial Garb" "Grasping Mail"
-    MinimapIcon 2 Blue Triangle
-    PlayEffect Blue
-    SetBackgroundColor 60 20 30 200
-    Continue
-
 SetOption $MyMaps input ["Burial Chambers Map"] # You can use the lists below if you know what you're looking for, adding a beam, green quest-like icon, and changing the text color. Make sure you add "Map" to the names.
 SetOption $EmptyLine
 SetOption $Haewark_Hamlet info ["Cemetery Map" "Plaza Map" "Leyline Map" "Channel Map" "Ramparts Map" "Atoll Map" "Palace Map" "Fungal Hollow Map" "Excavation Map" "Grave Trough Map" "Arachnid Nest Map" "Waterways Map" "Summit Map" "Caldera Map" "Terrace Map" "Core Map"] #
@@ -2226,7 +2208,7 @@ $ChiselHammers
 Show
 	Quality > 20 # Superior+
 	SetBorderColor 225 180 225 # Super Quality Equipment Border
-	MinimapIcon $SuperQualityIconSize White Cross
+	MinimapIcon 0 White Cross
 	SwitchTo Show
 
 # TO DO - Quality for Gems, Alt Quality Gems, Quality Accessories, Quality Flasks
@@ -2248,7 +2230,7 @@ $ChromaticItems
     Rarity < Rare
 	SocketGroup >= RGB
 	SetBackgroundColor 10 40 20 220 # Chromatic Item
-	MinimapIcon $ChromaticItemIconSize White Cross
+	MinimapIcon $ChromaticItemIconSize Green Cross
 	SetFontSize $ChromaticItemTextSize
 	PlayEffect White Temp
 	PlayAlertSoundPositional 7 150 # Chromatic Drop
@@ -2298,17 +2280,13 @@ Continue
 SetTab [Sockets and Links]
 #################
 
-SetOption $5LinkItems switch [Show] [Remove] [Show]
-SetOption $5LinkItemIconSize slider [1] [-1] [2]
-SetOption $5LinkItemTextSize slider [34] [18] [45]
-SetOption $EmptyLine
-SetOption $EmptyLine
+SetOption $5LinkOverride switch [Show] [Remove] # You can use this toggle if you only care about 5+ Links on an item 
 
-$5LinkItems
+$5LinkOverride
     LinkedSockets = 5
-    SetBackgroundColor 120 120 120 225 # 5Link Item
-    SetFontSize $5LinkItemTextSize
-    MinimapIcon $5LinkItemIconSize Yellow Cross
+    SetBackgroundColor 120 120 120 235 # 5Link Item
+    ModFontSize + 6
+    MinimapIcon 0 Yellow Cross
     PlayAlertSoundPositional 2 200 #  5Link Item
 Branch
 Continue
@@ -2320,40 +2298,20 @@ Continue
 Branch
 Continue
     Rarity = Unique
-    ModFontSize + 6
+    ModFontSize + 8
 
-#################
-SetTab [Build Highlights]
-#################
 
-SetOption $Relevant5LinkItems switch [Remove] [Remove] [Show] # Toggle this to show if you specified both Weapons and Armours in their respective tab.
-SetOption $Relevant5LinkItemIconSize slider [0] [-1] [2]
-SetOption $Relevant5LinkItemTextSize slider [34] [18] [45]
-SetOption $EmptyLine
-SetOption $EmptyLine
-
-$Relevant5LinkItems
-    LinkedSockets = 5
-    Class $Weapon_choices $ARSlot_choices $EVSlot_choices $ESSlot_choices $AREVSlot_choices $ARESSlot_choices $EVESSlot_choices
-    SetBackgroundColor 120 120 120 225 # 5Link Item
-    SetFontSize $Relevant5LinkItemTextSize
-    MinimapIcon $Relevant5LinkItemIconSize Pink Cross
-    PlayAlertSoundPositional 2 200 #  5Link Item
-Branch
-Continue
-    Rarity < Rare
-Branch
-Continue
-    Rarity = Rare
-    ModFontSize + 3
-Branch
-Continue
-    Rarity = Unique
-    ModFontSize + 6
 
 #################
 SetTab [Recipes]
 #################
+
+Show
+    BaseType "Sacrificial Garb" "Grasping Mail"
+    MinimapIcon 2 Blue Triangle
+    PlayEffect Blue
+    SetBackgroundColor 60 20 30 200
+    Continue
 
 SetOption $EmptyLine
 SetOption $EmptyLine
@@ -2364,9 +2322,9 @@ SetOption $JewellerItemTextSize slider [36] [18] [45]
 
 $JewellerItems
     Sockets = 6
-    SetBackgroundColor 90 90 90 220 # Jeweller Item Recipe
+    SetBackgroundColor 90 90 90 200 # Jeweller Item
     SetFontSize $JewellerItemTextSize
-    MinimapIcon $JewellerItemIconSize Blue Cross
+    MinimapIcon $JewellerItemIconSize Green Cross
     PlayAlertSoundPositional 11 300 # Jeweller Item Recipe
 Branch
 Continue
@@ -2395,6 +2353,7 @@ $SixLinkItems
     SetFontSize $SixLinkItemTextSize
     MinimapIcon $SixLinkItemIconSize Brown Cross
     PlayAlertSoundPositional 10 300 # Six Link Item Recipe
+    PlayEffect Brown
 Branch
 Continue
     Rarity < Rare
@@ -4171,15 +4130,15 @@ Show
 Show
     Rarity Unique
     ModFontSize + 10
-    Branch
-Continue
-	LinkedSockets = 5
-   	SetBackgroundColor 190 150 100 255
 Branch
 Continue
 	Sockets = 6
 	SocketGroup < WWWWWW
-	SetBackgroundColor 110 110 140 255
+	SetBackgroundColor 110 110 140 235
+    Branch
+Continue
+	LinkedSockets = 5
+   	SetBackgroundColor 190 150 100 255
 Branch
 Continue
 	LinkedSockets = 6
