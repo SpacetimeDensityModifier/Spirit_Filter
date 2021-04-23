@@ -2393,18 +2393,13 @@ Show
 # Tier 3 - "Longtooth" "Monkey Paw" "Monkey Twins" "Rotfeather" "Spinefuse" "Three Hands" "Three Rat"
 # Tier 4 - "Greatwolf"
 
-Show
-    BaseType "Talisman"
-    Rarity < Unique
-    SetBackgroundColor 90 90 30 255
-    MinimapIcon 2 White Triangle # Talismans share this minimap icon
-    PlayAlertSound 11 300 # Talismans
-    PlayEffect Red
     
 Show
     Class Amulet
     BaseType "Ashscale" "Black Maw" "Bonespire" "Breakrib" "Chrysalis" "Deadhand" "Deep One" "Lone Antler" "Mandible" "Rot Head" "Undying Flesh" "Writhing"
     SetBorderColor 127 127 127
+    MinimapIcon 2 White Triangle # Talismans share this minimap icon
+    PlayAlertSound 11 300 # Talismans
     Continue
     
 Show
@@ -2412,6 +2407,7 @@ Show
     BaseType "Avian Twins" "Clutching" "Fangjaw" "Hexclaw" "Horned" "Primal Skull" "Splitnewt" "Wereclaw"
     SetBorderColor 127 127 255
     MinimapIcon 1 Blue Triangle
+    PlayAlertSound 11 300 # Talismans
     Continue
     
 Show
@@ -2419,12 +2415,14 @@ Show
     BaseType "Longtooth" "Monkey Paw" "Monkey Twins" "Rotfeather" "Spinefuse" "Three Hands" "Three Rat"
     SetBorderColor 227 227 127
     MinimapIcon 1 Yellow Triangle
+    PlayAlertSound 11 300 # Talismans
     Continue
     
 Show
     Class Amulet
     BaseType "Greatwolf"
     SetBorderColor 255 150 100
+    PlayAlertSound 11 300 # Talismans
 	PlayEffect Orange
     MinimapIcon 1 Orange Triangle
     Continue
@@ -2434,8 +2432,15 @@ Show
     Rarity Unique
 	PlayEffect Brown
     MinimapIcon 0 Brown Triangle
+    PlayAlertSound 11 300 # Talismans
     SetBackgroundColor 90 90 30
-    
+
+Show
+    BaseType "Talisman"
+    Rarity < Unique
+    SetBackgroundColor 90 90 30 255
+    PlayEffect Red
+   
 # End Talisman
 
 
