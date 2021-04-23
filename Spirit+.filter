@@ -2400,7 +2400,6 @@ Show
     MinimapIcon 2 White Triangle # Talismans share this minimap icon
     PlayAlertSound 11 300 # Talismans
     PlayEffect Red
-    Continue
     
 Show
     Class Amulet
