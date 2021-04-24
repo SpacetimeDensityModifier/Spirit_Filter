@@ -302,7 +302,6 @@ SetOption $ClusterJewelSelection checkbox ["Small"] ["Medium"] ["Large"]
 $Jewels
 	Class "Jewel"
 	Rarity < Unique
-	SetBackgroundColor 60 0 120 200 # Jewel Class
 	SetFontSize $JewelTextSize 
 	PlayEffect Cyan Temp
     	PlayAlertSoundPositional 3 100 # Jewels
@@ -310,15 +309,18 @@ Branch
 Continue
 	BaseType $ChromaticJewelSelection 
 	MinimapIcon $ChromaticJewelIconSize Grey Pentagon
+	SetBackgroundColor 60 0 120 220 # Chromatic Jewel
 	ModFontSize - 2
 Branch
 Continue
 	BaseType $AbyssJewelSelection 
 	MinimapIcon $AbyssJewelIconSize Blue Pentagon
+	SetBackgroundColor 60 40 10 220 # Abyssal Jewel
 Branch
 Continue
 	BaseType $ClusterJewelSelection 
 	MinimapIcon $ClusterJewelIconSize Yellow Pentagon
+	SetBackgroundColor 120 120 150 240 # Cluster Jewel
 	ModFontSize + 2
 Branch
 Continue
@@ -4190,7 +4192,7 @@ Continue
 	Rarity >= Rare
 	CorruptedMods >= 1
 	SetBorderColor 110 0 0 # Corrupt Unique/6L
-	MinimapIcon 1 Red Star
+	MinimapIcon 1 Red Hexagon
 	SwitchTo $CorruptedRare_Unique
 Branch
 Continue
