@@ -2232,7 +2232,7 @@ SetOption $ChromaticItemTextSize slider [32] [18] [45]
 $ChromaticItems
     Rarity < Rare
 	SocketGroup >= RGB
-	SetBackgroundColor 10 40 20 220 # Chromatic Item
+	SetBackgroundColor 0 73 0 220 # Chromatic Item
 	MinimapIcon $ChromaticItemIconSize Green Cross
 	SetFontSize $ChromaticItemTextSize
 	PlayEffect White Temp
@@ -3224,7 +3224,7 @@ Show
 Show
     Rarity Unique
     BaseType "Unset Ring" "Coral Amulet" "Riveted Gloves" "Satin Gloves" "Blood Sceptre" "Ruby Ring" "Two-Stone Ring" "Topaz Ring" "Sapphire Ring" "Onyx Amulet" "Magistrate Crown" "Ezomyte Staff" "Mind Cage" "Sorcerer Boots" "Titan Greaves" "Judgement Staff" "Slink Boots"
-    SetTextColor 30 240 255
+    SetTextColor 50 210 255
     MinimapIcon 1 Cyan Diamond
     Continue
     
