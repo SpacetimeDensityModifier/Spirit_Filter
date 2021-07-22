@@ -23,7 +23,7 @@ SetTab [Corrupt Items]
 # Defining Class Variables
 #################
 
-SetVar $Weapons "Claws" "Staves" "Warstaves" "Thrusting One Hand Swords" "One Hand Swords" "Two Hand Swords" "One Hand Axes" "Two Hand Axes" "One Hand Maces" "Two Hand Maces" "Bows" "Rune Daggers" "Daggers" "Wands" "Sceptres"
+SetVar $Weapons "Claws" "Staves" "Warstaves" "One Hand Swords" "Two Hand Swords" "One Hand Axes" "Two Hand Axes" "One Hand Maces" "Two Hand Maces" "Bows" "Rune Daggers" "Daggers" "Wands" "Sceptres"
 SetVar $Armours "Helmets" "Boots" "Gloves" "Body Armours" "Shields" 
 SetVar $Accessories "Rings" "Amulets" "Belts"
 SetVar $Quivers "Two-Point Arrow Quiver" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Blunt Arrow Quiver" "Fire Arrow Quiver" "Broadhead Arrow Quiver" "Penetrating Arrow Quiver" "Spike-Point Arrow Quiver"
@@ -64,7 +64,7 @@ SetVar $EVESGloves "Wrapped Mitts" "Strapped Mitts" "Clasped Mitts" "Trapper Mit
 SetVar $EVESHelmets "Scare Mask" "Plague Mask" "Iron Mask" "Festival Mask" "Golden Mask" "Raven Mask" "Callous Mask" "Regicide Mask" "Harlequin Mask" "Vaal Mask" "Deicide Mask"
 SetVar $EVESShields "Spiked Bundle" "Driftwood Spiked Shield" "Alloyed Spiked Shield" "Burnished Spiked Shield" "Ornate Spiked Shield" "Redwood Spiked Shield" "Compound Spiked Shield" "Polished Spiked Shield" "Sovereign Spiked Shield" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"
 
-SetVar $AtlasBases "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Two-Toned Boots" "Convoking Wand" "Bone Helmet" "Marble Amulet" "Blue Pearl Amulet" "Vanguard Belt" "Crystal Belt" "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring" "Grasping Mail"
+SetVar $AtlasBases "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Two-Toned Boots" "Convoking Wand" "Bone Helmet" "Marble Amulet" "Blue Pearl Amulet" "Vanguard Belt" "Crystal Belt" "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring" "Grasping Mail"
 
 #################
 SetTab [Intro]
@@ -336,7 +336,7 @@ SetTab [Weapons]
 SetOption $Weapon_Info info [You can set your minimum weapon rarity and any weapon types you can use here. If you are seeking a base for an Alchemy Orb or are in a No Magic/Rare item private league you can set the Threshold to Normal to continue displaying items for your Build.] 
 SetOption $Weapon_Upgrades switch [Remove] [Show] [Remove] # Are you seeking weapon upgrades?
 SetOption $Weapon_Threshold dropdown [Rare] [Normal] [Magic] [Rare]
-SetOption $Weapon_choices checkbox ["Claws"] ["Staves"] ["Warstaves"] ["Thrusting One Hand Swords"] ["One Hand Swords"] ["Two Hand Swords"] ["One Hand Axes"] ["Two Hand Axes"] ["One Hand Maces"] ["Two Hand Maces"] ["Bows"] ["Rune Daggers"] ["Daggers"] ["Wands"] ["Sceptres"]
+SetOption $Weapon_choices checkbox ["Claws"] ["Staves"] ["Warstaves"] ["One Hand Swords"] ["Two Hand Swords"] ["One Hand Axes"] ["Two Hand Axes"] ["One Hand Maces"] ["Two Hand Maces"] ["Bows"] ["Rune Daggers"] ["Daggers"] ["Wands"] ["Sceptres"]
 SetOption $QuiverUse switch [Remove] [Show] [Hide] # Are you seeking a quiver upgrade?
 SetOption $Quiver_choices checkbox ["Two-Point Arrow Quiver"] ["Serrated Arrow Quiver"] ["Sharktooth Arrow Quiver"] ["Blunt Arrow Quiver"] ["Fire Arrow Quiver"] ["Broadhead Arrow Quiver"] ["Penetrating Arrow Quiver"] ["Spike-Point Arrow Quiver"] # Which quivers do you use?
 
@@ -741,7 +741,7 @@ SetOption $LifeFlasks switch [Show] [Hide] # Do you need updated life flasks?
 SetOption $ManaFlasks switch [Show] [Hide] # Do you need updated mana flasks?
 SetOption $EmptyLine
 SetOption $UtilityFlasks switch [Show] [Hide] [Remove] # Do you need any Utility flasks? Choosing Hide instead of Remove will allow the filter to highlight your choices while hidden.
-SetOption $MyFlasks checkbox ["Quicksilver Flask"] ["Bismuth Flask"] ["Stibnite Flask"] ["Amethyst Flask"] ["Ruby Flask"] ["Sapphire Flask"] ["Topaz Flask"] ["Silver Flask"] ["Aquamarine Flask"] ["Diamond Flask"] ["Granite Flask"] ["Jade Flask"] ["Quartz Flask"] ["Sulphur Flask"] ["Basalt Flask"] # Remove flasks from this list until you have the utility flasks you'll use.
+SetOption $MyFlasks checkbox ["Quicksilver Flask"] ["Bismuth Flask"] ["Stibnite Flask"] ["Amethyst Flask"] ["Ruby Flask"] ["Sapphire Flask"] ["Topaz Flask"] ["Silver Flask"] ["Aquamarine Flask"] ["Diamond Flask"] ["Granite Flask"] ["Jade Flask"] ["Quartz Flask"] ["Sulphur Flask"] ["Basalt Flask"] ["Gold Flask"] ["Corundum Flask"] ["Iron Flask"] # Remove flasks from this list until you have the utility flasks you'll use.
 
 Hide
     Class "Flasks"
@@ -995,7 +995,7 @@ SetOption $FlasksManaRecoveryRate info ["Inspiring"] # Belts @ Mana
 SetOption $FlaskChargesGained info ["of Refilling" "of Overflowing"] # Belts @ N/A
 SetOption $FlaskEffectDuration info ["of Savouring"] # Belts @ N/A
 SetOption $ReducedFlaskChargesUsed info ["of Sipping"] # Belts @ N/A
-SetOption $AttacksChanceToBleed info ["of Bloodletting" "of Haemophilia" "of Exsanguination"] # One Hand Swords + Thrusting One Hand Swords + One Hand Axes + One Hand Maces + Bows + Two Hand Swords + Two Hand Axes + Two Hand Maces @ Damage + Physical + Attack + Ailment
+SetOption $AttacksChanceToBleed info ["of Bloodletting" "of Haemophilia" "of Exsanguination"] # One Hand Swords + One Hand Axes + One Hand Maces + Bows + Two Hand Swords + Two Hand Axes + Two Hand Maces @ Damage + Physical + Attack + Ailment
 SetOption $BurningDamage info ["of Burning" "of Combusting" "of Conflagrating"] # Wands + Sceptres + Staves + Warstaves @ Damage + Elemental + Fire
 SetOption $DodgeAttacks info ["of Haze" "of Mist" "of Fog"] # EV+ Body Armours + Shields @ N/A
 SetOption $DodgeSpells info ["of Prayers" "of Invocations" "of Incantations"] # EV+ Shields @ N/A
@@ -1003,9 +1003,9 @@ SetOption $FreezeChance info ["of Freezing"] # Wands + Sceptres + Staves + Warst
 SetOption $IgniteChance info ["of Ignition"] # Wands + Sceptres + Staves + Warstaves @ Elemental + Fire + Ailment
 SetOption $ShockChance info ["of Shocking"] # Wands + Sceptres + Staves + Warstaves @ Elemental + Lightning + Ailment
 SetOption $ChaosDoTMulti info ["Waning" "Wasting" "Deteriorating" "Atrophying" "Disintegrating"] # Daggers + Wands + Rune Daggers + Staves + Warstaves @ Damage + Chaos
-SetOption $ChaosRes info ["of the Lost" "of Banishment" "of Eviction" "of Expulsion" "of Exile" "of Bameth"] # Amulets + Rings + Claws + Daggers + Wands + One Hand Swords + Thrusting One Hand Swords + One Hand Axes + One Hand Maces + Bows + Staves + Two Hand Swords + Two Hand Axes + Two Hand Maces + Quivers + Belts + Gloves + Boots + Body Armours + Helmets + Shields + Sceptres + Fishing Rods + Rune Daggers + Warstaves @ Chaos + Resistance
+SetOption $ChaosRes info ["of the Lost" "of Banishment" "of Eviction" "of Expulsion" "of Exile" "of Bameth"] # Amulets + Rings + Claws + Daggers + Wands + One Hand Swords + One Hand Axes + One Hand Maces + Bows + Staves + Two Hand Swords + Two Hand Axes + Two Hand Maces + Quivers + Belts + Gloves + Boots + Body Armours + Helmets + Shields + Sceptres + Fishing Rods + Rune Daggers + Warstaves @ Chaos + Resistance
 SetOption $ColdAsExtraChaos info ["Atrophic" "Festering" "Mortifying"] # Staves + Warstaves + Daggers + Wands + Sceptres + Rune Daggers @ Damage + Elemental + Cold + Chaos
-SetOption $FlatColdDamage info ["Frosted" "Chilled" "Icy" "Frigid" "Freezing" "Frozen" "Glaciated" "Polar" "Entombing" "Crystalising"] # Amulets + Rings + -Quivers + -Gloves + Wands* + Sceptres* + Rune Daggers* + Staves* + Claws* + Daggers* + One Hand Swords* + Thrusting One Hand Swords* + One Hand Axes* + One Hand Maces* + Sceptres* + Rune Daggers* + Bows* + Staves* + Two Hand Swords* + Two Hand Axes* + Two Hand Maces* + Warstaves* @ Damage + Elemental + Cold + Attack
+SetOption $FlatColdDamage info ["Frosted" "Chilled" "Icy" "Frigid" "Freezing" "Frozen" "Glaciated" "Polar" "Entombing" "Crystalising"] # Amulets + Rings + -Quivers + -Gloves + Wands* + Sceptres* + Rune Daggers* + Staves* + Claws* + Daggers* + One Hand Swords* + One Hand Axes* + One Hand Maces* + Sceptres* + Rune Daggers* + Bows* + Staves* + Two Hand Swords* + Two Hand Axes* + Two Hand Maces* + Warstaves* @ Damage + Elemental + Cold + Attack
 SetOption $ColdDoTMulti info ["Inclement" "Bleak" "Boreal" "Gelid" "Heartstopping"]
 SetOption $IncreaseColdDamage_suffix info ["of Snow" "of Sleet" "of Ice" "of Rime" "of Floe" "of Glaciation"]
 SetOption $IncreasedColdDamage_prefix info ["Bitter" "Biting" "Alpine" "Snowy" "Hailing" "Crystalline" "Cryomancer's" "Tul's"]
@@ -1687,7 +1687,7 @@ SetTab [Mapping]
 SetOption $Mapping info [] # Here you can customize which Atlas bases you want and which maps or regions matter to you.
 SetOption $OutdatedMaps switch [Show] [Hide] [Remove] # Do you want maps outside of the current bracket (white/yellow/red) to be hidden and have their sound removed?
 SetOption $EmptyLine
-SetOption $Atlas_Choices checkbox ["Fingerless Silk Gloves"] ["Gripped Gloves"] ["Spiked Gloves"] ["Two-Toned Boots"] ["Convoking Wand"] ["Bone Helmet"] ["Marble Amulet"] ["Blue Pearl Amulet"] ["Vanguard Belt"] ["Crystal Belt"] ["Cerulean Ring"] ["Opal Ring"] ["Steel Ring"] ["Vermillion Ring"] ["Seaglass Amulet"] ["Blessed Boots"] ["Apothecary's Gloves"] ["Artillery Quiver"] ["Iolite Ring"] # These are drop-restricted bases that can be found only in specific regions of the Atlas. If you're only looking for certain ones just remove the ones you don't want.
+SetOption $Atlas_Choices checkbox ["Fingerless Silk Gloves"] ["Gripped Gloves"] ["Spiked Gloves"] ["Two-Toned Boots"] ["Convoking Wand"] ["Bone Helmet"] ["Marble Amulet"] ["Blue Pearl Amulet"] ["Vanguard Belt"] ["Crystal Belt"] ["Cerulean Ring"] ["Opal Ring"] ["Steel Ring"] ["Vermillion Ring"] ["Seaglass Amulet"] ["Fugitive Boots"] ["Apothecary's Gloves"] ["Artillery Quiver"] ["Iolite Ring"] # These are drop-restricted bases that can be found only in specific regions of the Atlas. If you're only looking for certain ones just remove the ones you don't want.
 SetOption $EmptyLine
 
 Show
@@ -1951,7 +1951,8 @@ Show
     SetTextColor 255 235 150
     ModFontSize + 6
     Continue
-   
+
+# Outdated for 3.15 Atlas   
 # Haewark Hamlet # "Cemetery" "Plaza" "Leyline" "Channel" "Ramparts" "Atoll" "Palace" "Fungal Hollow" "Excavation" "Grave Trough" "Arachnid Nest" "Waterways" "Summit" "Caldera" "Terrace" "Core"
 # Tirn's End # "Coves" "Moon Temple" "Underground River" "Wharf" "Fields" "Factory" "Temple" "Shore" "Mud Geyser" "Desert Spring" "Chateau" "Silo" "Mesa" "Colonnade" "Bazaar" "Coral Ruins" "Port"
 # Lex Proxima # "Academy" "Glacier" "Sulphur Vents" "Overgrown Ruin" "Vaal Pyramid" "Geode" "Courtyard" "Reef" "Peninsula" "Volcano" "Frozen Cabins" "Underground Sea" "Crater" "Spider Forest" "Defiled Cathedral" "Jungle Valley" "Crimson Township" "Cold River" "Phantasmagoria" "Thicket" "Cursed Crypt" "Overgrown Shrine" "Park" "Lava Lake" "Carcass" "Vaal Temple"
@@ -1961,7 +1962,7 @@ Show
 # Valdo's Rest # "Arena" "Arid Lake" "Ashen Wood" "Bramble Valley" "Canyon" "City Square" "Dark Forest" "Dry Sea" "Gardens" "Ghetto" "Ivory Temple" "Lair" "Maze" "Mineral Pools Map" "Necropolis" "Orchard" "Pen" "Promenade"    
 # Lira Arthain # "Barrows" "Castle Ruins" "Courthouse" "Estuary" "Flooded Mine" "Forbidden Woods" "Lighthouse" "Lookout" "Marshes" "Mausoleum" "Pier" "Precinct" "Primordial Blocks" "Racecourse" "Shipyard" "Toxic Sewer"
     
-Show
+Remove
     Class "Maps" "Amulets" "Belts" "Rings" "Wands" "Gloves"
     Branch
     Continue 
@@ -2590,7 +2591,7 @@ Show
 		
 Show
 	Class "Divination" # T1
-	BaseType == "Azyran's Reward" "Chaotic Disposition" "Pride of the First Ones" "The Artist" "The Craving" "The Dragon's Heart" "The Escape" "The Eye of Terror" "The Gulf" "The Iron Bard" "The Long Con" "The Price of Loyalty" "The Progeny of Lunaris" "The Saint's Treasure" "The Soul" "The Sustenance" "The Void" "The White Knight" "Wealth and Power"
+	BaseType == "Azyran's Reward" "Chaotic Disposition" "Pride of the First Ones" "The Artist" "The Craving" "The Dragon's Heart" "The Escape" "The Eye of Terror" "The Gulf" "The Iron Bard" "The Long Con" "The Price of Loyalty" "The Progeny of Lunaris" "The Saint's Treasure" "The Soul" "The Sustenance" "The Void" "The White Knight" "Wealth and Power" "The Last Supper" "The Emptiness" "A Sea of Blue" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "The Blessing of Moosh" "Costly Curio" "Lachrymal Necrosis" "Dementophobia" "Ambitious Obsession" # From "The Last Supper" - New Cards, To Be Sorted
 	SetFontSize 40
 	SetTextColor 150 150 255
 	SetBorderColor 110 110 255
@@ -3048,7 +3049,7 @@ Show
 Show
     Rarity Unique
     BaseType "Harbinger Map" "Cloth Belt" "Blunt Arrow Quiver" "Callous Mask" "Legion Sword" "Imperial Staff" "Archon Kite Shield"
-    SetTextColor 110 170 255
+    SetTextColor 80 150 245
     MinimapIcon 1 Cyan Star
     Continue 
     
@@ -3913,8 +3914,7 @@ Show
 	SetTextColor 220 50 110
     SetBackgroundColor 170 0 40 200
     Continue
-	
-	
+		
 Show 
     BaseType "Dreamquest Slippers" "Cloudwhisper Boots" "Brimstone Treads" "Nightwind Slippers" "Windbreak Boots" "Darksteel Treads" "Duskwalk Slippers" "Stormrider Boots" "Basemetal Treads"
 	SetTextColor 220 110 110
@@ -3936,6 +3936,92 @@ Show
     SetBackgroundColor 20 0 0 255
 	Continue
 	
+# Ultimatum
+# Expedition
+
+Show
+    BaseType "Enkindling Orb" "Instilling Orb"
+	SetBackgroundColor 70 150 190
+	MinimapIcon 2 Blue Diamond
+	PlayEffect Blue
+   Continue
+
+Show
+Branch
+	BaseType "Enkindling Orb" 
+	SetTextColor 120 255 125
+Branch
+	BaseType "Instilling Orb" 
+	SetTextColor 255 125 120
+   Continue
+
+Show
+    BaseType "Exotic Coinage" "Scrap Metal" "Astragali" "Burial Medallion"
+	MinimapIcon 2 Blue Triangle
+	PlayEffect Blue Temp
+	SetBackgroundColor 30 30 120
+	SetBorderColor 110 110 220
+	SetTextColor 210 210 240
+    Continue
+
+Show
+    BaseType "Broken Circle"
+	SetBorderColor 250 150 100
+    Continue
+
+Show
+    BaseType "Black Scythe"
+	SetBorderColor 0 0 0
+    Continue
+
+Show
+    BaseType "Order Artifact"
+	SetBorderColor 150 210 150
+    Continue
+
+Show
+    BaseType "Sun Artifact"
+	SetBorderColor 240 235 120
+    Continue
+
+Show
+	MinimapIcon 2 Blue Diamond
+	PlayEffect Blue Temp
+Branch
+	BaseType "Lesser Broken Circle" "Lesser Black Scythe" "Lesser Order Artifact" "Lesser Sun Artifact"
+	SetBackgroundColor 50 50 50
+Branch
+	BaseType "Common Broken Circle" "Common Black Scythe" "Common Order Artifact" "Common Sun Artifact"
+	SetBackgroundColor 50 50 100
+Branch
+	BaseType "Greater Broken Circle" "Greater Black Scythe" "Greater Order Artifact" "Greater Sun Artifact"
+	SetBackgroundColor 50 100 100
+Branch
+	BaseType "Grand Broken Circle" "Grand Black Scythe" "Grand Order Artifact" "Grand Sun Artifact"
+	SetBackgroundColor 150 100 50
+Continue
+
+Show
+	BaseType "Runic Helm" "Runic Crest" "Runic Greaves" "Runic Sollerets" "Runic Gloves" "Runic Gages" 
+	SetBorderColor 110 110 220
+	MinimapIcon 1 Blue Triangle
+	PlayEffect Blue Temp
+	SetFontSize 32
+
+Show
+	BaseType "Runic Crown" "Runic Sabatons" "Runic Gauntlets"
+	SetBorderColor 110 110 245
+	MinimapIcon 0 Blue Triangle
+	PlayEffect Blue
+	SetFontSize 38
+
+Show
+	BaseType "Expedition Logbook"
+	SetBackgroundColor 30 30 120
+	SetBorderColor 110 110 220
+	PlayEffect Pink Temp
+	MinimapIcon 2 Pink Square
+
 # End Leagues
 
 #####REDO########
@@ -5007,7 +5093,7 @@ Show
 Show
 	Class "Quest Items"
 	BaseType "Ankh of Eternity" "Kishara's Star" "Thaumetic Emblem" "Tukohama's Tooth" "Allflame" "Bust of Gaius Sentari" "Bust of Hector Titucius" "Bust of Marceus Lioneye" "Sekhema Feather" "Miasmeter" "Valako's Jaw" "Bottled Storm" "Hinekora's Hair" "Wings of Vastiri" # Passive Rewarding Quests
-	SetBackgroundColor 255 255 255 220
+	SetBackgroundColor 220 235 225 220
 	ModFontSize + 6
 
 SetOption $Merveil_Ring switch [Show] [Remove]
