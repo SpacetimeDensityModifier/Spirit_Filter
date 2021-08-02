@@ -741,7 +741,7 @@ SetOption $LifeFlasks switch [Show] [Hide] # Do you need updated life flasks?
 SetOption $ManaFlasks switch [Show] [Hide] # Do you need updated mana flasks?
 SetOption $EmptyLine
 SetOption $UtilityFlasks switch [Show] [Hide] [Remove] # Do you need any Utility flasks? Choosing Hide instead of Remove will allow the filter to highlight your choices while hidden.
-SetOption $MyFlasks checkbox ["Quicksilver Flask"] ["Bismuth Flask"] ["Stibnite Flask"] ["Amethyst Flask"] ["Ruby Flask"] ["Sapphire Flask"] ["Topaz Flask"] ["Silver Flask"] ["Aquamarine Flask"] ["Diamond Flask"] ["Granite Flask"] ["Jade Flask"] ["Quartz Flask"] ["Sulphur Flask"] ["Basalt Flask"] ["Gold Flask"] ["Corundum Flask"] ["Iron Flask"] # Remove flasks from this list until you have the utility flasks you'll use.
+SetOption $MyFlasks checkbox ["Quicksilver Flask"] ["Bismuth Flask"] ["Stibnite Flask"] ["Amethyst Flask"] ["Ruby Flask"] ["Sapphire Flask"] ["Topaz Flask"] ["Silver Flask"] ["Aquamarine Flask"] ["Diamond Flask"] ["Granite Flask"] ["Jade Flask"] ["Quartz Flask"] ["Sulphur Flask"] ["Basalt Flask"] ["Gold Flask"] ["Corundum Flask"] # Remove flasks from this list until you have the utility flasks you'll use.
 
 Hide
     Class "Flasks"
@@ -4015,7 +4015,7 @@ Show
 	SetFontSize 32
 
 Show
-	BaseType "Runic Crown" "Runic Sabatons" "Runic Gauntlets"
+	BaseType "Runic Crown" "Runic Sabatons" "Runic Gauntlets" "Iron Flask"
 	SetBorderColor 110 110 245
 	MinimapIcon 0 Blue Triangle
 	PlayEffect Blue
