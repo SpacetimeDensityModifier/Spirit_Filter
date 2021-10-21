@@ -26,7 +26,7 @@ SetTab [Corrupt Items]
 SetVar $Weapons "Claws" "Staves" "Warstaves" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Swords" "One Hand Axes" "Two Hand Axes" "One Hand Maces" "Two Hand Maces" "Bows" "Rune Daggers" "Daggers" "Wands" "Sceptres"
 SetVar $Armours "Helmets" "Boots" "Gloves" "Body Armours" "Shields" 
 SetVar $Accessories "Rings" "Amulets" "Belts"
-SetVar $Quivers "Two-Point Arrow Quiver" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Blunt Arrow Quiver" "Fire Arrow Quiver" "Broadhead Arrow Quiver" "Penetrating Arrow Quiver" "Spike-Point Arrow Quiver"
+SetVar $Quivers "Two-Point Arrow Quiver" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Blunt Arrow Quiver" "Fire Arrow Quiver" "Broadhead Arrow Quiver" "Penetrating Arrow Quiver" "Spike-Point Arrow Quiver" "Ornate Quiver"
 
 SetVar $ARBody "Plate Vest" "Chestplate" "Copper Plate" "War Plate" "Full Plate" "Arena Plate" "Lordly Plate" "Bronze Plate" "Battle Plate" "Sun Plate" "Colosseum Plate" "Majestic Plate" "Golden Plate" "Crusader Plate" "Astral Plate" "Gladiator Plate" "Glorious Plate"
 SetVar $ARBoots "Iron Greaves" "Steel Greaves" "Plated Greaves" "Reinforced Greaves" "Antique Greaves" "Ancient Greaves" "Goliath Greaves" "Vaal Greaves" "Titan Greaves" "Two-Toned Boots"
@@ -70,11 +70,6 @@ SetVar $AtlasBases "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Tw
 SetTab [Intro]
 #################
 SetOption $Intro info [This item filter is designed for all players of Path of Exile - from the 10,000 hour veteran to the complete noob - across a variety of playstyles including trade, solo self found, party play, and racing. The filter will hide items based on their apparent worth to your build in the current area. Items with other notable qualities are shown with their own highlights.] # Welcome to Spirit+ | You can download the filter as is for a general approach or customize it to increase strictness towards your build in particular. 
-SetOption $EmptyLine
-SetOption $ExampleIconSizeSlider slider [-1] [0] [2] # Items have four size brackets that determine their minimap icon size : 0, 1, 2, and -1 (-1 removes the icon) - You can alter the minimap icon size on many items this way. Removing the icon requires editing the downloaded filter (just Ctrl+F [0] and you'll find all options for Icon Size).
-SetOption $ExampleNameplateSizeSlider slider [32] [18] [45] # Items have a nameplate with a size between 18 and 45, which you can adjust in a similar way. By default these two sizes correlate with each other (-1 has a font of 18, then 24, 30, and 38, with 45 being limited to extremely valuable drops) and with the perceived potential value of the drop (which may adjust from those defaults).
-SetOption $IconType info [Circles represent unidentified items. Hexagons represent identified items. Diamonds represent currency. Squares represent maps. Stars represent Uniques. Triangles indicate special bases. Crosses represent linked items. Moons represent fragments. Raindrops represent flasks. Kites represent Gems. Pentagons represent Jewels. UpsideDownHouse represents items with odd qualities, like recipe results and quest items or items that aren't typically dropped (eternal orbs, fishing rods etc).] # The possible minimap icons are Circle, Diamond, Hexagon, Square, Star, Triangle, Cross, Moon, Raindrop, Kite, Pentagon, and UpsideDownHouse.
-SetOption $IconColor info [Red is for Corrupt items and extreme value highlights. Green is for Quest items and Custom Quests. Blue is for bracket 1 items. Brown is for maximally rare items. White is for items with unusual properties such as RGB links, high quality, or 6 sockets. Yellow is for bracket 0 items. Cyan is for items that may have value and need to be checked manually. Grey is for bracket 2 items. Orange indicates an item that is unusual in SSF. Pink and Purple indicate that an item is relevant to your build (Pink being the higher tier)] # The possible minimap colors are Red, Green, Blue, Brown, White, Yellow, Cyan, Grey, Orange, Pink, and Purple.
 
 # Normal - 200 200 200
 # Magic - 136 136 255
@@ -129,14 +124,14 @@ Continue
 Show
 Class $Weapons $Armours
 SetBorderColor 127 127 127 # Highest Tier Equipment by DropLevel per area
-SetBackgroundColor 0 40 0 200 # Equipment
+SetBackgroundColor 0 0 20 200 # Equipment
 # ModFontSize - 6
 Continue
 
 Show
 Class $Accessories
 SetBorderColor 127 127 90 # Accessories
-SetBackgroundColor 50 50 0 235 # Accessories 
+SetBackgroundColor 50 50 0 235 # Accessories
 ModFontSize + 2
 Continue
 
@@ -150,7 +145,7 @@ Show
 Class $Weapons $Armours
 Rarity Rare
 SetBorderColor 255 255 80 # Highest Tier Equipment by DropLevel per area - Rare
-SetBackgroundColor 0 40 40 225 # Rare Equipment 
+SetBackgroundColor 0 20 40 225 # Rare Equipment 
 Continue
 
 Show
@@ -178,15 +173,13 @@ Continue
 
 Show
 BaseType $AtlasBases
-SetBackgroundColor 120 80 100 225 # Atlas Base
 ModFontSize + 3
 Continue
 
 Show
 BaseType $AtlasBases
 Rarity Rare
-SetBorderColor 140 80 120 # Rare Atlas Base
-SetBackgroundColor 140 80 120 245 # Rare Atlas Base
+SetBorderColor 240 80 120 # Rare Atlas Base
 Continue
 
 #################
@@ -375,7 +368,7 @@ SetOption $Ring_Threshold dropdown [Rare] [Normal] [Magic] [Rare]
 SetOption $Ring_choices checkbox ["Coral Ring"] ["Iron Ring"] ["Paua Ring"] ["Unset Ring"] ["Sapphire Ring"] ["Ruby Ring"] ["Topaz Ring"] ["Diamond Ring"] ["Gold Ring"] ["Moonstone Ring"] ["Two-Stone Ring"] ["Prismatic Ring"] ["Amethyst Ring"]
 SetOption $Amulet_Upgrades switch [Remove] [Show] [Remove] # Are you seeking Amulet upgrades?
 SetOption $Amulet_Threshold dropdown [Rare] [Normal] [Magic] [Rare]    
-SetOption $Amulet_choices checkbox ["Coral Amulet"] ["Paua Amulet"] ["Amber Amulet"] ["Jade Amulet"] ["Lapis Amulet"] ["Gold Amulet"] ["Agate Amulet"] ["Citrine Amulet"] ["Turquoise Amulet"] ["Onyx Amulet"]
+SetOption $Amulet_choices checkbox ["Coral Amulet"] ["Paua Amulet"] ["Amber Amulet"] ["Jade Amulet"] ["Lapis Amulet"] ["Gold Amulet"] ["Agate Amulet"] ["Citrine Amulet"] ["Turquoise Amulet"] ["Onyx Amulet"] ["Unset Amulet"]
 SetOption $Belt_Upgrades switch [Remove] [Show] [Remove] # Are you seeking Belt upgrades?
 SetOption $Belt_Threshold dropdown [Rare] [Normal] [Magic] [Rare]   
 SetOption $Belt_choices checkbox ["Chain Belt"] ["Rustic Sash"] ["Heavy Belt"] ["Leather Belt"] ["Cloth Belt"] ["Studded Belt"]
@@ -514,7 +507,6 @@ SetOption $LinkedItems switch [Show] [Remove] # This toggle controls the behavio
 $LinkedItems
     Rarity < Unique
     LinkedSockets = 3 
- #   SocketGroup < RGB
     SetBackgroundColor 100 100 100 205 # Linked Item
     MinimapIcon 2 Grey Cross
     AreaLevel <= 12
@@ -581,6 +573,8 @@ Continue
 #################
 SetTab [General Strictness]
 #################
+
+#Base Defences Prototype Filtering needs testing and will happen after launch#
 
 SetOption $OutdatedRares switch [Hide] [Remove] [Hide] [Show]
 
@@ -1099,7 +1093,7 @@ SetOption $StunDuration info ["of Impact" "of Dazing" "of Stunning" "of Slamming
 SetOption $StunAndBlockRecovery info ["of Thick Skin" "of Stone Skin" "of Iron Skin" "of Steel Skin" "of Adamantite Skin" "of Corundum Skin"]
 SetOption $ReducedEnemyStunThreshold info ["of the Pugilist" "of the Brawler" "of the Boxer" "of the Combatant" "of the Gladiator"]
 SetOption $MovementSpeed info ["Runner's" "Sprinter's" "Stallion's" "Gazelle's" "Cheetah's" "Hellion's"]
-# TO DO Affix Filtering - Convoking Wand Modifiers, Flasks, Jewels x3, Watchstones, Experimented Bases
+# TO DO Affix Filtering - Convoking Wand Modifiers, Flasks, Jewels x3, Watchstones, Experimented Bases, affix "combos"
 
 SetTab [Affixes - Customization]
 SetOption $Disqualify switch [Hide] [Remove] # This toggle determines whether the filter discards an item with more outdated, junk, or counter-synergy affixes than your limit.
@@ -1696,22 +1690,10 @@ Show
 	PlayEffect Pink Temp
 	Continue
 
-SetOption $MyMaps input ["Burial Chambers Map"] # You can use the lists below if you know what you're looking for, adding a beam, green quest-like icon, and changing the text color. Make sure you add "Map" to the names.
+SetOption $MyMaps input ["Vaal Temple Map"] # You can use the lists below if you know what you're looking for, adding a beam, green quest-like icon, and changing the text color. Make sure you add "Map" to the names.
 SetOption $EmptyLine
 SetOption $Haewark_Hamlet info ["Cemetery Map" "Plaza Map" "Leyline Map" "Channel Map" "Ramparts Map" "Atoll Map" "Palace Map" "Fungal Hollow Map" "Excavation Map" "Grave Trough Map" "Arachnid Nest Map" "Waterways Map" "Summit Map" "Caldera Map" "Terrace Map" "Core Map"] #
 SetOption $HaewarkHamlet_Region switch [Show] [Hide] [Remove]
-SetOption $EmptyLine
-SetOption $Tirns_End info ["Coves Map" "Moon Temple Map" "Underground River Map" "Wharf Map" "Fields Map" "Factory Map" "Temple Map" "Shore Map" "Mud Geyser Map" "Desert Spring Map" "Chateau Map" "Silo Map" "Mesa Map" "Colonnade Map" "Bazaar Map" "Coral Ruins Map" "Port Map"] #
-SetOption $TirnsEnd_Region switch [Show] [Hide] [Remove]
-SetOption $EmptyLine
-SetOption $Lex_Proxima info ["Academy Map" "Glacier Map" "Sulphur Vents Map" "Overgrown Ruin Map" "Vaal Pyramid Map" "Geode Map" "Courtyard Map" "Reef Map" "Peninsula Map" "Volcano Map" "Frozen Cabins Map" "Underground Sea Map" "Crater Map" "Spider Forest Map" "Defiled Cathedral Map" "Jungle Valley Map" "Crimson Township Map" "Cold River Map" "Phantasmagoria Map" "Thicket Map" "Cursed Crypt Map" "Overgrown Shrine Map" "Park Map" "Lava Lake Map" "Carcass Map" "Vaal Temple Map"] #
-SetOption $LexProxima_Region switch [Show] [Hide] [Remove]
-SetOption $EmptyLine
-SetOption $Lex_Ejoris info ["Alleyways Map" "Armoury Map" "Arsenal Map" "Beach Map" "Bog Map" "Bone Crypt Map" "Burial Chambers Map" "Cells Map" "Conservatory Map" "Crystal Ore Map" "Dig Map" "Dungeon Map" "Forking River Map" "Primordial Pool Map" "Sepulchre Map" "Waste Pool Map"] #
-SetOption $LexEjoris_Region switch [Show] [Hide] [Remove]
-SetOption $EmptyLine
-SetOption $New_Vastir info ["Arachnid Tomb Map" "Belfry Map" "Colosseum Map" "Crimson Temple Map" "Desert Map" "Dunes Map" "Foundry Map" "Laboratory Map" "Pit Map" "Relic Chambers Map" "Shrine Map" "Siege Map" "Strand Map" "Vault Map"] #
-SetOption $NewVastir_Region switch [Show] [Hide] [Remove]
 SetOption $EmptyLine
 SetOption $Glennach_Cairns info ["Acid Caverns Map" "Ancient City Map" "Arcade Map" "Basilica Map" "Cage Map" "Graveyard Map" "Grotto Map" "Haunted Mansion Map" "Iceberg Map" "Infested Valley Map" "Lava Chamber Map" "Malformation Map" "Museum Map" "Plateau Map" "Residence Map" "Scriptorium Map" "Spider Lair Map" "Stagnation Map" "Sunken City Map" "Tower Map" "Tropical Island Map" "Villa Map" "Wasteland Map"] #
 SetOption $GlennachCairns_Region switch [Show] [Hide] [Remove]
@@ -1864,23 +1846,7 @@ Continue
     Branch
     Continue 
     BaseType "Haewark Hamlet"
-    SetBackgroundColor 0 0 0 255 # Haewark Hamlet
-    Branch
-    Continue
-    BaseType "Tirn's End"
-    SetBackgroundColor 60 0 0 180 # Tirn's End
-    Branch
-    Continue
-    BaseType "Lex Proxima"
-    SetBackgroundColor 0 60 0 180 # Lex Proxima
-    Branch
-    Continue
-    BaseType "Lex Ejoris"
-    SetBackgroundColor 0 0 60 255 # Lex Ejoris
-    Branch
-    Continue
-    BaseType "New Vastir"
-    SetBackgroundColor 60 60 0 255 # New Vastir
+    SetBackgroundColor 0 60 0 180 # Haewark Hamlet
     Branch
     Continue
     BaseType "Glennach Cairns"
@@ -1892,7 +1858,7 @@ Continue
     Branch
     Continue
     BaseType "Lira Arthain"
-    SetBackgroundColor 60 60 60 255 # Lira Arthain
+    SetBackgroundColor 60 60 60 180 # Lira Arthain
     Continue
     
 Show 
@@ -1952,57 +1918,33 @@ Show
     ModFontSize + 6
     Continue
 
-# Outdated for 3.15 Atlas   
+# Outdated for 3.16 Atlas   
 # Haewark Hamlet # "Cemetery" "Plaza" "Leyline" "Channel" "Ramparts" "Atoll" "Palace" "Fungal Hollow" "Excavation" "Grave Trough" "Arachnid Nest" "Waterways" "Summit" "Caldera" "Terrace" "Core"
-# Tirn's End # "Coves" "Moon Temple" "Underground River" "Wharf" "Fields" "Factory" "Temple" "Shore" "Mud Geyser" "Desert Spring" "Chateau" "Silo" "Mesa" "Colonnade" "Bazaar" "Coral Ruins" "Port"
-# Lex Proxima # "Academy" "Glacier" "Sulphur Vents" "Overgrown Ruin" "Vaal Pyramid" "Geode" "Courtyard" "Reef" "Peninsula" "Volcano" "Frozen Cabins" "Underground Sea" "Crater" "Spider Forest" "Defiled Cathedral" "Jungle Valley" "Crimson Township" "Cold River" "Phantasmagoria" "Thicket" "Cursed Crypt" "Overgrown Shrine" "Park" "Lava Lake" "Carcass" "Vaal Temple"
-# Lex Ejoris # "Alleyways" "Armoury" "Arsenal" "Beach" "Bog" "Bone Crypt" "Burial Chambers" "Cells" "Conservatory" "Crystal Ore" "Dig" "Dungeon" "Forking River" "Primordial Pool" "Sepulchre" "Waste Pool"
-# New Vastir # "Arachnid Tomb" "Belfry" "Colosseum" "Crimson Temple" "Desert" "Dunes" "Foundry" "Laboratory" "Pit" "Relic Chambers" "Shrine" "Siege" "Strand" "Vault"
 # Glennach Cairns # "Acid Caverns" "Ancient City" "Arcade" "Basilica" "Cage Map" "Graveyard" "Grotto" "Haunted Mansion" "Iceberg" "Infested Valley" "Lava Chamber" "Malformation" "Museum" "Plateau" "Residence" "Scriptorium" "Spider Lair" "Stagnation" "Sunken City" "Tower" "Tropical Island" "Villa" "Wasteland"
 # Valdo's Rest # "Arena" "Arid Lake" "Ashen Wood" "Bramble Valley" "Canyon" "City Square" "Dark Forest" "Dry Sea" "Gardens" "Ghetto" "Ivory Temple" "Lair" "Maze" "Mineral Pools Map" "Necropolis" "Orchard" "Pen" "Promenade"    
 # Lira Arthain # "Barrows" "Castle Ruins" "Courthouse" "Estuary" "Flooded Mine" "Forbidden Woods" "Lighthouse" "Lookout" "Marshes" "Mausoleum" "Pier" "Precinct" "Primordial Blocks" "Racecourse" "Shipyard" "Toxic Sewer"
     
-Remove
-    Class "Maps" "Amulets" "Belts" "Rings" "Wands" "Gloves"
+Show
+    Class "Amulets" "Belts" "Rings" "Wands" "Gloves"
     Branch
     Continue 
-    BaseType == "Marble Amulet" "Opal Ring" "Cemetery Map" "Plaza Map" "Leyline Map" "Channel Map" "Ramparts Map" "Atoll Map" "Palace Map" "Fungal Hollow Map" "Excavation Map" "Grave Trough Map" "Arachnid Nest Map" "Waterways Map" "Summit Map" "Caldera Map" "Terrace Map" "Core Map"
-    SetBackgroundColor 30 60 30 255 # Haewark Hamlet
+    BaseType == "Crystal Belt" "Gripped Gloves" "Marble Amulet" "Opal Ring"
+    SetBackgroundColor 0 60 0 180 # Haewark Hamlet
     SwitchTo $HaewarkHamlet_Region
     Branch
     Continue
-    BaseType == "Crystal Belt" "Coves Map" "Moon Temple Map" "Underground River Map" "Wharf Map" "Fields Map" "Factory Map" "Temple Map" "Shore Map" "Mud Geyser Map" "Desert Spring Map" "Chateau Map" "Silo Map" "Mesa Map" "Colonnade Map" "Bazaar Map" "Coral Ruins Map" "Port Map"
-    SetBackgroundColor 110 30 30 180 # Tirn's End
-    SwitchTo $TirnsEnd_Region
-    Branch
-    Continue
-    BaseType == "Academy Map" "Glacier Map" "Sulphur Vents Map" "Overgrown Ruin Map" "Vaal Pyramid Map" "Geode Map" "Courtyard Map" "Reef Map" "Peninsula Map" "Volcano Map" "Frozen Cabins Map" "Underground Sea Map" "Crater Map" "Spider Forest Map" "Defiled Cathedral Map" "Jungle Valley Map" "Crimson Township Map" "Cold River Map" "Phantasmagoria Map" "Thicket Map" "Cursed Crypt Map" "Overgrown Shrine Map" "Park Map" "Lava Lake Map" "Carcass Map" "Vaal Temple Map"
-    SetBackgroundColor 40 20 120 180 # Lex Proxima
-    SwitchTo $LexProxima_Region
-    Branch
-    Continue
-    BaseType == "Convoking Wand" "Alleyways Map" "Armoury Map" "Arsenal Map" "Beach Map" "Bog Map" "Bone Crypt Map" "Burial Chambers Map" "Cells Map" "Conservatory Map" "Crystal Ore Map" "Dig Map" "Dungeon Map" "Forking River Map" "Primordial Pool Map" "Sepulchre Map" "Waste Pool Map"
-    SetBackgroundColor 25 25 120 255 # Lex Ejoris
-    SwitchTo $LexEjoris_Region
-    Branch
-    Continue
-    BaseType == "Blue Pearl Amulet" "Arachnid Tomb Map" "Belfry Map" "Colosseum Map" "Crimson Temple Map" "Desert Map" "Dunes Map" "Foundry Map" "Laboratory Map" "Pit Map" "Relic Chambers Map" "Shrine Map" "Siege Map" "Strand Map" "Vault Map"
-    SetBackgroundColor 80 60 40 255 # New Vastir
-    SwitchTo $NewVastir_Region
-    Branch
-    Continue
-    BaseType == "Spiked Gloves" "Gripped Gloves" "Acid Caverns Map" "Ancient City Map" "Arcade Map" "Basilica Map" "Cage Map" "Graveyard Map" "Grotto Map" "Haunted Mansion Map" "Iceberg Map" "Infested Valley Map" "Lava Chamber Map" "Malformation Map" "Museum Map" "Plateau Map" "Residence Map" "Scriptorium Map" "Spider Lair Map" "Stagnation Map" "Sunken City Map" "Tower Map" "Tropical Island Map" "Villa Map" "Wasteland Map"
-    SetBackgroundColor 100 0 100 180 # Glennach Cairns
+    BaseType == "Apothecary's Gloves" "Blue Pearl Amulet" "Cerulean Ring" "Vanguard Belt" "Vermillion Ring"
+    SetBackgroundColor 60 0 60 180 # Glennach Cairns
     SwitchTo $GlennachCairns_Region
     Branch
     Continue
-    BaseType == "Vanguard Belt" "Fingerless Silk Gloves" "Arena Map" "Arid Lake Map" "Ashen Wood Map" "Bramble Valley Map" "Canyon Map" "City Square Map" "Dark Forest Map" "Dry Sea Map" "Gardens Map" "Ghetto Map" "Ivory Temple Map" "Lair Map" "Maze Map" "Mineral Pools Map" "Necropolis Map" "Orchard Map" "Pen Map" "Promenade Map"
-    SetBackgroundColor 0 80 100 180 # Valdo's Rest
+    BaseType == "Artillery Quiver" "Convoking Wand" "Iolite Ring" "Spiked Gloves"
+    SetBackgroundColor 0 60 60 180 # Valdo's Rest
     SwitchTo $ValdosRest_Region
     Branch
     Continue
-    BaseType == "Bone Helmet" "Barrows Map" "Castle Ruins Map" "Courthouse Map" "Estuary Map" "Flooded Mine Map" "Forbidden Woods Map" "Lighthouse Map" "Lookout Map" "Marshes Map" "Mausoleum Map" "Pier Map" "Precinct Map" "Primordial Blocks Map" "Racecourse Map" "Shipyard Map" "Toxic Sewer Map"
-    SetBackgroundColor 63 63 63 255 # Lira Arthain
+    BaseType == "Bone Helmet" "Fingerless Silk Gloves" "Fugitive Boots" "Seaglass Amulet" "Steel Ring"
+    SetBackgroundColor 60 60 60 255 # Lira Arthain
     SwitchTo $LiraArthain_Region
     Continue
 
@@ -2233,7 +2175,7 @@ SetOption $ChromaticItemTextSize slider [32] [18] [45]
 $ChromaticItems
     Rarity < Rare
 	SocketGroup >= RGB
-	SetBackgroundColor 0 73 0 220 # Chromatic Item
+	SetBackgroundColor 20 40 0 255 # Chromatic Item
 	MinimapIcon $ChromaticItemIconSize Green Cross
 	SetFontSize $ChromaticItemTextSize
 	PlayEffect White Temp
@@ -2266,7 +2208,7 @@ Continue
 	
 Show
    	SocketGroup >= RGB
-	SetBackgroundColor 0 73 0 220 # Chromatic Item
+	SetBackgroundColor 20 40 0 255 # Chromatic Item
 Branch
 Continue
     	Rarity Rare
@@ -2275,7 +2217,7 @@ Continue
 	PlayAlertSoundPositional 7 175 # Chromatic Drop
 Branch
 Continue
-	Rarity Unique # TO DO - Move this block to override unique blocks
+	Rarity Unique
 	ModFontSize + 6
 
 ## 
@@ -2531,7 +2473,7 @@ Show
 	
 Show
     BaseType "Prophecy" # Mid tier	
-	Prophecy "A Master Seeks Help" "A Vision of Ice and Fire" "Ancient Doom" "Battle Hardened" "Blind Faith" "Cleanser of Sins" "Dance of Steel" "Darktongue's Shriek" "Dying Cry" "Fire and Brimstone" "Fire and Ice" "Fire from the Sky" "Flesh of the Beast" "Hidden Vaal Pathways" "Kalandra's Craft" "Monstrous Treasure" "Plague of Rats" "The Ambitious Bandit III" "The Apex Predator" "The Bowstring's Music" "The Dreamer's Dream" "The Feral Lord V" "The Great Leader of the North" "The Great Mind of the North" "The Hollow Pledge" "The King's Path" "The Malevolent Witch" "The Mentor" "The Misunderstood Queen" "The Plaguemaw V" "The Servant's Heart" "The Silverwood" "The Twins" "The Unbreathing Queen V" "The Warmongers III" "The Warmongers IV" "Twice Enchanted" "Unbearable Whispers V" "Vaal Winds" "Wind and Thunder"
+	Prophecy "A Master Seeks Help" "A Vision of Ice and Fire" "Ancient Doom" "Battle Hardened" "Blind Faith" "Cleanser of Sins" "Dance of Steel" "Darktongue's Shriek" "Dying Cry" "Fire and Brimstone" "Fire and Ice" "Fire from the Sky" "Flesh of the Beast" "Hidden Vaal Pathways" "Kalandra's Craft" "Monstrous Treasure" "Plague of Rats" "The Ambitious Bandit III" "The Apex Predator" "The Bowstring's Music" "The Dreamer's Dream" "The Feral Lord V" "The Great Leader of the North" "The Great Mind of the North" "The King's Path" "The Malevolent Witch" "The Mentor" "The Misunderstood Queen" "The Plaguemaw V" "The Servant's Heart" "The Silverwood" "The Twins" "The Unbreathing Queen V" "The Warmongers III" "The Warmongers IV" "Twice Enchanted" "Unbearable Whispers V" "Vaal Winds" "Wind and Thunder"
 	SetBackgroundColor 30 0 110 255
     MinimapIcon 1 Purple Diamond
 	ModFontSize + 2
@@ -2606,6 +2548,15 @@ Show
 	SetBorderColor 0 0 255
     	MinimapIcon 2 Purple Diamond
 	PlayAlertSound 5 200
+
+Show
+	Class "Divination" # NEW UNSORTED CARDS
+	BaseType == "Desperate Crusade" "A Stone Perfected" "Treasures of the Vaal" "The Rabbit's Foot" "Chasing Risk" "The Prince of Darkness" "The Catch" "Eternal Bonds" "Disdain" "The Scout" "Guardian's Challenge" "The Forgotten Treasure" "The Fox in the Brambles" "The Aspirant" 
+	SetFontSize 36
+	SetTextColor 120 80 220
+	SetBorderColor 0 0 255
+    	MinimapIcon 1 Purple Diamond
+	PlayAlertSound 5 250
 	
 Show
 	Class "Divination" # Currency Drops
@@ -2969,23 +2920,32 @@ Show
 Show
     BaseType "Charged Breachstone"
     SetBorderColor 60 60 255
-    MinimapIcon 0 Yellow Moon
+    MinimapIcon 1 Yellow Moon
     PlayEffect Yellow
     Continue
     
 Show
     BaseType "Enriched Breachstone"
     SetBorderColor 255 220 110
-    MinimapIcon 0 Orange Moon
+    MinimapIcon 1 Orange Moon
     PlayEffect Orange
+    ModFontSize + 2
     Continue
     
 Show
     BaseType "Pure Breachstone"
     SetBorderColor 255 0 80
+    MinimapIcon 1 Brown Moon
+    PlayEffect Brown
+    ModFontSize + 4
+    Continue
+
+Show
+    BaseType "Flawless Breachstone"
+    SetBorderColor 55 220 80
     MinimapIcon 0 Brown Moon
     PlayEffect Brown
-    Continue
+    ModFontSize + 8
   
 Show
     Rarity Unique
@@ -3018,11 +2978,11 @@ Show
 
 Show
 	Rarity = Magic
-	BaseType "Nemesis Leaguestone" "Perandus Leaguestone" "Breach Leaguestone" "Essence Leaguestone"
+	BaseType "Nemesis Leaguestone" "Breach Leaguestone" "Essence Leaguestone"
 	SetTextColor 0 0 0
 
 Show
-	BaseType "Nemesis Leaguestone" "Perandus Leaguestone" "Breach Leaguestone" "Essence Leaguestone"
+	BaseType "Nemesis Leaguestone" "Breach Leaguestone" "Essence Leaguestone"
 
 Show
 	Rarity = Magic
@@ -3213,7 +3173,7 @@ Show
     PlayAlertSound 6 250
 
 Show
-    BaseType "Aetheric Fossil" "Bound Fossil" "Corroded Fossil" "Dense Fossil" "Enchanted Fossil" "Encrusted Fossil" "Gilded Fossil" "Jagged Fossil" "Lucent Fossil" "Perfect Fossil" "Prismatic Fossil" "Pristine Fossil" "Serrated Fossil" "Shuddering Fossil" "Potent Alchemical Resonator" "Powerful Alchemical Resonator" "Primitive Alchemical Resonator"
+    BaseType "Aetheric Fossil" "Bound Fossil" "Corroded Fossil" "Dense Fossil" "Deft Fossil" "Fundamental Fossil" "Gilded Fossil" "Jagged Fossil" "Lucent Fossil" "Perfect Fossil" "Prismatic Fossil" "Pristine Fossil" "Serrated Fossil" "Shuddering Fossil" "Potent Alchemical Resonator" "Powerful Alchemical Resonator" "Primitive Alchemical Resonator"
     SetBackgroundColor 20 20 70 235
     PlayEffect Blue
     
@@ -3289,7 +3249,7 @@ Continue
     
 Show
     Class "Map Fragments" 
-    BaseType "Perandus"
+    BaseType "Expedition" "Kalguuran"
     SetBorderColor 250 210 150
     Continue
     
@@ -3395,7 +3355,7 @@ Show
     SetTextColor 255 255 255 
 
 Show
-	BaseType "Gilded Ambush Scarab" "Gilded Bestiary Scarab" "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Elder Scarab" "Gilded Harbinger Scarab" "Gilded Legion Scarab" "Gilded Metamorph Scarab" "Gilded Perandus Scarab" "Gilded Reliquary Scarab" "Gilded Shaper Scarab" "Gilded Sulphite Scarab" "Gilded Torment Scarab" "Polished Bestiary Scarab" "Polished Breach Scarab" "Polished Cartography Scarab" "Polished Divination Scarab" "Polished Legion Scarab" "Polished Metamorph Scarab" "Polished Perandus Scarab" "Polished Sulphite Scarab" "Rusted Bestiary Scarab" "Rusted Divination Scarab" "Rusted Elder Scarab" "Rusted Legion Scarab" "Rusted Perandus Scarab" "Rusted Sulphite Scarab"
+	BaseType "Gilded Ambush Scarab" "Gilded Bestiary Scarab" "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Elder Scarab" "Gilded Harbinger Scarab" "Gilded Legion Scarab" "Gilded Metamorph Scarab" "Gilded Expedition Scarab" "Gilded Reliquary Scarab" "Gilded Shaper Scarab" "Gilded Sulphite Scarab" "Gilded Torment Scarab" "Polished Bestiary Scarab" "Polished Breach Scarab" "Polished Cartography Scarab" "Polished Divination Scarab" "Polished Legion Scarab" "Polished Metamorph Scarab" "Polished Expedition Scarab" "Polished Sulphite Scarab" "Rusted Bestiary Scarab" "Rusted Divination Scarab" "Rusted Elder Scarab" "Rusted Legion Scarab" "Rusted Expedition Scarab" "Rusted Sulphite Scarab"
 	SetTextColor 159 215 113 255
 
 Show
@@ -3476,7 +3436,7 @@ Show
 
 
 Show
-    BaseType "Abyssal Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Celestial Jeweller's Incubator" "Decadent Incubator" "Fine Incubator" "Primal Incubator"
+    BaseType "Abyssal Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Celestial Jeweller's Incubator" "Kalguuran Incubator" "Fine Incubator" "Primal Incubator"
 	SetTextColor 255 200 240
 	SetBackgroundColor 40 10 90 220
 	SetBorderColor 255 210 255 120
@@ -3492,6 +3452,12 @@ Show
 	MinimapIcon 1 Blue Diamond
 	PlayEffect Blue
 	PlayAlertSound 13 200
+
+Show
+	BaseType "Unrelenting"
+        Class "Map Fragment"
+        ModFontSize + 8
+        Continue
 
 Show
 	BaseType "Karui Emblem"
@@ -3586,6 +3552,12 @@ Show
 	PlayAlertSound 13 200
 	Continue
 
+Show
+	UberBlightedMap True
+	SetTextColor 255 50 30
+	MinimapIcon 1 Cyan Square
+	PlayAlertSound 13 200
+	Continue
 
 # Extreme Value
 
@@ -3703,7 +3675,7 @@ Show
 	PlayEffect Yellow	
 	
 Show
-	BaseType "Abyssal Delirium Orb" "Amorphous Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Decadent Delirium Orb" "Delirium Orb" "Foreboding Delirium Orb" "Fossilised Delirium Orb" "Fragmented Delirium Orb" "Imperial Delirium Orb" "Jeweller's Delirium Orb" "Obscured Delirium Orb" "Portentous Delirium Orb" "Primal Delirium Orb" "Singular Delirium Orb" "Timeless Delirium Orb" "Whispering Delirium Orb"
+	BaseType "Abyssal Delirium Orb" "Amorphous Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Kalguuran Delirium Orb" "Delirium Orb" "Foreboding Delirium Orb" "Fossilised Delirium Orb" "Fragmented Delirium Orb" "Imperial Delirium Orb" "Jeweller's Delirium Orb" "Obscured Delirium Orb" "Portentous Delirium Orb" "Primal Delirium Orb" "Singular Delirium Orb" "Timeless Delirium Orb" "Whispering Delirium Orb"
 	SetBackgroundColor 200 200 200 235	
     
 # End Delirium
@@ -4027,6 +3999,93 @@ Show
 	SetBorderColor 110 110 220
 	PlayEffect Pink Temp
 	MinimapIcon 2 Pink Square
+
+# Scourge #
+
+Show
+    BaseType "Tainted"
+    Class "Stackable Currency"
+    SetBackgroundColor 180 20 0
+    SetBorderColor 255 50 20
+    MinimapIcon 2 Red Diamond
+Continue
+
+Show
+    BaseType "Tainted Blessing" 
+    SetTextColor 195 195 110
+    ModFontSize + 2
+    PlayEffect Yellow
+    PlayAlertSound 3 250
+
+Show
+    BaseType "Tainted Orb of Fusing" "Tainted Jeweller's Orb"
+    SetTextColor 215 90 30
+    ModFontSize + 4
+    PlayEffect Orange
+    PlayAlertSound 6 250
+    MinimapIcon 1 Red Diamond
+
+Show
+    BaseType "Tainted Exalted Orb"
+    SetTextColor 220 150 30
+    ModFontSize + 6
+    PlayEffect Brown
+    PlayAlertSound 4 250
+    MinimapIcon 0 Red Diamond
+    
+Show
+    BaseType "Tainted Mythic Orb"
+    SetTextColor 50 0 0
+    ModFontSize + 6
+    PlayEffect Brown
+    PlayAlertSound 4 250
+    MinimapIcon 0 Red Diamond
+    
+Show
+    BaseType "Tainted Blacksmith's Whetstone" "Tainted Armourer's Scrap"
+    SetTextColor 170 140 110
+    PlayEffect Blue
+    PlayAlertSound 3 250
+    
+Show
+    BaseType "Tainted Chromatic Orb"
+    SetTextColor 70 140 10
+    ModFontSize + 2
+    PlayEffect Yellow
+    PlayAlertSound 3 250
+    
+Show
+    BaseType "Tainted Chaos Orb"
+    SetTextColor 210 210 90
+    ModFontSize + 4
+    PlayEffect Orange
+    PlayAlertSound 6 250
+    MinimapIcon 1 Red Diamond
+    
+Show
+    BaseType "Tainted Divine Teardrop"
+    SetTextColor 150 250 50
+    ModFontSize + 6
+    PlayEffect Brown
+    PlayAlertSound 4 250
+    MinimapIcon 0 Red Diamond
+
+Show
+    Scourged True
+    SetBackgroundColor 200 50 10
+    MinimapIcon 2 Red Triangle
+    ModFontSize + 4
+    PlayEffect Orange
+
+Show
+    BaseType "Sacred Orb"
+    SetBackgroundColor 150 180 40
+    SetBorderColor 50 200 40
+    SetTextColor 0 0 0
+    SetFontSize 40
+    MinimapIcon 0 Red Diamond
+    PlayEffect Brown
+    PlayAlertSound 4 250
 
 # End Leagues
 
@@ -4396,7 +4455,7 @@ SetOption $TalismanChanceBases checkbox ["Rustic Sash"] # Talisman Unique Bases 
 
 SetOption $EmptyLine
 
-SetOption $PerandusChancing switch [Remove] [Remove] [Hide] [Show] # Unclear whether Perandus uniques are added to global drop pool in 3.14 (they come from perandus chests and cadiro), disabled by default.
+SetOption $PerandusChancing switch [Remove] [Remove] [Hide] [Show] # Perandus is dead as of 3.16 so these are global drops now, disabled by default.
 SetOption $PerandusChanceBases checkbox ["Rawhide Boots"] ["Chateau Map"] ["Grand Mana Flask"] ["Leather Belt"] ["Great Mallet"] ["Vaal Blade"]
 
 SetOption $EmptyLine
@@ -5104,7 +5163,7 @@ Show
 Show
 	Class "Quest Items"
 	BaseType "Ankh of Eternity" "Kishara's Star" "Thaumetic Emblem" "Tukohama's Tooth" "Allflame" "Bust of Gaius Sentari" "Bust of Hector Titucius" "Bust of Marceus Lioneye" "Sekhema Feather" "Miasmeter" "Valako's Jaw" "Bottled Storm" "Hinekora's Hair" "Wings of Vastiri" # Passive Rewarding Quests
-	SetBackgroundColor 170 180 165 255
+	SetBackgroundColor 210 150 125 225
 	ModFontSize + 6
 
 SetOption $Merveil_Ring switch [Show] [Remove]
