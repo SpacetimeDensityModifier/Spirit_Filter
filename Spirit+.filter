@@ -747,21 +747,21 @@ Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Rare
      BaseDefencePercentile < 25
-	SetTextColor 110 100 50
+	SetTextColor 110 90 25
 	Continue
 
 Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Rare
      BaseDefencePercentile >= 25
-	SetTextColor 130 115 65
+	SetTextColor 130 140 25
 	Continue
 
 Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Rare
      BaseDefencePercentile >= 50
-	SetTextColor 155 135 85
+	SetTextColor 145 135 85
 	Continue
 
 Show
@@ -782,14 +782,14 @@ Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Rare
      BaseDefencePercentile >= 95
-	SetTextColor 235 225 155
+	SetTextColor 225 225 155
 	Continue
 
 Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Rare
      BaseDefencePercentile >= 100
-	SetTextColor 255 255 185
+	SetTextColor 245 255 185
 	Continue
 
 
