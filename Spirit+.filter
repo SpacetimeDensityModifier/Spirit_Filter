@@ -4635,6 +4635,7 @@ Continue
 	CorruptedMods >= 1
 	Scourged True
 	SetBorderColor 180 90 120
+	SwitchTo Show
 	Continue
 
 # Influenced Items	
