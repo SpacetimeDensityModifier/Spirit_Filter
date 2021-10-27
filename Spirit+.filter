@@ -507,7 +507,15 @@ SetOption $LinkedItems switch [Show] [Remove] # This toggle controls the behavio
 $LinkedItems
     Rarity < Unique
     LinkedSockets = 3 
-    SetBackgroundColor 100 100 100 205 # Linked Item
+    SetBackgroundColor 110 110 130 180 # Linked Item
+    MinimapIcon 2 Grey Cross
+    AreaLevel <= 12
+    Continue
+
+$LinkedItems
+    Rarity < Unique
+    LinkedSockets = 4 
+    SetBackgroundColor 120 120 140 160 # Linked Item
     MinimapIcon 2 Grey Cross
     AreaLevel <= 12
     Continue
@@ -516,7 +524,7 @@ $LinkedItems
     Rarity < Unique
     Class "One Hand" "Shields" "Wands" "Sceptres" "Daggers" "Rune Daggers" "Claws"
     LinkedSockets = 3 
-    SetBackgroundColor 100 100 100 205 # Linked Item
+    SetBackgroundColor 100 100 130 165 # Linked Item
     MinimapIcon 2 Grey Cross
     PlayAlertSound 2 200 #  Linked Item
     ModFontSize + 2
@@ -538,7 +546,7 @@ $LinkedItems
 Continue
 Branch
 Continue
-    AreaLevel >= 25
+    AreaLevel >= 35
     Rarity < Rare
     SwitchTo Hide
     MinimapIcon -1
@@ -551,7 +559,7 @@ $LinkedItems
 Continue
 Branch
 Continue
-    AreaLevel >= 55
+    AreaLevel >= 65
     Rarity < Rare
     SwitchTo Hide
 
@@ -559,14 +567,14 @@ $LinkedItems
     Rarity < Unique
     Class "Two Hand" "Staves" "Warstaves" "Bows" "Body Armours" 
     LinkedSockets = 5 
-    SetBackgroundColor 100 100 100 205 # Linked Item
+    SetBackgroundColor 100 100 140 180 # Linked Item
     MinimapIcon 1 Yellow Cross
     PlayAlertSound 2 200 #  Linked Item
     ModFontSize + 6
 Continue
 Branch
 Continue
-    AreaLevel >= 75
+    AreaLevel >= 80
     Rarity < Rare
     SwitchTo Hide
 
@@ -574,7 +582,218 @@ Continue
 SetTab [General Strictness]
 #################
 
-#Base Defences Prototype Filtering needs testing and will happen after launch#
+
+#################
+
+#Base Defence Prototype Filtering needs testing and will happen after launch#
+
+Hide
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Normal
+	BaseDefencePercentile < 25
+	SetTextColor 65 75 65
+	Continue
+
+Show
+	AreaLevel < 3
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Normal
+	BaseDefencePercentile < 25
+	SetTextColor 65 75 65
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Normal
+	BaseDefencePercentile >= 25
+	SetTextColor 95 105 95
+	Continue
+
+Hide
+	AreaLevel > 12
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Normal
+     BaseDefencePercentile <= 50
+	SetTextColor 127 127 127
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Normal
+     BaseDefencePercentile >= 50
+	SetTextColor 127 127 127
+	Continue
+
+Hide
+	AreaLevel >= 18
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Normal
+     BaseDefencePercentile >= 50
+	SetTextColor 127 127 127
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Normal
+     BaseDefencePercentile >= 75
+	SetTextColor 125 145 125
+	Continue
+
+Hide
+	BaseDefencePercentile >= 75
+	AreaLevel > 35
+	Rarity = Normal
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	SetTextColor 125 145 125
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Normal
+     BaseDefencePercentile >= 85
+	SetTextColor 155 185 155
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Normal
+     BaseDefencePercentile >= 95
+	SetTextColor 185 215 185
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Normal
+     BaseDefencePercentile >= 100
+	SetTextColor 205 235 195
+	Continue
+
+Hide
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Magic
+     BaseDefencePercentile < 25
+	SetTextColor 65 60 145
+	Continue
+
+Show
+	AreaLevel < 5
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Magic
+     BaseDefencePercentile < 25
+	SetTextColor 65 60 145
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Magic
+     BaseDefencePercentile >= 25
+	SetTextColor 95 105 160
+	Continue
+
+Hide 
+	AreaLevel >= 30
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Magic
+     BaseDefencePercentile <= 50
+	SetTextColor 120 140 175
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Magic
+     BaseDefencePercentile >= 50
+	SetTextColor 120 140 175
+	Continue
+
+Hide
+	AreaLevel > 40
+	BaseDefencePercentile >= 50
+	Rarity = Magic
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	SetTextColor 120 140 175
+	Continue
+
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Magic
+     BaseDefencePercentile >= 75
+	SetTextColor 125 145 185
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Magic
+     BaseDefencePercentile >= 85
+	SetTextColor 155 185 225
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Magic
+     BaseDefencePercentile >= 95
+	SetTextColor 185 205 255
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Magic
+     BaseDefencePercentile >= 100
+	SetTextColor 175 185 255
+	Continue
+
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Rare
+     BaseDefencePercentile < 25
+	SetTextColor 110 100 50
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Rare
+     BaseDefencePercentile >= 25
+	SetTextColor 130 115 65
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Rare
+     BaseDefencePercentile >= 50
+	SetTextColor 155 135 85
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Rare
+     BaseDefencePercentile >= 75
+	SetTextColor 185 155 105
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Rare
+     BaseDefencePercentile >= 85
+	SetTextColor 205 195 125
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Rare
+     BaseDefencePercentile >= 95
+	SetTextColor 235 225 155
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Rare
+     BaseDefencePercentile >= 100
+	SetTextColor 255 255 185
+	Continue
+
+
+##
 
 SetOption $OutdatedRares switch [Hide] [Remove] [Hide] [Show]
 
@@ -1263,398 +1482,448 @@ SetOption $Disqualifiers116 switch ["Thorny"] [$MovementSpeed]
 Show
 Rarity Magic
 Identified True
-SetTextColor 40 130 180 # Magic - Passes Inspection
+SetBackgroundColor 100 110 160 100 # Magic - Passes Inspection
 MinimapIcon 1 Blue Hexagon
 Continue
 
 Show
 Rarity Rare
 Identified True 
-SetTextColor 130 200 20 # Rare - Passes Inspection
+SetBackgroundColor 140 200 40 100 # Rare - Passes Inspection
 MinimapIcon 1 Yellow Hexagon
 Continue
 
 
 # An affix bracket contains mods which have become outdated by the ItemLevel listed
 
+SetOption $MyTypes input [] # This list applies your open equipment slots to a hide option 
+
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 # 
 ItemLevel >= 5 # +5 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 # 
 ItemLevel >= 10 # +5 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 # 
 ItemLevel >= 15 # +5 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 # 
 ItemLevel >= 20 # +5 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 # 
 ItemLevel >= 25 # +5 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 # 
 ItemLevel >= 30 # +5 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 # 
 ItemLevel >= 35 # +5 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 # 
 ItemLevel >= 40 # +5 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 # 
 ItemLevel >= 45 # +5 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 # 
 ItemLevel >= 50 # +5 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 # 
 ItemLevel >= 55 # +5 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 # 
 ItemLevel >= 60 # +5 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 # 
 ItemLevel >= 65 # +5 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 # 
 ItemLevel >= 68 # +2 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 # 
 ItemLevel >= 70 # +2 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 # 
 ItemLevel >= 72 # +3 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 # 
 ItemLevel >= 75 # +2 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 # 
 ItemLevel >= 77 # +2 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 # 
 ItemLevel >= 79 # +2 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 $AffixesBracket20 # 
 ItemLevel >= 81 # +2 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 $AffixesBracket20 $AffixesBracket21 # 
 ItemLevel >= 83 # +3 per increment
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 $AffixesBracket4 $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 $AffixesBracket20 $AffixesBracket21 $AffixesBracket22 # 
 ItemLevel >= 86 # High End Areas
-SetTextColor 60 80 140 # Outdated Magic Items
+SetBackgroundColor 60 80 140 # Outdated Magic Items
 MinimapIcon 2 Blue Hexagon
 Continue
 
 Show
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $AffixesBracket23 # 
-SetTextColor 130 20 130 # Magic - Top Tier Mods Present
+SetBackgroundColor 130 20 130 # Magic - Top Tier Mods Present
 MinimapIcon 0 Blue Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 # 
 ItemLevel >= 5 # +5 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 # 
 ItemLevel >= 10 # +5 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 # 
 ItemLevel >= 15 # +5 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4 # 
 ItemLevel >= 20 # +5 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 # 
 ItemLevel >= 25 # +5 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 # 
 ItemLevel >= 30 # +5 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 # 
 ItemLevel >= 35 # +5 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 # 
 ItemLevel >= 40 # +5 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 # 
 ItemLevel >= 45 # +5 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 # 
 ItemLevel >= 50 # +5 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 # 
 ItemLevel >= 55 # +5 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 # 
 ItemLevel >= 60 # +5 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 # 
 ItemLevel >= 65 # +5 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 # 
 ItemLevel >= 68 # +2 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 # 
 ItemLevel >= 70 # +2 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 # 
 ItemLevel >= 72 # +3 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 # 
 ItemLevel >= 75 # +2 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 # 
 ItemLevel >= 77 # +2 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 # 
 ItemLevel >= 79 # +2 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 $AffixesBracket20 # 
 ItemLevel >= 81 # +2 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 $AffixesBracket20 $AffixesBracket21 # 
 ItemLevel >= 83 # +3 per increment
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Hide
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 $AffixesBracket20 $AffixesBracket21 $AffixesBracket22 # 
 ItemLevel >= 86 # High End Areas
-SetTextColor 140 130 100 # Outdated Rare Items
+SetBackgroundColor 80 70 20 200 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
 Show
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$SuperQualifierStrictness $AffixesBracket23 # 
-SetTextColor 20 220 220 # Rare - Top Tier Mods Present
+SetBackgroundColor 20 220 220 200 # Rare - Top Tier Mods Present
 MinimapIcon 0 Yellow Hexagon
 Continue
 
 Show
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $Disqualifiers $Disqualifiers1 $Disqualifiers2 $Disqualifiers3 $Disqualifiers4 $Disqualifiers5 $Disqualifiers6 $Disqualifiers7 $Disqualifiers8 $Disqualifiers9 $Disqualifiers10 $Disqualifiers11 $Disqualifiers12 $Disqualifiers13 $Disqualifiers14 $Disqualifiers15 $Disqualifiers16 $Disqualifiers17 $Disqualifiers18 $Disqualifiers19 $Disqualifiers20 $Disqualifiers21 $Disqualifiers22 $Disqualifiers23 $Disqualifiers24 $Disqualifiers25 $Disqualifiers26 $Disqualifiers27 $Disqualifiers28 $Disqualifiers29 $Disqualifiers30 $Disqualifiers31 $Disqualifiers32 $Disqualifiers33 $Disqualifiers34 $Disqualifiers35 $Disqualifiers36 $Disqualifiers37 $Disqualifiers38 $Disqualifiers39 $Disqualifiers40 $Disqualifiers41 $Disqualifiers42 $Disqualifiers43 $Disqualifiers44 $Disqualifiers45 $Disqualifiers46 $Disqualifiers47 $Disqualifiers48 $Disqualifiers49 $Disqualifiers50 $Disqualifiers51 $Disqualifiers52 $Disqualifiers53 $Disqualifiers54 $Disqualifiers55 $Disqualifiers56 $Disqualifiers57 $Disqualifiers58 $Disqualifiers59 $Disqualifiers60 $Disqualifiers61 $Disqualifiers62 $Disqualifiers63 $Disqualifiers64 $Disqualifiers65 $Disqualifiers66 $Disqualifiers67 $Disqualifiers68 $Disqualifiers69 $Disqualifiers70 $Disqualifiers71 $Disqualifiers72 $Disqualifiers73 $Disqualifiers74 $Disqualifiers75 $Disqualifiers76 $Disqualifiers77 $Disqualifiers78 $Disqualifiers79 $Disqualifiers80 $Disqualifiers81 $Disqualifiers82 $Disqualifiers83 $Disqualifiers84 $Disqualifiers85 $Disqualifiers86 $Disqualifiers87 $Disqualifiers88 $Disqualifiers89 $Disqualifiers90 $Disqualifiers91 $Disqualifiers92 $Disqualifiers93 $Disqualifiers94 $Disqualifiers95 $Disqualifiers96 $Disqualifiers97 $Disqualifiers98 $Disqualifiers99 $Disqualifiers100 $Disqualifiers101 $Disqualifiers102 $Disqualifiers103 $Disqualifiers104 $Disqualifiers105 $Disqualifiers106 $Disqualifiers107 $Disqualifiers108 $Disqualifiers109 $Disqualifiers110 $Disqualifiers111 $Disqualifiers112 $Disqualifiers113 $Disqualifiers114 $Disqualifiers115 # 
-SetTextColor 100 40 120 # Disqualified Magic Items
+SetBackgroundColor 100 40 120 180 # Disqualified Magic Items
 SwitchTo $Disqualify
 MinimapIcon 2 Grey Hexagon
 Continue
 
 Show
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$DisqualifierStrictness $Disqualifiers $Disqualifiers1 $Disqualifiers2 $Disqualifiers3 $Disqualifiers4 $Disqualifiers5 $Disqualifiers6 $Disqualifiers7 $Disqualifiers8 $Disqualifiers9 $Disqualifiers10 $Disqualifiers11 $Disqualifiers12 $Disqualifiers13 $Disqualifiers14 $Disqualifiers15 $Disqualifiers16 $Disqualifiers17 $Disqualifiers18 $Disqualifiers19 $Disqualifiers20 $Disqualifiers21 $Disqualifiers22 $Disqualifiers23 $Disqualifiers24 $Disqualifiers25 $Disqualifiers26 $Disqualifiers27 $Disqualifiers28 $Disqualifiers29 $Disqualifiers30 $Disqualifiers31 $Disqualifiers32 $Disqualifiers33 $Disqualifiers34 $Disqualifiers35 $Disqualifiers36 $Disqualifiers37 $Disqualifiers38 $Disqualifiers39 $Disqualifiers40 $Disqualifiers41 $Disqualifiers42 $Disqualifiers43 $Disqualifiers44 $Disqualifiers45 $Disqualifiers46 $Disqualifiers47 $Disqualifiers48 $Disqualifiers49 $Disqualifiers50 $Disqualifiers51 $Disqualifiers52 $Disqualifiers53 $Disqualifiers54 $Disqualifiers55 $Disqualifiers56 $Disqualifiers57 $Disqualifiers58 $Disqualifiers59 $Disqualifiers60 $Disqualifiers61 $Disqualifiers62 $Disqualifiers63 $Disqualifiers64 $Disqualifiers65 $Disqualifiers66 $Disqualifiers67 $Disqualifiers68 $Disqualifiers69 $Disqualifiers70 $Disqualifiers71 $Disqualifiers72 $Disqualifiers73 $Disqualifiers74 $Disqualifiers75 $Disqualifiers76 $Disqualifiers77 $Disqualifiers78 $Disqualifiers79 $Disqualifiers80 $Disqualifiers81 $Disqualifiers82 $Disqualifiers83 $Disqualifiers84 $Disqualifiers85 $Disqualifiers86 $Disqualifiers87 $Disqualifiers88 $Disqualifiers89 $Disqualifiers90 $Disqualifiers91 $Disqualifiers92 $Disqualifiers93 $Disqualifiers94 $Disqualifiers95 $Disqualifiers96 $Disqualifiers97 $Disqualifiers98 $Disqualifiers99 $Disqualifiers100 $Disqualifiers101 $Disqualifiers102 $Disqualifiers103 $Disqualifiers104 $Disqualifiers105 $Disqualifiers106 $Disqualifiers107 $Disqualifiers108 $Disqualifiers109 $Disqualifiers110 $Disqualifiers111 $Disqualifiers112 $Disqualifiers113 $Disqualifiers114 $Disqualifiers115 $Disqualifiers116 # 
-SetTextColor 130 20 10 # Disqualified Rare Items
+SetBackgroundColor 90 20 10 130 # Disqualified Rare Items
 SwitchTo $Disqualify
 MinimapIcon 2 Grey Hexagon
 Continue
@@ -1662,16 +1931,18 @@ Continue
 # Having fewer disqualifiers on an item than your strictness may allow top tier disqualified mods to slip through.
    
 Show
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Magic
 HasExplicitMod >=1 $SuperQualifiers # 
-SetTextColor 220 90 220 # Rare - Superqualifiers Present
+SetBackgroundColor 220 90 220 200 # Rare - Superqualifiers Present
 MinimapIcon 0 Purple Hexagon
 Continue
 
 Show
+Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$SuperQualifierStrictness $SuperQualifiers # 
-SetTextColor 220 90 220 # Rare - Superqualifiers Present
+SetBackgroundColor 220 90 220 200 # Rare - Superqualifiers Present
 MinimapIcon 0 Pink Hexagon
 Continue
 
@@ -3136,7 +3407,7 @@ Show
 Show
     Identified True
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
-    SetBorderColor 255 110 50
+    SetBackgroundColor 255 110 50
     
 
         
@@ -3600,7 +3871,7 @@ Show
     Rarity Unique
     BaseType "Iron Ring" "Loricated Ringmail" "Hydrascale Gauntlets" "Solaris Circlet" "Turquoise Amulet" "Silken Hood" "Ezomyte Burgonet" "Assassin's Boots" "Murder Mitts" "Saint's Hauberk"
     MinimapIcon 1 Cyan Star
-    SetTextColor 180 145 50
+    SetTextColor 210 105 50
     Continue
 
 # End Blight
@@ -4072,10 +4343,11 @@ Show
 
 Show
     Scourged True
-    SetBackgroundColor 200 50 10
+    SetBorderColor 200 80 10
     MinimapIcon 2 Red Triangle
     ModFontSize + 4
     PlayEffect Orange
+Continue
 
 Show
     BaseType "Sacred Orb"
@@ -4330,33 +4602,40 @@ Branch
 Continue
 	Corrupted True
 	Rarity < Rare
-	SetBackgroundColor 50 0 0 220 # Basic Corruption
+	SetBorderColor 80 0 0 # Basic Corruption
 Branch
 Continue
-	CorruptedMods = 1
-	SetBackgroundColor 80 0 0 220 # Corrupted Mod
-	MinimapIcon 2 Red Hexagon
-	SwitchTo $CorruptedMod
+	Corrupted True
+	Scourged False
+	Rarity >= Rare
+	SetBorderColor 50 0 0 # Basic Corruption
+	SwitchTo Show
 Branch
 Continue
 	CorruptedMods > 1
-	SetBackgroundColor 110 0 0 220 # Advanced Corruption
+	SetBorderColor 200 0 0 # Advanced Corruption
 	MinimapIcon 1 Red Hexagon
 	SwitchTo $CorruptedMod
 Branch
 Continue
 	Rarity >= Rare
-	CorruptedMods >= 1
-	SetBorderColor 110 0 0 # Corrupt Unique/6L
-	MinimapIcon 1 Red Hexagon
+	CorruptedMods = 1
+	SetBorderColor 150 0 0 # Corrupt Unique/6L
+	MinimapIcon 2 Red Hexagon
 	SwitchTo $CorruptedRare_Unique
 Branch
 Continue
 	LinkedSockets = 6
 	Corrupted True
-	SetBorderColor 110 0 0 # Corrupt Unique/6L
+	SetBorderColor 240 0 0 # Corrupt Unique/6L
 	MinimapIcon 1 Red Cross
 	SwitchTo $Corrupted6L
+Branch
+Continue
+	CorruptedMods >= 1
+	Scourged True
+	SetBorderColor 180 90 120
+	Continue
 
 # Influenced Items	
 
@@ -5225,7 +5504,7 @@ $RunningShoes
 	Class "Boots"
 	HasExplicitMod >=1 "Runner's" "Sprinter's" "Stallion's" "Gazelle's" "Cheetah's" "Hellion's"
 	Rarity > Normal
-	SetBorderColor 60 210 60 
+	SetBackgroundColor 80 150 60 180
 	PlayEffect Green
 	MinimapIcon 2 Green Circle
 	Continue
