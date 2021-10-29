@@ -654,6 +654,14 @@ Show
 	SetTextColor 155 185 155
 	Continue
 
+Hide
+	AreaLevel > 69
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Normal
+     BaseDefencePercentile >= 85
+	SetTextColor 155 185 155
+	Continue
+
 Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Normal
@@ -721,7 +729,23 @@ Show
 	SetTextColor 125 145 185
 	Continue
 
+Hide
+	AreaLevel > 55
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Magic
+     BaseDefencePercentile >= 75
+	SetTextColor 125 145 185
+	Continue
+
 Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Magic
+     BaseDefencePercentile >= 85
+	SetTextColor 155 185 225
+	Continue
+
+Hide
+	AreaLevel > 72
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Magic
      BaseDefencePercentile >= 85
