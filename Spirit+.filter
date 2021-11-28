@@ -1002,7 +1002,16 @@ SetOption $PeakBaseList checkbox ["Astral Plate" "Glorious Plate" "Eternal Burgo
 $PeakBaseFilter
 BaseType $PeakBaseList
 Rarity < Unique
-SetBackgroundColor 70 40 10 220
+Identified False
+AnyEnchantment False
+HasInfluence None
+FracturedItem False
+SynthesisedItem False
+Scourged False
+LinkedSockets < 5
+Sockets < 6
+Corrupted False
+SetBackgroundColor 30 50 10 220
 
 #############
 SetTab [Flasks]
