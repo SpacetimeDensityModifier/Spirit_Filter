@@ -1002,6 +1002,7 @@ SetOption $PeakBaseList checkbox ["Astral Plate" "Glorious Plate" "Eternal Burgo
 
 $PeakBaseFilter
 BaseType $PeakBaseList
+Rarity < Unique
 SetBackgroundColor 70 40 10 220
 
 #############
