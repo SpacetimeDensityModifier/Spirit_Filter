@@ -67,6 +67,29 @@ SetVar $EVESGloves "Wrapped Mitts" "Strapped Mitts" "Clasped Mitts" "Trapper Mit
 SetVar $EVESHelmets "Scare Mask" "Plague Mask" "Iron Mask" "Festival Mask" "Golden Mask" "Raven Mask" "Callous Mask" "Regicide Mask" "Harlequin Mask" "Vaal Mask" "Deicide Mask"
 SetVar $EVESShields "Spiked Bundle" "Driftwood Spiked Shield" "Alloyed Spiked Shield" "Burnished Spiked Shield" "Ornate Spiked Shield" "Redwood Spiked Shield" "Compound Spiked Shield" "Polished Spiked Shield" "Sovereign Spiked Shield" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"
 
+SetVar $Endgame_AR "Astral Plate" "Glorious Plate" "Eternal Burgonet" "Royal Burgonet" "Titan Gauntlets" "Titan Greaves" "Pinnacle Tower Shield" "Colossal Tower Shield"
+SetVar $Endgame_EV "Assassin's Garb" "Zodiac Leather" "Lion Pelt" "Slink Gloves" "Slink Boots" "Imperial Buckler" "Vaal Buckler"
+SetVar $Endgame_ES "Occultist's Vestment" "Vaal Regalia" "Hubris Circlet" "Sorcerer Gloves" "Sorcerer Boots" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield"
+SetVar $Endgame_EVES "Carnal Armour" "Sadist Garb" "Deicide Mask" "Vaal Mask" "Murder Mitts" "Murder Boots" "Supreme Spiked Shield"
+SetVar $Endgame_AREV "Triumphant Lamellar" "Full Dragonscale" "Nightmare Bascinet" "Pig-Faced Bascinet" "Dragonscale Gauntlets" "Dragonscale Boots" "Elegant Round Shield" "Cardinal Round Shield"
+SetVar $Endgame_ARES "Saintly Chainmail" "Saint's Hauberk" "Praetor Crown" "Prophet Crown" "Crusader Gloves" "Crusader Boots" "Archon Kite Shield" "Champion Kite Shield"
+
+SetVar $Endgame_1HSwords "Tiger Hook" "Eternal Sword" "Midnight Blade"
+SetVar $Endgame_1HThrustingSwords "Dragoon Sword" "Vaal Rapier" "Jewelled Foil" "Harpy Rapier" "Spiraled Foil"
+SetVar $Endgame_2HSwords "Exquisite Blade" "Infernal Sword"
+SetVar $Endgame_1HAxes "Runic Hatchet" "Infernal Axe" "Vaal Hatchet" "Reaver Axe"
+SetVar $Endgame_2HAxes "Fleshripper" "Vaal Axe" "Despot Axe"
+SetVar $Endgame_Sceptres "Sambar Sceptre" "Void Sceptre" "Opal Sceptre"
+SetVar $Endgame_Staves "Eclipse Staff" "Imperial Staff"
+SetVar $Endgame_Warstaves "Maelstr" 
+SetVar $Endgame_Wands "Profane Wand" "Imbued Wand" "Prophecy Wand" "Tornado Wand" "Opal Wand"
+SetVar $Endgame_Bows "Maraketh Bow" "Thicket Bow" "Imperial Bow" "Harbinger Bow"
+SetVar $Endgame_Claws "Terror Claw" "Gemini Claw" "Imperial Claw"
+SetVar $Endgame_1HMaces "Behemoth Mace" "Auric Mace" "Nightmare Mace"
+SetVar $Endgame_2HMaces "Coronal Maul" "Piledriver" "Terror Maul"
+SetVar $Endgame_Daggers "Sai" "Ambusher"
+SetVar $Endgame_RuneDaggers "Demon Dagger" "Platinum Kris"
+
 SetVar $AtlasBases "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Two-Toned Boots" "Convoking Wand" "Bone Helmet" "Marble Amulet" "Blue Pearl Amulet" "Vanguard Belt" "Crystal Belt" "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring" "Grasping Mail"
 
 #################
@@ -971,6 +994,15 @@ $OutdatedRares
     DropLevel < 62
     AreaLevel >= 75
     Continue
+
+SetTab [General Strictness]
+
+SetOption $PeakBaseFilter switch [Remove] [Show] [Hide] # How do you want the top tier bases to behave? This function prevents other highlights from applying.
+SetOption $PeakBaseList checkbox ["Astral Plate" "Glorious Plate" "Eternal Burgonet" "Royal Burgonet" "Titan Gauntlets" "Titan Greaves" "Pinnacle Tower Shield" "Colossal Tower Shield"] ["Assassin's Garb" "Zodiac Leather" "Lion Pelt" "Slink Gloves" "Slink Boots" "Imperial Buckler" "Vaal Buckler"] ["Occultist's Vestment" "Vaal Regalia" "Hubris Circlet" "Sorcerer Gloves" "Sorcerer Boots" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield"] ["Carnal Armour" "Sadist Garb" "Deicide Mask" "Vaal Mask" "Murder Mitts" "Murder Boots" "Supreme Spiked Shield"] ["Triumphant Lamellar" "Full Dragonscale" "Nightmare Bascinet" "Pig-Faced Bascinet" "Dragonscale Gauntlets" "Dragonscale Boots" "Elegant Round Shield" "Cardinal Round Shield"] ["Saintly Chainmail" "Saint's Hauberk" "Praetor Crown" "Prophet Crown" "Crusader Gloves" "Crusader Boots" "Archon Kite Shield" "Champion Kite Shield"] ["Tiger Hook" "Eternal Sword" "Midnight Blade"] ["Dragoon Sword" "Vaal Rapier" "Jewelled Foil" "Harpy Rapier" "Spiraled Foil"] ["Exquisite Blade" "Infernal Sword"] ["Runic Hatchet" "Infernal Axe" "Vaal Hatchet" "Reaver Axe"] ["Fleshripper" "Vaal Axe" "Despot Axe"] ["Sambar Sceptre" "Void Sceptre" "Opal Sceptre"] ["Eclipse Staff" "Imperial Staff"] ["Maelstr"] ["Profane Wand" "Imbued Wand" "Prophecy Wand" "Tornado Wand" "Opal Wand"] ["Maraketh Bow" "Thicket Bow" "Imperial Bow" "Harbinger Bow"] ["Terror Claw" "Gemini Claw" "Imperial Claw"] ["Behemoth Mace" "Auric Mace" "Nightmare Mace"] ["Coronal Maul" "Piledriver" "Terror Maul"] ["Sai" "Ambusher"] ["Demon Dagger" "Platinum Kris"] # Remove entries from this list and leave the ones you want this function of the filter to affect, and set the behavior. Depending on how you set this, you can hide all but one type of endgame base, or use it as a secondary form of base hunting by showing a set of base types with an extra highlight. You can also replace these terms with any BaseType, not only endgame ones.
+
+$PeakBaseFilter
+BaseType $PeakBaseList
+SetBackgroundColor 70 40 10 220
 
 #############
 SetTab [Flasks]
