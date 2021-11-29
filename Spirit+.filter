@@ -5,6 +5,7 @@ SetTab [Weapons]
 SetTab [Armours]
 SetTab [Accessories]
 SetTab [General Strictness]
+SetTab [Base Defences]
 SetTab [Racing]
 SetTab [Recipes]
 SetTab [Uniques]
@@ -588,10 +589,10 @@ $LinkedItems
     ModFontSize + 4
 Continue
 Branch
-Continue
     AreaLevel >= 65
     Rarity < Rare
     SwitchTo Hide
+Continue
 
 $LinkedItems
     Rarity < Unique
@@ -608,12 +609,27 @@ Continue
     Rarity < Rare
     SwitchTo Hide
 
-#################
-SetTab [General Strictness]
-#################
+SetTab [Base Defences]
+SetOption $BDNormalLow slider [8] [1] [100] # This slider adjusts the level at which updated Normal Bases with less than 50% of their Base Defence potential Hide.
+SetOption $BDNormalMidLow slider [12] [1] [100] # This slider adjusts the level at which updated Normal Bases with more than 50% but less than 75% of their Base Defence potential Hide.
+SetOption $BDNormalMidHigh slider [22] [1] [100] # This slider adjusts the level at which updated Normal Bases with more than 75% but less than 85% of their Base Defence potential Hide.
+SetOption $BDNormalHigh slider [55] [1] [100] # This slider adjusts the level at which updated Normal Bases with more than 85% but less than 95% of their Base Defence potential Hide.
+SetOption $BDNormalNearPerfect slider [70] [1] [100] # This slider adjusts the level at which updated Normal Bases with more than 95% but less than 100% of their Base Defence potential Hide.
+SetOption $BDNormalPerfect slider [100] [1] [100] # This slider adjusts the level at which updated Normal Bases with 100% of their Base Defence potential Hide.
 
+SetOption $BDMagicLow slider [12] [1] [100] # This slider adjusts the level at which updated Normal Bases with less than 50% of their Base Defence potential Hide.
+SetOption $BDMagicMidLow slider [18] [1] [100] # This slider adjusts the level at which updated Normal Bases with more than 50% but less than 75% of their Base Defence potential Hide.
+SetOption $BDMagicMidHigh slider [35] [1] [100] # This slider adjusts the level at which updated Normal Bases with more than 75% but less than 85% of their Base Defence potential Hide.
+SetOption $BDMagicHigh slider [65] [1] [100] # This slider adjusts the level at which updated Normal Bases with more than 85% but less than 95% of their Base Defence potential Hide.
+SetOption $BDMagicNearPerfect slider [75] [1] [100] # This slider adjusts the level at which updated Normal Bases with more than 95% but less than 100% of their Base Defence potential Hide.
+SetOption $BDMagicPerfect slider [100] [1] [100] # This slider adjusts the level at which updated Normal Bases with 100% of their Base Defence potential Hide.
 
-#################
+SetOption $BDRareLow slider [100] [1] [100] # This slider adjusts the level at which updated Normal Bases with less than 25% of their Base Defence potential Hide.
+SetOption $BDRareMidLow slider [100] [1] [100] # This slider adjusts the level at which updated Normal Bases with less than 50% of their Base Defence potential Hide.
+SetOption $BDRareMidHigh slider [100] [1] [100] # This slider adjusts the level at which updated Normal Bases with more than 75% but less than 85% of their Base Defence potential Hide.
+SetOption $BDRareHigh slider [100] [1] [100] # This slider adjusts the level at which updated Normal Bases with more than 85% but less than 95% of their Base Defence potential Hide.
+SetOption $BDRareNearPerfect slider [100] [1] [100] # This slider adjusts the level at which updated Normal Bases with more than 95% but less than 100% of their Base Defence potential Hide.
+SetOption $BDRarePerfect slider [100] [1] [100] # This slider adjusts the level at which updated Normal Bases with 100% of their Base Defence potential Hide.
 
 Hide
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
@@ -638,7 +654,7 @@ Show
 	Continue
 
 Hide
-	AreaLevel > 12
+	AreaLevel > $BDNormalLow 
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Normal
      BaseDefencePercentile <= 50
@@ -653,7 +669,7 @@ Show
 	Continue
 
 Hide
-	AreaLevel >= 18
+	AreaLevel > $BDNormalMidLow 
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Normal
      BaseDefencePercentile >= 50
@@ -669,7 +685,7 @@ Show
 
 Hide
 	BaseDefencePercentile >= 75
-	AreaLevel > 35
+	AreaLevel > $BDNormalMidHigh
 	Rarity = Normal
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	SetTextColor 125 145 125
@@ -683,7 +699,7 @@ Show
 	Continue
 
 Hide
-	AreaLevel > 69
+	AreaLevel > $BDNormalHigh
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Normal
      BaseDefencePercentile >= 85
@@ -697,7 +713,23 @@ Show
 	SetTextColor 185 215 185
 	Continue
 
+Hide
+	AreaLevel > $BDNormalNearPerfect
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Normal
+     BaseDefencePercentile >= 95
+	SetTextColor 185 215 185
+	Continue
+
 Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Normal
+     BaseDefencePercentile >= 100
+	SetTextColor 205 235 195
+	Continue
+
+Hide
+	AreaLevel > $BDNormalPerfect
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Normal
      BaseDefencePercentile >= 100
@@ -727,7 +759,7 @@ Show
 	Continue
 
 Hide 
-	AreaLevel >= 30
+	AreaLevel >= $BDMagicLow 
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Magic
      BaseDefencePercentile <= 50
@@ -742,7 +774,7 @@ Show
 	Continue
 
 Hide
-	AreaLevel > 40
+	AreaLevel > $BDMagicMidLow 
 	BaseDefencePercentile >= 50
 	Rarity = Magic
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
@@ -758,7 +790,7 @@ Show
 	Continue
 
 Hide
-	AreaLevel > 55
+	AreaLevel > $BDMagicMidHigh 
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Magic
      BaseDefencePercentile >= 75
@@ -773,7 +805,7 @@ Show
 	Continue
 
 Hide
-	AreaLevel > 65
+	AreaLevel > $BDMagicHigh 
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Magic
      BaseDefencePercentile >= 85
@@ -787,7 +819,23 @@ Show
 	SetTextColor 185 205 255
 	Continue
 
+Hide
+	AreaLevel > $BDMagicNearPerfect 
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Magic
+     BaseDefencePercentile >= 95
+	SetTextColor 185 205 255
+	Continue
+
 Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Magic
+     BaseDefencePercentile >= 100
+	SetTextColor 175 185 255
+	Continue
+
+Hide
+	AreaLevel > $BDMagicPerfect 
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Magic
      BaseDefencePercentile >= 100
@@ -796,6 +844,14 @@ Show
 
 
 Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Rare
+     BaseDefencePercentile < 25
+	SetTextColor 110 90 25
+	Continue
+
+Hide
+	AreaLevel > $BDRareLow 
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Rare
      BaseDefencePercentile < 25
@@ -816,7 +872,23 @@ Show
 	SetTextColor 145 135 85
 	Continue
 
+Hide
+	AreaLevel > $BDRareMidLow 
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Rare
+     BaseDefencePercentile >= 50
+	SetTextColor 145 135 85
+	Continue
+
 Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Rare
+     BaseDefencePercentile >= 75
+	SetTextColor 185 155 105
+	Continue
+
+Hide
+	AreaLevel > $BDRareMidHigh
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Rare
      BaseDefencePercentile >= 75
@@ -830,7 +902,23 @@ Show
 	SetTextColor 205 195 125
 	Continue
 
+Hide
+	AreaLevel > $BDRareHigh
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Rare
+     BaseDefencePercentile >= 85
+	SetTextColor 205 195 125
+	Continue
+
 Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Rare
+     BaseDefencePercentile >= 95
+	SetTextColor 225 225 155
+	Continue
+
+Hide
+	AreaLevel > $BDRareNearPerfect
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Rare
      BaseDefencePercentile >= 95
@@ -844,7 +932,18 @@ Show
 	SetTextColor 245 255 185
 	Continue
 
+Hide
+	AreaLevel > $BDRarePerfect
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	Rarity Rare
+     BaseDefencePercentile >= 100
+	SetTextColor 245 255 185
+	Continue
 
+
+#################
+SetTab [General Strictness]
+#################
 ##
 
 SetOption $OutdatedRares switch [Hide] [Remove] [Hide] [Show]
