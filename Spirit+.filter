@@ -30,7 +30,7 @@ SetTab [Dream Item]
 SetVar $Weapons "Claws" "Staves" "Warstaves" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Swords" "One Hand Axes" "Two Hand Axes" "One Hand Maces" "Two Hand Maces" "Bows" "Rune Daggers" "Daggers" "Wands" "Sceptres"
 SetVar $Armours "Helmets" "Boots" "Gloves" "Body Armours" "Shields" 
 SetVar $Accessories "Rings" "Amulets" "Belts"
-SetVar $Quivers "Two-Point Arrow Quiver" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Blunt Arrow Quiver" "Fire Arrow Quiver" "Broadhead Arrow Quiver" "Penetrating Arrow Quiver" "Spike-Point Arrow Quiver" "Ornate Quiver"
+SetVar $Quivers "Two-Point Arrow Quiver" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Blunt Arrow Quiver" "Feathered Arrow Quiver" "Fire Arrow Quiver" "Broadhead Arrow Quiver" "Penetrating Arrow Quiver" "Blazing Arrow Quiver" "Spike-Point Arrow Quiver" "Vile Arrow Quiver" "Heavy Arrow Quiver" "Primal Arrow Quiver" "Ornate Quiver"
 
 SetVar $ARBody "Plate Vest" "Chestplate" "Copper Plate" "War Plate" "Full Plate" "Arena Plate" "Lordly Plate" "Bronze Plate" "Battle Plate" "Sun Plate" "Colosseum Plate" "Majestic Plate" "Golden Plate" "Crusader Plate" "Astral Plate" "Gladiator Plate" "Glorious Plate"
 SetVar $ARBoots "Iron Greaves" "Steel Greaves" "Plated Greaves" "Reinforced Greaves" "Antique Greaves" "Ancient Greaves" "Goliath Greaves" "Vaal Greaves" "Titan Greaves" "Two-Toned Boots"
@@ -204,6 +204,7 @@ Continue
 
 Show
 BaseType $AtlasBases
+SetBackgroundColor 25 10 35
 ModFontSize + 3
 Continue
 
@@ -362,8 +363,8 @@ SetOption $Weapon_Upgrades switch [Remove] [Show] [Remove] # Are you seeking wea
 SetOption $Weapon_Threshold dropdown [Rare] [Normal] [Magic] [Rare]
 SetOption $Weapon_choices checkbox ["Claws"] ["Staves"] ["Warstaves"] ["One Hand Swords"] ["Thrusting One Hand Swords"] ["Two Hand Swords"] ["One Hand Axes"] ["Two Hand Axes"] ["One Hand Maces"] ["Two Hand Maces"] ["Bows"] ["Rune Daggers"] ["Daggers"] ["Wands"] ["Sceptres"]
 SetOption $QuiverUse switch [Remove] [Show] [Hide] # Are you seeking a quiver upgrade?
-SetOption $Quiver_choices checkbox ["Two-Point Arrow Quiver"] ["Serrated Arrow Quiver"] ["Sharktooth Arrow Quiver"] ["Blunt Arrow Quiver"] ["Fire Arrow Quiver"] ["Broadhead Arrow Quiver"] ["Penetrating Arrow Quiver"] ["Spike-Point Arrow Quiver"] # Which quivers do you use?
-
+SetOption $Quiver_choices checkbox ["Two-Point Arrow Quiver"] ["Serrated Arrow Quiver"] ["Sharktooth Arrow Quiver"] ["Blunt Arrow Quiver"] ["Feathered Arrow Quiver"] ["Fire Arrow Quiver"] ["Broadhead Arrow Quiver"] ["Blazing Arrow Quiver"] ["Penetrating Arrow Quiver"] ["Vile Arrow Quiver"] ["Heavy Arrow Quiver"] ["Primal Arrow Quiver"] ["Spike-Point Arrow Quiver"] # Which quivers do you use?
+# TO DO ^ Order by drop level
 #################
 SetTab [Armours]
 #################
@@ -847,7 +848,7 @@ Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Rare
      BaseDefencePercentile < 25
-	SetTextColor 110 90 25
+	SetTextColor 120 100 45
 	Continue
 
 Hide
@@ -855,14 +856,14 @@ Hide
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Rare
      BaseDefencePercentile < 25
-	SetTextColor 110 90 25
+	SetTextColor 120 100 45
 	Continue
 
 Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	Rarity Rare
      BaseDefencePercentile >= 25
-	SetTextColor 130 140 25
+	SetTextColor 130 140 45
 	Continue
 
 Show
@@ -1481,7 +1482,7 @@ SetOption $StunDuration info ["of Impact" "of Dazing" "of Stunning" "of Slamming
 SetOption $StunAndBlockRecovery info ["of Thick Skin" "of Stone Skin" "of Iron Skin" "of Steel Skin" "of Adamantite Skin" "of Corundum Skin"]
 SetOption $ReducedEnemyStunThreshold info ["of the Pugilist" "of the Brawler" "of the Boxer" "of the Combatant" "of the Gladiator"]
 SetOption $MovementSpeed info ["Runner's" "Sprinter's" "Stallion's" "Gazelle's" "Cheetah's" "Hellion's"]
-# TO DO Affix Filtering - Convoking Wand Modifiers, Flasks, Jewels x3, Watchstones, Experimented Bases, affix "combos"
+# TO DO Affix Filtering - Convoking Wand Modifiers, Flasks, Jewels x3, Experimented Bases, affix "combos"
 
 SetTab [Affixes - Customization]
 SetOption $Disqualify switch [Hide] [Remove] # This toggle determines whether the filter discards an item with more outdated, junk, or counter-synergy affixes than your limit.
@@ -1878,7 +1879,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 # 
 ItemLevel >= 5 # +5 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1887,7 +1888,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 # 
 ItemLevel >= 10 # +5 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1896,7 +1897,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3 # 
 ItemLevel >= 15 # +5 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1905,7 +1906,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4 # 
 ItemLevel >= 20 # +5 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1914,7 +1915,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 # 
 ItemLevel >= 25 # +5 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1923,7 +1924,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 # 
 ItemLevel >= 30 # +5 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1932,7 +1933,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 # 
 ItemLevel >= 35 # +5 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1941,7 +1942,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 # 
 ItemLevel >= 40 # +5 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1950,7 +1951,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 # 
 ItemLevel >= 45 # +5 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1959,7 +1960,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 # 
 ItemLevel >= 50 # +5 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1968,7 +1969,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 # 
 ItemLevel >= 55 # +5 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1977,7 +1978,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 # 
 ItemLevel >= 60 # +5 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1986,7 +1987,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 # 
 ItemLevel >= 65 # +5 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -1995,7 +1996,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 # 
 ItemLevel >= 68 # +2 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -2004,7 +2005,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 # 
 ItemLevel >= 70 # +2 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -2013,7 +2014,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 # 
 ItemLevel >= 72 # +3 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -2022,7 +2023,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 # 
 ItemLevel >= 75 # +2 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -2031,7 +2032,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 # 
 ItemLevel >= 77 # +2 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -2040,7 +2041,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 # 
 ItemLevel >= 79 # +2 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -2049,7 +2050,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 $AffixesBracket20 # 
 ItemLevel >= 81 # +2 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -2058,7 +2059,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 $AffixesBracket20 $AffixesBracket21 # 
 ItemLevel >= 83 # +3 per increment
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -2067,7 +2068,7 @@ Class $Weapons $Armours $Accessories "Quivers"
 Rarity Rare
 HasExplicitMod >=$QualifierStrictness $AffixesBracket1 $AffixesBracket2 $AffixesBracket3  $AffixesBracket4  $AffixesBracket5 $AffixesBracket6 $AffixesBracket7 $AffixesBracket8 $AffixesBracket9 $AffixesBracket10 $AffixesBracket11 $AffixesBracket12 $AffixesBracket13 $AffixesBracket14 $AffixesBracket15 $AffixesBracket16 $AffixesBracket17 $AffixesBracket18 $AffixesBracket19 $AffixesBracket20 $AffixesBracket21 $AffixesBracket22 # 
 ItemLevel >= 86 # High End Areas
-SetBackgroundColor 80 70 20 200 # Outdated Rare Items
+SetBackgroundColor 80 70 20 220 # Outdated Rare Items
 MinimapIcon 2 Yellow Hexagon
 Continue
 
@@ -2121,7 +2122,7 @@ SetTab [Mapping]
 SetOption $Mapping info [] # Here you can customize which Atlas bases you want and which maps or regions matter to you.
 SetOption $OutdatedMaps switch [Show] [Hide] [Remove] # Do you want maps outside of the current bracket (white/yellow/red) to be hidden and have their sound removed?
 SetOption $EmptyLine
-SetOption $Atlas_Choices checkbox ["Fingerless Silk Gloves"] ["Gripped Gloves"] ["Spiked Gloves"] ["Two-Toned Boots"] ["Convoking Wand"] ["Bone Helmet"] ["Marble Amulet"] ["Blue Pearl Amulet"] ["Vanguard Belt"] ["Crystal Belt"] ["Cerulean Ring"] ["Opal Ring"] ["Steel Ring"] ["Vermillion Ring"] ["Seaglass Amulet"] ["Fugitive Boots"] ["Apothecary's Gloves"] ["Artillery Quiver"] ["Iolite Ring"] # These are drop-restricted bases that can be found only in specific regions of the Atlas. If you're only looking for certain ones just remove the ones you don't want.
+SetOption $Atlas_Choices checkbox ["Fingerless Silk Gloves"] ["Gripped Gloves"] ["Spiked Gloves"] ["Two-Toned Boots"] ["Convoking Wand"] ["Bone Helmet"] ["Marble Amulet"] ["Blue Pearl Amulet"] ["Vanguard Belt"] ["Crystal Belt"] ["Cerulean Ring"] ["Opal Ring"] ["Steel Ring"] ["Vermillion Ring"] ["Seaglass Amulet"] ["Fugitive Boots"] ["Apothecary's Gloves"] ["Artillery Quiver"] ["Iolite Ring"] # These are scarce bases that can be found only in the Atlas. If you're only looking for certain ones just remove the ones you don't want.
 SetOption $EmptyLine
 
 Show
@@ -2132,17 +2133,6 @@ Show
 
 SetOption $MyMaps input ["Vaal Temple Map"] # You can use the lists below if you know what you're looking for, adding a beam, green quest-like icon, and changing the text color. Make sure you add "Map" to the names.
 SetOption $EmptyLine
-SetOption $Haewark_Hamlet info ["Cemetery Map" "Plaza Map" "Leyline Map" "Channel Map" "Ramparts Map" "Atoll Map" "Palace Map" "Fungal Hollow Map" "Excavation Map" "Grave Trough Map" "Arachnid Nest Map" "Waterways Map" "Summit Map" "Caldera Map" "Terrace Map" "Core Map"] #
-SetOption $HaewarkHamlet_Region switch [Show] [Hide] [Remove]
-SetOption $EmptyLine
-SetOption $Glennach_Cairns info ["Acid Caverns Map" "Ancient City Map" "Arcade Map" "Basilica Map" "Cage Map" "Graveyard Map" "Grotto Map" "Haunted Mansion Map" "Iceberg Map" "Infested Valley Map" "Lava Chamber Map" "Malformation Map" "Museum Map" "Plateau Map" "Residence Map" "Scriptorium Map" "Spider Lair Map" "Stagnation Map" "Sunken City Map" "Tower Map" "Tropical Island Map" "Villa Map" "Wasteland Map"] #
-SetOption $GlennachCairns_Region switch [Show] [Hide] [Remove]
-SetOption $EmptyLine
-SetOption $Valdos_Rest info ["Arena Map" "Arid Lake Map" "Ashen Wood Map" "Bramble Valley Map" "Canyon Map" "City Square Map" "Dark Forest Map" "Dry Sea Map" "Gardens Map" "Ghetto Map" "Ivory Temple Map" "Lair Map" "Maze Map" "Mineral Pool Map" "Necropolis Map" "Orchard Map" "Pen Map" "Promenade Map"] #
-SetOption $ValdosRest_Region switch [Show] [Hide] [Remove]
-SetOption $EmptyLine
-SetOption $Lira_Arthain info ["Barrows Map" "Castle Ruins Map" "Courthouse Map" "Estuary Map" "Flooded Mine Map" "Forbidden Woods Map" "Lighthouse Map" "Lookout Map" "Marshes Map" "Mausoleum Map" "Pier Map" "Precinct Map" "Primordial Blocks Map" "Racecourse Map" "Shipyard Map" "Toxic Sewer Map"] #
-SetOption $LiraArthain_Region switch [Show] [Hide] [Remove]
 
 Show
     Class "Maps" "Map Fragment" "Atlas"
@@ -2201,12 +2191,38 @@ Show
     SetBackgroundColor 40 50 10 255
     MinimapIcon 0 White Moon
     ModFontSize + 6
+
+
+Show
+    Class "Map Fragments"
+    SetTextColor 255 255 255
+    MinimapIcon 1 Blue Moon
+    Branch
+    Continue
+    BaseType "Al-Hezmin's Crest"
+    SetBackgroundColor 120 180 40
+    ModFontSize + 4
+    Branch
+    Continue
+    BaseType "Baran's Crest"
+    SetBackgroundColor 185 30 30
+    ModFontSize + 4
+    Branch
+    Continue
+    BaseType "Drox's Crest"
+    SetBackgroundColor 95 80 40
+    ModFontSize + 4
+    Branch
+    Continue
+    BaseType "Veritania's Crest"
+    SetBackgroundColor 40 40 150
+    ModFontSize + 4
     
 Show
     Class "Misc Map Items"
     BaseType "Maven's Invitation" 
-    SetTextColor 40 0 230
-    SetBackgroundColor 20 0 60 255
+    SetTextColor 80 0 230
+    SetBackgroundColor 20 0 60 235
     SetBorderColor 0 50 190
     MinimapIcon 1 Red Moon
     ModFontSize + 15
@@ -2230,6 +2246,54 @@ Show
     MinimapIcon 0 Red Moon
     SetBackgroundColor 20 20 90 240
     PlayAlertSound 14 200
+    PlayEffect Orange
+    Continue
+
+Show
+    Class "Misc Map Items"
+    BaseType "Writhing Invitation" 
+    SetTextColor 40 0 80
+    SetBackgroundColor 20 80 60 235
+    SetBorderColor 90 60 220
+    MinimapIcon 1 Red Moon
+    ModFontSize + 15
+    PlayAlertSound 14 300
+    PlayEffect Orange
+    Continue
+
+Show
+    Class "Misc Map Items"
+    BaseType "Screaming Invitation" 
+    SetTextColor 70 40 220
+    SetBackgroundColor 20 160 100 235
+    SetBorderColor 80 80 210
+    MinimapIcon 1 Red Moon
+    ModFontSize + 15
+    PlayAlertSound 14 300
+    PlayEffect Orange
+    Continue
+
+Show
+    Class "Misc Map Items"
+    BaseType "Polaric Invitation" 
+    SetTextColor 120 20 60
+    SetBackgroundColor 40 30 20 235
+    SetBorderColor 180 50 90
+    MinimapIcon 1 Red Moon
+    ModFontSize + 15
+    PlayAlertSound 14 300
+    PlayEffect Orange
+    Continue
+
+Show
+    Class "Misc Map Items"
+    BaseType "Incandescent Invitation" 
+    SetTextColor 230 120 160
+    SetBackgroundColor 140 130 120 235
+    SetBorderColor 250 80 120
+    MinimapIcon 1 Red Moon
+    ModFontSize + 15
+    PlayAlertSound 14 300
     PlayEffect Orange
     Continue
 
@@ -2272,74 +2336,32 @@ Show
     PlayAlertSound 6 200
 	ModFontSize + 15
 
- # Watchstones by region   
+ # Voidstones  
     
 Show
-    Class "Atlas" 
-    MinimapIcon 1 Brown Moon
+    Class "Atlas Upgrade Item" 
+    MinimapIcon 0 Green Moon
+    PlayEffect Green
     PlayAlertSound 6 200
     ModFontSize + 10
 Branch
 Continue
-    BaseType "Ivory Watchstone"
-    Continue
-    Branch
-    Continue 
-    BaseType "Haewark Hamlet"
-    SetBackgroundColor 0 60 0 180 # Haewark Hamlet
+    BaseType "Ceremonial Voidstone"
+    SetBackgroundColor 0 60 0 180 # Ceremonial Voidstone
     Branch
     Continue
-    BaseType "Glennach Cairns"
-    SetBackgroundColor 60 0 60 180 # Glennach Cairns
+    BaseType "Decayed Voidstone"
+    SetBackgroundColor 60 0 60 180 # Decayed Voidstone
     Branch
     Continue
-    BaseType "Valdo's Rest"
-    SetBackgroundColor 0 60 60 180 # Valdo's Rest
+    BaseType "Grasping Voidstone"
+    SetBackgroundColor 0 60 60 180 # Grasping Voidstone
     Branch
     Continue
-    BaseType "Lira Arthain"
-    SetBackgroundColor 60 60 60 180 # Lira Arthain
+    BaseType "Omniscient Voidstone"
+    SetBackgroundColor 60 60 60 180 # Omniscient Voidstone
     Continue
-    
-Show 
-    MinimapIcon 1 Green UpsideDownHouse
-    ModFontSize + 10
-    Branch
-    Continue
-    BaseType "Crimson Watchstone"
-    SetBackgroundColor 110 0 0 235
-    Branch
-    Continue
-    BaseType "Viridian Watchstone"
-    SetBackgroundColor 0 110 0 235
-    Branch
-    Continue
-    BaseType "Cobalt Watchstone"
-    SetBackgroundColor 0 0 110 235
-    Branch
-    Continue
-    BaseType "Golden Watchstone"
-    SetBackgroundColor 110 110 0 235
-    Continue
-
-    
-Show
-    Class "Atlas"
-    SetTextColor 145 130 40
-    Branch
-    Continue
-    BaseType "Chromium"
-    SetBorderColor 140 140 180
-    Branch
-    Continue
-    BaseType "Platinum"
-    SetBorderColor 210 180 160
-    Branch
-    Continue
-    BaseType "Titanium"
-    SetBorderColor 210 140 180
-    Continue
- 
+   
 Show
     Class "Maps"
     Branch
@@ -2357,37 +2379,6 @@ Show
     SetTextColor 255 235 150
     ModFontSize + 6
     Continue
-
-# Outdated for 3.16 Atlas   
-# Haewark Hamlet # "Cemetery" "Plaza" "Leyline" "Channel" "Ramparts" "Atoll" "Palace" "Fungal Hollow" "Excavation" "Grave Trough" "Arachnid Nest" "Waterways" "Summit" "Caldera" "Terrace" "Core"
-# Glennach Cairns # "Acid Caverns" "Ancient City" "Arcade" "Basilica" "Cage Map" "Graveyard" "Grotto" "Haunted Mansion" "Iceberg" "Infested Valley" "Lava Chamber" "Malformation" "Museum" "Plateau" "Residence" "Scriptorium" "Spider Lair" "Stagnation" "Sunken City" "Tower" "Tropical Island" "Villa" "Wasteland"
-# Valdo's Rest # "Arena" "Arid Lake" "Ashen Wood" "Bramble Valley" "Canyon" "City Square" "Dark Forest" "Dry Sea" "Gardens" "Ghetto" "Ivory Temple" "Lair" "Maze" "Mineral Pools Map" "Necropolis" "Orchard" "Pen" "Promenade"    
-# Lira Arthain # "Barrows" "Castle Ruins" "Courthouse" "Estuary" "Flooded Mine" "Forbidden Woods" "Lighthouse" "Lookout" "Marshes" "Mausoleum" "Pier" "Precinct" "Primordial Blocks" "Racecourse" "Shipyard" "Toxic Sewer"
-    
-Show
-    Class "Amulets" "Belts" "Rings" "Wands" "Gloves"
-    Branch
-    Continue 
-    BaseType == "Crystal Belt" "Gripped Gloves" "Marble Amulet" "Opal Ring"
-    SetBackgroundColor 0 60 0 180 # Haewark Hamlet
-    SwitchTo $HaewarkHamlet_Region
-    Branch
-    Continue
-    BaseType == "Apothecary's Gloves" "Blue Pearl Amulet" "Cerulean Ring" "Vanguard Belt" "Vermillion Ring"
-    SetBackgroundColor 60 0 60 180 # Glennach Cairns
-    SwitchTo $GlennachCairns_Region
-    Branch
-    Continue
-    BaseType == "Artillery Quiver" "Convoking Wand" "Iolite Ring" "Spiked Gloves"
-    SetBackgroundColor 0 60 60 180 # Valdo's Rest
-    SwitchTo $ValdosRest_Region
-    Branch
-    Continue
-    BaseType == "Bone Helmet" "Fingerless Silk Gloves" "Fugitive Boots" "Seaglass Amulet" "Steel Ring"
-    SetBackgroundColor 60 60 60 255 # Lira Arthain
-    SwitchTo $LiraArthain_Region
-    Continue
-
  
 Show
     Class "Maps"
@@ -2515,7 +2506,7 @@ Show
     Branch
     Continue
     Class "Map Fragments"
-    BaseType "Knowledge" "Shape" "Emptiness" "Terror"
+    BaseType "of Knowledge" "of Shape" "of Emptiness" "of Terror"
     SetBackgroundColor 155 0 0
     SetTextColor 0 0 0
     SetFontSize 40
@@ -2670,7 +2661,7 @@ SetOption $5LinkOverride switch [Show] [Remove] # You can use this toggle if you
 
 $5LinkOverride
     LinkedSockets = 5
-    SetBackgroundColor 120 120 120 235 # 5Link Item
+    SetBackgroundColor 120 80 110 235 # 5Link Item
     ModFontSize + 6
     MinimapIcon 0 Yellow Cross
     PlayAlertSoundPositional 2 200 #  5Link Item
@@ -2859,100 +2850,15 @@ Show
     
 # End Perandus
 
-Show
-    BaseType "Silver Coin"
-    SetBackgroundColor 150 140 190 235
-	SetTextColor 255 230 255
-	MinimapIcon 2 White Diamond
-	PlayEffect Purple
-	Continue
-	
-Show
-    Class "Map Fragments"
-    BaseType "Eber's Key" "Inya's Key" "Volkuur's Key" "Yriel's Key"
-	SetBackgroundColor 155 130 155 235
-	MinimapIcon 2 Blue Moon
-	PlayEffect Purple
-	Continue
-	
+# RIP PROPHECY - KEEPING MY MONKEY THOUGH
+
 Show
     Rarity Unique # Fated Uniques
-    BaseType "Brass Maul" "Clasped Boots" "Cleaver" "Coral Ring" "Crude Bow" "Crusader Plate" "Crystal Wand" "Death Bow" "Fire Arrow Quiver" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Gold Amulet" "Golden Buckler" "Great Crown" "Great Mallet" "Iron Circlet" "Iron Hat" "Iron Mask" "Iron Staff" "Ironscale Boots" "Jade Hatchet" "Jagged Maul" "Latticed Ringmail" "Leather Hood" "Long Bow" "Moonstone Ring" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Rusted Sword" "Scholar Boots" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Skinning Knife" "Sledgehammer" "Spiraled Wand" "Strapped Leather" "Tarnished Spirit Shield" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
+    BaseType "Brass Maul" "Coral Ring" "Crusader Plate" "Death Bow" "Fire Arrow Quiver" "Goathide Gloves" "Golden Buckler" "Great Crown" "Great Mallet" "Iron Circlet" "Iron Mask" "Ironscale Boots" "Leather Hood" "Long Bow" "Moonstone Ring" "Ornate Sword" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Rusted Sword" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Spiraled Wand" "Strapped Leather" "Tarnished Spirit Shield" "Velvet Gloves" "War Buckler" "Woodsplitter"
 	SetTextColor 155 50 115
 	MinimapIcon 2 Purple Star
 	PlayEffect Purple
 	ModFontSize + 2
-	Continue
-	
-Show
-    Class Currency
-    BaseType "Prophecy"
-    SetTextColor 145 120 245
-    SetBorderColor 50 0 200
-    MinimapIcon 2 Purple Diamond
-    PlayEffect Purple
-	PlayAlertSound 7 300
-	ModFontSize + 2
-    Continue
-    
-Show
-    BaseType "Prophecy" # Top tier
-    Prophecy "A Dishonourable Death" "Deadly Rivalry V" "Fated Connections" "Song of the Sekhema" "The Queen's Sacrifice" "Trash to Treasure" "Wind and Thunder"
-	SetBackgroundColor 150 50 100 255
-	SetTextColor 255 225 255
-    MinimapIcon 0 Purple Diamond
-	ModFontSize + 6
-	Continue
-	
-Show
-	BaseType "Prophecy" # High tier	
-	Prophecy "Battle Hardened" "Beyond Sight IV" "Darktongue's Shriek" "Deadly Rivalry III" "Deadly Rivalry IV" "Monstrous Treasure" "Thaumaturgical History III" "Thaumaturgical History IV" "The Ambitious Bandit III" "The Plaguemaw V" "The Servant's Heart" "The Twins" "The Unbreathing Queen V" "Unbearable Whispers V" "Vaal Winds"
-	SetBackgroundColor 60 0 110 255
-    MinimapIcon 0 Purple Diamond
-	ModFontSize + 4
-	Continue
-	
-Show
-    BaseType "Prophecy" # Mid tier	
-	Prophecy "A Prodigious Hand" "A Vision of Ice and Fire" "Ancient Doom" "Cleanser of Sins" "Cold Blooded Fury" "Dance of Steel" "Day of Sacrifice III" "Day of Sacrifice IV" "Deadly Rivalry II" "Echoes of Witchcraft" "Erasmus' Gift" "Fire and Ice" "Fire, Wood and Stone" "Kalandra's Craft" "Last of the Wildmen" "Lost in the Pages" "Nature's Resilience" "Pools of Wealth" "Severed Limbs" "Storm on the Horizon" "Thaumaturgical History II" "The Apex Predator" "The Bishop's Legacy" "The Bowstring's Music" "The Dreaded Rhoa" "The Dream Trial" "The Feral Lord IV" "The Feral Lord V" "The Great Leader of the North" "The Great Mind of the North" "The Jeweller's Touch" "The King and the Brambles" "The King's Path" "The Lost Maps" "The Malevolent Witch" "The Mentor" "The Misunderstood Queen" "The Plaguemaw IV" "The Silverwood" "The Unbreathing Queen III" "The Unbreathing Queen IV" "The Watcher's Watcher" "Twice Enchanted" "Unbearable Whispers IV" "Undead Uprising"
-	SetBackgroundColor 30 0 110 255
-    MinimapIcon 1 Purple Diamond
-	ModFontSize + 2
-	Continue
-
-Show 
-    BaseType "Prophecy" # Mapping prophs	
-	Prophecy "A Master Seeks Help" "Anarchy's End III" "Anarchy's End IV" "Beyond Sight III" "Bountiful Traps" "Crushing Squall" "Deadly Twins" "Fire from the Sky" "Hidden Reinforcements" "Hidden Vaal Pathways" "Ice from Above" "Lightning Falls" "Mysterious Invaders" "Overflowing Riches" "Plague of Frogs" "Plague of Rats" "Possessed Foe" "Reforged Bonds" "The Beautiful Guide" "The Cursed Choir" "The Dreamer's Dream" "The Fortune Teller's Collection" "The Four Feral Exiles" "The Hungering Swarm" "The Trembling Earth" "The Undead Storm" "The Warmongers III" "The Warmongers IV" "Waiting in Ambush"
-    SetBorderColor 150 110 60
-    MinimapIcon 1 Purple Diamond
-	Continue
-
-Show 
-	BaseType "Prophecy" # Upgrade prophs
-	Prophecy "A Forest of False Idols" "A Rift in Time" "Agony at Dusk" "Black Devotion" "Blind Faith" "Blinding Light" "Burning Dread" "Cold Greed" "Crimson Hues" "Dark Instincts" "Dying Cry" "End of the Light" "Faith Exhumed" "Fire and Brimstone" "From The Void" "Greed's Folly" "Mouth of Horrors" "Pleasure and Pain" "Power Magnified" "Sun's Punishment" "The Beginning and the End" "The Bloody Flowers Redux" "The Fall of an Empire" "The Flow of Energy" "The Karui Rebellion" "The Nightmare Awakens" "The Snuffed Flame" "The Storm Spire" "Trapped in the Tower" "Winter's Mournful Melodies"
-	SetTextColor 245 120 155
-    MinimapIcon 1 Purple Diamond
-	Continue
-	
-Show
-	BaseType "Prophecy" # Unique drop prophs
-    Prophecy "The Singular Spirit" "A Call into the Void" "A Firm Foothold" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "Baptism by Death" "Blood in the Eyes" "Blood of the Betrayed" "Custodians of Silence" "Fear's Wide Reach" "Flesh of the Beast" "From Death Springs Life" "Graceful Flames" "Heart of the Fire" "Notched Flesh" "Roth's Legacy" "Storm on the Reef" "Strong as a Bull" "The Brutal Enforcer" "The Eagle's Cry" "The Flayed Man" "The God of Misfortune" "The Lady in Black" "The Last Watch" "The Lost Undying" "The Mysterious Gift" "The Nest" "The Petrified" "The Prison Guard" "The Prison Key" "The Queen's Vaults" "The Sinner's Stone" "The Soulless Beast" "The Sword King's Passion" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "Weeping Death"
-	SetTextColor 180 110 80 
-    MinimapIcon 1 Purple Diamond
-	Continue
-    
-Show
-	BaseType "Prophecy" # Low tier
-    Prophecy "A Regal Death" "A Valuable Combination" "An Unseen Peril" "Anarchy's End I" "Anarchy's End II" "Beyond Sight I" "Beyond Sight II" "Day of Sacrifice I" "Day of Sacrifice II" "Deadly Rivalry I" "Defiled in the Sceptre" "Ending the Torment" "Erased from Memory" "Fallow At Last" "Forceful Exorcism" "Gilded Within" "Golden Touch" "Heavy Blows" "Holding the Bridge" "Hunter's Lesson" "In the Grasp of Corruption" "Lasting Impressions" "Living Fires" "Nemesis of Greed" "Path of Betrayal" "Rebirth" "Resistant to Change" "Risen Blood" "Smothering Tendrils" "Soil, Worms and Blood" "Thaumaturgical History I" "The Alchemist" "The Ambitious Bandit I" "The Ambitious Bandit II" "The Brothers of Necromancy" "The Child of Lunaris" "The Corrupt" "The Feral Lord I" "The Feral Lord II" "The Feral Lord III" "The Forgotten Garrison" "The Forgotten Soldiers" "The Hardened Armour" "The Invader" "The Plaguemaw I" "The Plaguemaw II" "The Plaguemaw III" "The Scout" "The Sharpened Blade" "The Singular Spirit" "The Stockkeeper" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Undead Brutes" "The Warmongers I" "The Warmongers II" "The Wealthy Exile" "Touched by the Wind" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unnatural Energy" "Vaal Invasion" "Visions of the Drowned" "Vital Transformation"
-	SetBackgroundColor 40 40 40 235
-    MinimapIcon 2 Purple Diamond
-	ModFontSize - 2
-	Continue
-	
-Show
-    BaseType "Prophecy"
-    Prophecy "The Unbreathing Queen" "The Plaguemaw" "Unbearable Whispers" "Feral Lord"
-    SetBorderColor 155 225 155
 	Continue
 
 Show 
@@ -2996,7 +2902,7 @@ Show
 		
 Show
 	Class "Divination" # T2
-	BaseType == "A Familiar Call" "A Modest Request" "Arrogance of the Vaal" "Azyran's Reward" "Blessing of God" "Boon of the First Ones" "Bowyer's Dream" "Brotherhood in Exile" "Brush, Paint and Palette" "Burning Blood" "Chasing Risk" "Costly Curio" "Council of Cats" "Dark Dreams" "Desperate Crusade" "Divine Justice" "Draped in Dreams" "Dying Anguish" "Etched in Blood" "Fateful Meeting" "Guardian's Challenge" "Humility" "Hunter's Reward" "Lachrymal Necrosis" "Mawr Blaidd" "Peaceful Moments" "Pride Before the Fall" "Remembrance" "Squandered Prosperity" "Terrible Secret of Space" "The Awakened" "The Bargain" "The Bitter Blossom" "The Bones" "The Celestial Justicar" "The Celestial Stone" "The Chosen" "The Dapper Prodigy" "The Dreamer" "The Eldritch Decay" "The Endless Darkness" "The Enthusiasts" "The Escape" "The Eternal War" "The Ethereal" "The Fishmonger" "The Forgotten Treasure" "The Greatest Intentions" "The Gulf" "The Hive of Knowledge" "The Landing" "The Life Thief" "The Master" "The Mayor" "The Offering" "The Offspring" "The Old Man" "The Polymath" "The Price of Prescience" "The Professor" "The Progeny of Lunaris" "The Rabbit's Foot" "The Sacrifice" "The Sephirot" "The Shortcut" "The Spark and the Flame" "The Sustenance" "The Tinkerer's Table" "The Undaunted" "The Valkyrie" "The Wind" "The Wolven King's Bite" "The World Eater" "The Wretched" "Underground Forest" "Vanity" "Void of the Elements"
+	BaseType == "A Familiar Call" "Treasures of the Vaal" "A Modest Request" "Arrogance of the Vaal" "Azyran's Reward" "Blessing of God" "Boon of the First Ones" "Bowyer's Dream" "Brotherhood in Exile" "Brush, Paint and Palette" "Burning Blood" "Chasing Risk" "Costly Curio" "Council of Cats" "Dark Dreams" "Desperate Crusade" "Divine Justice" "Draped in Dreams" "Dying Anguish" "Etched in Blood" "Fateful Meeting" "Guardian's Challenge" "Humility" "Hunter's Reward" "Lachrymal Necrosis" "Mawr Blaidd" "Peaceful Moments" "Pride Before the Fall" "Remembrance" "Squandered Prosperity" "Terrible Secret of Space" "The Awakened" "The Bargain" "The Bitter Blossom" "The Bones" "The Celestial Justicar" "The Celestial Stone" "The Chosen" "The Dapper Prodigy" "The Dreamer" "The Eldritch Decay" "The Endless Darkness" "The Enthusiasts" "The Escape" "The Eternal War" "The Ethereal" "The Fishmonger" "The Forgotten Treasure" "The Greatest Intentions" "The Gulf" "The Hive of Knowledge" "The Landing" "The Life Thief" "The Master" "The Mayor" "The Offering" "The Offspring" "The Old Man" "The Polymath" "The Price of Prescience" "The Professor" "The Progeny of Lunaris" "The Rabbit's Foot" "The Sacrifice" "The Sephirot" "The Shortcut" "The Spark and the Flame" "The Sustenance" "The Tinkerer's Table" "The Undaunted" "The Valkyrie" "The Wind" "The Wolven King's Bite" "The World Eater" "The Wretched" "Underground Forest" "Vanity" "Void of the Elements"
 	SetFontSize 36
 	SetTextColor 120 80 180
 	SetBorderColor 0 0 255
@@ -3007,7 +2913,7 @@ Show
 
 Show
 	Class "Divination" # NEW UNSORTED CARDS
-	BaseType == "Desperate Crusade" "A Stone Perfected" "Treasures of the Vaal" "The Rabbit's Foot" "Chasing Risk" "The Prince of Darkness" "The Catch" "Eternal Bonds" "Disdain" "The Scout" "Guardian's Challenge" "The Forgotten Treasure" "The Fox in the Brambles" "The Aspirant" 
+	BaseType == "Judging Voices" "Bijoux" "Silence and Frost" "Misery in Darkness" "The Tireless Extractor" "Justified Ambition" "Parasitic Passengers" "Duality" "The One That Got Away" "The Transformation" "Magnum Opus" "Imperfect Memories" "The Magma Crab"
 	SetFontSize 36
 	SetTextColor 120 80 220
 	SetBorderColor 0 0 255
@@ -3029,7 +2935,7 @@ Show
 	
 Show
 	Class "Divination" # T3
-	BaseType == "A Dab of Ink" "A Stone Perfected" "Akil's Prophecy" "Alone in the Darkness" "Assassin's Favour" "Atziri's Arsenal" "Baited Expectations" "Blind Venture" "Cameria's Cut" "Cursed Words" "Deathly Designs" "Dying Light" "Earth Drinker" "Friendship" "Gemcutter's Promise" "Glimmer of Hope" "Haunting Shadows" "Heterochromia" "Hubris" "Hunter's Resolve" "Jack in the Box" "Left to Fate" "Lingering Remnants" "Merciless Armament" "Mitts" "Perfection" "Prejudice" "Prometheus' Armoury" "Rebirth" "Reckless Ambition" "Scholar of the Seas" "The Admirer" "The Aesthete" "The Avenger" "The Battle Born" "The Betrayal" "The Blessing of Moosh" "The Body" "The Breach" "The Brittle Emperor" "The Cache" "The Cataclysm" "The Catch" "The Craving" "The Dark Mage" "The Deep Ones" "The Doppelganger" "The Easy Stroll" "The Emptiness" "The Encroaching Darkness" "The Endurance" "The Eye of the Dragon" "The Fletcher" "The Formless Sea" "The Garish Power" "The Gentleman" "The Gladiator" "The Hale Heart" "The Hook" "The Hunger" "The Jeweller's Boon" "The King's Heart" "The Last One Standing" "The Lion" "The Mercenary" "The Messenger" "The Mind's Eyes" "The One With All" "The Pact" "The Penitent" "The Porcupine" "The Price of Protection" "The Primordial" "The Prince of Darkness" "The Queen" "The Rabid Rhoa" "The Realm" "The Rite of Elements" "The Road to Power" "The Scavenger" "The Soul" "The Stormcaller" "The Thaumaturgist" "The Throne" "The Tower" "The Traitor" "The Tyrant" "The Undisputed" "The Unexpected Prize" "The Valley of Steel Boxes" "The Vast" "The Warlord" "The Whiteout" "The Wilted Rose" "The Wolf" "The Wolf's Legacy" "The Wolverine" "Time-Lost Relic" "Triskaidekaphobia" "Unchained" "Vile Power" "Volatile Power"
+	BaseType == "A Dab of Ink" "Desperate Crusade" "A Stone Perfected" "Akil's Prophecy" "Alone in the Darkness" "Assassin's Favour" "Atziri's Arsenal" "Baited Expectations" "Blind Venture" "Cameria's Cut" "Cursed Words" "Deathly Designs" "Dying Light" "Earth Drinker" "Friendship" "Gemcutter's Promise" "Glimmer of Hope" "Haunting Shadows" "Heterochromia" "Hubris" "Hunter's Resolve" "Jack in the Box" "Left to Fate" "Lingering Remnants" "Merciless Armament" "Mitts" "Perfection" "Prejudice" "Prometheus' Armoury" "Rebirth" "Reckless Ambition" "Scholar of the Seas" "The Admirer" "The Aesthete" "The Avenger" "The Battle Born" "The Betrayal" "The Blessing of Moosh" "The Body" "The Breach" "The Brittle Emperor" "The Cache" "The Cataclysm" "The Catch" "The Craving" "The Dark Mage" "The Deep Ones" "The Doppelganger" "The Easy Stroll" "The Emptiness" "The Encroaching Darkness" "The Endurance" "The Eye of the Dragon" "The Fletcher" "The Formless Sea" "The Garish Power" "The Gentleman" "The Gladiator" "The Hale Heart" "The Hook" "The Hunger" "The Jeweller's Boon" "The King's Heart" "The Last One Standing" "The Lion" "The Mercenary" "The Messenger" "The Mind's Eyes" "The One With All" "The Pact" "The Penitent" "The Porcupine" "The Price of Protection" "The Primordial" "The Prince of Darkness" "The Queen" "The Rabid Rhoa" "The Realm" "The Rite of Elements" "The Road to Power" "The Scavenger" "The Soul" "The Stormcaller" "The Thaumaturgist" "The Throne" "The Tower" "The Traitor" "The Tyrant" "The Undisputed" "The Unexpected Prize" "The Valley of Steel Boxes" "The Vast" "The Warlord" "The Whiteout" "The Wilted Rose" "The Wolf" "The Wolf's Legacy" "The Wolverine" "Time-Lost Relic" "Triskaidekaphobia" "Unchained" "Vile Power" "Volatile Power"
 	SetFontSize 28
 	SetBorderColor 20 0 40	
 	SetTextColor 80 80 150
@@ -3845,9 +3751,17 @@ Show
 
 Show
     SynthesisedItem True
-    SetBackgroundColor 100 180 230 255
+    SetBackgroundColor 90 170 220 235
     MinimapIcon 1 Blue Triangle
     PlayEffect Blue
+
+Show
+    BaseType "Synthesised Map"
+    SetBackgroundColor 100 180 230 255
+    MinimapIcon 1 Blue Square
+    PlayEffect Blue
+    PlayAlertSound 3 250
+ModFontSize + 6
     
 Show
     Rarity Unique
@@ -4041,6 +3955,14 @@ Show
     Continue
 
 Show
+    Class Currency
+    BaseType "Oil Extractor"
+    SetBackgroundColor 140 115 50 255
+    SetTextColor 120 40 40
+	MinimapIcon 2 Blue Diamond
+	PlayAlertSound 3 200
+
+Show
 	BaseType "Tainted Oil"
 	SetBorderColor 170 0 0
 	MinimapIcon 2 Brown Diamond
@@ -4128,6 +4050,7 @@ Show
 	PlayAlertSound 8 300
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
+	ModFontSize + 6
 
 Show
 	BaseType "Delirium Orb" "Simulacrum Splinter"
@@ -4135,6 +4058,7 @@ Show
 	SetBackgroundColor 200 200 200 235
 	PlayEffect Blue
 	MinimapIcon 1 Yellow Diamond
+	ModFontSize + 2
 	Continue
 	
 Show
@@ -4148,7 +4072,7 @@ Show
 	PlayEffect Yellow	
 	
 Show
-	BaseType "Abyssal Delirium Orb" "Amorphous Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Kalguuran Delirium Orb" "Delirium Orb" "Foreboding Delirium Orb" "Fossilised Delirium Orb" "Fragmented Delirium Orb" "Imperial Delirium Orb" "Jeweller's Delirium Orb" "Obscured Delirium Orb" "Portentous Delirium Orb" "Primal Delirium Orb" "Singular Delirium Orb" "Timeless Delirium Orb" "Whispering Delirium Orb"
+	BaseType "Abyssal Delirium Orb" "Amorphous Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Kalguuran Delirium Orb" "Delirium Orb" "Foreboding Delirium Orb" "Fossilised Delirium Orb" "Fragmented Delirium Orb" "Imperial Delirium Orb" "Jeweller's Delirium Orb" "Obscured Delirium Orb" "Primal Delirium Orb" "Singular Delirium Orb" "Timeless Delirium Orb" "Whispering Delirium Orb"
 	SetBackgroundColor 200 200 200 235	
     
 # End Delirium
@@ -4392,7 +4316,7 @@ Show
 
 Show
     BaseType "Enkindling Orb" "Instilling Orb"
-	SetBackgroundColor 70 150 190
+	SetBackgroundColor 70 150 210
 	MinimapIcon 2 Blue Diamond
 	PlayEffect Blue
    Continue
@@ -4442,13 +4366,13 @@ Branch
 	BaseType "Lesser Broken Circle" "Lesser Black Scythe" "Lesser Order Artifact" "Lesser Sun Artifact"
 	SetBackgroundColor 50 50 50
 Branch
-	BaseType "Common Broken Circle" "Common Black Scythe" "Common Order Artifact" "Common Sun Artifact"
+	BaseType "Greater Broken Circle" "Greater Black Scythe" "Greater Order Artifact" "Greater Sun Artifact"
 	SetBackgroundColor 50 50 100
 Branch
-	BaseType "Greater Broken Circle" "Greater Black Scythe" "Greater Order Artifact" "Greater Sun Artifact"
+	BaseType "Grand Broken Circle" "Grand Black Scythe" "Grand Order Artifact" "Grand Sun Artifact"
 	SetBackgroundColor 50 100 100
 Branch
-	BaseType "Grand Broken Circle" "Grand Black Scythe" "Grand Order Artifact" "Grand Sun Artifact"
+	BaseType "Exceptional Broken Circle" "Exceptional Black Scythe" "Exceptional Order Artifact" "Exceptional Sun Artifact"
 	SetBackgroundColor 150 100 50
 Continue
 
@@ -4472,6 +4396,7 @@ Show
 	SetBorderColor 110 110 220
 	PlayEffect Pink Temp
 	MinimapIcon 2 Pink Square
+	ModFontSize + 4
 
 # Scourge #
 
@@ -4560,6 +4485,18 @@ Show
     MinimapIcon 0 Red Diamond
     PlayEffect Brown
     PlayAlertSound 4 250
+
+# End Scourge 
+
+# Archnemesis
+
+Show
+	Class "Archnemesis Mod"
+	SetBackgroundColor 180 180 50 200
+	SetTextColor 180 50 20
+	MinimapIcon 2 Blue Triangle
+ModFontSize + 2
+	Continue
 
 # End Leagues
 
@@ -4671,7 +4608,7 @@ SetOption $T1Uniques switch [Show] [Hide] # Do you want to hide high tier Unique
 	
 $T1Uniques 
     Rarity Unique
-    BaseType == "Arcanist Gloves" "Archon Kite Shield Piece" "Exquisite Leather" "Ivory Watchstone" "Jewelled Foil" "Painted Tower Shield" "Prophecy Wand" "Rawhide Boots" "Ruby Flask" "Siege Axe" "Wyrmscale Doublet" "Zodiac Leather"
+    BaseType == "Arcanist Gloves" "Archon Kite Shield Piece" "Exquisite Leather" "Jewelled Foil" "Painted Tower Shield" "Prophecy Wand" "Rawhide Boots" "Ruby Flask" "Siege Axe" "Wyrmscale Doublet" "Zodiac Leather"
 	SetBackgroundColor 95 45 20 220 # T1 Uniques
 	SetBorderColor 220 60 50
 	PlayEffect Brown 
@@ -4877,32 +4814,32 @@ Show
     
 Show
     HasInfluence "Elder"
-	SetBackgroundColor 70 0 170 235
+	SetBackgroundColor 70 0 200 235
     Continue
     
 Show
     HasInfluence "Shaper"
-	SetBackgroundColor 20 110 105 235
+	SetBackgroundColor 50 140 140 235
     Continue
  
 Show
     HasInfluence "Redeemer"
-	SetBackgroundColor 215 180 220 235
+	SetBackgroundColor 40 40 150 235
     Continue
     
 Show
     HasInfluence "Crusader"
-	SetBackgroundColor 20 60 180 235
+	SetBackgroundColor 185 30 30 235
     Continue
      
 Show
     HasInfluence "Hunter"
-	SetBackgroundColor 125 185 90 235
+	SetBackgroundColor 120 180 40 235
     Continue
  
 Show
     HasInfluence "Warlord"
-	SetBackgroundColor 175 0 0 235
+	SetBackgroundColor 95 80 40 235
     Continue
 
 Show
@@ -4919,6 +4856,40 @@ Show
 	SetBorderColor 100 180 240
 	Continue
 
+
+# Eldritch Horror Implicits
+
+Show
+	HasSearingExarchImplicit >= 1
+	SetBackgroundColor 120 40 10 220
+	Continue
+
+Show
+	HasEaterOfWorldsImplicit >= 1
+	SetBackgroundColor 10 40 120 220
+	Continue
+
+Show
+	HasSearingExarchImplicit = 5
+	SetBackgroundColor 140 40 10 255
+	Continue
+
+Show
+	HasEaterOfWorldsImplicit = 5
+	SetBackgroundColor 10 40 140 255
+	Continue
+
+Show
+	HasSearingExarchImplicit = 6
+	HasEaterOfWorldsImplicit = 4
+	SetBackgroundColor 140 40 140 220
+	Continue
+
+Show
+	HasSearingExarchImplicit = 4
+	HasEaterOfWorldsImplicit = 6
+	SetBackgroundColor 140 40 140 220
+	Continue
 
 #################
 SetTab [Chancing]
@@ -4968,7 +4939,7 @@ SetOption $PerandusChanceBases checkbox ["Rawhide Boots"] ["Chateau Map"] ["Gran
 
 SetOption $EmptyLine
 
-SetOption $ProphecyChanceBases info [Prophecy has only Fated uniques and boss restricted drops]
+SetOption $ProphecyChanceBases info [Prophecy has only Fated uniques and boss drops]
 
 SetOption $EmptyLine
 
@@ -5176,8 +5147,8 @@ Show
     PlayEffect Brown
     Branch
     Continue
-    BaseType "Maven's Orb"
-    SetBackgroundColor 60 80 230 245
+    BaseType "Orb of Dominance"
+    SetBackgroundColor 60 50 230 235
     SetTextColor 0 0 0
     SetBorderColor 50 40 190
     SetFontSize 44
@@ -5203,14 +5174,14 @@ Show
     Branch
     Continue
     BaseType "Hunter's Exalted Orb"
-    SetTextColor 255 150 100
+    SetTextColor 120 180 40
     SetBorderColor 190 120 40
     MinimapIcon 1 Brown Diamond
     SetFontSize 43
     Branch
     Continue
     BaseType "Warlord's Exalted Orb"
-    SetTextColor 55 80 200
+    SetTextColor 95 80 40
     SetBorderColor 190 190 90
     Branch
     Continue
@@ -5236,23 +5207,11 @@ Show
 	PlayAlertSound 8 250
 	Branch
 	Continue
-	BaseType "Awakened Sextant"
+	BaseType "Awakened Sextant" "Elevated Sextant"
     SetBorderColor 150 100 20
     MinimapIcon 1 Orange Diamond
 	PlayEffect Orange
-    Branch
-	Continue
-	BaseType "Prime Sextant"
-    SetBorderColor 120 120 20
-    MinimapIcon 1 Yellow Diamond
-	SetFontSize 36
-    Branch
-    Continue
-    BaseType "Simple Sextant"
-	SetBorderColor 50 80 80
-    MinimapIcon 2 Yellow Diamond
-    SetFontSize 34
-    Branch
+       Branch
     Continue
     BaseType "Ancient Orb" "Harbinger's Orb" "Orb of Annulment"
 	SetFontSize 40
@@ -5507,6 +5466,116 @@ Show
     BaseType "Veiled Chaos Orb"
     SetBackgroundColor 180 145 80 215
     Continue
+
+Show
+	Class "Stackable Currency"
+	BaseType "Surveyor's Compass"
+	SetBackgroundColor 40 110 40 220
+	SetBorderColor 150 40 70
+	MinimapIcon 2 Blue Diamond
+	PlayAlertSound 3 200
+	Continue
+
+Show
+	Class "Stackable Currency"
+	BaseType "Charged Compass"
+	SetBackgroundColor 70 120 40 240
+	SetBorderColor 130 240 70
+	MinimapIcon 2 Blue Diamond
+	PlayAlertSound 3 200
+	Continue
+
+Show
+	BaseType "Lesser Eldritch Ember"
+	SetBackgroundColor 150 70 40 220
+	SetTextColor 110 30 40
+	MinimapIcon 2 White Diamond
+	PlayAlertSound 3 200
+
+Show
+	BaseType "Greater Eldritch Ember"
+	SetBackgroundColor 170 80 50 230
+	SetTextColor 130 30 40
+	MinimapIcon 2 Blue Diamond
+	PlayAlertSound 3 200
+ModFontSize + 2
+
+Show
+	BaseType "Grand Eldritch Ember"
+	SetBackgroundColor 190 90 60 240
+	SetTextColor 150 30 40
+	MinimapIcon 1 Yellow Diamond
+	PlayAlertSound 3 200
+ModFontSize + 4
+
+Show
+	BaseType "Exceptional Eldritch Ember"
+	SetBackgroundColor 210 110 80 255
+	SetTextColor 170 30 40
+	MinimapIcon 0 Orange Diamond
+	PlayAlertSound 4 200
+ModFontSize + 6
+
+Show
+	BaseType "Lesser Eldritch Ichor"
+	SetBackgroundColor 40 80 150 220
+	SetTextColor 40 30 110
+	MinimapIcon 2 White Diamond
+	PlayAlertSound 3 200
+
+Show
+	BaseType "Greater Eldritch Ichor"
+	SetBackgroundColor 50 90 170 230
+	SetTextColor 40 30 130
+	MinimapIcon 2 Blue Diamond
+	PlayAlertSound 3 200
+ModFontSize + 2
+
+Show
+	BaseType "Grand Eldritch Ichor"
+	SetBackgroundColor 60 100 190 240
+	SetTextColor 40 30 150
+	MinimapIcon 1 Yellow Diamond
+	PlayAlertSound 3 200
+ModFontSize + 4
+
+Show
+	BaseType "Exceptional Eldritch Ichor"
+	SetBackgroundColor 80 120 210 255
+	SetTextColor 40 30 170
+	MinimapIcon 0 Orange Diamond
+	PlayAlertSound 4 200
+ModFontSize + 6
+
+Show
+	BaseType "Orb of Conflict"
+	SetTextColor 200 50 200
+	SetBackgroundColor 130 50 130 220
+	SetBorderColor 220 90 220
+	MinimapIcon 0 Brown Diamond
+	PlayAlertSound 4 255
+ModFontSize + 8
+
+Show
+	BaseType "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment"
+	SetTextColor 200 50 200
+	SetBorderColor 200 50 200
+	MinimapIcon 0 Purple Diamond
+
+# Kirac Reports
+
+Show
+	BaseType "Scouting Report"
+	SetBackgroundColor 0 50 30 200
+	PlayAlertSound 3 200
+	MinimapIcon 2 Green Square
+	Continue
+
+Show
+	BaseType "Singular Scouting Report" "Otherworldly Scouting Report" "Delirious Scouting Report"
+	SetTextColor 220 80 50
+ModFontSize + 3
+	Continue
 
 ###########
 SetTab [Gems]
