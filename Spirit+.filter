@@ -687,13 +687,6 @@ $Belt_Upgrades
 PlayAlertSound 5 300 # Drop - Build
     Continue
 
-SetTab [Oddities]
-
-# Displaced Obsolete Settings
-
-SetOption $ObsoleteEquipment info [] # Obsolete items are those with improved values on another higher DropLevel base which is currently able to drop.
-SetOption $ObsoleteEquipmentSizeMod input [- 6] #  Adjust the base FontSize of outdated equipment. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size min/max (18/45) with large values.
-
 Show
 	Rarity < Unique
 	AnyEnchantment True
@@ -707,6 +700,13 @@ Rarity Rare
 ItemLevel >= 82
 SetBorderColor 220 100 240
 Continue
+
+SetTab [Oddities]
+
+# Displaced Obsolete Settings
+
+SetOption $ObsoleteEquipment info [] # Obsolete items are those with improved values on another higher DropLevel base which is currently able to drop.
+SetOption $ObsoleteEquipmentSizeMod input [- 6] #  Adjust the base FontSize of outdated equipment. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size min/max (18/45) with large values.
 
 SetOption $BaseDefences info [Base Defence is rated as Low, Mid, High, Near Perfect, or Perfect. Items that are set to hide here can still show if they have a property sought further down in the filter.] # This section determines the strictness of filtering by potential base defence value ranges for Up-To-Date items. Outdated items will receive these highlights and be hidden regardless of the following visibility settings. The Base Defence highlight is the brightness of text for normal, magic, and rare armours.
 
@@ -928,6 +928,7 @@ Rarity < Unique
 SetBackgroundColor 40 0 0 150
 SetBorderColor 0 0 0
 MinimapIcon -1 
+PlayAlertSound None
 ModFontSize $ObsoleteEquipmentSizeMod
 Branch
 AreaLevel > 6
@@ -996,6 +997,7 @@ ItemLevel < 100
 Rarity < Unique
 SetBorderColor 0 0 0
 MinimapIcon -1 
+PlayAlertSound None
 ModFontSize $ObsoleteEquipmentSizeMod
 Continue
 Branch
@@ -1043,6 +1045,7 @@ Rarity < Unique
 SetBorderColor 0 0 40
 SetBackgroundColor 40 0 0 150
 MinimapIcon -1 
+PlayAlertSound None
 ModFontSize $ObsoleteEquipmentSizeMod
 Continue
 Branch
@@ -1092,6 +1095,7 @@ Rarity < Unique
 SetBorderColor 0 0 40
 SetBackgroundColor 40 0 0 150
 MinimapIcon -1 
+PlayAlertSound None
 ModFontSize $ObsoleteEquipmentSizeMod
 Continue
 Branch
@@ -1137,6 +1141,7 @@ Rarity < Unique
 SetBorderColor 0 0 40
 SetBackgroundColor 40 0 0 150
 MinimapIcon -1 
+PlayAlertSound None
 ModFontSize $ObsoleteEquipmentSizeMod
 Continue
 Branch
@@ -1176,6 +1181,7 @@ $HideFlasks
 	Class $BannedFlasks
 	Rarity < Unique
 	MinimapIcon -1
+	PlayAlertSound None
 	Continue
 
 $UtilityFlasks
@@ -1317,6 +1323,7 @@ AreaLevel > 69
 SwitchTo Hide
 PlayEffect None
 MinimapIcon -1
+PlayAlertSound None
 Continue
 
 SetOption $AtlasBaseChoices checkbox ["Fugitive Boots"] ["Two-Toned Boots"] ["Apothecary's Gloves"] ["Fingerless Silk Gloves"] ["Gripped Gloves"] ["Spiked Gloves"] ["Bone Helmet"] ["Marble Amulet"] ["Seaglass Amulet"] ["Blue Pearl Amulet"] ["Vanguard Belt"] ["Crystal Belt"] ["Cerulean Ring"] ["Iolite Ring"] ["Opal Ring"] ["Steel Ring"] ["Vermillion Ring"] ["Bone Ring"] ["Calling Wand"] ["Convening Wand"] ["Convoking Wand"] ["Artillery Quiver"] # Which Atlas bases are valuable to you?
@@ -1362,12 +1369,14 @@ AreaLevel >= 45
 DropLevel <= 15
 SwitchTo Hide
 MinimapIcon -1
+PlayAlertSound None
 Continue
 Branch
 AreaLevel >= 75
 DropLevel <= 45
 SwitchTo Hide
 MinimapIcon -1
+PlayAlertSound None
 Continue
 
 Show
@@ -1378,12 +1387,14 @@ AreaLevel >= 40
 DropLevel <= 10
 SwitchTo Hide
 MinimapIcon -1
+PlayAlertSound None
 Continue
 Branch
 AreaLevel >= 70
 DropLevel <= 40
 SwitchTo Hide
 MinimapIcon -1
+PlayAlertSound None
 Continue
 
 Show
@@ -1394,12 +1405,14 @@ AreaLevel >= 50
 DropLevel <= 20
 SwitchTo Hide
 MinimapIcon -1
+PlayAlertSound None
 Continue
 Branch
 AreaLevel >= 80
 DropLevel <= 50
 SwitchTo Hide
 MinimapIcon -1
+PlayAlertSound None
 Continue
 
 Show
@@ -1421,6 +1434,7 @@ Rarity < Unique
 DropLevel <= 30
 AreaLevel >= 50
 MinimapIcon -1
+PlayAlertSound None
 Continue
 
 Hide
@@ -1429,6 +1443,7 @@ Rarity < Unique
 DropLevel <= 50
 AreaLevel >= 70
 MinimapIcon -1
+PlayAlertSound None
 Continue
 
 
@@ -1506,6 +1521,7 @@ Class "Active Skill Gems" "Support Skill Gems"
 AreaLevel >= $GemsDropOff
 SwitchTo Hide
 MinimapIcon -1
+PlayAlertSound None
 Continue
 Branch
 Class "Gems"
