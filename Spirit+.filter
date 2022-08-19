@@ -3164,7 +3164,7 @@ BaseType "Fusing" "Jeweller's" "Binding" "Chromatic Orb"
 SetBorderColor 155 0 50
 MinimapIcon 0 Yellow Diamond
 PlayEffect Yellow Temp
-PlayAlertSound 1 300 # Drop - Uncommon
+PlayAlertSound 3 300 # Drop - Uncommon
 SetFontSize $SocketOrbSize
 Continue
 
