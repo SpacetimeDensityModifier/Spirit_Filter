@@ -306,7 +306,7 @@ SetOption $Intro3 info [Stuff - Maps, Chancing, most League Items, Quest Items, 
 
 SetOption $EmptyLine
 
-SetOption $Methodology info [This applies most strongly to Beams and Minimap Icons, then to Backgrounds, and lastly to border/text color (text brightness on Armours relates to Base Defences, border on equipment relates to item level and recipe validity.] # Equipment - Circle, Currency - Diamond, Moon - Fragments, Map - Square, Triangle - Heist, UpsideDownHouse - Anomalies, Common - Grey, Uncommon - White, Rare - Blue, Very Rare - Yellow, Special - Orange, Priority - Brown, Red - Bad (small) or Dangerous (larger), Racing - Cyan, Build - Pink, Weird - Purple, Green - Quest/Progression
+SetOption $Methodology info [This applies most strongly to Beams and Minimap Icons, then to Backgrounds, and lastly to border/text color (text brightness on Armours relates to Base Defences, border on equipment relates to item level and recipe validity.] # Equipment - Circle, Currency - Diamond, Teardrop - Flasks, Cross - Linked, Hexagon - Modifier (Affixes, Enchantments, Corruptions), Moon - Fragments, Map - Square, Triangle - League, UpsideDownHouse - Anomalies, Common - Grey, Uncommon - White, Rare - Blue, Very Rare - Yellow, Special - Orange, Priority - Brown, Red - Bad (small) or Dangerous (larger), Racing - Cyan, Build - Pink, Weird - Purple, Green - Quest/Progression
 
 SetOption $FilterWorkflow info [] # Basic Gear > Your Build > Base Defences > Obsolete Gear > Recipes and Special Bases > Currency > Fragments and Maps > Leagues and Misc Additions > Uniques > Legacy Section
 
@@ -473,9 +473,11 @@ Continue
 
 SetTab [Stuff: Racing]
 
-SetOption $Leveling3L slider [12] [1] [100] # Until what level should three links be highlighted? This includes a cyan beam.
+SetOption $Links info [] # 3L and 4L items that meet the build, base defence, and obsolete thresholds can be shown here. 
 
-SetOption $Leveling4L slider [30] [1] [100] # Until what level should four links be highlighted? This includes a cyan beam.
+SetOption $Leveling3L slider [25] [1] [100] # Until what level should three links be highlighted? This includes a cyan beam.
+
+SetOption $Leveling4L slider [75] [1] [100] # Until what level should four links be highlighted? This includes a cyan beam.
 
 Show
 Class $Weapons $Armours $Accessories
@@ -1338,7 +1340,7 @@ Continue
 Show
 BaseType "Bone Ring" "Calling Wand"
 Rarity < Rare
-AreaLevel > 30
+AreaLevel >= 30
 SwitchTo Hide
 Continue
 
