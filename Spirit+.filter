@@ -483,7 +483,7 @@ LinkedSockets = 3
 AreaLevel <= $Leveling3L
 SetBackgroundColor 70 20 50
 PlayEffect Cyan
-PlayAlertSound 16 300 # Racing
+PlayAlertSoundPositional 16 300 # Racing
 ModFontSize + 2
 Continue
 
@@ -493,7 +493,7 @@ LinkedSockets = 4
 AreaLevel <= $Leveling4L
 SetBackgroundColor 110 50 80
 PlayEffect Cyan
-PlayAlertSound 16 300 # Racing
+PlayAlertSoundPositional 16 300 # Racing
 ModFontSize + 2
 Continue
 
@@ -502,7 +502,7 @@ Class $Accessories
 AreaLevel < $Leveling3L
 SetBorderColor 200 180 120
 PlayEffect Cyan
-PlayAlertSound 16 300 # Racing
+PlayAlertSoundPositional 16 300 # Racing
 Continue
 
 SetTab [Equipment: Weapons]
@@ -581,7 +581,7 @@ $Weapon_Upgrades
     MinimapIcon 1 Pink Circle
     PlayEffect Pink 
     SetBorderColor 255 180 220
-PlayAlertSound 5 300 # Drop - Build
+PlayAlertSoundPositional 5 300 # Drop - Build
     Continue
 
 $QuiverUse
@@ -591,7 +591,7 @@ $QuiverUse
     MinimapIcon 2 Pink Circle
     PlayEffect Pink 
     SetBorderColor 255 180 220
-PlayAlertSound 5 300 # Drop - Build
+PlayAlertSoundPositional 5 300 # Drop - Build
     Continue
     
 $AR_Upgrades
@@ -602,7 +602,7 @@ $AR_Upgrades
     MinimapIcon 2 Pink Circle
     PlayEffect Pink 
     SetBorderColor 255 180 220
-PlayAlertSound 5 300 # Drop - Build
+PlayAlertSoundPositional 5 300 # Drop - Build
     Continue
     
 $EV_Upgrades
@@ -613,7 +613,7 @@ $EV_Upgrades
     MinimapIcon 2 Pink Circle
     PlayEffect Pink 
     SetBorderColor 255 180 220
-PlayAlertSound 5 300 # Drop - Build
+PlayAlertSoundPositional 5 300 # Drop - Build
     Continue    
     
 $ES_Upgrades
@@ -624,7 +624,7 @@ $ES_Upgrades
     MinimapIcon 2 Pink Circle
     PlayEffect Pink 
     SetBorderColor 255 180 220
-PlayAlertSound 5 300 # Drop - Build
+PlayAlertSoundPositional 5 300 # Drop - Build
     Continue    
     
 $AREV_Upgrades
@@ -635,7 +635,7 @@ $AREV_Upgrades
     MinimapIcon 2 Pink Circle
     PlayEffect Pink 
     SetBorderColor 255 180 220
-PlayAlertSound 5 300 # Drop - Build
+PlayAlertSoundPositional 5 300 # Drop - Build
     Continue    
     
 $ARES_Upgrades
@@ -646,7 +646,7 @@ $ARES_Upgrades
     MinimapIcon 2 Pink Circle
     PlayEffect Pink 
     SetBorderColor 255 180 220
-PlayAlertSound 5 300 # Drop - Build
+PlayAlertSoundPositional 5 300 # Drop - Build
     Continue
          
 $EVES_Upgrades
@@ -657,7 +657,7 @@ $EVES_Upgrades
     MinimapIcon 2 Pink Circle
     PlayEffect Pink 
     SetBorderColor 255 180 220
-PlayAlertSound 5 300 # Drop - Build
+PlayAlertSoundPositional 5 300 # Drop - Build
     Continue
 
 $Ring_Upgrades
@@ -666,7 +666,7 @@ $Ring_Upgrades
     Rarity < Unique
     MinimapIcon 0 Pink Circle
     PlayEffect Pink 
-PlayAlertSound 5 300 # Drop - Build
+PlayAlertSoundPositional 5 300 # Drop - Build
     Continue
  
 $Amulet_Upgrades
@@ -675,7 +675,7 @@ $Amulet_Upgrades
     Rarity < Unique
     MinimapIcon 0 Pink Circle
     PlayEffect Pink 
-PlayAlertSound 5 300 # Drop - Build
+PlayAlertSoundPositional 5 300 # Drop - Build
     Continue
     
 $Belt_Upgrades
@@ -684,7 +684,7 @@ $Belt_Upgrades
     Rarity < Unique
     MinimapIcon 0 Pink Circle
     PlayEffect Pink 
-PlayAlertSound 5 300 # Drop - Build
+PlayAlertSoundPositional 5 300 # Drop - Build
     Continue
 
 Show
@@ -928,7 +928,7 @@ Rarity < Unique
 SetBackgroundColor 40 0 0 150
 SetBorderColor 0 0 0
 MinimapIcon -1 
-PlayAlertSound None
+PlayAlertSoundPositional None
 ModFontSize $ObsoleteEquipmentSizeMod
 Branch
 AreaLevel > 6
@@ -997,7 +997,7 @@ ItemLevel < 100
 Rarity < Unique
 SetBorderColor 0 0 0
 MinimapIcon -1 
-PlayAlertSound None
+PlayAlertSoundPositional None
 ModFontSize $ObsoleteEquipmentSizeMod
 Continue
 Branch
@@ -1045,7 +1045,7 @@ Rarity < Unique
 SetBorderColor 0 0 40
 SetBackgroundColor 40 0 0 150
 MinimapIcon -1 
-PlayAlertSound None
+PlayAlertSoundPositional None
 ModFontSize $ObsoleteEquipmentSizeMod
 Continue
 Branch
@@ -1095,7 +1095,7 @@ Rarity < Unique
 SetBorderColor 0 0 40
 SetBackgroundColor 40 0 0 150
 MinimapIcon -1 
-PlayAlertSound None
+PlayAlertSoundPositional None
 ModFontSize $ObsoleteEquipmentSizeMod
 Continue
 Branch
@@ -1141,7 +1141,7 @@ Rarity < Unique
 SetBorderColor 0 0 40
 SetBackgroundColor 40 0 0 150
 MinimapIcon -1 
-PlayAlertSound None
+PlayAlertSoundPositional None
 ModFontSize $ObsoleteEquipmentSizeMod
 Continue
 Branch
@@ -1181,7 +1181,7 @@ $HideFlasks
 	Class $BannedFlasks
 	Rarity < Unique
 	MinimapIcon -1
-	PlayAlertSound None
+	PlayAlertSoundPositional None
 	Continue
 
 $UtilityFlasks
@@ -1191,7 +1191,7 @@ $UtilityFlasks
     PlayEffect Pink Temp
     SetBackgroundColor 0 50 70 200
     SetBorderColor 50 150 190
-    PlayAlertSound 5 300 # Drop - Build
+    PlayAlertSoundPositional 5 300 # Drop - Build
     Continue
 
 Show
@@ -1200,7 +1200,7 @@ Show
     PlayEffect Cyan
     SetBorderColor 0 50 70 200
     AreaLevel < $RareSafetyNet
-PlayAlertSound 16 300 # Racing
+PlayAlertSoundPositional 16 300 # Racing
     Continue
 
 SetTab [Treasure: Recipes]
@@ -1304,7 +1304,7 @@ Rarity < Unique
 SocketGroup RGB
 SetBackgroundColor 40 70 40 220
 MinimapIcon 2 Green Cross
-PlayAlertSound 9 300 # Drop - Common
+PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 SetTab [Equipment: Special Bases]
@@ -1323,17 +1323,47 @@ AreaLevel > 69
 SwitchTo Hide
 PlayEffect None
 MinimapIcon -1
+PlayAlertSoundPositional None
+Continue
+
+SetOption $AtlasBaseChoices checkbox ["Fugitive Boots"] ["Two-Toned Boots"] ["Apothecary's Gloves"] ["Fingerless Silk Gloves"] ["Gripped Gloves"] ["Spiked Gloves"] ["Bone Helmet"] ["Marble Amulet"] ["Seaglass Amulet"] ["Blue Pearl Amulet"] ["Vanguard Belt"] ["Crystal Belt"] ["Cerulean Ring"] ["Iolite Ring"] ["Opal Ring"] ["Steel Ring"] ["Vermillion Ring"] ["Convoking Wand"] ["Artillery Quiver"] # Which Atlas bases are valuable to you?
+
+Show
+BaseType "Bone Ring" "Calling Wand" "Convening Wand"
+SetBorderColor 190 130 50
+MinimapIcon 2 Yellow Circle
+PlayEffect Yellow Temp
+Continue
+
+Show
+BaseType "Bone Ring" "Calling Wand"
+Rarity < Rare
+AreaLevel > 30
+SwitchTo Hide
+Continue
+
+Hide
+BaseType "Calling Wand"
+AreaLevel >= 50
+MinimapIcon -1
+PlayEffect None
 PlayAlertSound None
 Continue
 
-SetOption $AtlasBaseChoices checkbox ["Fugitive Boots"] ["Two-Toned Boots"] ["Apothecary's Gloves"] ["Fingerless Silk Gloves"] ["Gripped Gloves"] ["Spiked Gloves"] ["Bone Helmet"] ["Marble Amulet"] ["Seaglass Amulet"] ["Blue Pearl Amulet"] ["Vanguard Belt"] ["Crystal Belt"] ["Cerulean Ring"] ["Iolite Ring"] ["Opal Ring"] ["Steel Ring"] ["Vermillion Ring"] ["Bone Ring"] ["Calling Wand"] ["Convening Wand"] ["Convoking Wand"] ["Artillery Quiver"] # Which Atlas bases are valuable to you?
+Hide
+BaseType "Convening Wand"
+AreaLevel >= 72
+MinimapIcon -1
+PlayEffect None
+PlayAlertSound None
+Continue
 
 Show
 BaseType $AtlasBaseChoices
 SetBorderColor 190 130 50
 MinimapIcon 2 Orange Circle
 PlayEffect Orange Temp
-PlayAlertSound 5 300 # Drop - Build
+PlayAlertSoundPositional 5 300 # Drop - Build
 Continue
 
 Show
@@ -1341,7 +1371,7 @@ BaseType $KalandraRings "Mirrored Tablet"
 SetBorderColor 65 130 190
 MinimapIcon 2 Orange Circle
 PlayEffect Orange Temp
-PlayAlertSound 14 300 # Special Base
+PlayAlertSoundPositional 14 300 # Special Base
 ModFontSize + 5
 Continue
 
@@ -1350,7 +1380,7 @@ BaseType "Memory"
 SetBorderColor 255 150 240
 MinimapIcon 0 Green Square
 PlayEffect Green
-PlayAlertSound 7 300 # Quest
+PlayAlertSoundPositional 7 300 # Quest
 ModFontSize + 5
 Continue
 
@@ -1358,7 +1388,7 @@ Show
 BaseType $RitualGloves $RitualHelms $RitualBoots
 SetBorderColor 180 100 50
 MinimapIcon 2 Purple Circle
-PlayAlertSound 14 300 # Special Base
+PlayAlertSoundPositional 14 300 # Special Base
 Continue
 
 Show
@@ -1369,14 +1399,14 @@ AreaLevel >= 45
 DropLevel <= 15
 SwitchTo Hide
 MinimapIcon -1
-PlayAlertSound None
+PlayAlertSoundPositional None
 Continue
 Branch
 AreaLevel >= 75
 DropLevel <= 45
 SwitchTo Hide
 MinimapIcon -1
-PlayAlertSound None
+PlayAlertSoundPositional None
 Continue
 
 Show
@@ -1387,14 +1417,14 @@ AreaLevel >= 40
 DropLevel <= 10
 SwitchTo Hide
 MinimapIcon -1
-PlayAlertSound None
+PlayAlertSoundPositional None
 Continue
 Branch
 AreaLevel >= 70
 DropLevel <= 40
 SwitchTo Hide
 MinimapIcon -1
-PlayAlertSound None
+PlayAlertSoundPositional None
 Continue
 
 Show
@@ -1405,14 +1435,14 @@ AreaLevel >= 50
 DropLevel <= 20
 SwitchTo Hide
 MinimapIcon -1
-PlayAlertSound None
+PlayAlertSoundPositional None
 Continue
 Branch
 AreaLevel >= 80
 DropLevel <= 50
 SwitchTo Hide
 MinimapIcon -1
-PlayAlertSound None
+PlayAlertSoundPositional None
 Continue
 
 Show
@@ -1434,7 +1464,7 @@ Rarity < Unique
 DropLevel <= 30
 AreaLevel >= 50
 MinimapIcon -1
-PlayAlertSound None
+PlayAlertSoundPositional None
 Continue
 
 Hide
@@ -1443,7 +1473,7 @@ Rarity < Unique
 DropLevel <= 50
 AreaLevel >= 70
 MinimapIcon -1
-PlayAlertSound None
+PlayAlertSoundPositional None
 Continue
 
 
@@ -1453,7 +1483,7 @@ $FiveLinks
 LinkedSockets = 5
 SetBackgroundColor 70 45 30 220
 MinimapIcon 0 Blue Cross
-PlayAlertSound 3 300 # Drop - Uncommon
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
 Continue
 
 $FiveLinks
@@ -1466,14 +1496,14 @@ $SixSockets
 Sockets = 6
 SetBackgroundColor 147 157 137 235
 MinimapIcon 2 Yellow Cross
-PlayAlertSound 3 300 # Drop - Uncommon
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
 Continue
 
 $SixLinks
 LinkedSockets = 6
 SetBackgroundColor 120 60 0 200
 MinimapIcon 0 Red Cross
-PlayAlertSound 1 300 # Drop - Rare
+PlayAlertSoundPositional 1 300 # Drop - Rare
 Continue
 
 SetTab [Stuff: Hunts]
@@ -1487,7 +1517,7 @@ Rarity Unique
 SetBorderColor 180 120 50
 MinimapIcon 2 White Star
 SetFontSize $UniquesSize
-PlayAlertSound 8 300 # Drop - Unvalued Unique
+PlayAlertSoundPositional 8 300 # Drop - Unvalued Unique
 Continue
 
 # Gems
@@ -1505,7 +1535,7 @@ Branch
 Class "Gems"
 AreaLevel <= $SafetyNet
 PlayEffect Cyan
-PlayAlertSound 16 300 # Racing
+PlayAlertSoundPositional 16 300 # Racing
 MinimapIcon 2 Cyan Kite
 Continue
 Branch
@@ -1521,7 +1551,7 @@ Class "Active Skill Gems" "Support Skill Gems"
 AreaLevel >= $GemsDropOff
 SwitchTo Hide
 MinimapIcon -1
-PlayAlertSound None
+PlayAlertSoundPositional None
 Continue
 Branch
 Class "Gems"
@@ -1534,7 +1564,7 @@ Class "Gems"
 BaseType "Portal" "Empower" "Enhance" "Enlighten"
 SetBorderColor 185 185 185
 SetBackgroundColor 220 220 220
-PlayAlertSound 9 300 # Drop - Common
+PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 Show
@@ -1551,7 +1581,7 @@ Quality > 11
 Quality < 20
 SetTextColor 180 225 235
 MinimapIcon 1 White Kite
-PlayAlertSound 9 300 # Drop - Common
+PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 Show
@@ -1560,7 +1590,7 @@ Quality >= 20
 SetTextColor 200 235 245
 MinimapIcon 1 Blue Kite
 ModFontSize + 3
-PlayAlertSound 3 300 # Drop - Uncommon
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
 Continue
 
 Show
@@ -1577,7 +1607,7 @@ GemLevel = 20
 SetBackgroundColor 70 70 55
 MinimapIcon 0 Yellow Kite
 ModFontSize + 3
-PlayAlertSound 3 300 # Drop - Uncommon
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
 Continue
 
 Show
@@ -1586,7 +1616,7 @@ GemLevel > 20
 SetBackgroundColor 110 70 85
 MinimapIcon 0 Yellow Kite
 ModFontSize + 3
-PlayAlertSound 1 300 # Drop - Rare
+PlayAlertSoundPositional 1 300 # Drop - Rare
 Continue
 
 Show
@@ -1595,7 +1625,7 @@ BaseType "Enhance" "Empower" "Enlighten"
 GemLevel = 3
 SetBackgroundColor 10 70 115
 MinimapIcon 0 Orange Kite
-PlayAlertSound 1 300 # Drop - Rare
+PlayAlertSoundPositional 1 300 # Drop - Rare
 ModFontSize + 6
 Continue
 
@@ -1614,7 +1644,7 @@ Class "Gems"
 AlternateQuality True
 SetBorderColor 225 185 150
 MinimapIcon 0 Orange Kite
-PlayAlertSound 1 300 # Drop - Rare
+PlayAlertSoundPositional 1 300 # Drop - Rare
 Continue
 
 Show
@@ -1623,7 +1653,7 @@ BaseType "Awakened"
 SetTextColor 200 50 150
 MinimapIcon 0 Red Kite
 ModFontSize + 6
-PlayAlertSound 1 300 # Drop - Rare
+PlayAlertSoundPositional 1 300 # Drop - Rare
 Continue
 
 Show
@@ -1649,7 +1679,7 @@ Quality >= $MyGemsQuality
 SetBorderColor 250 0 250
 ModFontSize $MyGemsSizeMod
 MinimapIcon 0 Pink Kite
-PlayAlertSound 5 300 # Drop - Build
+PlayAlertSoundPositional 5 300 # Drop - Build
 Continue
 
 # Ward
@@ -1658,14 +1688,14 @@ Show
 BaseType $WardBoots $WardGloves $WardHelms
 SetBackgroundColor 235 235 235
 MinimapIcon 2 Purple Circle
-PlayAlertSound 9 300 # Drop - Common
+PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 Show
 BaseType "Iron Flask"
 SetBackgroundColor 80 80 80
 MinimapIcon 2 Purple Circle
-PlayAlertSound 9 300 # Drop - Common
+PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 Show
@@ -1679,7 +1709,7 @@ SetTextColor 125 55 225
 SetFontSize 32
 PlayEffect Purple Temp
 MinimapIcon 2 Purple Hexagon
-PlayAlertSound 9 300 # Drop - Common
+PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 Show
@@ -1689,7 +1719,7 @@ SetTextColor 255 115 215
 SetFontSize 32
 PlayEffect Purple Temp
 MinimapIcon 2 Purple Hexagon
-PlayAlertSound 9 300 # Drop - Common
+PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 Show
@@ -1699,7 +1729,7 @@ SetTextColor 235 155 85
 SetFontSize 32
 PlayEffect Purple Temp
 MinimapIcon 1 Purple Hexagon
-PlayAlertSound 9 300 # Drop - Common
+PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 Show
@@ -1709,7 +1739,7 @@ SetTextColor 255 35 35
 SetFontSize 32
 PlayEffect Purple Temp
 MinimapIcon 2 Purple Hexagon
-PlayAlertSound 9 300 # Drop - Common
+PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 Show
@@ -1719,7 +1749,7 @@ SetTextColor 245 115 115
 SetFontSize 32
 PlayEffect Purple Temp
 MinimapIcon 2 Purple Hexagon
-PlayAlertSound 9 300 # Drop - Common
+PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 SetOption $CorruptedItems switch [Remove] [Show] # Do you want corruption to add a highlight even if there is no corrupted mod or white socket?
@@ -1740,13 +1770,13 @@ Continue
 Show
 CorruptedMods = 1
 SetBackgroundColor 100 30 0
-PlayAlertSound 9 300 # Drop - Common
+PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 Show
 CorruptedMods > 1
 SetBackgroundColor 170 50 30
-PlayAlertSound 3 300 # Drop - Uncommon
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
 Continue
 
 SetTab [Oddities]
@@ -1766,14 +1796,14 @@ Class "Boots"
 HasExplicitMod >=1 "Runner's" "Sprinter's" "Stallion's" "Gazelle's" "Cheetah's" "Hellion's"
 SetBackgroundColor 20 90 70 200
 PlayEffect Cyan
-PlayAlertSound 16 300 # Racing
+PlayAlertSoundPositional 16 300 # Racing
 Continue
 
 SetTab [Treasure: General Currency]
 
 Show
 Class "Currency"
-PlayAlertSound 9 300 # Drop - Common
+PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 SetOption $ScrollSize slider [28] [18] [45] # What do you want the base size of Scrolls to be? This is adjusted by stack size.
@@ -1801,7 +1831,7 @@ Class Currency
 MinimapIcon 2 Grey Diamond
 PlayEffect Grey Temp
 SetBorderColor 10 10 10
-PlayAlertSound 9 300 # Drop - Common
+PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 $WisdomScrolls
@@ -1812,7 +1842,7 @@ Continue
 Branch
 StackSize = 1
 SetTextColor 137 137 137
-PlayAlertSound None
+PlayAlertSoundPositional None
 Continue
 Branch
 StackSize >= $ScrollSmallStack
@@ -2036,7 +2066,7 @@ SetBorderColor 140 110 50
 MinimapIcon 2 White Diamond
 PlayEffect White Temp
 SetFontSize $UncommonOrbSize
-PlayAlertSound 3 300 # Drop - Uncommon
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
 Continue
 
 SetOption $Chance dropdown [Show] [Hide] [Remove] # What visibility do you want Orbs of Chance to have? This affects solitary orbs.
@@ -2178,7 +2208,7 @@ BaseType "Vaal Orb" "Chaos" "Regal"
 SetBorderColor 180 180 90
 MinimapIcon 2 Yellow Diamond
 PlayEffect Blue Temp
-PlayAlertSound 3 300 # Drop - Uncommon
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
 SetFontSize $RareOrbSize
 Continue
 
@@ -2256,7 +2286,7 @@ SetTextColor 255 225 115
 PlayEffect Yellow
 ModFontSize $ChaosLargeStackSizeMod
 SwitchTo $ChaosLargeStack
-PlayAlertSound 2 300 # Drop - Rare
+PlayAlertSoundPositional 2 300 # Drop - Rare
 Continue
 
 Hide
@@ -2323,7 +2353,7 @@ BaseType "Annulment" "Exalted" "Divine Orb" "Ancient" "Sacred Orb"
 SetBorderColor 220 150 110
 MinimapIcon 0 Yellow Diamond
 PlayEffect Yellow Temp
-PlayAlertSound 1 300 # Drop - Rare
+PlayAlertSoundPositional 1 300 # Drop - Rare
 SetFontSize $VeryRareOrbSize
 Continue
 
@@ -2413,7 +2443,7 @@ Continue
 
 Show
 Class "Currency"
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
     Continue
     Branch
     BaseType "Crusader's Exalted Orb"
@@ -2441,7 +2471,7 @@ Show
 	SetTextColor 200 50 200
 	SetBorderColor 200 50 200
 	MinimapIcon 0 Purple Diamond
-    PlayAlertSound 3 300 # Drop - Uncommon
+    PlayAlertSoundPositional 3 300 # Drop - Uncommon
 	ModFontSize + 4
 
 Show
@@ -2595,7 +2625,7 @@ BaseType "Orb of Dominance" "Orb of Conflict" "Awakener's Orb"
 SetBorderColor 110 180 180
 MinimapIcon 0 Brown Diamond
 PlayEffect Brown
-PlayAlertSound ShGeneral 300 # PANIC
+PlayAlertSoundPositional ShGeneral 300 # PANIC
 SetFontSize $PinnacleOrbSize
 Continue
 
@@ -2738,7 +2768,7 @@ BaseType "Mirror of Kalandra" "Mirror Shard" "Eternal Orb" "Imprint"
 SetBorderColor 255 0 0
 MinimapIcon 0 Red Diamond
 PlayEffect Red
-    PlayAlertSound ShGeneral 300 # PANIC
+    PlayAlertSoundPositional ShGeneral 300 # PANIC
 SetFontSize $ApexOrbSize
 Continue
 
@@ -2759,7 +2789,7 @@ Class Currency
 BaseType "Mirror of Kalandra" "Mirror Shard" "Eternal Orb" "Imprint"
 SetBackgroundColor 255 255 255
 PlayEffect Red
-PlayAlertSound ShGeneral 300 # PANIC
+PlayAlertSoundPositional ShGeneral 300 # PANIC
 Continue
 Branch
 StackSize = 1
@@ -2805,7 +2835,7 @@ BaseType "Orb of Scouring" "Orb of Regret" "Orb of Unmaking"
 SetBorderColor 110 180 180
 MinimapIcon 0 White Diamond
 PlayEffect Blue Temp
-PlayAlertSound 3 300 # Drop - Uncommon
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
 SetFontSize $CleansingOrbSize
 Continue
 
@@ -3091,7 +3121,7 @@ $Prism
 Class Currency
 BaseType "Gemcutter's Prism"
 SetBackgroundColor 10 30 20
-PlayAlertSound 3 300 # Drop - Uncommon
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
 ModFontSize + 2
 Continue
 Branch
@@ -3180,7 +3210,7 @@ BaseType "Fusing" "Jeweller's" "Binding" "Chromatic Orb"
 SetBorderColor 155 0 50
 MinimapIcon 0 Yellow Diamond
 PlayEffect Yellow Temp
-PlayAlertSound 3 300 # Drop - Uncommon
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
 SetFontSize $SocketOrbSize
 Continue
 
@@ -3257,7 +3287,7 @@ Branch
 StackSize >= $SocketOrbLargeStack
 SetTextColor 145 225 135
 PlayEffect Yellow
-PlayAlertSound 1 300 # Drop - Rare
+PlayAlertSoundPositional 1 300 # Drop - Rare
 ModFontSize $FusingLargeStackSizeMod
 SwitchTo $FusingLargeStack
 Continue
@@ -3299,7 +3329,7 @@ Branch
 StackSize >= $SocketOrbLargeStack
 SetTextColor 215 60 40
 PlayEffect Yellow
-PlayAlertSound 1 300 # Drop - Rare
+PlayAlertSoundPositional 1 300 # Drop - Rare
 ModFontSize $JewellerLargeStackSizeMod
 SwitchTo $JewellerLargeStack
 Continue
@@ -3371,7 +3401,7 @@ BaseType "Instilling Orb" "Enkindling Orb"
 SetBorderColor 20 160 160
 MinimapIcon 2 Blue Diamond
 PlayEffect Blue Temp
-PlayAlertSound 3 300 # Drop - Uncommon
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
 SetFontSize $FlaskOrbSize
 Continue
 
@@ -3473,7 +3503,7 @@ SetBorderColor 220 160 240
 MinimapIcon 2 Purple Diamond
 PlayEffect Purple Temp
 SetFontSize $StackedDeckSize
-PlayAlertSound 3 300 # Drop - Uncommon
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
 Continue
 
 SetOption $StackedDeck dropdown [Show] [Hide] [Remove] # What visibility do you want Stacked Decks to have? This affects solitary orbs.
@@ -3535,7 +3565,7 @@ SetBorderColor 55 150 55
 MinimapIcon 0 Yellow Diamond
 PlayEffect Orange Temp
 SetFontSize $MapOrbSize
-PlayAlertSound 3 300 # Drop - Uncommon
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
 Continue
 
 SetOption $Chisel dropdown [Show] [Hide] [Remove] # What visibility do you want Chisels to have? This affects solitary orbs.
@@ -3724,7 +3754,7 @@ Show
     SetBorderColor 255 50 20
     SetFontSize 32
     MinimapIcon 2 Red Diamond
-PlayAlertSound 3 300 # Drop - Uncommon
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
 Continue
 
 Show
@@ -3743,7 +3773,7 @@ Show
     BaseType "Tainted Exalted Orb"
     ModFontSize + 4
     MinimapIcon 0 Red Diamond
-PlayAlertSound 1 300 # Drop - Rare
+PlayAlertSoundPositional 1 300 # Drop - Rare
 Continue
 
     
@@ -3753,7 +3783,7 @@ Show
     ModFontSize + 6
     PlayEffect Orange
     MinimapIcon 0 Red Diamond
-PlayAlertSound 1 300 # Drop - Rare
+PlayAlertSoundPositional 1 300 # Drop - Rare
 Continue
 
     
@@ -3779,7 +3809,7 @@ Show
     ModFontSize + 10
     PlayEffect Red
     MinimapIcon 0 Red Diamond
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 Continue
 
 SetTab [Stuff: Leagues]
@@ -3789,7 +3819,7 @@ Show
     BaseType "Essence" "Remnant"
     SetBackgroundColor 50 110 190 235
     MinimapIcon 2 White Diamond
-    PlayAlertSound 12 300 # League Currency
+    PlayAlertSoundPositional 12 300 # League Currency
     Continue
     
 Show
@@ -3854,7 +3884,7 @@ Show
     SetFontSize 45
     MinimapIcon 1 Orange Diamond
     PlayEffect Brown 
-    PlayAlertSound 3 300 # Drop - Uncommon
+    PlayAlertSoundPositional 3 300 # Drop - Uncommon
     Continue
     
 # Text color represents which archetypes a given essence supports
@@ -4012,7 +4042,7 @@ BaseType $MeleeRogueGear $RangedRogueGear $CasterRogueGear $HeistLockpicking $He
 SetBorderColor 180 150 100
 MinimapIcon 2 Blue Triangle
 PlayEffect Green Temp
-PlayAlertSound 14 300 # Special Base
+PlayAlertSoundPositional 14 300 # Special Base
 Continue
 
 Hide 
@@ -4047,7 +4077,7 @@ SetBorderColor 40 150 40
 SetBackgroundColor 50 110 40
 MinimapIcon 2 Green Triangle
 PlayEffect Green Temp
-PlayAlertSound 14 300 # Special Base
+PlayAlertSoundPositional 14 300 # Special Base
 Continue
 
 SetOption $HeistBlueprints switch [Show] [Hide] # Do you want to see Blueprints?
@@ -4058,7 +4088,7 @@ SetBorderColor 80 250 80
 SetBackgroundColor 50 60 100
 MinimapIcon 0 Green Triangle
 PlayEffect Green
-PlayAlertSound 14 300 # Special Base
+PlayAlertSoundPositional 14 300 # Special Base
 Continue
 
 SetOption $HeistTrinkets switch [Show] [Hide] # Do you want to see Trinkets?
@@ -4068,7 +4098,7 @@ Class "Trinket"
 SetBorderColor 80 250 80
 MinimapIcon 1 Yellow Triangle
 PlayEffect Green
-PlayAlertSound 14 300 # Special Base
+PlayAlertSoundPositional 14 300 # Special Base
 Continue
 
 SetOption $EmptyLine
@@ -4200,7 +4230,7 @@ SetBackgroundColor 125 105 2
 SetBackgroundColor 85 95 185 220
 MinimapIcon 2 Green Square
 PlayEffect Green
-PlayAlertSound 7 300 # Quest Item
+PlayAlertSoundPositional 7 300 # Quest Item
 Continue
 
 SetOption $EmptyLine
@@ -4249,7 +4279,7 @@ SetBorderColor 215 70 55
 SetTextColor 200 35 25
 MinimapIcon 2 Green Moon
 PlayEffect Green
-PlayAlertSound 10 300 # Map Fragments - Rare
+PlayAlertSoundPositional 10 300 # Map Fragments - Rare
 Continue
 
 SetOption $RitualSplinter dropdown [Show] [Hide] [Remove] # What visibility do you want RitualSplinters to have? This affects solitary orbs.
@@ -4551,7 +4581,7 @@ Show
 	SetBorderColor 255 210 255 120
 	MinimapIcon 1 Blue Diamond
 	PlayEffect Blue
-    PlayAlertSound 3 300 # Drop - Uncommon
+    PlayAlertSoundPositional 3 300 # Drop - Uncommon
     Continue 
     
 Show
@@ -4561,13 +4591,13 @@ Show
 	SetBorderColor 255 210 255 120
 	MinimapIcon 1 Orange Diamond
 	PlayEffect Orange
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 
 Show
     BaseType "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll"
     MinimapIcon 0 Yellow Diamond
     SetBorderColor 20 160 220
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
     Continue
     
 Show
@@ -4575,7 +4605,7 @@ Show
     MinimapIcon 0 Blue Diamond
     SetTextColor 20 160 220
     SetBorderColor 20 160 220
-    PlayAlertSound 3 300 # Drop - Uncommon
+    PlayAlertSoundPositional 3 300 # Drop - Uncommon
     Continue
 
 Show
@@ -4584,7 +4614,7 @@ Show
 	SetBackgroundColor 40 10 90 220
 	SetBorderColor 255 210 255 120
 	MinimapIcon 1 Yellow Diamond
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	PlayEffect Yellow
 
 Show
@@ -4593,7 +4623,7 @@ Show
 	SetBackgroundColor 40 10 90 220
 	SetBorderColor 255 210 255 120
 	MinimapIcon 1 White Diamond
-	PlayAlertSound 9 300 # Drop - Common
+	PlayAlertSoundPositional 9 300 # Drop - Common
 	PlayEffect White
 
 Show
@@ -4605,7 +4635,7 @@ Show
 
 Show
 Class "Map Fragments"
-PlayAlertSound 11 300 # Map Fragments
+PlayAlertSoundPositional 11 300 # Map Fragments
 Continue
 
 Show
@@ -4630,7 +4660,7 @@ Show
     SetBorderColor 120 30 30
     MinimapIcon 0 Grey Moon
     PlayEffect Grey
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Continue
     Branch
     BaseType "Mortal "
@@ -4673,7 +4703,7 @@ Show
     MinimapIcon 1 Blue Moon
     SetFontSize 34
     PlayEffect Blue
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Continue
     Branch
     Class "Map Fragments"
@@ -4682,7 +4712,7 @@ Show
     SetFontSize 36
     PlayEffect Yellow
     MinimapIcon 0 Yellow Moon
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Continue
     Branch
     Class "Map Fragments"
@@ -4692,7 +4722,7 @@ Show
     SetFontSize 40
     PlayEffect Orange
     MinimapIcon 0 Orange Moon
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
 	Continue
 
 Show
@@ -4700,7 +4730,7 @@ Show
     SetTextColor 255 255 255
     MinimapIcon 1 Blue Moon
     PlayEffect Orange
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Branch
     Continue
     BaseType "Al-Hezmin's Crest"
@@ -4731,7 +4761,7 @@ Show
     MinimapIcon 1 Red Moon
     ModFontSize + 15
     PlayEffect Orange
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Continue
 
 Show
@@ -4741,7 +4771,7 @@ Show
     SetFontSize 42
     MinimapIcon 2 Red Diamond
     PlayEffect Orange
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
     Continue
 
 Show
@@ -4750,7 +4780,7 @@ Show
     MinimapIcon 0 Red Moon
     SetBackgroundColor 20 20 90 240
     PlayEffect Orange
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Continue
 
 Show
@@ -4762,7 +4792,7 @@ Show
     MinimapIcon 1 Red Moon
     ModFontSize + 15
     PlayEffect Orange
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Continue
 
 Show
@@ -4774,7 +4804,7 @@ Show
     MinimapIcon 1 Red Moon
     ModFontSize + 15
     PlayEffect Orange
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Continue
 
 Show
@@ -4786,7 +4816,7 @@ Show
     MinimapIcon 1 Red Moon
     ModFontSize + 15
     PlayEffect Orange
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Continue
 
 Show
@@ -4798,7 +4828,7 @@ Show
     MinimapIcon 1 Red Moon
     ModFontSize + 15
     PlayEffect Orange
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Continue
 
 Show
@@ -4808,7 +4838,7 @@ Show
 	SetTextColor 180 120 40
 	SetBackgroundColor 0 80 0 240
 	PlayEffect Green
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
 	ModFontSize + 6
 
 Show
@@ -4817,7 +4847,7 @@ Show
 	SetTextColor 180 100 210
 	SetBackgroundColor 0 140 110 200
 	PlayEffect Green
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
 	ModFontSize + 6
 
 Show
@@ -4827,7 +4857,7 @@ Show
 	SetTextColor 85 0 0
 	SetBackgroundColor 180 160 140 255
 	PlayEffect Orange
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
 	ModFontSize + 6
 
  Show
@@ -4837,7 +4867,7 @@ Show
 	SetTextColor 85 0 0
 	SetBackgroundColor 180 160 140 255
 	PlayEffect Red
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
 	ModFontSize + 10
  
 # Scarabs 
@@ -4848,7 +4878,7 @@ Continue
     Class "Map Fragments"
     BaseType "Scarab"    
     SetBackgroundColor 50 80 30
-    PlayAlertSound 11 300 # Map Fragments
+    PlayAlertSoundPositional 11 300 # Map Fragments
     Branch
     Continue
     BaseType "Rusted"
@@ -4860,7 +4890,7 @@ Continue
     BaseType "Polished"
     Class "Map Fragments"
     MinimapIcon 1 Blue Moon
-    PlayAlertSound 3 300 # Drop - Uncommon
+    PlayAlertSoundPositional 3 300 # Drop - Uncommon
     PlayEffect Blue
     Branch
     Continue
@@ -4868,14 +4898,14 @@ Continue
     Class "Map Fragments"
     MinimapIcon 0 Yellow Moon
     PlayEffect Yellow
-    PlayAlertSound 11 300 # Map Fragments
+    PlayAlertSoundPositional 11 300 # Map Fragments
     Branch
     Continue
     BaseType "Winged"
     Class "Map Fragments"
     MinimapIcon 0 Orange Moon
     PlayEffect Yellow
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     
 Show
     Class "Map Fragments" 
@@ -4887,7 +4917,7 @@ Show
     Class "Map Fragments" 
     BaseType "Reliquary Scarab"
     SetBorderColor 90 20 0
-    PlayAlertSound 13 300 # Map Fragments - Pinnacle
+    PlayAlertSoundPositional 13 300 # Map Fragments - Pinnacle
     Continue
     
 Show
@@ -4915,7 +4945,7 @@ Show
     MinimapIcon 1 Blue Diamond
     SetBackgroundColor 70 50 80 245
     PlayEffect Blue
-    PlayAlertSound 3 300 # Drop - Uncommon
+    PlayAlertSoundPositional 3 300 # Drop - Uncommon
     Continue   
     
 Show
@@ -5004,7 +5034,7 @@ Show
     BaseType "Blessing of Chayula"
     MinimapIcon 0 Brown Diamond
     PlayEffect Brown
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
     Continue
     
 Show
@@ -5017,7 +5047,7 @@ Show
     SetBorderColor 60 60 255
     MinimapIcon 1 Yellow Moon
     PlayEffect Yellow
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Continue
     
 Show
@@ -5025,7 +5055,7 @@ Show
     SetBorderColor 255 220 110
     MinimapIcon 1 Orange Moon
     PlayEffect Orange
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     ModFontSize + 2
     Continue
     
@@ -5034,7 +5064,7 @@ Show
     SetBorderColor 255 0 80
     MinimapIcon 1 Brown Moon
     PlayEffect Brown
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     ModFontSize + 4
     Continue
 
@@ -5043,7 +5073,7 @@ Show
     SetBorderColor 55 220 80
     MinimapIcon 0 Brown Moon
     PlayEffect Brown
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     ModFontSize + 8
   
 Show
@@ -5053,7 +5083,7 @@ Show
 	SetBorderColor 175 96 37
 	MinimapIcon 0 Brown Triangle
 	PlayEffect Brown
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
 	ModFontSize + 10
     
 Show
@@ -5135,21 +5165,21 @@ Show
 Show
 	BaseType "Polished Ambush Scarab" "Polished Elder Scarab" "Polished Harbinger Scarab" "Polished Reliquary Scarab" "Polished Shaper Scarab" "Polished Torment Scarab" "Rusted Ambush Scarab" "Rusted Breach Scarab" "Rusted Cartography Scarab" "Rusted Harbinger Scarab" "Rusted Metamorph Scarab" "Rusted Reliquary Scarab" "Rusted Shaper Scarab" "Rusted Torment Scarab" 
 	SetTextColor 235 185 113
-    PlayAlertSound 10 300 # Map Fragments - Rare
+    PlayAlertSoundPositional 10 300 # Map Fragments - Rare
 	Continue
 
 Show
 	Class "Fragment"
 	BaseType "Winged" "Gilded Divination Scarab"
 	SetTextColor 255 215 185
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	Continue
 
 Show
     Class "Atlas Upgrade Item" 
     MinimapIcon 0 Green Moon
     PlayEffect Green
-    PlayAlertSound 7 300 # Quest Item
+    PlayAlertSoundPositional 7 300 # Quest Item
     ModFontSize + 10
 Branch
 Continue
@@ -5173,7 +5203,7 @@ SetOption $OutdatedMaps switch [Show] [Remove] # Do you want to see outdated map
 
 Show
     Class "Maps"
-    PlayAlertSound 2 300 # Maps
+    PlayAlertSoundPositional 2 300 # Maps
       Continue
 	Branch
     MapTier < 6
@@ -5191,12 +5221,12 @@ Show
     MapTier >= 11
     SetBorderColor 255 255 0
     MinimapIcon 1 Red Square
-    PlayAlertSound 4 300 # Maps - High End
+    PlayAlertSoundPositional 4 300 # Maps - High End
       Continue
 	Branch
     MapTier >= 16
     SetBorderColor 255 0 0
-    PlayAlertSound 13 300 # Map Fragments - Pinnacle
+    PlayAlertSoundPositional 13 300 # Map Fragments - Pinnacle
     MinimapIcon 0 Orange Square
 	Continue
 
@@ -5236,7 +5266,7 @@ Show
 	SetTextColor 210 150 70
 	MinimapIcon 0 Pink Square
 	PlayEffect Pink
-	PlayAlertSound 5 300 # Drop - Quest
+	PlayAlertSoundPositional 5 300 # Drop - Quest
 	ModFontSize + 6
 	Continue
 
@@ -5245,7 +5275,7 @@ Show
 	Rarity Unique
 	SetBackgroundColor 50 80 20
 	MinimapIcon 0 Brown Square
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	Continue
 
 Show
@@ -5253,14 +5283,14 @@ Show
 	BaseType "Phoenix" "Minotaur" "Hydra" "Chimera"
 	SetBackgroundColor 60 40 20
 	MinimapIcon 1 Brown Square
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	Continue
 
 Show
 	BlightedMap True
 	SetBackgroundColor 100 40 30
 	MinimapIcon 1 Purple Square
-    PlayAlertSound 4 300 # Maps - High End
+    PlayAlertSoundPositional 4 300 # Maps - High End
 	Continue
 
 Show
@@ -5275,7 +5305,7 @@ Show
 	BaseType "Scouting Report"
 	SetBackgroundColor 0 50 30 200
 	MinimapIcon 2 Green Square
-    PlayAlertSound 7 300 # Quest Item
+    PlayAlertSoundPositional 7 300 # Quest Item
 	Continue
 
 Show
@@ -5305,7 +5335,7 @@ Show
 	MinimapIcon 2 Brown Diamond
 	PlayEffect Brown
 	SetTextColor 145 50 50
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 
 Show
 	BaseType "Reflective Oil"
@@ -5313,7 +5343,7 @@ Show
 	MinimapIcon 2 Brown Diamond
 	PlayEffect Brown
 	SetTextColor 155 185 255
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 
 Show
     Class Currency
@@ -5329,14 +5359,14 @@ Show
     	SetTextColor 230 230 160
 	MinimapIcon 2 Orange Diamond
 	PlayEffect Orange
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 
 Show
 	BaseType "Black Oil" "Crimson Oil" "Teal Oil" "Violet Oil"
 	MinimapIcon 2 Blue Diamond
 	SetTextColor 30 30 160
 	PlayEffect Blue
-    PlayAlertSound 3 300 # Drop - Uncommon
+    PlayAlertSoundPositional 3 300 # Drop - Uncommon
 
 Show
 	BaseType "Amber Oil" "Azure Oil" "Clear Oil" "Indigo Oil" "Sepia Oil" "Verdant Oil"
@@ -5349,7 +5379,7 @@ Show
     SetBackgroundColor 10 70 10 235
     SetBorderColor 0 0 0
     MinimapIcon 1 Orange Diamond
-    PlayAlertSound 3 300 # Drop - Uncommon
+    PlayAlertSoundPositional 3 300 # Drop - Uncommon
 
 Show
     Class Currency
@@ -5357,7 +5387,7 @@ Show
     SetBackgroundColor 10 70 10 235
     SetBorderColor 0 0 0
     MinimapIcon 2 White Diamond
-    PlayAlertSound 3 300 # Drop - Uncommon
+    PlayAlertSoundPositional 3 300 # Drop - Uncommon
     Continue
  
 Show
@@ -5366,7 +5396,7 @@ Show
     SetTextColor 255 0 0
     MinimapIcon 2 Yellow Diamond
     PlayEffect Yellow
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 
 Show
     Class Currency
@@ -5380,7 +5410,7 @@ Show
     PlayEffect Purple
     MinimapIcon 2 Purple Hexagon
     SetFontSize 34
-    PlayAlertSound 14 300 # Special Base
+    PlayAlertSoundPositional 14 300 # Special Base
     Continue
 
 Show
@@ -5468,7 +5498,7 @@ Show
 	SetBorderColor 175 96 37
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
-    PlayAlertSound 13 300 # Map Fragments - Pinnacle
+    PlayAlertSoundPositional 13 300 # Map Fragments - Pinnacle
 	ModFontSize + 5
 
 Show
@@ -5477,20 +5507,20 @@ Show
 	SetBackgroundColor 200 200 200 235
 	PlayEffect Blue
 	MinimapIcon 1 Yellow Diamond
-    PlayAlertSound 3 300 # Drop - Uncommon
+    PlayAlertSoundPositional 3 300 # Drop - Uncommon
 	Continue
 	
 Show
     Class "Stackable Currency"
     BaseType "Simulacrum Splinter"
-    PlayAlertSound 11 300 # Map Fragments
+    PlayAlertSoundPositional 11 300 # Map Fragments
     Continue
 	
 Show
 	BaseType "Blighted Delirium Orb" "Cartographer's Delirium Orb" "Diviner's Delirium Orb" "Fine Delirium Orb" "Skittering Delirium Orb" "Thaumaturge's Delirium Orb"
 	SetBackgroundColor 230 230 230 255
 	PlayEffect Yellow	
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	
 Show
 	BaseType "Abyssal Delirium Orb" "Amorphous Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Kalguuran Delirium Orb" "Delirium Orb" "Foreboding Delirium Orb" "Fossilised Delirium Orb" "Fragmented Delirium Orb" "Imperial Delirium Orb" "Jeweller's Delirium Orb" "Obscured Delirium Orb" "Primal Delirium Orb" "Singular Delirium Orb" "Timeless Delirium Orb" "Whispering Delirium Orb"
@@ -5532,13 +5562,13 @@ Show
 Show
 	HasSearingExarchImplicit >= 1
 	SetBackgroundColor 120 40 10 220
-    PlayAlertSound 14 300 # Special Base
+    PlayAlertSoundPositional 14 300 # Special Base
 	Continue
 
 Show
 	HasEaterOfWorldsImplicit >= 1
 	SetBackgroundColor 10 40 120 220
-    PlayAlertSound 14 300 # Special Base
+    PlayAlertSoundPositional 14 300 # Special Base
 	Continue
 
 Show
@@ -5578,7 +5608,7 @@ Show
 	SetBackgroundColor 230 230 200 235
 	PlayEffect Brown
 	MinimapIcon 1 Brown Diamond
-    PlayAlertSound 3 300 # Drop - Uncommon
+    PlayAlertSoundPositional 3 300 # Drop - Uncommon
     
 # T2 Vials
 Show
@@ -5586,7 +5616,7 @@ Show
 	SetBackgroundColor 95 45 20 235
 	PlayEffect Orange
 	MinimapIcon 1 Orange Diamond
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 
 Show
     BaseType "Vial of Dominance" "Vial of Fate" "Vial of the Ritual"
@@ -5598,7 +5628,7 @@ Show
     SetTextColor 90 80 255
     MinimapIcon 2 Blue Diamond
     PlayEffect Blue
-    PlayAlertSound 14 300 # Special Base
+    PlayAlertSoundPositional 14 300 # Special Base
     Continue 
     
 Show
@@ -5647,7 +5677,7 @@ Show
 	SetTextColor 80 110 230
     	MinimapIcon 1 Purple Diamond
 	SetFontSize 32
-    PlayAlertSound 12 300 # League Currency
+    PlayAlertSoundPositional 12 300 # League Currency
 	Continue
 	
 Show 
@@ -5657,7 +5687,7 @@ Show
 	SetTextColor 255 70 125
 	SetBorderColor 120 60 255
     	MinimapIcon 0 Purple Diamond
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	ModFontSize + 10
 	SwitchTo $T0Cards
 		
@@ -5668,7 +5698,7 @@ Show
 	SetTextColor 150 150 255
 	SetBorderColor 110 110 255
     	MinimapIcon 1 Purple Diamond
-    PlayAlertSound 3 300 # Drop - Uncommon
+    PlayAlertSoundPositional 3 300 # Drop - Uncommon
 	ModFontSize + 6
 	SwitchTo $T1Cards
 		
@@ -5735,21 +5765,21 @@ Class "Fishing Rods"
 SetFontSize 45
 PlayEffect Purple
 MinimapIcon 0 Purple UpsideDownHouse
-    PlayAlertSound 14 300 # Special Base
+    PlayAlertSoundPositional 14 300 # Special Base
 Continue
 
 Show
 Class "Quest Item" "Labyrinth Trinket" "Labyrinth Item" "Heist Target"
 SetBorderColor 40 180 40
 MinimapIcon 1 Green UpsideDownHouse
-    PlayAlertSound 7 300 # Quest Item
+    PlayAlertSoundPositional 7 300 # Quest Item
 Continue
 
 Show
 BaseType "to the Goddess" "Stone of Passage" "Flashpowder Keg"
 SetBorderColor 40 180 40
 MinimapIcon 1 Green UpsideDownHouse
-    PlayAlertSound 7 300 # Quest Item
+    PlayAlertSoundPositional 7 300 # Quest Item
 Continue
 
 Show
@@ -5775,7 +5805,7 @@ BaseType "Divine Vessel"
 MinimapIcon 2 Green UpsideDownHouse
 SetTextColor 50 140 50
 SetBorderColor 130 80 50
-    PlayAlertSound 7 300 # Quest Item
+    PlayAlertSoundPositional 7 300 # Quest Item
 Continue
 
 Show
@@ -5783,7 +5813,7 @@ Class "Pantheon Soul"
 MinimapIcon 0 Green UpsideDownHouse
 SetTextColor 100 240 100
 SetBorderColor 130 80 50
-    PlayAlertSound 7 300 # Quest Item
+    PlayAlertSoundPositional 7 300 # Quest Item
 Continue
 
 
@@ -5824,14 +5854,14 @@ Show
 BaseType "Cluster Jewel"
 SetBackgroundColor 90 90 90
 MinimapIcon 2 White Pentagon
-PlayAlertSound 9 300 # Drop - Common
+PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 Show
 BaseType "Stygian Vise"
 SetBorderColor 30 110 30
 MinimapIcon 2 Purple Circle
-PlayAlertSound 9 300 # Drop - Common
+PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 Show
@@ -5863,7 +5893,7 @@ $Jewels
 	Rarity < Unique
 	SetFontSize $JewelTextSize 
 	PlayEffect Cyan Temp
-    	PlayAlertSound 9 100 # Drop - Common
+    	PlayAlertSoundPositional 9 100 # Drop - Common
 Continue
 Branch
 	BaseType $ChromaticJewelSelection 
@@ -5898,7 +5928,7 @@ AreaLevel <= 13
 BaseType "Sapphire Ring"
 SetBackgroundColor 80 60 30
 PlayEffect Cyan Temp
-PlayAlertSound 16 300 # Racing
+PlayAlertSoundPositional 16 300 # Racing
 MinimapIcon 2 Cyan Circle
 Continue
 
@@ -5910,7 +5940,7 @@ AreaLevel <= 23
 BaseType "Topaz Ring"
 SetBackgroundColor 80 60 30
 PlayEffect Cyan Temp
-PlayAlertSound 16 300 # Racing
+PlayAlertSoundPositional 16 300 # Racing
 MinimapIcon 2 Cyan Circle
 Continue
 
@@ -5922,7 +5952,7 @@ AreaLevel <= 40
 BaseType "Ruby Ring"
 SetBackgroundColor 80 60 30
 PlayEffect Cyan Temp
-PlayAlertSound 16 300 # Racing
+PlayAlertSoundPositional 16 300 # Racing
 MinimapIcon 2 Cyan Circle
 Continue
 
@@ -5938,7 +5968,7 @@ Show
     SetBackgroundColor 255 0 255 255
     PlayEffect Pink
     MinimapIcon 1 Pink UpsideDownHouse
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 
 Show
     Rarity Unique
@@ -5958,7 +5988,7 @@ Show
     SetBorderColor 255 255 255
     MinimapIcon 1 Blue Star
     SetBackgroundColor 80 80 80 255
-    PlayAlertSound 3 300 # Drop - Uncommon
+    PlayAlertSoundPositional 3 300 # Drop - Uncommon
     Continue
 
 Show
@@ -5969,7 +5999,7 @@ Show
 	SetBackgroundColor 230 230 200 255 # T0 Uniques
 	PlayEffect Brown
 	MinimapIcon 0 Red Star
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	ModFontSize + 25
 
 SetOption $T0Uniques switch [Show] [Remove] # Do you want to remove the special highlight from most top tier Uniques - does not hide them?
@@ -5981,7 +6011,7 @@ $T0Uniques
 	SetBorderColor 200 100 50
 	PlayEffect Brown
 	MinimapIcon 0 Red Star
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	ModFontSize + 25
 	Continue
 
@@ -5993,7 +6023,7 @@ $T1Uniques
 	SetBackgroundColor 95 45 20 220 # T1 Uniques
 	SetBorderColor 220 60 50
 	PlayEffect Brown 
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	MinimapIcon 1 Brown Star
 	ModFontSize + 8
 	Continue	    
@@ -6006,7 +6036,7 @@ $T2Uniques
 	SetBackgroundColor 50 30 20 220 # T2 Uniques
 	MinimapIcon 1 Yellow Star
 	PlayEffect Yellow 
-    PlayAlertSound 3 300 # Drop - Uncommon
+    PlayAlertSoundPositional 3 300 # Drop - Uncommon
 	ModFontSize + 2
 	Continue
 
@@ -6050,7 +6080,7 @@ Show
 	MinimapIcon 1 Purple Star # Boss Drop
 	PlayEffect Purple
 	ModFontSize + 4
-	PlayAlertSound 13 200
+	PlayAlertSoundPositional 13 200
 	Continue
 
 Show
@@ -6059,7 +6089,7 @@ Show
     BaseType "Cluster Jewel"
     MinimapIcon 0 Purple Pentagon
 	PlayEffect Purple
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	ModFontSize + 8
     Continue
 
@@ -6069,7 +6099,7 @@ Show
     BaseType "Eye Jewel"
     MinimapIcon 1 Purple Pentagon
 	PlayEffect Purple
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	ModFontSize + 6
     Continue
 	
@@ -6081,7 +6111,7 @@ Show
     MinimapIcon 1 Red Star
 	SetBackgroundColor 80 0 20 255
 	ModFontSize + 12
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	Continue
 
 Show
@@ -6091,7 +6121,7 @@ Show
     PlayEffect Brown
 	SetBackgroundColor 80 110 200 255
 	ModFontSize + 8
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	Continue
 
 Show
@@ -6099,14 +6129,14 @@ Show
 	SetBackgroundColor 100 60 40 250
 	MinimapIcon 1 Purple Star
 	PlayEffect Orange
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	Continue
 
 Show
 BaseType $WardBoots $WardGloves $WardHelms
 Rarity Unique
 SetBackgroundColor 255 255 255 220
-PlayAlertSound 3 300 # Drop - Uncommon
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
 Continue
 
 Show
@@ -6114,7 +6144,7 @@ Show
 	AnyEnchantment True
 	MinimapIcon 0 Purple Star
 	SetBorderColor 100 180 240
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	Continue
 
 Show
@@ -6131,7 +6161,7 @@ Show
     Class "Maps" "Map Fragments"
     MinimapIcon 0 Brown Square
 	PlayEffect Brown
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 	ModFontSize + 6
     Continue    
 
@@ -6141,7 +6171,7 @@ Show
     PlayEffect Yellow
     SetBackgroundColor 90 90 30 200
     MinimapIcon 2 Orange Star
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
     ModFontSize + 8
     Continue
 
@@ -6151,13 +6181,13 @@ BaseType $MyUniques
 Identified False
 MinimapIcon 0 Pink Star
 SetTextColor 220 100 190
-    PlayAlertSound 5 300 # Drop - Build
+    PlayAlertSoundPositional 5 300 # Drop - Build
 Continue
 
 Show
     Rarity Unique
 	MinimapIcon 2 Brown Cross
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
     ModFontSize + 10
 Continue
 Branch
@@ -6202,7 +6232,7 @@ BaseType "Recombinator"
 SetBackgroundColor 220 220 255 220
 SetFontSize 40
 MinimapIcon 0 Purple UpsideDownHouse
-    PlayAlertSound 14 300 # Special Base
+    PlayAlertSoundPositional 14 300 # Special Base
 Continue
 
 Show
@@ -6224,7 +6254,7 @@ SetBorderColor 230 190 90
 SetFontSize 45
 PlayEffect Purple
 MinimapIcon 0 Purple UpsideDownHouse
-    PlayAlertSound 1 300 # Drop - Rare
+    PlayAlertSoundPositional 1 300 # Drop - Rare
 Continue
 
 Show
