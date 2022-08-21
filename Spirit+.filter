@@ -1303,6 +1303,7 @@ SetOption $EndgameWand input ["Imbued Wand" "Opal Wand" "Tornado Wand" "Prophecy
 $EndgameBases
 BaseType $EndgameArmour $EndgameEvasion $EndgameEnergyShield $EndgameHybridAREV $EndgameHybridARES $EndgameHybridEVES $Endgame1HHammer $Endgame2HHammer $Endgame1HAxe $Endgame2HAxe $Endgame1HSword $Endgame2HSword $EndgameThrusting $EndgameBow $EndgameClaw $EndgameDagger $EndgameRune $EndgameSceptre $EndgameStaff $EndgameWarstaff $EndgameWand 
 Rarity >= $EndgameBaseRarity
+Rarity < Unique
 MinimapIcon 2 Yellow Circle
 Continue
 
