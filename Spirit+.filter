@@ -293,7 +293,7 @@ SetVar $RitualHelms "Sorrow Mask" "Imp Crown" "Gale Crown" "Atonement Mask" "Dem
 
 # BRICK BASE Variables
 
-SetVar $BrickBase "Unset Amulet" "Prismatic Jewel" "Charan's Sword"
+SetVar $BrickBase "Unset Amulet" "Ruby Amulet" "Prismatic Jewel" "Charan's Sword"
 
 # DEMIGOD Variables
 
@@ -1097,8 +1097,8 @@ Show
 
 Hide
     Class "Utility Flasks"
-    BaseType "Corundum" "Gold" "Aquamarine" "Ruby" "Topaz" "Sapphire" "Quartz" "Diamond"
-    AreaLevel >= $Leveling4L
+    BaseType "Corundum" "Gold" "Aquamarine" "Ruby" "Topaz" "Sapphire" "Quartz" "Diamond" "Silver"
+    AreaLevel >= 68
 	MinimapIcon -1
 	PlayEffect None
 	PlayAlertSound None
@@ -1451,6 +1451,8 @@ Continue
 
 SetOption $MarakethBaseChoice input ["Wyrm Mace" "Dragon Mace" "Behemoth Mace" "Morning Star" "Solar Maul" "Coronal Maul" "Etched Hatchet" "Engraved Hatchet" "Runic Hatchet" "Dagger Axe" "Talon Axe" "Fleshripper" "Hook Sword" "Grappler" "Tiger Hook" "Curved Blade" "Lithe Blade" "Exquisite Blade" "Smallsword" "Courtesan Sword" "Dragoon Sword" "Reflex Bow" "Steelwood Bow" "Maraketh Bow" "Double Claw" "Twin Claw" "Gemini Claw" "Prong Dagger" "Trisula" "Sai" "Horned Sceptre" "Stag Sceptre" "Sambar Sceptre" "Crescent Staff" "Moon Staff" "Eclipse Staff" "Pagan Wand" "Heathen Wand" "Profane Wand"] # Which Maraketh bases are valuable to you?
 
+SetOption $MarakethBaseDropOff slider [52] [1] [100] # Above what level should non-rare maraketh bases hide?
+
 Show
 BaseType $MarakethBaseChoice
 SetBorderColor 190 130 50
@@ -1494,7 +1496,7 @@ Continue
 Hide
 BaseType $Maraketh
 Rarity < Rare
-AreaLevel > 70
+AreaLevel > $MarakethBaseDropOff
 PlayEffect None
 MinimapIcon -1
 PlayAlertSound None
@@ -1509,8 +1511,8 @@ SetOption $AtlasBaseRarity dropdown [Rare] [Normal] [Magic] [Rare] # At what rar
 Show
 BaseType "Bone Ring" "Calling Wand" "Convening Wand"
 SetBorderColor 190 50 120
-MinimapIcon 2 White Circle
-PlayEffect White Temp
+MinimapIcon 2 Blue Circle
+PlayEffect Blue Temp
 Continue
 
 Show
@@ -1910,7 +1912,7 @@ Continue
 Show
 BaseType "Iron Flask"
 SetBackgroundColor 80 80 80
-MinimapIcon 2 Purple Circle
+MinimapIcon 1 Purple Circle
 PlayAlertSoundPositional 9 300 # Drop - Common
 PlayEffect Purple
 Continue
@@ -5482,7 +5484,7 @@ Continue
     SetBackgroundColor 60 60 60 # Omniscient Voidstone
     Continue
 
-SetOption $OutdatedMaps switch [Show] [Remove] # Do you want to see outdated maps?
+SetOption $OutdatedMaps switch [Show] [Hide] [Remove] # Do you want to see outdated maps or make all maps the same base size?
 
 Show
     Class "Maps"
@@ -6189,7 +6191,7 @@ Continue
 Show
 BaseType "Stygian Vise"
 SetBorderColor 30 110 30
-MinimapIcon 2 Orange Circle
+MinimapIcon 1 Orange Circle
 PlayAlertSoundPositional 9 300 # Drop - Common
 PlayEffect Yellow Temp
 Continue
@@ -6197,7 +6199,7 @@ Continue
 Show
 BaseType "Stygian Vise"
 ItemLevel >= 84
-MinimapIcon 0 Purple Circle
+MinimapIcon 0 Orange Circle
 ModFontSize + 6
 Continue
 
@@ -6544,6 +6546,7 @@ Branch
 	DropLevel > 3
 	SetBackgroundColor 255 140 140 255
     	ModFontSize + 10
+Continue
 
 $UniqueHunt
 Rarity Unique
@@ -6559,6 +6562,15 @@ Mirrored True
 SetBorderColor 65 130 190
 
 # LEGACY SECTION
+
+Show
+BaseType $BrickBase
+Corrupted True
+SocketGroup < WWW
+SetFontSize 45
+PlayEffect Green
+SetBorderColor 0 255 0
+Continue
 
 Show
 BaseType "Recombinator"
