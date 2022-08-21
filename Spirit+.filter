@@ -159,35 +159,35 @@ SetVar $EndgameARES "Conquest Chainmail" "Elegant Ringmail" "Saint's Hauberk" "S
 
 SetVar $EndgameEVES "Varnished Coat" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Assassin's Boots" "Murder Boots" "Murder Mitts" "Vaal Mask" "Deicide Mask" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"
 
-SetVar $Endgame1HMaces "Gavel" "Legion Hammer" "Pernach" "Auric Mace" "Nightmare Mace"
+SetVar $Endgame1HMaces "Gavel" "Legion Hammer" "Pernach" "Auric Mace" "Nightmare Mace" "Behemoth Mace"
 
-SetVar $Endgame2HMaces "Karui Maul" "Colossus Mallet" "Piledriver" "Meatgrinder" "Imperial Maul" "Terror Maul"
+SetVar $Endgame2HMaces "Karui Maul" "Colossus Mallet" "Piledriver" "Meatgrinder" "Imperial Maul" "Terror Maul" "Coronal Maul"
 
-SetVar $Endgame1HAxes "Siege Axe" "Reaver Axe" "Butcher Axe" "Vaal Hatchet" "Royal Axe" "Infernal Axe"
+SetVar $Endgame1HAxes "Siege Axe" "Reaver Axe" "Butcher Axe" "Vaal Hatchet" "Royal Axe" "Infernal Axe" "Runic Hatchet"
 
-SetVar $Endgame2HAxes "Karui Chopper" "Sundering Axe" "Ezomyte Axe" "Vaal Axe" "Despot Axe" "Void Axe"
+SetVar $Endgame2HAxes "Karui Chopper" "Sundering Axe" "Ezomyte Axe" "Vaal Axe" "Despot Axe" "Void Axe" "Fleshripper"
 
-SetVar $Endgame1HSwords "Corsair Sword" "Gladius" "Legion Sword" "Vaal Blade" "Eternal Sword" "Midnight Blade"
+SetVar $Endgame1HSwords "Corsair Sword" "Gladius" "Legion Sword" "Vaal Blade" "Eternal Sword" "Midnight Blade" "Tiger Hook"
 
-SetVar $Endgame2HSwords "Reaver Sword" "Ezomyte Blade" "Vaal Greatsword" "Lion Sword" "Infernal Sword"
+SetVar $Endgame2HSwords "Reaver Sword" "Ezomyte Blade" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade"
 
-SetVar $Endgame1HThrustingSwords "Pecoraro" "Spiraled Foil" "Vaal Rapier" "Jewelled Foil" "Harpy Rapier"
+SetVar $Endgame1HThrustingSwords "Pecoraro" "Spiraled Foil" "Vaal Rapier" "Jewelled Foil" "Harpy Rapier" "Dragoon Sword"
 
-SetVar $EndgameBows "Citadel Bow" "Ranger Bow" "Assassin Bow" "Spine Bow" "Imperial Bow" "Harbinger Bow"
+SetVar $EndgameBows "Citadel Bow" "Ranger Bow" "Assassin Bow" "Spine Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow"
 
-SetVar $EndgameClaws "Throat Stabber" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw"
+SetVar $EndgameClaws "Throat Stabber" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw" "Gemini Claw"
 
-SetVar $EndgameDaggers "Gutting Knife" "Ambusher"
+SetVar $EndgameDaggers "Gutting Knife" "Ambusher" "Sai"
 
 SetVar $EndgameRuneDaggers "Platinum Kris" "Imperial Skean" "Demon Dagger"
 
-SetVar $EndgameSceptres "Opal Sceptre" "Platinum Sceptre" "Vaal Sceptre" "Carnal Sceptre" "Void Sceptre"
+SetVar $EndgameSceptres "Opal Sceptre" "Platinum Sceptre" "Vaal Sceptre" "Carnal Sceptre" "Void Sceptre" "Sambar Sceptre"
 
-SetVar $EndgameStaves "Lathi" "Imperial Staff"
+SetVar $EndgameStaves "Lathi" "Imperial Staff" "Eclipse Staff"
 
 SetVar $EndgameWarstaves "Maelstrom Staff" "Judgement Staff"
 
-SetVar $EndgameWands "Imbued Wand" "Opal Wand" "Tornado Wand" "Prophecy Wand"
+SetVar $EndgameWands "Imbued Wand" "Opal Wand" "Tornado Wand" "Prophecy Wand" "Profane Wand"
 
 # ATLAS Base Variables
 
@@ -1709,7 +1709,37 @@ Continue
 
 SetTab [Stuff: Hunts]
 
-# Unique Items
+SetOption $Lvl80SpecialBases switch [Show] [Remove] # Do you want to see atlas, ritual, and experimented heist bases that are endgame viable regardless of rarity when above Item Level 80?
+
+SetOption $Lvl86SpecialBases switch [Show] [Remove] # Do you want to see atlas, ritual, and experimented heist bases that are endgame viable regardless of rarity when above Item Level 86?
+
+$Lvl80SpecialBases
+BaseType "Stygian Vise" $AtlasWeapons $AtlasBoots $AtlasGloves $AtlasHelms $AtlasBelts $AtlasRings $AtlasAmulets $WardBoots $WardGloves $WardHelms $ExperimentalBaseChoices $RitualGloves $RitualHelms $RitualBoots
+ItemLevel >= 80
+Rarity < Unique
+SetBorderColor 200 120 235
+Continue
+
+$Lvl86SpecialBases
+BaseType "Stygian Vise" $AtlasBoots $AtlasWeapons $AtlasGloves $AtlasHelms $AtlasBelts $AtlasRings $AtlasAmulets $WardBoots $WardGloves $WardHelms $ExperimentalBaseChoices $RitualGloves $RitualHelms $RitualBoots
+ItemLevel >= 86
+Rarity < Unique
+SetBorderColor 235 120 255
+Continue
+
+SetOption $Chancing switch [Remove] [Show] # Do you want to see Chancing bases?
+SetOption $ChanceBases input ["Leather Belt" "Heavy Belt"] # What bases have chanceable uniques on them?
+
+$Chancing
+BaseType $ChanceBases
+Rarity Normal
+Corrupted False
+FracturedItem False
+Mirrored False
+SetTextColor 35 95 25
+Continue
+
+# Uniques
 
 SetOption $UniquesSize slider [36] [18] [45] # Adjust the base FontSize of uniques. The minimum FontSize is 18 and the maximum is 45, the game default is 32.
 
@@ -6196,13 +6226,6 @@ SetBorderColor 30 110 30
 MinimapIcon 1 Orange Circle
 PlayAlertSoundPositional 9 300 # Drop - Common
 PlayEffect Yellow Temp
-Continue
-
-Show
-BaseType "Stygian Vise"
-ItemLevel >= 84
-MinimapIcon 0 Orange Circle
-ModFontSize + 6
 Continue
 
 SetTab [Equipment: Accessories]
