@@ -147,7 +147,7 @@ SetVar $AREVES "Grasping Mail" "Sacrificial Garb"
 
 # ENDGAME Base Variables
 
-SetVar $Endgame_AR "Astral Plate" "Gladiator Plate" "Glorious Plate" "Vaal Greaves" "Titan Greaves" "Vaal Gauntlets" "Titan Gauntlets" "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet" "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield"
+SetVar $EndgameAR "Astral Plate" "Gladiator Plate" "Glorious Plate" "Vaal Greaves" "Titan Greaves" "Vaal Gauntlets" "Titan Gauntlets" "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet" "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield"
 
 SetVar $EndgameEV "Zodiac Leather" "Assassin's Garb" "Stealth Boots" "Slink Boots" "Stealth Gloves" "Slink Gloves" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Lacquered Buckler" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler"
 
@@ -155,7 +155,7 @@ SetVar $EndgameES "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Arcani
 
 SetVar $EndgameAREV "Desert Brigandine" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Dragonscale Boots" "Dragonscale Gauntlets" "Fluted Bascinet" "Pig-Faced Bascinet" "Nighmare Bascinet" "Cardinal Round Shield" "Elegant Round Shield"
 
-SetVar $EndgameARES "Conquest Chainmail" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Crusader Boots" "Crusader Gloves" "Magistrate Crown" "Prophet Crown" "Praetor Crown" "Champion Kite Shield" "Mosaic Kite Shield" "Archone Kite Shield"
+SetVar $EndgameARES "Conquest Chainmail" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Crusader Boots" "Crusader Gloves" "Magistrate Crown" "Prophet Crown" "Praetor Crown" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield"
 
 SetVar $EndgameEVES "Varnished Coat" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Assassin's Boots" "Murder Boots" "Murder Mitts" "Vaal Mask" "Deicide Mask" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"
 
@@ -175,7 +175,7 @@ SetVar $Endgame1HThrustingSwords "Pecoraro" "Spiraled Foil" "Vaal Rapier" "Jewel
 
 SetVar $EndgameBows "Citadel Bow" "Ranger Bow" "Assassin Bow" "Spine Bow" "Imperial Bow" "Harbinger Bow"
 
-SetVar $Endgame_Claws "Throat Stabber" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw"
+SetVar $EndgameClaws "Throat Stabber" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw"
 
 SetVar $EndgameDaggers "Gutting Knife" "Ambusher"
 
@@ -300,13 +300,16 @@ SetVar $BrickBase "Unset Amulet" "Prismatic Jewel" "Charan's Sword"
 SetVar $DEMIGOD "Golden Blade" "Golden Obi" "Golden Hoop" "Golden Visage" "Golden Caligae" "Golden Bracers" "Golden Wreath" "Golden Flame" "Golden Mantle" "Fishing Rod"
 
 SetTab [Welcome] #
+
 SetOption $Intro info [Spirit is an item filter for Path of Exile, made by a long time player primarily for SSF but with an eye towards helping new players learn about the game's intense itemization through play - while maintaining strong customization options for veterans. The support for SSF is a result of a focus on personal usability - a combination of build and context such as AreaLevel and DropLevel - and scarcity rather than economic value - which is still a factor.] # |Welcome to Spirit+|
-SetOption $Intro2 info [If anyone's wondering, it's called Spirit because I feel it keeps within GGG's thematic palette more closely than other filters, with more muted tones and a huge variety of item highlights. The PLUS is because of the update that added this Filterblast customization interface.] # This is an all-in-one item filter, you can play from Twilight Strand to pinnacle content with the default preset. However, league to league we see different quantities of different items which can affect the strictness of the filter, so several presets are provided and this customization interface does the rest.
-SetOption $Intro3 info [Stuff - Maps, Chancing, most League Items, Quest Items, anything that isn't in another category, Oddities - Altered items, Affix Filtering, Corrupt Items, Fishing, Racing, League Items which are altered regular items, Equipment - Weapons and Armours, Accessories, Flasks, Treasure - Currency, Gems, Jewels, Recipe Items, Uniques] # Items in Spirit+ are broken up into several categories for ease of use in filtering. The order of these categories does not reflect their importance or actual filtering order, their function is as groups of customization options.
+
+SetOption $Intro2 info [If anyone's wondering, it's called Spirit because I feel it keeps within GGG's thematic palette more closely than other filters, with more aged and natural tones. The PLUS is because of the update that added this Filterblast customization interface (there was another big update that added the Continue syntax that allows the filter to be as wildly flexible as it is.] # This is an all-in-one item filter, you can play from Twilight Strand to Pinnacle content with the Default preset. However, league to league we see different quantities of different items which can affect the strictness of the filter, so several presets are provided and this customization interface does the rest.
+
+SetOption $Intro3 info [Equipment - Weapons and Armours, Accessories (including Jewels), Flasks, and Special Bases | Treasure - Currency, Gems, Jewels, Recipe Items | Stuff - Maps, Chancing, most League Items, Racing, Hunts, Maps | Oddities - Altered items, Affix Filtering, Corrupt Items, Fishing, Racing, League Items which are altered regular items] # Items in Spirit+ are broken up into several categories for ease of use in filtering. The order of these categories does not reflect their importance or actual filtering order, their function is as groups of customization options, and keep in mind this is WIP so some features may not exist yet and organization is ongoing.
 
 SetOption $EmptyLine
 
-SetOption $Methodology info [This applies most strongly to Beams and Minimap Icons, then to Backgrounds, and lastly to border/text color (text brightness on Armours relates to Base Defences, border on equipment relates to item level and recipe validity.] # Equipment - Circle, Currency - Diamond, Teardrop - Flasks, Cross - Linked, Hexagon - Modifier (Affixes, Enchantments, Corruptions), Moon - Fragments, Map - Square, Triangle - League, UpsideDownHouse - Anomalies, Common - Grey, Uncommon - White, Rare - Blue, Very Rare - Yellow, Special - Orange, Priority - Brown, Red - Bad (small) or Dangerous (larger), Racing - Cyan, Build - Pink, Weird - Purple, Green - Quest/Progression
+SetOption $Methodology info [This applies most strongly to Beams and Minimap Icons, then to Backgrounds, and lastly to border/text color (text brightness on Armours relates to Base Defences, border on equipment relates to item level and recipe validity.] # Circle - Equipment, Diamond - Currency, Kite - Gem, Teardrop - Flasks, Pentagon - Jewel, Cross - Linked, Hexagon - Modifier (Affixes, Enchantments, Corruptions), Star - Unique, Moon - Fragments, Square - Map, Triangle - League, UpsideDownHouse - Anomalies, Common - Grey, Uncommon - White, Rare - Blue, Very Rare - Yellow, Special - Orange, Priority - Brown, Red - Bad (small) or Dangerous (larger), Racing - Cyan, Build - Pink, Weird - Purple, Green - Quest/Progression
 
 SetOption $FilterWorkflow info [] # Basic Gear > Your Build > Base Defences > Obsolete Gear > Recipes and Special Bases > Currency > Fragments and Maps > Leagues and Misc Additions > Uniques > Legacy Section
 
@@ -341,9 +344,8 @@ Rarity Rare
 Class $Weapons $Armours
 SetBorderColor 155 155 115
 SetFontSize $RareItemSize
-MinimapIcon 2 White Circle
+MinimapIcon 2 Grey Circle
 Continue
-
 
 Show
 Class $Accessories
@@ -358,7 +360,7 @@ Rarity >= Rare
 SetBackgroundColor 50 50 0
 SetBorderColor 180 180 80
 SetFontSize $RareAccessoriesSize
-MinimapIcon 1 White Circle
+MinimapIcon 2 White Circle
 Continue
 
 Show
@@ -375,7 +377,7 @@ Rarity >= Rare
 SetBackgroundColor 50 50 0
 SetBorderColor 180 180 80
 SetFontSize $RareItemSize
-MinimapIcon 1 Grey Circle
+MinimapIcon 2 Grey Circle
 Continue
 
 Show
@@ -483,7 +485,7 @@ Show
 Class $Weapons $Armours $Accessories
 LinkedSockets = 3
 AreaLevel <= $Leveling3L
-SetBackgroundColor 70 20 50
+SetBackgroundColor 20 30 50
 PlayEffect Cyan
 PlayAlertSoundPositional 16 300 # Racing
 ModFontSize + 2
@@ -493,9 +495,10 @@ Show
 Class $Weapons $Armours $Accessories
 LinkedSockets = 4
 AreaLevel <= $Leveling4L
-SetBackgroundColor 110 50 80
+SetBackgroundColor 40 60 80
 PlayEffect Cyan
 PlayAlertSoundPositional 16 300 # Racing
+MinimapIcon 2 White Cross
 ModFontSize + 2
 Continue
 
@@ -720,7 +723,7 @@ SetOption $BDHigh slider [45] [1] [100] #This slider adjusts the area level at w
 
 SetOption $BDNearPerfect slider [78] [1] [100] # This slider adjusts the area level at which updated Bases with less than 90% of their Base Defence potential Hide.
 
-SetOption $BDPerfect slider [100] [1] [100] # This slider adjusts the area level at which updated Bases with less than 100% of their Base Defence potential Hide.
+SetOption $BDPerfect slider [100] [1] [100] # This slider adjusts the area level at which updated Bases with 100% of their Base Defence potential Hide.
 
 SetOption $LowBDRare switch [Show] [Hide] # This slider adjusts whether updated Rare Bases with less than 25% of their Base Defence potential Hide.
 
@@ -728,7 +731,7 @@ SetOption $MidBDRare switch [Show] [Hide] # This slider adjusts whether updated 
 
 SetOption $HighBDRare switch [Show] [Hide] # This slider adjusts whether updated Rare Bases with less than 75% of their Base Defence potential Hide.
 
-SetOption $NearPerfectBDRare switch [Show] [Hide] # This slider adjusts whether updated Rare Bases with less than 100% of their Base Defence potential Hide.
+SetOption $NearPerfectBDRare switch [Show] [Hide] # This slider adjusts whether updated Rare Bases with 100% of their Base Defence potential Hide.
 
 SetOption $PerfectBDRare switch [Show] [Hide] # This slider adjusts whether updated Rare Bases with 100% of their Base Defence potential Hide.
 
@@ -824,6 +827,9 @@ Show
 Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	BaseDefencePercentile <= 20
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
 	Continue
 	Branch
 	Rarity Normal	
@@ -848,11 +854,17 @@ Show
 	Branch
 	Rarity Normal
 	AreaLevel >= $BDMid
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
 	SwitchTo Hide
 	Continue
 	Branch
 	Rarity Magic
 	AreaLevel >= $BDMid
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
 	SwitchTo Hide
 	Continue
 	Branch
@@ -868,11 +880,17 @@ Show
 	Branch
 	Rarity Normal
 	AreaLevel >= $BDHigh
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
 	SwitchTo Hide
 	Continue
 	Branch
 	Rarity Magic
 	AreaLevel >= $BDHigh
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
 	SwitchTo Hide
 	Continue
 	Branch
@@ -888,11 +906,17 @@ Show
 	Branch
 	Rarity Normal
 	AreaLevel >= $BDNearPerfect
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
 	SwitchTo Hide
 	Continue
 	Branch
 	Rarity Magic
 	AreaLevel >= $BDNearPerfect
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
 	SwitchTo Hide
 	Continue
 	Branch
@@ -908,11 +932,17 @@ Show
 	Branch
 	Rarity Normal
 	AreaLevel >= $BDPerfect
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
 	SwitchTo Hide
 	Continue
 	Branch
 	Rarity Magic
 	AreaLevel >= $BDPerfect
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
 	SwitchTo Hide
 	Continue
 	Branch
@@ -929,8 +959,9 @@ ItemLevel < 100
 Rarity < Unique
 SetBackgroundColor 40 0 0 150
 SetBorderColor 0 0 0
-MinimapIcon -1 
-PlayAlertSoundPositional None
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
 ModFontSize $ObsoleteEquipmentSizeMod
 Branch
 AreaLevel > 6
@@ -999,7 +1030,7 @@ ItemLevel < 100
 Rarity < Unique
 SetBorderColor 0 0 0
 MinimapIcon -1 
-PlayAlertSoundPositional None
+PlayAlertSound None
 ModFontSize $ObsoleteEquipmentSizeMod
 Continue
 Branch
@@ -1047,7 +1078,7 @@ Rarity < Unique
 SetBorderColor 0 0 40
 SetBackgroundColor 40 0 0 150
 MinimapIcon -1 
-PlayAlertSoundPositional None
+PlayAlertSound None
 ModFontSize $ObsoleteEquipmentSizeMod
 Continue
 Branch
@@ -1097,7 +1128,7 @@ Rarity < Unique
 SetBorderColor 0 0 40
 SetBackgroundColor 40 0 0 150
 MinimapIcon -1 
-PlayAlertSoundPositional None
+PlayAlertSound None
 ModFontSize $ObsoleteEquipmentSizeMod
 Continue
 Branch
@@ -1143,7 +1174,7 @@ Rarity < Unique
 SetBorderColor 0 0 40
 SetBackgroundColor 40 0 0 150
 MinimapIcon -1 
-PlayAlertSoundPositional None
+PlayAlertSound None
 ModFontSize $ObsoleteEquipmentSizeMod
 Continue
 Branch
@@ -1178,12 +1209,16 @@ Hide
     Class "Utility Flasks"
     BaseType "Corundum" "Gold" "Aquamarine"
     AreaLevel >= $Leveling4L
+	MinimapIcon -1
+	ModFontSize $ObsoleteEquipmentSizeMod
+	Continue
 
 $HideFlasks
 	Class $BannedFlasks
 	Rarity < Unique
 	MinimapIcon -1
-	PlayAlertSoundPositional None
+	PlayAlertSound None
+	ModFontSize $ObsoleteEquipmentSizeMod
 	Continue
 
 $UtilityFlasks
@@ -1204,6 +1239,79 @@ Show
     AreaLevel < $RareSafetyNet
 PlayAlertSoundPositional 16 300 # Racing
     Continue
+
+
+SetTab [Equipment: Special Bases]
+
+SetOption $EndgameBases switch [Show] [Hide] # Do you want endgame viable bases to be visible? This acts as a safeguard against reasonable bases becoming outdated due to falling behind on DropLevel as well as a place to add unconventional bases you want to see (you can add them to any of the inputs).
+
+SetOption $BasesInfo info ["Bone Spirit Shield" "Ivory Spirit Shield" "Fossilised Spirit Shield" "Calling Wand" "Convening Wand"] # Here are some common bases to display. Do NOT leave any of the inputs empty, duplicate entries are fine. If you switch this section to HIDE you can use it to target remove bases from view instead.
+
+SetOption $EmptyLine
+
+SetOption $EndgameBaseRarity dropdown [Rare] [Normal] [Magic] [Rare] # At what Rarity do you want Endgame bases to show?
+
+SetOption $EmptyLine
+SetOption $EmptyLine
+
+SetOption $EndgameArmour input ["Astral Plate" "Gladiator Plate" "Glorious Plate" "Vaal Greaves" "Titan Greaves" "Vaal Gauntlets" "Titan Gauntlets" "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet" "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield"]  # Which Armour bases do you use?
+
+SetOption $EndgameEvasion input ["Zodiac Leather" "Assassin's Garb" "Stealth Boots" "Slink Boots" "Stealth Gloves" "Slink Gloves" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Lacquered Buckler" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler"]  # Which Evasion bases do you use?
+
+SetOption $EndgameEnergyShield input ["Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Arcanist Slippers" "Sorcerer Boots" "Arcanist Gloves" "Sorcerer Gloves" "Mind Cage" "Hubris Circlet" "Fossilised Spirit Shield" "Vaal Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield"]  # Which Energy shield bases do you use?
+
+SetOption $EndgameHybridAREV input ["Desert Brigandine" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Dragonscale Boots" "Dragonscale Gauntlets" "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Cardinal Round Shield" "Elegant Round Shield"] # Which hybrid Armour and Evasion bases do you use?
+ 
+SetOption $EndgameHybridARES input ["Conquest Chainmail" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Crusader Boots" "Crusader Gloves" "Magistrate Crown" "Prophet Crown" "Praetor Crown" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield"] # Which hybrid Armour and Energy shield bases do you use?
+ 
+SetOption $EndgameHybridEVES input ["Varnished Coat" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Assassin's Boots" "Murder Boots" "Murder Mitts" "Vaal Mask" "Deicide Mask" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"] # Which hybrid Evasion and Energy Shield bases do you use?
+
+SetOption $EmptyLine
+SetOption $EmptyLine
+SetOption $EmptyLine
+
+SetOption $Endgame1HHammer input ["Gavel" "Legion Hammer" "Pernach" "Auric Mace" "Nightmare Mace"] # Which 1H hammers do you want to see?
+
+SetOption $Endgame2HHammer input ["Karui Maul" "Colossus Mallet" "Piledriver" "Meatgrinder" "Imperial Maul" "Terror Maul"] # Which 1H hammers do you want to see? 
+
+SetOption $Endgame1HAxe input ["Siege Axe" "Reaver Axe" "Butcher Axe" "Vaal Hatchet" "Royal Axe" "Infernal Axe"] # Which 1H axes do you want to see? 
+
+SetOption $Endgame2HAxe input ["Karui Chopper" "Sundering Axe" "Ezomyte Axe" "Vaal Axe" "Despot Axe" "Void Axe"] # Which 2H axes do you want to see? 
+
+SetOption $Endgame1HSword input ["Corsair Sword" "Gladius" "Legion Sword" "Vaal Blade" "Eternal Sword" "Midnight Blade"] # Which 1H swords do you want to see? 
+
+SetOption $Endgame2HSword input ["Reaver Sword" "Ezomyte Blade" "Vaal Greatsword" "Lion Sword" "Infernal Sword"] # Which 2H swords do you want to see? 
+
+SetOption $EndgameThrusting input ["Pecoraro" "Spiraled Foil" "Vaal Rapier" "Jewelled Foil" "Harpy Rapier"] # Which thrusting swords do you want to see?
+
+SetOption $EndgameBow input ["Citadel Bow" "Ranger Bow" "Assassin Bow" "Spine Bow" "Imperial Bow" "Harbinger Bow"] # Which bows do you want to see? 
+
+SetOption $EndgameClaw input ["Throat Stabber" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw"] # Which claw do you want to see? 
+
+SetOption $EndgameDagger input ["Gutting Knife" "Ambusher"] # Which daggers do you want to see? 
+
+SetOption $EndgameRune input ["Platinum Kris" "Imperial Skean" "Demon Dagger"] # Which rune daggers do you want to see? 
+
+SetOption $EndgameSceptre input ["Opal Sceptre" "Platinum Sceptre" "Vaal Sceptre" "Carnal Sceptre" "Void Sceptre"] # Which sceptres do you want to see? 
+
+SetOption $EndgameStaff input ["Lathi" "Imperial Staff"] # Which staves do you want to see? 
+
+SetOption $EndgameWarstaff input ["Maelstrom Staff" "Judgement Staff"] # Which warstaves do you want to see? 
+
+SetOption $EndgameWand input ["Imbued Wand" "Opal Wand" "Tornado Wand" "Prophecy Wand"] # Which wands do you want to see?
+
+$EndgameBases
+BaseType $EndgameArmour $EndgameEvasion $EndgameEnergyShield $EndgameHybridAREV $EndgameHybridARES $EndgameHybridEVES $Endgame1HHammer $Endgame2HHammer $Endgame1HAxe $Endgame2HAxe $Endgame1HSword $Endgame2HSword $EndgameThrusting $EndgameBow $EndgameClaw $EndgameDagger $EndgameRune $EndgameSceptre $EndgameStaff $EndgameWarstaff $EndgameWand 
+Rarity >= $EndgameBaseRarity
+MinimapIcon 2 Yellow Circle
+Continue
+
+Show
+BaseType "Grasping Mail" "Sacrificial Garb"
+SetBorderColor 200 80 50
+MinimapIcon 2 Purple Circle
+ModFontSize + 4
+Continue
 
 SetTab [Treasure: Recipes]
 
@@ -1248,7 +1356,7 @@ $ChiselHammers
 	Rarity Rare
 	Quality >= 18
 
-SetOption $FlaskQualityThreshold slider [12] [1] [30] # Above what quality should flasks display regardless of type?
+SetOption $FlaskQualityThreshold slider [16] [1] [30] # Above what quality should flasks display regardless of type?
 
 Show
 Class "Flasks"
@@ -1268,7 +1376,7 @@ SetOption $ChaosRecipe switch [Remove] [Show] [Remove] # How do you want the Cha
 SetOption $ChaosRecipeSizeMod input [+ 4] # Adjust the base FontSize of chaos recipe items. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size cap of 45 with high values.
 
 SetOption $RegalRecipe switch [Remove] [Show] [Remove] # How do you want the Regal Recipe handled?
-SetOption $RegalRecipeSizeMod input [+ 4] # Adjust the base FontSize of regal recipe items. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size cap of 45 with high values.
+SetOption $RegalRecipeSizeMod input [+ 2] # Adjust the base FontSize of regal recipe items. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size cap of 45 with high values.
 
 $ChaosRecipe
 Class $Weapons $Armours $Accessories
@@ -1291,7 +1399,7 @@ Continue
 Show
 Class $Weapons $Armours $Accessories
 ItemLevel = 100
-SetBorderColor 255 255 255
+SetBorderColor 255 0 255
 MinimapIcon 1 Purple Circle
 Continue
 
@@ -1305,36 +1413,66 @@ $Chromatics
 Rarity < Unique
 SocketGroup RGB
 SetBackgroundColor 40 70 40 220
-MinimapIcon 2 Green Cross
+MinimapIcon 2 Green Circle
+PlayEffect Green Temp
 PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 SetTab [Equipment: Special Bases]
 
-SetOption $MarakethBaseChoices checkbox ["Wyrm Mace"] ["Dragon Mace"] ["Behemoth Mace"] ["Morning Star"] ["Solar Maul"] ["Coronal Maul"] ["Etched Hatchet"] ["Engraved Hatchet"] ["Runic Hatchet"] ["Dagger Axe"] ["Talon Axe"] ["Fleshripper"] ["Hook Sword"] ["Grappler"] ["Tiger Hook"] ["Curved Blade"] ["Lithe Blade"] ["Exquisite Blade"] ["Smallsword"] ["Courtesan Sword"] ["Dragoon Sword"] ["Reflex Bow"] ["Steelwood Bow"] ["Maraketh Bow"] ["Double Claw"] ["Twin Claw"] ["Gemini Claw"] ["Prong Dagger"] ["Trisula"] ["Sai"] ["Horned Sceptre"] ["Stag Sceptre"] ["Sambar Sceptre"] ["Crescent Staff"] ["Moon Staff"] ["Eclipse Staff"] ["Pagan Wand"] ["Heathen Wand"] ["Profane Wand"] # Which Maraketh bases are valuable to you?
+SetOption $EmptyLine
+SetOption $EmptyLine
+SetOption $EmptyLine
+
+SetOption $MarakethBaseChoice input ["Wyrm Mace" "Dragon Mace" "Behemoth Mace" "Morning Star" "Solar Maul" "Coronal Maul" "Etched Hatchet" "Engraved Hatchet" "Runic Hatchet" "Dagger Axe" "Talon Axe" "Fleshripper" "Hook Sword" "Grappler" "Tiger Hook" "Curved Blade" "Lithe Blade" "Exquisite Blade" "Smallsword" "Courtesan Sword" "Dragoon Sword" "Reflex Bow" "Steelwood Bow" "Maraketh Bow" "Double Claw" "Twin Claw" "Gemini Claw" "Prong Dagger" "Trisula" "Sai" "Horned Sceptre" "Stag Sceptre" "Sambar Sceptre" "Crescent Staff" "Moon Staff" "Eclipse Staff" "Pagan Wand" "Heathen Wand" "Profane Wand"] # Which Maraketh bases are valuable to you?
 
 Show
-BaseType $MarakethBaseChoices
+BaseType $MarakethBaseChoice
 SetBorderColor 190 130 50
-MinimapIcon 2 Yellow Circle
-PlayEffect Yellow
-Continue
-Branch
-DropLevel < 69
-AreaLevel > 69
-SwitchTo Hide
-PlayEffect None
-MinimapIcon -1
-PlayAlertSoundPositional None
+MinimapIcon 2 Blue Circle
+PlayEffect Blue Temp
 Continue
 
-SetOption $AtlasBaseChoices checkbox ["Fugitive Boots"] ["Two-Toned Boots"] ["Apothecary's Gloves"] ["Fingerless Silk Gloves"] ["Gripped Gloves"] ["Spiked Gloves"] ["Bone Helmet"] ["Marble Amulet"] ["Seaglass Amulet"] ["Blue Pearl Amulet"] ["Vanguard Belt"] ["Crystal Belt"] ["Cerulean Ring"] ["Iolite Ring"] ["Opal Ring"] ["Steel Ring"] ["Vermillion Ring"] ["Convoking Wand"] ["Artillery Quiver"] # Which Atlas bases are valuable to you?
+Hide
+BaseType $Maraketh
+Rarity < Rare
+PlayEffect None
+MinimapIcon -1
+PlayAlertSound None
+PlayEffect None
+Continue
+Branch
+DropLevel <= 36
+AreaLevel >= 42
+Continue
+Branch
+DropLevel <= 59
+AreaLevel >= 65
+Continue
+
+Hide
+BaseType $Maraketh
+PlayEffect None
+MinimapIcon -1
+PlayAlertSound None
+PlayEffect None
+Continue
+Branch
+DropLevel <= 36
+AreaLevel >= 59
+Continue
+Branch
+DropLevel <= 59
+AreaLevel >= 72
+Continue
+
+SetOption $AtlasBaseChoices input ["Fugitive Boots" "Two-Toned Boots" "Apothecary's Gloves" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Bone Helmet" "Marble Amulet" "Seaglass Amulet" "Blue Pearl Amulet" "Vanguard Belt" "Crystal Belt" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Convoking Wand" "Artillery Quiver"] # Which Atlas bases are valuable to you?
 
 Show
 BaseType "Bone Ring" "Calling Wand" "Convening Wand"
 SetBorderColor 190 130 50
-MinimapIcon 2 Yellow Circle
-PlayEffect Yellow Temp
+MinimapIcon 2 White Circle
+PlayEffect White Temp
 Continue
 
 Show
@@ -1342,6 +1480,8 @@ BaseType "Bone Ring" "Calling Wand"
 Rarity < Rare
 AreaLevel >= 30
 SwitchTo Hide
+MinimapIcon -1
+PlayEffect None
 Continue
 
 Hide
@@ -1358,6 +1498,15 @@ AreaLevel >= 72
 MinimapIcon -1
 PlayEffect None
 PlayAlertSound None
+Continue
+
+Show
+BaseType "Convening Wand"
+Rarity < Rare
+AreaLevel >= 50
+SwitchTo Hide
+MinimapIcon -1
+PlayEffect None
 Continue
 
 Show
@@ -1390,6 +1539,7 @@ Show
 BaseType $RitualGloves $RitualHelms $RitualBoots
 SetBorderColor 180 100 50
 MinimapIcon 2 Purple Circle
+PlayEffect Purple
 PlayAlertSoundPositional 14 300 # Special Base
 Continue
 
@@ -1401,14 +1551,14 @@ AreaLevel >= 45
 DropLevel <= 15
 SwitchTo Hide
 MinimapIcon -1
-PlayAlertSoundPositional None
+PlayAlertSound None
 Continue
 Branch
 AreaLevel >= 75
 DropLevel <= 45
 SwitchTo Hide
 MinimapIcon -1
-PlayAlertSoundPositional None
+PlayAlertSound None
 Continue
 
 Show
@@ -1419,14 +1569,14 @@ AreaLevel >= 40
 DropLevel <= 10
 SwitchTo Hide
 MinimapIcon -1
-PlayAlertSoundPositional None
+PlayAlertSound None
 Continue
 Branch
 AreaLevel >= 70
 DropLevel <= 40
 SwitchTo Hide
 MinimapIcon -1
-PlayAlertSoundPositional None
+PlayAlertSound None
 Continue
 
 Show
@@ -1437,14 +1587,14 @@ AreaLevel >= 50
 DropLevel <= 20
 SwitchTo Hide
 MinimapIcon -1
-PlayAlertSoundPositional None
+PlayAlertSound None
 Continue
 Branch
 AreaLevel >= 80
 DropLevel <= 50
 SwitchTo Hide
 MinimapIcon -1
-PlayAlertSoundPositional None
+PlayAlertSound None
 Continue
 
 Show
@@ -1452,7 +1602,7 @@ BaseType $ExperimentalAxes1H $ExperimentalAxes2H $ExperimentalBows $Experimental
 SetBorderColor 200 100 85
 Continue
 
-SetOption $ExperimentalBaseChoices checkbox ["Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe"] ["Prime Cleaver" "Honed Cleaver" "Apex Cleaver"] ["Hedron Bow" "Foundry Bow" "Solarine Bow"] ["Shadow Fangs" "Malign Fangs" "Void Fangs"] ["Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger"] ["Flickerflame Blade" "Flashfire Blade" "Infernal Blade"] ["Flare Mace" "Crack Mace" "Boom Mace"] ["Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre"] ["Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator"] ["Transformer Staff" "Reciprocation Staff" "Battery Staff"] ["Capacity Rod" "Potentiality Rod" "Eventuality Rod"] ["Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade"] ["Rebuking Blade" "Blasting Blade" "Banishing Blade"] ["Assembler Wand" "Congregator Wand" "Accumulator Wand"] ["Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield"] ["Micro-Distillery Belt" "Mechalarm Belt"] ["Simplex Amulet" "Astrolabe Amulet"] ["Cogwork Ring" "Geodesic Ring"] # Which Experimented bases are valuable to you?
+SetOption $ExperimentalBaseChoices input ["Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Transformer Staff" "Reciprocation Staff" "Battery Staff" "Capacity Rod" "Potentiality Rod" "Eventuality Rod" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Assembler Wand" "Congregator Wand" "Accumulator Wand" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Micro-Distillery Belt" "Mechalarm Belt" "Simplex Amulet" "Astrolabe Amulet" "Cogwork Ring" "Geodesic Ring"] # Which Experimented bases are valuable to you? If editing a large list like this I'd suggest copying it out into a blank text document and making changes there, plus you can then keep that list for after updates break things!
 
 Show
 BaseType $ExperimentalBaseChoices
@@ -1466,7 +1616,7 @@ Rarity < Unique
 DropLevel <= 30
 AreaLevel >= 50
 MinimapIcon -1
-PlayAlertSoundPositional None
+PlayAlertSound None
 Continue
 
 Hide
@@ -1475,7 +1625,7 @@ Rarity < Unique
 DropLevel <= 50
 AreaLevel >= 70
 MinimapIcon -1
-PlayAlertSoundPositional None
+PlayAlertSound None
 Continue
 
 
@@ -1485,11 +1635,10 @@ $FiveLinks
 LinkedSockets = 5
 SetBackgroundColor 70 45 30 220
 MinimapIcon 0 Blue Cross
+PlayEffect Blue
 PlayAlertSoundPositional 3 300 # Drop - Uncommon
 Continue
-
-$FiveLinks
-LinkedSockets = 5
+Branch
 AreaLevel >= $5LDropOff
 SwitchTo Remove
 Continue
@@ -1498,13 +1647,15 @@ $SixSockets
 Sockets = 6
 SetBackgroundColor 147 157 137 235
 MinimapIcon 2 Yellow Cross
+PlayEffect Yellow
 PlayAlertSoundPositional 3 300 # Drop - Uncommon
 Continue
 
 $SixLinks
 LinkedSockets = 6
 SetBackgroundColor 120 60 0 200
-MinimapIcon 0 Red Cross
+MinimapIcon 1 Orange Cross
+PlayEffect Orange
 PlayAlertSoundPositional 1 300 # Drop - Rare
 Continue
 
@@ -1517,9 +1668,10 @@ SetOption $UniquesSize slider [36] [18] [45] # Adjust the base FontSize of uniqu
 Show
 Rarity Unique
 SetBorderColor 180 120 50
-MinimapIcon 2 White Star
+MinimapIcon 2 Purple Star
 SetFontSize $UniquesSize
 PlayAlertSoundPositional 8 300 # Drop - Unvalued Unique
+PlayEffect Purple
 Continue
 
 # Gems
@@ -1553,13 +1705,14 @@ Class "Active Skill Gems" "Support Skill Gems"
 AreaLevel >= $GemsDropOff
 SwitchTo Hide
 MinimapIcon -1
-PlayAlertSoundPositional None
+PlayAlertSound None
 Continue
 Branch
 Class "Gems"
 BaseType "Vaal"
 SetBorderColor 255 0 0
-MinimapIcon 2 White Kite
+MinimapIcon 1 Grey Kite
+PlayEffect Green
 Continue
 Branch
 Class "Gems"
@@ -1567,6 +1720,7 @@ BaseType "Portal" "Empower" "Enhance" "Enlighten"
 SetBorderColor 185 185 185
 SetBackgroundColor 220 220 220
 PlayAlertSoundPositional 9 300 # Drop - Common
+PlayEffect Yellow
 Continue
 
 Show
@@ -1574,7 +1728,8 @@ Class "Gems"
 Quality > 5
 Quality < 10
 SetTextColor 140 210 200
-MinimapIcon 1 White Kite
+MinimapIcon 2 White Kite
+PlayEffect White Temp
 Continue
 
 Show
@@ -1584,6 +1739,7 @@ Quality < 20
 SetTextColor 180 225 235
 MinimapIcon 1 White Kite
 PlayAlertSoundPositional 9 300 # Drop - Common
+PlayEffect White
 Continue
 
 Show
@@ -1593,6 +1749,7 @@ SetTextColor 200 235 245
 MinimapIcon 1 Blue Kite
 ModFontSize + 3
 PlayAlertSoundPositional 3 300 # Drop - Uncommon
+PlayEffect Blue
 Continue
 
 Show
@@ -1600,6 +1757,7 @@ Class "Gems"
 Quality > 20
 SetTextColor 240 200 215
 MinimapIcon 1 Yellow Kite
+PlayEffect Yellow
 ModFontSize + 3
 Continue
 
@@ -1608,6 +1766,7 @@ Class "Gems"
 GemLevel = 20
 SetBackgroundColor 70 70 55
 MinimapIcon 0 Yellow Kite
+PlayEffect Yellow
 ModFontSize + 3
 PlayAlertSoundPositional 3 300 # Drop - Uncommon
 Continue
@@ -1617,6 +1776,7 @@ Class "Gems"
 GemLevel > 20
 SetBackgroundColor 110 70 85
 MinimapIcon 0 Yellow Kite
+PlayEffect Yellow
 ModFontSize + 3
 PlayAlertSoundPositional 1 300 # Drop - Rare
 Continue
@@ -1627,6 +1787,7 @@ BaseType "Enhance" "Empower" "Enlighten"
 GemLevel = 3
 SetBackgroundColor 10 70 115
 MinimapIcon 0 Orange Kite
+PlayEffect Orange
 PlayAlertSoundPositional 1 300 # Drop - Rare
 ModFontSize + 6
 Continue
@@ -1638,6 +1799,7 @@ GemLevel >= 3
 Quality >= 20
 SetBackgroundColor 50 110 155
 MinimapIcon 0 Brown Kite
+PlayEffect Brown
 ModFontSize + 6
 Continue
 
@@ -1645,8 +1807,10 @@ Show
 Class "Gems"
 AlternateQuality True
 SetBorderColor 225 185 150
-MinimapIcon 0 Orange Kite
+MinimapIcon 0 Purple Kite
+PlayEffect Purple
 PlayAlertSoundPositional 1 300 # Drop - Rare
+ModFontSize + 6
 Continue
 
 Show
@@ -1654,6 +1818,7 @@ Class "Gems"
 BaseType "Awakened"
 SetTextColor 200 50 150
 MinimapIcon 0 Red Kite
+PlayEffect Red
 ModFontSize + 6
 PlayAlertSoundPositional 1 300 # Drop - Rare
 Continue
@@ -1681,6 +1846,7 @@ Quality >= $MyGemsQuality
 SetBorderColor 250 0 250
 ModFontSize $MyGemsSizeMod
 MinimapIcon 0 Pink Kite
+PlayEffect Pink
 PlayAlertSoundPositional 5 300 # Drop - Build
 Continue
 
@@ -1691,6 +1857,7 @@ BaseType $WardBoots $WardGloves $WardHelms
 SetBackgroundColor 235 235 235
 MinimapIcon 2 Purple Circle
 PlayAlertSoundPositional 9 300 # Drop - Common
+PlayEffect Purple
 Continue
 
 Show
@@ -1698,6 +1865,7 @@ BaseType "Iron Flask"
 SetBackgroundColor 80 80 80
 MinimapIcon 2 Purple Circle
 PlayAlertSoundPositional 9 300 # Drop - Common
+PlayEffect Purple
 Continue
 
 Show
@@ -1757,7 +1925,7 @@ Continue
 SetOption $CorruptedItems switch [Remove] [Show] # Do you want corruption to add a highlight even if there is no corrupted mod or white socket?
 SetOption $WhiteSockets input [W] # How many white sockets do you consider acceptable? Enter that many W's, up to six.
 
-Show
+$CorruptedItems
 Corrupted True
 CorruptedMods < 1
 SetBackgroundColor 50 0 0
@@ -1773,12 +1941,16 @@ Show
 CorruptedMods = 1
 SetBackgroundColor 100 30 0
 PlayAlertSoundPositional 9 300 # Drop - Common
+MinimapIcon 2 Red Hexagon
+PlayEffect Red
 Continue
 
 Show
 CorruptedMods > 1
 SetBackgroundColor 170 50 30
 PlayAlertSoundPositional 3 300 # Drop - Uncommon
+MinimapIcon 1 Red Hexagon
+PlayEffect Red
 Continue
 
 SetTab [Oddities]
@@ -1792,7 +1964,6 @@ Rarity Rare
 AreaLevel <= $RareSafetyNet
 Continue
 
-
 Show
 Class "Boots"
 HasExplicitMod >=1 "Runner's" "Sprinter's" "Stallion's" "Gazelle's" "Cheetah's" "Hellion's"
@@ -1802,11 +1973,6 @@ PlayAlertSoundPositional 16 300 # Racing
 Continue
 
 SetTab [Treasure: General Currency]
-
-Show
-Class "Currency"
-PlayAlertSoundPositional 9 300 # Drop - Common
-Continue
 
 SetOption $ScrollSize slider [28] [18] [45] # What do you want the base size of Scrolls to be? This is adjusted by stack size.
 
@@ -1844,7 +2010,7 @@ Continue
 Branch
 StackSize = 1
 SetTextColor 137 137 137
-PlayAlertSoundPositional None
+PlayAlertSound None
 Continue
 Branch
 StackSize >= $ScrollSmallStack
@@ -2208,7 +2374,7 @@ Show
 Class Currency
 BaseType "Vaal Orb" "Chaos" "Regal" 
 SetBorderColor 180 180 90
-MinimapIcon 2 Yellow Diamond
+MinimapIcon 1 Blue Diamond
 PlayEffect Blue Temp
 PlayAlertSoundPositional 3 300 # Drop - Uncommon
 SetFontSize $RareOrbSize
@@ -2297,6 +2463,12 @@ AreaLevel >= $ChaosDropOff
 StackSize <= $RareOrbStackDropOff
 Continue
 
+Show
+Class Currency
+BaseType "Veiled Chaos"
+SetBackgroundColor 145 85 55
+Continue
+
 SetOption $Regal dropdown [Show] [Hide] [Remove] # What visibility do you want Regal Orbs to have? This affects solitary orbs.
 
 SetOption $RegalSmallStack dropdown [Show] [Hide] [Remove] # What visibility do you want SMALL stacks of Regal Orbs to have?
@@ -2353,7 +2525,7 @@ Show
 Class Currency
 BaseType "Annulment" "Exalted" "Divine Orb" "Ancient" "Sacred Orb"
 SetBorderColor 220 150 110
-MinimapIcon 0 Yellow Diamond
+MinimapIcon 1 Yellow Diamond
 PlayEffect Yellow Temp
 PlayAlertSoundPositional 1 300 # Drop - Rare
 SetFontSize $VeryRareOrbSize
@@ -2405,11 +2577,11 @@ SetOption $Exalted dropdown [Show] [Hide] [Remove] # What visibility do you want
 
 SetOption $ExaltedSmallStack dropdown [Show] [Hide] [Remove] # What visibility do you want SMALL stacks of Exalted Orbs to have?
 
-SetOption $ExaltedSmallStackSizeMod input [+ 2] # How much larger should SMALL stacks of Exalted Orbs be?
+SetOption $ExaltedSmallStackSizeMod input [+ 0] # How much larger should SMALL stacks of Exalted Orbs be?
 
 SetOption $ExaltedLargeStack dropdown [Show] [Hide] [Remove] # What visibility do you want LARGE stacks of Exalted Orbs to have?
 
-SetOption $ExaltedLargeStackSizeMod input [+ 4] # How much larger should LARGE stacks of Exalted Orbs be?
+SetOption $ExaltedLargeStackSizeMod input [+ 2] # How much larger should LARGE stacks of Exalted Orbs be?
 
 SetOption $ExaltedDropOff slider [100] [1] [100] # At what AreaLevel do you want Exalted Orbs to hide? This overrides the above visibility options.
 
@@ -2417,10 +2589,12 @@ $Exalted
 Class Currency
 BaseType "Exalted"
 SetBackgroundColor 80 80 30
+MinimapIcon 2 Yellow Diamond
 Continue
 Branch
 StackSize = 1
 SetTextColor 185 150 110
+ModFontSize - 2
 Continue
 Branch
 StackSize >= $VeryRareOrbSmallStack
@@ -2450,22 +2624,18 @@ Class "Currency"
     Branch
     BaseType "Crusader's Exalted Orb"
     SetTextColor 185 30 30
-    MinimapIcon 1 Brown Diamond
     Continue
     Branch
     BaseType "Hunter's Exalted Orb"
     SetTextColor 155 250 100
-    MinimapIcon 1 Brown Diamond
     Continue
     Branch
     BaseType "Warlord's Exalted Orb"
     SetTextColor 85 115 255
-    MinimapIcon 1 Brown Diamond
     Continue
     Branch
     BaseType "Redeemer's Exalted Orb"
     SetTextColor 40 40 150
-    MinimapIcon 1 Brown Diamond
     Continue
 
 Show
@@ -2474,6 +2644,7 @@ Show
 	SetBorderColor 200 50 200
 	MinimapIcon 0 Purple Diamond
     PlayAlertSoundPositional 3 300 # Drop - Uncommon
+	PlayEffect Purple
 	ModFontSize + 4
 
 Show
@@ -2527,20 +2698,21 @@ SetOption $Divine dropdown [Show] [Hide] [Remove] # What visibility do you want 
 
 SetOption $DivineSmallStack dropdown [Show] [Hide] [Remove] # What visibility do you want SMALL stacks of Divine Orbs to have?
 
-SetOption $DivineSmallStackSizeMod input [+ 4] # How much larger should SMALL stacks of Divine Orbs be?
+SetOption $DivineSmallStackSizeMod input [+ 6] # How much larger should SMALL stacks of Divine Orbs be?
 
 SetOption $DivineLargeStack dropdown [Show] [Hide] [Remove] # What visibility do you want LARGE stacks of Divine Orbs to have?
 
-SetOption $DivineLargeStackSizeMod input [+ 6] # How much larger should LARGE stacks of Divine Orbs be?
+SetOption $DivineLargeStackSizeMod input [+ 8] # How much larger should LARGE stacks of Divine Orbs be?
 
 SetOption $DivineDropOff slider [100] [1] [100] # At what AreaLevel do you want Divine Orbs to hide? This overrides the above visibility options.
 
 $Divine
 Class Currency
 BaseType "Divine Orb"
-SetBackgroundColor 130 175 80
+SetBackgroundColor 80 195 85 255
+MinimapIcon 1 Orange Diamond
 PlayEffect Orange
-ModFontSize + 2
+ModFontSize + 6
 Continue
 Branch
 StackSize = 1
@@ -3124,6 +3296,8 @@ Class Currency
 BaseType "Gemcutter's Prism"
 SetBackgroundColor 10 30 20
 PlayAlertSoundPositional 3 300 # Drop - Uncommon
+MinimapIcon 2 Blue Diamond
+PlayEffect Blue Temp
 ModFontSize + 2
 Continue
 Branch
@@ -3210,7 +3384,7 @@ Show
 Class Currency
 BaseType "Fusing" "Jeweller's" "Binding" "Chromatic Orb"
 SetBorderColor 155 0 50
-MinimapIcon 0 Yellow Diamond
+MinimapIcon 2 Yellow Diamond
 PlayEffect Yellow Temp
 PlayAlertSoundPositional 3 300 # Drop - Uncommon
 SetFontSize $SocketOrbSize
@@ -3389,7 +3563,7 @@ SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $EmptyLine
 
-SetOption $FlaskOrbSize slider [30] [18] [45] # What do you want the base size of Instilling and Enkindling orbs to be? This is adjusted by stack size.
+SetOption $FlaskOrbSize slider [32] [18] [45] # What do you want the base size of Instilling and Enkindling orbs to be? This is adjusted by stack size.
 
 SetOption $FlaskOrbSmallStack slider [2] [2] [19] # What do you consider a SMALL stack of Flask orbs?
 
@@ -3425,7 +3599,7 @@ BaseType "Enkindling"
 Continue
 Branch
 StackSize = 1
-SetTextColor 40 110 110
+SetTextColor 50 115 115
 Continue
 Branch
 StackSize >= $FlaskOrbSmallStack
@@ -3464,7 +3638,7 @@ BaseType "Instilling"
 Continue
 Branch
 StackSize = 1
-SetTextColor 110 140 40
+SetTextColor 115 145 45
 Continue
 Branch
 StackSize >= $FlaskOrbSmallStack
@@ -3552,7 +3726,7 @@ SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $EmptyLine
 
-SetOption $MapOrbSize slider [36] [18] [45] # What do you want the base size of Cartographer's Chisels, Harbinger's Orbs, Orb of Horizons, Ritual Splinters and Vessels, Sextants, Compasses, and Scouting Reports to be? This is adjusted by stack size.
+SetOption $MapOrbSize slider [36] [18] [45] # What do you want the base size of Cartographer's Chisels, Harbinger's Orbs, Orb of Horizons, Ritual Splinters and Vessels, Sextants, and Scouting Reports to be? This is adjusted by stack size.
 
 SetOption $MapOrbSmallStack slider [2] [2] [19] # What do you consider a SMALL stack of Mapping orbs?
 
@@ -3562,12 +3736,26 @@ SetOption $MapOrbStackDropOff slider [1] [1] [40] # What do you consider "too fe
 
 Show
 Class Currency
-BaseType "Cartographer's Chisel" "Harbinger's" "Horizons" "Ritual Vessel" "Ritual Splinter" "Sextant" "Surveyor's Compass" "Charged Compass" "Scouting Report"
+BaseType "Cartographer's Chisel" "Harbinger's" "Horizons" "Ritual Vessel" "Ritual Splinter" "Sextant" "Scouting Report"
 SetBorderColor 55 150 55
-MinimapIcon 0 Yellow Diamond
-PlayEffect Orange Temp
+MinimapIcon 1 Yellow Diamond
+PlayEffect Yellow Temp
 SetFontSize $MapOrbSize
 PlayAlertSoundPositional 3 300 # Drop - Uncommon
+Continue
+
+Show
+BaseType "Compass"
+SetBorderColor 185 245 100
+SetFontSize 34
+MinimapIcon 2 Green Diamond
+Continue
+
+Show
+BaseType "Charged Compass"
+SetBorderColor 185 245 100
+SetTextColor 50 255 50
+ModFontSize + 6
 Continue
 
 SetOption $Chisel dropdown [Show] [Hide] [Remove] # What visibility do you want Chisels to have? This affects solitary orbs.
@@ -3609,6 +3797,47 @@ Continue
 Hide
 BaseType "Cartographer's Chisel"
 AreaLevel >= $ChiselDropOff
+StackSize <= $MapOrbStackDropOff
+Continue
+
+SetOption $AwakenedSextant dropdown [Show] [Hide] [Remove] # What visibility do you want Awakened Sextants to have? This affects solitary orbs.
+
+SetOption $AwakenedSextantSmallStack dropdown [Show] [Hide] [Remove] # What visibility do you want SMALL stacks of Awakened Sextants to have?
+
+SetOption $AwakenedSextantSmallStackSizeMod input [+ 1] # How much larger should SMALL stacks of Awakened Sextants be?
+
+SetOption $AwakenedSextantLargeStack dropdown [Show] [Hide] [Remove] # What visibility do you want LARGE stacks of Awakened Sextants to have?
+
+SetOption $AwakenedSextantLargeStackSizeMod input [+ 3] # How much larger should LARGE stacks of Awakened Sextants be?
+
+SetOption $AwakenedSextantDropOff slider [100] [1] [100] # At what AreaLevel do you want Awakened Sextants to hide? This overrides the above visibility options.
+
+$AwakenedSextant
+Class Currency
+BaseType "Awakened Sextant"
+Continue
+Branch
+StackSize = 1
+SetTextColor 185 125 30
+Continue
+Branch
+StackSize >= $MapOrbSmallStack
+SetTextColor 225 145 60
+PlayEffect Yellow
+ModFontSize $AwakenedSextantSmallStackSizeMod
+SwitchTo $AwakenedSextantSmallStack
+Continue
+Branch
+StackSize >= $MapOrbLargeStack
+SetTextColor 255 165 80
+PlayEffect Yellow
+ModFontSize $AwakenedSextantLargeStackSizeMod
+SwitchTo $AwakenedSextantLargeStack
+Continue
+
+Hide
+BaseType "Awakened Sextant"
+AreaLevel >= $AwakenedSextantDropOff
 StackSize <= $MapOrbStackDropOff
 Continue
 
@@ -3684,6 +3913,7 @@ Branch
 StackSize >= $MapOrbLargeStack
 SetTextColor 180 125 210
 PlayEffect Green
+PlayAlertSound 1 300 # Drop - Rare
 ModFontSize $HarbingerLargeStackSizeMod
 SwitchTo $HarbingerLargeStack
 Continue
@@ -3752,59 +3982,54 @@ SetTab [Treasure: Endgame Currency]
 Show
     BaseType "Tainted"
     Class "Stackable Currency"
-    SetBackgroundColor 185 20 30 215
-    SetBorderColor 255 50 20
+    SetBackgroundColor 185 35 55 225
+    SetBorderColor 255 60 35
     SetFontSize 32
     MinimapIcon 2 Red Diamond
-PlayAlertSoundPositional 3 300 # Drop - Uncommon
-Continue
+    PlayEffect Red Temp
+    PlayAlertSoundPositional 3 300 # Drop - Uncommon
+	Continue
 
 Show
     BaseType "Tainted Blessing" 
+	SetTextColor 100 180 135
 Continue
 
-
+Show
+    BaseType "Tainted Blacksmith's Whetstone" "Tainted Armourer's Scrap"
+Continue
+   
+Show
+    BaseType "Tainted Chromatic Orb"
+Continue
+    
+Show
+    BaseType "Tainted Chaos Orb"
+Continue
+   
 Show
     BaseType "Tainted Orb of Fusing" "Tainted Jeweller's Orb"
     ModFontSize + 2
     MinimapIcon 1 Red Diamond
 Continue
 
-
 Show
     BaseType "Tainted Exalted Orb"
     ModFontSize + 4
-    MinimapIcon 0 Red Diamond
+    MinimapIcon 0 Orange Diamond
+    PlayEffect Orange
 PlayAlertSoundPositional 1 300 # Drop - Rare
-Continue
+Continue  
 
-    
 Show
     BaseType "Tainted Mythic Orb"
     SetTextColor 50 0 0
     ModFontSize + 6
-    PlayEffect Orange
-    MinimapIcon 0 Red Diamond
+    PlayEffect Brown
+    MinimapIcon 0 Brown Diamond
 PlayAlertSoundPositional 1 300 # Drop - Rare
 Continue
 
-    
-Show
-    BaseType "Tainted Blacksmith's Whetstone" "Tainted Armourer's Scrap"
-Continue
-
-    
-Show
-    BaseType "Tainted Chromatic Orb"
-Continue
-
-    
-Show
-    BaseType "Tainted Chaos Orb"
-    PlayEffect Orange
-Continue
-
-    
 Show
     BaseType "Tainted Divine Teardrop"
     SetTextColor 150 250 50
@@ -3822,6 +4047,7 @@ Show
     SetBackgroundColor 50 110 190 235
     MinimapIcon 2 White Diamond
     PlayAlertSoundPositional 12 300 # League Currency
+	PlayEffect Blue Temp
     Continue
     
 Show
@@ -3830,6 +4056,7 @@ Show
     PlayEffect Red
     SetFontSize 35
     MinimapIcon 1 Yellow Diamond
+	PlayEffect Yellow
     Continue
     
 Show
@@ -3877,6 +4104,7 @@ Show
     Class "Stackable Currency"
     BaseType "Deafening Essence"
     SetFontSize 42
+	PlayEffect Orange
     Continue
     
 Show
@@ -3884,8 +4112,8 @@ Show
     BaseType "Essence of Delirium" "Essence of Hysteria" "Essence of Insanity" "Essence of Horror"
     SetBorderColor 210 80 190
     SetFontSize 45
-    MinimapIcon 1 Orange Diamond
-    PlayEffect Brown 
+    MinimapIcon 2 Orange Diamond
+    PlayEffect Orange 
     PlayAlertSoundPositional 3 300 # Drop - Uncommon
     Continue
     
@@ -4597,14 +4825,16 @@ Show
 
 Show
     BaseType "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll"
-    MinimapIcon 0 Yellow Diamond
+    MinimapIcon 1 Yellow Diamond
+PlayEffect Yellow
     SetBorderColor 20 160 220
     PlayAlertSoundPositional 1 300 # Drop - Rare
     Continue
     
 Show
     BaseType "Facetor's Lens" "Infused Engineer's Orb" "Farric Lure" "Saqawine Lure" "Fenumal Lure" "Craicic Lure"
-    MinimapIcon 0 Blue Diamond
+    MinimapIcon 1 Blue Diamond
+PlayEffect Blue
     SetTextColor 20 160 220
     SetBorderColor 20 160 220
     PlayAlertSoundPositional 3 300 # Drop - Uncommon
@@ -4632,6 +4862,7 @@ Show
 	BaseType "Lifeforce"
 	SetBorderColor 120 255 140
 	MinimapIcon 1 Blue Diamond
+	SetFontSize 34
 	PlayEffect Blue
 	Continue
 
@@ -4657,7 +4888,7 @@ Show
     Continue
     Branch
     BaseType "Midnight"
-    SetTextColor 140 40 80
+    SetTextColor 30 0 0
     SetFontSize 36
     SetBorderColor 120 30 30
     MinimapIcon 0 Grey Moon
@@ -4675,7 +4906,7 @@ Show
     Branch
     BaseType "Ignorance"
     SetBorderColor 0 120 120
-    SetTextColor 210 120 140
+    SetTextColor 110 220 140
     MinimapIcon 0 White Moon
     Continue
     Branch
@@ -4730,8 +4961,8 @@ Show
 Show
     Class "Map Fragments"
     SetTextColor 255 255 255
-    MinimapIcon 1 Blue Moon
-    PlayEffect Orange
+    MinimapIcon 1 Yellow Moon
+    PlayEffect Yellow
     PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Branch
     Continue
@@ -4762,17 +4993,17 @@ Show
     SetBorderColor 255 155 155
     MinimapIcon 1 Red Moon
     ModFontSize + 15
-    PlayEffect Orange
+    PlayEffect Red
     PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Continue
 
 Show
     BaseType "Crescent Splinter"
-	SetTextColor 80 40 240
+	SetTextColor 95 55 255
     SetBackgroundColor 20 0 40 200
     SetFontSize 42
     MinimapIcon 2 Red Diamond
-    PlayEffect Orange
+    PlayEffect Red
     PlayAlertSoundPositional 1 300 # Drop - Rare
     Continue
 
@@ -4781,7 +5012,7 @@ Show
     ModFontSize + 10
     MinimapIcon 0 Red Moon
     SetBackgroundColor 20 20 90 240
-    PlayEffect Orange
+    PlayEffect Red
     PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Continue
 
@@ -4791,7 +5022,7 @@ Show
     SetTextColor 40 0 80
     SetBackgroundColor 20 80 60 235
     SetBorderColor 90 60 220
-    MinimapIcon 1 Red Moon
+    MinimapIcon 1 Orange Moon
     ModFontSize + 15
     PlayEffect Orange
     PlayAlertSoundPositional 10 300 # Map Fragments - Rare
@@ -4805,7 +5036,7 @@ Show
     SetBorderColor 80 80 210
     MinimapIcon 1 Red Moon
     ModFontSize + 15
-    PlayEffect Orange
+    PlayEffect Red
     PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Continue
 
@@ -4815,7 +5046,7 @@ Show
     SetTextColor 120 20 60
     SetBackgroundColor 40 30 20 235
     SetBorderColor 180 50 90
-    MinimapIcon 1 Red Moon
+    MinimapIcon 1 Orange Moon
     ModFontSize + 15
     PlayEffect Orange
     PlayAlertSoundPositional 10 300 # Map Fragments - Rare
@@ -4829,7 +5060,7 @@ Show
     SetBorderColor 250 80 120
     MinimapIcon 1 Red Moon
     ModFontSize + 15
-    PlayEffect Orange
+    PlayEffect Red
     PlayAlertSoundPositional 10 300 # Map Fragments - Rare
     Continue
 
@@ -4919,7 +5150,6 @@ Show
     Class "Map Fragments" 
     BaseType "Reliquary Scarab"
     SetBorderColor 90 20 0
-    PlayAlertSoundPositional 13 300 # Map Fragments - Pinnacle
     Continue
     
 Show
@@ -4953,14 +5183,14 @@ Show
 Show
     Class "Stackable Currency"
     BaseType "Blessing of"
-    MinimapIcon 2 Red Diamond
-    PlayEffect Orange
+    MinimapIcon 2 Yellow Diamond
+    PlayEffect Yellow
     Continue
     
 Show
     BaseType "Splinter of Xoph" 
     SetTextColor 255 50 80
-    MinimapIcon 2 Yellow Diamond
+    MinimapIcon 1 Yellow Diamond
     PlayEffect Yellow
     Continue
  
@@ -5001,35 +5231,35 @@ Show
 Show
     BaseType "of Uul-Netol" 
     SetTextColor 115 155 155
-    MinimapIcon 1 Orange Diamond
-    PlayEffect Orange
+    MinimapIcon 1 Yellow Diamond
+    PlayEffect Yellow
     Continue
     
 Show
     BaseType "Uul-Netol's"
     SetTextColor 115 155 155
-    MinimapIcon 1 Orange Raindrop
-    PlayEffect Orange
+    MinimapIcon 1 Yellow Raindrop
+    PlayEffect Yellow
     Continue    
     
 Show
     BaseType "Blessing of Uul-Netol"
-    MinimapIcon 1 Brown Diamond
-    PlayEffect Brown
+    MinimapIcon 1 Yellow Diamond
+    PlayEffect Yellow
     Continue
     
 Show
     BaseType "of Chayula"
     SetTextColor 170 60 220
-    MinimapIcon 0 Orange Diamond
-    PlayEffect Orange
+    MinimapIcon 0 Brown Diamond
+    PlayEffect Brown
     Continue  
     
 Show
     BaseType  "Chayula's"
     SetTextColor 170 60 220
     MinimapIcon 0 Brown Raindrop
-    PlayEffect Orange
+    PlayEffect Brown
     Continue   
     
 Show
@@ -5042,23 +5272,22 @@ Show
 Show
     BaseType "Breachstone"
     SetBackgroundColor 55 0 80 235
+    MinimapIcon 2 Red Moon
+    PlayEffect Red
     Continue
     
 Show
     BaseType "Charged Breachstone"
     SetBorderColor 60 60 255
-    MinimapIcon 1 Yellow Moon
-    PlayEffect Yellow
     PlayAlertSoundPositional 10 300 # Map Fragments - Rare
+    ModFontSize + 4
     Continue
     
 Show
     BaseType "Enriched Breachstone"
     SetBorderColor 255 220 110
-    MinimapIcon 1 Orange Moon
-    PlayEffect Orange
     PlayAlertSoundPositional 10 300 # Map Fragments - Rare
-    ModFontSize + 2
+    ModFontSize + 4
     Continue
     
 Show
@@ -5067,7 +5296,7 @@ Show
     MinimapIcon 1 Brown Moon
     PlayEffect Brown
     PlayAlertSoundPositional 10 300 # Map Fragments - Rare
-    ModFontSize + 4
+    ModFontSize + 6
     Continue
 
 Show
@@ -5076,7 +5305,7 @@ Show
     MinimapIcon 0 Brown Moon
     PlayEffect Brown
     PlayAlertSoundPositional 10 300 # Map Fragments - Rare
-    ModFontSize + 8
+    ModFontSize + 6
   
 Show
 	BaseType "Reliquary Key"
@@ -5168,6 +5397,7 @@ Show
 	BaseType "Polished Ambush Scarab" "Polished Elder Scarab" "Polished Harbinger Scarab" "Polished Reliquary Scarab" "Polished Shaper Scarab" "Polished Torment Scarab" "Rusted Ambush Scarab" "Rusted Breach Scarab" "Rusted Cartography Scarab" "Rusted Harbinger Scarab" "Rusted Metamorph Scarab" "Rusted Reliquary Scarab" "Rusted Shaper Scarab" "Rusted Torment Scarab" 
 	SetTextColor 235 185 113
     PlayAlertSoundPositional 10 300 # Map Fragments - Rare
+	PlayEffect Yellow
 	Continue
 
 Show
@@ -5175,6 +5405,7 @@ Show
 	BaseType "Winged" "Gilded Divination Scarab"
 	SetTextColor 255 215 185
     PlayAlertSoundPositional 1 300 # Drop - Rare
+	PlayEffect Orange
 	Continue
 
 Show
@@ -5206,6 +5437,8 @@ SetOption $OutdatedMaps switch [Show] [Remove] # Do you want to see outdated map
 Show
     Class "Maps"
     PlayAlertSoundPositional 2 300 # Maps
+	PlayEffect White
+	SetFontSize 36
       Continue
 	Branch
     MapTier < 6
@@ -5217,19 +5450,25 @@ Show
     MapTier >= 6
     SetBorderColor 0 0 255
     MinimapIcon 1 Yellow Square
+	PlayEffect Blue
+	ModFontSize + 2
       Continue
 	Branch
     MapTier < 16
     MapTier >= 11
     SetBorderColor 255 255 0
     MinimapIcon 1 Red Square
+	PlayEffect Yellow
     PlayAlertSoundPositional 4 300 # Maps - High End
+	ModFontSize + 4
       Continue
 	Branch
     MapTier >= 16
     SetBorderColor 255 0 0
     PlayAlertSoundPositional 13 300 # Map Fragments - Pinnacle
     MinimapIcon 0 Orange Square
+	PlayEffect Red
+	ModFontSize + 8
 	Continue
 
 Show
@@ -5238,22 +5477,27 @@ Show
 	MinimapIcon 2 Grey Square
       Continue
 	Branch
-    AreaLevel > 82
+    AreaLevel > 84
     MapTier <= 14
     MinimapIcon 2 Red Square
+	PlayEffect Yellow Temp
     SwitchTo $OutdatedMaps
       Continue
 	Branch
-    AreaLevel > 78
+    AreaLevel > 79
     MapTier <= 10
     MinimapIcon 2 Yellow Square
+	PlayEffect Blue Temp
     ModFontSize - 2
+	PlayAlertSound None
     SwitchTo $OutdatedMaps
       Continue
 	Branch
-    AreaLevel > 73
+    AreaLevel > 75
     MapTier <= 5
     MinimapIcon 2 White Square
+	PlayEffect White Temp
+	PlayAlertSound None
     ModFontSize - 4
     SwitchTo $OutdatedMaps
       Continue
@@ -5285,20 +5529,26 @@ Show
 	BaseType "Phoenix" "Minotaur" "Hydra" "Chimera"
 	SetBackgroundColor 60 40 20
 	MinimapIcon 1 Brown Square
-    PlayAlertSoundPositional 1 300 # Drop - Rare
+	PlayEffect Brown
+    PlayAlertSoundPositional 1 300 # Drop - Rare	
+	ModFontSize + 6
 	Continue
 
 Show
 	BlightedMap True
 	SetBackgroundColor 100 40 30
 	MinimapIcon 1 Purple Square
+	PlayEffect Purple
     PlayAlertSoundPositional 4 300 # Maps - High End
+	ModFontSize + 6
 	Continue
 
 Show
 	UberBlightedMap True
 	SetBackgroundColor 155 70 40
 	MinimapIcon 0 Purple Square
+	PlayEffect Purple
+	ModFontSize + 10
 	Continue
 
 # Kirac Reports
@@ -5307,6 +5557,7 @@ Show
 	BaseType "Scouting Report"
 	SetBackgroundColor 0 50 30 200
 	MinimapIcon 2 Green Square
+	PlayEffect Green
     PlayAlertSoundPositional 7 300 # Quest Item
 	Continue
 
@@ -5327,6 +5578,7 @@ ModFontSize + 3
 Show
     Class Currency
     BaseType "Oil"
+	PlayEffect White
     SetBackgroundColor 180 145 50 235
     SetTextColor 35 85 40
     Continue
@@ -5346,13 +5598,16 @@ Show
 	PlayEffect Brown
 	SetTextColor 155 185 255
     PlayAlertSoundPositional 1 300 # Drop - Rare
+	ModFontSize + 8
 
 Show
     Class Currency
     BaseType "Oil Extractor"
     SetBackgroundColor 140 115 50 255
-    SetTextColor 120 40 40
-	MinimapIcon 2 Blue Diamond
+    SetTextColor 0 0 0
+	MinimapIcon 1 Yellow Diamond
+	PlayAlertSoundPositional 3 300 # Drop - Uncommon
+	ModFontSize + 5
 
 Show
 	BaseType "Golden Oil" "Opalescent Oil" "Silver Oil"
@@ -5416,6 +5671,15 @@ Show
     Continue
 
 Show
+	Class Map
+    HasInfluence "Elder" "Shaper" "Redeemer" "Crusader" "Warlord" "Hunter"
+    PlayEffect Purple
+    MinimapIcon 1 Purple Square
+    SetFontSize 38
+    PlayAlertSoundPositional 14 300 # Special Base
+    Continue
+
+Show
 	BaseType "Karui Emblem"
 	SetTextColor 40 10 90
 	SetBackgroundColor 190 70 20 255
@@ -5427,7 +5691,7 @@ Show
     Class "Currency"
     BaseType "Karui Splinter" "Maraketh Splinter" "Templar Splinter" "Eternal Empire Splinter" "Vaal Splinter"
     MinimapIcon 2 Yellow Diamond
-    PlayEffect Yellow
+    PlayEffect Orange Temp
     Continue
 
 Show
@@ -5498,8 +5762,8 @@ Show
 	SetTextColor 50 50 90
 	SetBackgroundColor 240 240 220 235
 	SetBorderColor 175 96 37
-	MinimapIcon 0 Orange Moon
-	PlayEffect Orange
+	MinimapIcon 0 Red Moon
+	PlayEffect Red
     PlayAlertSoundPositional 13 300 # Map Fragments - Pinnacle
 	ModFontSize + 5
 
@@ -5507,7 +5771,7 @@ Show
 	BaseType "Delirium Orb" "Simulacrum Splinter"
 	SetTextColor 0 0 0
 	SetBackgroundColor 200 200 200 235
-	PlayEffect Blue
+	PlayEffect Yellow
 	MinimapIcon 1 Yellow Diamond
     PlayAlertSoundPositional 3 300 # Drop - Uncommon
 	Continue
@@ -5530,32 +5794,32 @@ Show
    
 Show
     HasInfluence "Elder"
-	SetBackgroundColor 70 0 170
+	SetTextColor 90 20 220
     Continue
     
 Show
     HasInfluence "Shaper"
-	SetBackgroundColor 20 110 105
+	SetTextColor 30 130 125
     Continue
  
 Show
     HasInfluence "Redeemer"
-	SetBackgroundColor 40 40 150
+	SetTextColor 150 80 100
     Continue
     
 Show
     HasInfluence "Crusader"
-	SetBackgroundColor 185 30 30
+	SetTextColor 185 30 30
     Continue
      
 Show
     HasInfluence "Hunter"
-	SetBackgroundColor 70 120 40
+	SetTextColor 155 250 100
     Continue
  
 Show
     HasInfluence "Warlord"
-	SetBackgroundColor 115 70 40
+	SetTextColor 85 115 255
     Continue
 
 
@@ -5563,36 +5827,40 @@ Show
 
 Show
 	HasSearingExarchImplicit >= 1
-	SetBackgroundColor 120 40 10 220
+	SetTextColor 120 40 10 220
     PlayAlertSoundPositional 14 300 # Special Base
 	Continue
 
 Show
 	HasEaterOfWorldsImplicit >= 1
-	SetBackgroundColor 10 40 120 220
+	SetTextColor 10 40 120 220
     PlayAlertSoundPositional 14 300 # Special Base
 	Continue
 
 Show
 	HasSearingExarchImplicit = 5
-	SetBackgroundColor 140 40 10 255
+	SetTextColor 140 40 10 255
+	PlayEffect Purple
 	Continue
 
 Show
 	HasEaterOfWorldsImplicit = 5
-	SetBackgroundColor 10 40 140 255
+	SetTextColor 10 40 140 255
+	PlayEffect Purple
 	Continue
 
 Show
 	HasSearingExarchImplicit = 6
 	HasEaterOfWorldsImplicit = 4
-	SetBackgroundColor 140 40 140 220
+	SetTextColor 140 40 140 220
+	PlayEffect Red
 	Continue
 
 Show
 	HasSearingExarchImplicit = 4
 	HasEaterOfWorldsImplicit = 6
-	SetBackgroundColor 140 40 140 220
+	SetTextColor 140 40 140 220
+	PlayEffect Red
 	Continue
 
 SetTab [Stuff: Leagues]
@@ -5601,7 +5869,7 @@ Show
     Class "Currency"
     BaseType "Vial of"
     SetTextColor 255 110 50
-    MinimapIcon 2 Blue Diamond
+    MinimapIcon 1 Blue Diamond
     Continue
 
 # T1 Vials
@@ -5623,13 +5891,14 @@ Show
 Show
     BaseType "Vial of Dominance" "Vial of Fate" "Vial of the Ritual"
 	SetBackgroundColor 40 0 10 235
-	MinimapIcon 2 Yellow Diamond
+	MinimapIcon 1 Yellow Diamond
+	PlayEffect Yellow
 
 Show
     Sockets >= D
     SetTextColor 90 80 255
-    MinimapIcon 2 Blue Diamond
-    PlayEffect Blue
+    MinimapIcon 1 Purple Circle
+    PlayEffect Purple
     PlayAlertSoundPositional 14 300 # Special Base
     Continue 
     
@@ -5678,8 +5947,9 @@ Show
 	Class "Divination"
 	SetTextColor 80 110 230
     	MinimapIcon 1 Purple Diamond
-	SetFontSize 32
+	SetFontSize 35
     PlayAlertSoundPositional 12 300 # League Currency
+	PlayEffect Purple Temp
 	Continue
 	
 Show 
@@ -5688,8 +5958,9 @@ Show
 	SetFontSize 45
 	SetTextColor 255 70 125
 	SetBorderColor 120 60 255
-    	MinimapIcon 0 Purple Diamond
+    	MinimapIcon 0 Brown Diamond
     PlayAlertSoundPositional 1 300 # Drop - Rare
+	PlayEffect Red
 	ModFontSize + 10
 	SwitchTo $T0Cards
 		
@@ -5699,7 +5970,8 @@ Show
 	SetFontSize 40
 	SetTextColor 150 150 255
 	SetBorderColor 110 110 255
-    	MinimapIcon 1 Purple Diamond
+    	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
     PlayAlertSoundPositional 3 300 # Drop - Uncommon
 	ModFontSize + 6
 	SwitchTo $T1Cards
@@ -5710,18 +5982,10 @@ Show
 	SetFontSize 36
 	SetTextColor 120 80 180
 	SetBorderColor 0 0 255
-    	MinimapIcon 2 Purple Diamond
+    	MinimapIcon 1 Yellow Diamond
+	PlayEffect Yellow
 	ModFontSize + 4
 	SwitchTo $T2Cards
-
-Remove
-	Class "Divination" # NEW UNSORTED CARDS
-	BaseType == "Altered Perception" "Further Invention" "The Brawny Battle Mage" "A Fate Worse Than Death" "The Destination" "Rebirth and Renewal" "The Forward Gaze" "Home" "The Dungeon Master" "From Bone to Ashes" "Darker Half"
-	SetTextColor 120 80 250
-	SetBorderColor 0 0 255
-    	MinimapIcon 1 Purple Diamond
-	ModFontSize + 8
-	# SwitchTo $NewCards
 	
 Show
 	Class "Divination" # High Value Currency Drops
@@ -5729,7 +5993,9 @@ Show
 	SetFontSize 30
 	SetTextColor 190 140 50
 	SetBorderColor 50 50 255
-    	MinimapIcon 1 Purple Diamond
+    	MinimapIcon 0 Green Diamond
+	PlayEffect Green    
+	PlayAlertSoundPositional 3 300 # Drop - Uncommon
 	ModFontSize + 2
 	SwitchTo $HVCurrencyCards
 
@@ -5739,7 +6005,8 @@ Show
 	SetFontSize 30
 	SetTextColor 150 110 10
 	SetBorderColor 50 50 215
-    	MinimapIcon 2 Purple Diamond
+    	MinimapIcon 2 White Diamond
+	PlayEffect White Temp
 	ModFontSize - 2
 	SwitchTo $LVCurrencyCards
 	
@@ -5749,7 +6016,8 @@ Show
 	SetFontSize 28
 	SetBorderColor 20 0 40	
 	SetTextColor 110 110 160
-    	MinimapIcon 2 Purple Diamond
+    	MinimapIcon 1 Blue Diamond
+	PlayEffect Blue
 	SwitchTo $T3Cards
 
 Show
@@ -5758,8 +6026,9 @@ Show
 	SetFontSize 28
 	SetBorderColor 0 0 0	
 	SetTextColor 70 70 130
-    	MinimapIcon 2 Purple Diamond
-	ModFontSize - 2
+    	MinimapIcon 2 Grey Diamond
+	PlayEffect Grey Temp
+	ModFontSize - 4
 	SwitchTo $T4Cards
 
 Show
@@ -5774,6 +6043,7 @@ Show
 Class "Quest Item" "Labyrinth Trinket" "Labyrinth Item" "Heist Target"
 SetBorderColor 40 180 40
 MinimapIcon 1 Green UpsideDownHouse
+PlayEffect Green Temp
     PlayAlertSoundPositional 7 300 # Quest Item
 Continue
 
@@ -5781,6 +6051,7 @@ Show
 BaseType "to the Goddess" "Stone of Passage" "Flashpowder Keg"
 SetBorderColor 40 180 40
 MinimapIcon 1 Green UpsideDownHouse
+PlayEffect Green
     PlayAlertSoundPositional 7 300 # Quest Item
 Continue
 
@@ -5799,6 +6070,7 @@ Continue
 Show
 Class "Labyrinth"
 BaseType "Treasure Key"
+PlayEffect Green
 SetTextColor 230 140 90
 Continue
 
@@ -5807,6 +6079,7 @@ BaseType "Divine Vessel"
 MinimapIcon 2 Green UpsideDownHouse
 SetTextColor 50 140 50
 SetBorderColor 130 80 50
+PlayEffect Green
     PlayAlertSoundPositional 7 300 # Quest Item
 Continue
 
@@ -5815,6 +6088,7 @@ Class "Pantheon Soul"
 MinimapIcon 0 Green UpsideDownHouse
 SetTextColor 100 240 100
 SetBorderColor 130 80 50
+PlayEffect Green
     PlayAlertSoundPositional 7 300 # Quest Item
 Continue
 
@@ -5844,12 +6118,14 @@ Show
 BaseType "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
 SetBorderColor 150 50 150
 MinimapIcon 2 Grey Pentagon
+PlayEffect Grey Temp
 Continue
 
 Show
 Class "Abyss Jewels"
 SetBackgroundColor 20 40 0
 MinimapIcon 2 Blue Pentagon
+PlayEffect Blue Temp
 Continue
 
 Show
@@ -5857,20 +6133,22 @@ BaseType "Cluster Jewel"
 SetBackgroundColor 90 90 90
 MinimapIcon 2 White Pentagon
 PlayAlertSoundPositional 9 300 # Drop - Common
+PlayEffect Yellow Temp
 Continue
 
 Show
 BaseType "Stygian Vise"
 SetBorderColor 30 110 30
-MinimapIcon 2 Purple Circle
+MinimapIcon 2 Orange Circle
 PlayAlertSoundPositional 9 300 # Drop - Common
+PlayEffect Yellow Temp
 Continue
 
 Show
 BaseType "Stygian Vise"
 ItemLevel >= 84
-MinimapIcon 1 Purple Circle
-ModFontSize + 4
+MinimapIcon 0 Purple Circle
+ModFontSize + 6
 Continue
 
 SetTab [Equipment: Accessories]
@@ -5883,11 +6161,8 @@ SetOption $EmptyLine
 SetOption $Jewels switch [Show] [Remove] [Hide] # Would you like specific jewels to get a highlight? If hiding, leave the jewels you don't want to see checked and uncheck your selection.
 SetOption $RareJewelOverride switch [Show] [Remove] [Hide] # Would you like rare jewels to show regardless of type?
 SetOption $JewelTextSize slider [32] [18] [45] # This is the base size of jewels, chromatic jewels are slightly smaller and cluster jewels are slightly larger
-SetOption $ChromaticJewelIconSize slider [2] [0] [2]
 SetOption $ChromaticJewelSelection checkbox ["Crimson"] ["Viridian"] ["Cobalt"] ["Prismatic"]
-SetOption $AbyssJewelIconSize slider [2] [0] [2]
 SetOption $AbyssJewelSelection checkbox ["Searching Eye"] ["Murderous Eye"] ["Hypnotic Eye"] ["Ghastly Eye"]
-SetOption $ClusterJewelIconSize slider [1] [0] [2]
 SetOption $ClusterJewelSelection checkbox ["Small"] ["Medium"] ["Large"]
 
 $Jewels
@@ -5899,18 +6174,15 @@ $Jewels
 Continue
 Branch
 	BaseType $ChromaticJewelSelection 
-	MinimapIcon $ChromaticJewelIconSize Grey Pentagon
 	SetBackgroundColor 60 0 120 220 # Chromatic Jewel
 	ModFontSize - 2
 Continue
 Branch
 	BaseType $AbyssJewelSelection 
-	MinimapIcon $AbyssJewelIconSize Blue Pentagon
 	SetBackgroundColor 60 40 10 220 # Abyssal Jewel
 Continue
 Branch
 	BaseType $ClusterJewelSelection 
-	MinimapIcon $ClusterJewelIconSize Yellow Pentagon
 	SetBackgroundColor 120 120 150 240 # Cluster Jewel
 	ModFontSize + 2
 Continue
@@ -5934,7 +6206,7 @@ PlayAlertSoundPositional 16 300 # Racing
 MinimapIcon 2 Cyan Circle
 Continue
 
-SetOption $Oversoul_Ring switch [Show] [Remove] # A topaz ring is useful in resisting the Oversoul's attacks. Only highlights in a 5 level bracket leading up to the Oversoul.
+SetOption $Oversoul_Ring switch [Show] [Remove] # A topaz ring is useful in resisting the Oversoul and Dominus's attacks. Only highlights in a 5 level bracket leading up to the Oversoul.
 
 $Oversoul_Ring
 AreaLevel >= 18
@@ -5962,7 +6234,7 @@ SetTab [Stuff: Hunts]
 
 SetOption $UniqueHunt switch [Show] [Remove] # Do you want to hunt down particular uniques?
 
-SetOption $MyUniques input ["Leather Belt" "Prismatic Jewel"] # Enter in "quotes" the bases of any uniques you're hoping to drop.
+SetOption $MyUniques input ["Leather Belt" "Heavy Belt" "Prismatic Jewel" "Charan's Sword"] # Enter in "quotes" the bases of any uniques you're hoping to drop.
       
 Show
     Rarity Unique
@@ -5986,7 +6258,7 @@ Show
     DropLevel = 3
     Rarity Unique
     BaseType "Simple Robe" # Tabula
-    PlayEffect White
+    PlayEffect Blue
     SetBorderColor 255 255 255
     MinimapIcon 1 Blue Star
     SetBackgroundColor 80 80 80 255
@@ -6000,7 +6272,7 @@ Show
 	BaseType == "Elegant Round Shield"
 	SetBackgroundColor 230 230 200 255 # T0 Uniques
 	PlayEffect Brown
-	MinimapIcon 0 Red Star
+	MinimapIcon 0 Brown Star
     PlayAlertSoundPositional 1 300 # Drop - Rare
 	ModFontSize + 25
 
@@ -6012,7 +6284,7 @@ $T0Uniques
 	SetBackgroundColor 230 200 200 255 # T0 Uniques
 	SetBorderColor 200 100 50
 	PlayEffect Brown
-	MinimapIcon 0 Red Star
+	MinimapIcon 0 Brown Star
     PlayAlertSoundPositional 1 300 # Drop - Rare
 	ModFontSize + 25
 	Continue
@@ -6024,13 +6296,13 @@ $T1Uniques
     BaseType == "Ambush Mitts" "Archon Kite Shield Piece" "Assassin's Boots" "Blood Raiment" "Branded Kite Shield" "Broadhead Arrow Quiver" "Burnished Spiked Shield" "Butcher Axe" "Coiled Staff" "Crimson Round Shield" "Cutlass" "Deerskin Gloves" "Demon Dagger" "Elegant Foil" "Ezomyte Burgonet" "Ezomyte Dagger" "Ezomyte Spiked Shield" "Ezomyte Tower Shield" "Full Scale Armour" "Gemstone Sword" "Gladiator Plate" "Glorious Plate" "Grand Mana Flask" "Greater Mana Flask" "Highborn Staff" "Hydrascale Boots" "Hydrascale Gauntlets" "Imperial Maul" "Iron Flask" "Iron Sceptre" "Jewelled Foil" "Jingling Spirit Shield" "Judgement Staff" "Karui Maul" "Large Cluster Jewel" "Magistrate Crown" "Nubuck Boots" "Occultist's Vestment" "Pinnacle Tower Shield" "Primal Arrow Quiver" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Ritual Sceptre" "Royal Axe" "Royal Sceptre" "Ruby Flask" "Runic Crown" "Runic Gauntlets" "Runic Helm" "Runic Sabatons" "Saint's Hauberk" "Sapphire Flask" "Sovereign Spiked Shield" "Steel Ring" "Steelwood Bow" "Stygian Vise" "Teak Round Shield" "Throat Stabber" "Timeless Jewel" "Tyrant's Sekhem" "Vaal Spirit Shield" "Vanguard Belt" "Void Axe" "Wereclaw Talisman" "Wyrmscale Boots" "Wyrmscale Doublet" "Zodiac Leather"
 	SetBackgroundColor 95 45 20 220 # T1 Uniques
 	SetBorderColor 220 60 50
-	PlayEffect Brown 
+	PlayEffect Orange 
     PlayAlertSoundPositional 1 300 # Drop - Rare
-	MinimapIcon 1 Brown Star
+	MinimapIcon 1 Orange Star
 	ModFontSize + 8
 	Continue	    
 	
-SetOption $T2Uniques switch [Show] [Hide] # Do you want to hide low tier Uniques?
+SetOption $T2Uniques switch [Show] [Hide] # Do you want to hide mid tier Uniques?
 
 $T2Uniques 
     Rarity Unique
@@ -6088,13 +6360,12 @@ Show
 Show
     Rarity Unique
     Class Jewel
-    BaseType "Cluster Jewel"
-    MinimapIcon 0 Purple Pentagon
+    BaseType "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
+    MinimapIcon 2 Purple Pentagon
 	PlayEffect Purple
-    PlayAlertSoundPositional 1 300 # Drop - Rare
-	ModFontSize + 8
-    Continue
-
+	ModFontSize + 4
+    Continue 
+ 
 Show
     Rarity Unique
     Class Jewel
@@ -6104,7 +6375,17 @@ Show
     PlayAlertSoundPositional 1 300 # Drop - Rare
 	ModFontSize + 6
     Continue
-	
+
+Show
+    Rarity Unique
+    Class Jewel
+    BaseType "Cluster Jewel"
+    MinimapIcon 0 Purple Pentagon
+	PlayEffect Purple
+    PlayAlertSoundPositional 1 300 # Drop - Rare
+	ModFontSize + 8
+    Continue
+
 Show
     Sockets >= AA
 	Rarity Unique
@@ -6119,8 +6400,8 @@ Show
 Show
     SynthesisedItem True # Synthesis Uniques
 	Rarity Unique
-    MinimapIcon 1 Brown Star
-    PlayEffect Brown
+    MinimapIcon 1 Purple Star
+    PlayEffect Purple
 	SetBackgroundColor 80 110 200 255
 	ModFontSize + 8
     PlayAlertSoundPositional 1 300 # Drop - Rare
@@ -6130,8 +6411,9 @@ Show
 	Replica True
 	SetBackgroundColor 100 60 40 250
 	MinimapIcon 1 Purple Star
-	PlayEffect Orange
+	PlayEffect Purple
     PlayAlertSoundPositional 1 300 # Drop - Rare
+	ModFontSize + 6
 	Continue
 
 Show
@@ -6147,16 +6429,9 @@ Show
 	MinimapIcon 0 Purple Star
 	SetBorderColor 100 180 240
     PlayAlertSoundPositional 1 300 # Drop - Rare
+	PlayEffect Purple
 	Continue
 
-Show
-    Rarity Unique
-    Class Jewel
-    BaseType "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
-    MinimapIcon 2 Purple Pentagon
-	PlayEffect Purple
-	ModFontSize + 4
-    Continue  
 
 Show
     Rarity Unique
@@ -6170,12 +6445,55 @@ Show
 Show
     BaseType "Talisman"
     Rarity = Unique
-    PlayEffect Yellow
+    PlayEffect Red
     SetBackgroundColor 90 90 30 200
-    MinimapIcon 2 Orange Star
+    MinimapIcon 2 Red Star
     PlayAlertSoundPositional 1 300 # Drop - Rare
     ModFontSize + 8
     Continue
+
+Show
+    	Rarity Unique
+	MinimapIcon 2 Brown Cross
+    	PlayAlertSoundPositional 1 300 # Drop - Rare
+    	ModFontSize + 10
+Continue
+Branch
+	Sockets = 6
+	SocketGroup < WWWWWW
+	SetBackgroundColor 110 110 140 235
+	MinimapIcon 2 Orange Cross
+Continue
+Branch
+	LinkedSockets = 5
+   	SetBackgroundColor 190 150 100 255
+	MinimapIcon 2 Orange Cross
+Continue
+Branch
+	LinkedSockets = 6
+	SocketGroup < WWWWWW
+	SetBackgroundColor 255 240 240 255
+    	ModFontSize + 10
+Continue
+Branch
+	BaseType "Charan's Sword"
+	SetTextColor 255 120 140
+	SetBackgroundColor 145 120 50 255
+	MinimapIcon 1 Yellow Star
+    	ModFontSize + 5
+Continue
+Branch
+	SocketGroup >= W
+	DropLevel > 3
+	SetBackgroundColor 245 130 130 235
+    	ModFontSize + 10
+Continue
+Branch
+	LinkedSockets = 6
+	SocketGroup >= W
+	DropLevel > 3
+	SetBackgroundColor 255 140 140 255
+    	ModFontSize + 10
 
 $UniqueHunt
 Rarity Unique
@@ -6185,43 +6503,6 @@ MinimapIcon 0 Pink Star
 SetTextColor 220 100 190
     PlayAlertSoundPositional 5 300 # Drop - Build
 Continue
-
-Show
-    Rarity Unique
-	MinimapIcon 2 Brown Cross
-    PlayAlertSoundPositional 1 300 # Drop - Rare
-    ModFontSize + 10
-Continue
-Branch
-	Sockets = 6
-	SocketGroup < WWWWWW
-	SetBackgroundColor 110 110 140 235
-Continue
-Branch
-	LinkedSockets = 5
-   	SetBackgroundColor 190 150 100 255
-Continue
-Branch
-	LinkedSockets = 6
-	SocketGroup < WWWWWW
-	SetBackgroundColor 255 240 240 255
-	MinimapIcon 1 Brown Cross
-    ModFontSize + 15
-Continue
-Branch
-	SocketGroup >= W
-	DropLevel > 3
-	SetBackgroundColor 245 130 130 235
-	MinimapIcon 0 Purple Cross
-    ModFontSize + 10
-Continue
-Branch
-	LinkedSockets = 6
-	SocketGroup >= W
-	DropLevel > 3
-	MinimapIcon 0 Purple Cross
-	SetBackgroundColor 255 140 140 255
-    ModFontSize + 15
 
 Show
 Mirrored True
