@@ -6564,7 +6564,7 @@ Mirrored True
 SetBorderColor 65 130 190
 
 Show
-Fractured True
+FracturedItem True
 SetBorderColor 30 180 85
 
 # LEGACY SECTION
