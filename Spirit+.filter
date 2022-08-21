@@ -29,7 +29,7 @@ SetVar $Belts "Chain Belt" "Rustic Sash" "Heavy Belt" "Leather Belt" "Cloth Belt
 
 SetVar $Rings "Coral Ring" "Iron Ring" "Paua Ring" "Unset Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Diamond Ring" "Gold Ring" "Moonstone Ring" "Two-Stone Ring" "Amethyst Ring" "Prismatic Ring"
 
-SetVar $Quivers "Serrated Arrow Quiver" "Fire Arrow Quiver" "Sharktooth Arrow Quiver" "Feathered Arrow Quiver" "Penetrating Arrow Quiver" "Blunt Arrow Quiver" "Two-Point Arrow Quiver" "Spike-Point Arrow Quiver" "Blazing Arrow Quiver" "Ornate Quiver" "Broadhead Arrow Quiver" "Vile Arrow Quiver" "Heavy Arrow Quiver" "Primal Arrow Quiver"
+SetVar $Quivers "Serrated Arrow Quiver" "Fire Arrow Quiver" "Sharktooth Arrow Quiver" "Feathered Arrow Quiver" "Penetrating Arrow Quiver" "Blunt Arrow Quiver" "Two-Point Arrow Quiver" "Spike-Point Arrow Quiver" "Blazing Arrow Quiver" "Broadhead Arrow Quiver" "Vile Arrow Quiver" "Heavy Arrow Quiver" "Primal Arrow Quiver"
 
 SetVar $Flasks "Life Flask" "Mana Flask" "Hybrid Flask" "Quicksilver Flask" "Bismuth Flask" "Amethyst Flask" "Ruby Flask" "Sapphire Flask" "Topaz Flask" "Gold Flask" "Aquamarine Flask" "Corundum Flask" "Diamond Flask" "Granite Flask" "Jade Flask" "Quartz Flask" "Sulphur Flask" "Basalt Flask" "Silver Flask" "Stibnite Flask"
 
@@ -201,9 +201,9 @@ SetVar $AtlasAmulets "Marble Amulet" "Seaglass Amulet" "Blue Pearl Amulet"
 
 SetVar $AtlasBelts "Vanguard Belt" "Crystal Belt"
 
-SetVar $AtlasRings "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Bone Ring" 
+SetVar $AtlasRings "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
 
-SetVar $AtlasWeapons "Calling Wand" "Convening Wand" "Convoking Wand" "Artillery Quiver"
+SetVar $AtlasWeapons "Convoking Wand" "Artillery Quiver"
 
 # KALANDRA LEAGUE RINGS
 
@@ -526,7 +526,7 @@ SetOption $Weapon_choices checkbox  ["One Hand Maces"] ["Two Hand Maces"] ["One 
 
 SetOption $QuiverUse switch [Remove] [Show] [Hide] # Are you seeking a quiver upgrade? If not, ignore this option.
 
-SetOption $Quiver_choices checkbox ["Serrated Arrow Quiver"] ["Fire Arrow Quiver"] ["Sharktooth Arrow Quiver"] ["Feathered Arrow Quiver"] ["Penetrating Arrow Quiver"] ["Blunt Arrow Quiver"] ["Two-Point Arrow Quiver"] ["Spike-Point Arrow Quiver"] ["Blazing Arrow Quiver"] ["Ornate Quiver"] ["Broadhead Arrow Quiver"] ["Vile Arrow Quiver"] ["Heavy Arrow Quiver"] ["Primal Arrow Quiver"] # Which quivers do you use?
+SetOption $Quiver_choices checkbox ["Serrated Arrow Quiver"] ["Fire Arrow Quiver"] ["Sharktooth Arrow Quiver"] ["Feathered Arrow Quiver"] ["Penetrating Arrow Quiver"] ["Blunt Arrow Quiver"] ["Two-Point Arrow Quiver"] ["Spike-Point Arrow Quiver"] ["Blazing Arrow Quiver"] ["Broadhead Arrow Quiver"] ["Vile Arrow Quiver"] ["Heavy Arrow Quiver"] ["Primal Arrow Quiver"] # Which quivers do you use?
 
 SetTab [Equipment: Armours]
 SetOption $Armour_Info info [For example, toggling on all AR slots, AREV gloves and shields, and ARES Boots.] # You can set your minimum armour rarity and any applicable type/slot combinations that are viable here. You don't have to empty every checkbox to disable a type, just switch the toggle to Remove.
@@ -691,13 +691,6 @@ $Belt_Upgrades
     PlayEffect Pink 
 PlayAlertSoundPositional 5 300 # Drop - Build
     Continue
-
-Show
-	Rarity < Unique
-	AnyEnchantment True
-	MinimapIcon 2 Purple Hexagon
-	SetBorderColor 100 180 240
-	Continue
 
 Show
 Class $Weapons $Armours $Accessories
@@ -1061,9 +1054,9 @@ Continue
 
 SetTab [Equipment: Flasks]
 
-SetOption $UtilityFlasks switch [Remove] [Show] [Hide] # Do you need any Utility flasks?
-SetOption $HideFlasks switch [Remove] [Hide] # Hide Life, Mana, and Hybrid Flasks if chosen.
-SetOption $BannedFlasks checkbox ["Life Flasks"] ["Mana Flasks"] ["Hybrid Flasks"] # Which of these don't you want to see?
+SetOption $UtilityFlasks switch [Remove] [Show] # Do you need any Utility flasks?
+SetOption $HideFlasks switch [Remove] [Hide] # Hide Life, Mana, Hybrid, and Utility Flasks if chosen.
+SetOption $BannedFlasks checkbox ["Life Flasks"] ["Mana Flasks"] ["Hybrid Flasks"] ["Utility Flasks"] # Which of these don't you want to see?
 SetOption $MyFlasks checkbox ["Quicksilver Flask"] ["Bismuth Flask"] ["Stibnite Flask"] ["Amethyst Flask"] ["Ruby Flask"] ["Sapphire Flask"] ["Topaz Flask"] ["Silver Flask"] ["Aquamarine Flask"] ["Diamond Flask"] ["Granite Flask"] ["Jade Flask"] ["Quartz Flask"] ["Sulphur Flask"] ["Basalt Flask"] ["Gold Flask"] ["Corundum Flask"] # Remove flasks from this list until you have the utility flasks you'll use.
 
 Show
@@ -1071,6 +1064,34 @@ Class "Flasks"
 BaseType "Eternal" "Divine" "Hallowed Hybrid" "Iron"
 SetBorderColor 110 140 185
 Continue
+
+
+Show
+    Class "Utility Flasks"
+    MinimapIcon 1 White Raindrop
+    PlayEffect Blue Temp
+    SetBorderColor 0 50 70 200
+    Continue
+
+Hide
+    Class "Utility Flasks"
+    BaseType "Corundum" "Gold" "Aquamarine" "Ruby" "Topaz" "Sapphire" "Quartz" "Diamond"
+    AreaLevel >= $Leveling4L
+	MinimapIcon -1
+	PlayEffect None
+	PlayAlertSound None
+	ModFontSize $ObsoleteEquipmentSizeMod
+	Continue
+
+$UtilityFlasks
+    Class "Utility Flasks"
+    BaseType $MyFlasks
+    MinimapIcon 1 Pink Raindrop
+    PlayEffect Pink Temp
+    SetBackgroundColor 0 50 70 200
+    SetBorderColor 50 150 190
+    PlayAlertSoundPositional 5 300 # Drop - Build
+    Continue
 
 Hide
 Class "Life Flasks"
@@ -1198,21 +1219,6 @@ BaseType "Sacred"
 AreaLevel > 50
 Continue
 
-Show
-    Class "Utility Flasks"
-    MinimapIcon 1 White Raindrop
-    PlayEffect Blue Temp
-    SetBorderColor 0 50 70 200
-    Continue
-
-Hide
-    Class "Utility Flasks"
-    BaseType "Corundum" "Gold" "Aquamarine"
-    AreaLevel >= $Leveling4L
-	MinimapIcon -1
-	ModFontSize $ObsoleteEquipmentSizeMod
-	Continue
-
 $HideFlasks
 	Class $BannedFlasks
 	Rarity < Unique
@@ -1220,16 +1226,6 @@ $HideFlasks
 	PlayAlertSound None
 	ModFontSize $ObsoleteEquipmentSizeMod
 	Continue
-
-$UtilityFlasks
-    Class "Utility Flasks"
-    BaseType $MyFlasks
-    MinimapIcon 1 Pink Raindrop
-    PlayEffect Pink Temp
-    SetBackgroundColor 0 50 70 200
-    SetBorderColor 50 150 190
-    PlayAlertSoundPositional 5 300 # Drop - Build
-    Continue
 
 Show
     Class "Utility Flasks"
@@ -1240,12 +1236,11 @@ Show
 PlayAlertSoundPositional 16 300 # Racing
     Continue
 
-
 SetTab [Equipment: Special Bases]
 
-SetOption $EndgameBases switch [Show] [Hide] # Do you want endgame viable bases to be visible? This acts as a safeguard against reasonable bases becoming outdated due to falling behind on DropLevel as well as a place to add unconventional bases you want to see (you can add them to any of the inputs).
+SetOption $EndgameBases switch [Show] [Hide] # Do you want endgame viable bases to be visible? This acts as a safeguard against reasonable bases becoming outdated due to falling behind on DropLevel as well as a place to add unconventional bases you want to see (you can add them to any of the inputs). NOTE: If hiding Endgame bases, make sure to HIDE off-build items as well or some items that haven't become outdated yet may slip through. These items also retain their yellow circle minimap icon if hidden.
 
-SetOption $BasesInfo info ["Bone Spirit Shield" "Ivory Spirit Shield" "Fossilised Spirit Shield" "Calling Wand" "Convening Wand"] # Here are some common bases to display. Do NOT leave any of the inputs empty, duplicate entries are fine. If you switch this section to HIDE you can use it to target remove bases from view instead.
+SetOption $BasesInfo info ["Bone Spirit Shield" "Ivory Spirit Shield" "Fossilised Spirit Shield" "Calling Wand" "Convening Wand"] # Here are some common bases to display. Do NOT leave any of the inputs empty, duplicate entries are fine and all Inputs affect the same BaseType entry in the filter. If you switch this section to HIDE you can use it to target remove bases from view instead. This section will NOT detect 6L, Enchanted, Influenced, or Unique bases that match your inputs.
 
 SetOption $EmptyLine
 
@@ -1303,12 +1298,15 @@ SetOption $EndgameWand input ["Imbued Wand" "Opal Wand" "Tornado Wand" "Prophecy
 $EndgameBases
 BaseType $EndgameArmour $EndgameEvasion $EndgameEnergyShield $EndgameHybridAREV $EndgameHybridARES $EndgameHybridEVES $Endgame1HHammer $Endgame2HHammer $Endgame1HAxe $Endgame2HAxe $Endgame1HSword $Endgame2HSword $EndgameThrusting $EndgameBow $EndgameClaw $EndgameDagger $EndgameRune $EndgameSceptre $EndgameStaff $EndgameWarstaff $EndgameWand 
 Rarity >= $EndgameBaseRarity
+AnyEnchantment False
+HasInfluence None
+LinkedSockets < 6
 Rarity < Unique
 MinimapIcon 2 Yellow Circle
 Continue
 
 Show
-BaseType "Grasping Mail" "Sacrificial Garb"
+BaseType "Grasping Mail" "Sacrificial Garb" "Ornate Quiver"
 SetBorderColor 200 80 50
 MinimapIcon 2 Purple Circle
 ModFontSize + 4
@@ -1425,6 +1423,10 @@ SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $EmptyLine
 
+Show
+BaseType "Ornate Quiver"
+Continue
+
 SetOption $MarakethBaseChoice input ["Wyrm Mace" "Dragon Mace" "Behemoth Mace" "Morning Star" "Solar Maul" "Coronal Maul" "Etched Hatchet" "Engraved Hatchet" "Runic Hatchet" "Dagger Axe" "Talon Axe" "Fleshripper" "Hook Sword" "Grappler" "Tiger Hook" "Curved Blade" "Lithe Blade" "Exquisite Blade" "Smallsword" "Courtesan Sword" "Dragoon Sword" "Reflex Bow" "Steelwood Bow" "Maraketh Bow" "Double Claw" "Twin Claw" "Gemini Claw" "Prong Dagger" "Trisula" "Sai" "Horned Sceptre" "Stag Sceptre" "Sambar Sceptre" "Crescent Staff" "Moon Staff" "Eclipse Staff" "Pagan Wand" "Heathen Wand" "Profane Wand"] # Which Maraketh bases are valuable to you?
 
 Show
@@ -1467,11 +1469,24 @@ DropLevel <= 59
 AreaLevel >= 72
 Continue
 
+Hide
+BaseType $Maraketh
+Rarity < Rare
+AreaLevel > 70
+PlayEffect None
+MinimapIcon -1
+PlayAlertSound None
+PlayEffect None
+Continue
+
+
 SetOption $AtlasBaseChoices input ["Fugitive Boots" "Two-Toned Boots" "Apothecary's Gloves" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Bone Helmet" "Marble Amulet" "Seaglass Amulet" "Blue Pearl Amulet" "Vanguard Belt" "Crystal Belt" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Convoking Wand" "Artillery Quiver"] # Which Atlas bases are valuable to you?
+
+SetOption $AtlasBaseRarity dropdown [Rare] [Normal] [Magic] [Rare] # At what rarity should atlas bases get a highlight?
 
 Show
 BaseType "Bone Ring" "Calling Wand" "Convening Wand"
-SetBorderColor 190 130 50
+SetBorderColor 190 50 120
 MinimapIcon 2 White Circle
 PlayEffect White Temp
 Continue
@@ -1501,18 +1516,27 @@ PlayEffect None
 PlayAlertSound None
 Continue
 
-Show
+Hide
 BaseType "Convening Wand"
 Rarity < Rare
 AreaLevel >= 50
-SwitchTo Hide
 MinimapIcon -1
 PlayEffect None
 Continue
 
+Hide
+BaseType $AtlasBoots $AtlasGloves $AtlasHelms $AtlasAmulets $AtlasBelts $AtlasRings $AtlasWeapons
+Rarity < $AtlasBaseRarity
+SetBorderColor 190 50 120
+PlayEffect None
+PlayAlertSound None
+Continue
+
 Show
 BaseType $AtlasBaseChoices
-SetBorderColor 190 130 50
+Rarity >= $AtlasBaseRarity
+Rarity < Unique
+SetBorderColor 190 50 120
 MinimapIcon 2 Orange Circle
 PlayEffect Orange Temp
 PlayAlertSoundPositional 5 300 # Drop - Build
@@ -1521,7 +1545,7 @@ Continue
 Show
 BaseType $KalandraRings "Mirrored Tablet"
 SetBorderColor 65 130 190
-MinimapIcon 2 Orange Circle
+MinimapIcon 2 Orange Triangle
 PlayEffect Orange Temp
 PlayAlertSoundPositional 14 300 # Special Base
 ModFontSize + 5
@@ -1646,7 +1670,7 @@ Continue
 
 $SixSockets
 Sockets = 6
-SetBackgroundColor 147 157 137 235
+SetBackgroundColor 155 160 145 255
 MinimapIcon 2 Yellow Cross
 PlayEffect Yellow
 PlayAlertSoundPositional 3 300 # Drop - Uncommon
@@ -1869,8 +1893,61 @@ PlayAlertSoundPositional 9 300 # Drop - Common
 PlayEffect Purple
 Continue
 
+SetOption $CorruptedItems switch [Remove] [Show] # Do you want corruption to add a highlight even if there is no corrupted mod or white socket?
+SetOption $WhiteSockets input [W] # How many white sockets do you consider acceptable? Enter that many W's, up to six.
+
+Show
+Corrupted True
+SetBackgroundColor 50 0 0
+Continue
+Branch
+SetBorderColor 50 0 0
+Continue
+Branch
+SwitchTo $CorruptedItems
+Continue
+
+Show
+Corrupted True
+SocketGroup >= $WhiteSockets
+SetBorderColor 255 255 255
+Continue
+
+Show
+CorruptedMods = 1
+SetBackgroundColor 100 30 0
+PlayAlertSoundPositional 9 300 # Drop - Common
+MinimapIcon 2 Red Hexagon
+PlayEffect Red
+Continue
+
+Show
+CorruptedMods > 1
+SetBackgroundColor 170 50 30
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
+MinimapIcon 1 Red Hexagon
+PlayEffect Red
+Continue
+
+Show
+	Rarity < Unique
+	AnyEnchantment True
+	MinimapIcon 2 Purple Hexagon
+	SetBorderColor 100 180 240
+	Continue
+
+# AFFIXES
+
 Show
 Identified True
+Continue
+
+Show
+Class "Boots"
+HasExplicitMod >=1 "Runner's" "Sprinter's" "Stallion's" "Gazelle's" "Cheetah's" "Hellion's"
+SetBackgroundColor 20 90 70 200
+PlayEffect Cyan
+PlayAlertSoundPositional 16 300 # Racing
 Continue
 
 Show
@@ -1921,56 +1998,6 @@ SetFontSize 32
 PlayEffect Purple Temp
 MinimapIcon 2 Purple Hexagon
 PlayAlertSoundPositional 9 300 # Drop - Common
-Continue
-
-SetOption $CorruptedItems switch [Remove] [Show] # Do you want corruption to add a highlight even if there is no corrupted mod or white socket?
-SetOption $WhiteSockets input [W] # How many white sockets do you consider acceptable? Enter that many W's, up to six.
-
-$CorruptedItems
-Corrupted True
-CorruptedMods < 1
-SetBackgroundColor 50 0 0
-Continue
-
-Show
-Corrupted True
-SocketGroup >= $WhiteSockets
-SetBorderColor 255 255 255
-Continue
-
-Show
-CorruptedMods = 1
-SetBackgroundColor 100 30 0
-PlayAlertSoundPositional 9 300 # Drop - Common
-MinimapIcon 2 Red Hexagon
-PlayEffect Red
-Continue
-
-Show
-CorruptedMods > 1
-SetBackgroundColor 170 50 30
-PlayAlertSoundPositional 3 300 # Drop - Uncommon
-MinimapIcon 1 Red Hexagon
-PlayEffect Red
-Continue
-
-SetTab [Oddities]
-
-Show
-AreaLevel <= $SafetyNet
-Continue
-
-Show
-Rarity Rare
-AreaLevel <= $RareSafetyNet
-Continue
-
-Show
-Class "Boots"
-HasExplicitMod >=1 "Runner's" "Sprinter's" "Stallion's" "Gazelle's" "Cheetah's" "Hellion's"
-SetBackgroundColor 20 90 70 200
-PlayEffect Cyan
-PlayAlertSoundPositional 16 300 # Racing
 Continue
 
 SetTab [Treasure: General Currency]
@@ -5478,14 +5505,14 @@ Show
 	MinimapIcon 2 Grey Square
       Continue
 	Branch
-    AreaLevel > 84
+    AreaLevel >= 84
     MapTier <= 14
     MinimapIcon 2 Red Square
 	PlayEffect Yellow Temp
     SwitchTo $OutdatedMaps
       Continue
 	Branch
-    AreaLevel > 79
+    AreaLevel >= 79
     MapTier <= 10
     MinimapIcon 2 Yellow Square
 	PlayEffect Blue Temp
@@ -5494,7 +5521,7 @@ Show
     SwitchTo $OutdatedMaps
       Continue
 	Branch
-    AreaLevel > 75
+    AreaLevel >= 74
     MapTier <= 5
     MinimapIcon 2 White Square
 	PlayEffect White Temp
@@ -5529,8 +5556,8 @@ Show
 	Class "Map"
 	BaseType "Phoenix" "Minotaur" "Hydra" "Chimera"
 	SetBackgroundColor 60 40 20
-	MinimapIcon 1 Brown Square
-	PlayEffect Brown
+	MinimapIcon 1 Blue Moon
+	PlayEffect Blue
     PlayAlertSoundPositional 1 300 # Drop - Rare	
 	ModFontSize + 6
 	Continue
@@ -6549,3 +6576,14 @@ SetBorderColor 230 190 90
 SetFontSize 45
 PlayEffect Purple
 MinimapIcon 0 Purple Star
+
+SetTab [Oddities]
+
+Show
+AreaLevel <= $SafetyNet
+Continue
+
+Show
+Rarity Rare
+AreaLevel <= $RareSafetyNet
+Continue
