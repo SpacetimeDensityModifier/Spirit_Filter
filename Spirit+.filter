@@ -395,14 +395,28 @@ SetOption $EmptyLine
 
 
 Show
-Class $Weapons $Armours $Accessories $Quivers
+Class $Weapons $Armours $Accessories 
 Rarity < Unique
 ItemLevel >= 80
 SetBorderColor 200 120 235
 Continue
 
 Show
-Class $Weapons $Armours $Accessories $Quivers
+Class $Weapons $Armours $Accessories
+Rarity < Unique
+ItemLevel >= 86
+SetBorderColor 235 120 255
+Continue
+
+Show
+BaseType $Quivers
+Rarity < Unique
+ItemLevel >= 80
+SetBorderColor 200 120 235
+Continue
+
+Show
+BaseType $Quivers
 Rarity < Unique
 ItemLevel >= 86
 SetBorderColor 235 120 255
