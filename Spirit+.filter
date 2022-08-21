@@ -393,6 +393,21 @@ SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $EmptyLine
 
+
+Show
+Class $Weapons $Armours $Accessories $Quivers
+Rarity < Unique
+ItemLevel >= 80
+SetBorderColor 200 120 235
+Continue
+
+Show
+Class $Weapons $Armours $Accessories $Quivers
+Rarity < Unique
+ItemLevel >= 86
+SetBorderColor 235 120 255
+Continue
+
 SetOption $OffBuildItems info [Appearance is not altered by this section.] # This section adjusts the visibility and beam behavior of off build items.
 
 SetOption $OffBuildNormal switch [Hide] [Remove] [Hide] [Show] # This is the up-to-date Normal Equipment ($Weapons+$Armours+Accessories) that is not selected in the Equipment tab. By default the filter doesn't know what your build is, so this is enabled and Equipment is disabled (removed).
@@ -691,13 +706,6 @@ $Belt_Upgrades
     PlayEffect Pink 
 PlayAlertSoundPositional 5 300 # Drop - Build
     Continue
-
-Show
-Class $Weapons $Armours $Accessories
-Rarity Rare
-ItemLevel >= 82
-SetBorderColor 220 100 240
-Continue
 
 SetTab [Oddities]
 
