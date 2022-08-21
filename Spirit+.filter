@@ -1677,7 +1677,6 @@ MinimapIcon -1
 PlayAlertSound None
 Continue
 
-
 SetTab [Treasure: Recipes]
 
 $FiveLinks
@@ -2629,11 +2628,11 @@ SetOption $Exalted dropdown [Show] [Hide] [Remove] # What visibility do you want
 
 SetOption $ExaltedSmallStack dropdown [Show] [Hide] [Remove] # What visibility do you want SMALL stacks of Exalted Orbs to have?
 
-SetOption $ExaltedSmallStackSizeMod input [+ 0] # How much larger should SMALL stacks of Exalted Orbs be?
+SetOption $ExaltedSmallStackSizeMod input [+ 2] # How much larger should SMALL stacks of Exalted Orbs be?
 
 SetOption $ExaltedLargeStack dropdown [Show] [Hide] [Remove] # What visibility do you want LARGE stacks of Exalted Orbs to have?
 
-SetOption $ExaltedLargeStackSizeMod input [+ 2] # How much larger should LARGE stacks of Exalted Orbs be?
+SetOption $ExaltedLargeStackSizeMod input [+ 4] # How much larger should LARGE stacks of Exalted Orbs be?
 
 SetOption $ExaltedDropOff slider [100] [1] [100] # At what AreaLevel do you want Exalted Orbs to hide? This overrides the above visibility options.
 
@@ -2646,7 +2645,6 @@ Continue
 Branch
 StackSize = 1
 SetTextColor 185 150 110
-ModFontSize - 2
 Continue
 Branch
 StackSize >= $VeryRareOrbSmallStack
@@ -3215,11 +3213,11 @@ SetOption $Whetstone dropdown [Show] [Hide] [Remove] # What visibility do you wa
 
 SetOption $WhetstoneSmallStack dropdown [Show] [Hide] [Remove] # What visibility do you want SMALL stacks of Whetstones to have?
 
-SetOption $WhetstoneSmallStackSizeMod input [+ 1] # How much larger should SMALL stacks of Whetstones be?
+SetOption $WhetstoneSmallStackSizeMod input [+ 0] # How much larger should SMALL stacks of Whetstones be?
 
 SetOption $WhetstoneLargeStack dropdown [Show] [Hide] [Remove] # What visibility do you want LARGE stacks of Whetstones to have?
 
-SetOption $WhetstoneLargeStackSizeMod input [+ 3] # How much larger should LARGE stacks of Whetstones be?
+SetOption $WhetstoneLargeStackSizeMod input [+ 2] # How much larger should LARGE stacks of Whetstones be?
 
 SetOption $WhetstoneDropOff slider [74] [1] [100] # At what AreaLevel do you want Whetstones to hide? This overrides the above visibility options.
 
@@ -3230,6 +3228,7 @@ Continue
 Branch
 StackSize = 1
 SetTextColor 125 110 50
+ModFontSize - 2
 Continue
 Branch
 StackSize >= $RefiningOrbSmallStack
@@ -3255,11 +3254,11 @@ SetOption $Scrap dropdown [Show] [Hide] [Remove] # What visibility do you want S
 
 SetOption $ScrapSmallStack dropdown [Show] [Hide] [Remove] # What visibility do you want SMALL stacks of Scraps to have?
 
-SetOption $ScrapSmallStackSizeMod input [+ 1] # How much larger should SMALL stacks of Scraps be?
+SetOption $ScrapSmallStackSizeMod input [+ 0] # How much larger should SMALL stacks of Scraps be?
 
 SetOption $ScrapLargeStack dropdown [Show] [Hide] [Remove] # What visibility do you want LARGE stacks of Scraps to have?
 
-SetOption $ScrapLargeStackSizeMod input [+ 3] # How much larger should LARGE stacks of Scraps be?
+SetOption $ScrapLargeStackSizeMod input [+ 2] # How much larger should LARGE stacks of Scraps be?
 
 SetOption $ScrapDropOff slider [74] [1] [100] # At what AreaLevel do you want Scraps to hide? This overrides the above visibility options.
 
@@ -3270,6 +3269,7 @@ Continue
 Branch
 StackSize = 1
 SetTextColor 165 180 170
+ModFontSize - 2
 Continue
 Branch
 StackSize >= $RefiningOrbSmallStack
@@ -3381,11 +3381,11 @@ SetOption $Engineer dropdown [Show] [Hide] [Remove] # What visibility do you wan
 
 SetOption $EngineerSmallStack dropdown [Show] [Hide] [Remove] # What visibility do you want SMALL stacks of Engineers to have?
 
-SetOption $EngineerSmallStackSizeMod input [+ 2] # How much larger should SMALL stacks of Engineers be?
+SetOption $EngineerSmallStackSizeMod input [+ 0] # How much larger should SMALL stacks of Engineers be?
 
 SetOption $EngineerLargeStack dropdown [Show] [Hide] [Remove] # What visibility do you want LARGE stacks of Engineers to have?
 
-SetOption $EngineerLargeStackSizeMod input [+ 4] # How much larger should LARGE stacks of Engineers be?
+SetOption $EngineerLargeStackSizeMod input [+ 2] # How much larger should LARGE stacks of Engineers be?
 
 SetOption $EngineerDropOff slider [100] [1] [100] # At what AreaLevel do you want Engineers to hide? This overrides the above visibility options.
 
@@ -3397,6 +3397,7 @@ Continue
 Branch
 StackSize = 1
 SetTextColor 155 170 110
+ModFontSize - 2
 Continue
 Branch
 StackSize >= $RefiningOrbSmallStack
@@ -3572,11 +3573,11 @@ SetOption $Binding dropdown [Show] [Hide] [Remove] # What visibility do you want
 
 SetOption $BindingSmallStack dropdown [Show] [Hide] [Remove] # What visibility do you want SMALL stacks of Orbs of Bindings to have?
 
-SetOption $BindingSmallStackSizeMod input [+ 2] # How much larger should SMALL stacks of Bindings be?
+SetOption $BindingSmallStackSizeMod input [+ 0] # How much larger should SMALL stacks of Bindings be?
 
 SetOption $BindingLargeStack dropdown [Show] [Hide] [Remove] # What visibility do you want LARGE stacks of Bindings to have?
 
-SetOption $BindingLargeStackSizeMod input [+ 4] # How much larger should LARGE stacks of Bindings be?
+SetOption $BindingLargeStackSizeMod input [+ 2] # How much larger should LARGE stacks of Bindings be?
 
 SetOption $BindingDropOff slider [100] [1] [100] # At what AreaLevel do you want Bindings to hide? This overrides the above visibility options.
 
@@ -3588,6 +3589,7 @@ Continue
 Branch
 StackSize = 1
 SetTextColor 55 110 150
+ModFontSize - 2
 Continue
 Branch
 StackSize >= $SocketOrbSmallStack
@@ -6182,7 +6184,7 @@ Continue
 
 Show
 BaseType "Cluster Jewel"
-SetBackgroundColor 90 90 90
+SetBackgroundColor 70 70 70
 MinimapIcon 2 White Pentagon
 PlayAlertSoundPositional 9 300 # Drop - Common
 PlayEffect Yellow Temp
@@ -6560,6 +6562,10 @@ Continue
 Show
 Mirrored True
 SetBorderColor 65 130 190
+
+Show
+Fractured True
+SetBorderColor 30 180 85
 
 # LEGACY SECTION
 
