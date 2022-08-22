@@ -1699,6 +1699,12 @@ PlayEffect Yellow
 PlayAlertSoundPositional 3 300 # Drop - Uncommon
 Continue
 
+$SixSockets
+Sockets = 6
+Rarity Normal
+SetTextColor 225 255 225
+Continue
+
 $SixLinks
 LinkedSockets = 6
 SetBackgroundColor 120 60 0 200
@@ -1946,8 +1952,8 @@ PlayAlertSoundPositional 9 300 # Drop - Common
 PlayEffect Purple
 Continue
 
-SetOption $CorruptedItems switch [Remove] [Show] # Do you want corruption to add a highlight even if there is no corrupted mod or white socket?
-SetOption $WhiteSockets input [W] # How many white sockets do you consider acceptable? Enter that many W's, up to six.
+SetOption $CorruptedItems switch [Hide] [Remove] [Show] # Do you want corrupted items to show even if there is no corrupted mod or white socket?
+SetOption $WhiteSockets input [W] # How many white sockets do you consider acceptable? Enter that many W's, up to six. The item does not have to be corrupted.
 
 Show
 Corrupted True
@@ -1957,11 +1963,11 @@ Branch
 SetBorderColor 50 0 0
 Continue
 Branch
+Rarity < Unique
 SwitchTo $CorruptedItems
 Continue
 
 Show
-Corrupted True
 SocketGroup >= $WhiteSockets
 SetBorderColor 255 255 255
 Continue
@@ -1993,6 +1999,7 @@ Show
 
 Show
 Identified True
+PlayAlertSound None
 Continue
 
 Show
@@ -6179,7 +6186,7 @@ Continue
 
 # Main  "Ammonite Glyph" "Alira's Amulet" "Baleful Gem" "Black Venom" "Eye of Conquest" "Eyes of Zeal" "Firefly" "Haliotis Glyph" "Kraityn's Amulet" "Maligaro's Map" "Oak's Amulet" "Obsidian Key" "Sewer Keys" "The Apex" "Tolman's Bracelet" "Roseus Glyph" "Tower Key" "Maligaro's Spike" "Basilisk Acid" "Infernal Talc" "Malachai's Entrails" "Malachai's Heart" "Malachai's Lungs" "Moon Orb" "Ribbon Spool" "Sun Orb" "Thaumetic Sulphite" "The Black Flag" "The Eye of Desire" "The Eye of Fury" "Trarthan Powder" "Deshret's Banner" "Sign of Purity" "The Staff of Purity"
 # Side: "Calendar of Fortune" "Chitus' Plum" "Greust's Necklace" "Silver Locket" "Golden Hand" "Golden Page" "Storm Blade" "Decanter Spiritus" "Bestel's Manuscript" "Elixir of Allure" "The Teardrop" "Medicine Chest"
-# Passive:"Ankh of Eternity" "Kishara's Star" "Thaumetic Emblem" "Tukohama's Tooth" "Allflame" "Bust of Gaius Sentari" "Bust of Hector Titucius" "Bust of Marceus Lioneye" "Sekhema Feather" "Miasmeter" "Valako's Jaw" "Bottled Storm" "Hinekora's Hair" "Wings of Vastiri" 
+# Passive:"Ankh of Eternity" "Kishara's Star" "Thaumetic Emblem" "Tukohama's Tooth" "Allflame" "Bust of Gaius Sentari" "Bust of Hector Titucius" "Bust of Marceus Lioneye" "Sekhema Feather" "Miasmeter" "Valako's Jaw" "Bottled Storm" "Hinekora's Hair"
 
 Show
 Class "Quest Items"
@@ -6189,7 +6196,7 @@ ModFontSize + 2
 
 Show
 Class "Quest Items"
-BaseType "Calendar of Fortune" "Chitus' Plum" "Greust's Necklace" "Silver Locket" "Golden Hand" "Golden Page" "Storm Blade" "Decanter Spiritus" "Bestel's Manuscript" "Elixir of Allure" "The Teardrop" "Medicine Chest" # Non Passive Side Quests
+BaseType "Wings of Vastiri" "Calendar of Fortune" "Chitus' Plum" "Greust's Necklace" "Silver Locket" "Golden Hand" "Golden Page" "Storm Blade" "Decanter Spiritus" "Bestel's Manuscript" "Elixir of Allure" "The Teardrop" "Medicine Chest" # Non Passive Side Quests
 SetBackgroundColor 0 0 0 170
 
 Show
@@ -6589,6 +6596,12 @@ SetBorderColor 65 130 190
 Show
 FracturedItem True
 SetBorderColor 30 180 85
+MinimapIcon 1 Purple Hexagon
+
+Show
+SynthesisedItem True
+SetBorderColor 45 70 185
+MinimapIcon 1 Purple Hexagon
 
 # LEGACY SECTION
 
