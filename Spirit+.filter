@@ -726,7 +726,7 @@ SetTab [Oddities]
 # Displaced Obsolete Settings
 
 SetOption $ObsoleteEquipment info [] # Obsolete items are those with improved values on another higher DropLevel base which is currently able to drop.
-SetOption $ObsoleteEquipmentSizeMod input [- 6] #  Adjust the base FontSize of outdated equipment. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size min/max (18/45) with large values.
+SetOption $ObsoleteEquipmentSizeMod input [- 10] #  Adjust the base FontSize of outdated equipment. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size min/max (18/45) with large values.
 
 SetOption $BaseDefences info [Base Defence is rated as Low, Mid, High, Near Perfect, or Perfect. Items that are set to hide here can still show if they have a property sought further down in the filter.] # This section determines the strictness of filtering by potential base defence value ranges for Up-To-Date items. Outdated items will receive these highlights and be hidden regardless of the following visibility settings. The Base Defence highlight is the brightness of text for normal, magic, and rare armours.
 
@@ -1328,7 +1328,7 @@ MinimapIcon 2 Yellow Circle
 Continue
 
 Show
-BaseType "Grasping Mail" "Sacrificial Garb" "Ornate Quiver"
+BaseType "Grasping Mail" "Sacrificial Garb" "Ornate Quiver" "Breach Ring"
 SetBorderColor 200 80 50
 MinimapIcon 2 Purple Circle
 ModFontSize + 4
@@ -1964,6 +1964,7 @@ SetBorderColor 50 0 0
 Continue
 Branch
 Rarity < Unique
+SocketGroup < RGB
 SwitchTo $CorruptedItems
 Continue
 
@@ -2052,7 +2053,7 @@ Continue
 
 Show
 Identified True
-HasExplicitMod "Veiled" "Veil"
+HasExplicitMod "Veiled" "Veil" "Chosen"
 SetTextColor 245 115 115
 SetFontSize 32
 PlayEffect Purple Temp
@@ -6592,6 +6593,14 @@ Continue
 Show
 Mirrored True
 SetBorderColor 65 130 190
+Continue
+Branch
+Rarity <= Magic
+SwitchTo Hide
+Continue
+Branch
+Rarity Rare
+Continue
 
 Show
 FracturedItem True
