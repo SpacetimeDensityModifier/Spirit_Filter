@@ -502,6 +502,376 @@ Class $Accessories
 PlayEffect $OffBuildRareAccessories_Beam
 Continue
 
+SetOption $EmptyLine
+SetOption $EmptyLine
+
+SetOption $EndgameBases switch [Show] [Hide] # Do you want endgame viable bases to be visible at all? Low interest Rares will still hide automatically once entering maps. This acts as a safeguard against reasonable bases becoming outdated due to falling behind on DropLevel as well as a place to add unconventional bases you want to see (you can add them to any of the inputs). NOTE: If hiding Endgame bases, make sure to HIDE off-build items as well or items will still show. These items also retain their yellow circle minimap icon if hidden.
+
+SetOption $BasesInfo info [There is a phenomenon in very early maps where a base may Show as small relative to another worse but passable base. This is because the worse base is not yet outdated and the first base is endgame viable and shrunken due to its size in your inventory. ALL non-accessory equipment gets smaller once entering maps.] # Do NOT leave any of the inputs empty, duplicate entries are fine and all Inputs affect the same BaseType entries in the filter. If you switch this section to HIDE you can use it to target remove bases from view instead.
+
+SetOption $EmptyLine
+
+SetOption $EndgameBaseRarity dropdown [Rare] [Normal] [Magic] [Rare] # At what Rarity do you want Endgame bases to show?
+
+SetOption $EndgameBaseDropoff slider [69] [1] [100] # At what level should Endgame bases hide even if meeting the rarity threshold? Will not Hide linked items or items with other properties.
+
+SetOption $EmptyLine
+SetOption $EmptyLine
+
+SetOption $EndgameArmour input ["Astral Plate" "Gladiator Plate" "Glorious Plate" "Vaal Greaves" "Titan Greaves" "Vaal Gauntlets" "Titan Gauntlets" "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet" "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield"]  # Which Armour bases do you use?
+
+SetOption $EndgameEvasion input ["Zodiac Leather" "Assassin's Garb" "Stealth Boots" "Slink Boots" "Stealth Gloves" "Slink Gloves" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Lacquered Buckler" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler"]  # Which Evasion bases do you use?
+
+SetOption $EndgameEnergyShield input ["Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Arcanist Slippers" "Sorcerer Boots" "Arcanist Gloves" "Sorcerer Gloves" "Mind Cage" "Hubris Circlet" "Fossilised Spirit Shield" "Vaal Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield"]  # Which Energy shield bases do you use?
+
+SetOption $EndgameHybridAREV input ["Desert Brigandine" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Dragonscale Boots" "Dragonscale Gauntlets" "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Cardinal Round Shield" "Elegant Round Shield"] # Which hybrid Armour and Evasion bases do you use?
+ 
+SetOption $EndgameHybridARES input ["Conquest Chainmail" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Crusader Boots" "Crusader Gloves" "Magistrate Crown" "Prophet Crown" "Praetor Crown" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield"] # Which hybrid Armour and Energy shield bases do you use?
+ 
+SetOption $EndgameHybridEVES input ["Varnished Coat" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Assassin's Boots" "Murder Boots" "Murder Mitts" "Vaal Mask" "Deicide Mask" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"] # Which hybrid Evasion and Energy Shield bases do you use?
+
+SetOption $EmptyLine
+SetOption $EmptyLine
+SetOption $EmptyLine
+
+SetOption $Endgame1HHammer input ["Gavel" "Legion Hammer" "Pernach" "Auric Mace" "Nightmare Mace"] # Which 1H hammers do you want to see?
+
+SetOption $Endgame2HHammer input ["Karui Maul" "Colossus Mallet" "Piledriver" "Meatgrinder" "Imperial Maul" "Terror Maul"] # Which 1H hammers do you want to see? 
+
+SetOption $Endgame1HAxe input ["Siege Axe" "Reaver Axe" "Butcher Axe" "Vaal Hatchet" "Royal Axe" "Infernal Axe"] # Which 1H axes do you want to see? 
+
+SetOption $Endgame2HAxe input ["Karui Chopper" "Sundering Axe" "Ezomyte Axe" "Vaal Axe" "Despot Axe" "Void Axe"] # Which 2H axes do you want to see? 
+
+SetOption $Endgame1HSword input ["Corsair Sword" "Gladius" "Legion Sword" "Vaal Blade" "Eternal Sword" "Midnight Blade"] # Which 1H swords do you want to see? 
+
+SetOption $Endgame2HSword input ["Reaver Sword" "Ezomyte Blade" "Vaal Greatsword" "Lion Sword" "Infernal Sword"] # Which 2H swords do you want to see? 
+
+SetOption $EndgameThrusting input ["Pecoraro" "Spiraled Foil" "Vaal Rapier" "Jewelled Foil" "Harpy Rapier"] # Which thrusting swords do you want to see?
+
+SetOption $EndgameBow input ["Citadel Bow" "Ranger Bow" "Assassin Bow" "Spine Bow" "Imperial Bow" "Harbinger Bow"] # Which bows do you want to see? 
+
+SetOption $EndgameClaw input ["Throat Stabber" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw"] # Which claw do you want to see? 
+
+SetOption $EndgameDagger input ["Gutting Knife" "Ambusher"] # Which daggers do you want to see? 
+
+SetOption $EndgameRune input ["Platinum Kris" "Imperial Skean" "Demon Dagger"] # Which rune daggers do you want to see? 
+
+SetOption $EndgameSceptre input ["Opal Sceptre" "Platinum Sceptre" "Vaal Sceptre" "Carnal Sceptre" "Void Sceptre"] # Which sceptres do you want to see? 
+
+SetOption $EndgameStaff input ["Lathi" "Imperial Staff"] # Which staves do you want to see? 
+
+SetOption $EndgameWarstaff input ["Maelstrom Staff" "Judgement Staff"] # Which warstaves do you want to see? 
+
+SetOption $EndgameWand input ["Imbued Wand" "Opal Wand" "Tornado Wand" "Prophecy Wand"] # Which wands do you want to see?
+
+$EndgameBases
+BaseType == $EndgameArmour $EndgameEvasion $EndgameEnergyShield $EndgameHybridAREV $EndgameHybridARES $EndgameHybridEVES $Endgame1HHammer $Endgame2HHammer $Endgame1HAxe $Endgame2HAxe $Endgame1HSword $Endgame2HSword $EndgameThrusting $EndgameBow $EndgameClaw $EndgameDagger $EndgameRune $EndgameSceptre $EndgameStaff $EndgameWarstaff $EndgameWand 
+Rarity >= $EndgameBaseRarity
+AnyEnchantment False
+HasInfluence None
+LinkedSockets < 6
+Rarity < Unique
+MinimapIcon 2 Yellow Circle
+Continue
+
+Hide
+Rarity < Unique
+BaseType == $EndgameArmour $EndgameEvasion $EndgameEnergyShield $EndgameHybridAREV $EndgameHybridARES $EndgameHybridEVES $Endgame1HHammer $Endgame2HHammer $Endgame1HAxe $Endgame2HAxe $Endgame1HSword $Endgame2HSword $EndgameThrusting $EndgameBow $EndgameClaw $EndgameDagger $EndgameRune $EndgameSceptre $EndgameStaff $EndgameWarstaff $EndgameWand 
+AreaLevel >= $EndgameBaseDropoff
+Height = 2
+Width = 2
+LinkedSockets < 3
+ModFontSize + 0
+Continue
+
+Hide
+Rarity < Unique
+BaseType == $EndgameArmour $EndgameEvasion $EndgameEnergyShield $EndgameHybridAREV $EndgameHybridARES $EndgameHybridEVES $Endgame1HHammer $Endgame2HHammer $Endgame1HAxe $Endgame2HAxe $Endgame1HSword $Endgame2HSword $EndgameThrusting $EndgameBow $EndgameClaw $EndgameDagger $EndgameRune $EndgameSceptre $EndgameStaff $EndgameWarstaff $EndgameWand 
+AreaLevel >= $EndgameBaseDropoff
+Height <= 4
+Width = 1
+LinkedSockets < 3
+ModFontSize - 2
+Continue
+
+Hide
+Rarity < Unique
+BaseType == $EndgameArmour $EndgameEvasion $EndgameEnergyShield $EndgameHybridAREV $EndgameHybridARES $EndgameHybridEVES $Endgame1HHammer $Endgame2HHammer $Endgame1HAxe $Endgame2HAxe $Endgame1HSword $Endgame2HSword $EndgameThrusting $EndgameBow $EndgameClaw $EndgameDagger $EndgameRune $EndgameSceptre $EndgameStaff $EndgameWarstaff $EndgameWand 
+AreaLevel >= $EndgameBaseDropoff
+Height = 3
+Width = 2
+LinkedSockets < 4
+ModFontSize - 4
+Continue
+
+Hide
+Rarity < Unique
+BaseType == $EndgameArmour $EndgameEvasion $EndgameEnergyShield $EndgameHybridAREV $EndgameHybridARES $EndgameHybridEVES $Endgame1HHammer $Endgame2HHammer $Endgame1HAxe $Endgame2HAxe $Endgame1HSword $Endgame2HSword $EndgameThrusting $EndgameBow $EndgameClaw $EndgameDagger $EndgameRune $EndgameSceptre $EndgameStaff $EndgameWarstaff $EndgameWand 
+AreaLevel >= $EndgameBaseDropoff
+Height = 4
+Width = 2
+LinkedSockets < 4
+ModFontSize - 6
+Continue
+
+SetTab [Oddities]
+
+# Displaced Obsolete Settings
+
+SetOption $ObsoleteEquipment info [] # Obsolete items are those with improved values on another higher DropLevel base which is currently able to drop.
+SetOption $ObsoleteEquipmentSizeMod input [- 10] #  Adjust the base FontSize of outdated equipment. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size min/max (18/45) with large values.
+
+SetOption $BaseDefences info [Base Defence is rated as Low, Mid, High, Near Perfect, or Perfect. Items that are set to hide here can still show if they have a property sought further down in the filter.] # This section determines the strictness of filtering by potential base defence value ranges for Up-To-Date items. Outdated items will receive these highlights and be hidden regardless of the following visibility settings. The Base Defence highlight is the brightness of text for normal, magic, and rare armours.
+
+SetOption $BDLow slider [5] [1] [100] # This slider adjusts the area level at which updated Bases with less than 25% of their Base Defence potential Hide.
+
+SetOption $BDMid slider [15] [1] [100] # This slider adjusts the area level at which updated Bases with less than 50% of their Base Defence potential Hide.
+
+SetOption $BDHigh slider [32] [1] [100] #This slider adjusts the area level at which updated Bases with less than 75% of their Base Defence potential Hide.
+
+SetOption $BDNearPerfect slider [55] [1] [100] # This slider adjusts the area level at which updated Bases with less than 90% of their Base Defence potential Hide.
+
+SetOption $BDPerfect slider [100] [1] [100] # This slider adjusts the area level at which updated Bases with 100% of their Base Defence potential Hide.
+
+SetOption $EmptyLine
+
+SetOption $BDLowRare slider [12] [1] [100] # This slider adjusts the area level at which updated RARE Bases with less than 25% of their Base Defence potential Hide.
+
+SetOption $BDMidRare slider [24] [1] [100] # This slider adjusts the area level at which updated RARE Bases with less than 50% of their Base Defence potential Hide.
+
+SetOption $BDHighRare slider [45] [1] [100] #This slider adjusts the area level at which updated RARE Bases with less than 75% of their Base Defence potential Hide.
+
+SetOption $BDNearPerfectRare slider [68] [1] [100] # This slider adjusts the area level at which updated RARE Bases with less than 90% of their Base Defence potential Hide.
+
+SetOption $BDPerfectRare slider [100] [1] [100] # This slider adjusts the area level at which updated RARE Bases with 100% of their Base Defence potential Hide.
+
+SetOption $EmptyLine
+
+SetOption $LowBDRare switch [Hide] [Show] [Hide] # This slider adjusts whether updated RARE Bases with less than 25% of their Base Defence potential Hide once past the above dropoffs.
+
+SetOption $MidBDRare switch  [Hide] [Show] [Hide] # This slider adjusts whether updated RARE Bases with less than 50% of their Base Defence potential Hide once past the above dropoffs.
+
+SetOption $HighBDRare switch [Hide] [Show] [Hide] # This slider adjusts whether updated RARE Bases with less than 75% of their Base Defence potential Hide once past the above dropoffs.
+
+SetOption $NearPerfectBDRare switch [Show] [Hide] # This slider adjusts whether updated RARE Bases with 100% of their Base Defence potential Hide once past the above dropoffs.
+
+SetOption $PerfectBDRare switch [Show] [Hide] # This slider adjusts whether updated RARE Bases with 100% of their Base Defence potential Hide once past the above dropoffs.
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	BaseDefencePercentile <= 20
+	Continue
+	Branch
+	Rarity Normal	
+	SetTextColor 127 127 127
+	Continue
+	Branch
+	Rarity Magic
+	SetTextColor 85 85 195
+	Continue
+	Branch
+	Rarity Rare
+	SetTextColor 140 115 85
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	BaseDefencePercentile > 20
+	Continue
+	Branch
+	Rarity Normal
+	SetTextColor 165 165 155
+	Continue
+	Branch
+	Rarity Magic
+	SetTextColor 95 95 200
+	Continue
+	Branch
+	Rarity Rare
+	SetTextColor 160 135 100
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	BaseDefencePercentile >= 50
+	Continue
+	Branch
+	Rarity Normal
+	SetTextColor 175 175 175
+	Continue
+	Branch
+	Rarity Magic
+	SetTextColor 100 105 225
+	Continue
+	Branch
+	Rarity Rare
+	SetTextColor 190 160 120
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	BaseDefencePercentile >= 80
+	Continue
+	Branch
+	Rarity Normal
+	SetTextColor 215 215 215
+	SwitchTo Hide
+	Continue
+	Branch
+	Rarity Magic
+	SetTextColor 150 175 235
+	Continue
+	Branch
+	Rarity Rare
+	SetTextColor 215 195 150
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	BaseDefencePercentile >= 100
+	Continue
+	Branch
+	Rarity Normal
+	SetTextColor 255 255 255
+	Continue
+	Branch
+	Rarity Magic
+	SetTextColor 180 200 255
+	Continue
+	Branch
+	Rarity Rare
+	SetTextColor 255 225 200
+	Continue
+
+#
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	BaseDefencePercentile <= 20
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
+	Continue
+	Branch
+	Rarity Normal	
+	AreaLevel >= $BDLow	
+	SwitchTo Hide
+	Continue
+	Branch
+	Rarity Magic
+	AreaLevel >= $BDLow
+	SwitchTo Hide
+	Continue
+	Branch
+	Rarity Rare
+	AreaLevel >= $BDLowRare
+	SwitchTo $LowBDRare
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	BaseDefencePercentile > 20
+	Continue
+	Branch
+	Rarity Normal
+	AreaLevel >= $BDMid
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
+	SwitchTo Hide
+	Continue
+	Branch
+	Rarity Magic
+	AreaLevel >= $BDMid
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
+	SwitchTo Hide
+	Continue
+	Branch
+	Rarity Rare
+	AreaLevel >= $BDMidRare
+	SwitchTo $MidBDRare
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	BaseDefencePercentile >= 50
+	Continue
+	Branch
+	Rarity Normal
+	AreaLevel >= $BDHigh
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
+	SwitchTo Hide
+	Continue
+	Branch
+	Rarity Magic
+	AreaLevel >= $BDHigh
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
+	SwitchTo Hide
+	Continue
+	Branch
+	Rarity Rare
+	AreaLevel >= $BDHighRare
+	SwitchTo $HighBDRare
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	BaseDefencePercentile >= 80
+	Continue
+	Branch
+	Rarity Normal
+	AreaLevel >= $BDNearPerfect
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
+	SwitchTo Hide
+	Continue
+	Branch
+	Rarity Magic
+	AreaLevel >= $BDNearPerfect
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
+	SwitchTo Hide
+	Continue
+	Branch
+	Rarity Rare
+	AreaLevel >= $BDNearPerfectRare
+	SwitchTo $NearPerfectBDRare
+	Continue
+
+Show
+	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
+	BaseDefencePercentile >= 100
+	Continue
+	Branch
+	Rarity Normal
+	AreaLevel >= $BDPerfect
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
+	SwitchTo Hide
+	Continue
+	Branch
+	Rarity Magic
+	AreaLevel >= $BDPerfect
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
+	SwitchTo Hide
+	Continue
+	Branch
+	Rarity Rare
+	AreaLevel >= $BDPerfectRare
+	SwitchTo $PerfectBDRare
+	Continue
+
 SetTab [Stuff: Racing]
 
 SetOption $Links info [] # 3L and 4L items that meet the build, base defence, and obsolete thresholds can be shown here. 
@@ -721,251 +1091,6 @@ $Belt_Upgrades
 PlayAlertSoundPositional 5 300 # Drop - Build
     Continue
 
-SetTab [Oddities]
-
-# Displaced Obsolete Settings
-
-SetOption $ObsoleteEquipment info [] # Obsolete items are those with improved values on another higher DropLevel base which is currently able to drop.
-SetOption $ObsoleteEquipmentSizeMod input [- 10] #  Adjust the base FontSize of outdated equipment. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size min/max (18/45) with large values.
-
-SetOption $BaseDefences info [Base Defence is rated as Low, Mid, High, Near Perfect, or Perfect. Items that are set to hide here can still show if they have a property sought further down in the filter.] # This section determines the strictness of filtering by potential base defence value ranges for Up-To-Date items. Outdated items will receive these highlights and be hidden regardless of the following visibility settings. The Base Defence highlight is the brightness of text for normal, magic, and rare armours.
-
-SetOption $BDLow slider [6] [1] [100] # This slider adjusts the area level at which updated Bases with less than 25% of their Base Defence potential Hide.
-
-SetOption $BDMid slider [20] [1] [100] # This slider adjusts the area level at which updated Bases with less than 50% of their Base Defence potential Hide.
-
-SetOption $BDHigh slider [45] [1] [100] #This slider adjusts the area level at which updated Bases with less than 75% of their Base Defence potential Hide.
-
-SetOption $BDNearPerfect slider [78] [1] [100] # This slider adjusts the area level at which updated Bases with less than 90% of their Base Defence potential Hide.
-
-SetOption $BDPerfect slider [100] [1] [100] # This slider adjusts the area level at which updated Bases with 100% of their Base Defence potential Hide.
-
-SetOption $LowBDRare switch [Show] [Hide] # This slider adjusts whether updated Rare Bases with less than 25% of their Base Defence potential Hide.
-
-SetOption $MidBDRare switch [Show] [Hide] # This slider adjusts whether updated Rare Bases with less than 50% of their Base Defence potential Hide.
-
-SetOption $HighBDRare switch [Show] [Hide] # This slider adjusts whether updated Rare Bases with less than 75% of their Base Defence potential Hide.
-
-SetOption $NearPerfectBDRare switch [Show] [Hide] # This slider adjusts whether updated Rare Bases with 100% of their Base Defence potential Hide.
-
-SetOption $PerfectBDRare switch [Show] [Hide] # This slider adjusts whether updated Rare Bases with 100% of their Base Defence potential Hide.
-
-
-Show
-	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
-	BaseDefencePercentile <= 20
-	Continue
-	Branch
-	Rarity Normal	
-	SetTextColor 127 127 127
-	Continue
-	Branch
-	Rarity Magic
-	SetTextColor 85 85 195
-	Continue
-	Branch
-	Rarity Rare
-	SetTextColor 140 115 85
-	Continue
-
-Show
-	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
-	BaseDefencePercentile > 20
-	Continue
-	Branch
-	Rarity Normal
-	SetTextColor 165 165 155
-	Continue
-	Branch
-	Rarity Magic
-	SetTextColor 95 95 200
-	Continue
-	Branch
-	Rarity Rare
-	SetTextColor 160 135 100
-	Continue
-
-Show
-	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
-	BaseDefencePercentile >= 50
-	Continue
-	Branch
-	Rarity Normal
-	SetTextColor 175 175 175
-	Continue
-	Branch
-	Rarity Magic
-	SetTextColor 100 105 225
-	Continue
-	Branch
-	Rarity Rare
-	SetTextColor 190 160 120
-	Continue
-
-Show
-	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
-	BaseDefencePercentile >= 80
-	Continue
-	Branch
-	Rarity Normal
-	SetTextColor 215 215 215
-	SwitchTo Hide
-	Continue
-	Branch
-	Rarity Magic
-	SetTextColor 150 175 235
-	Continue
-	Branch
-	Rarity Rare
-	SetTextColor 215 195 150
-	Continue
-
-Show
-	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
-	BaseDefencePercentile >= 100
-	Continue
-	Branch
-	Rarity Normal
-	SetTextColor 255 255 255
-	Continue
-	Branch
-	Rarity Magic
-	SetTextColor 180 200 255
-	Continue
-	Branch
-	Rarity Rare
-	SetTextColor 255 225 200
-	Continue
-
-#
-
-Show
-	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
-	BaseDefencePercentile <= 20
-	MinimapIcon -1
-	PlayAlertSound None
-	PlayEffect None
-	Continue
-	Branch
-	Rarity Normal	
-	AreaLevel >= $BDLow	
-	SwitchTo Hide
-	Continue
-	Branch
-	Rarity Magic
-	AreaLevel >= $BDLow
-	SwitchTo Hide
-	Continue
-	Branch
-	Rarity Rare
-	AreaLevel >= $BDLow
-	SwitchTo $LowBDRare
-	Continue
-
-Show
-	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
-	BaseDefencePercentile > 20
-	Continue
-	Branch
-	Rarity Normal
-	AreaLevel >= $BDMid
-	MinimapIcon -1
-	PlayAlertSound None
-	PlayEffect None
-	SwitchTo Hide
-	Continue
-	Branch
-	Rarity Magic
-	AreaLevel >= $BDMid
-	MinimapIcon -1
-	PlayAlertSound None
-	PlayEffect None
-	SwitchTo Hide
-	Continue
-	Branch
-	Rarity Rare
-	AreaLevel >= $BDMid
-	SwitchTo $MidBDRare
-	Continue
-
-Show
-	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
-	BaseDefencePercentile >= 50
-	Continue
-	Branch
-	Rarity Normal
-	AreaLevel >= $BDHigh
-	MinimapIcon -1
-	PlayAlertSound None
-	PlayEffect None
-	SwitchTo Hide
-	Continue
-	Branch
-	Rarity Magic
-	AreaLevel >= $BDHigh
-	MinimapIcon -1
-	PlayAlertSound None
-	PlayEffect None
-	SwitchTo Hide
-	Continue
-	Branch
-	Rarity Rare
-	AreaLevel >= $BDHigh
-	SwitchTo $HighBDRare
-	Continue
-
-Show
-	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
-	BaseDefencePercentile >= 80
-	Continue
-	Branch
-	Rarity Normal
-	AreaLevel >= $BDNearPerfect
-	MinimapIcon -1
-	PlayAlertSound None
-	PlayEffect None
-	SwitchTo Hide
-	Continue
-	Branch
-	Rarity Magic
-	AreaLevel >= $BDNearPerfect
-	MinimapIcon -1
-	PlayAlertSound None
-	PlayEffect None
-	SwitchTo Hide
-	Continue
-	Branch
-	Rarity Rare
-	AreaLevel >= $BDNearPerfect
-	SwitchTo $NearPerfectBDRare
-	Continue
-
-Show
-	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
-	BaseDefencePercentile >= 100
-	Continue
-	Branch
-	Rarity Normal
-	AreaLevel >= $BDPerfect
-	MinimapIcon -1
-	PlayAlertSound None
-	PlayEffect None
-	SwitchTo Hide
-	Continue
-	Branch
-	Rarity Magic
-	AreaLevel >= $BDPerfect
-	MinimapIcon -1
-	PlayAlertSound None
-	PlayEffect None
-	SwitchTo Hide
-	Continue
-	Branch
-	Rarity Rare
-	AreaLevel >= $BDPerfect
-	SwitchTo $PerfectBDRare
-	Continue
-
 # Obsolete Items # Settings displaced for UX ordering
 
 Hide
@@ -1076,10 +1201,18 @@ Continue
 
 SetTab [Equipment: Flasks]
 
+SetOption $FlaskDropoff slider [70] [1] [100] # At what AreaLevel should flasks at or below the dropoff Hide?
+SetOption $FlaskDropoffRarity dropdown [Normal] [Normal] [Magic] # At what Rarity should flasks Hide after the dropoff?
+
+SetOption $EmptyLine
+SetOption $EmptyLine
+
 SetOption $UtilityFlasks switch [Remove] [Show] # Do you need any Utility flasks?
 SetOption $HideFlasks switch [Remove] [Hide] # Hide Life, Mana, Hybrid, and Utility Flasks if chosen.
 SetOption $BannedFlasks checkbox ["Life Flasks"] ["Mana Flasks"] ["Hybrid Flasks"] ["Utility Flasks"] # Which of these don't you want to see?
 SetOption $MyFlasks checkbox ["Quicksilver Flask"] ["Bismuth Flask"] ["Stibnite Flask"] ["Amethyst Flask"] ["Ruby Flask"] ["Sapphire Flask"] ["Topaz Flask"] ["Silver Flask"] ["Aquamarine Flask"] ["Diamond Flask"] ["Granite Flask"] ["Jade Flask"] ["Quartz Flask"] ["Sulphur Flask"] ["Basalt Flask"] ["Gold Flask"] ["Corundum Flask"] # Remove flasks from this list until you have the utility flasks you'll use.
+
+
 
 Show
 Class "Flasks"
@@ -1241,6 +1374,16 @@ BaseType "Sacred"
 AreaLevel > 50
 Continue
 
+Hide
+	Class Flasks
+	BaseType "Life" "Mana" "Hybrid"
+	AreaLevel >= $FlaskDropoff
+	Rarity <= $FlaskDropoffRarity
+	MinimapIcon -1
+	PlayAlertSound None
+	PlayEffect None
+	Continue
+
 $HideFlasks
 	Class $BannedFlasks
 	Rarity < Unique
@@ -1259,73 +1402,6 @@ PlayAlertSoundPositional 16 300 # Racing
     Continue
 
 SetTab [Equipment: Special Bases]
-
-SetOption $EndgameBases switch [Show] [Hide] # Do you want endgame viable bases to be visible? This acts as a safeguard against reasonable bases becoming outdated due to falling behind on DropLevel as well as a place to add unconventional bases you want to see (you can add them to any of the inputs). NOTE: If hiding Endgame bases, make sure to HIDE off-build items as well or some items that haven't become outdated yet may slip through. These items also retain their yellow circle minimap icon if hidden.
-
-SetOption $BasesInfo info ["Bone Spirit Shield" "Ivory Spirit Shield" "Fossilised Spirit Shield" "Calling Wand" "Convening Wand"] # Here are some common bases to display. Do NOT leave any of the inputs empty, duplicate entries are fine and all Inputs affect the same BaseType entry in the filter. If you switch this section to HIDE you can use it to target remove bases from view instead. This section will NOT detect 6L, Enchanted, Influenced, or Unique bases that match your inputs.
-
-SetOption $EmptyLine
-
-SetOption $EndgameBaseRarity dropdown [Rare] [Normal] [Magic] [Rare] # At what Rarity do you want Endgame bases to show?
-
-SetOption $EmptyLine
-SetOption $EmptyLine
-
-SetOption $EndgameArmour input ["Astral Plate" "Gladiator Plate" "Glorious Plate" "Vaal Greaves" "Titan Greaves" "Vaal Gauntlets" "Titan Gauntlets" "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet" "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield"]  # Which Armour bases do you use?
-
-SetOption $EndgameEvasion input ["Zodiac Leather" "Assassin's Garb" "Stealth Boots" "Slink Boots" "Stealth Gloves" "Slink Gloves" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Lacquered Buckler" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler"]  # Which Evasion bases do you use?
-
-SetOption $EndgameEnergyShield input ["Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Arcanist Slippers" "Sorcerer Boots" "Arcanist Gloves" "Sorcerer Gloves" "Mind Cage" "Hubris Circlet" "Fossilised Spirit Shield" "Vaal Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield"]  # Which Energy shield bases do you use?
-
-SetOption $EndgameHybridAREV input ["Desert Brigandine" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Dragonscale Boots" "Dragonscale Gauntlets" "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Cardinal Round Shield" "Elegant Round Shield"] # Which hybrid Armour and Evasion bases do you use?
- 
-SetOption $EndgameHybridARES input ["Conquest Chainmail" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Crusader Boots" "Crusader Gloves" "Magistrate Crown" "Prophet Crown" "Praetor Crown" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield"] # Which hybrid Armour and Energy shield bases do you use?
- 
-SetOption $EndgameHybridEVES input ["Varnished Coat" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Assassin's Boots" "Murder Boots" "Murder Mitts" "Vaal Mask" "Deicide Mask" "Alder Spiked Shield" "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"] # Which hybrid Evasion and Energy Shield bases do you use?
-
-SetOption $EmptyLine
-SetOption $EmptyLine
-SetOption $EmptyLine
-
-SetOption $Endgame1HHammer input ["Gavel" "Legion Hammer" "Pernach" "Auric Mace" "Nightmare Mace"] # Which 1H hammers do you want to see?
-
-SetOption $Endgame2HHammer input ["Karui Maul" "Colossus Mallet" "Piledriver" "Meatgrinder" "Imperial Maul" "Terror Maul"] # Which 1H hammers do you want to see? 
-
-SetOption $Endgame1HAxe input ["Siege Axe" "Reaver Axe" "Butcher Axe" "Vaal Hatchet" "Royal Axe" "Infernal Axe"] # Which 1H axes do you want to see? 
-
-SetOption $Endgame2HAxe input ["Karui Chopper" "Sundering Axe" "Ezomyte Axe" "Vaal Axe" "Despot Axe" "Void Axe"] # Which 2H axes do you want to see? 
-
-SetOption $Endgame1HSword input ["Corsair Sword" "Gladius" "Legion Sword" "Vaal Blade" "Eternal Sword" "Midnight Blade"] # Which 1H swords do you want to see? 
-
-SetOption $Endgame2HSword input ["Reaver Sword" "Ezomyte Blade" "Vaal Greatsword" "Lion Sword" "Infernal Sword"] # Which 2H swords do you want to see? 
-
-SetOption $EndgameThrusting input ["Pecoraro" "Spiraled Foil" "Vaal Rapier" "Jewelled Foil" "Harpy Rapier"] # Which thrusting swords do you want to see?
-
-SetOption $EndgameBow input ["Citadel Bow" "Ranger Bow" "Assassin Bow" "Spine Bow" "Imperial Bow" "Harbinger Bow"] # Which bows do you want to see? 
-
-SetOption $EndgameClaw input ["Throat Stabber" "Hellion's Paw" "Eye Gouger" "Vaal Claw" "Imperial Claw" "Terror Claw"] # Which claw do you want to see? 
-
-SetOption $EndgameDagger input ["Gutting Knife" "Ambusher"] # Which daggers do you want to see? 
-
-SetOption $EndgameRune input ["Platinum Kris" "Imperial Skean" "Demon Dagger"] # Which rune daggers do you want to see? 
-
-SetOption $EndgameSceptre input ["Opal Sceptre" "Platinum Sceptre" "Vaal Sceptre" "Carnal Sceptre" "Void Sceptre"] # Which sceptres do you want to see? 
-
-SetOption $EndgameStaff input ["Lathi" "Imperial Staff"] # Which staves do you want to see? 
-
-SetOption $EndgameWarstaff input ["Maelstrom Staff" "Judgement Staff"] # Which warstaves do you want to see? 
-
-SetOption $EndgameWand input ["Imbued Wand" "Opal Wand" "Tornado Wand" "Prophecy Wand"] # Which wands do you want to see?
-
-$EndgameBases
-BaseType $EndgameArmour $EndgameEvasion $EndgameEnergyShield $EndgameHybridAREV $EndgameHybridARES $EndgameHybridEVES $Endgame1HHammer $Endgame2HHammer $Endgame1HAxe $Endgame2HAxe $Endgame1HSword $Endgame2HSword $EndgameThrusting $EndgameBow $EndgameClaw $EndgameDagger $EndgameRune $EndgameSceptre $EndgameStaff $EndgameWarstaff $EndgameWand 
-Rarity >= $EndgameBaseRarity
-AnyEnchantment False
-HasInfluence None
-LinkedSockets < 6
-Rarity < Unique
-MinimapIcon 2 Yellow Circle
-Continue
 
 Show
 BaseType "Grasping Mail" "Sacrificial Garb" "Ornate Quiver" "Breach Ring"
@@ -1377,7 +1453,7 @@ $ChiselHammers
 	Rarity Rare
 	Quality >= 18
 
-SetOption $FlaskQualityThreshold slider [16] [1] [30] # Above what quality should flasks display regardless of type?
+SetOption $FlaskQualityThreshold slider [20] [1] [30] # Above what quality should flasks display regardless of type?
 
 Show
 Class "Flasks"
@@ -1400,7 +1476,7 @@ SetOption $RegalRecipe switch [Remove] [Show] [Remove] # How do you want the Reg
 SetOption $RegalRecipeSizeMod input [+ 2] # Adjust the base FontSize of regal recipe items. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size cap of 45 with high values.
 
 $ChaosRecipe
-Class $Weapons $Armours $Accessories
+Class "Two Hand" "Staff" "Bow" "Helmets" "Body Armours" "Gloves" "Boots" $Accessories
 Rarity Rare
 ItemLevel >= 60
 ItemLevel < 75
@@ -1409,7 +1485,7 @@ ModFontSize $ChaosRecipeSizeMod
 Continue
 
 $RegalRecipe
-Class $Weapons $Armours $Accessories
+Class "Two Hand" "Staff" "Bow" "Helmets" "Body Armours" "Gloves" "Boots" $Accessories
 Rarity Rare
 ItemLevel >= 75
 ItemLevel < 82
@@ -1441,10 +1517,6 @@ Continue
 
 SetTab [Equipment: Special Bases]
 
-SetOption $EmptyLine
-SetOption $EmptyLine
-SetOption $EmptyLine
-
 Show
 BaseType "Ornate Quiver"
 Continue
@@ -1453,15 +1525,17 @@ SetOption $MarakethBaseChoice input ["Wyrm Mace" "Dragon Mace" "Behemoth Mace" "
 
 SetOption $MarakethBaseDropOff slider [52] [1] [100] # Above what level should non-rare maraketh bases hide?
 
+SetOption $EmptyLine
+
 Show
-BaseType $MarakethBaseChoice
+BaseType == $MarakethBaseChoice
 SetBorderColor 190 130 50
 MinimapIcon 2 Blue Circle
 PlayEffect Blue Temp
 Continue
 
 Hide
-BaseType $Maraketh
+BaseType == $Maraketh
 Rarity < Rare
 PlayEffect None
 MinimapIcon -1
@@ -1478,7 +1552,7 @@ AreaLevel >= 65
 Continue
 
 Hide
-BaseType $Maraketh
+BaseType == $Maraketh
 PlayEffect None
 MinimapIcon -1
 PlayAlertSound None
@@ -1494,7 +1568,7 @@ AreaLevel >= 72
 Continue
 
 Hide
-BaseType $Maraketh
+BaseType == $Maraketh
 Rarity < Rare
 AreaLevel > $MarakethBaseDropOff
 PlayEffect None
@@ -1503,25 +1577,42 @@ PlayAlertSound None
 PlayEffect None
 Continue
 
-
 SetOption $AtlasBaseChoices input ["Fugitive Boots" "Two-Toned Boots" "Apothecary's Gloves" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Bone Helmet" "Marble Amulet" "Seaglass Amulet" "Blue Pearl Amulet" "Vanguard Belt" "Crystal Belt" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Convoking Wand" "Artillery Quiver"] # Which Atlas bases are valuable to you?
 
 SetOption $AtlasBaseRarity dropdown [Rare] [Normal] [Magic] [Rare] # At what rarity should atlas bases get a highlight?
 
+SetOption $EmptyLine
+
 Show
-BaseType "Bone Ring" "Calling Wand" "Convening Wand"
+BaseType "Bone Ring" "Calling Wand" "Convening Wand" $MinionShields
 SetBorderColor 190 50 120
 MinimapIcon 2 Blue Circle
 PlayEffect Blue Temp
 Continue
 
-Show
+Hide
 BaseType "Bone Ring" "Calling Wand"
 Rarity < Rare
 AreaLevel >= 30
-SwitchTo Hide
 MinimapIcon -1
 PlayEffect None
+PlayAlertSound None
+Continue
+
+Hide
+BaseType "Bone Spirit Shield"
+AreaLevel >= 41
+MinimapIcon -1
+PlayEffect None
+PlayAlertSound None
+Continue
+
+Hide
+BaseType "Ivory Spirit Shield"
+AreaLevel >= 59
+MinimapIcon -1
+PlayEffect None
+PlayAlertSound None
 Continue
 
 Hide
@@ -1679,6 +1770,54 @@ Continue
 
 SetTab [Treasure: Recipes]
 
+
+Show
+    HasInfluence "Elder"
+	SetTextColor 90 20 220
+    Continue
+    
+Show
+    HasInfluence "Shaper"
+	SetTextColor 30 130 125
+    Continue
+ 
+Show
+    HasInfluence "Redeemer"
+	SetTextColor 150 80 100
+    Continue
+    
+Show
+    HasInfluence "Crusader"
+	SetTextColor 185 30 30
+    Continue
+     
+Show
+    HasInfluence "Hunter"
+	SetTextColor 155 250 100
+    Continue
+ 
+Show
+    HasInfluence "Warlord"
+	SetTextColor 85 115 255
+    Continue
+
+Show
+    HasInfluence "Elder" "Shaper" "Redeemer" "Crusader" "Warlord" "Hunter"
+    PlayEffect Purple
+    MinimapIcon 2 Purple Hexagon
+    SetFontSize 34
+    PlayAlertSoundPositional 14 300 # Special Base
+    Continue
+
+Show
+	Class Map
+    HasInfluence "Elder" "Shaper" "Redeemer" "Crusader" "Warlord" "Hunter"
+    PlayEffect Purple
+    MinimapIcon 1 Purple Square
+    SetFontSize 38
+    PlayAlertSoundPositional 14 300 # Special Base
+    Continue
+
 $FiveLinks
 LinkedSockets = 5
 SetBackgroundColor 70 45 30 220
@@ -1691,12 +1830,15 @@ AreaLevel >= $5LDropOff
 SwitchTo Remove
 Continue
 
+SetOption $6SocketSize input [+ 4] # How much larger should 6 socket items be?
+
 $SixSockets
 Sockets = 6
 SetBackgroundColor 155 160 145 255
 MinimapIcon 2 Yellow Cross
 PlayEffect Yellow
 PlayAlertSoundPositional 3 300 # Drop - Uncommon
+ModFontSize $6SocketSize
 Continue
 
 $SixSockets
@@ -1705,6 +1847,7 @@ Rarity Normal
 SetTextColor 225 255 225
 Continue
 
+Continue
 $SixLinks
 LinkedSockets = 6
 Rarity < Unique
@@ -1760,6 +1903,128 @@ PlayAlertSoundPositional 8 300 # Drop - Unvalued Unique
 PlayEffect Purple
 Continue
 
+SetOption $CorruptedItems switch [Hide] [Remove] [Show] # Do you want corrupted items to show even if there is no corrupted mod or white socket?
+SetOption $WhiteSockets input [W] # How many white sockets do you consider acceptable? Enter that many W's, up to six. The item does not have to be corrupted, though this is a good way to find bases if you have a Mythic orb.
+
+Show
+Corrupted True
+SetBackgroundColor 50 0 0
+Continue
+Branch
+SetBorderColor 50 0 0
+Continue
+Branch
+Rarity < Rare
+Class $Weapons $Armours $Accessories "Quivers"
+SwitchTo $CorruptedItems
+Continue
+
+Show
+SocketGroup >= $WhiteSockets
+SetBorderColor 255 255 255
+Continue
+
+Hide
+Rarity Magic
+SocketGroup >= W
+SetBorderColor 155 155 155
+Continue
+
+Show
+CorruptedMods = 1
+SetBackgroundColor 100 30 0
+PlayAlertSoundPositional 9 300 # Drop - Common
+MinimapIcon 2 Red Hexagon
+PlayEffect Red
+Continue
+
+Show
+CorruptedMods > 1
+SetBackgroundColor 170 50 30
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
+MinimapIcon 1 Red Hexagon
+PlayEffect Red
+Continue
+
+Show
+	Rarity < Unique
+	AnyEnchantment True
+	MinimapIcon 2 Purple Hexagon
+	SetBorderColor 100 180 240
+	Continue
+
+# AFFIXES
+
+Show
+Identified True
+PlayAlertSound None
+ModFontSize + 0
+Continue
+
+Show
+Class "Boots"
+HasExplicitMod >=1 "Runner's" "Sprinter's" "Stallion's" "Gazelle's" "Cheetah's" "Hellion's"
+SetBackgroundColor 20 90 70 200
+PlayEffect Cyan
+PlayAlertSoundPositional 16 300 # Racing
+ModFontSize + 4
+Continue
+
+Show
+Identified True
+HasExplicitMod "Subterranean" "of the Underground"
+SetTextColor 125 55 225
+SetFontSize 32
+PlayEffect Purple Temp
+MinimapIcon 2 Purple Hexagon
+PlayAlertSoundPositional 9 300 # Drop - Common
+ModFontSize + 2
+Continue
+
+Show
+Identified True
+HasExplicitMod "Redblade" "Mutewind" "Brinerot" "Betrayer's" "Deceiver's" "Turncoat's"
+SetTextColor 255 115 215
+SetFontSize 32
+PlayEffect Purple Temp
+MinimapIcon 2 Purple Hexagon
+PlayAlertSoundPositional 9 300 # Drop - Common
+ModFontSize + 2
+Continue
+
+Show
+Identified True
+HasExplicitMod "Farrul" "Craiceann" "Fenumus" "Saqawal"
+SetTextColor 235 155 85
+SetFontSize 32
+PlayEffect Purple Temp
+MinimapIcon 1 Purple Hexagon
+PlayAlertSoundPositional 9 300 # Drop - Common
+ModFontSize + 4
+Continue
+
+Show
+Identified True
+HasExplicitMod "Tacati" "Citaqualotl" "Matatl" "Xopec" "Guatelitzi" "Puhuarte"
+SetTextColor 255 35 35
+SetFontSize 32
+PlayEffect Purple Temp
+MinimapIcon 2 Purple Hexagon
+PlayAlertSoundPositional 9 300 # Drop - Common
+ModFontSize + 2
+Continue
+
+Show
+Identified True
+HasExplicitMod "Veiled" "Veil" "Chosen" "of the Order"
+SetTextColor 245 115 115
+SetFontSize 32
+PlayEffect Purple Temp
+MinimapIcon 2 Purple Hexagon
+PlayAlertSoundPositional 9 300 # Drop - Common
+ModFontSize + 2
+Continue
+
 # Gems
 
 SetOption $MyGems input ["Portal" "Vaal Breach" "Empower" "Enhance" "Enlighten"] # Enter your build's gems here with "quotes" "around" "each" to give them a special highlight.
@@ -1797,6 +2062,7 @@ Branch
 Class "Gems"
 BaseType "Vaal"
 SetBorderColor 255 0 0
+SetBackgroundColor 100 30 0
 MinimapIcon 1 Grey Kite
 PlayEffect Green
 Continue
@@ -1952,116 +2218,6 @@ SetBackgroundColor 80 80 80
 MinimapIcon 1 Purple Circle
 PlayAlertSoundPositional 9 300 # Drop - Common
 PlayEffect Purple
-Continue
-
-SetOption $CorruptedItems switch [Hide] [Remove] [Show] # Do you want corrupted items to show even if there is no corrupted mod or white socket?
-SetOption $WhiteSockets input [W] # How many white sockets do you consider acceptable? Enter that many W's, up to six. The item does not have to be corrupted.
-
-Show
-Corrupted True
-SetBackgroundColor 50 0 0
-Continue
-Branch
-SetBorderColor 50 0 0
-Continue
-Branch
-Rarity < Unique
-Class $Weapons $Armours $Accessories "Quivers"
-SocketGroup < RGB
-SwitchTo $CorruptedItems
-Continue
-
-Show
-SocketGroup >= $WhiteSockets
-SetBorderColor 255 255 255
-Continue
-
-Show
-CorruptedMods = 1
-SetBackgroundColor 100 30 0
-PlayAlertSoundPositional 9 300 # Drop - Common
-MinimapIcon 2 Red Hexagon
-PlayEffect Red
-Continue
-
-Show
-CorruptedMods > 1
-SetBackgroundColor 170 50 30
-PlayAlertSoundPositional 3 300 # Drop - Uncommon
-MinimapIcon 1 Red Hexagon
-PlayEffect Red
-Continue
-
-Show
-	Rarity < Unique
-	AnyEnchantment True
-	MinimapIcon 2 Purple Hexagon
-	SetBorderColor 100 180 240
-	Continue
-
-# AFFIXES
-
-Show
-Identified True
-PlayAlertSound None
-Continue
-
-Show
-Class "Boots"
-HasExplicitMod >=1 "Runner's" "Sprinter's" "Stallion's" "Gazelle's" "Cheetah's" "Hellion's"
-SetBackgroundColor 20 90 70 200
-PlayEffect Cyan
-PlayAlertSoundPositional 16 300 # Racing
-Continue
-
-Show
-Identified True
-HasExplicitMod "Subterranean" "of the Underground"
-SetTextColor 125 55 225
-SetFontSize 32
-PlayEffect Purple Temp
-MinimapIcon 2 Purple Hexagon
-PlayAlertSoundPositional 9 300 # Drop - Common
-Continue
-
-Show
-Identified True
-HasExplicitMod "Redblade" "Mutewind" "Brinerot" "Betrayer's" "Deceiver's" "Turncoat's"
-SetTextColor 255 115 215
-SetFontSize 32
-PlayEffect Purple Temp
-MinimapIcon 2 Purple Hexagon
-PlayAlertSoundPositional 9 300 # Drop - Common
-Continue
-
-Show
-Identified True
-HasExplicitMod "Farrul" "Craiceann" "Fenumus" "Saqawal"
-SetTextColor 235 155 85
-SetFontSize 32
-PlayEffect Purple Temp
-MinimapIcon 1 Purple Hexagon
-PlayAlertSoundPositional 9 300 # Drop - Common
-Continue
-
-Show
-Identified True
-HasExplicitMod "Tacati" "Citaqualotl" "Matatl" "Xopec" "Guatelitzi" "Puhuarte"
-SetTextColor 255 35 35
-SetFontSize 32
-PlayEffect Purple Temp
-MinimapIcon 2 Purple Hexagon
-PlayAlertSoundPositional 9 300 # Drop - Common
-Continue
-
-Show
-Identified True
-HasExplicitMod "Veiled" "Veil" "Chosen"
-SetTextColor 245 115 115
-SetFontSize 32
-PlayEffect Purple Temp
-MinimapIcon 2 Purple Hexagon
-PlayAlertSoundPositional 9 300 # Drop - Common
 Continue
 
 SetTab [Treasure: General Currency]
@@ -5758,23 +5914,6 @@ Show
     PlayEffect Blue
 
 Show
-    HasInfluence "Elder" "Shaper" "Redeemer" "Crusader" "Warlord" "Hunter"
-    PlayEffect Purple
-    MinimapIcon 2 Purple Hexagon
-    SetFontSize 34
-    PlayAlertSoundPositional 14 300 # Special Base
-    Continue
-
-Show
-	Class Map
-    HasInfluence "Elder" "Shaper" "Redeemer" "Crusader" "Warlord" "Hunter"
-    PlayEffect Purple
-    MinimapIcon 1 Purple Square
-    SetFontSize 38
-    PlayAlertSoundPositional 14 300 # Special Base
-    Continue
-
-Show
 	BaseType "Karui Emblem"
 	SetTextColor 40 10 90
 	SetBackgroundColor 190 70 20 255
@@ -5887,37 +6026,6 @@ Show
 	BaseType "Abyssal Delirium Orb" "Amorphous Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Kalguuran Delirium Orb" "Delirium Orb" "Foreboding Delirium Orb" "Fossilised Delirium Orb" "Fragmented Delirium Orb" "Imperial Delirium Orb" "Jeweller's Delirium Orb" "Obscured Delirium Orb" "Primal Delirium Orb" "Singular Delirium Orb" "Timeless Delirium Orb" "Whispering Delirium Orb"
 	SetBackgroundColor 200 200 200 235	
    
-Show
-    HasInfluence "Elder"
-	SetTextColor 90 20 220
-    Continue
-    
-Show
-    HasInfluence "Shaper"
-	SetTextColor 30 130 125
-    Continue
- 
-Show
-    HasInfluence "Redeemer"
-	SetTextColor 150 80 100
-    Continue
-    
-Show
-    HasInfluence "Crusader"
-	SetTextColor 185 30 30
-    Continue
-     
-Show
-    HasInfluence "Hunter"
-	SetTextColor 155 250 100
-    Continue
- 
-Show
-    HasInfluence "Warlord"
-	SetTextColor 85 115 255
-    Continue
-
-
 # Eldritch Horror Implicits
 
 Show
@@ -6252,7 +6360,7 @@ SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $EmptyLine
 
-SetOption $Jewels switch [Show] [Remove] [Hide] # Would you like specific jewels to get a highlight? If hiding, leave the jewels you don't want to see checked and uncheck your selection.
+SetOption $Jewels switch [Show] [Remove] [Hide] # Would you like specific jewels to get a highlight? If switching to Hide, leave the jewels you don't want to see checked and uncheck your selection (otherwise just uncheck the ones you don't want to see. Leaving ALL BOXES UNCHECKED resets that input (it does not accept an EMPTY input). This applies elsewhere in the filter as well.
 SetOption $RareJewelOverride switch [Show] [Remove] [Hide] # Would you like rare jewels to show regardless of type?
 SetOption $JewelTextSize slider [32] [18] [45] # This is the base size of jewels, chromatic jewels are slightly smaller and cluster jewels are slightly larger
 SetOption $ChromaticJewelSelection checkbox ["Crimson"] ["Viridian"] ["Cobalt"] ["Prismatic"]
