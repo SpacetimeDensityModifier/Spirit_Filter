@@ -1410,111 +1410,6 @@ MinimapIcon 2 Purple Circle
 ModFontSize + 4
 Continue
 
-SetTab [Treasure: Recipes]
-
-SetOption $QualityEquipment switch [Remove] [Remove] [Show]
-SetOption $NormalEquipmentQualityThreshold slider [10] [1] [20]
-SetOption $MagicEquipmentQualityThreshold slider [16] [1] [20]
-SetOption $RareEquipmentQualityThreshold slider [18] [1] [20]
-SetOption $SuperQualityIconSize slider [1] [-1] [2]
-SetOption $ChiselHammers switch [Show] [Remove] [Show] # You can vendor a hammer of 20% quality and a map to recipe a Cartographer's Chisel. The values used expect you to apply up to two Blacksmith's Whetstones to hammers below 20% (based on the Rarity).
-
-$QualityEquipment
-	Class $Weapons $Armours
-	SetBorderColor 200 200 240 # Quality Equipment Border
-Branch
-Continue
-	Rarity Normal
-	Quality >= $NormalEquipmentQualityThreshold
-Branch
-Continue
-	Rarity Magic
-	Quality >= $MagicEquipmentQualityThreshold
-Branch
-Continue
-	Rarity Rare
-	Quality >= $RareEquipmentQualityThreshold
-
-$ChiselHammers
-	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
-	SetBorderColor 165 180 225 # Chisel Hammers
-	MinimapIcon 2 Grey Cross
-	PlayEffect Grey Temp
-	Branch
-	Continue
-	Rarity Normal
-	Quality >= 10
-	Branch
-	Continue
-	Rarity Magic
-	Quality >= 16
-	Branch
-	Continue
-	Rarity Rare
-	Quality >= 18
-
-SetOption $FlaskQualityThreshold slider [20] [1] [30] # Above what quality should flasks display regardless of type?
-
-Show
-Class "Flasks"
-Quality >= $FlaskQualityThreshold
-SetBorderColor 130 180 225
-PlayEffect Green
-MinimapIcon 2 Green Raindrop
-Continue
-
-Show
-	Quality > 20 # Super Quality
-	SetBorderColor 225 180 225 # Super Quality Equipment Border
-	MinimapIcon 0 White Cross
-	SwitchTo Show
-
-SetOption $ChaosRecipe switch [Remove] [Show] [Remove] # How do you want the Chaos Recipe handled?
-SetOption $ChaosRecipeSizeMod input [+ 4] # Adjust the base FontSize of chaos recipe items. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size cap of 45 with high values.
-
-SetOption $RegalRecipe switch [Remove] [Show] [Remove] # How do you want the Regal Recipe handled?
-SetOption $RegalRecipeSizeMod input [+ 2] # Adjust the base FontSize of regal recipe items. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size cap of 45 with high values.
-
-$ChaosRecipe
-Class "Two Hand" "Staff" "Bow" "Helmets" "Body Armours" "Gloves" "Boots" $Accessories
-Rarity Rare
-ItemLevel >= 60
-ItemLevel < 75
-SetBorderColor 255 255 100
-ModFontSize $ChaosRecipeSizeMod
-Continue
-
-$RegalRecipe
-Class "Two Hand" "Staff" "Bow" "Helmets" "Body Armours" "Gloves" "Boots" $Accessories
-Rarity Rare
-ItemLevel >= 75
-ItemLevel < 82
-SetBorderColor 180 120 210
-ModFontSize $RegalRecipeSizeMod
-Continue
-
-Show
-Class $Weapons $Armours $Accessories
-ItemLevel = 100
-SetBorderColor 255 0 255
-MinimapIcon 1 Purple Circle
-Continue
-
-SetOption $Chromatics switch [Show] [Remove]
-SetOption $SixSockets switch [Show] [Remove]
-SetOption $FiveLinks switch [Show] [Remove]
-SetOption $5LDropOff slider [82] [1] [100] # Past what AreaLevel should five links stop highlighting? They will still show if other properties are caught by the filter.
-SetOption $SixLinks switch [Show] [Remove]
-
-$Chromatics
-Rarity < Unique
-SocketGroup RGB
-SetBackgroundColor 40 70 40 220
-MinimapIcon 2 Green Circle
-PlayEffect Green Temp
-PlayAlertSoundPositional 9 300 # Drop - Common
-Continue
-
 SetTab [Equipment: Special Bases]
 
 Show
@@ -1635,6 +1530,14 @@ Hide
 BaseType "Convening Wand"
 Rarity < Rare
 AreaLevel >= 50
+MinimapIcon -1
+PlayEffect None
+Continue
+
+Hide
+BaseType "Fossilised Spirit Shield"
+Rarity <= Magic
+AreaLevel >= 70
 MinimapIcon -1
 PlayEffect None
 Continue
@@ -1770,6 +1673,111 @@ Continue
 
 SetTab [Treasure: Recipes]
 
+SetOption $QualityEquipment switch [Remove] [Remove] [Show]
+SetOption $NormalEquipmentQualityThreshold slider [10] [1] [20]
+SetOption $MagicEquipmentQualityThreshold slider [16] [1] [20]
+SetOption $RareEquipmentQualityThreshold slider [18] [1] [20]
+SetOption $SuperQualityIconSize slider [1] [-1] [2]
+SetOption $ChiselHammers switch [Show] [Remove] [Show] # You can vendor a hammer of 20% quality and a map to recipe a Cartographer's Chisel. The values used expect you to apply up to two Blacksmith's Whetstones to hammers below 20% (based on the Rarity).
+
+$QualityEquipment
+	Class $Weapons $Armours
+	SetBorderColor 200 200 240 # Quality Equipment Border
+Branch
+Continue
+	Rarity Normal
+	Quality >= $NormalEquipmentQualityThreshold
+Branch
+Continue
+	Rarity Magic
+	Quality >= $MagicEquipmentQualityThreshold
+Branch
+Continue
+	Rarity Rare
+	Quality >= $RareEquipmentQualityThreshold
+
+$ChiselHammers
+	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	SetBorderColor 165 180 225 # Chisel Hammers
+	MinimapIcon 2 Grey Cross
+	PlayEffect Grey Temp
+	Branch
+	Continue
+	Rarity Normal
+	Quality >= 10
+	Branch
+	Continue
+	Rarity Magic
+	Quality >= 16
+	Branch
+	Continue
+	Rarity Rare
+	Quality >= 18
+
+SetOption $FlaskQualityThreshold slider [20] [1] [30] # Above what quality should flasks display regardless of type?
+
+Show
+Class "Flasks"
+Quality >= $FlaskQualityThreshold
+SetBorderColor 130 180 225
+PlayEffect Green
+MinimapIcon 2 Green Raindrop
+Continue
+
+Show
+	Quality > 20 # Super Quality
+	SetBorderColor 225 180 225 # Super Quality Equipment Border
+	MinimapIcon 0 White Cross
+	SwitchTo Show
+
+SetOption $ChaosRecipe switch [Remove] [Show] [Remove] # How do you want the Chaos Recipe handled?
+SetOption $ChaosRecipeSizeMod input [+ 4] # Adjust the base FontSize of chaos recipe items. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size cap of 45 with high values.
+
+SetOption $RegalRecipe switch [Remove] [Show] [Remove] # How do you want the Regal Recipe handled?
+SetOption $RegalRecipeSizeMod input [+ 2] # Adjust the base FontSize of regal recipe items. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size cap of 45 with high values.
+
+$ChaosRecipe
+Class "Two Hand" "Staff" "Bow" "Helmets" "Body Armours" "Gloves" "Boots" $Accessories
+Rarity Rare
+ItemLevel >= 60
+ItemLevel < 75
+SetBorderColor 255 255 100
+ModFontSize $ChaosRecipeSizeMod
+Continue
+
+$RegalRecipe
+Class "Two Hand" "Staff" "Bow" "Helmets" "Body Armours" "Gloves" "Boots" $Accessories
+Rarity Rare
+ItemLevel >= 75
+ItemLevel < 82
+SetBorderColor 180 120 210
+ModFontSize $RegalRecipeSizeMod
+Continue
+
+Show
+Class $Weapons $Armours $Accessories
+ItemLevel = 100
+SetBorderColor 255 0 255
+MinimapIcon 1 Purple Circle
+Continue
+
+SetOption $Chromatics switch [Show] [Remove]
+SetOption $SixSockets switch [Show] [Remove]
+SetOption $FiveLinks switch [Show] [Remove]
+SetOption $5LDropOff slider [82] [1] [100] # Past what AreaLevel should five links stop highlighting? They will still show if other properties are caught by the filter.
+SetOption $SixLinks switch [Show] [Remove]
+
+$Chromatics
+Rarity < Unique
+SocketGroup RGB
+SetBackgroundColor 40 70 40 220
+MinimapIcon 2 Green Circle
+PlayEffect Green Temp
+PlayAlertSoundPositional 9 300 # Drop - Common
+Continue
+
+SetTab [Treasure: Recipes]
+
 
 Show
     HasInfluence "Elder"
@@ -1857,7 +1865,6 @@ PlayEffect Orange
 PlayAlertSoundPositional 1 300 # Drop - Rare
 ModFontSize + 8
 
-
 SetTab [Stuff: Hunts]
 
 SetOption $Lvl80SpecialBases switch [Show] [Remove] # Do you want to see atlas, ritual, and experimented heist bases that are endgame viable regardless of rarity when above Item Level 80?
@@ -1917,6 +1924,7 @@ Branch
 Rarity < Rare
 Class $Weapons $Armours $Accessories "Quivers"
 SwitchTo $CorruptedItems
+Sockets < 6
 Continue
 
 Show
@@ -2023,183 +2031,6 @@ PlayEffect Purple Temp
 MinimapIcon 2 Purple Hexagon
 PlayAlertSoundPositional 9 300 # Drop - Common
 ModFontSize + 2
-Continue
-
-# Gems
-
-SetOption $MyGems input ["Portal" "Vaal Breach" "Empower" "Enhance" "Enlighten"] # Enter your build's gems here with "quotes" "around" "each" to give them a special highlight.
-SetOption $MyGemsQuality slider [0] [23] # What is the minimum quality for your build's gems?
-SetOption $MyGemsSizeMod input [+ 4] # Adjust the base FontSize of gems for your build. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size min/max 18/45 with large values.
-SetOption $GemsDropOff slider [68] [1] [100] # Past what level should regular gems stop showing?
-
-Show
-MinimapIcon 2 Grey Kite
-PlayEffect Green Temp
-Continue
-Branch
-Class "Gems"
-AreaLevel <= $SafetyNet
-PlayEffect Cyan
-PlayAlertSoundPositional 16 300 # Racing
-MinimapIcon 2 Cyan Kite
-Continue
-Branch
-Class "Active Skill Gems"
-SetBorderColor 0 0 255
-Continue
-Branch
-Class "Support Skill Gems"
-SetBorderColor 0 155 155
-Continue
-Branch
-Class "Active Skill Gems" "Support Skill Gems"
-AreaLevel >= $GemsDropOff
-SwitchTo Hide
-MinimapIcon -1
-PlayAlertSound None
-Continue
-Branch
-Class "Gems"
-BaseType "Vaal"
-SetBorderColor 255 0 0
-SetBackgroundColor 100 30 0
-MinimapIcon 1 Grey Kite
-PlayEffect Green
-Continue
-Branch
-Class "Gems"
-BaseType "Portal" "Empower" "Enhance" "Enlighten" "Block Chance Reduction" "Vaal Breach"
-SetBorderColor 185 185 185
-SetBackgroundColor 220 220 220
-PlayAlertSoundPositional 9 300 # Drop - Common
-PlayEffect Yellow
-Continue
-
-Show
-Class "Gems"
-Quality > 5
-Quality < 10
-SetTextColor 140 210 200
-MinimapIcon 2 White Kite
-PlayEffect White Temp
-Continue
-
-Show
-Class "Gems"
-Quality > 11
-Quality < 20
-SetTextColor 180 225 235
-MinimapIcon 1 White Kite
-PlayAlertSoundPositional 9 300 # Drop - Common
-PlayEffect White
-Continue
-
-Show
-Class "Gems"
-Quality >= 20
-SetTextColor 200 235 245
-MinimapIcon 1 Blue Kite
-ModFontSize + 3
-PlayAlertSoundPositional 3 300 # Drop - Uncommon
-PlayEffect Blue
-Continue
-
-Show
-Class "Gems"
-Quality > 20
-SetTextColor 240 200 215
-MinimapIcon 1 Yellow Kite
-PlayEffect Yellow
-ModFontSize + 3
-Continue
-
-Show
-Class "Gems"
-GemLevel = 20
-SetBackgroundColor 70 70 55
-MinimapIcon 0 Yellow Kite
-PlayEffect Yellow
-ModFontSize + 3
-PlayAlertSoundPositional 3 300 # Drop - Uncommon
-Continue
-
-Show
-Class "Gems"
-GemLevel > 20
-SetBackgroundColor 110 70 85
-MinimapIcon 0 Yellow Kite
-PlayEffect Yellow
-ModFontSize + 3
-PlayAlertSoundPositional 1 300 # Drop - Rare
-Continue
-
-Show
-Class "Gems"
-BaseType "Enhance" "Empower" "Enlighten"
-GemLevel = 3
-SetBackgroundColor 10 70 115
-MinimapIcon 0 Orange Kite
-PlayEffect Orange
-PlayAlertSoundPositional 1 300 # Drop - Rare
-ModFontSize + 6
-Continue
-
-Show
-Class "Gems"
-BaseType "Enhance" "Empower" "Enlighten"
-GemLevel >= 3
-Quality >= 20
-SetBackgroundColor 50 110 155
-MinimapIcon 0 Brown Kite
-PlayEffect Brown
-ModFontSize + 6
-Continue
-
-Show
-Class "Gems"
-AlternateQuality True
-SetBorderColor 225 185 150
-MinimapIcon 0 Purple Kite
-PlayEffect Purple
-PlayAlertSoundPositional 1 300 # Drop - Rare
-ModFontSize + 6
-Continue
-
-Show
-Class "Gems"
-BaseType "Awakened"
-SetTextColor 200 50 150
-MinimapIcon 0 Red Kite
-PlayEffect Red
-ModFontSize + 6
-PlayAlertSoundPositional 1 300 # Drop - Rare
-Continue
-
-Show
-Class "Gems"
-BaseType "Awakened"
-Quality > 0
-SetTextColor 255 90 190
-MinimapIcon 0 Red Kite
-Continue
-
-Show
-Class "Gems"
-BaseType "Awakened Enhance" "Awakened Empower" "Awakened Enlighten"
-SetBackgroundColor 250 210 255
-MinimapIcon 0 Red Kite
-ModFontSize + 6
-Continue
-
-Show
-Class "Gems"
-BaseType $MyGems
-Quality >= $MyGemsQuality
-SetBorderColor 250 0 250
-ModFontSize $MyGemsSizeMod
-MinimapIcon 0 Pink Kite
-PlayEffect Pink
-PlayAlertSoundPositional 5 300 # Drop - Build
 Continue
 
 # Ward
@@ -6066,6 +5897,185 @@ Show
 	PlayEffect Red
 	Continue
 
+SetTab [Stuff: Hunts]
+
+# Gems
+
+SetOption $MyGems input ["Portal" "Vaal Breach" "Empower" "Enhance" "Enlighten"] # Enter your build's gems here with "quotes" "around" "each" to give them a special highlight.
+SetOption $MyGemsQuality slider [0] [23] # What is the minimum quality for your build's gems?
+SetOption $MyGemsSizeMod input [+ 4] # Adjust the base FontSize of gems for your build. Recommended maximum change of +/- 8 as this alters the set FontSize, potentially causing already prioritized items to reach the size min/max 18/45 with large values.
+SetOption $GemsDropOff slider [68] [1] [100] # Past what level should regular gems stop showing?
+
+Show
+MinimapIcon 2 Grey Kite
+PlayEffect Green Temp
+Continue
+Branch
+Class "Gems"
+AreaLevel <= $SafetyNet
+PlayEffect Cyan
+PlayAlertSoundPositional 16 300 # Racing
+MinimapIcon 2 Cyan Kite
+Continue
+Branch
+Class "Active Skill Gems"
+SetBorderColor 0 0 255
+Continue
+Branch
+Class "Support Skill Gems"
+SetBorderColor 0 155 155
+Continue
+Branch
+Class "Active Skill Gems" "Support Skill Gems"
+AreaLevel >= $GemsDropOff
+SwitchTo Hide
+MinimapIcon -1
+PlayAlertSound None
+Continue
+Branch
+Class "Gems"
+BaseType "Vaal"
+SetBorderColor 255 0 0
+SetBackgroundColor 100 30 0
+MinimapIcon 1 Grey Kite
+PlayEffect Green
+Continue
+Branch
+Class "Gems"
+BaseType "Portal" "Empower" "Enhance" "Enlighten" "Block Chance Reduction" "Vaal Breach"
+SetBorderColor 185 185 185
+SetBackgroundColor 220 220 220
+PlayAlertSoundPositional 9 300 # Drop - Common
+PlayEffect Yellow
+Continue
+
+Show
+Class "Gems"
+Quality > 5
+Quality < 10
+SetTextColor 140 210 200
+MinimapIcon 2 White Kite
+PlayEffect White Temp
+Continue
+
+Show
+Class "Gems"
+Quality > 11
+Quality < 20
+SetTextColor 180 225 235
+MinimapIcon 1 White Kite
+PlayAlertSoundPositional 9 300 # Drop - Common
+PlayEffect White
+Continue
+
+Show
+Class "Gems"
+Quality >= 20
+SetTextColor 200 235 245
+MinimapIcon 1 Blue Kite
+ModFontSize + 3
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
+PlayEffect Blue
+Continue
+
+Show
+Class "Gems"
+Quality > 20
+SetTextColor 240 200 215
+MinimapIcon 1 Yellow Kite
+PlayEffect Yellow
+ModFontSize + 3
+Continue
+
+Show
+Class "Gems"
+GemLevel = 20
+SetBackgroundColor 70 70 55
+MinimapIcon 0 Yellow Kite
+PlayEffect Yellow
+ModFontSize + 3
+PlayAlertSoundPositional 3 300 # Drop - Uncommon
+Continue
+
+Show
+Class "Gems"
+GemLevel > 20
+SetBackgroundColor 110 70 85
+MinimapIcon 0 Yellow Kite
+PlayEffect Yellow
+ModFontSize + 3
+PlayAlertSoundPositional 1 300 # Drop - Rare
+Continue
+
+Show
+Class "Gems"
+BaseType "Enhance" "Empower" "Enlighten"
+GemLevel = 3
+SetBackgroundColor 10 70 115
+MinimapIcon 0 Orange Kite
+PlayEffect Orange
+PlayAlertSoundPositional 1 300 # Drop - Rare
+ModFontSize + 6
+Continue
+
+Show
+Class "Gems"
+BaseType "Enhance" "Empower" "Enlighten"
+GemLevel >= 3
+Quality >= 20
+SetBackgroundColor 50 110 155
+MinimapIcon 0 Brown Kite
+PlayEffect Brown
+ModFontSize + 6
+Continue
+
+Show
+Class "Gems"
+AlternateQuality True
+SetBorderColor 225 185 150
+MinimapIcon 0 Purple Kite
+PlayEffect Purple
+PlayAlertSoundPositional 1 300 # Drop - Rare
+ModFontSize + 6
+Continue
+
+Show
+Class "Gems"
+BaseType "Awakened"
+SetTextColor 200 50 150
+MinimapIcon 0 Red Kite
+PlayEffect Red
+ModFontSize + 6
+PlayAlertSoundPositional 1 300 # Drop - Rare
+Continue
+
+Show
+Class "Gems"
+BaseType "Awakened"
+Quality > 0
+SetTextColor 255 90 190
+MinimapIcon 0 Red Kite
+Continue
+
+Show
+Class "Gems"
+BaseType "Awakened Enhance" "Awakened Empower" "Awakened Enlighten"
+SetBackgroundColor 250 210 255
+MinimapIcon 0 Red Kite
+ModFontSize + 6
+Continue
+
+Show
+Class "Gems"
+BaseType $MyGems
+Quality >= $MyGemsQuality
+SetBorderColor 250 0 250
+ModFontSize $MyGemsSizeMod
+MinimapIcon 0 Pink Kite
+PlayEffect Pink
+PlayAlertSoundPositional 5 300 # Drop - Build
+Continue
+
 SetTab [Stuff: Leagues]
    
 Show
@@ -6713,6 +6723,8 @@ SetBorderColor 65 130 190
 Continue
 Branch
 Rarity <= Magic
+Sockets < 6
+AnyEnchantment False
 SwitchTo Hide
 Continue
 Branch
