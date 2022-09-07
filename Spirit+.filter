@@ -623,35 +623,35 @@ SetOption $ObsoleteEquipmentSizeMod input [- 10] #  Adjust the base FontSize of 
 
 SetOption $BaseDefences info [Base Defence is rated as Low, Mid, High, Near Perfect, or Perfect. Items that are set to hide here can still show if they have a property sought further down in the filter.] # This section determines the strictness of filtering by potential base defence value ranges for Up-To-Date items. Outdated items will receive these highlights and be hidden regardless of the following visibility settings. The Base Defence highlight is the brightness of text for normal, magic, and rare armours.
 
-SetOption $BDLow slider [5] [1] [100] # This slider adjusts the area level at which updated Bases with less than 25% of their Base Defence potential Hide.
+SetOption $BDLow slider [5] [1] [100] # This slider adjusts the area level at which updated Bases with less than 20% of their Base Defence potential Hide.
 
 SetOption $BDMid slider [15] [1] [100] # This slider adjusts the area level at which updated Bases with less than 50% of their Base Defence potential Hide.
 
-SetOption $BDHigh slider [32] [1] [100] #This slider adjusts the area level at which updated Bases with less than 75% of their Base Defence potential Hide.
+SetOption $BDHigh slider [32] [1] [100] #This slider adjusts the area level at which updated Bases with less than 80% of their Base Defence potential Hide.
 
-SetOption $BDNearPerfect slider [55] [1] [100] # This slider adjusts the area level at which updated Bases with less than 90% of their Base Defence potential Hide.
+SetOption $BDNearPerfect slider [55] [1] [100] # This slider adjusts the area level at which updated Bases with less than 100% of their Base Defence potential Hide.
 
 SetOption $BDPerfect slider [100] [1] [100] # This slider adjusts the area level at which updated Bases with 100% of their Base Defence potential Hide.
 
 SetOption $EmptyLine
 
-SetOption $BDLowRare slider [12] [1] [100] # This slider adjusts the area level at which updated RARE Bases with less than 25% of their Base Defence potential Hide.
+SetOption $BDLowRare slider [12] [1] [100] # This slider adjusts the area level at which updated RARE Bases with less than 20% of their Base Defence potential Hide.
 
 SetOption $BDMidRare slider [24] [1] [100] # This slider adjusts the area level at which updated RARE Bases with less than 50% of their Base Defence potential Hide.
 
-SetOption $BDHighRare slider [45] [1] [100] #This slider adjusts the area level at which updated RARE Bases with less than 75% of their Base Defence potential Hide.
+SetOption $BDHighRare slider [45] [1] [100] #This slider adjusts the area level at which updated RARE Bases with less than 80% of their Base Defence potential Hide.
 
-SetOption $BDNearPerfectRare slider [68] [1] [100] # This slider adjusts the area level at which updated RARE Bases with less than 90% of their Base Defence potential Hide.
+SetOption $BDNearPerfectRare slider [68] [1] [100] # This slider adjusts the area level at which updated RARE Bases with less than 100% of their Base Defence potential Hide.
 
 SetOption $BDPerfectRare slider [100] [1] [100] # This slider adjusts the area level at which updated RARE Bases with 100% of their Base Defence potential Hide.
 
 SetOption $EmptyLine
 
-SetOption $LowBDRare switch [Hide] [Show] [Hide] # This slider adjusts whether updated RARE Bases with less than 25% of their Base Defence potential Hide once past the above dropoffs.
+SetOption $LowBDRare switch [Hide] [Show] [Hide] # This slider adjusts whether updated RARE Bases with less than 20% of their Base Defence potential Hide once past the above dropoffs.
 
 SetOption $MidBDRare switch  [Hide] [Show] [Hide] # This slider adjusts whether updated RARE Bases with less than 50% of their Base Defence potential Hide once past the above dropoffs.
 
-SetOption $HighBDRare switch [Hide] [Show] [Hide] # This slider adjusts whether updated RARE Bases with less than 75% of their Base Defence potential Hide once past the above dropoffs.
+SetOption $HighBDRare switch [Hide] [Show] [Hide] # This slider adjusts whether updated RARE Bases with less than 80% of their Base Defence potential Hide once past the above dropoffs.
 
 SetOption $NearPerfectBDRare switch [Show] [Hide] # This slider adjusts whether updated RARE Bases with 100% of their Base Defence potential Hide once past the above dropoffs.
 
@@ -677,6 +677,7 @@ Show
 Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	BaseDefencePercentile > 20
+	BaseDefencePercentile < 50
 	Continue
 	Branch
 	Rarity Normal
@@ -694,6 +695,7 @@ Show
 Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	BaseDefencePercentile >= 50
+	BaseDefencePercentile < 80
 	Continue
 	Branch
 	Rarity Normal
@@ -711,6 +713,7 @@ Show
 Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	BaseDefencePercentile >= 80
+	BaseDefence Percentile < 100
 	Continue
 	Branch
 	Rarity Normal
@@ -771,6 +774,7 @@ Show
 Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	BaseDefencePercentile > 20
+	BaseDefencePercentile < 50
 	Continue
 	Branch
 	Rarity Normal
@@ -797,6 +801,7 @@ Show
 Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	BaseDefencePercentile >= 50
+	BaseDefencePercentile < 80
 	Continue
 	Branch
 	Rarity Normal
@@ -823,6 +828,7 @@ Show
 Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	BaseDefencePercentile >= 80
+	BaseDefencePercentile < 100
 	Continue
 	Branch
 	Rarity Normal
@@ -1488,7 +1494,7 @@ Continue
 Hide
 BaseType "Bone Ring" "Calling Wand"
 Rarity < Rare
-AreaLevel >= 30
+AreaLevel >= 28
 MinimapIcon -1
 PlayEffect None
 PlayAlertSound None
@@ -2013,7 +2019,7 @@ Continue
 
 Show
 Identified True
-HasExplicitMod "Tacati" "Citaqualotl" "Matatl" "Xopec" "Guatelitzi" "Puhuarte"
+HasExplicitMod "Tacati" "Citaqualotl" "Matatl" "Xopec" "Guatelitzi" "Puhuarte" "Topotante"
 SetTextColor 255 35 35
 SetFontSize 32
 PlayEffect Purple Temp
@@ -5861,39 +5867,39 @@ Show
 
 Show
 	HasSearingExarchImplicit >= 1
-	SetTextColor 120 40 10 220
+	SetTextColor 120 40 10
     PlayAlertSoundPositional 14 300 # Special Base
 	Continue
 
 Show
 	HasEaterOfWorldsImplicit >= 1
-	SetTextColor 10 40 120 220
+	SetTextColor 50 80 185
     PlayAlertSoundPositional 14 300 # Special Base
 	Continue
 
 Show
 	HasSearingExarchImplicit = 5
-	SetTextColor 140 40 10 255
+	SetTextColor 240 60 50
 	PlayEffect Purple
 	Continue
 
 Show
 	HasEaterOfWorldsImplicit = 5
-	SetTextColor 10 40 140 255
+	SetTextColor 80 120 240
 	PlayEffect Purple
 	Continue
 
 Show
 	HasSearingExarchImplicit = 6
 	HasEaterOfWorldsImplicit = 4
-	SetTextColor 140 40 140 220
+	SetTextColor 240 40 240
 	PlayEffect Red
 	Continue
 
 Show
 	HasSearingExarchImplicit = 4
 	HasEaterOfWorldsImplicit = 6
-	SetTextColor 140 40 140 220
+	SetTextColor 240 40 240
 	PlayEffect Red
 	Continue
 
@@ -6729,6 +6735,11 @@ SwitchTo Hide
 Continue
 Branch
 Rarity Rare
+Continue
+
+$Chromatics
+Mirrored True
+SocketGroup RGB
 Continue
 
 Show
