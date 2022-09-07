@@ -713,7 +713,7 @@ Show
 Show
 	Class "Body Armours" "Gloves" "Helmets" "Boots" "Shields"
 	BaseDefencePercentile >= 80
-	BaseDefence Percentile < 100
+	BaseDefencePercentile < 100
 	Continue
 	Branch
 	Rarity Normal
