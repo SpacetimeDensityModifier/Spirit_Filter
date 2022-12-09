@@ -513,7 +513,7 @@ SetOption $EmptyLine
 
 SetOption $EndgameBaseRarity dropdown [Rare] [Normal] [Magic] [Rare] # At what Rarity do you want Endgame bases to show?
 
-SetOption $EndgameBaseDropoff slider [69] [1] [100] # At what level should Endgame bases hide even if meeting the rarity threshold? Will not Hide linked items or items with other properties.
+SetOption $EndgameBaseDropoff slider [75] [1] [100] # At what level should Endgame bases hide even if meeting the rarity threshold? Will not Hide linked items or items with other properties.
 
 SetOption $EmptyLine
 SetOption $EmptyLine
@@ -743,7 +743,7 @@ Show
 	Continue
 	Branch
 	Rarity Rare
-	SetTextColor 255 225 200
+	SetTextColor 255 200 215
 	Continue
 
 #
@@ -884,7 +884,7 @@ SetOption $Links info [] # 3L and 4L items that meet the build, base defence, an
 
 SetOption $Leveling3L slider [25] [1] [100] # Until what level should three links be highlighted? This includes a cyan beam.
 
-SetOption $Leveling4L slider [75] [1] [100] # Until what level should four links be highlighted? This includes a cyan beam.
+SetOption $Leveling4L slider [68] [1] [100] # Until what level should four links be highlighted? This includes a cyan beam.
 
 Show
 Class $Weapons $Armours $Accessories
@@ -1480,7 +1480,7 @@ Continue
 
 SetOption $AtlasBaseChoices input ["Fugitive Boots" "Two-Toned Boots" "Apothecary's Gloves" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Bone Helmet" "Marble Amulet" "Seaglass Amulet" "Blue Pearl Amulet" "Vanguard Belt" "Crystal Belt" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Convoking Wand" "Artillery Quiver"] # Which Atlas bases are valuable to you?
 
-SetOption $AtlasBaseRarity dropdown [Rare] [Normal] [Magic] [Rare] # At what rarity should atlas bases get a highlight?
+SetOption $AtlasBaseRarity dropdown [Normal] [Normal] [Magic] [Rare] # At what rarity should atlas bases get a highlight?
 
 SetOption $EmptyLine
 
@@ -2608,7 +2608,7 @@ SetOption $VeryRareOrbStackDropOff slider [1] [1] [40] # What do you consider "t
 
 Show
 Class Currency
-BaseType "Annulment" "Exalted" "Divine Orb" "Ancient" "Sacred Orb"
+BaseType "Annulment" "Exalted" "Divine Orb" "Ancient" "Sacred Orb" "Fracturing Orb" "Fracturing Shard"
 SetBorderColor 220 150 110
 MinimapIcon 1 Yellow Diamond
 PlayEffect Yellow Temp
@@ -2730,6 +2730,13 @@ Show
     PlayAlertSoundPositional 3 300 # Drop - Uncommon
 	PlayEffect Purple
 	ModFontSize + 4
+
+Show
+Class "Currency"
+BaseType "Fracturing Orb" "Fracturing Shard"
+SetBackgroundColor 30 70 150
+SetTextColor 40 0 0
+Continue
 
 Show
 Class "Currency"
@@ -4684,6 +4691,22 @@ AreaLevel >= $RitualVesselDropOff
 StackSize <= $RitualVesselStackDropOff
 Continue
 
+Show
+Class "Relic"
+SetTextColor 110 75 20
+SetBackgroundColor 40 20 0
+PlayEffect Orange Temp
+PlayAlertSound 12 300
+MinimapIcon 1 Orange Triangle
+Continue
+
+Show
+Class "Sanctified Relic"
+SetBackgroundColor 180 115 60
+PlayEffect Orange
+MinimapIcon 0 Orange Triangle
+Continue
+
 SetTab [Treasure: Endgame Currency]
 
 SetOption $EmptyLine
@@ -5957,8 +5980,8 @@ Continue
 
 Show
 Class "Gems"
-Quality > 5
-Quality < 10
+Quality >= 5
+Quality <= 10
 SetTextColor 140 210 200
 MinimapIcon 2 White Kite
 PlayEffect White Temp
@@ -5966,7 +5989,7 @@ Continue
 
 Show
 Class "Gems"
-Quality > 11
+Quality >= 11
 Quality < 20
 SetTextColor 180 225 235
 MinimapIcon 1 White Kite
@@ -5976,7 +5999,7 @@ Continue
 
 Show
 Class "Gems"
-Quality >= 20
+Quality = 20
 SetTextColor 200 235 245
 MinimapIcon 1 Blue Kite
 ModFontSize + 3
@@ -6153,7 +6176,7 @@ Remove
 
 # DIV CARDS Redo?
 
-SetOption $NewCards switch [Remove] [Show] [Remove] # Do you want new Divination Cards to lose their special highlight - will not hide them?
+SetOption $NewCards switch [Show] [Show] [Remove] # Do you want new Divination Cards to lose their special highlight - will not hide them?
 SetOption $HVCurrencyCards switch [Show] [Remove] # Do you want high value currency granting Divination Cards to lose their special highlight - will not hide them?
 SetOption $LVCurrencyCards switch [Show] [Remove] # Do you want low value currency granting Divination Cards to lose their special highlight - will not hide them?
 SetOption $T0Cards switch [Show] [Remove] # Do you want top tier Divination Cards to lose their special highlight - will not hide them?
@@ -6170,10 +6193,20 @@ Show
     PlayAlertSoundPositional 12 300 # League Currency
 	PlayEffect Purple Temp
 	Continue
-	
+
+$NewCards
+Class "Divination"
+BaseType == "Man With Bear" "Alivia's Grace" "Ever-Changing" "A Dusty Memory" "The Return of the Rat" "The Finishing Touch"
+SetFontSize 40
+SetTextColor 200 50 160
+SetBackgroundColor 30 70 80
+PlayEffect Cyan
+MinimapIcon 1 Cyan Diamond
+
+
 Show 
 	Class "Divination" # T0
-	BaseType == "A Fate Worse Than Death" "Brother's Stash" "Choking Guilt" "Desecrated Virtue" "Doryani's Epiphany" "Eternal Bonds" "Gift of Asenath" "House of Mirrors" "Judging Voices" "Love Through Ice" "Nook's Crown" "Seven Years Bad Luck" "Succor of the Sinless" "The Apothecary" "The Cheater" "The Damned" "The Demon" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Fiend" "The Immortal" "The Iron Bard" "The Nurse" "The Price of Devotion" "The Price of Loyalty" "The Samurai's Eye" "The Sephirot" "The Shieldbearer" "Unrequited Love" "Wealth and Power"
+	BaseType == "Divine Beauty" "The Insane Cat" "A Fate Worse Than Death" "Brother's Stash" "Choking Guilt" "Desecrated Virtue" "Doryani's Epiphany" "Eternal Bonds" "Gift of Asenath" "House of Mirrors" "Judging Voices" "Love Through Ice" "Nook's Crown" "Seven Years Bad Luck" "Succor of the Sinless" "The Apothecary" "The Cheater" "The Damned" "The Demon" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Fiend" "The Immortal" "The Iron Bard" "The Nurse" "The Price of Devotion" "The Price of Loyalty" "The Samurai's Eye" "The Sephirot" "The Shieldbearer" "Unrequited Love" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 255 70 125
 	SetBorderColor 120 60 255
@@ -6185,7 +6218,7 @@ Show
 		
 Show
 	Class "Divination" # T1
-	BaseType == "A Note in the Wind" "Abandoned Wealth" "Alluring Bounty" "Altered Perception" "Ambitious Obsession" "Beauty Through Death" "Broken Promises" "Broken Truce" "Chaotic Disposition" "Dark Temptation" "Darker Half" "Deadly Joy" "Dementophobia" "Draped in Dreams" "Endless Night" "Gemcutter's Mercy" "Home" "Hunter's Reward" "Imperfect Memories" "Justified Ambition" "Keeper's Corruption" "Luminous Trove" "Magnum Opus" "Misery in Darkness" "Monochrome" "Pride of the First Ones" "Remembrance" "Something Dark" "The Academic" "The Artist" "The Aspirant" "The Brawny Battle Mage" "The Destination" "The Eldritch Decay" "The Enforcer" "The Eye of Terror" "The Gulf" "The Hook" "The Long Con" "The Mind's Eyes" "The Offspring" "The One That Got Away" "The Patient" "The Rabbit's Foot" "The Risk" "The Sacrifice" "The Scout" "The Shortcut" "The Spoiled Prince" "The Strategist" "The Void" "The White Knight" "Winter's Embrace"
+	BaseType == "The Wedding Gift" "Auspicious Ambitions" "A Note in the Wind" "Abandoned Wealth" "Alluring Bounty" "Altered Perception" "Ambitious Obsession" "Beauty Through Death" "Broken Promises" "Broken Truce" "Chaotic Disposition" "Dark Temptation" "Darker Half" "Deadly Joy" "Dementophobia" "Draped in Dreams" "Endless Night" "Gemcutter's Mercy" "Home" "Hunter's Reward" "Imperfect Memories" "Justified Ambition" "Keeper's Corruption" "Luminous Trove" "Magnum Opus" "Misery in Darkness" "Monochrome" "Pride of the First Ones" "Remembrance" "Something Dark" "The Academic" "The Artist" "The Aspirant" "The Brawny Battle Mage" "The Destination" "The Eldritch Decay" "The Enforcer" "The Eye of Terror" "The Gulf" "The Hook" "The Long Con" "The Mind's Eyes" "The Offspring" "The One That Got Away" "The Patient" "The Rabbit's Foot" "The Risk" "The Sacrifice" "The Scout" "The Shortcut" "The Spoiled Prince" "The Strategist" "The Void" "The White Knight" "Winter's Embrace"
 	SetFontSize 40
 	SetTextColor 150 150 255
 	SetBorderColor 110 110 255
@@ -6326,7 +6359,7 @@ Show
 Class "Quest Items"
 BaseType "Ammonite Glyph" "Alira's Amulet" "Baleful Gem" "Black Venom" "Eye of Conquest" "Eyes of Zeal" "Firefly" "Haliotis Glyph" "Kraityn's Amulet" "Maligaro's Map" "Oak's Amulet" "Obsidian Key" "Sewer Keys" "The Apex" "Tolman's Bracelet" "Roseus Glyph" "Tower Key" "Maligaro's Spike" "Basilisk Acid" "Infernal Talc" "Malachai's Entrails" "Malachai's Heart" "Malachai's Lungs" "Moon Orb" "Ribbon Spool" "Sun Orb" "Thaumetic Sulphite" "The Black Flag" "The Eye of Desire" "The Eye of Fury" "Trarthan Powder" "Deshret's Banner" "Sign of Purity" "The Staff of Purity" # Main Quest
 SetBackgroundColor 115 155 115
-ModFontSize + 2
+SetFontSize 32
 
 Show
 Class "Quest Items"
@@ -6337,7 +6370,7 @@ Show
 Class "Quest Items"
 BaseType "Ankh of Eternity" "Kishara's Star" "Thaumetic Emblem" "Tukohama's Tooth" "Allflame" "Bust of Gaius Sentari" "Bust of Hector Titucius" "Bust of Marceus Lioneye" "Sekhema Feather" "Miasmeter" "Valako's Jaw" "Bottled Storm" "Hinekora's Hair" "Wings of Vastiri" # Passive Rewarding Quests
 SetBackgroundColor 210 110 85 225
-ModFontSize + 6
+SetFontSize 36
 
 Show
 BaseType "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
@@ -6558,7 +6591,7 @@ $T4Uniques
 Show 
     Rarity Unique
     SocketGroup < WWWWWW
-   BaseType == "Agate Amulet" "Amber Amulet" "Amethyst Ring" "Archon Kite Shield" "Assassin Bow" "Astral Plate" "Carnal Mitts" "Carved Wand" "Citrine Amulet" "Crusader Plate" "Crystal Sceptre" "Ebony Tower Shield" "Eternal Sword" "Ezomyte Staff" "Fiend Dagger" "Gavel" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Heavy Belt" "Hubris Circlet" "Imperial Bow" "Imperial Skean" "Imperial Staff" "Iron Ring" "Jade Amulet" "Lacquered Garb" "Leather Belt" "Long Staff" "Medium Cluster Jewel" "Moonstone Ring" "Murder Mitts" "Necromancer Silks" "Onyx Amulet" "Paua Amulet" "Paua Ring" "Prophet Crown" "Rustic Sash" "Sadist Garb" "Sage Wand" "Sapphire Ring" "Small Cluster Jewel" "Solaris Circlet" "Sorcerer Boots" "Spine Bow" "Stealth Boots" "Stibnite Flask" "Studded Belt" "Terror Claw" "Topaz Ring" "Turquoise Amulet" "Two-Point Arrow Quiver" "Two-Stone Ring" "Vaal Blade" "Widowsilk Robe" "Zealot Gloves"
+   BaseType == "Agate Amulet" "Amber Amulet" "Amethyst Ring" "Amethyst Flask" "Archon Kite Shield" "Assassin Bow" "Astral Plate" "Carnal Mitts" "Carved Wand" "Citrine Amulet" "Crusader Plate" "Crystal Sceptre" "Ebony Tower Shield" "Eternal Sword" "Ezomyte Staff" "Fiend Dagger" "Gavel" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Heavy Belt" "Hubris Circlet" "Imperial Bow" "Imperial Skean" "Imperial Staff" "Iron Ring" "Jade Amulet" "Lacquered Garb" "Leather Belt" "Long Staff" "Medium Cluster Jewel" "Moonstone Ring" "Murder Mitts" "Necromancer Silks" "Onyx Amulet" "Paua Amulet" "Paua Ring" "Prophet Crown" "Rustic Sash" "Sadist Garb" "Sage Wand" "Sapphire Ring" "Small Cluster Jewel" "Solaris Circlet" "Sorcerer Boots" "Spine Bow" "Stealth Boots" "Stibnite Flask" "Studded Belt" "Terror Claw" "Topaz Ring" "Turquoise Amulet" "Two-Point Arrow Quiver" "Two-Stone Ring" "Vaal Blade" "Widowsilk Robe" "Zealot Gloves"
 SetBorderColor 0 150 170
 	MinimapIcon 1 Cyan Star # Multi Result Uniques, Uncertain Value
 	PlayEffect Purple
@@ -6749,7 +6782,7 @@ MinimapIcon 1 Purple Hexagon
 
 Show
 SynthesisedItem True
-SetBorderColor 45 70 185
+SetBorderColor 85 120 225
 MinimapIcon 1 Purple Hexagon
 
 # LEGACY SECTION
