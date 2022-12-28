@@ -4707,7 +4707,30 @@ SetBackgroundColor 180 115 60
 PlayEffect Orange
 MinimapIcon 0 Orange Triangle
 ModFontSize + 8
+PlayAlertSound 4 300
 Continue
+
+Show
+Class "Relic"
+Rarity Unique
+SetBackgroundColor 220 135 70
+SetTextColor 255 0 155
+PlayEffect Brown
+MinimapIcon 0 Brown Triangle
+ModFontSize + 12
+PlayAlertSound 4 300
+Continue
+
+Show
+Class "Currency"
+BaseType "Invocation"
+SetBackgroundColor 170 80 130
+PlayEffect Orange
+MinimapIcon 0 Orange Triangle
+ModFontSize + 8
+PlayAlertSound 4 300
+Continue
+
 
 SetTab [Treasure: Endgame Currency]
 
